@@ -14,6 +14,7 @@ def ilanlari_getir():
         KAYNAK,
         headers={"User-Agent": "Mozilla/5.0"},
         timeout=20,
+        verify=False,
     )
     response.raise_for_status()
 
