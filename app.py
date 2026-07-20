@@ -1,29 +1,46 @@
 from flask import Flask, jsonify
 import requests
 from bs4 import BeautifulSoup
+from urllib.parse import urljoin
+
 app = Flask(__name__)
 
 @app.route("/")
 def home():
+    site = "https://kamuilan.sbb.gov.tr/"
+
+    response = requests.get(
+        site,
+        headers={"User-Agent": "Mozilla/5.0"},
+        timeout=20
+    )
+
+    soup = BeautifulSoup(response.text, "html.parser")
+    ilanlar = []
+    eklenenler = set()
+
+    for link in soup.find_all("a", href=True):
+        href = link["href"]
+        baslik = " ".join(link.get_text(" ", strip=True).split())
+
+        if "ilanDetay.aspx" in href and baslik:
+            tam_url = urljoin(site, href)
+
+            if tam_url not in eklenenler:
+                eklenenler.add(tam_url)
+                ilanlar.append({
+                    "baslik": baslik,
+                    "kurum": "Kamu Personeli Alım İlanları",
+                    "url": tam_url
+                })
+
+        if len(ilanlar) >= 20:
+            break
+
     return jsonify({
-        "ilan_sayisi": 3,
-        "ilanlar": [
-            {
-                "baslik": "Sağlık Bakanlığı Personel Alımı",
-                "kurum": "Sağlık Bakanlığı",
-                "url": "https://www.saglik.gov.tr"
-            },
-            {
-                "baslik": "Adalet Bakanlığı Personel Alımı",
-                "kurum": "Adalet Bakanlığı",
-                "url": "https://www.adalet.gov.tr"
-            },
-            {
-                "baslik": "Tarım ve Orman Bakanlığı Personel Alımı",
-                "kurum": "Tarım ve Orman Bakanlığı",
-                "url": "https://www.tarimorman.gov.tr"
-            }
-        ]
+        "site_durumu": response.status_code,
+        "ilan_sayisi": len(ilanlar),
+        "ilanlar": ilanlar
     })
 
 if __name__ == "__main__":
