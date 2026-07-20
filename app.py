@@ -22,7 +22,7 @@ def home():
 
     soup = BeautifulSoup(response.text, "html.parser")
     print(response.status_code)
-print(response.text[:500])
+    print(response.text[:500])
     ilanlar = []
     eklenenler = set()
 
