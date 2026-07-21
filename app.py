@@ -9,7 +9,7 @@ app = Flask(__name__)
 def home():
     site = "https://kamuilan.sbb.gov.tr/"
 
-   try:
+    try:
     response = requests.get(
         site,
         headers={"User-Agent": "Mozilla/5.0"},
