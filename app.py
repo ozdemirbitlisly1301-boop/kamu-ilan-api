@@ -13,7 +13,7 @@ def home():
         response = requests.get(
             site,
             headers={"User-Agent": "Mozilla/5.0"},
-            timeout=15
+            timeout=15,
             verify=False
         )
         response.raise_for_status()
