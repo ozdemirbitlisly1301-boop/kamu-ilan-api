@@ -14,6 +14,7 @@ def home():
             site,
             headers={"User-Agent": "Mozilla/5.0"},
             timeout=15
+            verify=False
         )
         response.raise_for_status()
     except requests.RequestException as hata:
