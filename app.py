@@ -10,25 +10,25 @@ def home():
     site = "https://kamuilan.sbb.gov.tr/"
 
     try:
-    response = requests.get(
-        site,
-        headers={"User-Agent": "Mozilla/5.0"},
-        timeout=10
-    )
-    response.raise_for_status()
-except requests.RequestException as hata:
-    return jsonify({
-        "hata": "İlan sitesine bağlanılamadı",
-        "detay": str(hata),
-        "ilanlar": []
-    }), 200
+            response = requests.get(
+            site,
+            headers={"User-Agent": "Mozilla/5.0"},
+            timeout=10
+        )
+        response.raise_for_status()
+    except requests.RequestException as hata:
+        return jsonify({
+            "hata": "İlan sitesine bağlanılamadı",
+            "detay": str(hata),
+            "ilanlar": []
+        }), 200
 
     soup = BeautifulSoup(response.text, "html.parser")
     ilanlar = []
     eklenenler = set()
 
     for link in soup.find_all("a", href=True):
-        href = link["href"]
+        href = link.get("href", "")
         baslik = " ".join(link.get_text(" ", strip=True).split())
 
         if "ilanDetay.aspx" in href and baslik:
