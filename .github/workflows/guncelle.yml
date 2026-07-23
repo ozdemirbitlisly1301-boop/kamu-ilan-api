@@ -2,7 +2,6 @@ name: Kamu İlanlarını Güncelle
 
 on:
   workflow_dispatch:
-
   schedule:
     - cron: "0 */6 * * *"
 
@@ -17,23 +16,23 @@ jobs:
       - name: Repoyu indir
         uses: actions/checkout@v4
 
-      - name: Python Kur
+      - name: Python kur
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Kütüphaneleri Kur
+      - name: Kütüphaneleri kur
         run: |
-          pip install requests beautifulsoup4
+          pip install playwright beautifulsoup4
+          python -m playwright install --with-deps chromium
 
-      - name: Güncelleyiciyi Çalıştır
-        run: |
-          python guncelle.py
+      - name: İlanları çek
+        run: python guncelle.py
 
-      - name: Değişiklikleri Kaydet
+      - name: JSON dosyasını kaydet
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
           git add ilanlar.json
           git diff --cached --quiet || git commit -m "İlanlar güncellendi"
           git push
