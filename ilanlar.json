@@ -1,712 +1,8 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-07-24T12:02:32.945417+00:00",
-  "ilan_sayisi": 180,
+  "guncellenme_zamani": "2026-07-24T17:59:51.639196+00:00",
+  "ilan_sayisi": 171,
   "ilanlar": [
-    {
-      "id": "94683cea41339542a6af",
-      "baslik": "Gençlik ve Spor Bakanlığı Sözleşmeli Personel Alım İlanı",
-      "kurum": "Gençlik ve Spor Bakanlığı Sözleşmeli Personel Alım İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/xj3c4yth/gençlik-ve-spor-bakanlığı-soezleşmeli-personel-alım-ilanı-24072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/xj3c4yth/gençlik-ve-spor-bakanlığı-soezleşmeli-personel-alım-ilanı-24072026.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "23b033693f22644a32bd",
-      "baslik": "Kilis Elbeyli Belediyesi Memur Alım İlanı",
-      "kurum": "Kilis Elbeyli Belediyesi Memur Alım İlanı",
-      "sehir": "Kilis",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/aphfs1on/kilis-elbeyli-belediyesi-memur-alım-ilanı-24072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/aphfs1on/kilis-elbeyli-belediyesi-memur-alım-ilanı-24072026.pdf",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Maliye",
-        "İşletme",
-        "Muhasebe"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "8ebc9cdd184f8d6bb28a",
-      "baslik": "Adana Yeni Adana İmar İnşaat Ticaret A.Ş.",
-      "kurum": "Adana Yeni Adana İmar İnşaat Ticaret A.Ş.",
-      "sehir": "Adana",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/tv2ew3eh/adana-yeni-adana-imar-inşaat-ticaret-aş-24072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/tv2ew3eh/adana-yeni-adana-imar-inşaat-ticaret-aş-24072026.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "289d9e1ebce825c35425",
-      "baslik": "Demre Hizmet Turizm iNŞ. Sanavi ve Ticaret LTD-STİ.",
-      "kurum": "Demre Hizmet Turizm iNŞ. Sanavi ve Ticaret LTD-STİ.",
-      "sehir": "Antalya",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/s2jfacik/demre.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/s2jfacik/demre.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "c70417acaac2673c43b4",
-      "baslik": "ASAT INSAN KAYNAKLARI A.Ş.",
-      "kurum": "ASAT INSAN KAYNAKLARI A.Ş.",
-      "sehir": "Antalya",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/qtjlw51l/asat-aş.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/qtjlw51l/asat-aş.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "9080fb8c5c15f9839b39",
-      "baslik": "KAŞ LİKYA TURİZM İNŞ. GID. TEM. TAŞ. MAD. VE TIC. LTD. ŞTI.",
-      "kurum": "KAŞ LİKYA TURİZM İNŞ. GID. TEM. TAŞ. MAD. VE TIC. LTD. ŞTI.",
-      "sehir": "Antalya",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/4bwpac2z/kaş.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/4bwpac2z/kaş.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "a83e7d426e907a588394",
-      "baslik": "BORÇKA BELEDİYESİ İKTİSADİ VE SOSYAL TESİS İŞLETMESİ",
-      "kurum": "BORÇKA BELEDİYESİ İKTİSADİ VE SOSYAL TESİS İŞLETMESİ",
-      "sehir": "Artvin",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/4yem4ezf/ilan-formu.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/4yem4ezf/ilan-formu.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "5d056ced2dba151a577b",
-      "baslik": "Bursa Yenişehir Belediyesi Personel Hizmetleri Ltd. Şti",
-      "kurum": "Bursa Yenişehir Belediyesi Personel Hizmetleri Ltd. Şti",
-      "sehir": "Bursa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/iyuln5or/yenişehir-bel-pers-hizm-240726.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/iyuln5or/yenişehir-bel-pers-hizm-240726.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "221b2bcb6ee200f30d5b",
-      "baslik": "Bursa Osmangazi Personel A.Ş. (OSPERAŞ)",
-      "kurum": "Bursa Osmangazi Personel A.Ş. (OSPERAŞ)",
-      "sehir": "Bursa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/ndtl5ak4/osperaş-240726.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/ndtl5ak4/osperaş-240726.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "bd5ae31765400d940a65",
-      "baslik": "Bursa Binted İnsan Kaynakları Taahhüt Eğitim Danışmanlık Hizmetleri İmar İnşaat ve Ticaret A.Ş.",
-      "kurum": "Bursa Binted İnsan Kaynakları Taahhüt Eğitim Danışmanlık Hizmetleri İmar İnşaat ve Ticaret A.Ş.",
-      "sehir": "Bursa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/egbdu2mb/binted-aş-240726-daimi.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/egbdu2mb/binted-aş-240726-daimi.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "bb5c485899ac88ea51db",
-      "baslik": "Bursa Binted İnsan Kaynakları Taahhüt Eğitim Danışmanlık Hizmetleri İmar İnşaat ve Ticaret A.Ş.",
-      "kurum": "Bursa Binted İnsan Kaynakları Taahhüt Eğitim Danışmanlık Hizmetleri İmar İnşaat ve Ticaret A.Ş.",
-      "sehir": "Bursa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/pbwbqmvr/binted-aş-20072026-geçici.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/pbwbqmvr/binted-aş-20072026-geçici.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "0028869023a5f4f7e7e2",
-      "baslik": "Bursa Yenişehir Belediyesi Personel Hizmetleri Ltd. Şti.",
-      "kurum": "Bursa Yenişehir Belediyesi Personel Hizmetleri Ltd. Şti.",
-      "sehir": "Bursa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/0ionvdev/yenişehir-bel-pers-240726.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/0ionvdev/yenişehir-bel-pers-240726.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "b326010421aa29645438",
-      "baslik": "Diyarbakır Lice Bld. Personel Ltd. Şti.",
-      "kurum": "Diyarbakır Lice Bld. Personel Ltd. Şti.",
-      "sehir": "Diyarbakır",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/idvcusfh/diyarbakır-lice-bld-personel-ltd-şti-22072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/idvcusfh/diyarbakır-lice-bld-personel-ltd-şti-22072026.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "4b47fc41136e5ac60fa6",
-      "baslik": "Çayırlı Belediyesi Personel Limited Şirketi-Beden İşçisi",
-      "kurum": "Çayırlı Belediyesi Personel Limited Şirketi-Beden İşçisi",
-      "sehir": "Erzincan",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/l5qjqfk4/kep-iletisi-kurum-dışı-işçi-alımı_ek_1-kurumdisiisciilanformu636.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/l5qjqfk4/kep-iletisi-kurum-dışı-işçi-alımı_ek_1-kurumdisiisciilanformu636.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "4057992c30d170db4ad2",
-      "baslik": "Erzurum Ejder Kayak Merkezleri A.Ş (Market Görevlisi)",
-      "kurum": "Erzurum Ejder Kayak Merkezleri A.Ş (Market Görevlisi)",
-      "sehir": "Erzurum",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/qoifjqtl/ejder.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/qoifjqtl/ejder.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "cc3d34748d6b411747fd",
-      "baslik": "Dörtyol Belediyesi Kent Hizmetleri Sanayi Ticaret ve Limited Şirketi",
-      "kurum": "Dörtyol Belediyesi Kent Hizmetleri Sanayi Ticaret ve Limited Şirketi",
-      "sehir": "Hatay",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/ybmfumxa/doertyol-kent-hizmetleri.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/ybmfumxa/doertyol-kent-hizmetleri.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "4ccaf50b7d3417c06881",
-      "baslik": "Konya Taşkent Belediyesi Personel Ltd. Şti.",
-      "kurum": "Konya Taşkent Belediyesi Personel Ltd. Şti.",
-      "sehir": "Konya",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/kf1l1gvn/whatsapp-scan-23-temmuz-2026-at-140347.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/kf1l1gvn/whatsapp-scan-23-temmuz-2026-at-140347.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "492c0eb134b2512b0ccb",
-      "baslik": "Muğla Dal-Bel Günübirlik Tur. Hiz. İşl. ve Tesis. Tic. A.Ş.",
-      "kurum": "Muğla Dal-Bel Günübirlik Tur. Hiz. İşl. ve Tesis. Tic. A.Ş.",
-      "sehir": "Muğla",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/idoh13vz/muğla-dal-bel-guenuebirlik-tur-hiz-işl-ve-tesis-tic-aş-24072027.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/idoh13vz/muğla-dal-bel-guenuebirlik-tur-hiz-işl-ve-tesis-tic-aş-24072027.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "6e357bb897dd0679acc5",
-      "baslik": "Samsun Asarcık Sosyal Yardımlaşma ve Dayanışma Vakfı",
-      "kurum": "Samsun Asarcık Sosyal Yardımlaşma ve Dayanışma Vakfı",
-      "sehir": "Samsun",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/y2qnjdx4/asarcik4.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/y2qnjdx4/asarcik4.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "173be625edab621f3ab4",
-      "baslik": "Siirt Kurtalan Belediyesi Personel Limited Şirketi",
-      "kurum": "Siirt Kurtalan Belediyesi Personel Limited Şirketi",
-      "sehir": "Siirt",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/t1jlsrxu/siirt-kurtalan-belediyesi-personel-limited-şirketi-24072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/t1jlsrxu/siirt-kurtalan-belediyesi-personel-limited-şirketi-24072026.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "d955a9b8959251ee3ef5",
-      "baslik": "Sivas Belediyesi Özbelsan A.Ş.",
-      "kurum": "Sivas Belediyesi Özbelsan A.Ş.",
-      "sehir": "Sivas",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/qryomwbz/sivas-belediyesi-oezbelsan-aş-24072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/qryomwbz/sivas-belediyesi-oezbelsan-aş-24072026.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "97b064fbfcff1279ef9f",
-      "baslik": "Sivas Sidaş A.Ş.",
-      "kurum": "Sivas Sidaş A.Ş.",
-      "sehir": "Sivas",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/syslvql2/sivas-sidaş-aş-24072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/syslvql2/sivas-sidaş-aş-24072026.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "c95e1bc950784cfa1100",
-      "baslik": "TURKUAZ HİZMET SANAYİ VE TİCARET A.Ş",
-      "kurum": "TURKUAZ HİZMET SANAYİ VE TİCARET A.Ş",
-      "sehir": "Şanlıurfa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/0d4oatqc/turkuaz-hizmet-sanayi-ve-tiacaret-aş.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/0d4oatqc/turkuaz-hizmet-sanayi-ve-tiacaret-aş.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "fe90aff35e6432c9132c",
-      "baslik": "Ürgüp Belediyesi Personel Ltd.Şti",
-      "kurum": "Ürgüp Belediyesi Personel Ltd.Şti",
-      "sehir": "Nevşehir",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/cw4hiftn/uerguep-belediyesi-personel-ltdşti.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/cw4hiftn/uerguep-belediyesi-personel-ltdşti.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "8b24d62a9f39bf2c3700",
-      "baslik": "Van Muradiye Belediyesi Personel Hizmetleri Anonim Şirketi",
-      "kurum": "Van Muradiye Belediyesi Personel Hizmetleri Anonim Şirketi",
-      "sehir": "Van",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/m5ncxxdo/muradiye-belediyesi-personel-aş-21072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/m5ncxxdo/muradiye-belediyesi-personel-aş-21072026.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "73aac51ed583e34edd04",
-      "baslik": "Kocaeli Gölaş Gölcük Turizm Taah. Paz. Müşavirlik Enerji İnşaat Tem. Ve Gaz Dağ. A.Ş.",
-      "kurum": "Kocaeli Gölaş Gölcük Turizm Taah. Paz. Müşavirlik Enerji İnşaat Tem. Ve Gaz Dağ. A.Ş.",
-      "sehir": "Kocaeli",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:29",
-      "link": "https://www.iskur.gov.tr/medya/2zkchngj/1-goelaş.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/2zkchngj/1-goelaş.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "07d5926f9fbd27320bb3",
-      "baslik": "Kocaeli Belde Özel Sağlık Ve Eğitim Hizmetleri Sosyal Hizmetleri Sosyal Hizm. Gıda Ve İhtiyaç Mad. Paz. Ve Tic. A.Ş.",
-      "kurum": "Kocaeli Belde Özel Sağlık Ve Eğitim Hizmetleri Sosyal Hizmetleri Sosyal Hizm. Gıda Ve İhtiyaç Mad. Paz. Ve Tic. A.Ş.",
-      "sehir": "Kocaeli",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:29",
-      "link": "https://www.iskur.gov.tr/medya/03ng1kyz/1-belde.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/03ng1kyz/1-belde.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "8ec9b402d21237bb2ee5",
-      "baslik": "İzmir T.C. Merkez Bankası A.Ş. Özdere Naim Talu Eğ. Sem. Dinl. Sitesi",
-      "kurum": "İzmir T.C. Merkez Bankası A.Ş. Özdere Naim Talu Eğ. Sem. Dinl. Sitesi",
-      "sehir": "İzmir",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:30",
-      "link": "https://www.iskur.gov.tr/medya/hj4f4olc/izmir-tc-merkez-bankası-aş-oezdere-naim-talu-eğ-sem-dinl-sitesi.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/hj4f4olc/izmir-tc-merkez-bankası-aş-oezdere-naim-talu-eğ-sem-dinl-sitesi.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "98aed76385e6c0f1da50",
-      "baslik": "Karabük Saf Bel Kültür Turizm Ticaret Anonim Şirketi",
-      "kurum": "Karabük Saf Bel Kültür Turizm Ticaret Anonim Şirketi",
-      "sehir": "Karabük",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:30",
-      "link": "https://www.iskur.gov.tr/medya/xx1gr0qo/kep-iletisi-personel-alımı-hakkında_ek_1-planlamavekontroliscisi.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/xx1gr0qo/kep-iletisi-personel-alımı-hakkında_ek_1-planlamavekontroliscisi.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "7f34be4601a637d45e93",
-      "baslik": "Besot Manisa Beld Müş Müth Hiz Ulaş Top Taş Sos Tes İşl Turz ve Enerji San Tic A.Ş",
-      "kurum": "Besot Manisa Beld Müş Müth Hiz Ulaş Top Taş Sos Tes İşl Turz ve Enerji San Tic A.Ş",
-      "sehir": "Manisa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:30",
-      "link": "https://www.iskur.gov.tr/medya/0yspee2g/iç-mekan-temizlik-işçisi-ilan-besot-24072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/0yspee2g/iç-mekan-temizlik-işçisi-ilan-besot-24072026.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "eeaa63f8f1696e15e9fa",
-      "baslik": "Muğla Büyükşehir Belediyesi Emek Personel Ltd Şti",
-      "kurum": "Muğla Büyükşehir Belediyesi Emek Personel Ltd Şti",
-      "sehir": "Muğla",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:30",
-      "link": "https://www.iskur.gov.tr/medya/gqqp4ogb/muğla-bueyuekşehir-belediyesi-emek-personel-ltd-şti-24072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/gqqp4ogb/muğla-bueyuekşehir-belediyesi-emek-personel-ltd-şti-24072026.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "58a43fc4612b7860213b",
-      "baslik": "Muğla Ahi-Bel Tur. San. ve Tic. Ltd.Şti.",
-      "kurum": "Muğla Ahi-Bel Tur. San. ve Tic. Ltd.Şti.",
-      "sehir": "Muğla",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:30",
-      "link": "https://www.iskur.gov.tr/medya/v0xjxau5/muğla-ahi-bel-tur-san-ve-tic-ltdşti-24072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/v0xjxau5/muğla-ahi-bel-tur-san-ve-tic-ltdşti-24072026.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "18fd6c432e8132611903",
-      "baslik": "Yozgat Ozanlı Personel İnşaat San. ve Tic. Ltd. Şti.",
-      "kurum": "Yozgat Ozanlı Personel İnşaat San. ve Tic. Ltd. Şti.",
-      "sehir": "Yozgat",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 17:30",
-      "link": "https://www.iskur.gov.tr/medya/xoglaqww/ozan.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/xoglaqww/ozan.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "e4f7c9a258d6837e6f7c",
-      "baslik": "Adana Kozan İmar Ticaret Sanayi Personel Limited Şirketi",
-      "kurum": "Adana Kozan İmar Ticaret Sanayi Personel Limited Şirketi",
-      "sehir": "Adana",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 18:00",
-      "link": "https://www.iskur.gov.tr/medya/30yonkhi/kozan-imar-4.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/30yonkhi/kozan-imar-4.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "48b46a6ec80884226266",
-      "baslik": "İzmir İZFAŞ – İzmir Fuarcılık Hiz. Kültür ve Sanat İşleri TİC. A.Ş.",
-      "kurum": "İzmir İZFAŞ – İzmir Fuarcılık Hiz. Kültür ve Sanat İşleri TİC. A.Ş.",
-      "sehir": "İzmir",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.07.2026 18:00",
-      "link": "https://www.iskur.gov.tr/medya/q45bfmdr/kep-iletisi-kurum-dısı-kamu-isci-alımı-ilan-formu_ek_kurumdisiilanformu.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/q45bfmdr/kep-iletisi-kurum-dısı-kamu-isci-alımı-ilan-formu_ek_kurumdisiilanformu.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
     {
       "id": "b9619dcd78a403aad8a4",
       "baslik": "USHAŞ Uluslararası Sağlık Hizmetleri A.Ş.",
@@ -728,15 +24,15 @@
       "analiz_surumu": 1
     },
     {
-      "id": "a8b7b2aa837f2b45af06",
+      "id": "0159b1a69d168c6fb762",
       "baslik": "USHAŞ Uluslararası Sağlık Hizmetleri A.Ş.",
       "kurum": "USHAŞ Uluslararası Sağlık Hizmetleri A.Ş.",
       "sehir": "Ankara",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "24.07.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/bfhfe5w4/kep-iletisi-4679-_-20072026-_-kurum-disi-ilan-hk_ek_saglik_yonetimi_sorumlusu.docx",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/bfhfe5w4/kep-iletisi-4679-_-20072026-_-kurum-disi-ilan-hk_ek_saglik_yonetimi_sorumlusu.docx",
+      "link": "https://www.iskur.gov.tr/medya/iyvjqru0/kep-iletisi-4682-_-20072026-_-kurum-disi-ilan-hk_ek_strateji_ve_surec_gelistirme_uzman_yardimcisi.docx",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/iyvjqru0/kep-iletisi-4682-_-20072026-_-kurum-disi-ilan-hk_ek_strateji_ve_surec_gelistirme_uzman_yardimcisi.docx",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "PDF metninden belirlenemedi",
@@ -748,15 +44,15 @@
       "analiz_surumu": 1
     },
     {
-      "id": "0159b1a69d168c6fb762",
+      "id": "a8b7b2aa837f2b45af06",
       "baslik": "USHAŞ Uluslararası Sağlık Hizmetleri A.Ş.",
       "kurum": "USHAŞ Uluslararası Sağlık Hizmetleri A.Ş.",
       "sehir": "Ankara",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "24.07.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/iyvjqru0/kep-iletisi-4682-_-20072026-_-kurum-disi-ilan-hk_ek_strateji_ve_surec_gelistirme_uzman_yardimcisi.docx",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/iyvjqru0/kep-iletisi-4682-_-20072026-_-kurum-disi-ilan-hk_ek_strateji_ve_surec_gelistirme_uzman_yardimcisi.docx",
+      "link": "https://www.iskur.gov.tr/medya/bfhfe5w4/kep-iletisi-4679-_-20072026-_-kurum-disi-ilan-hk_ek_saglik_yonetimi_sorumlusu.docx",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/bfhfe5w4/kep-iletisi-4679-_-20072026-_-kurum-disi-ilan-hk_ek_saglik_yonetimi_sorumlusu.docx",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "PDF metninden belirlenemedi",
@@ -877,6 +173,26 @@
       "son_basvuru": "24.07.2026 23:59",
       "link": "https://www.iskur.gov.tr/medya/y4mphyaj/baypaş-kurum-dışı-kamu-işçi-alım-ilan-formu-hk_ek_20260723_085546.pdf",
       "basvuru_linki": "https://www.iskur.gov.tr/medya/y4mphyaj/baypaş-kurum-dışı-kamu-işçi-alım-ilan-formu-hk_ek_20260723_085546.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "0f08b28a9172ec9cf2f2",
+      "baslik": "Beykoz Turistik İşletmeleri Paz. ve Tic. San. A.Ş.",
+      "kurum": "Beykoz Turistik İşletmeleri Paz. ve Tic. San. A.Ş.",
+      "sehir": "İstanbul",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "24.07.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/n0jh5ccp/umraniye.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/n0jh5ccp/umraniye.pdf",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "PDF metninden belirlenemedi",
@@ -1028,6 +344,26 @@
       "analiz_surumu": 1
     },
     {
+      "id": "5df67f8e479fe7289553",
+      "baslik": "Erbaa Tanoba Belediyesi Personel Ltd. Şti.",
+      "kurum": "Erbaa Tanoba Belediyesi Personel Ltd. Şti.",
+      "sehir": "Tokat",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "24.07.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/0gsdftew/kurum-dışı-işçi-alım-formu.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/0gsdftew/kurum-dışı-işçi-alım-formu.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
       "id": "d98b2c0c8693c85a79e3",
       "baslik": "Tekirdağ Büyükşehir Belediyesi Personel A.Ş.",
       "kurum": "Tekirdağ Büyükşehir Belediyesi Personel A.Ş.",
@@ -1068,15 +404,15 @@
       "analiz_surumu": 1
     },
     {
-      "id": "5df67f8e479fe7289553",
-      "baslik": "Erbaa Tanoba Belediyesi Personel Ltd. Şti.",
-      "kurum": "Erbaa Tanoba Belediyesi Personel Ltd. Şti.",
-      "sehir": "Tokat",
+      "id": "1776beae38eb82f96b04",
+      "baslik": "Zonguldak Filyos Belediyesi Personel Limited Şirketi",
+      "kurum": "Zonguldak Filyos Belediyesi Personel Limited Şirketi",
+      "sehir": "Zonguldak",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "24.07.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/0gsdftew/kurum-dışı-işçi-alım-formu.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/0gsdftew/kurum-dışı-işçi-alım-formu.pdf",
+      "link": "https://www.iskur.gov.tr/medya/ffubupa1/filyos-belediyesi-temmuz.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/ffubupa1/filyos-belediyesi-temmuz.pdf",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "PDF metninden belirlenemedi",
@@ -1088,15 +424,15 @@
       "analiz_surumu": 1
     },
     {
-      "id": "1776beae38eb82f96b04",
-      "baslik": "Zonguldak Filyos Belediyesi Personel Limited Şirketi",
-      "kurum": "Zonguldak Filyos Belediyesi Personel Limited Şirketi",
-      "sehir": "Zonguldak",
+      "id": "9752d34d2981743eadfd",
+      "baslik": "Samsun Gazi İmar İnşaat Özel Eğitim ve Sağlık Hizmetleri Unlu Mamüller Taah. San. Tic. Ltd. Şti.",
+      "kurum": "Samsun Gazi İmar İnşaat Özel Eğitim ve Sağlık Hizmetleri Unlu Mamüller Taah. San. Tic. Ltd. Şti.",
+      "sehir": "Samsun",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "24.07.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/ffubupa1/filyos-belediyesi-temmuz.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/ffubupa1/filyos-belediyesi-temmuz.pdf",
+      "link": "https://www.iskur.gov.tr/medya/r4pak3qi/gazi-imar4.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/r4pak3qi/gazi-imar4.pdf",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "PDF metninden belirlenemedi",
@@ -1470,6 +806,46 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "390bf8e842c05b8ed195",
+      "baslik": "ORDU PERBEL TURZM. SAN. VE TİC. A.Ş.",
+      "kurum": "ORDU PERBEL TURZM. SAN. VE TİC. A.Ş.",
+      "sehir": "Ordu",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "25.07.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/a1ydouaq/perbel.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/a1ydouaq/perbel.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "ad2f21ee2348cd63e843",
+      "baslik": "Samsun Kavak İmar Turizm San. ve Tic. Ltd. Şti.",
+      "kurum": "Samsun Kavak İmar Turizm San. ve Tic. Ltd. Şti.",
+      "sehir": "Samsun",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "25.07.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/sq1bnskz/kavak-imar9.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/sq1bnskz/kavak-imar9.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
       "analiz_surumu": 1
     },
     {
@@ -2177,6 +1553,68 @@
       "analiz_surumu": 1
     },
     {
+      "id": "17c95826d16eb5267ee9",
+      "baslik": "Mersin Büyükşehir İmar İnşaat Elekt. Üret. Özel Güv. Hiz. San. ve Tic. A.Ş.",
+      "kurum": "Mersin Büyükşehir İmar İnşaat Elekt. Üret. Özel Güv. Hiz. San. ve Tic. A.Ş.",
+      "sehir": "Mersin",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "27.07.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/0wsbo5uk/mersin-imar-1.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/0wsbo5uk/mersin-imar-1.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "b6497c9c95f85057a045",
+      "baslik": "Mersin Büyükşehir İmar İnşaat Elekt. Üret. Özel Güv. Hiz. San. ve Tic. A.Ş.",
+      "kurum": "Mersin Büyükşehir İmar İnşaat Elekt. Üret. Özel Güv. Hiz. San. ve Tic. A.Ş.",
+      "sehir": "Mersin",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "27.07.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/dmxhqeip/mersin-imar-2.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/dmxhqeip/mersin-imar-2.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [
+        "Ortaöğretim"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "9e64eee6ec1322d9872c",
+      "baslik": "Mersin Büyükşehir İmar İnşaat Elekt. Üret. Özel Güv. Hiz. San. ve Tic. A.Ş.",
+      "kurum": "Mersin Büyükşehir İmar İnşaat Elekt. Üret. Özel Güv. Hiz. San. ve Tic. A.Ş.",
+      "sehir": "Mersin",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "27.07.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/ahwpatwb/mersin-imar-3.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/ahwpatwb/mersin-imar-3.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 1
+    },
+    {
       "id": "cd596a715442197ccc0a",
       "baslik": "Samsun Çarşamba Öğretmenevi ve Akşam Sanat Okulu Müdürlüğü",
       "kurum": "Samsun Çarşamba Öğretmenevi ve Akşam Sanat Okulu Müdürlüğü",
@@ -2217,6 +1655,66 @@
       "analiz_surumu": 1
     },
     {
+      "id": "c895c43ea80ae01ed440",
+      "baslik": "Eskişehir Espark Park Bahçe Peyzaj Temizlik A.Ş.",
+      "kurum": "Eskişehir Espark Park Bahçe Peyzaj Temizlik A.Ş.",
+      "sehir": "Eskişehir",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "28.07.2026 00:00",
+      "link": "https://www.iskur.gov.tr/medya/ovlm5hmr/kurum-dişi-kamu-işçi-alimi-ilan-formu.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/ovlm5hmr/kurum-dişi-kamu-işçi-alimi-ilan-formu.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "edb54306840b19a6d596",
+      "baslik": "Edirne Öğretmenevi ve Akşam Sanat Okulu Müdürlüğü Ticari İşletmesi",
+      "kurum": "Edirne Öğretmenevi ve Akşam Sanat Okulu Müdürlüğü Ticari İşletmesi",
+      "sehir": "Edirne",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "28.07.2026 12:00",
+      "link": "https://www.iskur.gov.tr/medya/5gsl0l3x/oeğretmenevi-ilan.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/5gsl0l3x/oeğretmenevi-ilan.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "08b903a0d602c13578dd",
+      "baslik": "Bursa Gemlik İnş. Taah. San. ve Tic. A.Ş. GEMTAŞ",
+      "kurum": "Bursa Gemlik İnş. Taah. San. ve Tic. A.Ş. GEMTAŞ",
+      "sehir": "Bursa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "28.07.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/2hhlnwff/gemtaş-28072026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/2hhlnwff/gemtaş-28072026.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
       "id": "d1a192327f90e57b5867",
       "baslik": "Gökçeada E-Ticaret Tur.Ltd.Şti.",
       "kurum": "Gökçeada E-Ticaret Tur.Ltd.Şti.",
@@ -2237,15 +1735,35 @@
       "analiz_surumu": 1
     },
     {
-      "id": "a0313daf19b367dc1a46",
-      "baslik": "Sivas Gölova Sosyal Yardımlaşma ve Dayanışma Vakfı 28.07.202",
-      "kurum": "Sivas Gölova Sosyal Yardımlaşma ve Dayanışma Vakfı 28.07.202",
-      "sehir": "Sivas",
+      "id": "b43e2c1406050d1cce1d",
+      "baslik": "EBTON İNŞAAT SAN. VE TÍC.A. Ş.",
+      "kurum": "EBTON İNŞAAT SAN. VE TÍC.A. Ş.",
+      "sehir": "Antalya",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "28.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/kjrhnokn/sivas-goelova-sosyal-yardımlaşma-ve-dayanışma-vakfı-28072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/kjrhnokn/sivas-goelova-sosyal-yardımlaşma-ve-dayanışma-vakfı-28072026.pdf",
+      "link": "https://www.iskur.gov.tr/medya/sdxnixtb/ebton-24.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/sdxnixtb/ebton-24.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "974cffc3479a494cbce3",
+      "baslik": "Giresun Bulper İnş. San. ve Tic. Ltd. Şti.",
+      "kurum": "Giresun Bulper İnş. San. ve Tic. Ltd. Şti.",
+      "sehir": "Giresun",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "28.07.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/4ixd4yly/bull.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/4ixd4yly/bull.pdf",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "PDF metninden belirlenemedi",
@@ -2277,6 +1795,26 @@
       "analiz_surumu": 1
     },
     {
+      "id": "a0313daf19b367dc1a46",
+      "baslik": "Sivas Gölova Sosyal Yardımlaşma ve Dayanışma Vakfı 28.07.202",
+      "kurum": "Sivas Gölova Sosyal Yardımlaşma ve Dayanışma Vakfı 28.07.202",
+      "sehir": "Sivas",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "28.07.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/kjrhnokn/sivas-goelova-sosyal-yardımlaşma-ve-dayanışma-vakfı-28072026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/kjrhnokn/sivas-goelova-sosyal-yardımlaşma-ve-dayanışma-vakfı-28072026.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
       "id": "e84290c8062fb6f33435",
       "baslik": "Akhisar Belediyesi Personel A.Ş.",
       "kurum": "Akhisar Belediyesi Personel A.Ş.",
@@ -2286,6 +1824,46 @@
       "son_basvuru": "28.07.2026 17:30",
       "link": "https://www.iskur.gov.tr/medya/hfojkyzz/akhisar-beld-pers-aş-işçi-ilan-formu-28072026.pdf",
       "basvuru_linki": "https://www.iskur.gov.tr/medya/hfojkyzz/akhisar-beld-pers-aş-işçi-ilan-formu-28072026.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "365b960b74f000acc0a8",
+      "baslik": "Gölmar Madencilik İnş. İml. San ve Tic. Ltd. Şti.",
+      "kurum": "Gölmar Madencilik İnş. İml. San ve Tic. Ltd. Şti.",
+      "sehir": "Manisa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "28.07.2026 17:30",
+      "link": "https://www.iskur.gov.tr/medya/k2zjt1pa/goelmar-28072026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/k2zjt1pa/goelmar-28072026.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "e69ab8bce8f94836baf4",
+      "baslik": "Kırklareli Pınarhisar Belediyesi Per. Ltd. Şti.",
+      "kurum": "Kırklareli Pınarhisar Belediyesi Per. Ltd. Şti.",
+      "sehir": "Kırklareli",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "28.07.2026 18:00",
+      "link": "https://www.iskur.gov.tr/medya/h0ebcz3c/kırklareli-pınarhisar-belediyesi-per-ltd-şti.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/h0ebcz3c/kırklareli-pınarhisar-belediyesi-per-ltd-şti.pdf",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "PDF metninden belirlenemedi",
@@ -2374,6 +1952,26 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "168766ed29101993c15e",
+      "baslik": "Mersin Mutlu Mezitli Tarım Turizm Gıda Organ. San. ve Tic. Ltd. Şti.",
+      "kurum": "Mersin Mutlu Mezitli Tarım Turizm Gıda Organ. San. ve Tic. Ltd. Şti.",
+      "sehir": "Mersin",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "28.07.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/3cmpyml2/mutlu-24.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/3cmpyml2/mutlu-24.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
       "analiz_surumu": 1
     },
     {
@@ -2514,6 +2112,28 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "f903f7778ae554afb315",
+      "baslik": "Mersin Tarsus İmar Ticaret Limited Şirketi",
+      "kurum": "Mersin Tarsus İmar Ticaret Limited Şirketi",
+      "sehir": "Mersin",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "29.07.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/2m4buyxd/tarsus-b.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/2m4buyxd/tarsus-b.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Maliye",
+        "İşletme",
+        "Muhasebe"
+      ],
+      "pdf_isleme_durumu": "ok",
       "analiz_surumu": 1
     },
     {
@@ -2699,6 +2319,28 @@
       "analiz_surumu": 1
     },
     {
+      "id": "ae545b4b24b0af529380",
+      "baslik": "İzmir İztarım Eğitim Kurumları Danışmanlık Tarımsal Üretim Gıda Marketçilik Satış Pazarlama San. Tic. A.Ş",
+      "kurum": "İzmir İztarım Eğitim Kurumları Danışmanlık Tarımsal Üretim Gıda Marketçilik Satış Pazarlama San. Tic. A.Ş",
+      "sehir": "İzmir",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "30.07.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/00ui12kj/izmir-iztarım-eğitim-kurumları-danışmanlık-tarımsal-ueretim-gıda-marketçilik-satış-pazarlama-san-tic-aş.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/00ui12kj/izmir-iztarım-eğitim-kurumları-danışmanlık-tarımsal-ueretim-gıda-marketçilik-satış-pazarlama-san-tic-aş.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [
+        "Ortaöğretim"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 1
+    },
+    {
       "id": "3a267ed25c5e1f6f5299",
       "baslik": "Denizli Yeşil Çal Turizm Tekstil Petrol İnşaat Taahhüt Nakliyat gıda ve Tarım Ürünleri Sanayi ve Ticaret A.Ş.",
       "kurum": "Denizli Yeşil Çal Turizm Tekstil Petrol İnşaat Taahhüt Nakliyat gıda ve Tarım Ürünleri Sanayi ve Ticaret A.Ş.",
@@ -2763,6 +2405,46 @@
       "analiz_surumu": 1
     },
     {
+      "id": "4821c7c1961c854b23f1",
+      "baslik": "Bursa Osmangazi Belediyesi Personel A.Ş.",
+      "kurum": "Bursa Osmangazi Belediyesi Personel A.Ş.",
+      "sehir": "Bursa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "31.07.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/fz5pi2kh/osmangazi-beld-pers-aş-31072026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/fz5pi2kh/osmangazi-beld-pers-aş-31072026.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "f0f447999a50ce5e407f",
+      "baslik": "Çanakkale Bozcaada Kent Hizmetleri San.Tic.A.Ş",
+      "kurum": "Çanakkale Bozcaada Kent Hizmetleri San.Tic.A.Ş",
+      "sehir": "Çanakkale",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "31.07.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/oewdso03/bozcaada-kent-31-07-2026-beden-işçisi.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/oewdso03/bozcaada-kent-31-07-2026-beden-işçisi.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
       "id": "c8ae46f65a313beaf012",
       "baslik": "Mardin Ömerli İlçesi Sosyal Yardımlaşma ve Dayanışma Vakfı",
       "kurum": "Mardin Ömerli İlçesi Sosyal Yardımlaşma ve Dayanışma Vakfı",
@@ -2812,6 +2494,126 @@
       "son_basvuru": "31.07.2026 17:30",
       "link": "https://www.iskur.gov.tr/medya/3shh5iux/1-dilbel-ilan.pdf",
       "basvuru_linki": "https://www.iskur.gov.tr/medya/3shh5iux/1-dilbel-ilan.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "4a81090236af143834cd",
+      "baslik": "Besot Manisa Beld Müş Müth Hiz Ulaş Top Taş Sos Tes İşl Turz ve Enerji San Tic A.Ş",
+      "kurum": "Besot Manisa Beld Müş Müth Hiz Ulaş Top Taş Sos Tes İşl Turz ve Enerji San Tic A.Ş",
+      "sehir": "Manisa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "31.07.2026 17:30",
+      "link": "https://www.iskur.gov.tr/medya/lnddur0y/besot-31072026-1.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/lnddur0y/besot-31072026-1.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "f943cb0ea7906ef55e1c",
+      "baslik": "Besot Manisa Beld Müş Müth Hiz Ulaş Top Taş Sos Tes İşl Turz ve Enerji San Tic A.Ş",
+      "kurum": "Besot Manisa Beld Müş Müth Hiz Ulaş Top Taş Sos Tes İşl Turz ve Enerji San Tic A.Ş",
+      "sehir": "Manisa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "31.07.2026 17:30",
+      "link": "https://www.iskur.gov.tr/medya/xw2nnikl/besot-31072026-2.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/xw2nnikl/besot-31072026-2.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "2d401eee602980865bbd",
+      "baslik": "Besot Manisa Beld Müş Müth Hiz Ulaş Top Taş Sos Tes İşl Turz ve Enerji San Tic A.Ş",
+      "kurum": "Besot Manisa Beld Müş Müth Hiz Ulaş Top Taş Sos Tes İşl Turz ve Enerji San Tic A.Ş",
+      "sehir": "Manisa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "31.07.2026 17:30",
+      "link": "https://www.iskur.gov.tr/medya/30wcvbir/besot-31072026-3.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/30wcvbir/besot-31072026-3.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "c28697aa4602f2aa6940",
+      "baslik": "Besot Manisa Beld Müş Müth Hiz Ulaş Top Taş Sos Tes İşl Turz ve Enerji San Tic A.Ş",
+      "kurum": "Besot Manisa Beld Müş Müth Hiz Ulaş Top Taş Sos Tes İşl Turz ve Enerji San Tic A.Ş",
+      "sehir": "Manisa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "31.07.2026 17:30",
+      "link": "https://www.iskur.gov.tr/medya/lvylh1fg/besot-31072026-4.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/lvylh1fg/besot-31072026-4.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "b8e7b4888245c1fba6d3",
+      "baslik": "Besot Manisa Beld Müş Müth Hiz Ulaş Top Taş Sos Tes İşl Turz ve Enerji San Tic A.Ş",
+      "kurum": "Besot Manisa Beld Müş Müth Hiz Ulaş Top Taş Sos Tes İşl Turz ve Enerji San Tic A.Ş",
+      "sehir": "Manisa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "31.07.2026 17:30",
+      "link": "https://www.iskur.gov.tr/medya/lwul4lyr/besot-31072026-5.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/lwul4lyr/besot-31072026-5.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "3e8e3c38232f3af07a11",
+      "baslik": "Besot Manisa Beld Müş Müth Hiz Ulaş Top Taş Sos Tes İşl Turz ve Enerji San Tic A.Ş",
+      "kurum": "Besot Manisa Beld Müş Müth Hiz Ulaş Top Taş Sos Tes İşl Turz ve Enerji San Tic A.Ş",
+      "sehir": "Manisa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "31.07.2026 17:30",
+      "link": "https://www.iskur.gov.tr/medya/ttxp0lci/besot-31072026-6.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/ttxp0lci/besot-31072026-6.pdf",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "PDF metninden belirlenemedi",
@@ -3049,6 +2851,28 @@
       "analiz_surumu": 1
     },
     {
+      "id": "363e44c42c7889588e47",
+      "baslik": "Mersin Yenişehir Sosyal Yardımlaşma ve Dayanışma Vakfı Başkanlığı",
+      "kurum": "Mersin Yenişehir Sosyal Yardımlaşma ve Dayanışma Vakfı Başkanlığı",
+      "sehir": "Mersin",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "05.08.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/dkdhaofd/yen-sos.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/dkdhaofd/yen-sos.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [
+        "Önlisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 1
+    },
+    {
       "id": "52d6bf1c05db0c5de729",
       "baslik": "Sanayii ve Teknoloji Bakanlığı Uzman Yardımcılığı Sınav İlanı",
       "kurum": "Sanayii ve Teknoloji Bakanlığı Uzman Yardımcılığı Sınav İlanı",
@@ -3062,6 +2886,30 @@
       "minimum_puan": null,
       "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
       "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "74338bebb14374662097",
+      "baslik": "Tarım ve Orman Bakanlığı Sözleşmeli Personel Alım İlanı",
+      "kurum": "Tarım ve Orman Bakanlığı Sözleşmeli Personel Alım İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "09.08.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/vsrp1k4t/tarım-ve-orman-bakanlığı-soezleşmeli-personel-alım-ilanı-09082026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/vsrp1k4t/tarım-ve-orman-bakanlığı-soezleşmeli-personel-alım-ilanı-09082026.pdf",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Ortaöğretim",
+        "Önlisans",
+        "Lisans"
+      ],
       "bolumler": [
         "Diğer"
       ],
@@ -3088,30 +2936,6 @@
         "Maliye",
         "İşletme",
         "Muhasebe"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "74338bebb14374662097",
-      "baslik": "Tarım ve Orman Bakanlığı Sözleşmeli Personel Alım İlanı",
-      "kurum": "Tarım ve Orman Bakanlığı Sözleşmeli Personel Alım İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "09.08.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/vsrp1k4t/tarım-ve-orman-bakanlığı-soezleşmeli-personel-alım-ilanı-09082026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/vsrp1k4t/tarım-ve-orman-bakanlığı-soezleşmeli-personel-alım-ilanı-09082026.pdf",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Ortaöğretim",
-        "Önlisans",
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 1
