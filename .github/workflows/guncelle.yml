@@ -2,8 +2,9 @@ name: Kamu İlanlarını Güncelle
 
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "17 */6 * * *"
 
 permissions:
   contents: write
@@ -23,16 +24,16 @@ jobs:
 
       - name: Kütüphaneleri kur
         run: |
-          pip install playwright beautifulsoup4
-          python -m playwright install --with-deps chromium
+          pip install requests beautifulsoup4 pypdf
 
-      - name: İlanları çek
-        run: python guncelle.py
+      - name: İlanları ve PDF bilgilerini çek
+        run: |
+          python guncelle.py
 
       - name: JSON dosyasını kaydet
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add ilanlar.json
-          git diff --cached --quiet || git commit -m "İlanlar güncellendi"
+          git diff --cached --quiet || git commit -m "İlanlar ve filtre bilgileri güncellendi"
           git push
