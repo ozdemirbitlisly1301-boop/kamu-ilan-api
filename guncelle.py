@@ -33,7 +33,12 @@ KAYNAKLAR = [
     },
 ]
 
-OSYM_KPSS_URL = "https://www.osym.gov.tr/sonuclar/kpss/"
+OSYM_ARAMA_URL = "https://www.osym.gov.tr/arama"
+OSYM_ARAMA_TERIMLERI = (
+    "kpss tercih",
+    "kpss yerleştirme",
+    "kpss kadro pozisyon",
+)
 
 SEHIRLER = [
     ("adana", "Adana"),
@@ -333,9 +338,7 @@ def sayfadan_ilanlari_al(kaynak, sehir_kodu, sehir_adi):
 
 
 def osym_kpss_duyurularini_al():
-    """ÖSYM'nin resmî KPSS sayfasındaki tercih/yerleştirme duyurularını alır."""
-    html = sayfayi_indir(OSYM_KPSS_URL)
-    soup = BeautifulSoup(html, "html.parser")
+    """ÖSYM'nin resmî arama sayfasındaki KPSS tercih duyurularını alır."""
     ilanlar = []
     gorulen_linkler = set()
 
@@ -348,64 +351,78 @@ def osym_kpss_duyurularini_al():
         "basvuru",
     )
 
-    for link_etiketi in soup.find_all("a", href=True):
-        baslik = temizle(link_etiketi.get_text(" ", strip=True))
-        href = temizle(link_etiketi.get("href", ""))
-
-        if len(baslik) < 15 or not href:
-            continue
-
-        normal_baslik = arama_metnine_cevir(baslik)
-
-        if "kpss" not in normal_baslik:
-            continue
-
-        if not any(kelime in normal_baslik for kelime in ilgili_kelimeler):
-            continue
-
-        link = urljoin(OSYM_KPSS_URL, href)
-
-        if "osym.gov.tr" not in link.casefold():
-            continue
-
-        # Menü/kategori bağlantıları yerine yalnızca duyuru ayrıntıları.
-        if "/tr," not in link.casefold() and "/tr%2c" not in link.casefold():
-            continue
-
-        anahtar = link_anahtari(link)
-
-        if anahtar in gorulen_linkler:
-            continue
-
-        gorulen_linkler.add(anahtar)
-
-        kapsayici = link_etiketi.find_parent(["li", "article", "div", "tr"])
-        kapsayici_metni = (
-            temizle(kapsayici.get_text(" ", strip=True))
-            if kapsayici is not None
-            else baslik
+    for arama_terimi in OSYM_ARAMA_TERIMLERI:
+        html = sayfayi_indir(
+            OSYM_ARAMA_URL,
+            params={
+                "_Dil": "1",
+                "aranan": arama_terimi,
+            },
         )
-        yayin_tarihi = tarih_bul(kapsayici_metni) or tarih_bul(baslik)
+        soup = BeautifulSoup(html, "html.parser")
 
-        ilanlar.append({
-            "id": ilan_id_uret(link),
-            "baslik": baslik[:400],
-            "kurum": "ÖSYM",
-            "sehir": "Türkiye Geneli",
-            "tur": "KPSS Duyurusu",
-            "kaynak": "ÖSYM KPSS Duyuruları",
-            "son_basvuru": "",
-            "yayin_tarihi": yayin_tarihi,
-            "link": link,
-            "basvuru_linki": link,
-            "kpss_gerekli": True,
-            "minimum_puan": None,
-            "kpss_durumu": "KPSS tercih/yerleştirme duyurusu",
-            "mezuniyetler": ["Ortaöğretim", "Önlisans", "Lisans"],
-            "bolumler": ["Tüm Bölümler"],
-            "pdf_isleme_durumu": "uygulanmaz",
-            "analiz_surumu": ANALIZ_SURUMU,
-        })
+        for link_etiketi in soup.find_all("a", href=True):
+            baslik = temizle(link_etiketi.get_text(" ", strip=True))
+            href = temizle(link_etiketi.get("href", ""))
+
+            if len(baslik) < 15 or not href:
+                continue
+
+            normal_baslik = arama_metnine_cevir(baslik)
+
+            if "kpss" not in normal_baslik:
+                continue
+
+            if not any(kelime in normal_baslik for kelime in ilgili_kelimeler):
+                continue
+
+            if href.startswith("#") or href.casefold().startswith("javascript:"):
+                continue
+
+            link = urljoin(OSYM_ARAMA_URL, href)
+            normal_link = link.casefold()
+
+            if "osym.gov.tr" not in normal_link:
+                continue
+
+            # Arama sayfasının kendisini ve genel kategori bağlantılarını alma.
+            if "/arama" in normal_link:
+                continue
+
+            anahtar = link_anahtari(link)
+
+            if anahtar in gorulen_linkler:
+                continue
+
+            gorulen_linkler.add(anahtar)
+
+            kapsayici = link_etiketi.find_parent(["li", "article", "div", "tr"])
+            kapsayici_metni = (
+                temizle(kapsayici.get_text(" ", strip=True))
+                if kapsayici is not None
+                else baslik
+            )
+            yayin_tarihi = tarih_bul(kapsayici_metni) or tarih_bul(baslik)
+
+            ilanlar.append({
+                "id": ilan_id_uret(link),
+                "baslik": baslik[:400],
+                "kurum": "ÖSYM",
+                "sehir": "Türkiye Geneli",
+                "tur": "KPSS Duyurusu",
+                "kaynak": "ÖSYM KPSS Duyuruları",
+                "son_basvuru": "",
+                "yayin_tarihi": yayin_tarihi,
+                "link": link,
+                "basvuru_linki": link,
+                "kpss_gerekli": True,
+                "minimum_puan": None,
+                "kpss_durumu": "KPSS tercih/yerleştirme duyurusu",
+                "mezuniyetler": ["Ortaöğretim", "Önlisans", "Lisans"],
+                "bolumler": ["Tüm Bölümler"],
+                "pdf_isleme_durumu": "uygulanmaz",
+                "analiz_surumu": ANALIZ_SURUMU,
+            })
 
     return ilanlar
 
