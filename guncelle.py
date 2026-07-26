@@ -33,6 +33,8 @@ KAYNAKLAR = [
     },
 ]
 
+OSYM_KPSS_URL = "https://www.osym.gov.tr/sonuclar/kpss/"
+
 SEHIRLER = [
     ("adana", "Adana"),
     ("adiyaman", "Adıyaman"),
@@ -329,6 +331,84 @@ def sayfadan_ilanlari_al(kaynak, sehir_kodu, sehir_adi):
     return ilanlar
 
 
+
+def osym_kpss_duyurularini_al():
+    """ÖSYM'nin resmî KPSS sayfasındaki tercih/yerleştirme duyurularını alır."""
+    html = sayfayi_indir(OSYM_KPSS_URL)
+    soup = BeautifulSoup(html, "html.parser")
+    ilanlar = []
+    gorulen_linkler = set()
+
+    ilgili_kelimeler = (
+        "tercih",
+        "yerlestirme",
+        "kadro",
+        "pozisyon",
+        "basvurularin alinmasi",
+        "basvuru",
+    )
+
+    for link_etiketi in soup.find_all("a", href=True):
+        baslik = temizle(link_etiketi.get_text(" ", strip=True))
+        href = temizle(link_etiketi.get("href", ""))
+
+        if len(baslik) < 15 or not href:
+            continue
+
+        normal_baslik = arama_metnine_cevir(baslik)
+
+        if "kpss" not in normal_baslik:
+            continue
+
+        if not any(kelime in normal_baslik for kelime in ilgili_kelimeler):
+            continue
+
+        link = urljoin(OSYM_KPSS_URL, href)
+
+        if "osym.gov.tr" not in link.casefold():
+            continue
+
+        # Menü/kategori bağlantıları yerine yalnızca duyuru ayrıntıları.
+        if "/tr," not in link.casefold() and "/tr%2c" not in link.casefold():
+            continue
+
+        anahtar = link_anahtari(link)
+
+        if anahtar in gorulen_linkler:
+            continue
+
+        gorulen_linkler.add(anahtar)
+
+        kapsayici = link_etiketi.find_parent(["li", "article", "div", "tr"])
+        kapsayici_metni = (
+            temizle(kapsayici.get_text(" ", strip=True))
+            if kapsayici is not None
+            else baslik
+        )
+        yayin_tarihi = tarih_bul(kapsayici_metni) or tarih_bul(baslik)
+
+        ilanlar.append({
+            "id": ilan_id_uret(link),
+            "baslik": baslik[:400],
+            "kurum": "ÖSYM",
+            "sehir": "Türkiye Geneli",
+            "tur": "KPSS Duyurusu",
+            "kaynak": "ÖSYM KPSS Duyuruları",
+            "son_basvuru": "",
+            "yayin_tarihi": yayin_tarihi,
+            "link": link,
+            "basvuru_linki": link,
+            "kpss_gerekli": True,
+            "minimum_puan": None,
+            "kpss_durumu": "KPSS tercih/yerleştirme duyurusu",
+            "mezuniyetler": ["Ortaöğretim", "Önlisans", "Lisans"],
+            "bolumler": ["Tüm Bölümler"],
+            "pdf_isleme_durumu": "uygulanmaz",
+            "analiz_surumu": ANALIZ_SURUMU,
+        })
+
+    return ilanlar
+
 def gorevi_calistir(kaynak, sehir_kodu, sehir_adi):
     try:
         ilanlar = sayfadan_ilanlari_al(
@@ -570,6 +650,9 @@ def onceki_analiz_kullanilabilir(onceki):
 
 
 def ilani_zenginlestir(ilan, onceki_analizler):
+    if ilan.get("kaynak") == "ÖSYM KPSS Duyuruları":
+        return ilan, False
+
     anahtar = link_anahtari(ilan.get("link", ""))
     onceki = onceki_analizler.get(anahtar)
 
@@ -664,6 +747,16 @@ def main():
                 f"Sayfalar: {tamamlanan}/{len(gorevler)} "
                 f"- bulunan: {len(tum_ilanlar)}"
             )
+
+    try:
+        osym_ilanlari = osym_kpss_duyurularini_al()
+        tum_ilanlar.extend(osym_ilanlari)
+        print(f"ÖSYM KPSS duyuruları: {len(osym_ilanlari)}")
+    except Exception as hata:
+        hatalar.append(
+            "ÖSYM KPSS duyuruları: "
+            f"{type(hata).__name__} - {str(hata)[:150]}"
+        )
 
     benzersiz = {}
 
