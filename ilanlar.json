@@ -1,28 +1,8 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-07-25T21:14:16.147690+00:00",
-  "ilan_sayisi": 126,
+  "guncellenme_zamani": "2026-07-26T09:03:55.864258+00:00",
+  "ilan_sayisi": 125,
   "ilanlar": [
-    {
-      "id": "6b691774ca88b5b47baf",
-      "baslik": "Diyarbakır İl Kültür Müze Müdürlüğü",
-      "kurum": "Diyarbakır İl Kültür Müze Müdürlüğü",
-      "sehir": "Diyarbakır",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "26.07.2026 12:00",
-      "link": "https://www.iskur.gov.tr/medya/x4scgb2r/diyarbakır-il-kueltuer-mueze-mueduerlueğue-24072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/x4scgb2r/diyarbakır-il-kueltuer-mueze-mueduerlueğue-24072026.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
     {
       "id": "1cff9e138f9fc75285ca",
       "baslik": "Adana Pozantı Yaşam Restoran Ltd. Şti.",
