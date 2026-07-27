@@ -337,19 +337,44 @@ def sayfadan_ilanlari_al(kaynak, sehir_kodu, sehir_adi):
 
 
 
+def osym_aktif_duyuru_mu(baslik):
+    """Yalnızca başvuru/tercih süreci devam eden ÖSYM duyurularını kabul eder."""
+    normal_baslik = arama_metnine_cevir(baslik)
+
+    # Sonuç ve sınav sonrası haberleri uygulamada açık ilan gibi göstermeyelim.
+    engellenen_ifadeler = (
+        "sonuclari aciklandi",
+        "sonuc aciklandi",
+        "yerlestirme sonuclari",
+        "sinav sonuclari",
+        "cevap kagidi",
+        "cevap anahtari",
+        "soru kitapcigi",
+        "degerlendirme raporu",
+        "sayisal bilgiler",
+        "taban puanlar",
+        "ek yerlestirme sonuclari",
+    )
+
+    if any(ifade in normal_baslik for ifade in engellenen_ifadeler):
+        return False
+
+    aktif_ifadeler = (
+        "tercih",
+        "basvuru",
+        "kilavuz",
+        "kadro ve pozisyon",
+    )
+
+    return "kpss" in normal_baslik and any(
+        ifade in normal_baslik for ifade in aktif_ifadeler
+    )
+
+
 def osym_kpss_duyurularini_al():
-    """ÖSYM'nin resmî arama sayfasındaki KPSS tercih duyurularını alır."""
+    """ÖSYM'den yalnızca aktif KPSS başvuru ve tercih duyurularını alır."""
     ilanlar = []
     gorulen_linkler = set()
-
-    ilgili_kelimeler = (
-        "tercih",
-        "yerlestirme",
-        "kadro",
-        "pozisyon",
-        "basvurularin alinmasi",
-        "basvuru",
-    )
 
     for arama_terimi in OSYM_ARAMA_TERIMLERI:
         html = sayfayi_indir(
@@ -368,12 +393,7 @@ def osym_kpss_duyurularini_al():
             if len(baslik) < 15 or not href:
                 continue
 
-            normal_baslik = arama_metnine_cevir(baslik)
-
-            if "kpss" not in normal_baslik:
-                continue
-
-            if not any(kelime in normal_baslik for kelime in ilgili_kelimeler):
+            if not osym_aktif_duyuru_mu(baslik):
                 continue
 
             if href.startswith("#") or href.casefold().startswith("javascript:"):
