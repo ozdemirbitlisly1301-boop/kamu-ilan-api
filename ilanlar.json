@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-07-27T21:55:13.432591+00:00",
-  "ilan_sayisi": 131,
+  "guncellenme_zamani": "2026-07-27T23:52:39.493236+00:00",
+  "ilan_sayisi": 130,
   "ilanlar": [
     {
       "id": "edb54306840b19a6d596",
@@ -1434,6 +1434,26 @@
       "analiz_surumu": 1
     },
     {
+      "id": "7aa94dc34c1131fcfdf6",
+      "baslik": "Burdur Bucak Sağlık ve Sağlık Turizmi Destek Hiz. A.Ş.",
+      "kurum": "Burdur Bucak Sağlık ve Sağlık Turizmi Destek Hiz. A.Ş.",
+      "sehir": "Burdur",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "31.07.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/bzspvayi/burdur-bucak-sağlık-ve-sağlık-turizmi-destek-hiz-aş-31072026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/bzspvayi/burdur-bucak-sağlık-ve-sağlık-turizmi-destek-hiz-aş-31072026.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
       "id": "78b974f7a5a7f3d619cd",
       "baslik": "Beylikdüzü Belediyesi Personel A.Ş.",
       "kurum": "Beylikdüzü Belediyesi Personel A.Ş.",
@@ -1503,26 +1523,6 @@
       "son_basvuru": "31.07.2026 23:59",
       "link": "https://www.iskur.gov.tr/medya/a1oeglpi/guelnar.pdf",
       "basvuru_linki": "https://www.iskur.gov.tr/medya/a1oeglpi/guelnar.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "7aa94dc34c1131fcfdf6",
-      "baslik": "Burdur Bucak Sağlık ve Sağlık Turizmi Destek Hiz. A.Ş.",
-      "kurum": "Burdur Bucak Sağlık ve Sağlık Turizmi Destek Hiz. A.Ş.",
-      "sehir": "Burdur",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "31.07.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/bzspvayi/burdur-bucak-sağlık-ve-sağlık-turizmi-destek-hiz-aş-31072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/bzspvayi/burdur-bucak-sağlık-ve-sağlık-turizmi-destek-hiz-aş-31072026.pdf",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "PDF metninden belirlenemedi",
@@ -2677,31 +2677,6 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "7359e5579b1b4dce9ed2",
-      "baslik": "KPSS-2026/1: Bazı Kamu Kurum ve Kuruluşlarının Kadro ve Pozisyonlarına Yerleştirme Sonuçları Açıklandı",
-      "kurum": "ÖSYM",
-      "sehir": "Türkiye Geneli",
-      "tur": "KPSS Duyurusu",
-      "kaynak": "ÖSYM KPSS Duyuruları",
-      "son_basvuru": "",
-      "yayin_tarihi": "24.07.2026",
-      "link": "https://www.osym.gov.tr/kpss-20261-bazi-kamu-kurum-ve-kuruluslarinin-kadro-ve-pozisyonlarina-yerlestirme-sonuclari-aciklandi",
-      "basvuru_linki": "https://www.osym.gov.tr/kpss-20261-bazi-kamu-kurum-ve-kuruluslarinin-kadro-ve-pozisyonlarina-yerlestirme-sonuclari-aciklandi",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS tercih/yerleştirme duyurusu",
-      "mezuniyetler": [
-        "Ortaöğretim",
-        "Önlisans",
-        "Lisans"
-      ],
-      "bolumler": [
-        "Tüm Bölümler"
-      ],
-      "pdf_isleme_durumu": "uygulanmaz",
       "analiz_surumu": 1
     }
   ],
