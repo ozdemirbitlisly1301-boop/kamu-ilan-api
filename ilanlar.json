@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-07-28T00:34:56.972130+00:00",
+  "guncellenme_zamani": "2026-07-28T00:59:25.377554+00:00",
   "ilan_sayisi": 135,
   "ilanlar": [
     {
@@ -64,15 +64,15 @@
       "analiz_surumu": 1
     },
     {
-      "id": "08b903a0d602c13578dd",
-      "baslik": "Bursa Gemlik İnş. Taah. San. ve Tic. A.Ş. GEMTAŞ",
-      "kurum": "Bursa Gemlik İnş. Taah. San. ve Tic. A.Ş. GEMTAŞ",
-      "sehir": "Bursa",
+      "id": "d1a192327f90e57b5867",
+      "baslik": "Gökçeada E-Ticaret Tur.Ltd.Şti.",
+      "kurum": "Gökçeada E-Ticaret Tur.Ltd.Şti.",
+      "sehir": "Çanakkale",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "28.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/2hhlnwff/gemtaş-28072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/2hhlnwff/gemtaş-28072026.pdf",
+      "link": "https://www.iskur.gov.tr/medya/3r1fcu1g/goekçeada-e-ticaret-tur-28072026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/3r1fcu1g/goekçeada-e-ticaret-tur-28072026.pdf",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "PDF metninden belirlenemedi",
@@ -84,15 +84,15 @@
       "analiz_surumu": 1
     },
     {
-      "id": "d1a192327f90e57b5867",
-      "baslik": "Gökçeada E-Ticaret Tur.Ltd.Şti.",
-      "kurum": "Gökçeada E-Ticaret Tur.Ltd.Şti.",
-      "sehir": "Çanakkale",
+      "id": "08b903a0d602c13578dd",
+      "baslik": "Bursa Gemlik İnş. Taah. San. ve Tic. A.Ş. GEMTAŞ",
+      "kurum": "Bursa Gemlik İnş. Taah. San. ve Tic. A.Ş. GEMTAŞ",
+      "sehir": "Bursa",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "28.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/3r1fcu1g/goekçeada-e-ticaret-tur-28072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/3r1fcu1g/goekçeada-e-ticaret-tur-28072026.pdf",
+      "link": "https://www.iskur.gov.tr/medya/2hhlnwff/gemtaş-28072026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/2hhlnwff/gemtaş-28072026.pdf",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "PDF metninden belirlenemedi",
@@ -806,26 +806,6 @@
       "analiz_surumu": 1
     },
     {
-      "id": "39bdb0cd92e29e0599eb",
-      "baslik": "Dışişleri Bakanlığı Aday Meslek Memurluğu Sınav İlanı",
-      "kurum": "Dışişleri Bakanlığı Aday Meslek Memurluğu Sınav İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "30.07.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/zvkdt4uj/dışişleri-bakanlığı-aday-meslek-memurluğu-sınav-ilanı-30072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/zvkdt4uj/dışişleri-bakanlığı-aday-meslek-memurluğu-sınav-ilanı-30072026.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 1
-    },
-    {
       "id": "cadb89dda5c2e0239cea",
       "baslik": "Anayasa Mahkemesi Başkanlığı Sözleşmeli Personel Alım İlanı",
       "kurum": "Anayasa Mahkemesi Başkanlığı Sözleşmeli Personel Alım İlanı",
@@ -841,6 +821,26 @@
       "mezuniyetler": [
         "Ortaöğretim"
       ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "39bdb0cd92e29e0599eb",
+      "baslik": "Dışişleri Bakanlığı Aday Meslek Memurluğu Sınav İlanı",
+      "kurum": "Dışişleri Bakanlığı Aday Meslek Memurluğu Sınav İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "30.07.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/zvkdt4uj/dışişleri-bakanlığı-aday-meslek-memurluğu-sınav-ilanı-30072026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/zvkdt4uj/dışişleri-bakanlığı-aday-meslek-memurluğu-sınav-ilanı-30072026.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
       "bolumler": [
         "Diğer"
       ],
@@ -1114,26 +1114,6 @@
       "analiz_surumu": 1
     },
     {
-      "id": "4821c7c1961c854b23f1",
-      "baslik": "Bursa Osmangazi Belediyesi Personel A.Ş.",
-      "kurum": "Bursa Osmangazi Belediyesi Personel A.Ş.",
-      "sehir": "Bursa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "31.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/fz5pi2kh/osmangazi-beld-pers-aş-31072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/fz5pi2kh/osmangazi-beld-pers-aş-31072026.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 1
-    },
-    {
       "id": "f0f447999a50ce5e407f",
       "baslik": "Çanakkale Bozcaada Kent Hizmetleri San.Tic.A.Ş",
       "kurum": "Çanakkale Bozcaada Kent Hizmetleri San.Tic.A.Ş",
@@ -1171,6 +1151,26 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "4821c7c1961c854b23f1",
+      "baslik": "Bursa Osmangazi Belediyesi Personel A.Ş.",
+      "kurum": "Bursa Osmangazi Belediyesi Personel A.Ş.",
+      "sehir": "Bursa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "31.07.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/fz5pi2kh/osmangazi-beld-pers-aş-31072026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/fz5pi2kh/osmangazi-beld-pers-aş-31072026.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
       "analiz_surumu": 1
     },
     {
@@ -2913,6 +2913,13 @@
       "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru6/"
     }
   ],
+  "bildirim_sonucu": {
+    "durum": "yeni_kayit_yok",
+    "yeni_ilan": 0,
+    "yeni_haber": 0,
+    "gonderilen": 0,
+    "mesaj": "Yeni ilan veya haber bulunmadı."
+  },
   "hata_sayisi": 0,
   "pdf_hata_sayisi": 1,
   "hatalar": []
