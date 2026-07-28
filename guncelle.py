@@ -40,6 +40,42 @@ OSYM_ARAMA_TERIMLERI = (
     "kpss kadro pozisyon",
 )
 
+RESMI_DUYURU_KAYNAKLARI = (
+    {
+        "kaynak": "GSB Personel Alımları",
+        "kurum": "Gençlik ve Spor Bakanlığı",
+        "url": "https://www.gsb.gov.tr/tr/duyurular/",
+        "link_parcalari": ("/tr/duyuru/", "/tr/haber-detay/"),
+    },
+    {
+        "kaynak": "Aile Bakanlığı Personel Alımları",
+        "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+        "url": "https://www.aile.gov.tr/pgm/duyurular",
+        "link_parcalari": ("/pgm/duyurular/",),
+    },
+    {
+        "kaynak": "Adalet Bakanlığı Personel Alımları",
+        "kurum": "Adalet Bakanlığı",
+        "url": "https://pgm.adalet.gov.tr/Home/",
+        "link_parcalari": ("/Home/SayfaDetay/",),
+    },
+)
+
+TURKCE_AYLAR = {
+    "ocak": 1,
+    "subat": 2,
+    "mart": 3,
+    "nisan": 4,
+    "mayis": 5,
+    "haziran": 6,
+    "temmuz": 7,
+    "agustos": 8,
+    "eylul": 9,
+    "ekim": 10,
+    "kasim": 11,
+    "aralik": 12,
+}
+
 SEHIRLER = [
     ("adana", "Adana"),
     ("adiyaman", "Adıyaman"),
@@ -446,6 +482,272 @@ def osym_kpss_duyurularini_al():
 
     return ilanlar
 
+
+def personel_alim_duyurusu_mu(baslik):
+    """Açık personel/işçi alım ilanlarını sonuç ve kurum içi haberlerden ayırır."""
+    normal = arama_metnine_cevir(baslik)
+
+    engellenen_ifadeler = (
+        "sonuc",
+        "yerlestirme sonucu",
+        "basvuru sonucu",
+        "sinav sonucu",
+        "sozlu sinav",
+        "uygulamali sinav",
+        "mulakat",
+        "taban puan",
+        "tavan puan",
+        "evrak",
+        "belge teslim",
+        "itiraz",
+        "nakil",
+        "yer degistirme",
+        "gorevde yukselme",
+        "unvan degisikligi",
+        "atamaya hak kazanan",
+        "atama islemleri",
+    )
+
+    if any(ifade in normal for ifade in engellenen_ifadeler):
+        return False
+
+    alim_ifadeleri = (
+        "personel alim",
+        "isci alim",
+        "memur alim",
+        "sozlesmeli personel",
+        "bilisim personeli",
+        "uzman yardimcisi",
+        "mufettis yardimcisi",
+        "zabit katibi",
+        "mubasir",
+        "destek personeli",
+        "koruma ve guvenlik gorevlisi",
+        "antrenor alimi",
+        "genclik calisani alimi",
+        "yurt yonetim personeli",
+        "avukat ve muhendis alimi",
+        "sosyal calismaci alimi",
+        "psikolog alimi",
+    )
+
+    return any(ifade in normal for ifade in alim_ifadeleri)
+
+
+def turkce_tarihleri_bul(metin):
+    """Metindeki sayısal ve Türkçe ay adlarıyla yazılmış tarihleri bulur."""
+    bulunanlar = []
+    normal = arama_metnine_cevir(metin)
+
+    for eslesme in re.finditer(
+        r"\b(\d{1,2})[./-](\d{1,2})[./-](\d{4})\b",
+        normal,
+    ):
+        try:
+            tarih = datetime(
+                int(eslesme.group(3)),
+                int(eslesme.group(2)),
+                int(eslesme.group(1)),
+            )
+            bulunanlar.append(tarih)
+        except ValueError:
+            continue
+
+    ay_deseni = "|".join(TURKCE_AYLAR)
+
+    # Örnek: 18 - 24 Mayıs 2026 -> son gün olan 24.05.2026
+    for eslesme in re.finditer(
+        rf"\b\d{{1,2}}\s*[-–]\s*(\d{{1,2}})\s+({ay_deseni})\s+(\d{{4}})\b",
+        normal,
+    ):
+        try:
+            bulunanlar.append(datetime(
+                int(eslesme.group(3)),
+                TURKCE_AYLAR[eslesme.group(2)],
+                int(eslesme.group(1)),
+            ))
+        except ValueError:
+            continue
+
+    # Örnek: 24 Mayıs 2026
+    for eslesme in re.finditer(
+        rf"\b(\d{{1,2}})\s+({ay_deseni})\s+(\d{{4}})\b",
+        normal,
+    ):
+        try:
+            bulunanlar.append(datetime(
+                int(eslesme.group(3)),
+                TURKCE_AYLAR[eslesme.group(2)],
+                int(eslesme.group(1)),
+            ))
+        except ValueError:
+            continue
+
+    return bulunanlar
+
+
+def son_basvuru_tarihi_bul(metin):
+    """Başvuru cümlelerindeki en ileri tarihi son başvuru olarak seçer."""
+    normal = arama_metnine_cevir(metin)
+    aday_tarihler = []
+
+    anahtarlar = (
+        "son basvuru",
+        "basvurular",
+        "basvuru tarih",
+        "basvurularini",
+        "basvuru suresi",
+    )
+
+    for anahtar in anahtarlar:
+        baslangic = 0
+        while True:
+            konum = normal.find(anahtar, baslangic)
+            if konum < 0:
+                break
+
+            pencere = normal[max(0, konum - 80):konum + 350]
+            aday_tarihler.extend(turkce_tarihleri_bul(pencere))
+            baslangic = konum + len(anahtar)
+
+    if not aday_tarihler:
+        return ""
+
+    return max(aday_tarihler).strftime("%d.%m.%Y")
+
+
+def duyuru_icerigini_al(url):
+    html = sayfayi_indir(url)
+    soup = BeautifulSoup(html, "html.parser")
+
+    for etiket in soup(["script", "style", "noscript", "svg"]):
+        etiket.decompose()
+
+    adaylar = []
+
+    for secici in (
+        "main",
+        "article",
+        ".detail",
+        ".content",
+        ".page-content",
+        ".news-detail",
+        ".duyuru-detay",
+    ):
+        for dugum in soup.select(secici):
+            metin = temizle(dugum.get_text(" ", strip=True))
+            if len(metin) >= 120:
+                adaylar.append((len(metin), metin))
+
+    if adaylar:
+        detay_metni = max(adaylar, key=lambda oge: oge[0])[1]
+    else:
+        detay_metni = temizle(soup.get_text(" ", strip=True))
+
+    baslik_etiketi = soup.find(["h1", "h2"])
+    sayfa_basligi = (
+        temizle(baslik_etiketi.get_text(" ", strip=True))
+        if baslik_etiketi is not None
+        else ""
+    )
+
+    basvuru_linki = url
+
+    for etiket in soup.find_all("a", href=True):
+        href = temizle(etiket.get("href", ""))
+        yazi = arama_metnine_cevir(
+            etiket.get_text(" ", strip=True)
+        )
+        normal_href = href.casefold()
+
+        if (
+            "kariyerkapisi" in normal_href
+            or "isealim" in normal_href
+            or "basvuru" in yazi
+        ):
+            basvuru_linki = urljoin(url, href)
+            break
+
+    return sayfa_basligi, detay_metni, basvuru_linki
+
+
+def resmi_kaynaktan_ilanlari_al(kaynak):
+    """GSB, Aile ve Adalet Bakanlığı resmî duyuru sayfalarını tarar."""
+    html = sayfayi_indir(kaynak["url"])
+    soup = BeautifulSoup(html, "html.parser")
+    ilanlar = []
+    gorulen_linkler = set()
+
+    for link_etiketi in soup.find_all("a", href=True):
+        baslik = temizle(link_etiketi.get_text(" ", strip=True))
+        href = temizle(link_etiketi.get("href", ""))
+
+        if len(baslik) < 12 or not href:
+            continue
+
+        link = urljoin(kaynak["url"], href)
+        normal_link = link.casefold()
+
+        if not any(
+            parca.casefold() in normal_link
+            for parca in kaynak["link_parcalari"]
+        ):
+            continue
+
+        if not personel_alim_duyurusu_mu(baslik):
+            continue
+
+        anahtar = link_anahtari(link)
+
+        if anahtar in gorulen_linkler:
+            continue
+
+        gorulen_linkler.add(anahtar)
+
+        try:
+            sayfa_basligi, detay_metni, basvuru_linki = (
+                duyuru_icerigini_al(link)
+            )
+        except Exception:
+            sayfa_basligi = ""
+            detay_metni = baslik
+            basvuru_linki = link
+
+        gercek_baslik = baslik_temizle(sayfa_basligi or baslik)
+
+        if not personel_alim_duyurusu_mu(gercek_baslik):
+            continue
+
+        son_basvuru = son_basvuru_tarihi_bul(detay_metni)
+        kpss_gerekli, minimum_puan, kpss_durumu = (
+            kpss_bilgisi_bul(detay_metni, "ok")
+        )
+
+        ilanlar.append({
+            "id": ilan_id_uret(link),
+            "baslik": gercek_baslik[:400],
+            "kurum": kaynak["kurum"],
+            "sehir": "Türkiye Geneli",
+            "tur": "Personel Alımı",
+            "kaynak": kaynak["kaynak"],
+            "son_basvuru": son_basvuru,
+            "link": link,
+            "basvuru_linki": basvuru_linki,
+            "kpss_gerekli": kpss_gerekli,
+            "minimum_puan": minimum_puan,
+            "kpss_durumu": kpss_durumu,
+            "mezuniyetler": mezuniyetleri_bul(detay_metni),
+            "bolumler": bolumleri_bul(detay_metni),
+            "pdf_isleme_durumu": "html_ok",
+            "analiz_surumu": ANALIZ_SURUMU,
+        })
+
+        # Ana sayfadaki en güncel ilanlar yeterli; kaynak başına yükü sınırlayalım.
+        if len(ilanlar) >= 30:
+            break
+
+    return ilanlar
+
 def gorevi_calistir(kaynak, sehir_kodu, sehir_adi):
     try:
         ilanlar = sayfadan_ilanlari_al(
@@ -687,7 +989,10 @@ def onceki_analiz_kullanilabilir(onceki):
 
 
 def ilani_zenginlestir(ilan, onceki_analizler):
-    if ilan.get("kaynak") == "ÖSYM KPSS Duyuruları":
+    if (
+        ilan.get("kaynak") == "ÖSYM KPSS Duyuruları"
+        or ilan.get("pdf_isleme_durumu") == "html_ok"
+    ):
         return ilan, False
 
     anahtar = link_anahtari(ilan.get("link", ""))
@@ -794,6 +1099,19 @@ def main():
             "ÖSYM KPSS duyuruları: "
             f"{type(hata).__name__} - {str(hata)[:150]}"
         )
+
+    for resmi_kaynak in RESMI_DUYURU_KAYNAKLARI:
+        try:
+            resmi_ilanlar = resmi_kaynaktan_ilanlari_al(resmi_kaynak)
+            tum_ilanlar.extend(resmi_ilanlar)
+            print(
+                f"{resmi_kaynak['kaynak']}: {len(resmi_ilanlar)}"
+            )
+        except Exception as hata:
+            hatalar.append(
+                f"{resmi_kaynak['kaynak']}: "
+                f"{type(hata).__name__} - {str(hata)[:150]}"
+            )
 
     benzersiz = {}
 
