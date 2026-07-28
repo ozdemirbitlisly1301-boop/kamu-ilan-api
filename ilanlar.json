@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-07-28T00:12:56.091697+00:00",
+  "guncellenme_zamani": "2026-07-28T00:34:56.972130+00:00",
   "ilan_sayisi": 135,
   "ilanlar": [
     {
@@ -2778,6 +2778,139 @@
       ],
       "pdf_isleme_durumu": "html_ok",
       "analiz_surumu": 1
+    }
+  ],
+  "haber_sayisi": 13,
+  "haberler": [
+    {
+      "id": "7359e5579b1b4dce9ed2",
+      "baslik": "KPSS-2026/1: Bazı Kamu Kurum ve Kuruluşlarının Kadro ve Pozisyonlarına Yerleştirme Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "Sonuç",
+      "yayin_tarihi": "24.07.2026",
+      "kaynak": "ÖSYM KPSS Haberleri",
+      "ozet": "ÖSYM tarafından yayımlanan resmî KPSS duyurusu.",
+      "link": "https://www.osym.gov.tr/kpss-20261-bazi-kamu-kurum-ve-kuruluslarinin-kadro-ve-pozisyonlarina-yerlestirme-sonuclari-aciklandi"
+    },
+    {
+      "id": "1de5b4081003dbef6469",
+      "baslik": "AİLE VE SOSYAL HİZMETLER BAKANLIĞI 680 SÖZLEŞMELİ PERSONEL ALIMI TAVAN VE TABAN PUANLARI HAKKINDA DUYURU",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "kategori": "Taban-Tavan Puan",
+      "yayin_tarihi": "",
+      "kaynak": "Aile Bakanlığı Personel Haberleri",
+      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-680-sozlesmeli-personel-alimi-tavan-ve-taban-puanlari-hakkinda-duyuru/"
+    },
+    {
+      "id": "e01aea830437fe9e8192",
+      "baslik": "15 Ocak 2026 Aile ve Sosyal Hizmetler Bakanlığı 3.000 Sözleşmeli Personel Alımı Tavan ve Taban Puanları Hakkında Duyuru",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "kategori": "Taban-Tavan Puan",
+      "yayin_tarihi": "",
+      "kaynak": "Aile Bakanlığı Personel Haberleri",
+      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-3-000-sozlesmeli-personel-alimi-tavan-ve-taban-puanlari-hakkinda-duyuru/"
+    },
+    {
+      "id": "1abca2e633569d4a9c13",
+      "baslik": "16 Aralık 2025 Aile ve Sosyal Hizmetler Bakanlığı Görevde Yükselme ve Ünvan Değişikliği Sözlü Sınav Sonucu Duyurusu",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "kategori": "Sonuç",
+      "yayin_tarihi": "",
+      "kaynak": "Aile Bakanlığı Personel Haberleri",
+      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-gorevde-yukselme-ve-unvan-degisikligi-sozlu-sinav-sonucu-duyurusu/"
+    },
+    {
+      "id": "886910ed845810d6c1da",
+      "baslik": "25 Temmuz 2025 Aile ve Sosyal Hizmetler Bakanlığı Görevde Yükselme ve Unvan Değişikliği Yazılı Sınav Sonucunun Açıklanmasına İlişkin Duyuru",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "kategori": "Sonuç",
+      "yayin_tarihi": "",
+      "kaynak": "Aile Bakanlığı Personel Haberleri",
+      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-gorevde-yukselme-ve-unvan-degisikligi-yazili-sinav-sonucunun-aciklanmasina-iliskin-duyuru/"
+    },
+    {
+      "id": "2879967afcddf9509ab2",
+      "baslik": "19 Kasım 2024 Aile ve Sosyal Hizmetler Bakanlığı 2.390 Sözleşmeli Personel Alımı Tavan ve Taban Puanları Hakkında Duyuru",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "kategori": "Taban-Tavan Puan",
+      "yayin_tarihi": "",
+      "kaynak": "Aile Bakanlığı Personel Haberleri",
+      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-2-390-sozlesmeli-personel-alimi-tavan-ve-taban-puanlari-hakkinda-duyuru/"
+    },
+    {
+      "id": "2b5058899ee2328ee31f",
+      "baslik": "24 Ekim 2022 Aile ve Sosyal Hizmetler Bakanlığı Görevde Yükselme ve Unvan Değişikliği Yazılı Sınav Sonucunun Açıklanmasına İlişkin Duyuru",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "kategori": "Sonuç",
+      "yayin_tarihi": "",
+      "kaynak": "Aile Bakanlığı Personel Haberleri",
+      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/gorevde_yukselme_yazili_sonuc/"
+    },
+    {
+      "id": "3104b15e9940dcee3dfb",
+      "baslik": "25 Mart 2021 İş Müfettiş Yardımcılığı Giriş Sınav Sonucu",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "kategori": "Sonuç",
+      "yayin_tarihi": "",
+      "kaynak": "Aile Bakanlığı Personel Haberleri",
+      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru39/"
+    },
+    {
+      "id": "72d6225758ffb90beb40",
+      "baslik": "29 Ocak 2021 ÖSYM Başkanlığı tarafından gerçekleştirilen 2021-1 Kura Usulü İle Yapılan Engelli Kamu Personeli Yerleştirme sonucuna göre Bakanlığımız kadrosuna atanmaya hak kazanan adaylardan istenilen belgeler",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "kategori": "Sonuç",
+      "yayin_tarihi": "",
+      "kaynak": "Aile Bakanlığı Personel Haberleri",
+      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru36/"
+    },
+    {
+      "id": "bd4ebd1c50117a49d199",
+      "baslik": "13 Aralık 2019 Sürekli İşçi Alımı Kpss Sıralaması ve Kura Çekimi Sonucu Belge Teslim İşlemleri",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "kategori": "Sonuç",
+      "yayin_tarihi": "",
+      "kaynak": "Aile Bakanlığı Personel Haberleri",
+      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru15/"
+    },
+    {
+      "id": "5f695e9aac772ba1ccbd",
+      "baslik": "09 Aralık 2019 KPSS-2019/6 Yerleştirme Sonucu İstenilen Belgelere İlişkin Duyuru",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "kategori": "Sonuç",
+      "yayin_tarihi": "",
+      "kaynak": "Aile Bakanlığı Personel Haberleri",
+      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru12/"
+    },
+    {
+      "id": "c756a30759d42c0d19c5",
+      "baslik": "30 Ekim 2019 Sözleşmeli Avukat Alımı Yedek Yerleştirme Sonucu ve İstenilen Belgelere İlişkin Duyuru",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "kategori": "Sonuç",
+      "yayin_tarihi": "",
+      "kaynak": "Aile Bakanlığı Personel Haberleri",
+      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru8/"
+    },
+    {
+      "id": "feb640a154d987999558",
+      "baslik": "02 Ekim 2019 Sözleşmeli Avukat Alımı Yerleştirme Sonucu ve İstenilen Belgelere İlişkin Duyuru",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "kategori": "Sonuç",
+      "yayin_tarihi": "",
+      "kaynak": "Aile Bakanlığı Personel Haberleri",
+      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru6/"
     }
   ],
   "hata_sayisi": 0,
