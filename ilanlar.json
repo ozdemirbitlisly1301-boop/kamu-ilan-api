@@ -1,28 +1,8 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-07-28T00:59:25.377554+00:00",
-  "ilan_sayisi": 135,
+  "guncellenme_zamani": "2026-07-28T10:26:26.933492+00:00",
+  "ilan_sayisi": 161,
   "ilanlar": [
-    {
-      "id": "edb54306840b19a6d596",
-      "baslik": "Edirne Öğretmenevi ve Akşam Sanat Okulu Müdürlüğü Ticari İşletmesi",
-      "kurum": "Edirne Öğretmenevi ve Akşam Sanat Okulu Müdürlüğü Ticari İşletmesi",
-      "sehir": "Edirne",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "28.07.2026 12:00",
-      "link": "https://www.iskur.gov.tr/medya/5gsl0l3x/oeğretmenevi-ilan.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/5gsl0l3x/oeğretmenevi-ilan.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 1
-    },
     {
       "id": "8eeb3e1a8d762dd70003",
       "baslik": "Adana Yüreğir Personel Hizmetleri ve İmar Ticaret A.Ş.",
@@ -281,6 +261,46 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "fb45dfdaa600414b9735",
+      "baslik": "ER TANSA ERZURUM BÜYÜKŞEHİR BELEDİYESİ İNŞAAT TAAHHÜT OTOMOTİV PETROL ÜRÜNLERİ GIDA REKLAM VE ORGANİZASYON TİCARET SANAYİ ANONİM ŞİRKETİ (MANAV)",
+      "kurum": "ER TANSA ERZURUM BÜYÜKŞEHİR BELEDİYESİ İNŞAAT TAAHHÜT OTOMOTİV PETROL ÜRÜNLERİ GIDA REKLAM VE ORGANİZASYON TİCARET SANAYİ ANONİM ŞİRKETİ (MANAV)",
+      "sehir": "Erzurum",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "28.07.2026 18:00",
+      "link": "https://www.iskur.gov.tr/medya/pcfjvz5a/ertansa-manav.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/pcfjvz5a/ertansa-manav.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "b40fe36c2d9f9f08edf0",
+      "baslik": "ASFAT Askeri Fabrika ve Tersane İşletme A.Ş.",
+      "kurum": "ASFAT Askeri Fabrika ve Tersane İşletme A.Ş.",
+      "sehir": "Ankara",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "28.07.2026 18:30",
+      "link": "https://www.iskur.gov.tr/medya/v1jh1x5f/28072026-asfat-kurum-dışı-kamu-işçi-alımı-ilan-formu-ankara.docx",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/v1jh1x5f/28072026-asfat-kurum-dışı-kamu-işçi-alımı-ilan-formu-ankara.docx",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "hata:RuntimeError",
       "analiz_surumu": 1
     },
     {
@@ -644,6 +664,66 @@
       "analiz_surumu": 1
     },
     {
+      "id": "974712f0e7987e60c256",
+      "baslik": "Rize Çamlıhemşin Belediyesi Personel Ltd. Şti.",
+      "kurum": "Rize Çamlıhemşin Belediyesi Personel Ltd. Şti.",
+      "sehir": "Rize",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "29.07.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/ixgmvkkx/28-29-çalıhemşin-bld.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/ixgmvkkx/28-29-çalıhemşin-bld.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "8dd0d18f4934d45cb40e",
+      "baslik": "RİZE ÇAMBELSAN İNŞ. TURİZM SAN. VE TİC. A. Ş.",
+      "kurum": "RİZE ÇAMBELSAN İNŞ. TURİZM SAN. VE TİC. A. Ş.",
+      "sehir": "Rize",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "29.07.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/fh1ppkqf/çambelsan.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/fh1ppkqf/çambelsan.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "97daf2a5df3e75bf7967",
+      "baslik": "Çorum Dodurga Çevre Eğitim Kül. Hiz. ve İnş. Paz. Tic. Ltd. Şti.",
+      "kurum": "Çorum Dodurga Çevre Eğitim Kül. Hiz. ve İnş. Paz. Tic. Ltd. Şti.",
+      "sehir": "Çorum",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "29.07.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/ziwjslhv/dodurgaçevre-eğitim-kuel-hiz-ve-inş-paz-tic-ltd-şti-29072026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/ziwjslhv/dodurgaçevre-eğitim-kuel-hiz-ve-inş-paz-tic-ltd-şti-29072026.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
       "id": "f903f7778ae554afb315",
       "baslik": "Mersin Tarsus İmar Ticaret Limited Şirketi",
       "kurum": "Mersin Tarsus İmar Ticaret Limited Şirketi",
@@ -675,6 +755,26 @@
       "son_basvuru": "29.07.2026 23:59",
       "link": "https://www.iskur.gov.tr/medya/jreg5dg1/tekirdağ-bueyuekşehir-belediyesi-personel-aş-29072026.pdf",
       "basvuru_linki": "https://www.iskur.gov.tr/medya/jreg5dg1/tekirdağ-bueyuekşehir-belediyesi-personel-aş-29072026.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "e2f54fea97da3c072fe4",
+      "baslik": "TRABZON VAKFIKEBİR BELEDİYEDİ PERSONEL LTD. ŞTİ.",
+      "kurum": "TRABZON VAKFIKEBİR BELEDİYEDİ PERSONEL LTD. ŞTİ.",
+      "sehir": "Trabzon",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "29.07.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/odojjhq4/vakfıkebir.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/odojjhq4/vakfıkebir.pdf",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "PDF metninden belirlenemedi",
@@ -726,6 +826,26 @@
       "analiz_surumu": 1
     },
     {
+      "id": "45677150b72d587b3f41",
+      "baslik": "Karaman Karacoğlan Elek. Üre. İnş. Ve Tem. Taah. İşleri San. Tic. Ltd. Şti",
+      "kurum": "Karaman Karacoğlan Elek. Üre. İnş. Ve Tem. Taah. İşleri San. Tic. Ltd. Şti",
+      "sehir": "Karaman",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "30.07.2026 10:00",
+      "link": "https://www.iskur.gov.tr/medya/bpddhaed/karaman-karacoğlan-elekuere-inş-ve-temtaah-işleri-santicltdşti.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/bpddhaed/karaman-karacoğlan-elekuere-inş-ve-temtaah-işleri-santicltdşti.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
       "id": "f5399a58e63d66388d64",
       "baslik": "Isparta Atabey Etokuş Hazır Beton İnş.Nak.Tur.San ve Tic.Ltd.Şti.",
       "kurum": "Isparta Atabey Etokuş Hazır Beton İnş.Nak.Tur.San ve Tic.Ltd.Şti.",
@@ -755,6 +875,106 @@
       "son_basvuru": "30.07.2026 17:00",
       "link": "https://www.iskur.gov.tr/medya/ehpp5ejb/doc09471120260723113116.pdf",
       "basvuru_linki": "https://www.iskur.gov.tr/medya/ehpp5ejb/doc09471120260723113116.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "28aa6e1c40e1e7b1b4fe",
+      "baslik": "Çanakkale Küçükkuyu Kent Hiz. San. ve Tic. A.Ş.",
+      "kurum": "Çanakkale Küçükkuyu Kent Hiz. San. ve Tic. A.Ş.",
+      "sehir": "Çanakkale",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "30.07.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/mytl1302/doc09478120260728080241.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/mytl1302/doc09478120260728080241.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "157c30428f4821bc10fb",
+      "baslik": "Çanakkale Biga Kent Hizmetleri Tur. San. ve Tic. A.Ş.",
+      "kurum": "Çanakkale Biga Kent Hizmetleri Tur. San. ve Tic. A.Ş.",
+      "sehir": "Çanakkale",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "30.07.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/wgqoaqxu/kent-hizmetleri-harita-teknikeri.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/wgqoaqxu/kent-hizmetleri-harita-teknikeri.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "5eead33432d10f0906e7",
+      "baslik": "Çanakkale Biga Kent Hizmetleri Tur. San. ve Tic. A.Ş.",
+      "kurum": "Çanakkale Biga Kent Hizmetleri Tur. San. ve Tic. A.Ş.",
+      "sehir": "Çanakkale",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "30.07.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/fvrlfkqf/kent-hizmetleri-harita-muehendisi.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/fvrlfkqf/kent-hizmetleri-harita-muehendisi.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "f5bc1a4e1ec27934bc04",
+      "baslik": "Çanakkale Biga Kent Hizmetleri Tur. San. ve Tic. A.Ş.",
+      "kurum": "Çanakkale Biga Kent Hizmetleri Tur. San. ve Tic. A.Ş.",
+      "sehir": "Çanakkale",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "30.07.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/f1tbodw0/kent-hizmetleri-beden-işçisi.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/f1tbodw0/kent-hizmetleri-beden-işçisi.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "e20eb9cd1bcd209c3938",
+      "baslik": "Çanakkale Bayramiç Belediyesi Pers. Ltd. Şti.",
+      "kurum": "Çanakkale Bayramiç Belediyesi Pers. Ltd. Şti.",
+      "sehir": "Çanakkale",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "30.07.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/4bhlvkr4/iş-ilanı.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/4bhlvkr4/iş-ilanı.pdf",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "PDF metninden belirlenemedi",
@@ -806,6 +1026,26 @@
       "analiz_surumu": 1
     },
     {
+      "id": "39bdb0cd92e29e0599eb",
+      "baslik": "Dışişleri Bakanlığı Aday Meslek Memurluğu Sınav İlanı",
+      "kurum": "Dışişleri Bakanlığı Aday Meslek Memurluğu Sınav İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "30.07.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/zvkdt4uj/dışişleri-bakanlığı-aday-meslek-memurluğu-sınav-ilanı-30072026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/zvkdt4uj/dışişleri-bakanlığı-aday-meslek-memurluğu-sınav-ilanı-30072026.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 1
+    },
+    {
       "id": "cadb89dda5c2e0239cea",
       "baslik": "Anayasa Mahkemesi Başkanlığı Sözleşmeli Personel Alım İlanı",
       "kurum": "Anayasa Mahkemesi Başkanlığı Sözleşmeli Personel Alım İlanı",
@@ -821,26 +1061,6 @@
       "mezuniyetler": [
         "Ortaöğretim"
       ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "39bdb0cd92e29e0599eb",
-      "baslik": "Dışişleri Bakanlığı Aday Meslek Memurluğu Sınav İlanı",
-      "kurum": "Dışişleri Bakanlığı Aday Meslek Memurluğu Sınav İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "30.07.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/zvkdt4uj/dışişleri-bakanlığı-aday-meslek-memurluğu-sınav-ilanı-30072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/zvkdt4uj/dışişleri-bakanlığı-aday-meslek-memurluğu-sınav-ilanı-30072026.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
       "bolumler": [
         "Diğer"
       ],
@@ -967,6 +1187,29 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "4c0efdc870ac0944d70e",
+      "baslik": "KÜÇÜKÇEKMECE İNŞAAT TAAHHÜT SAN.VE TİC A.Ş",
+      "kurum": "KÜÇÜKÇEKMECE İNŞAAT TAAHHÜT SAN.VE TİC A.Ş",
+      "sehir": "İstanbul",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "30.07.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/phynqoxv/kueçuekçekmece-inşaat-taahhuet-sanve-tic-aş-uenvanlı-firmanın-kurumdışı-işçi-alımı-talebi-hk_ek_28072026-kitaş.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/phynqoxv/kueçuekçekmece-inşaat-taahhuet-sanve-tic-aş-uenvanlı-firmanın-kurumdışı-işçi-alımı-talebi-hk_ek_28072026-kitaş.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [
+        "Ortaöğretim",
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
       "analiz_surumu": 1
     },
     {
@@ -1174,6 +1417,26 @@
       "analiz_surumu": 1
     },
     {
+      "id": "314a36d410a53e907abe",
+      "baslik": "Çanakkale Eceabat Belediyesi Taş. Haf. Pet. Ene. Dem. Çel. Eml. Müş. Eği. Hiz. Gıda Tar. San. ve Tic. Ltd. Şti.",
+      "kurum": "Çanakkale Eceabat Belediyesi Taş. Haf. Pet. Ene. Dem. Çel. Eml. Müş. Eği. Hiz. Gıda Tar. San. ve Tic. Ltd. Şti.",
+      "sehir": "Çanakkale",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "31.07.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/pc1nbk0n/doc09478020260728062301.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/pc1nbk0n/doc09478020260728062301.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
       "id": "c8ae46f65a313beaf012",
       "baslik": "Mardin Ömerli İlçesi Sosyal Yardımlaşma ve Dayanışma Vakfı",
       "kurum": "Mardin Ömerli İlçesi Sosyal Yardımlaşma ve Dayanışma Vakfı",
@@ -1223,6 +1486,26 @@
       "son_basvuru": "31.07.2026 17:00",
       "link": "https://www.iskur.gov.tr/medya/y4ajvbqt/ilan-27072026.pdf",
       "basvuru_linki": "https://www.iskur.gov.tr/medya/y4ajvbqt/ilan-27072026.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "5370459f598b9158a2ce",
+      "baslik": "Meriç Belediyesi Çay Evi Ticari İşletmesi",
+      "kurum": "Meriç Belediyesi Çay Evi Ticari İşletmesi",
+      "sehir": "Edirne",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "31.07.2026 17:30",
+      "link": "https://www.iskur.gov.tr/medya/t0kawewg/meriç-belediyesi-çay-evi-ticari-işletmesi-31072026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/t0kawewg/meriç-belediyesi-çay-evi-ticari-işletmesi-31072026.pdf",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "PDF metninden belirlenemedi",
@@ -1451,6 +1734,26 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "51d787e3de6a25aa7cae",
+      "baslik": "Bitlis Sades Sağlık ve Turizm Destek Hizmetleri A.Ş",
+      "kurum": "Bitlis Sades Sağlık ve Turizm Destek Hizmetleri A.Ş",
+      "sehir": "Bitlis",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "31.07.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/ienmsafe/sades-bitlis-kurum-dışı-işçi-alımı-ilanı.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/ienmsafe/sades-bitlis-kurum-dışı-işçi-alımı-ilanı.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
       "analiz_surumu": 1
     },
     {
@@ -1820,15 +2123,15 @@
       "analiz_surumu": 1
     },
     {
-      "id": "363e44c42c7889588e47",
+      "id": "f4b06fc74f0cc1e7644e",
       "baslik": "Mersin Yenişehir Sosyal Yardımlaşma ve Dayanışma Vakfı Başkanlığı",
       "kurum": "Mersin Yenişehir Sosyal Yardımlaşma ve Dayanışma Vakfı Başkanlığı",
       "sehir": "Mersin",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "05.08.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/dkdhaofd/yen-sos.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/dkdhaofd/yen-sos.pdf",
+      "link": "https://www.iskur.gov.tr/medya/apln3zhb/temizlik-goerevlisi-yenişehir-sosyal-yardımlaşma.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/apln3zhb/temizlik-goerevlisi-yenişehir-sosyal-yardımlaşma.pdf",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
@@ -1839,6 +2142,26 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "86a69500e6115da695ca",
+      "baslik": "Ağrı Has Kale Tem.Yem.Taş.Pers.A.Ş.",
+      "kurum": "Ağrı Has Kale Tem.Yem.Taş.Pers.A.Ş.",
+      "sehir": "Ağrı",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "07.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/fqngmaf2/ağrı-has-kale-temyemtaşpersaş-07082026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/fqngmaf2/ağrı-has-kale-temyemtaşpersaş-07082026.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
       "analiz_surumu": 1
     },
     {
@@ -2174,6 +2497,26 @@
       "analiz_surumu": 1
     },
     {
+      "id": "6b1ea7d1c68167215ab5",
+      "baslik": "Kültür ve Turizm Bakanlığı Uludağ Alan Başkanlığı Personel Alım İlanı",
+      "kurum": "Kültür ve Turizm Bakanlığı Uludağ Alan Başkanlığı Personel Alım İlanı",
+      "sehir": "Bursa",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "25.08.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/f0dflrnx/kueltuer-ve-turizm-bakanlığı-uludağ-alan-başkanlığı-personel-alım-ilanı-25082026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/f0dflrnx/kueltuer-ve-turizm-bakanlığı-uludağ-alan-başkanlığı-personel-alım-ilanı-25082026.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 1
+    },
+    {
       "id": "9a44c52556c740059727",
       "baslik": "Erzurum Tekman Belediyesi Memur Alım İlanı",
       "kurum": "Erzurum Tekman Belediyesi Memur Alım İlanı",
@@ -2480,6 +2823,29 @@
       "analiz_surumu": 1
     },
     {
+      "id": "065bac450c8849a13ed0",
+      "baslik": "Mersin Büyükşehir Belediyesi İtfaiye Eri Alım İlanı",
+      "kurum": "Mersin Büyükşehir Belediyesi İtfaiye Eri Alım İlanı",
+      "sehir": "Mersin",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "11.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/zn3fabh5/mersin-bueyuekşehir-belediyesi-itfaiye-eri-alım-ilanı-11092026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/zn3fabh5/mersin-bueyuekşehir-belediyesi-itfaiye-eri-alım-ilanı-11092026.pdf",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Ortaöğretim",
+        "Önlisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 1
+    },
+    {
       "id": "276a649abd64f1a820b9",
       "baslik": "İstanbul Bilişim ve Akıllı Kent Teknolojileri A.Ş.",
       "kurum": "İstanbul Bilişim ve Akıllı Kent Teknolojileri A.Ş.",
@@ -2497,6 +2863,30 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "d4a175424c75a75f15e2",
+      "baslik": "Hakkari Yüksekova Belediyesi Memur Zabıta Memuru ve İtfaiye Eri Alım İlanı",
+      "kurum": "Hakkari Yüksekova Belediyesi Memur Zabıta Memuru ve İtfaiye Eri Alım İlanı",
+      "sehir": "Hakkari",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "17.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/kfsjl34z/hakkari-yueksekova-belediyesi-memur-zabıta-memuru-ve-itfaiye-eri-alım-ilanı-17092026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/kfsjl34z/hakkari-yueksekova-belediyesi-memur-zabıta-memuru-ve-itfaiye-eri-alım-ilanı-17092026.pdf",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Önlisans",
+        "Lisans"
+      ],
+      "bolumler": [
+        "Maliye",
+        "İşletme"
+      ],
+      "pdf_isleme_durumu": "ok",
       "analiz_surumu": 1
     },
     {
@@ -2778,9 +3168,149 @@
       ],
       "pdf_isleme_durumu": "html_ok",
       "analiz_surumu": 1
+    },
+    {
+      "id": "53066fb7bef675a7e820",
+      "baslik": "19 Kasım 2024 Aile ve Sosyal Hizmetler Bakanlığı 2024 Yılı 2.390 Sözleşmeli Personel Alımı Kapsamında Yerleşen Adaylardan İstenilen Belgelere İlişkin Duyuru Bakanlığımızca gerçekleştirilen 2.390 sözleşmeli personel alımı kapsamında atanmaya hak kazanan adayların aşağıda belirtil…",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "sehir": "Türkiye Geneli",
+      "tur": "Personel Alımı",
+      "kaynak": "Aile Bakanlığı Personel Alımları",
+      "son_basvuru": "",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-2024-yili-2-390-sozlesmeli-personel-alimi-kapsaminda-yerlesen-adaylardan-istenilen-belgelere-iliskin-duyuru/",
+      "basvuru_linki": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-2024-yili-2-390-sozlesmeli-personel-alimi-kapsaminda-yerlesen-adaylardan-istenilen-belgelere-iliskin-duyuru/",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "html_ok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "6a86fb57a4f2b1f7c100",
+      "baslik": "25 Haziran 2024 Bakanlığımız 8.000 Sözleşmeli Personel Alımı İşlemlerine İlişkin Duyuru",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "sehir": "Türkiye Geneli",
+      "tur": "Personel Alımı",
+      "kaynak": "Aile Bakanlığı Personel Alımları",
+      "son_basvuru": "",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/8-000-personel-alimina-iliskin-duyuru/",
+      "basvuru_linki": "https://www.aile.gov.tr/pgm/duyurular/8-000-personel-alimina-iliskin-duyuru/",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "html_ok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "d5d71a98427abc095cf6",
+      "baslik": "26 Nisan 2023 AİLE VE SOSYAL HİZMETLER BAKANLIĞI 2431 SÖZLEŞMELİ PERSONEL ALIM İLANI",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "sehir": "Türkiye Geneli",
+      "tur": "Personel Alımı",
+      "kaynak": "Aile Bakanlığı Personel Alımları",
+      "son_basvuru": "",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/2431_sp_alimi/",
+      "basvuru_linki": "https://www.aile.gov.tr/pgm/duyurular/2431_sp_alimi/",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "html_ok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "9c29f7e9dfece048b61c",
+      "baslik": "14 Ekim 2022 Aile ve Sosyal Hizmetler Bakanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "sehir": "Türkiye Geneli",
+      "tur": "Personel Alımı",
+      "kaynak": "Aile Bakanlığı Personel Alımları",
+      "son_basvuru": "",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/sozlesmeli_bilisim_alimi/",
+      "basvuru_linki": "https://www.aile.gov.tr/pgm/duyurular/sozlesmeli_bilisim_alimi/",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "html_ok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "e6b645c425cdfebeae45",
+      "baslik": "21 Mayıs 2022 Aile ve Sosyal Hizmetler Bakanlığı (4175) Sözleşmeli Personel Alımı Tercih Süresinin Uzatılması Duyurusu",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "sehir": "Türkiye Geneli",
+      "tur": "Personel Alımı",
+      "kaynak": "Aile Bakanlığı Personel Alımları",
+      "son_basvuru": "",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-4175-sozlesmeli-personel-alimi-tercih-suresinin-uzatilmasi-duyurusu/",
+      "basvuru_linki": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-4175-sozlesmeli-personel-alimi-tercih-suresinin-uzatilmasi-duyurusu/",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "html_ok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "af6b9a6de6cd8888fdc1",
+      "baslik": "12 Ocak 2022 Aile ve Sosyal Hizmetler Bakanlığı Sözleşmeli Personel Alım İlanı Askerlik Şartı Kontrolüne İlişkin Duyuru",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "sehir": "Türkiye Geneli",
+      "tur": "Personel Alımı",
+      "kaynak": "Aile Bakanlığı Personel Alımları",
+      "son_basvuru": "",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru47/",
+      "basvuru_linki": "https://www.aile.gov.tr/pgm/duyurular/duyuru47/",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "html_ok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "583ef7edac3deef819e1",
+      "baslik": "06 Kasım 2020 Sözleşmeli Personel Alım İlanı",
+      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
+      "sehir": "Türkiye Geneli",
+      "tur": "Personel Alımı",
+      "kaynak": "Aile Bakanlığı Personel Alımları",
+      "son_basvuru": "",
+      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru27/",
+      "basvuru_linki": "https://www.aile.gov.tr/pgm/duyurular/duyuru27/",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "html_ok",
+      "analiz_surumu": 1
     }
   ],
-  "haber_sayisi": 13,
+  "haber_sayisi": 1,
   "haberler": [
     {
       "id": "7359e5579b1b4dce9ed2",
@@ -2791,136 +3321,18 @@
       "kaynak": "ÖSYM KPSS Haberleri",
       "ozet": "ÖSYM tarafından yayımlanan resmî KPSS duyurusu.",
       "link": "https://www.osym.gov.tr/kpss-20261-bazi-kamu-kurum-ve-kuruluslarinin-kadro-ve-pozisyonlarina-yerlestirme-sonuclari-aciklandi"
-    },
-    {
-      "id": "1de5b4081003dbef6469",
-      "baslik": "AİLE VE SOSYAL HİZMETLER BAKANLIĞI 680 SÖZLEŞMELİ PERSONEL ALIMI TAVAN VE TABAN PUANLARI HAKKINDA DUYURU",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Taban-Tavan Puan",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-680-sozlesmeli-personel-alimi-tavan-ve-taban-puanlari-hakkinda-duyuru/"
-    },
-    {
-      "id": "e01aea830437fe9e8192",
-      "baslik": "15 Ocak 2026 Aile ve Sosyal Hizmetler Bakanlığı 3.000 Sözleşmeli Personel Alımı Tavan ve Taban Puanları Hakkında Duyuru",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Taban-Tavan Puan",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-3-000-sozlesmeli-personel-alimi-tavan-ve-taban-puanlari-hakkinda-duyuru/"
-    },
-    {
-      "id": "1abca2e633569d4a9c13",
-      "baslik": "16 Aralık 2025 Aile ve Sosyal Hizmetler Bakanlığı Görevde Yükselme ve Ünvan Değişikliği Sözlü Sınav Sonucu Duyurusu",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-gorevde-yukselme-ve-unvan-degisikligi-sozlu-sinav-sonucu-duyurusu/"
-    },
-    {
-      "id": "886910ed845810d6c1da",
-      "baslik": "25 Temmuz 2025 Aile ve Sosyal Hizmetler Bakanlığı Görevde Yükselme ve Unvan Değişikliği Yazılı Sınav Sonucunun Açıklanmasına İlişkin Duyuru",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-gorevde-yukselme-ve-unvan-degisikligi-yazili-sinav-sonucunun-aciklanmasina-iliskin-duyuru/"
-    },
-    {
-      "id": "2879967afcddf9509ab2",
-      "baslik": "19 Kasım 2024 Aile ve Sosyal Hizmetler Bakanlığı 2.390 Sözleşmeli Personel Alımı Tavan ve Taban Puanları Hakkında Duyuru",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Taban-Tavan Puan",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-2-390-sozlesmeli-personel-alimi-tavan-ve-taban-puanlari-hakkinda-duyuru/"
-    },
-    {
-      "id": "2b5058899ee2328ee31f",
-      "baslik": "24 Ekim 2022 Aile ve Sosyal Hizmetler Bakanlığı Görevde Yükselme ve Unvan Değişikliği Yazılı Sınav Sonucunun Açıklanmasına İlişkin Duyuru",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/gorevde_yukselme_yazili_sonuc/"
-    },
-    {
-      "id": "3104b15e9940dcee3dfb",
-      "baslik": "25 Mart 2021 İş Müfettiş Yardımcılığı Giriş Sınav Sonucu",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru39/"
-    },
-    {
-      "id": "72d6225758ffb90beb40",
-      "baslik": "29 Ocak 2021 ÖSYM Başkanlığı tarafından gerçekleştirilen 2021-1 Kura Usulü İle Yapılan Engelli Kamu Personeli Yerleştirme sonucuna göre Bakanlığımız kadrosuna atanmaya hak kazanan adaylardan istenilen belgeler",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru36/"
-    },
-    {
-      "id": "bd4ebd1c50117a49d199",
-      "baslik": "13 Aralık 2019 Sürekli İşçi Alımı Kpss Sıralaması ve Kura Çekimi Sonucu Belge Teslim İşlemleri",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru15/"
-    },
-    {
-      "id": "5f695e9aac772ba1ccbd",
-      "baslik": "09 Aralık 2019 KPSS-2019/6 Yerleştirme Sonucu İstenilen Belgelere İlişkin Duyuru",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru12/"
-    },
-    {
-      "id": "c756a30759d42c0d19c5",
-      "baslik": "30 Ekim 2019 Sözleşmeli Avukat Alımı Yedek Yerleştirme Sonucu ve İstenilen Belgelere İlişkin Duyuru",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru8/"
-    },
-    {
-      "id": "feb640a154d987999558",
-      "baslik": "02 Ekim 2019 Sözleşmeli Avukat Alımı Yerleştirme Sonucu ve İstenilen Belgelere İlişkin Duyuru",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru6/"
     }
   ],
   "bildirim_sonucu": {
-    "durum": "yeni_kayit_yok",
-    "yeni_ilan": 0,
+    "durum": "atlanmış",
+    "yeni_ilan": 28,
     "yeni_haber": 0,
     "gonderilen": 0,
-    "mesaj": "Yeni ilan veya haber bulunmadı."
+    "mesaj": "firebase-admin paketi kurulu değil"
   },
-  "hata_sayisi": 0,
-  "pdf_hata_sayisi": 1,
-  "hatalar": []
+  "hata_sayisi": 1,
+  "pdf_hata_sayisi": 2,
+  "hatalar": [
+    "Aile Bakanlığı Personel Alımları: RuntimeError - HTTPSConnectionPool(host='www.aile.gov.tr', port=443): Max retries exceeded with url: /pgm/duyurular (Caused by ConnectTimeoutError(<HTTPSConnection(h"
+  ]
 }
