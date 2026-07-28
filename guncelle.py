@@ -1,6 +1,7 @@
 import hashlib
 import io
 import json
+import os
 import re
 import time
 import unicodedata
@@ -12,6 +13,14 @@ from urllib.parse import urlencode, urljoin
 import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
+
+try:
+    import firebase_admin
+    from firebase_admin import credentials, messaging
+except ImportError:
+    firebase_admin = None
+    credentials = None
+    messaging = None
 
 
 KAYNAKLAR = [
@@ -1256,7 +1265,175 @@ def haber_tarih_siralama_degeri(haber):
     return datetime.min
 
 
+def onceki_bildirim_kayitlarini_yukle():
+    dosya = Path("ilanlar.json")
+
+    if not dosya.exists():
+        return set(), set(), False
+
+    try:
+        veri = json.loads(dosya.read_text(encoding="utf-8"))
+        ilan_anahtarlari = {
+            link_anahtari(ilan.get("link", ""))
+            for ilan in veri.get("ilanlar", [])
+            if link_anahtari(ilan.get("link", ""))
+        }
+        haber_anahtarlari = {
+            link_anahtari(haber.get("link", ""))
+            for haber in veri.get("haberler", [])
+            if link_anahtari(haber.get("link", ""))
+        }
+        return ilan_anahtarlari, haber_anahtarlari, True
+    except Exception:
+        return set(), set(), False
+
+
+def firebase_mesajlasmayi_hazirla():
+    if firebase_admin is None or credentials is None or messaging is None:
+        return None, "firebase-admin paketi kurulu değil"
+
+    servis_hesabi_json = os.environ.get(
+        "FIREBASE_SERVICE_ACCOUNT_JSON",
+        "",
+    ).strip()
+
+    if not servis_hesabi_json:
+        return None, "FIREBASE_SERVICE_ACCOUNT_JSON sırrı tanımlı değil"
+
+    try:
+        servis_hesabi = json.loads(servis_hesabi_json)
+
+        try:
+            firebase_admin.get_app()
+        except ValueError:
+            firebase_admin.initialize_app(
+                credentials.Certificate(servis_hesabi)
+            )
+
+        return messaging, None
+    except Exception as hata:
+        return None, f"{type(hata).__name__}: {str(hata)[:180]}"
+
+
+def tek_bildirim_gonder(mesajlasma, konu, baslik, govde, link, tur):
+    mesaj = mesajlasma.Message(
+        notification=mesajlasma.Notification(
+            title=baslik[:100],
+            body=govde[:240],
+        ),
+        data={
+            "tur": tur,
+            "link": (link or "")[:1000],
+        },
+        android=mesajlasma.AndroidConfig(
+            priority="high",
+            notification=mesajlasma.AndroidNotification(
+                channel_id=konu,
+            ),
+        ),
+        topic=konu,
+    )
+    return mesajlasma.send(mesaj)
+
+
+def yeni_kayit_bildirimlerini_gonder(
+    ilanlar,
+    haberler,
+    onceki_ilan_anahtarlari,
+    onceki_haber_anahtarlari,
+    onceki_dosya_vardi,
+):
+    sonuc = {
+        "durum": "atlanmış",
+        "yeni_ilan": 0,
+        "yeni_haber": 0,
+        "gonderilen": 0,
+        "mesaj": "",
+    }
+
+    if not onceki_dosya_vardi:
+        sonuc["mesaj"] = "İlk çalışma olduğu için toplu bildirim gönderilmedi."
+        return sonuc
+
+    yeni_ilanlar = [
+        ilan
+        for ilan in ilanlar
+        if link_anahtari(ilan.get("link", ""))
+        and link_anahtari(ilan.get("link", ""))
+        not in onceki_ilan_anahtarlari
+    ]
+    yeni_haberler = [
+        haber
+        for haber in haberler
+        if link_anahtari(haber.get("link", ""))
+        and link_anahtari(haber.get("link", ""))
+        not in onceki_haber_anahtarlari
+    ]
+
+    sonuc["yeni_ilan"] = len(yeni_ilanlar)
+    sonuc["yeni_haber"] = len(yeni_haberler)
+
+    if not yeni_ilanlar and not yeni_haberler:
+        sonuc["durum"] = "yeni_kayit_yok"
+        sonuc["mesaj"] = "Yeni ilan veya haber bulunmadı."
+        return sonuc
+
+    mesajlasma, hata = firebase_mesajlasmayi_hazirla()
+
+    if mesajlasma is None:
+        sonuc["mesaj"] = hata or "Firebase hazırlanamadı."
+        return sonuc
+
+    try:
+        # Kullanıcıyı bildirim yağmuruna tutmamak için her türden en fazla 5 bildirim.
+        for ilan in yeni_ilanlar[:5]:
+            baslik = ilan.get("baslik") or ilan.get("kurum") or "Yeni kamu ilanı"
+            kurum = ilan.get("kurum") or ilan.get("kaynak") or "Resmî kurum"
+            sehir = ilan.get("sehir") or "Türkiye"
+            govde = f"{kurum} • {sehir}"
+            tek_bildirim_gonder(
+                mesajlasma,
+                "yeni_ilanlar",
+                "Yeni ilan: " + temizle(baslik),
+                temizle(govde),
+                ilan.get("link", ""),
+                "ilan",
+            )
+            sonuc["gonderilen"] += 1
+
+        for haber in yeni_haberler[:5]:
+            baslik = haber.get("baslik") or "Yeni KPSS ve atama haberi"
+            kurum = haber.get("kurum") or haber.get("kaynak") or "Resmî kurum"
+            kategori = haber.get("kategori") or "Haber"
+            govde = f"{kurum} • {kategori}"
+            tek_bildirim_gonder(
+                mesajlasma,
+                "yeni_haberler",
+                temizle(baslik),
+                temizle(govde),
+                haber.get("link", ""),
+                "haber",
+            )
+            sonuc["gonderilen"] += 1
+
+        sonuc["durum"] = "gonderildi"
+        sonuc["mesaj"] = (
+            f"{sonuc['gonderilen']} telefon bildirimi gönderildi."
+        )
+    except Exception as hata:
+        sonuc["durum"] = "hata"
+        sonuc["mesaj"] = f"{type(hata).__name__}: {str(hata)[:180]}"
+
+    return sonuc
+
+
 def main():
+    (
+        onceki_ilan_anahtarlari,
+        onceki_haber_anahtarlari,
+        onceki_dosya_vardi,
+    ) = onceki_bildirim_kayitlarini_yukle()
+
     tum_ilanlar = []
     tum_haberler = []
     hatalar = []
@@ -1395,6 +1572,15 @@ def main():
 
     zenginlestirilmis.sort(key=tarih_siralama_degeri)
 
+    bildirim_sonucu = yeni_kayit_bildirimlerini_gonder(
+        zenginlestirilmis,
+        haberler,
+        onceki_ilan_anahtarlari,
+        onceki_haber_anahtarlari,
+        onceki_dosya_vardi,
+    )
+    print(f"Bildirim: {bildirim_sonucu['mesaj']}")
+
     cikti = {
         "status": "ok" if zenginlestirilmis else "veri_alinamadi",
         "guncellenme_zamani": datetime.now(
@@ -1404,6 +1590,7 @@ def main():
         "ilanlar": zenginlestirilmis,
         "haber_sayisi": len(haberler),
         "haberler": haberler,
+        "bildirim_sonucu": bildirim_sonucu,
         "hata_sayisi": len(hatalar),
         "pdf_hata_sayisi": pdf_hatalari,
         "hatalar": hatalar[:50],
