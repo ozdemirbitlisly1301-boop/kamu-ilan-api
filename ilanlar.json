@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-07-28T00:01:06.564521+00:00",
-  "ilan_sayisi": 130,
+  "guncellenme_zamani": "2026-07-28T00:12:56.091697+00:00",
+  "ilan_sayisi": 135,
   "ilanlar": [
     {
       "id": "edb54306840b19a6d596",
@@ -806,6 +806,26 @@
       "analiz_surumu": 1
     },
     {
+      "id": "39bdb0cd92e29e0599eb",
+      "baslik": "Dışişleri Bakanlığı Aday Meslek Memurluğu Sınav İlanı",
+      "kurum": "Dışişleri Bakanlığı Aday Meslek Memurluğu Sınav İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "30.07.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/zvkdt4uj/dışişleri-bakanlığı-aday-meslek-memurluğu-sınav-ilanı-30072026.pdf",
+      "basvuru_linki": "https://www.iskur.gov.tr/medya/zvkdt4uj/dışişleri-bakanlığı-aday-meslek-memurluğu-sınav-ilanı-30072026.pdf",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 1
+    },
+    {
       "id": "cadb89dda5c2e0239cea",
       "baslik": "Anayasa Mahkemesi Başkanlığı Sözleşmeli Personel Alım İlanı",
       "kurum": "Anayasa Mahkemesi Başkanlığı Sözleşmeli Personel Alım İlanı",
@@ -821,26 +841,6 @@
       "mezuniyetler": [
         "Ortaöğretim"
       ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 1
-    },
-    {
-      "id": "39bdb0cd92e29e0599eb",
-      "baslik": "Dışişleri Bakanlığı Aday Meslek Memurluğu Sınav İlanı",
-      "kurum": "Dışişleri Bakanlığı Aday Meslek Memurluğu Sınav İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "30.07.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/zvkdt4uj/dışişleri-bakanlığı-aday-meslek-memurluğu-sınav-ilanı-30072026.pdf",
-      "basvuru_linki": "https://www.iskur.gov.tr/medya/zvkdt4uj/dışişleri-bakanlığı-aday-meslek-memurluğu-sınav-ilanı-30072026.pdf",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
       "bolumler": [
         "Diğer"
       ],
@@ -2677,6 +2677,106 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "99e5e347908973c99805",
+      "baslik": "2026 YILI SÖZLEŞMELİ DİYETİSYEN, PSİKOLOG ve SOSYAL ÇALIŞMACI ALIMI DUYURUSU",
+      "kurum": "Gençlik ve Spor Bakanlığı",
+      "sehir": "Türkiye Geneli",
+      "tur": "Personel Alımı",
+      "kaynak": "GSB Personel Alımları",
+      "son_basvuru": "",
+      "link": "https://www.gsb.gov.tr/tr/duyuru/300997-2026-yili-sozlesmeli-diyetisyen-psikolog-ve-sosyal-calismaci-alimi-duyurusu",
+      "basvuru_linki": "https://www.gsb.gov.tr/tr/duyuru/300715-2026-yili-sozlesmeli-avukat-ve-muhendis-alimi-basvuru-ve-yerlestirme-sonuc-duyurusu",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "html_ok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "be0fbe4608d75c44cb3b",
+      "baslik": "2026 YILI SÖZLEŞMELİ YURT YÖNETİM PERSONELİ VE GENÇLİK ÇALIŞANI ALIMI DUYURUSU",
+      "kurum": "Gençlik ve Spor Bakanlığı",
+      "sehir": "Türkiye Geneli",
+      "tur": "Personel Alımı",
+      "kaynak": "GSB Personel Alımları",
+      "son_basvuru": "",
+      "link": "https://www.gsb.gov.tr/tr/duyuru/300642-2026-yili-sozlesmeli-yurt-yonetim-personeli-ve-genclik-calisani-alimi-duyurusu",
+      "basvuru_linki": "https://www.gsb.gov.tr/tr/duyuru/300715-2026-yili-sozlesmeli-avukat-ve-muhendis-alimi-basvuru-ve-yerlestirme-sonuc-duyurusu",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "html_ok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "06f4fe8ba0cb74bf2717",
+      "baslik": "2026 YILI MİLLİLİK KAPSAMINDA SÖZLEŞMELİ ANTRENÖR ALIMI DUYURUSU",
+      "kurum": "Gençlik ve Spor Bakanlığı",
+      "sehir": "Türkiye Geneli",
+      "tur": "Personel Alımı",
+      "kaynak": "GSB Personel Alımları",
+      "son_basvuru": "",
+      "link": "https://www.gsb.gov.tr/tr/duyuru/300522-2026-yili-millilik-kapsaminda-sozlesmeli-antrenor-alimi-duyurusu",
+      "basvuru_linki": "https://www.gsb.gov.tr/tr/duyuru/300715-2026-yili-sozlesmeli-avukat-ve-muhendis-alimi-basvuru-ve-yerlestirme-sonuc-duyurusu",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "html_ok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "c1bd720eccdf70f53e80",
+      "baslik": "2026 YILI SÖZLEŞMELİ ANTRENÖR ALIMI DUYURUSU",
+      "kurum": "Gençlik ve Spor Bakanlığı",
+      "sehir": "Türkiye Geneli",
+      "tur": "Personel Alımı",
+      "kaynak": "GSB Personel Alımları",
+      "son_basvuru": "",
+      "link": "https://www.gsb.gov.tr/tr/duyuru/300521-2026-yili-sozlesmeli-antrenor-alimi-duyurusu",
+      "basvuru_linki": "https://www.gsb.gov.tr/tr/duyuru/300715-2026-yili-sozlesmeli-avukat-ve-muhendis-alimi-basvuru-ve-yerlestirme-sonuc-duyurusu",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "html_ok",
+      "analiz_surumu": 1
+    },
+    {
+      "id": "9385660b48e8ee01d6c7",
+      "baslik": "2026 YILI SÖZLEŞMELİ AVUKAT VE MÜHENDİS ALIMI DUYURUSU",
+      "kurum": "Gençlik ve Spor Bakanlığı",
+      "sehir": "Türkiye Geneli",
+      "tur": "Personel Alımı",
+      "kaynak": "GSB Personel Alımları",
+      "son_basvuru": "",
+      "link": "https://www.gsb.gov.tr/tr/duyuru/300370-2026-yili-sozlesmeli-avukat-ve-muhendis-alimi-duyurusu",
+      "basvuru_linki": "https://www.gsb.gov.tr/tr/duyuru/300715-2026-yili-sozlesmeli-avukat-ve-muhendis-alimi-basvuru-ve-yerlestirme-sonuc-duyurusu",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "html_ok",
       "analiz_surumu": 1
     }
   ],
