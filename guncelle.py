@@ -40,6 +40,14 @@ OSYM_ARAMA_TERIMLERI = (
     "kpss kadro pozisyon",
 )
 
+OSYM_HABER_ARAMA_TERIMLERI = (
+    "kpss sonuçları",
+    "kpss yerleştirme sonuçları",
+    "kpss taban puanlar",
+    "kpss atama sonuçları",
+    "kpss tercih kılavuzu",
+)
+
 RESMI_DUYURU_KAYNAKLARI = (
     {
         "kaynak": "GSB Personel Alımları",
@@ -407,6 +415,108 @@ def osym_aktif_duyuru_mu(baslik):
     )
 
 
+def haber_kategorisi_bul(baslik):
+    normal = arama_metnine_cevir(baslik)
+
+    if "taban puan" in normal or "tavan puan" in normal:
+        return "Taban-Tavan Puan"
+    if "sonuc" in normal or "yerlestirme" in normal:
+        return "Sonuç"
+    if "atama" in normal or "atamaya hak" in normal:
+        return "Atama"
+    if "kilavuz" in normal or "tercih" in normal:
+        return "Tercih ve Kılavuz"
+    if "mulakat" in normal or "sozlu sinav" in normal:
+        return "Mülakat"
+
+    return "Kamu Personeli"
+
+
+def osym_haber_duyurusu_mu(baslik):
+    normal = arama_metnine_cevir(baslik)
+
+    if "kpss" not in normal:
+        return False
+
+    haber_ifadeleri = (
+        "sonuc",
+        "yerlestirme",
+        "taban puan",
+        "tavan puan",
+        "atama",
+        "kilavuz",
+        "kadro ve pozisyon",
+    )
+
+    return any(ifade in normal for ifade in haber_ifadeleri)
+
+
+def osym_kpss_haberlerini_al():
+    """ÖSYM sonuç, taban-tavan puan, atama ve kılavuz haberlerini alır."""
+    haberler = []
+    gorulen_linkler = set()
+
+    for arama_terimi in OSYM_HABER_ARAMA_TERIMLERI:
+        html = sayfayi_indir(
+            OSYM_ARAMA_URL,
+            params={
+                "_Dil": "1",
+                "aranan": arama_terimi,
+            },
+        )
+        soup = BeautifulSoup(html, "html.parser")
+
+        for link_etiketi in soup.find_all("a", href=True):
+            baslik = temizle(link_etiketi.get_text(" ", strip=True))
+            href = temizle(link_etiketi.get("href", ""))
+
+            if len(baslik) < 15 or not href:
+                continue
+
+            if not osym_haber_duyurusu_mu(baslik):
+                continue
+
+            if href.startswith("#") or href.casefold().startswith("javascript:"):
+                continue
+
+            link = urljoin(OSYM_ARAMA_URL, href)
+            normal_link = link.casefold()
+
+            if "osym.gov.tr" not in normal_link or "/arama" in normal_link:
+                continue
+
+            anahtar = link_anahtari(link)
+
+            if anahtar in gorulen_linkler:
+                continue
+
+            gorulen_linkler.add(anahtar)
+
+            kapsayici = link_etiketi.find_parent(["li", "article", "div", "tr"])
+            kapsayici_metni = (
+                temizle(kapsayici.get_text(" ", strip=True))
+                if kapsayici is not None
+                else baslik
+            )
+            yayin_tarihi = tarih_bul(kapsayici_metni) or tarih_bul(baslik)
+
+            haberler.append({
+                "id": ilan_id_uret(link),
+                "baslik": baslik[:400],
+                "kurum": "ÖSYM",
+                "kategori": haber_kategorisi_bul(baslik),
+                "yayin_tarihi": yayin_tarihi,
+                "kaynak": "ÖSYM KPSS Haberleri",
+                "ozet": "ÖSYM tarafından yayımlanan resmî KPSS duyurusu.",
+                "link": link,
+            })
+
+            if len(haberler) >= 60:
+                return haberler
+
+    return haberler
+
+
 def osym_kpss_duyurularini_al():
     """ÖSYM'den yalnızca aktif KPSS başvuru ve tercih duyurularını alır."""
     ilanlar = []
@@ -532,6 +642,79 @@ def personel_alim_duyurusu_mu(baslik):
     )
 
     return any(ifade in normal for ifade in alim_ifadeleri)
+
+
+def personel_haberi_mi(baslik):
+    normal = arama_metnine_cevir(baslik)
+
+    haber_ifadeleri = (
+        "basvuru sonucu",
+        "sinav sonucu",
+        "sozlu sinav sonucu",
+        "mulakat sonucu",
+        "yerlestirme sonucu",
+        "atamaya hak kazanan",
+        "atama sonucu",
+        "taban puan",
+        "tavan puan",
+        "belge teslim",
+        "evrak teslim",
+    )
+
+    return any(ifade in normal for ifade in haber_ifadeleri)
+
+
+def resmi_kaynaktan_haberleri_al(kaynak):
+    """Bakanlıkların personel alımı sonuç ve atama haberlerini toplar."""
+    html = sayfayi_indir(kaynak["url"])
+    soup = BeautifulSoup(html, "html.parser")
+    haberler = []
+    gorulen_linkler = set()
+
+    for link_etiketi in soup.find_all("a", href=True):
+        baslik = temizle(link_etiketi.get_text(" ", strip=True))
+        href = temizle(link_etiketi.get("href", ""))
+
+        if len(baslik) < 12 or not href or not personel_haberi_mi(baslik):
+            continue
+
+        link = urljoin(kaynak["url"], href)
+        normal_link = link.casefold()
+
+        if not any(
+            parca.casefold() in normal_link
+            for parca in kaynak["link_parcalari"]
+        ):
+            continue
+
+        anahtar = link_anahtari(link)
+        if anahtar in gorulen_linkler:
+            continue
+        gorulen_linkler.add(anahtar)
+
+        kapsayici = link_etiketi.find_parent(["li", "article", "div", "tr"])
+        kapsayici_metni = (
+            temizle(kapsayici.get_text(" ", strip=True))
+            if kapsayici is not None
+            else baslik
+        )
+        yayin_tarihi = tarih_bul(kapsayici_metni) or tarih_bul(baslik)
+
+        haberler.append({
+            "id": ilan_id_uret(link),
+            "baslik": baslik[:400],
+            "kurum": kaynak["kurum"],
+            "kategori": haber_kategorisi_bul(baslik),
+            "yayin_tarihi": yayin_tarihi,
+            "kaynak": kaynak["kaynak"].replace("Personel Alımları", "Personel Haberleri"),
+            "ozet": f"{kaynak['kurum']} tarafından yayımlanan resmî personel duyurusu.",
+            "link": link,
+        })
+
+        if len(haberler) >= 30:
+            break
+
+    return haberler
 
 
 def turkce_tarihleri_bul(metin):
@@ -1054,8 +1237,28 @@ def tarih_siralama_degeri(ilan):
     return datetime.max
 
 
+def haber_tarih_siralama_degeri(haber):
+    metin = haber.get("yayin_tarihi", "")
+
+    for bicim in (
+        "%d.%m.%Y %H:%M",
+        "%d/%m/%Y %H:%M",
+        "%d-%m-%Y %H:%M",
+        "%d.%m.%Y",
+        "%d/%m/%Y",
+        "%d-%m-%Y",
+    ):
+        try:
+            return datetime.strptime(metin, bicim)
+        except ValueError:
+            continue
+
+    return datetime.min
+
+
 def main():
     tum_ilanlar = []
+    tum_haberler = []
     hatalar = []
 
     gorevler = [
@@ -1100,12 +1303,28 @@ def main():
             f"{type(hata).__name__} - {str(hata)[:150]}"
         )
 
+    try:
+        osym_haberleri = osym_kpss_haberlerini_al()
+        tum_haberler.extend(osym_haberleri)
+        print(f"ÖSYM KPSS haberleri: {len(osym_haberleri)}")
+    except Exception as hata:
+        hatalar.append(
+            "ÖSYM KPSS haberleri: "
+            f"{type(hata).__name__} - {str(hata)[:150]}"
+        )
+
     for resmi_kaynak in RESMI_DUYURU_KAYNAKLARI:
         try:
             resmi_ilanlar = resmi_kaynaktan_ilanlari_al(resmi_kaynak)
             tum_ilanlar.extend(resmi_ilanlar)
             print(
                 f"{resmi_kaynak['kaynak']}: {len(resmi_ilanlar)}"
+            )
+
+            resmi_haberler = resmi_kaynaktan_haberleri_al(resmi_kaynak)
+            tum_haberler.extend(resmi_haberler)
+            print(
+                f"{resmi_kaynak['kurum']} haberleri: {len(resmi_haberler)}"
             )
         except Exception as hata:
             hatalar.append(
@@ -1122,6 +1341,19 @@ def main():
             benzersiz[anahtar] = ilan
 
     sonuc = list(benzersiz.values())
+
+    benzersiz_haberler = {}
+    ilan_linkleri = set(benzersiz)
+
+    for haber in tum_haberler:
+        anahtar = link_anahtari(haber.get("link", ""))
+
+        if anahtar and anahtar not in ilan_linkleri:
+            benzersiz_haberler[anahtar] = haber
+
+    haberler = list(benzersiz_haberler.values())
+    haberler.sort(key=haber_tarih_siralama_degeri, reverse=True)
+
     onceki_analizler = onceki_analizleri_yukle()
     zenginlestirilmis = []
     yeniden_kullanilan = 0
@@ -1170,6 +1402,8 @@ def main():
         ).isoformat(),
         "ilan_sayisi": len(zenginlestirilmis),
         "ilanlar": zenginlestirilmis,
+        "haber_sayisi": len(haberler),
+        "haberler": haberler,
         "hata_sayisi": len(hatalar),
         "pdf_hata_sayisi": pdf_hatalari,
         "hatalar": hatalar[:50],
@@ -1191,6 +1425,7 @@ def main():
 
     print("--------------------------------")
     print(f"Toplam ilan: {len(zenginlestirilmis)}")
+    print(f"Toplam haber: {len(haberler)}")
     print(f"Sayfa hatası: {len(hatalar)}")
     print(f"PDF hatası: {pdf_hatalari}")
     print("ilanlar.json oluşturuldu.")
