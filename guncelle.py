@@ -9,6 +9,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlencode, urljoin
+from zoneinfo import ZoneInfo
 
 import requests
 from bs4 import BeautifulSoup
@@ -192,7 +193,7 @@ TARIH_DESENI = re.compile(
     r"(?:\s+\d{1,2}:\d{2})?)"
 )
 
-ANALIZ_SURUMU = 1
+ANALIZ_SURUMU = 2
 MAKSIMUM_PDF_BOYUTU = 30 * 1024 * 1024
 MAKSIMUM_PDF_SAYFASI = 40
 
@@ -283,7 +284,7 @@ def pdf_linki_mi(href):
     return "/medya/" in href or ".pdf" in href
 
 
-def satirdan_ilan_al(satir, kaynak, sehir):
+def satirdan_ilan_al(satir, kaynak, sehir, kaynak_sayfa_linki):
     link_etiketi = None
 
     for aday in satir.find_all("a", href=True):
@@ -299,7 +300,7 @@ def satirdan_ilan_al(satir, kaynak, sehir):
     if not href:
         return None
 
-    link = urljoin(kaynak["url"], href)
+    belge_linki = urljoin(kaynak["url"], href)
     hucreler = satir.find_all("td")
     satir_metni = temizle(satir.get_text(" ", strip=True))
     son_basvuru = tarih_bul(satir_metni)
@@ -331,25 +332,36 @@ def satirdan_ilan_al(satir, kaynak, sehir):
         return None
 
     return {
-        "id": ilan_id_uret(link),
+        "id": ilan_id_uret(belge_linki),
         "baslik": baslik[:400],
         "kurum": baslik[:250],
         "sehir": sehir,
         "tur": kaynak["tur"],
         "kaynak": kaynak["kaynak"],
         "son_basvuru": son_basvuru,
-        "link": link,
-        "basvuru_linki": link,
+        # Geriye dönük uyumluluk için link alanı belgeyi gösterir.
+        "link": belge_linki,
+        "belge_linki": belge_linki,
+        "kaynak_sayfa_linki": kaynak_sayfa_linki,
+        "basvuru_linki": "",
+        "basvuru_online": False,
+        "basvuru_aciklamasi": (
+            "Başvuru yöntemi ilan belgesinden kontrol edilmelidir."
+        ),
     }
 
 
 def sayfadan_ilanlari_al(kaynak, sehir_kodu, sehir_adi):
+    parametreler = {
+        "idId": sehir_kodu,
+        "il": sehir_adi,
+    }
     html = sayfayi_indir(
         kaynak["url"],
-        params={
-            "idId": sehir_kodu,
-            "il": sehir_adi,
-        },
+        params=parametreler,
+    )
+    kaynak_sayfa_linki = (
+        f"{kaynak['url']}?{urlencode(parametreler)}"
     )
 
     soup = BeautifulSoup(html, "html.parser")
@@ -360,6 +372,7 @@ def sayfadan_ilanlari_al(kaynak, sehir_kodu, sehir_adi):
             satir,
             kaynak,
             sehir_adi,
+            kaynak_sayfa_linki,
         )
 
         if ilan:
@@ -381,13 +394,13 @@ def sayfadan_ilanlari_al(kaynak, sehir_kodu, sehir_adi):
                 kapsayici,
                 kaynak,
                 sehir_adi,
+                kaynak_sayfa_linki,
             )
 
             if ilan:
                 ilanlar.append(ilan)
 
     return ilanlar
-
 
 
 def osym_aktif_duyuru_mu(baslik):
@@ -560,7 +573,6 @@ def osym_kpss_duyurularini_al():
             if "osym.gov.tr" not in normal_link:
                 continue
 
-            # Arama sayfasının kendisini ve genel kategori bağlantılarını alma.
             if "/arama" in normal_link:
                 continue
 
@@ -579,17 +591,43 @@ def osym_kpss_duyurularini_al():
             )
             yayin_tarihi = tarih_bul(kapsayici_metni) or tarih_bul(baslik)
 
+            try:
+                (
+                    sayfa_basligi,
+                    detay_metni,
+                    belge_linki,
+                    basvuru_linki,
+                    basvuru_online,
+                    basvuru_aciklamasi,
+                ) = duyuru_icerigini_al(link)
+            except Exception:
+                sayfa_basligi = ""
+                detay_metni = kapsayici_metni
+                belge_linki = link
+                basvuru_linki = ""
+                basvuru_online = False
+                basvuru_aciklamasi = (
+                    "Online başvuru bağlantısı bulunamadı. ÖSYM duyuru "
+                    "sayfasını kontrol edin."
+                )
+
+            son_basvuru = son_basvuru_tarihi_bul(detay_metni)
+
             ilanlar.append({
                 "id": ilan_id_uret(link),
-                "baslik": baslik[:400],
+                "baslik": baslik_temizle(sayfa_basligi or baslik)[:400],
                 "kurum": "ÖSYM",
                 "sehir": "Türkiye Geneli",
                 "tur": "KPSS Duyurusu",
                 "kaynak": "ÖSYM KPSS Duyuruları",
-                "son_basvuru": "",
+                "son_basvuru": son_basvuru,
                 "yayin_tarihi": yayin_tarihi,
                 "link": link,
-                "basvuru_linki": link,
+                "belge_linki": belge_linki,
+                "kaynak_sayfa_linki": link,
+                "basvuru_linki": basvuru_linki,
+                "basvuru_online": basvuru_online,
+                "basvuru_aciklamasi": basvuru_aciklamasi,
                 "kpss_gerekli": True,
                 "minimum_puan": None,
                 "kpss_durumu": "KPSS tercih/yerleştirme duyurusu",
@@ -808,11 +846,180 @@ def son_basvuru_tarihi_bul(metin):
     return max(aday_tarihler).strftime("%d.%m.%Y")
 
 
+BILINEN_BASVURU_ADRESLERI = {
+    "isealimkariyerkapisi.cbiko.gov.tr": (
+        "https://isealimkariyerkapisi.cbiko.gov.tr"
+    ),
+    "kariyerkapisi.cbiko.gov.tr": (
+        "https://kariyerkapisi.cbiko.gov.tr"
+    ),
+    "ais.osym.gov.tr": "https://ais.osym.gov.tr",
+    "esube.iskur.gov.tr": "https://esube.iskur.gov.tr",
+    "turkiye.gov.tr": "https://www.turkiye.gov.tr",
+    "personeltemin.msb.gov.tr": "https://personeltemin.msb.gov.tr",
+    "vatandas.jandarma.gov.tr": "https://vatandas.jandarma.gov.tr",
+}
+
+ONLINE_BASVURU_IFADELERI = (
+    "online basvuru",
+    "elektronik ortamda",
+    "internet uzerinden",
+    "e-devlet uzerinden",
+    "kariyer kapisi",
+    "basvuru adresi",
+    "basvuru ekrani",
+)
+
+ONLINE_OLMAYAN_BASVURU_IFADELERI = (
+    "sahsen basvuru",
+    "basvurular sahsen",
+    "sahsen yapil",
+    "sahsen muracaat",
+    "elden basvuru",
+    "posta yoluyla",
+    "kargo yoluyla",
+    "kuruma teslim",
+    "basvuru formu ile birlikte",
+)
+
+
+def guvenli_web_linki(href, temel_url):
+    href = temizle(href)
+
+    if not href:
+        return ""
+
+    normal = href.casefold()
+
+    if normal.startswith(("javascript:", "mailto:", "tel:", "#")):
+        return ""
+
+    link = urljoin(temel_url, href)
+
+    if link.casefold().startswith(("http://", "https://")):
+        return link
+
+    return ""
+
+
+def html_basvuru_linki_bul(soup, temel_url):
+    for etiket in soup.find_all("a", href=True):
+        href = temizle(etiket.get("href", ""))
+        link = guvenli_web_linki(href, temel_url)
+
+        if not link:
+            continue
+
+        yazi = arama_metnine_cevir(
+            etiket.get_text(" ", strip=True)
+        )
+        normal_link = link.casefold()
+
+        if any(domain in normal_link for domain in BILINEN_BASVURU_ADRESLERI):
+            return link
+
+        if (
+            "basvuru" in yazi
+            or "basvuru" in arama_metnine_cevir(href)
+            or "apply" in normal_link
+        ):
+            return link
+
+    return ""
+
+
+def metinden_basvuru_linki_bul(metin):
+    for bulunan in re.findall(r"https?://[^\s<>'\"()]+", metin or ""):
+        link = bulunan.rstrip(".,;:)]}")
+        normal_link = link.casefold()
+
+        if any(domain in normal_link for domain in BILINEN_BASVURU_ADRESLERI):
+            return link
+
+    normal_metin = arama_metnine_cevir(metin)
+
+    for domain, adres in BILINEN_BASVURU_ADRESLERI.items():
+        if domain in normal_metin:
+            return adres
+
+    return ""
+
+
+def basvuru_bilgisi_bul(metin, soup=None, temel_url=""):
+    link = ""
+
+    if soup is not None:
+        link = html_basvuru_linki_bul(soup, temel_url)
+
+    if not link:
+        link = metinden_basvuru_linki_bul(metin)
+
+    if link:
+        return True, link, "Başvurular online olarak yapılmaktadır."
+
+    normal = arama_metnine_cevir(metin)
+
+    if any(ifade in normal for ifade in ONLINE_OLMAYAN_BASVURU_IFADELERI):
+        return (
+            False,
+            "",
+            "Başvurular online değildir. Şahsen, posta veya ilanda "
+            "belirtilen diğer yöntemle başvuru yapılmalıdır.",
+        )
+
+    if any(ifade in normal for ifade in ONLINE_BASVURU_IFADELERI):
+        return (
+            False,
+            "",
+            "İlanda online başvuru belirtilmiş ancak doğrudan başvuru "
+            "bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+        )
+
+    return (
+        False,
+        "",
+        "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan "
+        "belgesinden kontrol edin.",
+    )
+
+
+def ilan_belgesi_linki_bul(soup, temel_url):
+    for etiket in soup.find_all("a", href=True):
+        href = temizle(etiket.get("href", ""))
+        link = guvenli_web_linki(href, temel_url)
+
+        if not link:
+            continue
+
+        yazi = arama_metnine_cevir(
+            etiket.get_text(" ", strip=True)
+        )
+        normal_link = link.casefold()
+
+        if ".pdf" in normal_link or "/medya/" in normal_link:
+            return link
+
+        if any(
+            ifade in yazi
+            for ifade in (
+                "ilan metni",
+                "ilan belgesi",
+                "basvuru kilavuzu",
+                "duyuru metni",
+            )
+        ):
+            return link
+
+    # Ayrı belge yoksa duyuru sayfasının kendisi belge görevi görür.
+    return temel_url
+
+
 def duyuru_icerigini_al(url):
     html = sayfayi_indir(url)
     soup = BeautifulSoup(html, "html.parser")
 
-    for etiket in soup(["script", "style", "noscript", "svg"]):
+    temiz_soup = BeautifulSoup(html, "html.parser")
+    for etiket in temiz_soup(["script", "style", "noscript", "svg"]):
         etiket.decompose()
 
     adaylar = []
@@ -826,7 +1033,7 @@ def duyuru_icerigini_al(url):
         ".news-detail",
         ".duyuru-detay",
     ):
-        for dugum in soup.select(secici):
+        for dugum in temiz_soup.select(secici):
             metin = temizle(dugum.get_text(" ", strip=True))
             if len(metin) >= 120:
                 adaylar.append((len(metin), metin))
@@ -834,33 +1041,34 @@ def duyuru_icerigini_al(url):
     if adaylar:
         detay_metni = max(adaylar, key=lambda oge: oge[0])[1]
     else:
-        detay_metni = temizle(soup.get_text(" ", strip=True))
+        detay_metni = temizle(
+            temiz_soup.get_text(" ", strip=True)
+        )
 
-    baslik_etiketi = soup.find(["h1", "h2"])
+    baslik_etiketi = temiz_soup.find(["h1", "h2"])
     sayfa_basligi = (
         temizle(baslik_etiketi.get_text(" ", strip=True))
         if baslik_etiketi is not None
         else ""
     )
 
-    basvuru_linki = url
-
-    for etiket in soup.find_all("a", href=True):
-        href = temizle(etiket.get("href", ""))
-        yazi = arama_metnine_cevir(
-            etiket.get_text(" ", strip=True)
+    belge_linki = ilan_belgesi_linki_bul(soup, url)
+    basvuru_online, basvuru_linki, basvuru_aciklamasi = (
+        basvuru_bilgisi_bul(
+            detay_metni,
+            soup=soup,
+            temel_url=url,
         )
-        normal_href = href.casefold()
+    )
 
-        if (
-            "kariyerkapisi" in normal_href
-            or "isealim" in normal_href
-            or "basvuru" in yazi
-        ):
-            basvuru_linki = urljoin(url, href)
-            break
-
-    return sayfa_basligi, detay_metni, basvuru_linki
+    return (
+        sayfa_basligi,
+        detay_metni,
+        belge_linki,
+        basvuru_linki,
+        basvuru_online,
+        basvuru_aciklamasi,
+    )
 
 
 def resmi_kaynaktan_ilanlari_al(kaynak):
@@ -897,13 +1105,24 @@ def resmi_kaynaktan_ilanlari_al(kaynak):
         gorulen_linkler.add(anahtar)
 
         try:
-            sayfa_basligi, detay_metni, basvuru_linki = (
-                duyuru_icerigini_al(link)
-            )
+            (
+                sayfa_basligi,
+                detay_metni,
+                belge_linki,
+                basvuru_linki,
+                basvuru_online,
+                basvuru_aciklamasi,
+            ) = duyuru_icerigini_al(link)
         except Exception:
             sayfa_basligi = ""
             detay_metni = baslik
-            basvuru_linki = link
+            belge_linki = link
+            basvuru_linki = ""
+            basvuru_online = False
+            basvuru_aciklamasi = (
+                "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini "
+                "ilan sayfasından kontrol edin."
+            )
 
         gercek_baslik = baslik_temizle(sayfa_basligi or baslik)
 
@@ -924,7 +1143,11 @@ def resmi_kaynaktan_ilanlari_al(kaynak):
             "kaynak": kaynak["kaynak"],
             "son_basvuru": son_basvuru,
             "link": link,
+            "belge_linki": belge_linki,
+            "kaynak_sayfa_linki": link,
             "basvuru_linki": basvuru_linki,
+            "basvuru_online": basvuru_online,
+            "basvuru_aciklamasi": basvuru_aciklamasi,
             "kpss_gerekli": kpss_gerekli,
             "minimum_puan": minimum_puan,
             "kpss_durumu": kpss_durumu,
@@ -939,6 +1162,7 @@ def resmi_kaynaktan_ilanlari_al(kaynak):
             break
 
     return ilanlar
+
 
 def gorevi_calistir(kaynak, sehir_kodu, sehir_adi):
     try:
@@ -1198,21 +1422,39 @@ def ilani_zenginlestir(ilan, onceki_analizler):
         "bolumler",
         "pdf_isleme_durumu",
         "analiz_surumu",
+        "belge_linki",
+        "kaynak_sayfa_linki",
+        "basvuru_linki",
+        "basvuru_online",
+        "basvuru_aciklamasi",
     ]
 
     if onceki_analiz_kullanilabilir(onceki):
         for alan in kopyalanacak_alanlar:
-            ilan[alan] = onceki.get(alan)
+            if alan in onceki:
+                ilan[alan] = onceki.get(alan)
 
         return ilan, True
 
     pdf_metni, pdf_durumu = pdf_metnini_oku(
-        ilan.get("link", "")
+        ilan.get("belge_linki") or ilan.get("link", "")
     )
 
     kpss_gerekli, minimum_puan, kpss_durumu = (
         kpss_bilgisi_bul(pdf_metni, pdf_durumu)
     )
+    basvuru_online, basvuru_linki, basvuru_aciklamasi = (
+        basvuru_bilgisi_bul(
+            pdf_metni,
+            temel_url=ilan.get("kaynak_sayfa_linki", ""),
+        )
+    )
+
+    if pdf_durumu != "ok" and not basvuru_linki:
+        basvuru_aciklamasi = (
+            "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini "
+            "ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin."
+        )
 
     ilan.update({
         "kpss_gerekli": kpss_gerekli,
@@ -1222,9 +1464,60 @@ def ilani_zenginlestir(ilan, onceki_analizler):
         "bolumler": bolumleri_bul(pdf_metni),
         "pdf_isleme_durumu": pdf_durumu,
         "analiz_surumu": ANALIZ_SURUMU,
+        "belge_linki": ilan.get("belge_linki") or ilan.get("link", ""),
+        "kaynak_sayfa_linki": ilan.get("kaynak_sayfa_linki", ""),
+        "basvuru_linki": basvuru_linki,
+        "basvuru_online": basvuru_online,
+        "basvuru_aciklamasi": basvuru_aciklamasi,
     })
 
     return ilan, False
+
+
+TURKIYE_SAATI = ZoneInfo("Europe/Istanbul")
+
+SON_BASVURU_TARIH_BICIMLERI = (
+    "%d.%m.%Y %H:%M",
+    "%d/%m/%Y %H:%M",
+    "%d-%m-%Y %H:%M",
+    "%d.%m.%Y",
+    "%d/%m/%Y",
+    "%d-%m-%Y",
+)
+
+
+def son_basvuru_zamani(ilan):
+    """İlanın son başvuru tarihini Türkiye saatine göre çözümler."""
+    metin = temizle(str(ilan.get("son_basvuru", "")))
+
+    if not metin:
+        return None
+
+    for bicim in SON_BASVURU_TARIH_BICIMLERI:
+        try:
+            tarih = datetime.strptime(metin, bicim)
+
+            # Saat bilgisi yoksa ilan son günün 23:59:59'una kadar açık kalsın.
+            if "%H:%M" not in bicim:
+                tarih = tarih.replace(hour=23, minute=59, second=59)
+
+            return tarih.replace(tzinfo=TURKIYE_SAATI)
+        except ValueError:
+            continue
+
+    return None
+
+
+def ilan_aktif_mi(ilan, simdi=None):
+    """Son başvuru tarihi geçmiş ilanları ele."""
+    son_zaman = son_basvuru_zamani(ilan)
+
+    # Tarihi okunamayan ilanı yanlışlıkla silmemek için listede tut.
+    if son_zaman is None:
+        return True
+
+    simdi = simdi or datetime.now(TURKIYE_SAATI)
+    return son_zaman >= simdi
 
 
 def tarih_siralama_degeri(ilan):
@@ -1517,7 +1810,19 @@ def main():
         if anahtar:
             benzersiz[anahtar] = ilan
 
-    sonuc = list(benzersiz.values())
+    tum_benzersiz_ilanlar = list(benzersiz.values())
+    simdi_tr = datetime.now(TURKIYE_SAATI)
+    sonuc = [
+        ilan
+        for ilan in tum_benzersiz_ilanlar
+        if ilan_aktif_mi(ilan, simdi_tr)
+    ]
+    suresi_dolmus_ilan_sayisi = len(tum_benzersiz_ilanlar) - len(sonuc)
+
+    print(
+        f"Süresi dolduğu için kaldırılan ilan: "
+        f"{suresi_dolmus_ilan_sayisi}"
+    )
 
     benzersiz_haberler = {}
     ilan_linkleri = set(benzersiz)
@@ -1587,6 +1892,7 @@ def main():
             timezone.utc
         ).isoformat(),
         "ilan_sayisi": len(zenginlestirilmis),
+        "suresi_dolmus_ilan_sayisi": suresi_dolmus_ilan_sayisi,
         "ilanlar": zenginlestirilmis,
         "haber_sayisi": len(haberler),
         "haberler": haberler,
@@ -1611,7 +1917,8 @@ def main():
     gecici_dosya.replace(asil_dosya)
 
     print("--------------------------------")
-    print(f"Toplam ilan: {len(zenginlestirilmis)}")
+    print(f"Toplam aktif ilan: {len(zenginlestirilmis)}")
+    print(f"Kaldırılan süresi dolmuş ilan: {suresi_dolmus_ilan_sayisi}")
     print(f"Toplam haber: {len(haberler)}")
     print(f"Sayfa hatası: {len(hatalar)}")
     print(f"PDF hatası: {pdf_hatalari}")
