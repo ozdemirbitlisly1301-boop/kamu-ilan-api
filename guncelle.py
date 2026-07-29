@@ -77,6 +77,13 @@ RESMI_DUYURU_KAYNAKLARI = (
         "url": "https://pgm.adalet.gov.tr/Home/",
         "link_parcalari": ("/Home/SayfaDetay/",),
     },
+    {
+        "kaynak": "MSB / TSK Personel Temin İlanları",
+        "kurum": "Millî Savunma Bakanlığı / Türk Silahlı Kuvvetleri",
+        "url": "https://personeltemin.msb.gov.tr/AnaSayfa",
+        "link_parcalari": ("/AnaSayfa/DuyuruDetay/",),
+        "kaynak_kodu": "msb_tsk",
+    },
 )
 
 TURKCE_AYLAR = {
@@ -663,6 +670,14 @@ def personel_alim_duyurusu_mu(baslik):
         "unvan degisikligi",
         "atamaya hak kazanan",
         "atama islemleri",
+        "kesin kayit",
+        "egitim duyurusu",
+        "on kayit",
+        "ikinci siniflandirma",
+        "siniflandirma sonrasi",
+        "cagri ilani",
+        "cagri durumu",
+        "konaklama",
     )
 
     if any(ifade in normal for ifade in engellenen_ifadeler):
@@ -686,6 +701,20 @@ def personel_alim_duyurusu_mu(baslik):
         "avukat ve muhendis alimi",
         "sosyal calismaci alimi",
         "psikolog alimi",
+        "personel temini",
+        "personel temin ilani",
+        "uzman erbas temini",
+        "uzman erbas temin faaliyeti",
+        "sozlesmeli er temini",
+        "sozlesmeli er temin faaliyeti",
+        "muvazzaf subay temini",
+        "sozlesmeli subay temini",
+        "muvazzaf astsubay temini",
+        "sozlesmeli astsubay temini",
+        "askeri ogrenci temini",
+        "devlet memuru temini",
+        "surekli isci temini",
+        "teknik sinif uzman erbas",
     )
 
     return any(ifade in normal for ifade in alim_ifadeleri)
@@ -903,7 +932,10 @@ def guvenli_web_linki(href, temel_url):
 
 
 def html_basvuru_linki_bul(soup, temel_url):
-    for etiket in soup.find_all("a", href=True):
+    """Sayfadaki gerçek başvuru bağlantısını puanlayarak bulur."""
+    adaylar = []
+
+    for sira, etiket in enumerate(soup.find_all("a", href=True)):
         href = temizle(etiket.get("href", ""))
         link = guvenli_web_linki(href, temel_url)
 
@@ -913,19 +945,68 @@ def html_basvuru_linki_bul(soup, temel_url):
         yazi = arama_metnine_cevir(
             etiket.get_text(" ", strip=True)
         )
+        normal_href = arama_metnine_cevir(href)
         normal_link = link.casefold()
+        puan = 0
 
-        if any(domain in normal_link for domain in BILINEN_BASVURU_ADRESLERI):
-            return link
-
-        if (
-            "basvuru" in yazi
-            or "basvuru" in arama_metnine_cevir(href)
-            or "apply" in normal_link
+        if any(
+            ifade in yazi
+            for ifade in (
+                "basvuru yapmak",
+                "basvuru icin",
+                "basvuru ekrani",
+                "tercih yap",
+                "e-devlet ile giris",
+                "giris yapmak",
+            )
         ):
-            return link
+            puan += 100
 
-    return ""
+        if "basvuru" in yazi:
+            puan += 45
+
+        if any(
+            ifade in normal_href
+            for ifade in ("basvuru", "apply", "tercih", "giris", "login")
+        ):
+            puan += 35
+
+        if any(
+            domain in normal_link
+            for domain in (
+                "isealimkariyerkapisi.cbiko.gov.tr",
+                "kariyerkapisi.cbiko.gov.tr",
+                "ais.osym.gov.tr",
+                "esube.iskur.gov.tr",
+                "turkiye.gov.tr",
+                "vatandas.jandarma.gov.tr",
+            )
+        ):
+            puan += 30
+
+        # MSB sitesindeki menü ve logo bağlantılarını başvuru sanma.
+        if (
+            "personeltemin.msb.gov.tr" in normal_link
+            and not any(
+                ifade in yazi or ifade in normal_href
+                for ifade in (
+                    "basvuru",
+                    "tercih",
+                    "giris",
+                    "e-devlet",
+                )
+            )
+        ):
+            puan -= 80
+
+        if puan > 0:
+            adaylar.append((puan, -sira, link))
+
+    if not adaylar:
+        return ""
+
+    adaylar.sort(reverse=True)
+    return adaylar[0][2]
 
 
 def metinden_basvuru_linki_bul(metin):
@@ -1071,6 +1152,66 @@ def duyuru_icerigini_al(url):
     )
 
 
+def msb_tsk_aktif_temin_mi(baslik, detay_metni, son_basvuru):
+    """Yalnızca başvurusu açık MSB/TSK temin ilanlarını kabul eder."""
+    normal_baslik = arama_metnine_cevir(baslik)
+    normal_detay = arama_metnine_cevir(detay_metni)
+    birlesik = f"{normal_baslik} {normal_detay}"
+
+    temin_ifadeleri = (
+        "uzman erbas temini",
+        "uzman erbas temin faaliyeti",
+        "sozlesmeli er temini",
+        "sozlesmeli er temin faaliyeti",
+        "muvazzaf subay temini",
+        "sozlesmeli subay temini",
+        "muvazzaf astsubay temini",
+        "sozlesmeli astsubay temini",
+        "devlet memuru temini",
+        "sozlesmeli personel",
+        "bilisim personeli temini",
+        "uzman yardimcisi temini",
+        "surekli isci temini",
+        "askeri ogrenci temini",
+        "personel temini",
+    )
+
+    surec_duyurusu_ifadeleri = (
+        "sonuc duyurusu",
+        "sinav sonucu",
+        "itiraz degerlendirme",
+        "kesin kayit",
+        "egitim duyurusu",
+        "cagri ilani",
+        "cagri durumu",
+        "ikinci siniflandirma",
+        "on kayit",
+        "secim asamasi",
+        "konaklama",
+    )
+
+    basvuru_ifadeleri = (
+        "basvuruya acilmis",
+        "basvurular alinacaktir",
+        "basvurular online",
+        "cevrimici online",
+        "son basvuru",
+        "basvuru yapmak icin",
+        "tercih yap",
+    )
+
+    if any(ifade in normal_baslik for ifade in surec_duyurusu_ifadeleri):
+        return False
+
+    if not any(ifade in normal_baslik for ifade in temin_ifadeleri):
+        return False
+
+    if not son_basvuru:
+        return False
+
+    return any(ifade in birlesik for ifade in basvuru_ifadeleri)
+
+
 def resmi_kaynaktan_ilanlari_al(kaynak):
     """GSB, Aile ve Adalet Bakanlığı resmî duyuru sayfalarını tarar."""
     html = sayfayi_indir(kaynak["url"])
@@ -1096,6 +1237,15 @@ def resmi_kaynaktan_ilanlari_al(kaynak):
 
         if not personel_alim_duyurusu_mu(baslik):
             continue
+
+        kapsayici = link_etiketi.find_parent(
+            ["li", "article", "div", "tr", "section"]
+        )
+        kapsayici_metni = (
+            temizle(kapsayici.get_text(" ", strip=True))
+            if kapsayici is not None
+            else baslik
+        )
 
         anahtar = link_anahtari(link)
 
@@ -1130,6 +1280,20 @@ def resmi_kaynaktan_ilanlari_al(kaynak):
             continue
 
         son_basvuru = son_basvuru_tarihi_bul(detay_metni)
+
+        if kaynak.get("kaynak_kodu") == "msb_tsk":
+            if not son_basvuru:
+                liste_tarihleri = turkce_tarihleri_bul(kapsayici_metni)
+                if liste_tarihleri:
+                    son_basvuru = max(liste_tarihleri).strftime("%d.%m.%Y")
+
+            if not msb_tsk_aktif_temin_mi(
+                gercek_baslik,
+                detay_metni,
+                son_basvuru,
+            ):
+                continue
+
         kpss_gerekli, minimum_puan, kpss_durumu = (
             kpss_bilgisi_bul(detay_metni, "ok")
         )
@@ -1139,7 +1303,11 @@ def resmi_kaynaktan_ilanlari_al(kaynak):
             "baslik": gercek_baslik[:400],
             "kurum": kaynak["kurum"],
             "sehir": "Türkiye Geneli",
-            "tur": "Personel Alımı",
+            "tur": (
+                "Askerî / MSB Personel Alımı"
+                if kaynak.get("kaynak_kodu") == "msb_tsk"
+                else "Personel Alımı"
+            ),
             "kaynak": kaynak["kaynak"],
             "son_basvuru": son_basvuru,
             "link": link,
