@@ -44,6 +44,7 @@ KAYNAKLAR = [
 ]
 
 OSYM_ARAMA_URL = "https://www.osym.gov.tr/arama"
+OSYM_DUYURULAR_URL = "https://www.osym.gov.tr/Duyurular/Index"
 OSYM_ARAMA_TERIMLERI = (
     "kpss tercih",
     "kpss yerleştirme",
@@ -51,11 +52,21 @@ OSYM_ARAMA_TERIMLERI = (
 )
 
 OSYM_HABER_ARAMA_TERIMLERI = (
+    "kpss başvuruların alınması",
+    "kpss başvuru",
     "kpss sonuçları",
     "kpss yerleştirme sonuçları",
     "kpss taban puanlar",
     "kpss atama sonuçları",
-    "kpss tercih kılavuzu",
+    "kpss tercih",
+    "kpss tercih sonuçları",
+    "ekpss",
+    "yks başvuruların alınması",
+    "yks başvuru",
+    "yks sonuçları",
+    "yks tercih",
+    "yks tercih sonuçları",
+    "yks ek yerleştirme",
 )
 
 RESMI_DUYURU_KAYNAKLARI = (
@@ -444,8 +455,64 @@ def osym_aktif_duyuru_mu(baslik):
     )
 
 
+def osym_sinav_turu_bul(baslik):
+    normal = arama_metnine_cevir(baslik)
+
+    if "yks" in normal or "yuksekogretim kurumlari sinavi" in normal:
+        return "YKS"
+
+    if "ekpss" in normal:
+        return "EKPSS"
+
+    if "kpss" in normal or "kamu personel secme sinavi" in normal:
+        return "KPSS"
+
+    return ""
+
+
+def osym_haber_kategorisi_bul(baslik):
+    normal = arama_metnine_cevir(baslik)
+    sinav_turu = osym_sinav_turu_bul(baslik) or "ÖSYM"
+
+    if (
+        ("ek yerlestirme" in normal or "ek tercih" in normal)
+        and "sonuc" in normal
+    ):
+        return f"{sinav_turu} Ek Yerleştirme Sonucu"
+
+    if "ek yerlestirme" in normal or "ek tercih" in normal:
+        return f"{sinav_turu} Ek Yerleştirme"
+
+    if "tercih" in normal and "sonuc" in normal:
+        return f"{sinav_turu} Tercih Sonucu"
+
+    if "tercih" in normal:
+        return f"{sinav_turu} Tercih"
+
+    if (
+        "basvuru" in normal
+        or "basvurularin alinmasi" in normal
+        or "gec basvuru" in normal
+    ):
+        return f"{sinav_turu} Başvuru"
+
+    if "sonuc" in normal or "sayisal bilgiler" in normal:
+        return f"{sinav_turu} Sonuç"
+
+    if "kilavuz" in normal:
+        return f"{sinav_turu} Kılavuz"
+
+    if "yerlestirme" in normal:
+        return f"{sinav_turu} Yerleştirme"
+
+    return f"{sinav_turu} Duyuru"
+
+
 def haber_kategorisi_bul(baslik):
     normal = arama_metnine_cevir(baslik)
+
+    if osym_sinav_turu_bul(baslik):
+        return osym_haber_kategorisi_bul(baslik)
 
     if "taban puan" in normal or "tavan puan" in normal:
         return "Taban-Tavan Puan"
@@ -462,26 +529,134 @@ def haber_kategorisi_bul(baslik):
 
 
 def osym_haber_duyurusu_mu(baslik):
-    normal = arama_metnine_cevir(baslik)
+    """KPSS, EKPSS ve YKS ile ilgili tüm resmî ÖSYM duyurularını kabul eder."""
+    return bool(osym_sinav_turu_bul(baslik))
 
-    if "kpss" not in normal:
-        return False
 
-    haber_ifadeleri = (
-        "sonuc",
-        "yerlestirme",
-        "taban puan",
-        "tavan puan",
-        "atama",
-        "kilavuz",
-        "kadro ve pozisyon",
+def osym_basligini_temizle(metin):
+    metin = temizle(metin)
+    aylar = (
+        "Ocak|Şubat|Mart|Nisan|Mayıs|Haziran|Temmuz|"
+        "Ağustos|Eylül|Ekim|Kasım|Aralık"
     )
 
-    return any(ifade in normal for ifade in haber_ifadeleri)
+    metin = re.sub(
+        rf"^\s*\d{{1,2}}\s+(?:{aylar})\s+\d{{4}}\s*",
+        "",
+        metin,
+        flags=re.IGNORECASE,
+    )
+    return temizle(metin).strip(" -|")
 
 
-def osym_kpss_haberlerini_al():
-    """ÖSYM sonuç, taban-tavan puan, atama ve kılavuz haberlerini alır."""
+def osym_yayin_tarihi_bul(metin):
+    sayisal = tarih_bul(metin)
+
+    if sayisal:
+        return sayisal
+
+    tarihler = turkce_tarihleri_bul(metin)
+
+    if tarihler:
+        return max(tarihler).strftime("%d.%m.%Y")
+
+    return ""
+
+
+def osym_haber_kaydi_olustur(baslik, link, yayin_tarihi):
+    sinav_turu = osym_sinav_turu_bul(baslik)
+
+    return {
+        "id": ilan_id_uret(link),
+        "baslik": baslik[:400],
+        "kurum": "ÖSYM",
+        "kategori": osym_haber_kategorisi_bul(baslik),
+        "yayin_tarihi": yayin_tarihi,
+        "kaynak": f"ÖSYM {sinav_turu} Duyuruları",
+        "ozet": (
+            f"ÖSYM tarafından yayımlanan resmî {sinav_turu} "
+            "başvuru, tercih, yerleştirme veya sonuç duyurusu."
+        ),
+        "link": link,
+    }
+
+
+def osym_duyurular_sayfasindan_haberleri_al():
+    """
+    ÖSYM'nin güncel Duyurular sayfasını doğrudan tarar.
+    Yeni başvuru, tercih ve sonuç duyuruları arama terimine bağlı kalmaz.
+    """
+    html = sayfayi_indir(OSYM_DUYURULAR_URL)
+    soup = BeautifulSoup(html, "html.parser")
+    haberler = []
+    gorulen_linkler = set()
+
+    for link_etiketi in soup.find_all("a", href=True):
+        ham_baslik = temizle(link_etiketi.get_text(" ", strip=True))
+        href = temizle(link_etiketi.get("href", ""))
+
+        if not href or len(ham_baslik) < 10:
+            continue
+
+        baslik = osym_basligini_temizle(ham_baslik)
+
+        if len(baslik) < 10 or not osym_haber_duyurusu_mu(baslik):
+            continue
+
+        if href.startswith("#") or href.casefold().startswith("javascript:"):
+            continue
+
+        link = urljoin(OSYM_DUYURULAR_URL, href)
+        normal_link = link.casefold()
+
+        if "osym.gov.tr" not in normal_link:
+            continue
+
+        if any(
+            parca in normal_link
+            for parca in (
+                "/arama",
+                "/duyurular/index",
+                "/sinavtakvimi",
+                "/kpss-sinav-takvimi",
+            )
+        ):
+            continue
+
+        anahtar = link_anahtari(link)
+
+        if not anahtar or anahtar in gorulen_linkler:
+            continue
+
+        gorulen_linkler.add(anahtar)
+
+        kapsayici = link_etiketi.find_parent(["li", "article", "div", "tr"])
+        kapsayici_metni = (
+            temizle(kapsayici.get_text(" ", strip=True))
+            if kapsayici is not None
+            else ham_baslik
+        )
+        yayin_tarihi = (
+            osym_yayin_tarihi_bul(ham_baslik)
+            or osym_yayin_tarihi_bul(kapsayici_metni)
+        )
+
+        haberler.append(
+            osym_haber_kaydi_olustur(
+                baslik,
+                link,
+                yayin_tarihi,
+            )
+        )
+
+        if len(haberler) >= 250:
+            break
+
+    return haberler
+
+
+def osym_arama_sonuclarindan_haberleri_al():
+    """Duyurular sayfası değişirse kullanılacak geniş kapsamlı yedek tarama."""
     haberler = []
     gorulen_linkler = set()
 
@@ -496,10 +671,11 @@ def osym_kpss_haberlerini_al():
         soup = BeautifulSoup(html, "html.parser")
 
         for link_etiketi in soup.find_all("a", href=True):
-            baslik = temizle(link_etiketi.get_text(" ", strip=True))
+            ham_baslik = temizle(link_etiketi.get_text(" ", strip=True))
+            baslik = osym_basligini_temizle(ham_baslik)
             href = temizle(link_etiketi.get("href", ""))
 
-            if len(baslik) < 15 or not href:
+            if len(baslik) < 10 or not href:
                 continue
 
             if not osym_haber_duyurusu_mu(baslik):
@@ -516,7 +692,7 @@ def osym_kpss_haberlerini_al():
 
             anahtar = link_anahtari(link)
 
-            if anahtar in gorulen_linkler:
+            if not anahtar or anahtar in gorulen_linkler:
                 continue
 
             gorulen_linkler.add(anahtar)
@@ -525,25 +701,38 @@ def osym_kpss_haberlerini_al():
             kapsayici_metni = (
                 temizle(kapsayici.get_text(" ", strip=True))
                 if kapsayici is not None
-                else baslik
+                else ham_baslik
             )
-            yayin_tarihi = tarih_bul(kapsayici_metni) or tarih_bul(baslik)
+            yayin_tarihi = (
+                osym_yayin_tarihi_bul(ham_baslik)
+                or osym_yayin_tarihi_bul(kapsayici_metni)
+            )
 
-            haberler.append({
-                "id": ilan_id_uret(link),
-                "baslik": baslik[:400],
-                "kurum": "ÖSYM",
-                "kategori": haber_kategorisi_bul(baslik),
-                "yayin_tarihi": yayin_tarihi,
-                "kaynak": "ÖSYM KPSS Haberleri",
-                "ozet": "ÖSYM tarafından yayımlanan resmî KPSS duyurusu.",
-                "link": link,
-            })
+            haberler.append(
+                osym_haber_kaydi_olustur(
+                    baslik,
+                    link,
+                    yayin_tarihi,
+                )
+            )
 
-            if len(haberler) >= 60:
+            if len(haberler) >= 250:
                 return haberler
 
     return haberler
+
+
+def osym_kpss_haberlerini_al():
+    """
+    KPSS, EKPSS ve YKS başvuru/sonuç/tercih/yerleştirme haberlerini alır.
+    Eski fonksiyon adı ana akış bozulmasın diye korunmuştur.
+    """
+    haberler = osym_duyurular_sayfasindan_haberleri_al()
+
+    if haberler:
+        return haberler
+
+    return osym_arama_sonuclarindan_haberleri_al()
 
 
 def osym_kpss_duyurularini_al():
@@ -1153,7 +1342,14 @@ def duyuru_icerigini_al(url):
 
 
 def msb_tsk_aktif_temin_mi(baslik, detay_metni, son_basvuru):
-    """Yalnızca başvurusu açık MSB/TSK temin ilanlarını kabul eder."""
+    """
+    MSB ana sayfasındaki Güncel Teminler kartlarını kabul eder.
+
+    Bazı MSB ilanlarında son başvuru tarihi detay sayfasından düzenli biçimde
+    okunamadığı için ilanı yalnızca tarih bulunamadı diye silmeyiz. İlan,
+    Güncel Teminler bölümünden kalktığında sonraki güncellemede zaten listeden
+    otomatik çıkar.
+    """
     normal_baslik = arama_metnine_cevir(baslik)
     normal_detay = arama_metnine_cevir(detay_metni)
     birlesik = f"{normal_baslik} {normal_detay}"
@@ -1161,6 +1357,7 @@ def msb_tsk_aktif_temin_mi(baslik, detay_metni, son_basvuru):
     temin_ifadeleri = (
         "uzman erbas temini",
         "uzman erbas temin faaliyeti",
+        "teknik sinif uzman erbas",
         "sozlesmeli er temini",
         "sozlesmeli er temin faaliyeti",
         "muvazzaf subay temini",
@@ -1168,12 +1365,14 @@ def msb_tsk_aktif_temin_mi(baslik, detay_metni, son_basvuru):
         "muvazzaf astsubay temini",
         "sozlesmeli astsubay temini",
         "devlet memuru temini",
+        "sozlesmeli personel temini",
         "sozlesmeli personel",
         "bilisim personeli temini",
         "uzman yardimcisi temini",
         "surekli isci temini",
         "askeri ogrenci temini",
         "personel temini",
+        "temin faaliyeti",
     )
 
     surec_duyurusu_ifadeleri = (
@@ -1188,28 +1387,13 @@ def msb_tsk_aktif_temin_mi(baslik, detay_metni, son_basvuru):
         "on kayit",
         "secim asamasi",
         "konaklama",
-    )
-
-    basvuru_ifadeleri = (
-        "basvuruya acilmis",
-        "basvurular alinacaktir",
-        "basvurular online",
-        "cevrimici online",
-        "son basvuru",
-        "basvuru yapmak icin",
-        "tercih yap",
+        "sinav asamasi",
     )
 
     if any(ifade in normal_baslik for ifade in surec_duyurusu_ifadeleri):
         return False
 
-    if not any(ifade in normal_baslik for ifade in temin_ifadeleri):
-        return False
-
-    if not son_basvuru:
-        return False
-
-    return any(ifade in birlesik for ifade in basvuru_ifadeleri)
+    return any(ifade in birlesik for ifade in temin_ifadeleri)
 
 
 def resmi_kaynaktan_ilanlari_al(kaynak):
@@ -1220,10 +1404,9 @@ def resmi_kaynaktan_ilanlari_al(kaynak):
     gorulen_linkler = set()
 
     for link_etiketi in soup.find_all("a", href=True):
-        baslik = temizle(link_etiketi.get_text(" ", strip=True))
         href = temizle(link_etiketi.get("href", ""))
 
-        if len(baslik) < 12 or not href:
+        if not href:
             continue
 
         link = urljoin(kaynak["url"], href)
@@ -1235,17 +1418,50 @@ def resmi_kaynaktan_ilanlari_al(kaynak):
         ):
             continue
 
-        if not personel_alim_duyurusu_mu(baslik):
-            continue
-
         kapsayici = link_etiketi.find_parent(
             ["li", "article", "div", "tr", "section"]
         )
         kapsayici_metni = (
             temizle(kapsayici.get_text(" ", strip=True))
             if kapsayici is not None
-            else baslik
+            else ""
         )
+
+        # MSB kartlarında bağlantının kendi yazısı bazen boş veya kısadır.
+        # Başlığı kartın içindeki başlık etiketlerinden ve erişilebilirlik
+        # alanlarından da toplamaya çalış.
+        baslik_adaylari = [
+            temizle(link_etiketi.get_text(" ", strip=True)),
+            temizle(link_etiketi.get("title", "")),
+            temizle(link_etiketi.get("aria-label", "")),
+            kapsayici_metni,
+        ]
+
+        if kapsayici is not None:
+            for etiket_adi in ("h1", "h2", "h3", "h4", "h5", "strong"):
+                for etiket in kapsayici.find_all(etiket_adi):
+                    baslik_adaylari.append(
+                        temizle(etiket.get_text(" ", strip=True))
+                    )
+
+        baslik_adaylari = [
+            aday
+            for aday in baslik_adaylari
+            if 12 <= len(aday) <= 700
+        ]
+
+        uygun_basliklar = [
+            aday
+            for aday in baslik_adaylari
+            if personel_alim_duyurusu_mu(aday)
+        ]
+
+        if not uygun_basliklar:
+            continue
+
+        # En kısa uygun metin çoğu zaman yalnızca gerçek kart başlığıdır;
+        # tüm kart açıklamasını başlık olarak almamayı sağlar.
+        baslik = min(uygun_basliklar, key=len)
 
         anahtar = link_anahtari(link)
 
@@ -1944,10 +2160,10 @@ def main():
     try:
         osym_haberleri = osym_kpss_haberlerini_al()
         tum_haberler.extend(osym_haberleri)
-        print(f"ÖSYM KPSS haberleri: {len(osym_haberleri)}")
+        print(f"ÖSYM KPSS/EKPSS/YKS haberleri: {len(osym_haberleri)}")
     except Exception as hata:
         hatalar.append(
-            "ÖSYM KPSS haberleri: "
+            "ÖSYM KPSS/EKPSS/YKS haberleri: "
             f"{type(hata).__name__} - {str(hata)[:150]}"
         )
 
@@ -1993,12 +2209,13 @@ def main():
     )
 
     benzersiz_haberler = {}
-    ilan_linkleri = set(benzersiz)
 
     for haber in tum_haberler:
         anahtar = link_anahtari(haber.get("link", ""))
 
-        if anahtar and anahtar not in ilan_linkleri:
+        # Başvuru/tercih duyurusu İlanlar bölümünde de olsa
+        # Haberler bölümünde ayrıca gösterilsin.
+        if anahtar:
             benzersiz_haberler[anahtar] = haber
 
     haberler = list(benzersiz_haberler.values())
