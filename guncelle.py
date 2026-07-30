@@ -91,8 +91,12 @@ RESMI_DUYURU_KAYNAKLARI = (
     {
         "kaynak": "MSB / TSK Personel Temin İlanları",
         "kurum": "Millî Savunma Bakanlığı / Türk Silahlı Kuvvetleri",
-        "url": "https://personeltemin.msb.gov.tr/AnaSayfa",
-        "link_parcalari": ("/AnaSayfa/DuyuruDetay/",),
+        "url": "https://personeltemin.msb.gov.tr/",
+        # MSB bazı güncel temin bağlantılarını
+        # /AnaSayfa/DuyuruDetay?prmEncrypt=... biçiminde veriyor.
+        # Eski filtre sondaki "/" işaretini zorunlu tuttuğu için bu
+        # bağlantıları hiç görmüyor ve sonuç 0 çıkıyordu.
+        "link_parcalari": ("/AnaSayfa/DuyuruDetay",),
         "kaynak_kodu": "msb_tsk",
     },
 )
