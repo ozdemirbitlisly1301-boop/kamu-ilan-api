@@ -2,7 +2,6 @@ name: Kamu İlanlarını Güncelle
 
 on:
   workflow_dispatch:
-
   schedule:
     - cron: "17 */6 * * *"
 
@@ -22,18 +21,20 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Kütüphaneleri kur
+      - name: Gerekli paketleri yükle
         run: |
-          pip install requests beautifulsoup4 pypdf
+          python -m pip install --upgrade pip
+          pip install -r gereksinimler.txt
 
-      - name: İlanları ve PDF bilgilerini çek
-        run: |
-          python guncelle.py
+      - name: İlanları ve haberleri güncelle
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: python guncelle.py
 
-      - name: JSON dosyasını kaydet
+      - name: Değişiklikleri kaydet
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add ilanlar.json
-          git diff --cached --quiet || git commit -m "İlanlar ve filtre bilgileri güncellendi"
+          git diff --cached --quiet || git commit -m "İlanları ve haberleri otomatik güncelle"
           git push
