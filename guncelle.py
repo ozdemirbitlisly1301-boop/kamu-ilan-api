@@ -6,7 +6,7 @@ import re
 import time
 import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlencode, urljoin
 from zoneinfo import ZoneInfo
@@ -1034,6 +1034,31 @@ def turkce_tarihleri_bul(metin):
     return bulunanlar
 
 
+def yayin_tarihi_bul(metin):
+    """
+    Duyurunun yayımlanma tarihini bulur.
+
+    Öncelikle açık bir "Yayın tarihi" işaretini arar. Bulamazsa metnin
+    başlangıcındaki ilk tarihi kullanır; resmî duyuru sayfalarında yayın
+    tarihi genellikle başlığın hemen üstünde yer alır.
+    """
+    normal = arama_metnine_cevir(metin)
+
+    for anahtar in ("yayin tarihi", "duyuru tarihi", "yayinlanma tarihi"):
+        konum = normal.find(anahtar)
+        if konum >= 0:
+            pencere = normal[konum:konum + 180]
+            tarihler = turkce_tarihleri_bul(pencere)
+            if tarihler:
+                return tarihler[0].strftime("%d.%m.%Y")
+
+    baslangic_tarihleri = turkce_tarihleri_bul(normal[:900])
+    if baslangic_tarihleri:
+        return baslangic_tarihleri[0].strftime("%d.%m.%Y")
+
+    return ""
+
+
 def son_basvuru_tarihi_bul(metin):
     """Başvuru cümlelerindeki en ileri tarihi son başvuru olarak seçer."""
     normal = arama_metnine_cevir(metin)
@@ -1045,6 +1070,13 @@ def son_basvuru_tarihi_bul(metin):
         "basvuru tarih",
         "basvurularini",
         "basvuru suresi",
+        "tercih islemleri",
+        "tercih suresi",
+        "tercih tarih",
+        "bitis tarihi",
+        "son tarih",
+        "kadar uzatil",
+        "suresinin uzatil",
     )
 
     for anahtar in anahtarlar:
@@ -1308,11 +1340,22 @@ def duyuru_icerigini_al(url):
             if len(metin) >= 120:
                 adaylar.append((len(metin), metin))
 
+    tum_sayfa_metni = temizle(
+        temiz_soup.get_text(" ", strip=True)
+    )
+
     if adaylar:
         detay_metni = max(adaylar, key=lambda oge: oge[0])[1]
     else:
-        detay_metni = temizle(
-            temiz_soup.get_text(" ", strip=True)
+        detay_metni = tum_sayfa_metni
+
+    # Bazı sitelerde yayın tarihi içerik kutusunun dışında kalır. Bu tarihi
+    # detay metnine ekleyerek eski duyuruların aktif ilan sanılmasını önleriz.
+    sayfa_yayin_tarihi = yayin_tarihi_bul(tum_sayfa_metni)
+    if sayfa_yayin_tarihi:
+        detay_metni = (
+            f"Yayın tarihi: {sayfa_yayin_tarihi}. "
+            f"{detay_metni}"
         )
 
     baslik_etiketi = temiz_soup.find(["h1", "h2"])
@@ -1426,6 +1469,26 @@ def resmi_kaynaktan_ilanlari_al(kaynak):
             if kapsayici is not None
             else ""
         )
+        liste_yayin_tarihi = yayin_tarihi_bul(kapsayici_metni)
+
+        # MSB ana sayfası yalnızca güncel temin kartlarını gösterir. Diğer
+        # resmî kaynaklarda ise arşiv yılları aynı sayfada bulunabildiği için,
+        # çok eski kartları daha detay sayfasına gitmeden eliyoruz.
+        if (
+            kaynak.get("kaynak_kodu") != "msb_tsk"
+            and liste_yayin_tarihi
+        ):
+            try:
+                liste_tarihi = datetime.strptime(
+                    liste_yayin_tarihi,
+                    "%d.%m.%Y",
+                ).replace(tzinfo=ZoneInfo("Europe/Istanbul"))
+                simdi_tr = datetime.now(ZoneInfo("Europe/Istanbul"))
+
+                if liste_tarihi < simdi_tr - timedelta(days=180):
+                    continue
+            except ValueError:
+                pass
 
         # MSB kartlarında bağlantının kendi yazısı bazen boş veya kısadır.
         # Başlığı kartın içindeki başlık etiketlerinden ve erişilebilirlik
@@ -1481,7 +1544,7 @@ def resmi_kaynaktan_ilanlari_al(kaynak):
             ) = duyuru_icerigini_al(link)
         except Exception:
             sayfa_basligi = ""
-            detay_metni = baslik
+            detay_metni = temizle(f"{kapsayici_metni} {baslik}")
             belge_linki = link
             basvuru_linki = ""
             basvuru_online = False
@@ -1496,6 +1559,10 @@ def resmi_kaynaktan_ilanlari_al(kaynak):
             continue
 
         son_basvuru = son_basvuru_tarihi_bul(detay_metni)
+        yayin_tarihi = (
+            yayin_tarihi_bul(detay_metni)
+            or liste_yayin_tarihi
+        )
 
         if kaynak.get("kaynak_kodu") == "msb_tsk":
             if not son_basvuru:
@@ -1525,7 +1592,9 @@ def resmi_kaynaktan_ilanlari_al(kaynak):
                 else "Personel Alımı"
             ),
             "kaynak": kaynak["kaynak"],
+            "kaynak_kodu": kaynak.get("kaynak_kodu", "resmi_duyuru"),
             "son_basvuru": son_basvuru,
+            "yayin_tarihi": yayin_tarihi,
             "link": link,
             "belge_linki": belge_linki,
             "kaynak_sayfa_linki": link,
@@ -1892,16 +1961,57 @@ def son_basvuru_zamani(ilan):
     return None
 
 
+def yayin_zamani(ilan):
+    metin = temizle(str(ilan.get("yayin_tarihi", "")))
+
+    if not metin:
+        return None
+
+    for bicim in SON_BASVURU_TARIH_BICIMLERI:
+        try:
+            return datetime.strptime(
+                metin,
+                bicim,
+            ).replace(tzinfo=TURKIYE_SAATI)
+        except ValueError:
+            continue
+
+    return None
+
+
 def ilan_aktif_mi(ilan, simdi=None):
-    """Son başvuru tarihi geçmiş ilanları ele."""
+    """
+    Süresi biten ilanları ve tarihi olmayan çok eski arşiv duyurularını ele.
+    """
+    simdi = simdi or datetime.now(TURKIYE_SAATI)
     son_zaman = son_basvuru_zamani(ilan)
 
-    # Tarihi okunamayan ilanı yanlışlıkla silmemek için listede tut.
-    if son_zaman is None:
+    if son_zaman is not None:
+        return son_zaman >= simdi
+
+    # MSB ana sayfasındaki kartlar "Güncel Teminler" listesinden gelir.
+    if ilan.get("kaynak_kodu") == "msb_tsk":
         return True
 
-    simdi = simdi or datetime.now(TURKIYE_SAATI)
-    return son_zaman >= simdi
+    yayin = yayin_zamani(ilan)
+
+    # Son başvuru tarihi bulunamadıysa, altı aydan eski resmî duyuruyu
+    # aktif ilan olarak göstermeyelim.
+    if yayin is not None:
+        return yayin >= simdi - timedelta(days=180)
+
+    # Tarih hiç okunamazsa başlıktaki açıkça eski yılı da güvenlik ağı
+    # olarak kullan.
+    baslik = arama_metnine_cevir(str(ilan.get("baslik", "")))
+    yillar = [
+        int(yil)
+        for yil in re.findall(r"\b(20\d{2})\b", baslik)
+    ]
+
+    if yillar and max(yillar) < simdi.year:
+        return False
+
+    return True
 
 
 def tarih_siralama_degeri(ilan):
