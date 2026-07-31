@@ -1,33 +1,45 @@
-name: Kamu İlanlarını Güncelle
+name: Kamu İlanlarını ve Haberlerini Güncelle
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
 
+concurrency:
+  group: kpss-kariyer-veri-guncelleme
+  cancel-in-progress: false
+
 jobs:
   guncelle:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
 
     steps:
       - name: Repoyu indir
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: En güncel kodu al
+        run: git pull --rebase origin main
 
       - name: Python kur
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: pip
 
       - name: Gerekli paketleri yükle
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: İlanları ve haberleri güncelle
+      - name: İlanları, ÖSYM haberlerini ve bildirimleri güncelle
         env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
         run: python guncelle.py
 
@@ -36,5 +48,29 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add ilanlar.json
-          git diff --cached --quiet || git commit -m "İlanları ve haberleri otomatik güncelle"
-          git push
+
+          if git diff --cached --quiet; then
+            echo "Kaydedilecek veri değişikliği yok."
+            exit 0
+          fi
+
+          git commit -m "İlanları ve haberleri otomatik güncelle"
+
+          for deneme in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "Veriler GitHub'a kaydedildi."
+              exit 0
+            fi
+
+            echo "Push çakıştı. Güncel dal alınıp yeniden deneniyor: $deneme/3"
+            git fetch origin main
+            git rebase origin/main || {
+              git rebase --abort || true
+              echo "Rebase çakıştı; iş akışı yeni çalışmada tekrar deneyecek."
+              exit 1
+            }
+            sleep 5
+          done
+
+          echo "Üç denemede push yapılamadı."
+          exit 1
