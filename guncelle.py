@@ -426,11 +426,21 @@ def sayfadan_ilanlari_al(kaynak, sehir_kodu, sehir_adi):
 
 
 def osym_aktif_duyuru_mu(baslik):
-    """Yalnızca başvuru/tercih süreci devam eden ÖSYM duyurularını kabul eder."""
+    """Yalnızca açık merkezi atama/tercih duyurularını ilan kabul eder.
+
+    KPSS sınav başvuruları, sınava giriş belgeleri ve sonuç duyuruları haber
+    bölümüne gider. ÖSYM Atamaları bölümüne yalnızca merkezi yerleştirme,
+    tercih kılavuzu ve kadro/pozisyon duyuruları alınır.
+    """
     normal_baslik = arama_metnine_cevir(baslik)
 
-    # Sonuç ve sınav sonrası haberleri uygulamada açık ilan gibi göstermeyelim.
-    engellenen_ifadeler = (
+    # Sınavla ilgili başvuru ve sonuç duyuruları iş ilanı değildir.
+    haber_ifadeleri = (
+        "basvurularin alinmasi",
+        "sinav basvurusu",
+        "gec basvuru",
+        "sinava giris belgeleri",
+        "sinava giris belgesi",
         "sonuclari aciklandi",
         "sonuc aciklandi",
         "yerlestirme sonuclari",
@@ -443,19 +453,23 @@ def osym_aktif_duyuru_mu(baslik):
         "taban puanlar",
         "ek yerlestirme sonuclari",
     )
-
-    if any(ifade in normal_baslik for ifade in engellenen_ifadeler):
+    if any(ifade in normal_baslik for ifade in haber_ifadeleri):
         return False
 
-    aktif_ifadeler = (
-        "tercih",
-        "basvuru",
-        "kilavuz",
+    # İlan sayılacak ÖSYM kayıtları merkezi atama/tercih sürecini açıkça
+    # belirtmelidir. Sadece "KPSS" ve "başvuru" geçmesi yeterli değildir.
+    atama_ifadeleri = (
+        "merkezi yerlestirme",
+        "tercihlerin alinmasi",
+        "tercih kilavuzu",
         "kadro ve pozisyon",
+        "kadro pozisyon",
+        "sozlesmeli pozisyon",
+        "yerlestirme icin tercih",
     )
 
     return "kpss" in normal_baslik and any(
-        ifade in normal_baslik for ifade in aktif_ifadeler
+        ifade in normal_baslik for ifade in atama_ifadeleri
     )
 
 
@@ -1893,6 +1907,13 @@ def ilani_zenginlestir(ilan, onceki_analizler):
 
         return ilan, True
 
+    # MSB kayıtları HTML sayfasından hazırlandığı için PDF okuyucuya gönderilmez.
+    if (
+        ilan.get("kaynak_kodu") == "msb_tsk"
+        and ilan.get("pdf_isleme_durumu") in ("html_ok", "html_baslik")
+    ):
+        return ilan, False
+
     pdf_metni, pdf_durumu = pdf_metnini_oku(
         ilan.get("belge_linki") or ilan.get("link", "")
     )
@@ -2743,6 +2764,126 @@ def _msb_sayfa_adaylarini_topla(html, sayfa_url):
     return benzersiz
 
 
+def _msb_guncel_temin_basliklarini_topla(html):
+    """
+    MSB sayfasında ayrıntı bağlantıları JavaScript içinde gizlense bile
+    GÜNCEL TEMİNLER bölümündeki kart başlıklarını ve tarihlerini toplar.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    satirlar = [
+        temizle(satir)
+        for satir in soup.get_text("\n", strip=True).splitlines()
+        if temizle(satir)
+    ]
+
+    baslangic = None
+    bitis = None
+    for sira, satir in enumerate(satirlar):
+        normal = arama_metnine_cevir(satir)
+        if baslangic is None and "guncel teminler" in normal:
+            baslangic = sira + 1
+            continue
+        if baslangic is not None and "guncel duyurular" in normal:
+            bitis = sira
+            break
+
+    if baslangic is None:
+        return []
+
+    bolum = satirlar[baslangic:bitis]
+    gruplar = []
+    grup = []
+
+    for satir in bolum:
+        tarih_eslesmesi = re.search(r"\b\d{1,2}\.\d{1,2}\.20\d{2}\b", satir)
+        if tarih_eslesmesi:
+            if grup:
+                gruplar.append((grup, tarih_eslesmesi.group(0)))
+                grup = []
+            continue
+        grup.append(satir)
+
+    if grup:
+        gruplar.append((grup, ""))
+
+    sonuc = []
+    gorulen = set()
+
+    for grup_satirlari, yayin_tarihi in gruplar:
+        adaylar = []
+        for satir in grup_satirlari:
+            if len(satir) < 18:
+                continue
+            if _msb_aktif_temin_basligi_mi(satir):
+                adaylar.append(satir)
+
+        if not adaylar:
+            continue
+
+        # Kartta ana başlık ve kısa alt başlık birlikte bulunabiliyor.
+        # En açıklayıcı olan uzun başlığı seç.
+        baslik = max(adaylar, key=len)
+        anahtar = arama_metnine_cevir(baslik)
+        if not anahtar or anahtar in gorulen:
+            continue
+
+        gorulen.add(anahtar)
+        sonuc.append({
+            "baslik": baslik,
+            "yayin_tarihi": yayin_tarihi,
+        })
+
+    # Tarih ayrımı bulunamazsa, bölümdeki uygun başlıkları doğrudan tara.
+    if not sonuc:
+        for satir in bolum:
+            if len(satir) < 18 or not _msb_aktif_temin_basligi_mi(satir):
+                continue
+            anahtar = arama_metnine_cevir(satir)
+            if not anahtar or anahtar in gorulen:
+                continue
+            gorulen.add(anahtar)
+            sonuc.append({"baslik": satir, "yayin_tarihi": ""})
+
+    return sonuc
+
+
+def _msb_basliktan_yedek_ilan_uret(kayit):
+    """Ayrıntı bağlantısı okunamadığında ana sayfa kartından güvenli ilan üretir."""
+    baslik = baslik_temizle(kayit.get("baslik", ""))
+    yayin_tarihi = temizle(kayit.get("yayin_tarihi", ""))
+    benzersiz_kod = ilan_id_uret("msb_tsk|" + arama_metnine_cevir(baslik))
+    link = MSB_ANA_SAYFA_URL + "?" + urlencode({"kpssKariyer": benzersiz_kod})
+    kpss_gerekli, minimum_puan, kpss_durumu = kpss_bilgisi_bul(baslik, "ok")
+
+    return {
+        "id": benzersiz_kod,
+        "baslik": baslik[:400],
+        "kurum": "Millî Savunma Bakanlığı / Türk Silahlı Kuvvetleri",
+        "sehir": "Türkiye Geneli",
+        "tur": "Askerî / MSB Personel Alımı",
+        "kaynak": "MSB / TSK Güncel Teminler",
+        "kaynak_kodu": "msb_tsk",
+        "son_basvuru": "",
+        "yayin_tarihi": yayin_tarihi,
+        "link": link,
+        "belge_linki": "",
+        "kaynak_sayfa_linki": MSB_ANA_SAYFA_URL,
+        "basvuru_linki": MSB_BASVURU_URL,
+        "basvuru_online": True,
+        "basvuru_aciklamasi": (
+            "Başvuru şartları ve tarihler MSB Personel Temin Sistemindeki "
+            "Güncel Teminler kartından kontrol edilmelidir."
+        ),
+        "kpss_gerekli": kpss_gerekli,
+        "minimum_puan": minimum_puan,
+        "kpss_durumu": kpss_durumu,
+        "mezuniyetler": mezuniyetleri_bul(baslik),
+        "bolumler": bolumleri_bul(baslik),
+        "pdf_isleme_durumu": "html_baslik",
+        "analiz_surumu": ANALIZ_SURUMU,
+    }
+
+
 def msb_guncel_teminleri_al():
     """MSB ana sayfası ve Tüm Teminler sayfasındaki aktif teminleri toplar."""
     ilanlar = []
@@ -2750,8 +2891,14 @@ def msb_guncel_teminleri_al():
     sayfa_hatalari = []
     sayfa_verileri = []
 
-    # Ana sayfadaki Güncel Teminler ile özel Tüm Teminler sayfasını birlikte tara.
-    for sayfa_url in (MSB_ANA_SAYFA_URL, MSB_TEMINLER_URL):
+    # Kök adres, AnaSayfa ve Tüm Teminler adreslerini birlikte dene.
+    msb_sayfalari = (
+        "https://personeltemin.msb.gov.tr/",
+        MSB_ANA_SAYFA_URL,
+        MSB_TEMINLER_URL,
+    )
+
+    for sayfa_url in msb_sayfalari:
         try:
             html = sayfayi_indir(sayfa_url)
             sayfa_verileri.append((sayfa_url, html))
@@ -2763,6 +2910,7 @@ def msb_guncel_teminleri_al():
     if not sayfa_verileri:
         raise RuntimeError("MSB sayfaları alınamadı: " + " | ".join(sayfa_hatalari))
 
+    # Önce gerçek ayrıntı bağlantılarını kullan.
     for sayfa_url, html in sayfa_verileri:
         for etiket, link in _msb_sayfa_adaylarini_topla(html, sayfa_url):
             anahtar = link_anahtari(link)
@@ -2837,6 +2985,33 @@ def msb_guncel_teminleri_al():
                 "analiz_surumu": ANALIZ_SURUMU,
             })
             gorulen.add(anahtar)
+
+    # Ayrıntı bağlantıları JavaScript yüzünden okunamadıysa kart başlıklarını
+    # doğrudan ilan olarak ekle. Bu, önceki sürümde eksik olan asıl yedektir.
+    yedek_sayisi = 0
+    for _, html in sayfa_verileri:
+        for kayit in _msb_guncel_temin_basliklarini_topla(html):
+            yedek_ilan = _msb_basliktan_yedek_ilan_uret(kayit)
+            baslik_anahtari = arama_metnine_cevir(yedek_ilan["baslik"])
+
+            zaten_var = any(
+                baslik_anahtari == arama_metnine_cevir(ilan.get("baslik", ""))
+                for ilan in ilanlar
+            )
+            if zaten_var:
+                continue
+
+            link_anahtar = link_anahtari(yedek_ilan["link"])
+            if not link_anahtar or link_anahtar in gorulen:
+                continue
+
+            gorulen.add(link_anahtar)
+            ilanlar.append(yedek_ilan)
+            yedek_sayisi += 1
+
+    print(f"MSB kart başlığı yedeğiyle eklenen: {yedek_sayisi}")
+    if sayfa_hatalari:
+        print("MSB sayfa uyarıları: " + " | ".join(sayfa_hatalari))
 
     return ilanlar
 
@@ -3109,10 +3284,10 @@ def main():
     try:
         osym_ilanlari = osym_kpss_duyurularini_al()
         tum_ilanlar.extend(osym_ilanlari)
-        kaynak_sayilari["ÖSYM aktif KPSS ilanları"] = len(osym_ilanlari)
-        print(f"ÖSYM aktif KPSS ilanları: {len(osym_ilanlari)}")
+        kaynak_sayilari["ÖSYM merkezi atama ilanları"] = len(osym_ilanlari)
+        print(f"ÖSYM merkezi atama ilanları: {len(osym_ilanlari)}")
     except Exception as hata:
-        hatalar.append(f"ÖSYM aktif KPSS ilanları: {type(hata).__name__} - {str(hata)[:150]}")
+        hatalar.append(f"ÖSYM merkezi atama ilanları: {type(hata).__name__} - {str(hata)[:150]}")
 
     try:
         osym_haberleri = osym_kpss_haberlerini_al()
@@ -3127,8 +3302,10 @@ def main():
         msb_ilanlari = msb_guncel_teminleri_al()
         tum_ilanlar.extend(msb_ilanlari)
         kaynak_sayilari["MSB / TSK Güncel Teminler"] = len(msb_ilanlari)
-        msb_basarili = True
+        msb_basarili = bool(msb_ilanlari)
         print(f"MSB / TSK Güncel Teminler: {len(msb_ilanlari)}")
+        if not msb_ilanlari:
+            hatalar.append("MSB / TSK Güncel Teminler: sayfa açıldı ancak aktif kart okunamadı")
     except Exception as hata:
         hatalar.append(f"MSB / TSK Güncel Teminler: {type(hata).__name__} - {str(hata)[:150]}")
 
@@ -3168,6 +3345,17 @@ def main():
             benzersiz[anahtar] = ilan
     simdi_tr = datetime.now(TURKIYE_SAATI)
     aktif_ilanlar = [i for i in benzersiz.values() if ilan_aktif_mi(i, simdi_tr)]
+
+    # Önceki ilanlar.json dosyasından gelebilecek yanlış sınıflandırılmış ÖSYM
+    # sınav duyurularını da temizle. Bunlar Haberler bölümünde zaten tutulur.
+    aktif_ilanlar = [
+        ilan
+        for ilan in aktif_ilanlar
+        if not (
+            arama_metnine_cevir(ilan.get("kurum", "")) == "osym"
+            and not osym_aktif_duyuru_mu(ilan.get("baslik", ""))
+        )
+    ]
     suresi_dolmus = len(benzersiz) - len(aktif_ilanlar)
     print(f"Süresi dolduğu için kaldırılan ilan: {suresi_dolmus}")
 
