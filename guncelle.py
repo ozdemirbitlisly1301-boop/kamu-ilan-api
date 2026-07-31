@@ -2218,7 +2218,7 @@ def yeni_kayit_bildirimlerini_gonder(
     return sonuc
 
 
-def main():
+def _eski_main():
     (
         onceki_ilan_anahtarlari,
         onceki_haber_anahtarlari,
@@ -2423,6 +2423,652 @@ def main():
     print(f"PDF hatası: {pdf_hatalari}")
     print("ilanlar.json oluşturuldu.")
 
+
+
+# ============================================================================
+# KPSS KARIYER TAM KAPSAM GÜNCELLEME KATMANI
+# Bu bölüm eski çalışan çekicileri korur; ÖSYM, MSB/TSK, veri güvenliği ve
+# bildirim davranışını genişletir.
+# ============================================================================
+
+# MSB/TSK için ayrı ve doğrudan Güncel Teminler tarayıcısı kullanılır.
+MSB_ANA_SAYFA_URL = "https://personeltemin.msb.gov.tr/AnaSayfa"
+MSB_BASVURU_URL = "https://personeltemin.msb.gov.tr/"
+
+# MSB, genel bakanlık taramasından çıkarılır; aşağıda özel olarak çekilir.
+RESMI_DUYURU_KAYNAKLARI = tuple(
+    kaynak
+    for kaynak in RESMI_DUYURU_KAYNAKLARI
+    if kaynak.get("kaynak_kodu") != "msb_tsk"
+)
+
+OSYM_HABER_ARAMA_TERIMLERI = (
+    "yks", "kpss", "ekpss", "yökdil", "e-yökdil", "yds", "e-yds",
+    "ales", "dgs", "msü", "ags", "öabt", "tus", "dus", "ydus",
+    "eus", "tr-yös", "e-tep", "özyes", "hmgs", "sts",
+)
+
+OSYM_SINAV_ESLESMELERI = (
+    ("e-YÖKDİL", ("e-yokdil", "elektronik yuksekogretim kurumlari yabanci dil")),
+    ("YÖKDİL", ("yokdil", "yuksekogretim kurumlari yabanci dil sinavi")),
+    ("e-YDS", ("e-yds", "elektronik yabanci dil sinavi")),
+    ("YDS", ("yds", "yabanci dil bilgisi seviye tespit sinavi")),
+    ("MEB-AGS", ("meb-ags", "akademi giris sinavi", " ogretmenlik alan bilgisi testi")),
+    ("ÖABT", ("oabt", "ogretmenlik alan bilgisi testi")),
+    ("TR-YÖS", ("tr-yos", "yurt disindan ogrenci kabul sinavi")),
+    ("e-TEP", ("e-tep", "elektronik ingilizce yeterlik sinavi")),
+    ("ÖZYES", ("ozyes", "ozel yetenek sinavi")),
+    ("EKPSS", ("ekpss", "engelli kamu personeli secme sinavi")),
+    ("KPSS", ("kpss", "kamu personel secme sinavi", "dhbt")),
+    ("YKS", ("yks", "yuksekogretim kurumlari sinavi", "tyt", "ayt", "ydt")),
+    ("ALES", ("ales", "akademik personel ve lisansustu egitimi giris sinavi")),
+    ("DGS", ("dgs", "dikey gecis sinavi")),
+    ("MSÜ", ("msu", "milli savunma universitesi askeri ogrenci aday belirleme")),
+    ("TUS", ("tus", "tipta uzmanlik egitimi giris sinavi")),
+    ("YDUS", ("ydus", "yan dal uzmanlik egitimi giris sinavi")),
+    ("DUS", ("dus", "dis hekimliginde uzmanlik egitimi giris sinavi")),
+    ("EUS", ("eus", "eczacilikta uzmanlik egitimi giris sinavi")),
+    ("HMGS", ("hmgs", "hukuk mesleklerine giris sinavi")),
+    ("STS", ("sts", "seviye tespit sinavi")),
+    ("GUY", ("guy", "gelir uzman yardimciligi")),
+    ("Adalet Bakanlığı Sınavları", ("adli yargi", "idari yargi", "adli yargi-avukat")),
+)
+
+
+def osym_sinav_turu_bul(baslik):
+    normal = f" {arama_metnine_cevir(baslik)} "
+    for ad, ifadeler in OSYM_SINAV_ESLESMELERI:
+        if any(ifade in normal for ifade in ifadeler):
+            return ad
+    return ""
+
+
+def osym_haber_kategorisi_bul(baslik):
+    normal = arama_metnine_cevir(baslik)
+    sinav_turu = osym_sinav_turu_bul(baslik) or "ÖSYM"
+
+    if "gec basvuru" in normal:
+        olay = "Geç Başvuru"
+    elif "sinava giris belge" in normal or "giris belgeleri" in normal:
+        olay = "Sınava Giriş Belgesi"
+    elif (("ek yerlestirme" in normal or "ek tercih" in normal)
+          and "sonuc" in normal):
+        olay = "Ek Yerleştirme Sonucu"
+    elif "ek yerlestirme" in normal or "ek tercih" in normal:
+        olay = "Ek Yerleştirme"
+    elif "tercih" in normal and ("sonuc" in normal or "yerlestirme" in normal):
+        olay = "Tercih Sonucu"
+    elif "tercih" in normal:
+        olay = "Tercih"
+    elif "basvuru" in normal or "basvurularin alinmasi" in normal:
+        olay = "Başvuru"
+    elif "sinav takvim" in normal or "tarih degisik" in normal or "guncelleme" in normal:
+        olay = "Takvim Değişikliği"
+    elif "cevap kagit" in normal or "aday cevap" in normal:
+        olay = "Aday Cevapları"
+    elif "soru kitap" in normal or "cevap anahtar" in normal:
+        olay = "Soru ve Cevap Anahtarı"
+    elif "sonuc" in normal or "sayisal bilgiler" in normal:
+        olay = "Sonuç"
+    elif "kilavuz" in normal:
+        olay = "Kılavuz"
+    elif "egitim bilgi" in normal or "bilgilerini kontrol" in normal:
+        olay = "Eğitim Bilgisi"
+    elif "yerlestirme" in normal:
+        olay = "Yerleştirme"
+    else:
+        olay = "Duyuru"
+
+    return f"{sinav_turu} {olay}"
+
+
+def osym_haber_duyurusu_mu(baslik):
+    """Adayları ilgilendiren geniş kapsamlı resmî ÖSYM duyurularını kabul eder."""
+    normal = arama_metnine_cevir(baslik)
+
+    engellenen = (
+        "ihale", "sozlesmeli personel alim", "uzman yardimciligi yazili sinav",
+        "basin duyurusu", "kurumsal mali durum", "faaliyet raporu",
+    )
+    if any(ifade in normal for ifade in engellenen):
+        return False
+
+    if osym_sinav_turu_bul(baslik):
+        return True
+
+    aday_ifadeleri = (
+        "basvurularin alinmasi", "gec basvuru", "sinava giris belgeleri",
+        "sinav sonuclari", "sonuclari aciklandi", "tercihlerin alinmasi",
+        "tercih sonuclari", "ek yerlestirme", "kilavuz ve basvuru",
+        "soru kitapcik", "cevap anahtar", "aday cevaplari",
+        "sinav takviminde guncelleme",
+    )
+    return any(ifade in normal for ifade in aday_ifadeleri)
+
+
+def osym_haber_kaydi_olustur(baslik, link, yayin_tarihi):
+    sinav_turu = osym_sinav_turu_bul(baslik) or "Diğer ÖSYM"
+    return {
+        "id": ilan_id_uret(link),
+        "baslik": baslik[:400],
+        "kurum": "ÖSYM",
+        "kategori": osym_haber_kategorisi_bul(baslik),
+        "yayin_tarihi": yayin_tarihi,
+        "kaynak": f"ÖSYM {sinav_turu} Duyuruları",
+        "ozet": (
+            f"ÖSYM tarafından yayımlanan resmî {sinav_turu} duyurusu. "
+            "Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya "
+            "takvim bilgisi için resmî sayfayı açın."
+        ),
+        "link": link,
+    }
+
+
+def haber_guncel_mi(haber, gun_sayisi=180):
+    tarih = haber_tarih_siralama_degeri(haber)
+    simdi = datetime.now()
+    if tarih != datetime.min:
+        return tarih >= simdi - timedelta(days=gun_sayisi)
+
+    baslik = arama_metnine_cevir(haber.get("baslik", ""))
+    yillar = [int(y) for y in re.findall(r"\b(20\d{2})\b", baslik)]
+    return not yillar or max(yillar) >= simdi.year
+
+
+def osym_duyurular_sayfasindan_haberleri_al():
+    """ÖSYM Duyurular sayfasını tek istekle tarar; bütün aday duyurularını alır."""
+    html = sayfayi_indir(OSYM_DUYURULAR_URL)
+    soup = BeautifulSoup(html, "html.parser")
+    haberler = []
+    gorulen_linkler = set()
+
+    for link_etiketi in soup.find_all("a", href=True):
+        ham_baslik = temizle(link_etiketi.get_text(" ", strip=True))
+        href = temizle(link_etiketi.get("href", ""))
+        if not href or len(ham_baslik) < 10:
+            continue
+
+        baslik = osym_basligini_temizle(ham_baslik)
+        if len(baslik) < 10 or not osym_haber_duyurusu_mu(baslik):
+            continue
+        if href.startswith("#") or href.casefold().startswith("javascript:"):
+            continue
+
+        link = urljoin(OSYM_DUYURULAR_URL, href)
+        normal_link = link.casefold()
+        if "osym.gov.tr" not in normal_link:
+            continue
+        if any(parca in normal_link for parca in (
+            "/arama", "/duyurular/index", "/sinavtakvimi",
+            "/kpss-sinav-takvimi",
+        )):
+            continue
+
+        anahtar = link_anahtari(link)
+        if not anahtar or anahtar in gorulen_linkler:
+            continue
+
+        kapsayici = link_etiketi.find_parent(["li", "article", "div", "tr"])
+        kapsayici_metni = temizle(
+            kapsayici.get_text(" ", strip=True) if kapsayici is not None else ham_baslik
+        )
+        yayin_tarihi = (
+            osym_yayin_tarihi_bul(ham_baslik)
+            or osym_yayin_tarihi_bul(kapsayici_metni)
+        )
+        haber = osym_haber_kaydi_olustur(baslik, link, yayin_tarihi)
+        if not haber_guncel_mi(haber, 180):
+            continue
+
+        gorulen_linkler.add(anahtar)
+        haberler.append(haber)
+        if len(haberler) >= 400:
+            break
+
+    haberler.sort(key=haber_tarih_siralama_degeri, reverse=True)
+    return haberler
+
+
+def osym_kpss_haberlerini_al():
+    """Adı uyumluluk için korunmuştur; bütün güncel ÖSYM aday haberlerini alır."""
+    haberler = osym_duyurular_sayfasindan_haberleri_al()
+    if haberler:
+        return haberler
+    yedek = osym_arama_sonuclarindan_haberleri_al()
+    return [haber for haber in yedek if haber_guncel_mi(haber, 180)]
+
+
+def _msb_baslik_adaylari(etiket):
+    adaylar = [
+        temizle(etiket.get_text(" ", strip=True)),
+        temizle(etiket.get("title", "")),
+        temizle(etiket.get("aria-label", "")),
+    ]
+    kapsayici = etiket.find_parent(["article", "li", "div", "section", "tr"])
+    if kapsayici is not None:
+        for ad in ("h1", "h2", "h3", "h4", "h5", "strong", "p"):
+            for baslik_etiketi in kapsayici.find_all(ad, limit=8):
+                adaylar.append(temizle(baslik_etiketi.get_text(" ", strip=True)))
+        adaylar.append(temizle(kapsayici.get_text(" ", strip=True)))
+    return [aday for aday in adaylar if 10 <= len(aday) <= 1000]
+
+
+def _msb_aktif_temin_basligi_mi(baslik):
+    normal = arama_metnine_cevir(baslik)
+    engellenen = (
+        "sonuc", "itiraz", "kesin kayit", "egitim duyurusu", "cagri ilani",
+        "cagri durumu", "sinav asamasi", "secim asamasi", "on kayit",
+        "ikinci siniflandirma", "konaklama", "yerlestirilme", "aday sorgulama",
+    )
+    if any(ifade in normal for ifade in engellenen):
+        return False
+    kabul = (
+        "uzman erbas temini", "uzman erbas temin faaliyeti",
+        "teknik sinif uzman erbas", "sozlesmeli er temini",
+        "sozlesmeli er temin faaliyeti", "muvazzaf subay temini",
+        "sozlesmeli subay temini", "muvazzaf astsubay temini",
+        "sozlesmeli astsubay temini", "askeri ogrenci temini",
+        "devlet memuru temini", "surekli isci temini",
+        "sozlesmeli bilisim personeli temini", "personel temini",
+    )
+    return any(ifade in normal for ifade in kabul)
+
+
+def _msb_detay_linki_mi(link):
+    normal = link.casefold()
+    return "personeltemin.msb.gov.tr" in normal and "duyurudetay" in normal
+
+
+def msb_guncel_teminleri_al():
+    """MSB ana sayfasındaki Güncel Teminler kartlarını doğrudan toplar."""
+    html = sayfayi_indir(MSB_ANA_SAYFA_URL)
+    soup = BeautifulSoup(html, "html.parser")
+    ilanlar = []
+    gorulen = set()
+
+    aday_etiketler = list(soup.find_all("a", href=True))
+
+    # Bazı MSB sürümlerinde kart bağlantısı href yerine onclick/data-url
+    # alanında tutuluyor. DuyuruDetay geçen bütün etiketleri de aday yap.
+    for etiket in soup.find_all(True):
+        ozellikler = " ".join(
+            temizle(" ".join(deger) if isinstance(deger, list) else str(deger))
+            for deger in etiket.attrs.values()
+        )
+        if "duyurudetay" in ozellikler.casefold():
+            aday_etiketler.append(etiket)
+
+    for baslik_etiketi in soup.find_all(["h1", "h2", "h3", "h4", "h5"]):
+        if _msb_aktif_temin_basligi_mi(baslik_etiketi.get_text(" ", strip=True)):
+            baglanti = baslik_etiketi.find_parent("a", href=True)
+            if baglanti is None:
+                kapsayici = baslik_etiketi.find_parent(["article", "li", "div", "section"])
+                baglanti = kapsayici.find("a", href=True) if kapsayici is not None else None
+            if baglanti is not None:
+                aday_etiketler.append(baglanti)
+
+    for etiket in aday_etiketler:
+        href = temizle(etiket.get("href", ""))
+        if not href:
+            ozellikler = " ".join(
+                temizle(" ".join(deger) if isinstance(deger, list) else str(deger))
+                for deger in etiket.attrs.values()
+            )
+            eslesme = re.search(
+                r"((?:https?://[^\s'\"]+)?/?AnaSayfa/DuyuruDetay/?\?[^\s'\"]+)",
+                ozellikler,
+                flags=re.IGNORECASE,
+            )
+            href = temizle(eslesme.group(1)) if eslesme else ""
+        if not href:
+            continue
+        href = href.replace("&amp;", "&")
+        link = urljoin(MSB_ANA_SAYFA_URL, href)
+        if not _msb_detay_linki_mi(link):
+            continue
+        anahtar = link_anahtari(link)
+        if not anahtar or anahtar in gorulen:
+            continue
+
+        basliklar = [a for a in _msb_baslik_adaylari(etiket) if _msb_aktif_temin_basligi_mi(a)]
+        if not basliklar:
+            continue
+        liste_basligi = min(basliklar, key=len)
+        kapsayici = etiket.find_parent(["article", "li", "div", "section", "tr"])
+        kapsayici_metni = temizle(
+            kapsayici.get_text(" ", strip=True) if kapsayici is not None else liste_basligi
+        )
+        liste_yayin_tarihi = yayin_tarihi_bul(kapsayici_metni)
+
+        try:
+            (sayfa_basligi, detay_metni, belge_linki, basvuru_linki,
+             basvuru_online, basvuru_aciklamasi) = duyuru_icerigini_al(link)
+        except Exception:
+            sayfa_basligi = ""
+            detay_metni = kapsayici_metni
+            belge_linki = link
+            basvuru_linki = ""
+            basvuru_online = False
+            basvuru_aciklamasi = ""
+
+        gercek_baslik = baslik_temizle(sayfa_basligi or liste_basligi)
+        if not _msb_aktif_temin_basligi_mi(gercek_baslik):
+            continue
+
+        son_basvuru = son_basvuru_tarihi_bul(detay_metni)
+        yayin_tarihi = yayin_tarihi_bul(detay_metni) or liste_yayin_tarihi
+        if not basvuru_linki:
+            basvuru_linki = MSB_BASVURU_URL
+            basvuru_online = True
+            basvuru_aciklamasi = (
+                "MSB personel temin başvuruları resmî Personel Temin Sistemi "
+                "üzerinden çevrimiçi yapılır. Ayrıntıları ilan sayfasından kontrol edin."
+            )
+
+        kpss_gerekli, minimum_puan, kpss_durumu = kpss_bilgisi_bul(detay_metni, "ok")
+        ilanlar.append({
+            "id": ilan_id_uret(link),
+            "baslik": gercek_baslik[:400],
+            "kurum": "Millî Savunma Bakanlığı / Türk Silahlı Kuvvetleri",
+            "sehir": "Türkiye Geneli",
+            "tur": "Askerî / MSB Personel Alımı",
+            "kaynak": "MSB / TSK Güncel Teminler",
+            "kaynak_kodu": "msb_tsk",
+            "son_basvuru": son_basvuru,
+            "yayin_tarihi": yayin_tarihi,
+            "link": link,
+            "belge_linki": belge_linki or link,
+            "kaynak_sayfa_linki": link,
+            "basvuru_linki": basvuru_linki,
+            "basvuru_online": basvuru_online,
+            "basvuru_aciklamasi": basvuru_aciklamasi,
+            "kpss_gerekli": kpss_gerekli,
+            "minimum_puan": minimum_puan,
+            "kpss_durumu": kpss_durumu,
+            "mezuniyetler": mezuniyetleri_bul(detay_metni),
+            "bolumler": bolumleri_bul(detay_metni),
+            "pdf_isleme_durumu": "html_ok",
+            "analiz_surumu": ANALIZ_SURUMU,
+        })
+        gorulen.add(anahtar)
+
+    return ilanlar
+
+
+def msb_guncel_haberleri_al():
+    """MSB'nin güncel sonuç, çağrı, kayıt ve eğitim duyurularını Haberler'e ekler."""
+    html = sayfayi_indir(MSB_ANA_SAYFA_URL)
+    soup = BeautifulSoup(html, "html.parser")
+    haberler = []
+    gorulen = set()
+    haber_ifadeleri = (
+        "sonuc", "kesin kayit", "egitim duyurusu", "cagri ilani",
+        "cagri durumu", "sinav asamasi", "secim asamasi", "itiraz",
+        "siniflandirma", "on kayit", "yerlestirilme",
+    )
+
+    for etiket in soup.find_all("a", href=True):
+        href = temizle(etiket.get("href", ""))
+        if not href:
+            continue
+        link = urljoin(MSB_ANA_SAYFA_URL, href)
+        if not _msb_detay_linki_mi(link):
+            continue
+        anahtar = link_anahtari(link)
+        if not anahtar or anahtar in gorulen:
+            continue
+        adaylar = _msb_baslik_adaylari(etiket)
+        uygun = [a for a in adaylar if any(x in arama_metnine_cevir(a) for x in haber_ifadeleri)]
+        if not uygun:
+            continue
+        baslik = min(uygun, key=len)
+        kapsayici = etiket.find_parent(["article", "li", "div", "section", "tr"])
+        kapsayici_metni = temizle(kapsayici.get_text(" ", strip=True) if kapsayici else baslik)
+        yayin_tarihi = yayin_tarihi_bul(kapsayici_metni) or tarih_bul(kapsayici_metni)
+        haber = {
+            "id": ilan_id_uret(link),
+            "baslik": baslik[:400],
+            "kurum": "Millî Savunma Bakanlığı / Türk Silahlı Kuvvetleri",
+            "kategori": "MSB / TSK Duyurusu",
+            "yayin_tarihi": yayin_tarihi,
+            "kaynak": "MSB Personel Temin Haberleri",
+            "ozet": "MSB Personel Temin Sistemi tarafından yayımlanan resmî aday duyurusu.",
+            "link": link,
+        }
+        if haber_guncel_mi(haber, 180):
+            haberler.append(haber)
+            gorulen.add(anahtar)
+    return haberler
+
+
+def onceki_veriyi_yukle():
+    dosya = Path("ilanlar.json")
+    if not dosya.exists():
+        return {"ilanlar": [], "haberler": []}
+    try:
+        veri = json.loads(dosya.read_text(encoding="utf-8"))
+        return veri if isinstance(veri, dict) else {"ilanlar": [], "haberler": []}
+    except Exception:
+        return {"ilanlar": [], "haberler": []}
+
+
+def firebase_mesajlasmayi_hazirla():
+    if firebase_admin is None or credentials is None or messaging is None:
+        return None, "firebase-admin paketi kurulu değil"
+    servis_hesabi_json = (
+        os.environ.get("FIREBASE_SERVICE_ACCOUNT_JSON", "").strip()
+        or os.environ.get("FIREBASE_SERVICE_ACCOUNT", "").strip()
+    )
+    if not servis_hesabi_json:
+        return None, "Firebase servis hesabı GitHub Secret olarak tanımlı değil"
+    try:
+        servis_hesabi = json.loads(servis_hesabi_json)
+        try:
+            firebase_admin.get_app()
+        except ValueError:
+            firebase_admin.initialize_app(credentials.Certificate(servis_hesabi))
+        return messaging, None
+    except Exception as hata:
+        return None, f"{type(hata).__name__}: {str(hata)[:180]}"
+
+
+def _haber_bildirim_icin_guncel_mi(haber, gun=3):
+    tarih = haber_tarih_siralama_degeri(haber)
+    return tarih != datetime.min and tarih >= datetime.now() - timedelta(days=gun)
+
+
+def yeni_kayit_bildirimlerini_gonder(
+    ilanlar, haberler, onceki_ilan_anahtarlari,
+    onceki_haber_anahtarlari, onceki_dosya_vardi,
+):
+    sonuc = {"durum": "atlanmış", "yeni_ilan": 0, "yeni_haber": 0,
+             "gonderilen": 0, "mesaj": ""}
+    if not onceki_dosya_vardi:
+        sonuc["mesaj"] = "İlk çalışma olduğu için toplu bildirim gönderilmedi."
+        return sonuc
+
+    yeni_ilanlar = [i for i in ilanlar if link_anahtari(i.get("link", ""))
+                    and link_anahtari(i.get("link", "")) not in onceki_ilan_anahtarlari]
+    yeni_haberler = [h for h in haberler if link_anahtari(h.get("link", ""))
+                     and link_anahtari(h.get("link", "")) not in onceki_haber_anahtarlari
+                     and _haber_bildirim_icin_guncel_mi(h)]
+    yeni_ilanlar.sort(key=tarih_siralama_degeri)
+    yeni_haberler.sort(key=haber_tarih_siralama_degeri, reverse=True)
+    sonuc["yeni_ilan"] = len(yeni_ilanlar)
+    sonuc["yeni_haber"] = len(yeni_haberler)
+    if not yeni_ilanlar and not yeni_haberler:
+        sonuc["durum"] = "yeni_kayit_yok"
+        sonuc["mesaj"] = "Yeni ve güncel ilan veya haber bulunmadı."
+        return sonuc
+
+    mesajlasma, hata = firebase_mesajlasmayi_hazirla()
+    if mesajlasma is None:
+        sonuc["mesaj"] = hata or "Firebase hazırlanamadı."
+        return sonuc
+    try:
+        for ilan in yeni_ilanlar[:8]:
+            baslik = temizle(ilan.get("baslik") or "Yeni kamu ilanı")
+            kurum = temizle(ilan.get("kurum") or ilan.get("kaynak") or "Resmî kurum")
+            tek_bildirim_gonder(mesajlasma, "yeni_ilanlar", "Yeni ilan: " + baslik,
+                                kurum, ilan.get("kaynak_sayfa_linki") or ilan.get("link", ""), "ilan")
+            sonuc["gonderilen"] += 1
+        for haber in yeni_haberler[:8]:
+            baslik = temizle(haber.get("baslik") or "Yeni resmî duyuru")
+            kategori = temizle(haber.get("kategori") or "Haber")
+            tek_bildirim_gonder(mesajlasma, "yeni_haberler", baslik,
+                                f"{haber.get('kurum') or 'Resmî kurum'} • {kategori}",
+                                haber.get("link", ""), "haber")
+            sonuc["gonderilen"] += 1
+        sonuc["durum"] = "gonderildi"
+        sonuc["mesaj"] = f"{sonuc['gonderilen']} telefon bildirimi gönderildi."
+    except Exception as hata:
+        sonuc["durum"] = "hata"
+        sonuc["mesaj"] = f"{type(hata).__name__}: {str(hata)[:180]}"
+    return sonuc
+
+
+def main():
+    onceki_veri = onceki_veriyi_yukle()
+    (onceki_ilan_anahtarlari, onceki_haber_anahtarlari,
+     onceki_dosya_vardi) = onceki_bildirim_kayitlarini_yukle()
+
+    tum_ilanlar, tum_haberler, hatalar = [], [], []
+    kaynak_sayilari = {}
+    gorevler = [(kaynak, kod, ad) for kaynak in KAYNAKLAR for kod, ad in SEHIRLER]
+
+    with ThreadPoolExecutor(max_workers=8) as havuz:
+        futures = {havuz.submit(gorevi_calistir, kaynak, kod, ad): (kaynak["kaynak"], ad)
+                   for kaynak, kod, ad in gorevler}
+        for tamamlanan, future in enumerate(as_completed(futures), 1):
+            ilanlar, hata = future.result()
+            tum_ilanlar.extend(ilanlar)
+            if hata:
+                hatalar.append(hata)
+            print(f"Sayfalar: {tamamlanan}/{len(gorevler)} - bulunan: {len(tum_ilanlar)}")
+
+    try:
+        osym_ilanlari = osym_kpss_duyurularini_al()
+        tum_ilanlar.extend(osym_ilanlari)
+        kaynak_sayilari["ÖSYM aktif KPSS ilanları"] = len(osym_ilanlari)
+        print(f"ÖSYM aktif KPSS ilanları: {len(osym_ilanlari)}")
+    except Exception as hata:
+        hatalar.append(f"ÖSYM aktif KPSS ilanları: {type(hata).__name__} - {str(hata)[:150]}")
+
+    try:
+        osym_haberleri = osym_kpss_haberlerini_al()
+        tum_haberler.extend(osym_haberleri)
+        kaynak_sayilari["ÖSYM tüm sınav haberleri"] = len(osym_haberleri)
+        print(f"ÖSYM tüm sınav haberleri: {len(osym_haberleri)}")
+    except Exception as hata:
+        hatalar.append(f"ÖSYM tüm sınav haberleri: {type(hata).__name__} - {str(hata)[:150]}")
+
+    msb_basarili = False
+    try:
+        msb_ilanlari = msb_guncel_teminleri_al()
+        tum_ilanlar.extend(msb_ilanlari)
+        kaynak_sayilari["MSB / TSK Güncel Teminler"] = len(msb_ilanlari)
+        msb_basarili = True
+        print(f"MSB / TSK Güncel Teminler: {len(msb_ilanlari)}")
+    except Exception as hata:
+        hatalar.append(f"MSB / TSK Güncel Teminler: {type(hata).__name__} - {str(hata)[:150]}")
+
+    try:
+        msb_haberleri = msb_guncel_haberleri_al()
+        tum_haberler.extend(msb_haberleri)
+        kaynak_sayilari["MSB / TSK haberleri"] = len(msb_haberleri)
+        print(f"MSB / TSK haberleri: {len(msb_haberleri)}")
+    except Exception as hata:
+        hatalar.append(f"MSB / TSK haberleri: {type(hata).__name__} - {str(hata)[:150]}")
+
+    for resmi_kaynak in RESMI_DUYURU_KAYNAKLARI:
+        try:
+            resmi_ilanlar = resmi_kaynaktan_ilanlari_al(resmi_kaynak)
+            tum_ilanlar.extend(resmi_ilanlar)
+            kaynak_sayilari[resmi_kaynak["kaynak"]] = len(resmi_ilanlar)
+            print(f"{resmi_kaynak['kaynak']}: {len(resmi_ilanlar)}")
+            resmi_haberler = resmi_kaynaktan_haberleri_al(resmi_kaynak)
+            tum_haberler.extend(resmi_haberler)
+            print(f"{resmi_kaynak['kurum']} haberleri: {len(resmi_haberler)}")
+        except Exception as hata:
+            hatalar.append(f"{resmi_kaynak['kaynak']}: {type(hata).__name__} - {str(hata)[:150]}")
+
+    # Kaynak geçici hata verdiğinde uygulamanın tamamen boşalmaması için önceki
+    # aktif veriyi güvenlik ağı olarak koru. Yeni kayıtlar her zaman önceliklidir.
+    onceki_ilanlar = onceki_veri.get("ilanlar", []) if isinstance(onceki_veri, dict) else []
+    if len(tum_ilanlar) < max(25, int(len(onceki_ilanlar) * 0.35)):
+        print("UYARI: Yeni ilan sayısı olağandışı düşük; önceki aktif ilanlar birleştiriliyor.")
+        tum_ilanlar.extend(onceki_ilanlar)
+    elif not msb_basarili:
+        tum_ilanlar.extend([i for i in onceki_ilanlar if i.get("kaynak_kodu") == "msb_tsk"])
+
+    benzersiz = {}
+    for ilan in tum_ilanlar:
+        anahtar = link_anahtari(ilan.get("link", ""))
+        if anahtar:
+            benzersiz[anahtar] = ilan
+    simdi_tr = datetime.now(TURKIYE_SAATI)
+    aktif_ilanlar = [i for i in benzersiz.values() if ilan_aktif_mi(i, simdi_tr)]
+    suresi_dolmus = len(benzersiz) - len(aktif_ilanlar)
+    print(f"Süresi dolduğu için kaldırılan ilan: {suresi_dolmus}")
+
+    # Haberlerde geçici kaynak hatasına karşı son 180 günlük önceki kayıtları koru.
+    onceki_haberler = onceki_veri.get("haberler", []) if isinstance(onceki_veri, dict) else []
+    tum_haberler.extend([h for h in onceki_haberler if haber_guncel_mi(h, 180)])
+    benzersiz_haberler = {}
+    for haber in tum_haberler:
+        anahtar = link_anahtari(haber.get("link", ""))
+        if anahtar and haber_guncel_mi(haber, 180):
+            benzersiz_haberler[anahtar] = haber
+    haberler = list(benzersiz_haberler.values())
+    haberler.sort(key=haber_tarih_siralama_degeri, reverse=True)
+
+    onceki_analizler = onceki_analizleri_yukle()
+    zenginlestirilmis, yeniden_kullanilan, pdf_hatalari = [], 0, 0
+    with ThreadPoolExecutor(max_workers=6) as havuz:
+        futures = {havuz.submit(ilani_zenginlestir, ilan, onceki_analizler): ilan.get("baslik", "")
+                   for ilan in aktif_ilanlar}
+        for tamamlanan, future in enumerate(as_completed(futures), 1):
+            try:
+                ilan, oncekiden = future.result()
+                zenginlestirilmis.append(ilan)
+                yeniden_kullanilan += int(oncekiden)
+                if str(ilan.get("pdf_isleme_durumu", "")).startswith("hata:"):
+                    pdf_hatalari += 1
+            except Exception as hata:
+                pdf_hatalari += 1
+                hatalar.append(f"PDF analizi: {type(hata).__name__} - {str(hata)[:150]}")
+            print(f"PDF analizi: {tamamlanan}/{len(aktif_ilanlar)} - önbellekten: {yeniden_kullanilan}")
+
+    zenginlestirilmis.sort(key=tarih_siralama_degeri)
+    bildirim_sonucu = yeni_kayit_bildirimlerini_gonder(
+        zenginlestirilmis, haberler, onceki_ilan_anahtarlari,
+        onceki_haber_anahtarlari, onceki_dosya_vardi,
+    )
+    print(f"Bildirim: {bildirim_sonucu['mesaj']}")
+
+    cikti = {
+        "status": "ok" if zenginlestirilmis or haberler else "veri_alinamadi",
+        "guncellenme_zamani": datetime.now(timezone.utc).isoformat(),
+        "ilan_sayisi": len(zenginlestirilmis),
+        "suresi_dolmus_ilan_sayisi": suresi_dolmus,
+        "ilanlar": zenginlestirilmis,
+        "haber_sayisi": len(haberler),
+        "haberler": haberler,
+        "kaynak_sayilari": kaynak_sayilari,
+        "bildirim_sonucu": bildirim_sonucu,
+        "hata_sayisi": len(hatalar),
+        "pdf_hata_sayisi": pdf_hatalari,
+        "hatalar": hatalar[:80],
+    }
+    gecici = Path("ilanlar.json.tmp")
+    gecici.write_text(json.dumps(cikti, ensure_ascii=False, indent=2), encoding="utf-8")
+    gecici.replace(Path("ilanlar.json"))
+    print("--------------------------------")
+    print(f"Toplam aktif ilan: {len(zenginlestirilmis)}")
+    print(f"Toplam güncel haber: {len(haberler)}")
+    print(f"MSB / TSK ilanı: {sum(1 for i in zenginlestirilmis if i.get('kaynak_kodu') == 'msb_tsk')}")
+    print(f"Sayfa hatası: {len(hatalar)} | PDF hatası: {pdf_hatalari}")
+    print("ilanlar.json oluşturuldu.")
 
 if __name__ == "__main__":
     main()
