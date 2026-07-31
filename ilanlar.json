@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-07-30T21:55:55.414699+00:00",
+  "guncellenme_zamani": "2026-07-31T02:12:11.398316+00:00",
   "ilan_sayisi": 159,
   "suresi_dolmus_ilan_sayisi": 3,
   "ilanlar": [
@@ -102,30 +102,6 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "4821c7c1961c854b23f1",
-      "baslik": "Bursa Osmangazi Belediyesi Personel A.Ş.",
-      "kurum": "Bursa Osmangazi Belediyesi Personel A.Ş.",
-      "sehir": "Bursa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "31.07.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/fz5pi2kh/osmangazi-beld-pers-aş-31072026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/fz5pi2kh/osmangazi-beld-pers-aş-31072026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
     },
     {
@@ -246,6 +222,30 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "4821c7c1961c854b23f1",
+      "baslik": "Bursa Osmangazi Belediyesi Personel A.Ş.",
+      "kurum": "Bursa Osmangazi Belediyesi Personel A.Ş.",
+      "sehir": "Bursa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "31.07.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/fz5pi2kh/osmangazi-beld-pers-aş-31072026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/fz5pi2kh/osmangazi-beld-pers-aş-31072026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
     },
     {
@@ -1113,30 +1113,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "c7a8acbafc61aa4b6192",
-      "baslik": "İzmir Foça Bağ-Kent Sağ. Eğt. Kültür San. Sos. Hiz. Tur.İnş.Gıda Tarım Pet.San.ve Tic. Ltd. Şti.",
-      "kurum": "İzmir Foça Bağ-Kent Sağ. Eğt. Kültür San. Sos. Hiz. Tur.İnş.Gıda Tarım Pet.San.ve Tic. Ltd. Şti.",
-      "sehir": "İzmir",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "31.07.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/bvlgsq1w/izmir-foça-bağ-kent-sağ-eğt-kueltuer-san-sos-hiz-turinşgıda-tarım-petsanve-tic-ltd-şti.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/bvlgsq1w/izmir-foça-bağ-kent-sağ-eğt-kueltuer-san-sos-hiz-turinşgıda-tarım-petsanve-tic-ltd-şti.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "78b974f7a5a7f3d619cd",
       "baslik": "Beylikdüzü Belediyesi Personel A.Ş.",
       "kurum": "Beylikdüzü Belediyesi Personel A.Ş.",
@@ -1243,6 +1219,30 @@
       "link": "https://www.iskur.gov.tr/medya/lt5bhgld/kurum-dışı-personel-talep-ilanı-mataş-aş_ek_skm_c22726073015590.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/lt5bhgld/kurum-dışı-personel-talep-ilanı-mataş-aş_ek_skm_c22726073015590.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "c7a8acbafc61aa4b6192",
+      "baslik": "İzmir Foça Bağ-Kent Sağ. Eğt. Kültür San. Sos. Hiz. Tur.İnş.Gıda Tarım Pet.San.ve Tic. Ltd. Şti.",
+      "kurum": "İzmir Foça Bağ-Kent Sağ. Eğt. Kültür San. Sos. Hiz. Tur.İnş.Gıda Tarım Pet.San.ve Tic. Ltd. Şti.",
+      "sehir": "İzmir",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "31.07.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/bvlgsq1w/izmir-foça-bağ-kent-sağ-eğt-kueltuer-san-sos-hiz-turinşgıda-tarım-petsanve-tic-ltd-şti.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/bvlgsq1w/izmir-foça-bağ-kent-sağ-eğt-kueltuer-san-sos-hiz-turinşgıda-tarım-petsanve-tic-ltd-şti.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -2097,30 +2097,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "ef10052326fa1b76aed2",
-      "baslik": "İzmir Bergama Bakırçay Madencilik Müteahhitlik Müşavirlik Tanıtım San. Tic. A.Ş",
-      "kurum": "İzmir Bergama Bakırçay Madencilik Müteahhitlik Müşavirlik Tanıtım San. Tic. A.Ş",
-      "sehir": "İzmir",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "03.08.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/qlnfpkxj/izmir-bergama-bakırçay-madencilik-mueteahhitlik-mueşavirlik-tanıtım-san-tic-aş.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/qlnfpkxj/izmir-bergama-bakırçay-madencilik-mueteahhitlik-mueşavirlik-tanıtım-san-tic-aş.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "e7b4d48d95111ccfec90",
       "baslik": "İstanbul Şehir Hatları Turizm Sanayi ve Ticaret A.Ş.",
       "kurum": "İstanbul Şehir Hatları Turizm Sanayi ve Ticaret A.Ş.",
@@ -2179,6 +2155,30 @@
       "link": "https://www.iskur.gov.tr/medya/novczoqe/istanbul-personel-yoenetim-aş-isper-kurum-dışı-kamu-işçi-alımı-ilan-formları_ek_kurum-dışı-kamu-işçi-alımı-ilan-formları.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/novczoqe/istanbul-personel-yoenetim-aş-isper-kurum-dışı-kamu-işçi-alımı-ilan-formları_ek_kurum-dışı-kamu-işçi-alımı-ilan-formları.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "ef10052326fa1b76aed2",
+      "baslik": "İzmir Bergama Bakırçay Madencilik Müteahhitlik Müşavirlik Tanıtım San. Tic. A.Ş",
+      "kurum": "İzmir Bergama Bakırçay Madencilik Müteahhitlik Müşavirlik Tanıtım San. Tic. A.Ş",
+      "sehir": "İzmir",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "03.08.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/qlnfpkxj/izmir-bergama-bakırçay-madencilik-mueteahhitlik-mueşavirlik-tanıtım-san-tic-aş.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/qlnfpkxj/izmir-bergama-bakırçay-madencilik-mueteahhitlik-mueşavirlik-tanıtım-san-tic-aş.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -2707,34 +2707,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "74338bebb14374662097",
-      "baslik": "Tarım ve Orman Bakanlığı Sözleşmeli Personel Alım İlanı",
-      "kurum": "Tarım ve Orman Bakanlığı Sözleşmeli Personel Alım İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "09.08.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/vsrp1k4t/tarım-ve-orman-bakanlığı-soezleşmeli-personel-alım-ilanı-09082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/vsrp1k4t/tarım-ve-orman-bakanlığı-soezleşmeli-personel-alım-ilanı-09082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Ortaöğretim",
-        "Önlisans",
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "763338716ab70ea1ba17",
       "baslik": "İstanbul Büyükşehir Belediyesi Müfettiş Yardımcılığı Sınav İlanı",
       "kurum": "İstanbul Büyükşehir Belediyesi Müfettiş Yardımcılığı Sınav İlanı",
@@ -2758,6 +2730,34 @@
         "Maliye",
         "İşletme",
         "Muhasebe"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "74338bebb14374662097",
+      "baslik": "Tarım ve Orman Bakanlığı Sözleşmeli Personel Alım İlanı",
+      "kurum": "Tarım ve Orman Bakanlığı Sözleşmeli Personel Alım İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "09.08.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/vsrp1k4t/tarım-ve-orman-bakanlığı-soezleşmeli-personel-alım-ilanı-09082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/vsrp1k4t/tarım-ve-orman-bakanlığı-soezleşmeli-personel-alım-ilanı-09082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Ortaöğretim",
+        "Önlisans",
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -3909,8 +3909,28 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 62,
+  "haber_sayisi": 268,
   "haberler": [
+    {
+      "id": "6294619fb5f68bfafd11",
+      "baslik": "2026-ALES/2 Sınavı İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "ALES Duyuru",
+      "yayin_tarihi": "30.07.2026",
+      "kaynak": "ÖSYM ALES Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî ALES duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-ales2-sinavi-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
+      "id": "cc5db5490c813d1f4a59",
+      "baslik": "2026-YÖKDİL/2: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "YÖKDİL Sınava Giriş Belgesi",
+      "yayin_tarihi": "30.07.2026",
+      "kaynak": "ÖSYM YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-yokdil2-sinava-giris-belgeleri-erisime-acildi"
+    },
     {
       "id": "588704640ee4a71b7144",
       "baslik": "2026-YKS: Tercihlerin Alınması",
@@ -3952,6 +3972,26 @@
       "link": "https://www.osym.gov.tr/2026-kpss-on-lisans-kilavuz-ve-basvuru-bilgileri"
     },
     {
+      "id": "834d0c61e6ce7d0de8a5",
+      "baslik": "2026-AGS ve 2026-ÖABT: Temel Soru Kitapçıkları ve Cevap Anahtarları Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "ÖABT Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "26.07.2026",
+      "kaynak": "ÖSYM ÖABT Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî ÖABT duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-ags-ve-2026-oabt-temel-soru-kitapciklari-ve-cevap-anahtarlari-yayimlandi"
+    },
+    {
+      "id": "7585a16630c6c3590284",
+      "baslik": "2026-AGS ve 2026-ÖABT Temel Soru Kitapçıklarının Yayımlanması (%10)",
+      "kurum": "ÖSYM",
+      "kategori": "ÖABT Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "26.07.2026",
+      "kaynak": "ÖSYM ÖABT Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî ÖABT duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-ags-ve-2026-oabt-temel-soru-kitapciklarinin-yayimlanmasi-10"
+    },
+    {
       "id": "7359e5579b1b4dce9ed2",
       "baslik": "KPSS-2026/1: Bazı Kamu Kurum ve Kuruluşlarının Kadro ve Pozisyonlarına Yerleştirme Sonuçları Açıklandı",
       "kurum": "ÖSYM",
@@ -3972,6 +4012,56 @@
       "link": "https://www.osym.gov.tr/kpss-20261-bazi-kamu-kurum-ve-kuruluslarin-kadro-ve-pozisyonlarina-yerlestirme-sonuclarina-iliskin-sayisal-bilgiler"
     },
     {
+      "id": "dcdc00348af630496378",
+      "baslik": "2026-YDUS: Ek Yerleştirme Tercihlerinin Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Ek Yerleştirme",
+      "yayin_tarihi": "24.07.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-ydus-ek-yerlestirme-tercihlerinin-alinmasi"
+    },
+    {
+      "id": "32785c3b72b5e1eb2153",
+      "baslik": "2026-YDUS Ek Tercih İşlemleri: Tercih Kılavuzu ve Kontenjanlar Tablosu",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Ek Yerleştirme",
+      "yayin_tarihi": "24.07.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-ydus-ek-tercih-islemleri-tercih-kilavuzu-ve-kontenjanlar-tablosu"
+    },
+    {
+      "id": "1e1b4c25a7b53f3ef6d8",
+      "baslik": "2026-DUS 1. Dönem: Ek Yerleştirme Tercihlerinin Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Ek Yerleştirme",
+      "yayin_tarihi": "24.07.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-dus-1-donem-ek-yerlestirme-tercihlerinin-alinmasi"
+    },
+    {
+      "id": "3f6259a173270eb81211",
+      "baslik": "2026-DUS 1. Dönem: Ek Tercih Kılavuzu ve Tablolar",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Ek Yerleştirme",
+      "yayin_tarihi": "24.07.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-dus-1-donem-ek-tercih-kilavuzu-ve-tablolar"
+    },
+    {
+      "id": "a10c2d4b2a7013daeaed",
+      "baslik": "2026-AGS ve 2026-ÖABT: Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "ÖABT Duyuru",
+      "yayin_tarihi": "23.07.2026",
+      "kaynak": "ÖSYM ÖABT Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî ÖABT duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-ags-ve-2026-oabt-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
       "id": "fee2e88a96da0560b666",
       "baslik": "2026-YKS Kapsamında Spor Bilimleri İçin Özel Yetenek Sınavı (ÖZYES): Başvuruların Alınması",
       "kurum": "ÖSYM",
@@ -3980,6 +4070,46 @@
       "kaynak": "ÖSYM YKS Duyuruları",
       "ozet": "ÖSYM tarafından yayımlanan resmî YKS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
       "link": "https://www.osym.gov.tr/2026-yks-kapsaminda-spor-bilimleri-icin-ozel-yetenek-sinavi-ozyes-basvurularin-alinmasi"
+    },
+    {
+      "id": "9e5ca165008af256d409",
+      "baslik": "2026-ÖZYES: Kılavuz ve Başvuru Bilgileri",
+      "kurum": "ÖSYM",
+      "kategori": "ÖZYES Başvuru",
+      "yayin_tarihi": "23.07.2026",
+      "kaynak": "ÖSYM ÖZYES Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî ÖZYES duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-ozyes-kilavuz-ve-basvuru-bilgileri"
+    },
+    {
+      "id": "2cf2ddcdeca9cfe6c380",
+      "baslik": "2026-ALES/2: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "ALES Sınava Giriş Belgesi",
+      "yayin_tarihi": "23.07.2026",
+      "kaynak": "ÖSYM ALES Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî ALES duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ales2-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "35cf99b6b274a2b05c05",
+      "baslik": "2026-DGS: Sistemdeki Eğitim Bilgilerinin Adaylar Tarafından Kontrolü ve Eğitim Bilgisi Seçme İşlemi",
+      "kurum": "ÖSYM",
+      "kategori": "DGS Eğitim Bilgisi",
+      "yayin_tarihi": "23.07.2026",
+      "kaynak": "ÖSYM DGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dgs-sistemdeki-egitim-bilgilerinin-adaylar-tarafindan-kontrolu-ve-egitim-bilgisi-secme-islemi"
+    },
+    {
+      "id": "4e50d6f65184c809d016",
+      "baslik": "2026-DGS: Adayların Eğitim Bilgilerinin Kontrol / Güncelleme / Teyit İşlemleri için Yükseköğretim Kurumlarına Kamu Kurumları İşlemleri Sisteminin Açılması",
+      "kurum": "ÖSYM",
+      "kategori": "DGS Takvim Değişikliği",
+      "yayin_tarihi": "23.07.2026",
+      "kaynak": "ÖSYM DGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dgs-adaylarin-egitim-bilgilerinin-kontrol-guncelleme-teyit-islemleri-icin-yuksekogretim-kurumlarina-kamu-kurumlari-islemleri-sisteminin-acilmasi"
     },
     {
       "id": "2e6426a96f5e6cb18f22",
@@ -4032,6 +4162,76 @@
       "link": "https://www.osym.gov.tr/2026yks-sinav-sonuclari-aciklandi"
     },
     {
+      "id": "265b49a9260037f8397b",
+      "baslik": "2026-DGS: Temel Soru Kitapçığı ve Cevap Anahtarı Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "DGS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "19.07.2026",
+      "kaynak": "ÖSYM DGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dgs-temel-soru-kitapcigi-ve-cevap-anahtari-yayimlandi"
+    },
+    {
+      "id": "1c285db339a9eaf08cc4",
+      "baslik": "2026-DGS Temel Soru Kitapçığı ve Yanıtları (% 10)",
+      "kurum": "ÖSYM",
+      "kategori": "DGS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "16.07.2026",
+      "kaynak": "ÖSYM DGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dgs-temel-soru-kitapcigi-ve-yanitlari-10"
+    },
+    {
+      "id": "480ef99561f877217b55",
+      "baslik": "2026-AGS ve 2026-ÖABT: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "ÖABT Sınava Giriş Belgesi",
+      "yayin_tarihi": "16.07.2026",
+      "kaynak": "ÖSYM ÖABT Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî ÖABT duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ags-ve-2026oabt-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "95e911c5b8ccbdc4bfc8",
+      "baslik": "2026-DGS İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "DGS Duyuru",
+      "yayin_tarihi": "16.07.2026",
+      "kaynak": "ÖSYM DGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dgs-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
+      "id": "78f236e3f2dfdebbde22",
+      "baslik": "2026 Elektronik İngilizce Yeterlik Sınavı/Electronic-Test of English Proficiency (e-TEP 2026/3): Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "e-TEP Sınava Giriş Belgesi",
+      "yayin_tarihi": "16.07.2026",
+      "kaynak": "ÖSYM e-TEP Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-TEP duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-elektronik-ingilizce-yeterlik-sinavielectronictest-of-english-proficiency-etep-20263-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "066656444c8f374a0d22",
+      "baslik": "e-YDS 2026/8 (Almanca/Fransızca): Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Sonuç",
+      "yayin_tarihi": "04.07.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20268-almancafransizca-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "0c7e0641b6a377480eed",
+      "baslik": "2026 Türkiye Yurt Dışından Öğrenci Kabul Sınavı (2026-TR-YÖS/2) Başvurularının Alınması/Applications for 2026 Exam for Foreign Students For Higher Education in Türkiye (2026-TR-YÖS/2)",
+      "kurum": "ÖSYM",
+      "kategori": "TR-YÖS Başvuru",
+      "yayin_tarihi": "04.07.2026",
+      "kaynak": "ÖSYM TR-YÖS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TR-YÖS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-turkiye-yurt-disindan-ogrenci-kabul-sinavi-2026tryos2-basvurularinin-alinmasiapplications-for-2026-exam-for-foreign-students-for-higher-education-in-turkiye-2026tryos2"
+    },
+    {
       "id": "df0c357eca0bc7a5a68f",
       "baslik": "2024-KPSS (Lisans, Ön Lisans ve Ortaöğretim): Branş Bazında Sıralamaların Güncellenmesi",
       "kurum": "ÖSYM",
@@ -4052,6 +4252,36 @@
       "link": "https://www.osym.gov.tr/kpss20261-bazi-kamu-kurum-ve-kuruluslarinin-kadro-ve-pozisyonlarina-yerlestirme-yapmak-icin-tercih-kilavuzu-ve-tablolar"
     },
     {
+      "id": "3c26bb276dbd6f033ffb",
+      "baslik": "2026-STS Tıp Doktorluğu 2. Dönem: Kılavuz ve Başvuru Bilgileri",
+      "kurum": "ÖSYM",
+      "kategori": "STS Başvuru",
+      "yayin_tarihi": "03.07.2026",
+      "kaynak": "ÖSYM STS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî STS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026sts-tip-doktorlugu-2-donem-kilavuz-ve-basvuru-bilgileri"
+    },
+    {
+      "id": "0cdf9028c6793f9b05a2",
+      "baslik": "2026-TR-YÖS/2: Kılavuz ve Başvuru Bilgileri",
+      "kurum": "ÖSYM",
+      "kategori": "TR-YÖS Başvuru",
+      "yayin_tarihi": "03.07.2026",
+      "kaynak": "ÖSYM TR-YÖS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TR-YÖS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tryos2-kilavuz-ve-basvuru-bilgileri"
+    },
+    {
+      "id": "de23e48fa2ca1f4f7149",
+      "baslik": "2026-TUS 2. Dönem: Kılavuz ve Başvuru Bilgileri",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Başvuru",
+      "yayin_tarihi": "03.07.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-2-donem-kilavuz-ve-basvuru-bilgileri"
+    },
+    {
       "id": "63aacec8a657e5ca30a7",
       "baslik": "KPSS-2026/1: Bazı Kamu Kurum ve Kuruluşlarının Kadro ve Pozisyonlarına Yerleştirme Yapmak İçin Adaylardan Tercih Alınması",
       "kurum": "ÖSYM",
@@ -4060,6 +4290,66 @@
       "kaynak": "ÖSYM KPSS Duyuruları",
       "ozet": "ÖSYM tarafından yayımlanan resmî KPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
       "link": "https://www.osym.gov.tr/kpss20261-bazi-kamu-kurum-ve-kuruluslarinin-kadro-ve-pozisyonlarina-yerlestirme-yapmak-icin-adaylardan-tercih-alinmasi"
+    },
+    {
+      "id": "961075988132ff59c49e",
+      "baslik": "2026-TUS 2. Dönem ile 2026-STS Tıp Doktorluğu 2. Dönem: Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Başvuru",
+      "yayin_tarihi": "02.07.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-2-donem-ile-2026sts-tip-doktorlugu-2-donem-basvurularin-alinmasi"
+    },
+    {
+      "id": "6f6645c169a4102fcc8a",
+      "baslik": "2026-TUS 1. Dönem Ek Yerleştirme Sonuçlarına İlişkin En Büyük ve En Küçük Puanlar (GENEL-YABANCI UYRUKLU)",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Ek Yerleştirme Sonucu",
+      "yayin_tarihi": "02.07.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-1-donem-ek-yerlestirme-sonuclarina-iliskin-en-buyuk-ve-en-kucuk-puanlar-genelyabanci-uyruklu"
+    },
+    {
+      "id": "ec6768d93bcdf3ef27f7",
+      "baslik": "2026-TUS 1. Dönem: Ek Yerleştirme Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Ek Yerleştirme Sonucu",
+      "yayin_tarihi": "02.07.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-1-donem-ek-yerlestirme-sonuclari-aciklandi"
+    },
+    {
+      "id": "9533cc03bb9fd752bce2",
+      "baslik": "e-YDS 2026/8 (Almanca/Fransızca) Sınavı İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Duyuru",
+      "yayin_tarihi": "02.07.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20268-almancafransizca-sinavi-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
+      "id": "ca7dc7f1a68cf6dd73fc",
+      "baslik": "e-YDS 2026/8 (Almanca/Fransızca): Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Sınava Giriş Belgesi",
+      "yayin_tarihi": "02.07.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20268-almancafransizca-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "5d69f8fea27511c6103f",
+      "baslik": "2026-DGS: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "DGS Sınava Giriş Belgesi",
+      "yayin_tarihi": "01.07.2026",
+      "kaynak": "ÖSYM DGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dgs-sinava-giris-belgeleri-erisime-acildi"
     },
     {
       "id": "6404732efd824598d400",
@@ -4090,6 +4380,146 @@
       "kaynak": "ÖSYM KPSS Duyuruları",
       "ozet": "ÖSYM tarafından yayımlanan resmî KPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
       "link": "https://www.osym.gov.tr/2026-kamu-personel-secme-sinavi-kpss-lisans-basvurularin-alinmasi"
+    },
+    {
+      "id": "da7eb0852b9df362f2cd",
+      "baslik": "2026 Elektronik İngilizce Yeterlik Sınavı/Electronic-Test of English Proficiency (e-TEP 2026/3): Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "e-TEP Başvuru",
+      "yayin_tarihi": "29.06.2026",
+      "kaynak": "ÖSYM e-TEP Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-TEP duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-elektronik-ingilizce-yeterlik-sinavielectronictest-of-english-proficiency-etep-20263-basvurularin-alinmasi"
+    },
+    {
+      "id": "aa3f3eee909be5990fdf",
+      "baslik": "2026-YDUS Yerleştirme Sonuçlarına İlişkin Sayısal Bilgiler",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Sonuç",
+      "yayin_tarihi": "26.06.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ydus-yerlestirme-sonuclarina-iliskin-sayisal-bilgiler"
+    },
+    {
+      "id": "74c4031b507b6586e9e0",
+      "baslik": "2026-YDUS: Yerleştirme Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Sonuç",
+      "yayin_tarihi": "26.06.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ydus-yerlestirme-sonuclari-aciklandi"
+    },
+    {
+      "id": "38ffce88620f1d0b31cc",
+      "baslik": "e-YDS 2026/7 (Arapça/Rusça): Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Sonuç",
+      "yayin_tarihi": "26.06.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20267-arapcarusca-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "52dfc01187e6fecc70a3",
+      "baslik": "e-YDS 2026/6 (İngilizce): Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Sonuç",
+      "yayin_tarihi": "26.06.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20266-ingilizce-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "c618f6e25cf93e8ec728",
+      "baslik": "2025 Adalet Bakanlığı Sınavları (Adli Yargı/Adli Yargı-Avukat/İdari Yargı): Yeniden Değerlendirme Sonuçları",
+      "kurum": "ÖSYM",
+      "kategori": "Adalet Bakanlığı Sınavları Sonuç",
+      "yayin_tarihi": "25.06.2026",
+      "kaynak": "ÖSYM Adalet Bakanlığı Sınavları Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî Adalet Bakanlığı Sınavları duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025-adalet-bakanligi-sinavlari-adli-yargiadli-yargiavukatidari-yargi-yeniden-degerlendirme-sonuclari"
+    },
+    {
+      "id": "828f126ec859198454e8",
+      "baslik": "e-YDS 2026/6 (İngilizce) ve e-YDS 2026/7 (Arapça/Rusça) Sınavları İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Duyuru",
+      "yayin_tarihi": "25.06.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20266-ingilizce-ve-eyds-20267-arapcarusca-sinavlari-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
+      "id": "beaba194f71d43b889eb",
+      "baslik": "e-YDS 2026/7 (Arapça/Rusça): Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Sınava Giriş Belgesi",
+      "yayin_tarihi": "24.06.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20267-arapcarusca-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "a0c0a63924a61bbc6924",
+      "baslik": "e-YDS 2026/6 (İngilizce): Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Sınava Giriş Belgesi",
+      "yayin_tarihi": "24.06.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20266-ingilizce-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "dcd087c6e1f60fd032f4",
+      "baslik": "2026-TUS 1. Dönem Ek Tercih İşlemleri: Tercih Kılavuzu ve Tablolar",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Ek Yerleştirme",
+      "yayin_tarihi": "23.06.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-1-donem-ek-tercih-islemleri-tercih-kilavuzu-ve-tablolar"
+    },
+    {
+      "id": "d0ae95bdb28d2e362ab1",
+      "baslik": "2026-TUS 1. Dönem: Ek Yerleştirme Tercihlerinin Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Ek Yerleştirme",
+      "yayin_tarihi": "23.06.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-1-donem-ek-yerlestirme-tercihlerinin-alinmasi"
+    },
+    {
+      "id": "a85982c1651738d4d2fe",
+      "baslik": "2026-STS Öğretmenlik: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "STS Sonuç",
+      "yayin_tarihi": "23.06.2026",
+      "kaynak": "ÖSYM STS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî STS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026sts-ogretmenlik-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "b86a73cd9c23864589e5",
+      "baslik": "2026-DUS 1.Dönem Yerleştirme Sonuçlarına İlişkin Sayısal Bilgiler",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Sonuç",
+      "yayin_tarihi": "22.06.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dus-1donem-yerlestirme-sonuclarina-iliskin-sayisal-bilgiler"
+    },
+    {
+      "id": "470162dba2cad81f82bb",
+      "baslik": "2026-DUS 1. Dönem: Yerleştirme Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Sonuç",
+      "yayin_tarihi": "22.06.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dus-1-donem-yerlestirme-sonuclari-aciklandi"
     },
     {
       "id": "44ce90a0149eeb6f3594",
@@ -4142,6 +4572,106 @@
       "link": "https://www.osym.gov.tr/2026yks-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
     },
     {
+      "id": "bc86be12dec65dd91f08",
+      "baslik": "2026-YDUS Tercih İşlemleri: Tercih Kılavuzu ve Kontenjanlar Tablosu",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Tercih",
+      "yayin_tarihi": "17.06.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ydus-tercih-islemleri-tercih-kilavuzu-ve-kontenjanlar-tablosu"
+    },
+    {
+      "id": "6176d9105a16a1ef2d34",
+      "baslik": "2026-YDUS: Tercihlerin Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Tercih",
+      "yayin_tarihi": "17.06.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ydus-tercihlerin-alinmasi"
+    },
+    {
+      "id": "37abb2ceae56283bae18",
+      "baslik": "e-YDS 2026/8 (Almanca/Fransızca): Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Başvuru",
+      "yayin_tarihi": "16.06.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20268-almancafransizca-basvurularin-alinmasi"
+    },
+    {
+      "id": "825438d1d2fa3c10568d",
+      "baslik": "YÖKDİL/2: Kılavuz ve Başvuru Bilgileri",
+      "kurum": "ÖSYM",
+      "kategori": "YÖKDİL Başvuru",
+      "yayin_tarihi": "15.06.2026",
+      "kaynak": "ÖSYM YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/yokdil2-kilavuz-ve-basvuru-bilgileri-20260624105822135"
+    },
+    {
+      "id": "62e0c0bd7d3ef7719a79",
+      "baslik": "2026-YÖKDİL/2: Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "YÖKDİL Başvuru",
+      "yayin_tarihi": "15.06.2026",
+      "kaynak": "ÖSYM YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026yokdil2-basvurularin-alinmasi"
+    },
+    {
+      "id": "8dda128429492ef5f11e",
+      "baslik": "2026-DUS 1. Dönem: Tercih Kılavuzu ve Tablolar",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Tercih",
+      "yayin_tarihi": "10.06.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dus-1-donem-tercih-kilavuzu-ve-tablolar"
+    },
+    {
+      "id": "3ded0051c583f540077d",
+      "baslik": "2026-DUS 1. Dönem: Tercihlerin Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Tercih",
+      "yayin_tarihi": "10.06.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dus-1-donem-tercihlerin-alinmasi"
+    },
+    {
+      "id": "8a9b8c537e0bcaa01822",
+      "baslik": "2026-ALES/2: Kılavuz ve Başvuru Bilgileri",
+      "kurum": "ÖSYM",
+      "kategori": "ALES Başvuru",
+      "yayin_tarihi": "09.06.2026",
+      "kaynak": "ÖSYM ALES Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî ALES duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ales2-kilavuz-ve-basvuru-bilgileri"
+    },
+    {
+      "id": "d30fa4c343c5bd674133",
+      "baslik": "2026-ALES/2: Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "ALES Başvuru",
+      "yayin_tarihi": "09.06.2026",
+      "kaynak": "ÖSYM ALES Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî ALES duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ales2-basvurularin-alinmasi"
+    },
+    {
+      "id": "2c482096d81f43c31a24",
+      "baslik": "e-YDTS: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "YKS Sonuç",
+      "yayin_tarihi": "09.06.2026",
+      "kaynak": "ÖSYM YKS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YKS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eydts-sinav-sonuclari-aciklandi"
+    },
+    {
       "id": "1ea70d5e2cd49e759337",
       "baslik": "2026 Yükseköğretim Kurumları Sınavı (2026-YKS): Sınava Giriş Belgeleri Erişime Açıldı",
       "kurum": "ÖSYM",
@@ -4150,6 +4680,216 @@
       "kaynak": "ÖSYM YKS Duyuruları",
       "ozet": "ÖSYM tarafından yayımlanan resmî YKS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
       "link": "https://www.osym.gov.tr/2026-yuksekogretim-kurumlari-sinavi-2026yks-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "d95949baa8b94a3c2473",
+      "baslik": "e-YDS 2026/6 (İngilizce): Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Başvuru",
+      "yayin_tarihi": "09.06.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20266-ingilizce-basvurularin-alinmasi"
+    },
+    {
+      "id": "50b745f5bbea9ec656cd",
+      "baslik": "e-YDS 2026/7 (Arapça/Rusça): Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Başvuru",
+      "yayin_tarihi": "09.06.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20267-arapcarusca-basvurularin-alinmasi"
+    },
+    {
+      "id": "70987eea6daa21892b9d",
+      "baslik": "e-YÖKDİL 2026/3 (İngilizce-Fen Bilimleri): Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YÖKDİL Sonuç",
+      "yayin_tarihi": "05.06.2026",
+      "kaynak": "ÖSYM e-YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyokdil-20263-ingilizcefen-bilimleri-sonuclari-aciklandi"
+    },
+    {
+      "id": "fa28a7503d1612e11106",
+      "baslik": "2026-ALES/1: Cevap Kâğıtları ve Aday Cevapları Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "ALES Aday Cevapları",
+      "yayin_tarihi": "04.06.2026",
+      "kaynak": "ÖSYM ALES Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî ALES duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ales1-cevap-kgitlari-ve-aday-cevaplari-erisime-acildi"
+    },
+    {
+      "id": "aaab6fd40bd6169e3b06",
+      "baslik": "2026-ALES/1: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "ALES Sonuç",
+      "yayin_tarihi": "04.06.2026",
+      "kaynak": "ÖSYM ALES Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî ALES duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ales1-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "7ede70656990f3e7f38f",
+      "baslik": "2026-STS Öğretmenlik: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "STS Sınava Giriş Belgesi",
+      "yayin_tarihi": "03.06.2026",
+      "kaynak": "ÖSYM STS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî STS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026sts-ogretmenlik-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "89c3dd4a3b916dc2847e",
+      "baslik": "2026-YDUS: Cevap Kâğıtları ve Aday Cevapları Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Aday Cevapları",
+      "yayin_tarihi": "03.06.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ydus-cevap-kgitlari-ve-aday-cevaplari-erisime-acildi"
+    },
+    {
+      "id": "92ac92ba7a46775dd23a",
+      "baslik": "2026-YDUS: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Sonuç",
+      "yayin_tarihi": "03.06.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ydus-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "b6a486b0671a4aafa7aa",
+      "baslik": "e-YÖKDİL 2026/3 (İngilizce-Fen Bilimleri) Sınavı İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "e-YÖKDİL Duyuru",
+      "yayin_tarihi": "03.06.2026",
+      "kaynak": "ÖSYM e-YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyokdil-20263-ingilizcefen-bilimleri-sinavi-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
+      "id": "411aaa7ff8adea8cbe11",
+      "baslik": "e-YÖKDİL 2026/3 (İngilizce-Fen Bilimleri): Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YÖKDİL Sınava Giriş Belgesi",
+      "yayin_tarihi": "03.06.2026",
+      "kaynak": "ÖSYM e-YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyokdil-20263-ingilizcefen-bilimleri-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "b58130134522cbf8e4b2",
+      "baslik": "2026-DUS 1. Dönem Sınavı ile 2026-STS Diş Hekimliği 1. Dönem Sınavı: Cevap Kâğıtları ve Aday Cevapları Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Aday Cevapları",
+      "yayin_tarihi": "18.05.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dus-1-donem-sinavi-ile-2026sts-dis-hekimligi-1-donem-sinavi-cevap-kgitlari-ve-aday-cevaplari-erisime-acildi"
+    },
+    {
+      "id": "5f4ee8ec3437b386ab50",
+      "baslik": "2026-DUS 1. Dönem ve 2026-STS Diş Hekimliği 1. Dönem: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Sonuç",
+      "yayin_tarihi": "18.05.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dus-1-donem-ve-2026sts-dis-hekimligi-1-donem-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "0a82c1ff1ab08dbd5a20",
+      "baslik": "e-TEP 2026/2: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "e-TEP Sonuç",
+      "yayin_tarihi": "18.05.2026",
+      "kaynak": "ÖSYM e-TEP Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-TEP duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/etep-20262-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "466220bfadc613f48e76",
+      "baslik": "2026-TUS 1. Dönem Yerleştirme Sonuçlarına İlişkin Sayısal Bilgiler",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Sonuç",
+      "yayin_tarihi": "15.05.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-1-donem-yerlestirme-sonuclarina-iliskin-sayisal-bilgiler"
+    },
+    {
+      "id": "d4ec37c2ccfd257101ca",
+      "baslik": "2026-TUS 1. Dönem: Yerleştirme Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Sonuç",
+      "yayin_tarihi": "15.05.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-1-donem-yerlestirme-sonuclari-aciklandi"
+    },
+    {
+      "id": "fa77cd303cd7c3acd883",
+      "baslik": "e-YÖKDİL 2026/2 (İngilizce-Sağlık Bilimleri): Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YÖKDİL Sonuç",
+      "yayin_tarihi": "15.05.2026",
+      "kaynak": "ÖSYM e-YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyokdil-20262-ingilizcesaglik-bilimleri-sonuclari-aciklandi"
+    },
+    {
+      "id": "172a0bcb5f91530847ce",
+      "baslik": "2025-YDUS 2. Dönem Uzmanlık Dalı Değişikliği Yerleştirme Sonuçlarına İlişkin Sayısal Bilgiler",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Sonuç",
+      "yayin_tarihi": "15.05.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025ydus-2-donem-uzmanlik-dali-degisikligi-yerlestirme-sonuclarina-iliskin-sayisal-bilgiler"
+    },
+    {
+      "id": "a6b175017aeeb0f8ca97",
+      "baslik": "2025-YDUS 2. Dönem Uzmanlık Dalı Değişikliği Yerleştirme Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Sonuç",
+      "yayin_tarihi": "15.05.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025ydus-2-donem-uzmanlik-dali-degisikligi-yerlestirme-sonuclari-aciklandi"
+    },
+    {
+      "id": "594c6254116955dc2ade",
+      "baslik": "e-YÖKDİL 2026/1 (İngilizce-Sosyal Bilimler): Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YÖKDİL Sonuç",
+      "yayin_tarihi": "15.05.2026",
+      "kaynak": "ÖSYM e-YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyokdil-20261-ingilizcesosyal-bilimler-sonuclari-aciklandi"
+    },
+    {
+      "id": "709ec9bf8f4a8c920018",
+      "baslik": "2026-DGS: Kılavuz ve Başvuru Bilgileri",
+      "kurum": "ÖSYM",
+      "kategori": "DGS Başvuru",
+      "yayin_tarihi": "14.05.2026",
+      "kaynak": "ÖSYM DGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dgs-kilavuz-ve-basvuru-bilgileri"
+    },
+    {
+      "id": "b6178028ef3e597394cf",
+      "baslik": "2026-DGS: Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "DGS Başvuru",
+      "yayin_tarihi": "14.05.2026",
+      "kaynak": "ÖSYM DGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dgs-basvurularin-alinmasi"
     },
     {
       "id": "e0ff2a069e476b27498e",
@@ -4162,6 +4902,36 @@
       "link": "https://www.osym.gov.tr/2026ekpss-cevap-kgitlari-ve-aday-cevaplari-erisime-acildi"
     },
     {
+      "id": "01abde70279b9b3e5583",
+      "baslik": "2026 e-YÖKDİL/1 ve 2026 e-YÖKDİL/2 Sınavları İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "e-YÖKDİL Duyuru",
+      "yayin_tarihi": "13.05.2026",
+      "kaynak": "ÖSYM e-YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-eyokdil1-ve-2026-eyokdil2-sinavlari-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
+      "id": "0aa606a8d4ce5bb0dce9",
+      "baslik": "e-YÖKDİL 2026/2 (İngilizce-Sağlık Bilimleri): Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YÖKDİL Sınava Giriş Belgesi",
+      "yayin_tarihi": "13.05.2026",
+      "kaynak": "ÖSYM e-YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyokdil-20262-ingilizcesaglik-bilimleri-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "370d2fbd30750de0ed84",
+      "baslik": "e-YÖKDİL 2026/1 (İngilizce-Sosyal Bilimler): Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YÖKDİL Sınava Giriş Belgesi",
+      "yayin_tarihi": "13.05.2026",
+      "kaynak": "ÖSYM e-YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyokdil-20261-ingilizcesosyal-bilimler-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
       "id": "d65af689f2d6be69be6a",
       "baslik": "2026-EKPSS: Sınav Sonuçları Açıklandı",
       "kurum": "ÖSYM",
@@ -4170,6 +4940,276 @@
       "kaynak": "ÖSYM EKPSS Duyuruları",
       "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
       "link": "https://www.osym.gov.tr/2026ekpss-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "80ae7762ce4c367bf99a",
+      "baslik": "2026-HMGS/1: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "HMGS Sonuç",
+      "yayin_tarihi": "08.05.2026",
+      "kaynak": "ÖSYM HMGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî HMGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026hmgs1-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "17c75a3a80de2033caec",
+      "baslik": "2026-ALES/1: Temel Soru Kitapçığı ve Cevap Anahtarı (% 10)",
+      "kurum": "ÖSYM",
+      "kategori": "ALES Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "08.05.2026",
+      "kaynak": "ÖSYM ALES Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî ALES duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ales1-temel-soru-kitapcigi-ve-cevap-anahtari-10"
+    },
+    {
+      "id": "32962c35abf564e8db9b",
+      "baslik": "2026-ALES/1: Temel Soru Kitapçığı ve Cevap Anahtarı Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "ALES Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "08.05.2026",
+      "kaynak": "ÖSYM ALES Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî ALES duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ales1-temel-soru-kitapcigi-ve-cevap-anahtari-yayimlandi"
+    },
+    {
+      "id": "3ec29e3e3ce577af3ccf",
+      "baslik": "2026-HMGS/1: Cevap Kâğıtları ve Aday Cevapları Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "HMGS Aday Cevapları",
+      "yayin_tarihi": "07.05.2026",
+      "kaynak": "ÖSYM HMGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî HMGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026hmgs1-cevap-kgitlari-ve-aday-cevaplari-erisime-acildi"
+    },
+    {
+      "id": "7fbebd26b28dad3ae237",
+      "baslik": "2026-MEB-AGS: Kılavuz ve Başvuru Bilgileri",
+      "kurum": "ÖSYM",
+      "kategori": "MEB-AGS Başvuru",
+      "yayin_tarihi": "07.05.2026",
+      "kaynak": "ÖSYM MEB-AGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî MEB-AGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026mebags-kilavuz-ve-basvuru-bilgileri"
+    },
+    {
+      "id": "c9f3f9182d3bdb131451",
+      "baslik": "2026-MEB-AGS: Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "MEB-AGS Başvuru",
+      "yayin_tarihi": "07.05.2026",
+      "kaynak": "ÖSYM MEB-AGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî MEB-AGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026mebags-basvurularin-alinmasi"
+    },
+    {
+      "id": "35f5d577f4d2bd1a7234",
+      "baslik": "2026-TUS 1. Dönem Tercih İşlemleri: Tercih Kılavuzu ve Tablolar",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Tercih",
+      "yayin_tarihi": "07.05.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-1-donem-tercih-islemleri-tercih-kilavuzu-ve-tablolar"
+    },
+    {
+      "id": "a3edcd503b9fb5475d53",
+      "baslik": "2026-TUS 1. Dönem: Tercihlerin Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Tercih",
+      "yayin_tarihi": "07.05.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-1-donem-tercihlerin-alinmasi"
+    },
+    {
+      "id": "79cb4771bdb54fafaabb",
+      "baslik": "2026 Elektronik Yabancı Dil Olarak Türkçe Sınavı (e-YDTS): Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "YKS Sınava Giriş Belgesi",
+      "yayin_tarihi": "07.05.2026",
+      "kaynak": "ÖSYM YKS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YKS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-elektronik-yabanci-dil-olarak-turkce-sinavi-eydts-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "7b9f987343b98224f0eb",
+      "baslik": "2026-ALES/1 Sınavı İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "ALES Duyuru",
+      "yayin_tarihi": "06.05.2026",
+      "kaynak": "ÖSYM ALES Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî ALES duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ales1-sinavi-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
+      "id": "48e803278d6972243cba",
+      "baslik": "2026-YDUS Temel Soru Kitapçıkları ve Cevap Anahtarları (% 10)",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "30.04.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ydus-temel-soru-kitapciklari-ve-cevap-anahtarlari-10"
+    },
+    {
+      "id": "747d10b3380a81b8423f",
+      "baslik": "e-YDS 2026/5 (İspanyolca-İtalyanca): Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Sonuç",
+      "yayin_tarihi": "30.04.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20265-ispanyolcaitalyanca-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "78ca46db3a6decf28094",
+      "baslik": "e-YDS 2026/4 (İngilizce): Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Sonuç",
+      "yayin_tarihi": "30.04.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20264-ingilizce-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "72fdb4027de1edd31164",
+      "baslik": "2026-YDUS: Temel Soru Kitapçıkları ve Cevap Anahtarları Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "30.04.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ydus-temel-soru-kitapciklari-ve-cevap-anahtarlari-yayimlandi"
+    },
+    {
+      "id": "415d5cdfe27e2e7bfb6c",
+      "baslik": "2026-YDUS, e-YDS 2026/4 ve e-YDS 2026/5 Sınavları İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Duyuru",
+      "yayin_tarihi": "30.04.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ydus-eyds-20264-ve-eyds-20265-sinavlari-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
+      "id": "a005c0b1fa67c6903a60",
+      "baslik": "2026-ALES/1: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "ALES Sınava Giriş Belgesi",
+      "yayin_tarihi": "30.04.2026",
+      "kaynak": "ÖSYM ALES Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî ALES duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ales1-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "fa85a18b5081d97f24c6",
+      "baslik": "e-YDS 2026/5 (İspanyolca/İtalyanca): Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Sınava Giriş Belgesi",
+      "yayin_tarihi": "30.04.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20265-ispanyolcaitalyanca-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "d750660c3cd54c4576d7",
+      "baslik": "e-YDS 2026/4 (İngilizce): Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Sınava Giriş Belgesi",
+      "yayin_tarihi": "30.04.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20264-ingilizce-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "c1bbfe71af2c7790078f",
+      "baslik": "2025-YDUS 2. Dönem: Uzmanlık Dalı Değişikliği İçin Tercih Kılavuzu",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Tercih",
+      "yayin_tarihi": "30.04.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025ydus-2-donem-uzmanlik-dali-degisikligi-icin-tercih-kilavuzu"
+    },
+    {
+      "id": "e0dd315cdc5de699d1af",
+      "baslik": "2025-YDUS 2. Dönem: Uzmanlık Dalı Değişikliği İçin Tercihlerin Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Tercih",
+      "yayin_tarihi": "30.04.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025ydus-2-donem-uzmanlik-dali-degisikligi-icin-tercihlerin-alinmasi"
+    },
+    {
+      "id": "724e9760334db77eeee0",
+      "baslik": "2026-Elektronik Yükseköğretim Kurumları Yabancı Dil Sınavı (2026 e-YÖKDİL) Kılavuzu",
+      "kurum": "ÖSYM",
+      "kategori": "e-YÖKDİL Kılavuz",
+      "yayin_tarihi": "29.04.2026",
+      "kaynak": "ÖSYM e-YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026elektronik-yuksekogretim-kurumlari-yabanci-dil-sinavi-2026-eyokdil-kilavuzu"
+    },
+    {
+      "id": "0a17c626744aec1ca4e9",
+      "baslik": "2026-STS-Öğretmenlik: Kılavuz ve Başvuru Bilgileri",
+      "kurum": "ÖSYM",
+      "kategori": "STS Başvuru",
+      "yayin_tarihi": "29.04.2026",
+      "kaynak": "ÖSYM STS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî STS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026stsogretmenlik-kilavuz-ve-basvuru-bilgileri"
+    },
+    {
+      "id": "bdb272e4e3a318211b11",
+      "baslik": "2026-STS Öğretmenlik: Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "STS Başvuru",
+      "yayin_tarihi": "29.04.2026",
+      "kaynak": "ÖSYM STS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî STS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026sts-ogretmenlik-basvurularin-alinmasi"
+    },
+    {
+      "id": "a5f16606e327db51166d",
+      "baslik": "2026 Elektronik Yabancı Dil Olarak Türkçe Sınavı (e-YDTS): Başvuru Süresinin Uzatılması",
+      "kurum": "ÖSYM",
+      "kategori": "YKS Başvuru",
+      "yayin_tarihi": "28.04.2026",
+      "kaynak": "ÖSYM YKS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YKS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-elektronik-yabanci-dil-olarak-turkce-sinavi-eydts-basvuru-suresinin-uzatilmasi"
+    },
+    {
+      "id": "c64e73b7f2174b252572",
+      "baslik": "e-YÖKDİL 2026/3 (İngilizce-Fen Bilimleri): Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "e-YÖKDİL Başvuru",
+      "yayin_tarihi": "28.04.2026",
+      "kaynak": "ÖSYM e-YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyokdil-20263-ingilizcefen-bilimleri-basvurularin-alinmasi"
+    },
+    {
+      "id": "65127294c92cdcf48c58",
+      "baslik": "e-YÖKDİL 2026/2 (İngilizce-Sağlık Bilimleri): Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "e-YÖKDİL Başvuru",
+      "yayin_tarihi": "28.04.2026",
+      "kaynak": "ÖSYM e-YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyokdil-20262-ingilizcesaglik-bilimleri-basvurularin-alinmasi"
+    },
+    {
+      "id": "bd4affac30bfc31f7e25",
+      "baslik": "e-YÖKDİL 2026/1 (İngilizce-Sosyal Bilimler): Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "e-YÖKDİL Başvuru",
+      "yayin_tarihi": "28.04.2026",
+      "kaynak": "ÖSYM e-YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyokdil-20261-ingilizcesosyal-bilimler-basvurularin-alinmasi"
     },
     {
       "id": "db5e7108c2d8eb0deaed",
@@ -4192,6 +5232,306 @@
       "link": "https://www.osym.gov.tr/2026ekpss-kura-icin-basvurularin-alinmasi"
     },
     {
+      "id": "a2c8c9326a709e7adfbe",
+      "baslik": "2026-YDS/1: Cevap Kâğıtları ve Aday Cevapları Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "YDS Aday Cevapları",
+      "yayin_tarihi": "27.04.2026",
+      "kaynak": "ÖSYM YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026yds1-cevap-kgitlari-ve-aday-cevaplari-erisime-acildi"
+    },
+    {
+      "id": "cd8e9bd286bbf6247708",
+      "baslik": "2026-YDS/1: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "YDS Sonuç",
+      "yayin_tarihi": "27.04.2026",
+      "kaynak": "ÖSYM YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026yds1-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "9fa69e115ea5cccb5d30",
+      "baslik": "2026 Türkiye Yurt Dışından Öğrenci Kabul Sınavı (2026-TR-YÖS/1) Sonuçları Açıklandı/Announcement of the Results of the 2026 Exam for Foreign Students for Higher Education in Türkiye (2026-TR-YÖS/1)",
+      "kurum": "ÖSYM",
+      "kategori": "TR-YÖS Sonuç",
+      "yayin_tarihi": "27.04.2026",
+      "kaynak": "ÖSYM TR-YÖS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TR-YÖS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-turkiye-yurt-disindan-ogrenci-kabul-sinavi-2026tryos1-sonuclari-aciklandiannouncement-of-the-results-of-the-2026-exam-for-foreign-students-for-higher-education-in-turkiye-2026tryos1"
+    },
+    {
+      "id": "1d26397944561193a799",
+      "baslik": "2025-DUS 1. Dönem: Uzmanlık Dalı Değişikliği İçin Tercihlerin Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Tercih",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025dus-1-donem-uzmanlik-dali-degisikligi-icin-tercihlerin-alinmasi-20260511103353802"
+    },
+    {
+      "id": "4702848805d8f6822237",
+      "baslik": "2025-DUS 1. Dönem: Yerleştirme Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Sonuç",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025dus-1-donem-yerlestirme-sonuclari-aciklandi-20260511103353819"
+    },
+    {
+      "id": "0f51bfb19f3c955d3552",
+      "baslik": "2025-DUS 1. Dönem: Tercihlerin Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Tercih",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025dus-1-donem-tercihlerin-alinmasi-20260511103353843"
+    },
+    {
+      "id": "5a187829ae923bdf2577",
+      "baslik": "2025-DUS 1. Dönem Sınavı ile 2025-STS Diş Hekimliği 1. Dönem Sınavı: Cevap Kâğıtları ve Aday Cevapları Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Aday Cevapları",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025dus-1-donem-sinavi-ile-2025sts-dis-hekimligi-1-donem-sinavi-cevap-kgitlari-ve-aday-cevaplari-erisime-acildi-20260511103353858"
+    },
+    {
+      "id": "dd1589a02490bc9cb59b",
+      "baslik": "2025-DUS 1. Dönem ve 2025-STS Diş Hekimliği 1. Dönem: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Sonuç",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025dus-1-donem-ve-2025sts-dis-hekimligi-1-donem-sinav-sonuclari-aciklandi-20260511103353865"
+    },
+    {
+      "id": "57b055ed6f87501d9c29",
+      "baslik": "2025-DUS 1. Dönem Sınavı ile 2025-STS Diş Hekimliği 1. Dönem Sınavı: Sınav Sonuçları Hakkında Açıklama",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Sonuç",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025dus-1-donem-sinavi-ile-2025sts-dis-hekimligi-1-donem-sinavi-sinav-sonuclari-hakkinda-aciklama-20260511103353877"
+    },
+    {
+      "id": "668dee62a5265869453f",
+      "baslik": "2025-DUS 1. Dönem Sınavı ile 2025-STS Diş Hekimliği 1. Dönem Sınavı: Temel Soru Kitapçıkları ve Cevap Anahtarları Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025dus-1-donem-sinavi-ile-2025sts-dis-hekimligi-1-donem-sinavi-temel-soru-kitapciklari-ve-cevap-anahtarlari-yayimlandi-20260511103353895"
+    },
+    {
+      "id": "56763d8b9c2eca23ce2b",
+      "baslik": "2025-DUS (1. Dönem), 2025-STS Diş Hekimliği (1. Dönem), 2025-DGUY ve 2025-GUY Sınavları İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Duyuru",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025dus-1-donem-2025sts-dis-hekimligi-1-donem-2025dguy-ve-2025guy-sinavlari-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri-20260511103353922"
+    },
+    {
+      "id": "5adaba94ef6fa3607693",
+      "baslik": "2025-DUS 1. Dönem Sınavı ile 2025-STS Diş Hekimliği 1. Dönem Sınavı: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Sınava Giriş Belgesi",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025dus-1-donem-sinavi-ile-2025sts-dis-hekimligi-1-donem-sinavi-sinava-giris-belgeleri-erisime-acildi-20260511103353930"
+    },
+    {
+      "id": "6b55b090931660f02c16",
+      "baslik": "2025-DUS 1. Dönem Sınavı ile 2025-STS Diş Hekimliği 1. Dönem Sınavı: Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Başvuru",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025dus-1-donem-sinavi-ile-2025sts-dis-hekimligi-1-donem-sinavi-basvurularin-alinmasi-20260511103353939"
+    },
+    {
+      "id": "13b6c7ad4dd45ae00750",
+      "baslik": "2026-DUS 1. Dönem Sınavı ile 2026-STS Diş Hekimliği 1. Dönem Sınavı: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Sınava Giriş Belgesi",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dus-1-donem-sinavi-ile-2026sts-dis-hekimligi-1-donem-sinavi-sinava-giris-belgeleri-erisime-acildi-20260511103353966"
+    },
+    {
+      "id": "49a92210b528bad6435b",
+      "baslik": "2026-DUS 1. Dönem Sınavı ile 2026-STS Diş Hekimliği 1. Dönem Sınavı: Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Başvuru",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dus-1-donem-sinavi-ile-2026sts-dis-hekimligi-1-donem-sinavi-basvurularin-alinmasi-20260511103353986"
+    },
+    {
+      "id": "117bc229690fa1ff16e1",
+      "baslik": "2025-TUS 2. Dönem Uzmanlık Dalı Değişikliği Yerleştirme Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Sonuç",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025tus-2-donem-uzmanlik-dali-degisikligi-yerlestirme-sonuclari-aciklandi"
+    },
+    {
+      "id": "58cad8a66efaaae5ecd3",
+      "baslik": "2025-TUS 2. Dönem: Uzmanlık Dalı Değişikliği İçin Tercihlerin Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Tercih",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025tus-2-donem-uzmanlik-dali-degisikligi-icin-tercihlerin-alinmasi"
+    },
+    {
+      "id": "1e4255a964250f61c379",
+      "baslik": "2026-TUS 1. Dönem Sınavı ile 2026-STS Tıp Doktorluğu 1. Dönem Sınavı: Cevap Kâğıtları ve Aday Cevapları Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Aday Cevapları",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-1-donem-sinavi-ile-2026sts-tip-doktorlugu-1-donem-sinavi-cevap-kgitlari-ve-aday-cevaplari-erisime-acildi"
+    },
+    {
+      "id": "3a1806b74051d2f9c7e7",
+      "baslik": "2026-TUS 1. Dönem ve 2026-STS Tıp Doktorluğu 1. Dönem: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Sonuç",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-1-donem-ve-2026sts-tip-doktorlugu-1-donem-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "fd6eddec0300aa077d1d",
+      "baslik": "2026-TUS 1. Dönem Sınavı ile 2026-STS Tıp Doktorluğu 1. Dönem Sınavı: Temel Soru Kitapçıkları ve Cevap Anahtarları Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-1-donem-sinavi-ile-2026sts-tip-doktorlugu-1-donem-sinavi-temel-soru-kitapciklari-ve-cevap-anahtarlari-yayimlandi"
+    },
+    {
+      "id": "24189a4b0db46f00c3de",
+      "baslik": "2026-MEB-EKYS, 2026-TUS 1. Dönem ile 2026-STS Tıp Doktorluğu 1. Dönem Sınavları İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Duyuru",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026mebekys-2026tus-1-donem-ile-2026sts-tip-doktorlugu-1-donem-sinavlari-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri-20260511103759314"
+    },
+    {
+      "id": "009563c16c8f0aed445d",
+      "baslik": "2026-TUS 1. Dönem Sınavı ile 2026-STS Tıp Doktorluğu 1. Dönem Sınavı: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Sınava Giriş Belgesi",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-1-donem-sinavi-ile-2026sts-tip-doktorlugu-1-donem-sinavi-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "41524848916d1146798e",
+      "baslik": "2026-TUS 1. Dönem ile 2026-STS Tıp Doktorluğu 1. Dönem: Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Başvuru",
+      "yayin_tarihi": "24.04.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-1-donem-ile-2026sts-tip-doktorlugu-1-donem-basvurularin-alinmasi"
+    },
+    {
+      "id": "e81834961912ccbecc5c",
+      "baslik": "2026-HMGS/1 Temel Soru Kitapçığı ve Cevap Anahtarının Yayınlanması (% 10)",
+      "kurum": "ÖSYM",
+      "kategori": "HMGS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "22.04.2026",
+      "kaynak": "ÖSYM HMGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî HMGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026hmgs1-temel-soru-kitapcigi-ve-cevap-anahtarinin-yayinlanmasi-10"
+    },
+    {
+      "id": "0a860d8090b51682afb9",
+      "baslik": "2026-DUS 1.Dönem ve 2026-STS Diş Hekimliği 1.Dönem Temel Soru Kitapçığının Yayımlanması (% 10)",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "22.04.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dus-1donem-ve-2026sts-dis-hekimligi-1donem-temel-soru-kitapciginin-yayimlanmasi-10"
+    },
+    {
+      "id": "1151712b587339ce7085",
+      "baslik": "2026-HMGS/1: Temel Soru Kitapçığı ve Cevap Anahtarı Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "HMGS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "21.04.2026",
+      "kaynak": "ÖSYM HMGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî HMGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026hmgs1-temel-soru-kitapcigi-ve-cevap-anahtari-yayimlandi"
+    },
+    {
+      "id": "12b7fc0e455e27587d09",
+      "baslik": "2026-DUS 1. Dönem Sınavı ile 2026-STS Diş Hekimliği 1. Dönem Sınavı: Temel Soru Kitapçıkları ve Cevap Anahtarları Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "21.04.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dus-1-donem-sinavi-ile-2026sts-dis-hekimligi-1-donem-sinavi-temel-soru-kitapciklari-ve-cevap-anahtarlari-yayimlandi"
+    },
+    {
+      "id": "18691247ff2dced4964c",
+      "baslik": "2026-HMGS/1, 2026-DUS (1. Dönem) ve 2026-STS Diş Hekimliği (1. Dönem) Sınavları İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Duyuru",
+      "yayin_tarihi": "21.04.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026hmgs1-2026dus-1-donem-ve-2026sts-dis-hekimligi-1-donem-sinavlari-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
+      "id": "48d57b11184e65be130a",
+      "baslik": "2026-YDUS: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Sınava Giriş Belgesi",
+      "yayin_tarihi": "21.04.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ydus-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "6dda8dd9e5d18259a4c9",
+      "baslik": "2026 Elektronik İngilizce Yeterlik Sınavı/Electronic-Test of English Proficiency (e-TEP 2026/2): Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "e-TEP Sınava Giriş Belgesi",
+      "yayin_tarihi": "21.04.2026",
+      "kaynak": "ÖSYM e-TEP Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-TEP duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-elektronik-ingilizce-yeterlik-sinavielectronictest-of-english-proficiency-etep-20262-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
       "id": "40e4260e7222f6b47df5",
       "baslik": "2026-EKPSS Temel Soru Kitapçıklarının Yayınlanması (% 10)",
       "kurum": "ÖSYM",
@@ -4210,6 +5550,56 @@
       "kaynak": "ÖSYM EKPSS Duyuruları",
       "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
       "link": "https://www.osym.gov.tr/2026ekpss-temel-soru-kitapciklari-ve-cevap-anahtarlari-yayimlandi"
+    },
+    {
+      "id": "a4163b74836d5e3e6ecf",
+      "baslik": "2026-DİB-MBSTS: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "STS Sonuç",
+      "yayin_tarihi": "16.04.2026",
+      "kaynak": "ÖSYM STS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî STS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dibmbsts-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "eb1602c84713e1f93e0d",
+      "baslik": "2026-DİB-MBSTS: Cevap Kâğıtları ve Aday Cevapları Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "STS Aday Cevapları",
+      "yayin_tarihi": "15.04.2026",
+      "kaynak": "ÖSYM STS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî STS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dibmbsts-cevap-kgitlari-ve-aday-cevaplari-erisime-acildi"
+    },
+    {
+      "id": "ef09828e9f03f8a3f93b",
+      "baslik": "2026-DUS 1. Dönem Sınavı ile 2026-STS Diş Hekimliği 1. Dönem Sınavı: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Sınava Giriş Belgesi",
+      "yayin_tarihi": "15.04.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dus-1-donem-sinavi-ile-2026sts-dis-hekimligi-1-donem-sinavi-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "f4f81b4905871680fca0",
+      "baslik": "2026-Elektronik Yabancı Dil Olarak Türkçe Sınavı (e-YDTS) Kılavuzu",
+      "kurum": "ÖSYM",
+      "kategori": "YKS Kılavuz",
+      "yayin_tarihi": "15.04.2026",
+      "kaynak": "ÖSYM YKS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YKS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026elektronik-yabanci-dil-olarak-turkce-sinavi-eydts-kilavuzu"
+    },
+    {
+      "id": "4184f0dabfc29f984bdb",
+      "baslik": "2026 Elektronik Yabancı Dil Olarak Türkçe Sınavı (e-YDTS): Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "YKS Başvuru",
+      "yayin_tarihi": "15.04.2026",
+      "kaynak": "ÖSYM YKS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YKS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-elektronik-yabanci-dil-olarak-turkce-sinavi-eydts-basvurularin-alinmasi"
     },
     {
       "id": "be8abd55c1fc98e783a5",
@@ -4252,6 +5642,36 @@
       "link": "https://www.osym.gov.tr/isitme-engelli-adaylar-icin-hazirlanmis-2026yks-kilavuzu"
     },
     {
+      "id": "2ee1833f7471ab8f32e9",
+      "baslik": "2026-HMGS/1: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "HMGS Sınava Giriş Belgesi",
+      "yayin_tarihi": "13.04.2026",
+      "kaynak": "ÖSYM HMGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî HMGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026hmgs1-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "ecadb11b5a2e4e1c02fe",
+      "baslik": "e-YDS 2026/4 (İngilizce): Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Başvuru",
+      "yayin_tarihi": "13.04.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20264-ingilizce-basvurularin-alinmasi"
+    },
+    {
+      "id": "0857dd32a1df3572d72e",
+      "baslik": "e-YDS 2026/3 (Farsça/Yunanca/Bulgarca): Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Sonuç",
+      "yayin_tarihi": "13.04.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20263-farscayunancabulgarca-sonuclari-aciklandi"
+    },
+    {
       "id": "55e72d766d35cc598568",
       "baslik": "e-YDS 2026/3 (Farsça/Yunanca/Bulgarca) ve 2026-EKPSS Sınavları İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
       "kurum": "ÖSYM",
@@ -4260,6 +5680,96 @@
       "kaynak": "ÖSYM EKPSS Duyuruları",
       "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
       "link": "https://www.osym.gov.tr/eyds-20263-farscayunancabulgarca-ve-2026ekpss-sinavlari-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
+      "id": "c5126915dea0752adf29",
+      "baslik": "e-YDS 2026/3 (Farsça/Yunanca/Bulgarca): Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Sınava Giriş Belgesi",
+      "yayin_tarihi": "13.04.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20263-farscayunancabulgarca-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "ea8eade7ef231bf9097b",
+      "baslik": "2026-TUS 1. Dönem Sınavı ile 2026-STS Tıp Doktorluğu 1. Dönem Sınavı: Cevap Kâğıtları ve Aday Cevapları Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Aday Cevapları",
+      "yayin_tarihi": "13.04.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-1-donem-sinavi-ile-2026sts-tip-doktorlugu-1-donem-sinavi-cevap-kgitlari-ve-aday-cevaplari-erisime-acildi-20260511131314290"
+    },
+    {
+      "id": "9ac378a362576af3ac58",
+      "baslik": "2026-TUS 1. Dönem ve 2026-STS Tıp Doktorluğu 1. Dönem: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Sonuç",
+      "yayin_tarihi": "13.04.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-1-donem-ve-2026sts-tip-doktorlugu-1-donem-sinav-sonuclari-aciklandi-20260511131314301"
+    },
+    {
+      "id": "df29a70d698fe5c26358",
+      "baslik": "2026-MEB-EKYS: Cevap Kâğıtları ve Aday Cevapları Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "ÖSYM Aday Cevapları",
+      "yayin_tarihi": "08.04.2026",
+      "kaynak": "ÖSYM Diğer ÖSYM Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî Diğer ÖSYM duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026mebekys-cevap-kgitlari-ve-aday-cevaplari-erisime-acildi"
+    },
+    {
+      "id": "0948158d46b33f03323f",
+      "baslik": "2026-MEB-EKYS: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "ÖSYM Sonuç",
+      "yayin_tarihi": "08.04.2026",
+      "kaynak": "ÖSYM Diğer ÖSYM Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî Diğer ÖSYM duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026mebekys-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "aa696cbc8f8e0c1d23b5",
+      "baslik": "2025-TUS 2. Dönem Uzmanlık Dalı Değişikliği Yerleştirme Sonuçlarına İlişkin Sayısal Bilgiler",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Sonuç",
+      "yayin_tarihi": "08.04.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025tus-2-donem-uzmanlik-dali-degisikligi-yerlestirme-sonuclarina-iliskin-sayisal-bilgiler"
+    },
+    {
+      "id": "5055d27ee5ad672683b5",
+      "baslik": "2025-TUS 2. Dönem Uzmanlık Dalı Değişikliği Yerleştirme Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Sonuç",
+      "yayin_tarihi": "08.04.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025tus-2-donem-uzmanlik-dali-degisikligi-yerlestirme-sonuclari-aciklandi-20260511143314743"
+    },
+    {
+      "id": "f1e8906af96cdb74245e",
+      "baslik": "2025-YDUS 2. Dönem Ek Yerleştirme Sonuçlarına İlişkin Sayısal Bilgiler",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Ek Yerleştirme Sonucu",
+      "yayin_tarihi": "08.04.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025ydus-2-donem-ek-yerlestirme-sonuclarina-iliskin-sayisal-bilgiler"
+    },
+    {
+      "id": "00df2b8136bc4f646766",
+      "baslik": "2025-YDUS 2. Dönem: Ek Yerleştirme Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Ek Yerleştirme Sonucu",
+      "yayin_tarihi": "08.04.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025ydus-2-donem-ek-yerlestirme-sonuclari-aciklandi"
     },
     {
       "id": "45939a52d1d7557bdec2",
@@ -4272,6 +5782,326 @@
       "link": "https://www.osym.gov.tr/2026ekpss-sinava-giris-belgeleri-erisime-acildi"
     },
     {
+      "id": "075e041577fcb2015174",
+      "baslik": "2026-TR-YÖS/1: Temel Soru Kitapçığı ve Cevap Anahtarının Yayımlanması (% 10)",
+      "kurum": "ÖSYM",
+      "kategori": "TR-YÖS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "08.04.2026",
+      "kaynak": "ÖSYM TR-YÖS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TR-YÖS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tryos1-temel-soru-kitapcigi-ve-cevap-anahtarinin-yayimlanmasi-10"
+    },
+    {
+      "id": "d71d2656c4269bdcb473",
+      "baslik": "2026-TR-YÖS/1: Temel Soru Kitapçığı ile Cevap Anahtarı Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "TR-YÖS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "08.04.2026",
+      "kaynak": "ÖSYM TR-YÖS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TR-YÖS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tryos1-temel-soru-kitapcigi-ile-cevap-anahtari-yayimlandi"
+    },
+    {
+      "id": "67ab9fe989bd87cab044",
+      "baslik": "2026-TR-YÖS/1 Sınavı İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "TR-YÖS Duyuru",
+      "yayin_tarihi": "08.04.2026",
+      "kaynak": "ÖSYM TR-YÖS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TR-YÖS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tryos1-sinavi-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
+      "id": "9d9af2ade8180bf05256",
+      "baslik": "2026 Elektronik İngilizce Yeterlik Sınavı/Electronic-Test of English Proficiency (e-TEP 2026/2): Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "e-TEP Başvuru",
+      "yayin_tarihi": "06.04.2026",
+      "kaynak": "ÖSYM e-TEP Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-TEP duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-elektronik-ingilizce-yeterlik-sinavielectronictest-of-english-proficiency-etep-20262-basvurularin-alinmasi"
+    },
+    {
+      "id": "1119233b4e0e4c755fcd",
+      "baslik": "2026-YDS/1: Temel Soru Kitapçıklarının Yayımlanması (% 10)",
+      "kurum": "ÖSYM",
+      "kategori": "YDS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "03.04.2026",
+      "kaynak": "ÖSYM YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026yds1-temel-soru-kitapciklarinin-yayimlanmasi-10"
+    },
+    {
+      "id": "c7abc8bb301dc4d90e55",
+      "baslik": "2026-YDS/1: Temel Soru Kitapçıkları ve Cevap Anahtarları Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "YDS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "03.04.2026",
+      "kaynak": "ÖSYM YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026yds1-temel-soru-kitapciklari-ve-cevap-anahtarlari-yayimlandi"
+    },
+    {
+      "id": "646d88e920888a2e3087",
+      "baslik": "2025 e-TEP: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "e-TEP Sonuç",
+      "yayin_tarihi": "02.04.2026",
+      "kaynak": "ÖSYM e-TEP Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-TEP duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025-e-tep-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "60e2059cbff11c190d20",
+      "baslik": "2026-TR-YÖS/1: Sınava Giriş Belgeleri Erişime Açıldı/Access to documents for entry to the 2026 TR-YÖS/1 exam has been opened",
+      "kurum": "ÖSYM",
+      "kategori": "TR-YÖS Sınava Giriş Belgesi",
+      "yayin_tarihi": "01.04.2026",
+      "kaynak": "ÖSYM TR-YÖS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TR-YÖS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tryos1-sinava-giris-belgeleri-erisime-acildiaccess-to-documents-for-entry-to-the-2026-tryos1-exam-has-been-opened"
+    },
+    {
+      "id": "a6efd6dafe49deeab140",
+      "baslik": "2026-YDS/1 Sınavı İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "YDS Duyuru",
+      "yayin_tarihi": "01.04.2026",
+      "kaynak": "ÖSYM YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026yds1-sinavi-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
+      "id": "5ccf02e47aac96c4b39a",
+      "baslik": "2026-DİB-MBSTS Temel Soru Kitapçığı ve Cevap Anahtarı (% 10)",
+      "kurum": "ÖSYM",
+      "kategori": "STS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "29.03.2026",
+      "kaynak": "ÖSYM STS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî STS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dibmbsts-temel-soru-kitapcigi-ve-cevap-anahtari-10"
+    },
+    {
+      "id": "1be3f31288bab4d204b2",
+      "baslik": "2026-DİB-MBSTS: Temel Soru Kitapçığı ve Cevap Anahtarı Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "STS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "29.03.2026",
+      "kaynak": "ÖSYM STS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî STS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dibmbsts-temel-soru-kitapcigi-ve-cevap-anahtari-yayimlandi"
+    },
+    {
+      "id": "60b5c47cc0afece1f472",
+      "baslik": "2026-GUY: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "GUY Sonuç",
+      "yayin_tarihi": "27.03.2026",
+      "kaynak": "ÖSYM GUY Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî GUY duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026guy-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "bab92e9865a2a4772d74",
+      "baslik": "2025-YDUS 2. Dönem Ek Tercih İşlemleri: Tercih Kılavuzu ve Kontenjanlar Tablosu",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Ek Yerleştirme",
+      "yayin_tarihi": "26.03.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025ydus-2-donem-ek-tercih-islemleri-tercih-kilavuzu-ve-kontenjanlar-tablosu"
+    },
+    {
+      "id": "6c68aa34750a1322178a",
+      "baslik": "2025-YDUS 2. Dönem: Ek Yerleştirme Tercihlerinin Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Ek Yerleştirme",
+      "yayin_tarihi": "26.03.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025ydus-2-donem-ek-yerlestirme-tercihlerinin-alinmasi"
+    },
+    {
+      "id": "b53ed41f2bcf64ccc19b",
+      "baslik": "2026-DİB-MBSTS İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "STS Duyuru",
+      "yayin_tarihi": "25.03.2026",
+      "kaynak": "ÖSYM STS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî STS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dibmbsts-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
+      "id": "0d703743b4cdd59c0b9f",
+      "baslik": "2026-YDS/1: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "YDS Sınava Giriş Belgesi",
+      "yayin_tarihi": "25.03.2026",
+      "kaynak": "ÖSYM YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026yds1-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "62f5a59dc87bffecf952",
+      "baslik": "2026-ALES/1: Kılavuz ve Başvuru Bilgileri",
+      "kurum": "ÖSYM",
+      "kategori": "ALES Başvuru",
+      "yayin_tarihi": "25.03.2026",
+      "kaynak": "ÖSYM ALES Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî ALES duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ales1-kilavuz-ve-basvuru-bilgileri"
+    },
+    {
+      "id": "1320bb89e248f0dc2ecd",
+      "baslik": "2025-ÖSYM Uzman Yardımcılığı Sözlü Sınav Sonuçları",
+      "kurum": "ÖSYM",
+      "kategori": "ÖSYM Sonuç",
+      "yayin_tarihi": "24.03.2026",
+      "kaynak": "ÖSYM Diğer ÖSYM Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî Diğer ÖSYM duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025-osym-uzman-yardimciligi-sozlu-sinav-sonuclari"
+    },
+    {
+      "id": "051f1419707a16425d83",
+      "baslik": "2026-ALES/1: Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "ALES Başvuru",
+      "yayin_tarihi": "24.03.2026",
+      "kaynak": "ÖSYM ALES Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî ALES duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ales1-basvurularin-alinmasi"
+    },
+    {
+      "id": "3e48b1bbfd5b38dbeda2",
+      "baslik": "e-TEP 2026 Technical Reports",
+      "kurum": "ÖSYM",
+      "kategori": "e-TEP Duyuru",
+      "yayin_tarihi": "24.03.2026",
+      "kaynak": "ÖSYM e-TEP Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-TEP duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/etep-2026-technical-reports"
+    },
+    {
+      "id": "d4462d470900de983b8b",
+      "baslik": "2026-MSÜ: Cevap Kâğıtları ve Aday Cevapları Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "MSÜ Aday Cevapları",
+      "yayin_tarihi": "23.03.2026",
+      "kaynak": "ÖSYM MSÜ Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî MSÜ duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026msu-cevap-kgitlari-ve-aday-cevaplari-erisime-acildi"
+    },
+    {
+      "id": "86b80670a1223f45491d",
+      "baslik": "2026-MSÜ: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "MSÜ Sonuç",
+      "yayin_tarihi": "23.03.2026",
+      "kaynak": "ÖSYM MSÜ Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî MSÜ duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026msu-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "f034c0ce4482c151064c",
+      "baslik": "2026-DİB-MBSTS: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "STS Sınava Giriş Belgesi",
+      "yayin_tarihi": "18.03.2026",
+      "kaynak": "ÖSYM STS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî STS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dibmbsts-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "563fdc062c01226420af",
+      "baslik": "2026-YÖKDİL/1: Cevap Kâğıtları ve Aday Cevapları Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "YÖKDİL Aday Cevapları",
+      "yayin_tarihi": "18.03.2026",
+      "kaynak": "ÖSYM YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026yokdil1-cevap-kgitlari-ve-aday-cevaplari-erisime-acildi"
+    },
+    {
+      "id": "046a25e35891ee8a6c22",
+      "baslik": "2026-YÖKDİL/1: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "YÖKDİL Sonuç",
+      "yayin_tarihi": "18.03.2026",
+      "kaynak": "ÖSYM YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026yokdil1-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "002e353ab8e534da72a2",
+      "baslik": "2026-TUS ve 2026-STS Tıp Doktorluğu (1. Dönem) Temel Soru Kitapçıklarının Yayınlanması (% 10)",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "13.03.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-ve-2026sts-tip-doktorlugu-1-donem-temel-soru-kitapciklarinin-yayinlanmasi-10"
+    },
+    {
+      "id": "43fafa9e3b1f7433261d",
+      "baslik": "2026-TUS 1. Dönem Sınavı ile 2026-STS Tıp Doktorluğu 1. Dönem Sınavı: Temel Soru Kitapçıkları ve Cevap Anahtarları Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "13.03.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-1-donem-sinavi-ile-2026sts-tip-doktorlugu-1-donem-sinavi-temel-soru-kitapciklari-ve-cevap-anahtarlari-yayimlandi-20260511131314267"
+    },
+    {
+      "id": "42072dcbfe209c00a832",
+      "baslik": "2026-YDUS: Kılavuz ve Başvuru Bilgileri",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Başvuru",
+      "yayin_tarihi": "13.03.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ydus-kilavuz-ve-basvuru-bilgileri"
+    },
+    {
+      "id": "8bd4fba57ae215dd991c",
+      "baslik": "2026-MEB-EKYS, 2026-TUS 1. Dönem ile 2026-STS Tıp Doktorluğu 1. Dönem Sınavları İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Duyuru",
+      "yayin_tarihi": "13.03.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026mebekys-2026tus-1-donem-ile-2026sts-tip-doktorlugu-1-donem-sinavlari-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri-20260511131314256"
+    },
+    {
+      "id": "8da0a9648a7f3392f778",
+      "baslik": "2026-MEB-EKYS Temel Soru Kitapçığı ve Cevap Anahtarı (% 10)",
+      "kurum": "ÖSYM",
+      "kategori": "ÖSYM Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "13.03.2026",
+      "kaynak": "ÖSYM Diğer ÖSYM Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî Diğer ÖSYM duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026mebekys-temel-soru-kitapcigi-ve-cevap-anahtari-10"
+    },
+    {
+      "id": "f3b8f5cdc5c096a1ce9f",
+      "baslik": "2026-MEB-EKYS: Temel Soru Kitapçığı ve Cevap Anahtarı Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "ÖSYM Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "13.03.2026",
+      "kaynak": "ÖSYM Diğer ÖSYM Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî Diğer ÖSYM duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026mebekys-temel-soru-kitapcigi-ve-cevap-anahtari-yayimlandi"
+    },
+    {
+      "id": "b8bf96ce1c6e48253abe",
+      "baslik": "2026-YDUS: Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Başvuru",
+      "yayin_tarihi": "12.03.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026ydus-basvurularin-alinmasi"
+    },
+    {
       "id": "60221f795e80fb2ac8d8",
       "baslik": "2026-YKS: Başvuru İşlemlerinin Tamamlanması",
       "kurum": "ÖSYM",
@@ -4282,6 +6112,236 @@
       "link": "https://www.osym.gov.tr/2026yks-basvuru-islemlerinin-tamamlanmasi"
     },
     {
+      "id": "0b96778fa4920626419a",
+      "baslik": "2026-MEB-EKYS, 2026-TUS 1. Dönem ile 2026-STS Tıp Doktorluğu 1. Dönem Sınavları İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Duyuru",
+      "yayin_tarihi": "11.03.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026mebekys-2026tus-1-donem-ile-2026sts-tip-doktorlugu-1-donem-sinavlari-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
+      "id": "a2773f85852568e9f8e6",
+      "baslik": "2025-TUS 2. Dönem Uzmanlık Dalı Değişikliği İçin Tercih Kılavuzu ve Tablolar",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Tercih",
+      "yayin_tarihi": "11.03.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025tus-2-donem-uzmanlik-dali-degisikligi-icin-tercih-kilavuzu-ve-tablolar"
+    },
+    {
+      "id": "4daa5b160225a9c7eacb",
+      "baslik": "2025-TUS 2. Dönem: Uzmanlık Dalı Değişikliği İçin Tercihlerin Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Tercih",
+      "yayin_tarihi": "10.03.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025tus-2-donem-uzmanlik-dali-degisikligi-icin-tercihlerin-alinmasi-20260511143314754"
+    },
+    {
+      "id": "92686c8af21c12892d60",
+      "baslik": "2026-STS Diş Hekimliği 1. Dönem : Kılavuz ve Başvuru Bilgileri",
+      "kurum": "ÖSYM",
+      "kategori": "STS Başvuru",
+      "yayin_tarihi": "09.03.2026",
+      "kaynak": "ÖSYM STS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî STS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026sts-dis-hekimligi-1-donem-kilavuz-ve-basvuru-bilgileri"
+    },
+    {
+      "id": "f9ee6782ab42eaf9e1b8",
+      "baslik": "2026-DUS 1. Dönem: Kılavuz ve Başvuru Bilgileri",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Başvuru",
+      "yayin_tarihi": "09.03.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dus-1-donem-kilavuz-ve-basvuru-bilgileri"
+    },
+    {
+      "id": "5557172550d4d00c4627",
+      "baslik": "2026-DUS 1. Dönem Sınavı ile 2026-STS Diş Hekimliği 1. Dönem Sınavı: Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "DUS Başvuru",
+      "yayin_tarihi": "09.03.2026",
+      "kaynak": "ÖSYM DUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dus-1-donem-sinavi-ile-2026sts-dis-hekimligi-1-donem-sinavi-basvurularin-alinmasi"
+    },
+    {
+      "id": "cea4c6dc241d2ab6d52b",
+      "baslik": "2026-HMGS/1: Kılavuz ve Başvuru Bilgileri",
+      "kurum": "ÖSYM",
+      "kategori": "HMGS Başvuru",
+      "yayin_tarihi": "06.03.2026",
+      "kaynak": "ÖSYM HMGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî HMGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026hmgs1-kilavuz-ve-basvuru-bilgileri"
+    },
+    {
+      "id": "0566c6aa01ed5a3af557",
+      "baslik": "2026-HMGS/1: Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "HMGS Başvuru",
+      "yayin_tarihi": "06.03.2026",
+      "kaynak": "ÖSYM HMGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî HMGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026hmgs1-basvurularin-alinmasi"
+    },
+    {
+      "id": "d2043724f5834a8ae660",
+      "baslik": "2026-YÖKDİL/1 Temel Soru Kitapçıklarının Yayımlanması (% 10)",
+      "kurum": "ÖSYM",
+      "kategori": "YÖKDİL Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "06.03.2026",
+      "kaynak": "ÖSYM YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026yokdil1-temel-soru-kitapciklarinin-yayimlanmasi-10"
+    },
+    {
+      "id": "307bb95e77cfae2a846b",
+      "baslik": "2026-YÖKDİL/1: Temel Soru Kitapçıkları ve Cevap Anahtarları Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "YÖKDİL Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "06.03.2026",
+      "kaynak": "ÖSYM YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026yokdil1-temel-soru-kitapciklari-ve-cevap-anahtarlari-yayimlandi"
+    },
+    {
+      "id": "5a82cc9e6e2eb74b5d0d",
+      "baslik": "2026-MEB-AGS Öğretmenlik Alan Bilgisi Testi (ÖABT): Özel Eğitim Alanı Örnek Sorular",
+      "kurum": "ÖSYM",
+      "kategori": "MEB-AGS Duyuru",
+      "yayin_tarihi": "04.03.2026",
+      "kaynak": "ÖSYM MEB-AGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî MEB-AGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026mebags-ogretmenlik-alan-bilgisi-testi-oabt-ozel-egitim-alani-ornek-sorular"
+    },
+    {
+      "id": "6b92bec734f63140dce0",
+      "baslik": "2026-TUS 1. Dönem Sınavı ile 2026-STS Tıp Doktorluğu 1. Dönem Sınavı: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Sınava Giriş Belgesi",
+      "yayin_tarihi": "02.03.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tus-1-donem-sinavi-ile-2026sts-tip-doktorlugu-1-donem-sinavi-sinava-giris-belgeleri-erisime-acildi-20260511131314278"
+    },
+    {
+      "id": "111f0707a7e3d7688ebf",
+      "baslik": "2026-MEB-EKYS: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "ÖSYM Sınava Giriş Belgesi",
+      "yayin_tarihi": "02.03.2026",
+      "kaynak": "ÖSYM Diğer ÖSYM Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî Diğer ÖSYM duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026mebekys-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "57d3b3798b821375f534",
+      "baslik": "2026-GUY Sınavı ile 2026-YÖKDİL/1 Sınavı İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "YÖKDİL Duyuru",
+      "yayin_tarihi": "02.03.2026",
+      "kaynak": "ÖSYM YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026guy-sinavi-ile-2026yokdil1-sinavi-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
+      "id": "e991b2c241dfdeea6482",
+      "baslik": "e-TEP 2026/1: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "e-TEP Sonuç",
+      "yayin_tarihi": "27.02.2026",
+      "kaynak": "ÖSYM e-TEP Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-TEP duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/e-tep-20261-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "fb63b099edaffb923fbc",
+      "baslik": "2026-MSÜ Temel Soru Kitapçığı ve Cevap Anahtarının Yayımlanması (% 10)",
+      "kurum": "ÖSYM",
+      "kategori": "MSÜ Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "27.02.2026",
+      "kaynak": "ÖSYM MSÜ Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî MSÜ duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026msu-temel-soru-kitapcigi-ve-cevap-anahtarinin-yayimlanmasi-10"
+    },
+    {
+      "id": "950d4753646007dcf799",
+      "baslik": "2026-MSÜ Sınavı: Temel Soru Kitapçığı ve Cevap Anahtarı Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "MSÜ Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "27.02.2026",
+      "kaynak": "ÖSYM MSÜ Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî MSÜ duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026msu-sinavi-temel-soru-kitapcigi-ve-cevap-anahtari-yayimlandi"
+    },
+    {
+      "id": "e49c7145917ef60cf323",
+      "baslik": "2026-YÖKDİL/1: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "YÖKDİL Sınava Giriş Belgesi",
+      "yayin_tarihi": "26.02.2026",
+      "kaynak": "ÖSYM YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026yokdil1-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "7cac7535a603965dba62",
+      "baslik": "e-TEP 2026/1: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "e-TEP Sonuç",
+      "yayin_tarihi": "26.02.2026",
+      "kaynak": "ÖSYM e-TEP Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-TEP duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/etep-20261-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "283c2ab609f00e6129e4",
+      "baslik": "2026-MSÜ Sınavı İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "MSÜ Duyuru",
+      "yayin_tarihi": "26.02.2026",
+      "kaynak": "ÖSYM MSÜ Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî MSÜ duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026msu-sinavi-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
+      "id": "906a4c3e301e5f9fd297",
+      "baslik": "2026-GUY: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "GUY Sınava Giriş Belgesi",
+      "yayin_tarihi": "26.02.2026",
+      "kaynak": "ÖSYM GUY Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî GUY duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026guy-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "557f63ea05baa3bb510d",
+      "baslik": "2025-YDUS 2. Dönem: Yerleştirme Sonuçlarına İlişkin Sayısal Bilgiler",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Sonuç",
+      "yayin_tarihi": "24.02.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025ydus-2-donem-yerlestirme-sonuclarina-iliskin-sayisal-bilgiler"
+    },
+    {
+      "id": "d13da4628642ae682e5c",
+      "baslik": "2025-YDUS 2. Dönem: Yerleştirme Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Sonuç",
+      "yayin_tarihi": "24.02.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025ydus-2-donem-yerlestirme-sonuclari-aciklandi"
+    },
+    {
       "id": "b034145039731020c022",
       "baslik": "2026-YKS: Sıkça Sorulan Sorular",
       "kurum": "ÖSYM",
@@ -4290,6 +6350,126 @@
       "kaynak": "ÖSYM YKS Duyuruları",
       "ozet": "ÖSYM tarafından yayımlanan resmî YKS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
       "link": "https://www.osym.gov.tr/2026yks-sikca-sorulan-sorular"
+    },
+    {
+      "id": "f19792f691ddd8e840e5",
+      "baslik": "2026-MSÜ: Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "MSÜ Sınava Giriş Belgesi",
+      "yayin_tarihi": "19.02.2026",
+      "kaynak": "ÖSYM MSÜ Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî MSÜ duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026msu-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "5383ad176dedb5289e3e",
+      "baslik": "2026-YDS/1: Kılavuz ve Başvuru Bilgileri",
+      "kurum": "ÖSYM",
+      "kategori": "YDS Başvuru",
+      "yayin_tarihi": "18.02.2026",
+      "kaynak": "ÖSYM YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026yds1-kilavuz-ve-basvuru-bilgileri"
+    },
+    {
+      "id": "e1fbdb23a0d71c8a99ae",
+      "baslik": "2026-YDS/1: Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "YDS Başvuru",
+      "yayin_tarihi": "17.02.2026",
+      "kaynak": "ÖSYM YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026yds1-basvurularin-alinmasi"
+    },
+    {
+      "id": "3e462c6c5fef0edd0c31",
+      "baslik": "e-YDS 2026/5 (İspanyolca/İtalyanca): Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Başvuru",
+      "yayin_tarihi": "17.02.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20265-ispanyolcaitalyanca-basvurularin-alinmasi"
+    },
+    {
+      "id": "0b5d92fdde4b06bf0258",
+      "baslik": "e-YDS 2026/3 (Farsça/Yunanca/Bulgarca): Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Başvuru",
+      "yayin_tarihi": "17.02.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20263-farscayunancabulgarca-basvurularin-alinmasi"
+    },
+    {
+      "id": "1cbae084295f2cdc5740",
+      "baslik": "e-YDS 2026/2 (İngilizce): Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Sonuç",
+      "yayin_tarihi": "13.02.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20262-ingilizce-sinav-sonuclari-aciklandi"
+    },
+    {
+      "id": "8787418d3114964d0813",
+      "baslik": "e-YDS 2026/2 (İngilizce): Sınava Giriş Belgeleri Erişime Açıldı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Sınava Giriş Belgesi",
+      "yayin_tarihi": "12.02.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20262-ingilizce-sinava-giris-belgeleri-erisime-acildi"
+    },
+    {
+      "id": "a330876309f50586bdd2",
+      "baslik": "e-YDS 2026/2 (İngilizce) Sınavı İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Duyuru",
+      "yayin_tarihi": "11.02.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/eyds-20262-ingilizce-sinavi-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
+    },
+    {
+      "id": "cae19ede68cff20ca6e2",
+      "baslik": "2025-YDUS 2. Dönem Tercih İşlemleri: Tercih Kılavuzu ve Kontenjanlar Tablosu",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Tercih",
+      "yayin_tarihi": "10.02.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025ydus-2-donem-tercih-islemleri-tercih-kilavuzu-ve-kontenjanlar-tablosu"
+    },
+    {
+      "id": "c404a498135f81bec26a",
+      "baslik": "2026-DİB-MBSTS: Kılavuz ve Başvuru Bilgileri",
+      "kurum": "ÖSYM",
+      "kategori": "STS Başvuru",
+      "yayin_tarihi": "10.02.2026",
+      "kaynak": "ÖSYM STS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî STS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dibmbsts-kilavuz-ve-basvuru-bilgileri"
+    },
+    {
+      "id": "6a8ec38699cae73fa453",
+      "baslik": "2026-DİB-MBSTS: Başvuruların Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "STS Başvuru",
+      "yayin_tarihi": "10.02.2026",
+      "kaynak": "ÖSYM STS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî STS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026dibmbsts-basvurularin-alinmasi"
+    },
+    {
+      "id": "eb9534210198a2d47354",
+      "baslik": "2025-YDUS 2. Dönem: Tercihlerin Alınması",
+      "kurum": "ÖSYM",
+      "kategori": "YDUS Tercih",
+      "yayin_tarihi": "09.02.2026",
+      "kaynak": "ÖSYM YDUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025ydus-2-donem-tercihlerin-alinmasi"
     },
     {
       "id": "2b418560767c6f4bef41",
@@ -4312,6 +6492,26 @@
       "link": "https://www.osym.gov.tr/2026yks-basvurularin-alinmasi"
     },
     {
+      "id": "33bfefe9b8cc936dfabf",
+      "baslik": "2025-HMGS/2: Yeniden Değerlendirme Sonuçları",
+      "kurum": "ÖSYM",
+      "kategori": "HMGS Sonuç",
+      "yayin_tarihi": "05.02.2026",
+      "kaynak": "ÖSYM HMGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî HMGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025hmgs2-yeniden-degerlendirme-sonuclari"
+    },
+    {
+      "id": "ade70e3bcf3690922f8b",
+      "baslik": "2025-HMGS/2: Yeniden Değerlendirme Sonuçları",
+      "kurum": "ÖSYM",
+      "kategori": "HMGS Sonuç",
+      "yayin_tarihi": "04.02.2026",
+      "kaynak": "ÖSYM HMGS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî HMGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2025hmgs2-yeniden-degerlendirme-sonuclari-20260511090900919"
+    },
+    {
       "id": "78fda1f8eed0f12889f1",
       "baslik": "2026-EKPSS: Başvuruların Alınması",
       "kurum": "ÖSYM",
@@ -4320,6 +6520,16 @@
       "kaynak": "ÖSYM EKPSS Duyuruları",
       "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
       "link": "https://www.osym.gov.tr/2026ekpss-basvurularin-alinmasi"
+    },
+    {
+      "id": "da13f1366276d68ef632",
+      "baslik": "2026 Türkiye Yurt Dışından Öğrenci Kabul Sınavı (2026-TR-YÖS/1): Başvuru Süresinin Uzatılması /Extension of the application period for 2026 Exam For Foreign Students For Higher Education in Türkiye (2026-TR-YÖS/1)",
+      "kurum": "ÖSYM",
+      "kategori": "TR-YÖS Başvuru",
+      "yayin_tarihi": "03.02.2026",
+      "kaynak": "ÖSYM TR-YÖS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TR-YÖS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-turkiye-yurt-disindan-ogrenci-kabul-sinavi-2026tryos1-basvuru-suresinin-uzatilmasi-extension-of-the-application-period-for-2026-exam-for-foreign-students-for-higher-education-in-turkiye-2026tryos1"
     },
     {
       "id": "878b51b70b5d87f28261",
@@ -4362,56 +6572,6 @@
       "link": "https://www.osym.gov.tr/2026ekpsskura-ile-engelli-kamu-personeli-yerlestirme-sinav-sonucu-ile-yapilan-yerlestirme-sonuclari-aciklandi"
     },
     {
-      "id": "eb763092c66c35654427",
-      "baslik": "2026-EKPSS/Kura Tercih Kılavuzundan Yerleştirme İçin Tercih Yapan/Tercih Yapacak Adayların Dikkatine",
-      "kurum": "ÖSYM",
-      "kategori": "EKPSS Tercih",
-      "yayin_tarihi": "09.01.2026",
-      "kaynak": "ÖSYM EKPSS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
-      "link": "https://www.osym.gov.tr/2026ekpsskura-tercih-kilavuzundan-yerlestirme-icin-tercih-yapantercih-yapacak-adaylarin-dikkatine"
-    },
-    {
-      "id": "abdf9bbee7b94ab8581a",
-      "baslik": "2026-EKPSS/Kura İle Engelli Kamu Personeli Yerleştirme Tercih Kılavuzu ve Tablolar",
-      "kurum": "ÖSYM",
-      "kategori": "EKPSS Tercih",
-      "yayin_tarihi": "07.01.2026",
-      "kaynak": "ÖSYM EKPSS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
-      "link": "https://www.osym.gov.tr/2026ekpsskura-ile-engelli-kamu-personeli-yerlestirme-tercih-kilavuzu-ve-tablolar"
-    },
-    {
-      "id": "2eda5e24d2e2e1ba2a65",
-      "baslik": "2026-EKPSS/Kura ile Engelli Kamu Personeli Yerleştirme: Bazı Kamu Kurum ve Kuruluşlarının Kadrolarına Yerleştirme Yapmak İçin Adaylardan Tercih Alınması",
-      "kurum": "ÖSYM",
-      "kategori": "EKPSS Tercih",
-      "yayin_tarihi": "07.01.2026",
-      "kaynak": "ÖSYM EKPSS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
-      "link": "https://www.osym.gov.tr/2026ekpsskura-ile-engelli-kamu-personeli-yerlestirme-bazi-kamu-kurum-ve-kuruluslarinin-kadrolarina-yerlestirme-yapmak-icin-adaylardan-tercih-alinmasi"
-    },
-    {
-      "id": "fd330ab0ff837e40c7e4",
-      "baslik": "KPSS-2025/2: Bazı Kamu Kurum ve Kuruluşların Kadro ve Pozisyonlarına Yerleştirme Sonuçlarına İlişkin Sayısal Bilgiler",
-      "kurum": "ÖSYM",
-      "kategori": "KPSS Sonuç",
-      "yayin_tarihi": "07.01.2026",
-      "kaynak": "ÖSYM KPSS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî KPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
-      "link": "https://www.osym.gov.tr/kpss20252-bazi-kamu-kurum-ve-kuruluslarin-kadro-ve-pozisyonlarina-yerlestirme-sonuclarina-iliskin-sayisal-bilgiler"
-    },
-    {
-      "id": "371a001d791de3b71ad7",
-      "baslik": "KPSS-2025/2: Bazı Kamu Kurum ve Kuruluşlarının Kadro ve Pozisyonlarına Yerleştirme Sonuçları Açıklandı",
-      "kurum": "ÖSYM",
-      "kategori": "KPSS Sonuç",
-      "yayin_tarihi": "07.01.2026",
-      "kaynak": "ÖSYM KPSS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî KPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
-      "link": "https://www.osym.gov.tr/kpss20252-bazi-kamu-kurum-ve-kuruluslarinin-kadro-ve-pozisyonlarina-yerlestirme-sonuclari-aciklandi"
-    },
-    {
       "id": "1de5b4081003dbef6469",
       "baslik": "AİLE VE SOSYAL HİZMETLER BAKANLIĞI 680 SÖZLEŞMELİ PERSONEL ALIMI TAVAN VE TABAN PUANLARI HAKKINDA DUYURU",
       "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
@@ -4430,114 +6590,23 @@
       "kaynak": "Aile Bakanlığı Personel Haberleri",
       "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
       "link": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-3-000-sozlesmeli-personel-alimi-tavan-ve-taban-puanlari-hakkinda-duyuru/"
-    },
-    {
-      "id": "1abca2e633569d4a9c13",
-      "baslik": "16 Aralık 2025 Aile ve Sosyal Hizmetler Bakanlığı Görevde Yükselme ve Ünvan Değişikliği Sözlü Sınav Sonucu Duyurusu",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-gorevde-yukselme-ve-unvan-degisikligi-sozlu-sinav-sonucu-duyurusu/"
-    },
-    {
-      "id": "886910ed845810d6c1da",
-      "baslik": "25 Temmuz 2025 Aile ve Sosyal Hizmetler Bakanlığı Görevde Yükselme ve Unvan Değişikliği Yazılı Sınav Sonucunun Açıklanmasına İlişkin Duyuru",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-gorevde-yukselme-ve-unvan-degisikligi-yazili-sinav-sonucunun-aciklanmasina-iliskin-duyuru/"
-    },
-    {
-      "id": "2879967afcddf9509ab2",
-      "baslik": "19 Kasım 2024 Aile ve Sosyal Hizmetler Bakanlığı 2.390 Sözleşmeli Personel Alımı Tavan ve Taban Puanları Hakkında Duyuru",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Taban-Tavan Puan",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/aile-ve-sosyal-hizmetler-bakanligi-2-390-sozlesmeli-personel-alimi-tavan-ve-taban-puanlari-hakkinda-duyuru/"
-    },
-    {
-      "id": "2b5058899ee2328ee31f",
-      "baslik": "24 Ekim 2022 Aile ve Sosyal Hizmetler Bakanlığı Görevde Yükselme ve Unvan Değişikliği Yazılı Sınav Sonucunun Açıklanmasına İlişkin Duyuru",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/gorevde_yukselme_yazili_sonuc/"
-    },
-    {
-      "id": "3104b15e9940dcee3dfb",
-      "baslik": "25 Mart 2021 İş Müfettiş Yardımcılığı Giriş Sınav Sonucu",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru39/"
-    },
-    {
-      "id": "72d6225758ffb90beb40",
-      "baslik": "29 Ocak 2021 ÖSYM Başkanlığı tarafından gerçekleştirilen 2021-1 Kura Usulü İle Yapılan Engelli Kamu Personeli Yerleştirme sonucuna göre Bakanlığımız kadrosuna atanmaya hak kazanan adaylardan istenilen belgeler",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru36/"
-    },
-    {
-      "id": "bd4ebd1c50117a49d199",
-      "baslik": "13 Aralık 2019 Sürekli İşçi Alımı Kpss Sıralaması ve Kura Çekimi Sonucu Belge Teslim İşlemleri",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "KPSS Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru15/"
-    },
-    {
-      "id": "5f695e9aac772ba1ccbd",
-      "baslik": "09 Aralık 2019 KPSS-2019/6 Yerleştirme Sonucu İstenilen Belgelere İlişkin Duyuru",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "KPSS Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru12/"
-    },
-    {
-      "id": "c756a30759d42c0d19c5",
-      "baslik": "30 Ekim 2019 Sözleşmeli Avukat Alımı Yedek Yerleştirme Sonucu ve İstenilen Belgelere İlişkin Duyuru",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru8/"
-    },
-    {
-      "id": "feb640a154d987999558",
-      "baslik": "02 Ekim 2019 Sözleşmeli Avukat Alımı Yerleştirme Sonucu ve İstenilen Belgelere İlişkin Duyuru",
-      "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
-      "kategori": "Sonuç",
-      "yayin_tarihi": "",
-      "kaynak": "Aile Bakanlığı Personel Haberleri",
-      "ozet": "Aile ve Sosyal Hizmetler Bakanlığı tarafından yayımlanan resmî personel duyurusu.",
-      "link": "https://www.aile.gov.tr/pgm/duyurular/duyuru6/"
     }
   ],
+  "kaynak_sayilari": {
+    "ÖSYM aktif KPSS ilanları": 1,
+    "ÖSYM tüm sınav haberleri": 266,
+    "MSB / TSK Güncel Teminler": 0,
+    "MSB / TSK haberleri": 0,
+    "GSB Personel Alımları": 5,
+    "Aile Bakanlığı Personel Alımları": 0,
+    "Adalet Bakanlığı Personel Alımları": 0
+  },
   "bildirim_sonucu": {
-    "durum": "yeni_kayit_yok",
+    "durum": "atlanmış",
     "yeni_ilan": 0,
-    "yeni_haber": 0,
+    "yeni_haber": 2,
     "gonderilen": 0,
-    "mesaj": "Yeni ilan veya haber bulunmadı."
+    "mesaj": "Firebase servis hesabı GitHub Secret olarak tanımlı değil"
   },
   "hata_sayisi": 0,
   "pdf_hata_sayisi": 0,
