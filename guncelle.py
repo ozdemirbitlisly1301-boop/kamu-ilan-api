@@ -2433,6 +2433,7 @@ def _eski_main():
 
 # MSB/TSK için ayrı ve doğrudan Güncel Teminler tarayıcısı kullanılır.
 MSB_ANA_SAYFA_URL = "https://personeltemin.msb.gov.tr/AnaSayfa"
+MSB_TEMINLER_URL = "https://personeltemin.msb.gov.tr/AnaSayfa/Teminler"
 MSB_BASVURU_URL = "https://personeltemin.msb.gov.tr/"
 
 # MSB, genel bakanlık taramasından çıkarılır; aşağıda özel olarak çekilir.
@@ -2679,121 +2680,165 @@ def _msb_detay_linki_mi(link):
     return "personeltemin.msb.gov.tr" in normal and "duyurudetay" in normal
 
 
-def msb_guncel_teminleri_al():
-    """MSB ana sayfasındaki Güncel Teminler kartlarını doğrudan toplar."""
-    html = sayfayi_indir(MSB_ANA_SAYFA_URL)
+def _msb_sayfa_adaylarini_topla(html, sayfa_url):
+    """MSB sayfasındaki DuyuruDetay bağlantılarını farklı HTML yapılarına göre bulur."""
     soup = BeautifulSoup(html, "html.parser")
-    ilanlar = []
-    gorulen = set()
+    adaylar = []
 
-    aday_etiketler = list(soup.find_all("a", href=True))
+    def aday_ekle(etiket, href):
+        href = temizle(href).replace("&amp;", "&")
+        if not href:
+            return
+        link = urljoin(sayfa_url, href)
+        if _msb_detay_linki_mi(link):
+            adaylar.append((etiket, link))
 
-    # Bazı MSB sürümlerinde kart bağlantısı href yerine onclick/data-url
-    # alanında tutuluyor. DuyuruDetay geçen bütün etiketleri de aday yap.
+    for etiket in soup.find_all("a", href=True):
+        aday_ekle(etiket, etiket.get("href", ""))
+
+    # Site bazı sürümlerde bağlantıyı href yerine onclick, data-url veya
+    # benzeri bir HTML özelliğinde tutabiliyor.
     for etiket in soup.find_all(True):
         ozellikler = " ".join(
             temizle(" ".join(deger) if isinstance(deger, list) else str(deger))
             for deger in etiket.attrs.values()
         )
-        if "duyurudetay" in ozellikler.casefold():
-            aday_etiketler.append(etiket)
-
-    for baslik_etiketi in soup.find_all(["h1", "h2", "h3", "h4", "h5"]):
-        if _msb_aktif_temin_basligi_mi(baslik_etiketi.get_text(" ", strip=True)):
-            baglanti = baslik_etiketi.find_parent("a", href=True)
-            if baglanti is None:
-                kapsayici = baslik_etiketi.find_parent(["article", "li", "div", "section"])
-                baglanti = kapsayici.find("a", href=True) if kapsayici is not None else None
-            if baglanti is not None:
-                aday_etiketler.append(baglanti)
-
-    for etiket in aday_etiketler:
-        href = temizle(etiket.get("href", ""))
-        if not href:
-            ozellikler = " ".join(
-                temizle(" ".join(deger) if isinstance(deger, list) else str(deger))
-                for deger in etiket.attrs.values()
-            )
-            eslesme = re.search(
-                r"((?:https?://[^\s'\"]+)?/?AnaSayfa/DuyuruDetay/?\?[^\s'\"]+)",
-                ozellikler,
-                flags=re.IGNORECASE,
-            )
-            href = temizle(eslesme.group(1)) if eslesme else ""
-        if not href:
+        if "duyurudetay" not in ozellikler.casefold():
             continue
-        href = href.replace("&amp;", "&")
-        link = urljoin(MSB_ANA_SAYFA_URL, href)
-        if not _msb_detay_linki_mi(link):
+        for eslesme in re.finditer(
+            r"((?:https?://[^\s'\"<>]+)?/?(?:AnaSayfa|Anasayfa)/DuyuruDetay/?\?[^\s'\"<>]+)",
+            ozellikler,
+            flags=re.IGNORECASE,
+        ):
+            aday_ekle(etiket, eslesme.group(1))
+
+    # Son güvenlik ağı: DuyuruDetay adresi ham HTML içinde bulunuyorsa al.
+    for eslesme in re.finditer(
+        r"((?:https?://[^\s'\"<>]+)?/?(?:AnaSayfa|Anasayfa)/DuyuruDetay/?\?[^\s'\"<>]+)",
+        html,
+        flags=re.IGNORECASE,
+    ):
+        aday_ekle(None, eslesme.group(1))
+
+    # Başlık bir bağlantının içinde değilse en yakın kapsayıcıdaki bağlantıyı da dene.
+    for baslik_etiketi in soup.find_all(["h1", "h2", "h3", "h4", "h5", "strong"]):
+        baslik_metni = temizle(baslik_etiketi.get_text(" ", strip=True))
+        if not _msb_aktif_temin_basligi_mi(baslik_metni):
             continue
+        baglanti = baslik_etiketi.find_parent("a", href=True)
+        if baglanti is None:
+            kapsayici = baslik_etiketi.find_parent(["article", "li", "div", "section", "tr"])
+            baglanti = kapsayici.find("a", href=True) if kapsayici is not None else None
+        if baglanti is not None:
+            aday_ekle(baglanti, baglanti.get("href", ""))
+
+    benzersiz = []
+    gorulen = set()
+    for etiket, link in adaylar:
         anahtar = link_anahtari(link)
         if not anahtar or anahtar in gorulen:
             continue
+        gorulen.add(anahtar)
+        benzersiz.append((etiket, link))
+    return benzersiz
 
-        basliklar = [a for a in _msb_baslik_adaylari(etiket) if _msb_aktif_temin_basligi_mi(a)]
-        if not basliklar:
-            continue
-        liste_basligi = min(basliklar, key=len)
-        kapsayici = etiket.find_parent(["article", "li", "div", "section", "tr"])
-        kapsayici_metni = temizle(
-            kapsayici.get_text(" ", strip=True) if kapsayici is not None else liste_basligi
-        )
-        liste_yayin_tarihi = yayin_tarihi_bul(kapsayici_metni)
 
+def msb_guncel_teminleri_al():
+    """MSB ana sayfası ve Tüm Teminler sayfasındaki aktif teminleri toplar."""
+    ilanlar = []
+    gorulen = set()
+    sayfa_hatalari = []
+    sayfa_verileri = []
+
+    # Ana sayfadaki Güncel Teminler ile özel Tüm Teminler sayfasını birlikte tara.
+    for sayfa_url in (MSB_ANA_SAYFA_URL, MSB_TEMINLER_URL):
         try:
-            (sayfa_basligi, detay_metni, belge_linki, basvuru_linki,
-             basvuru_online, basvuru_aciklamasi) = duyuru_icerigini_al(link)
-        except Exception:
-            sayfa_basligi = ""
-            detay_metni = kapsayici_metni
-            belge_linki = link
-            basvuru_linki = ""
-            basvuru_online = False
-            basvuru_aciklamasi = ""
-
-        gercek_baslik = baslik_temizle(sayfa_basligi or liste_basligi)
-        if not _msb_aktif_temin_basligi_mi(gercek_baslik):
-            continue
-
-        son_basvuru = son_basvuru_tarihi_bul(detay_metni)
-        yayin_tarihi = yayin_tarihi_bul(detay_metni) or liste_yayin_tarihi
-        if not basvuru_linki:
-            basvuru_linki = MSB_BASVURU_URL
-            basvuru_online = True
-            basvuru_aciklamasi = (
-                "MSB personel temin başvuruları resmî Personel Temin Sistemi "
-                "üzerinden çevrimiçi yapılır. Ayrıntıları ilan sayfasından kontrol edin."
+            html = sayfayi_indir(sayfa_url)
+            sayfa_verileri.append((sayfa_url, html))
+        except Exception as hata:
+            sayfa_hatalari.append(
+                f"{sayfa_url}: {type(hata).__name__} - {str(hata)[:120]}"
             )
 
-        kpss_gerekli, minimum_puan, kpss_durumu = kpss_bilgisi_bul(detay_metni, "ok")
-        ilanlar.append({
-            "id": ilan_id_uret(link),
-            "baslik": gercek_baslik[:400],
-            "kurum": "Millî Savunma Bakanlığı / Türk Silahlı Kuvvetleri",
-            "sehir": "Türkiye Geneli",
-            "tur": "Askerî / MSB Personel Alımı",
-            "kaynak": "MSB / TSK Güncel Teminler",
-            "kaynak_kodu": "msb_tsk",
-            "son_basvuru": son_basvuru,
-            "yayin_tarihi": yayin_tarihi,
-            "link": link,
-            "belge_linki": belge_linki or link,
-            "kaynak_sayfa_linki": link,
-            "basvuru_linki": basvuru_linki,
-            "basvuru_online": basvuru_online,
-            "basvuru_aciklamasi": basvuru_aciklamasi,
-            "kpss_gerekli": kpss_gerekli,
-            "minimum_puan": minimum_puan,
-            "kpss_durumu": kpss_durumu,
-            "mezuniyetler": mezuniyetleri_bul(detay_metni),
-            "bolumler": bolumleri_bul(detay_metni),
-            "pdf_isleme_durumu": "html_ok",
-            "analiz_surumu": ANALIZ_SURUMU,
-        })
-        gorulen.add(anahtar)
+    if not sayfa_verileri:
+        raise RuntimeError("MSB sayfaları alınamadı: " + " | ".join(sayfa_hatalari))
+
+    for sayfa_url, html in sayfa_verileri:
+        for etiket, link in _msb_sayfa_adaylarini_topla(html, sayfa_url):
+            anahtar = link_anahtari(link)
+            if not anahtar or anahtar in gorulen:
+                continue
+
+            liste_basligi = ""
+            kapsayici_metni = ""
+            liste_yayin_tarihi = ""
+            if etiket is not None:
+                basliklar = [
+                    aday for aday in _msb_baslik_adaylari(etiket)
+                    if _msb_aktif_temin_basligi_mi(aday)
+                ]
+                if basliklar:
+                    liste_basligi = min(basliklar, key=len)
+                kapsayici = etiket.find_parent(["article", "li", "div", "section", "tr"])
+                kapsayici_metni = temizle(
+                    kapsayici.get_text(" ", strip=True)
+                    if kapsayici is not None else liste_basligi
+                )
+                liste_yayin_tarihi = yayin_tarihi_bul(kapsayici_metni)
+
+            try:
+                (sayfa_basligi, detay_metni, belge_linki, basvuru_linki,
+                 basvuru_online, basvuru_aciklamasi) = duyuru_icerigini_al(link)
+            except Exception:
+                sayfa_basligi = ""
+                detay_metni = kapsayici_metni
+                belge_linki = link
+                basvuru_linki = ""
+                basvuru_online = False
+                basvuru_aciklamasi = ""
+
+            gercek_baslik = baslik_temizle(sayfa_basligi or liste_basligi)
+            if not gercek_baslik or not _msb_aktif_temin_basligi_mi(gercek_baslik):
+                continue
+
+            son_basvuru = son_basvuru_tarihi_bul(detay_metni)
+            yayin_tarihi = yayin_tarihi_bul(detay_metni) or liste_yayin_tarihi
+            if not basvuru_linki:
+                basvuru_linki = MSB_BASVURU_URL
+                basvuru_online = True
+                basvuru_aciklamasi = (
+                    "MSB personel temin başvuruları resmî Personel Temin Sistemi "
+                    "üzerinden çevrimiçi yapılır. Ayrıntıları ilan sayfasından kontrol edin."
+                )
+
+            kpss_gerekli, minimum_puan, kpss_durumu = kpss_bilgisi_bul(detay_metni, "ok")
+            ilanlar.append({
+                "id": ilan_id_uret(link),
+                "baslik": gercek_baslik[:400],
+                "kurum": "Millî Savunma Bakanlığı / Türk Silahlı Kuvvetleri",
+                "sehir": "Türkiye Geneli",
+                "tur": "Askerî / MSB Personel Alımı",
+                "kaynak": "MSB / TSK Güncel Teminler",
+                "kaynak_kodu": "msb_tsk",
+                "son_basvuru": son_basvuru,
+                "yayin_tarihi": yayin_tarihi,
+                "link": link,
+                "belge_linki": belge_linki or link,
+                "kaynak_sayfa_linki": link,
+                "basvuru_linki": basvuru_linki,
+                "basvuru_online": basvuru_online,
+                "basvuru_aciklamasi": basvuru_aciklamasi,
+                "kpss_gerekli": kpss_gerekli,
+                "minimum_puan": minimum_puan,
+                "kpss_durumu": kpss_durumu,
+                "mezuniyetler": mezuniyetleri_bul(detay_metni),
+                "bolumler": bolumleri_bul(detay_metni),
+                "pdf_isleme_durumu": "html_ok",
+                "analiz_surumu": ANALIZ_SURUMU,
+            })
+            gorulen.add(anahtar)
 
     return ilanlar
-
 
 def msb_guncel_haberleri_al():
     """MSB'nin güncel sonuç, çağrı, kayıt ve eğitim duyurularını Haberler'e ekler."""
@@ -2877,6 +2922,107 @@ def _haber_bildirim_icin_guncel_mi(haber, gun=3):
     return tarih != datetime.min and tarih >= datetime.now() - timedelta(days=gun)
 
 
+def _bildirim_metnini_kisalt(metin, sinir=96):
+    metin = temizle(metin)
+    if len(metin) <= sinir:
+        return metin
+    return metin[: max(1, sinir - 1)].rstrip(" ,.;:-") + "…"
+
+
+def _turkce_buyuk(metin):
+    ceviri = str.maketrans({
+        "i": "İ", "ı": "I", "ğ": "Ğ", "ü": "Ü",
+        "ş": "Ş", "ö": "Ö", "ç": "Ç",
+    })
+    return temizle(metin).translate(ceviri).upper()
+
+
+def _ilan_bildirim_basligi(ilan):
+    """Genel 'Yeni ilan' yerine kurumu ve alım türünü anlatan başlık üretir."""
+    baslik = temizle(ilan.get("baslik") or "Kamu personeli alımı")
+    kurum = temizle(ilan.get("kurum") or ilan.get("kaynak") or "Kamu kurumu")
+    normal_baslik = arama_metnine_cevir(baslik)
+    normal_kurum = arama_metnine_cevir(kurum)
+
+    if ilan.get("kaynak_kodu") == "msb_tsk" or "milli savunma" in normal_kurum:
+        msb_turleri = (
+            ("sozlesmeli er", "MSB / TSK SÖZLEŞMELİ ER ALIMI"),
+            ("uzman erbas", "MSB / TSK UZMAN ERBAŞ ALIMI"),
+            ("muvazzaf subay", "MSB / TSK MUVAZZAF SUBAY ALIMI"),
+            ("sozlesmeli subay", "MSB / TSK SÖZLEŞMELİ SUBAY ALIMI"),
+            ("muvazzaf astsubay", "MSB / TSK MUVAZZAF ASTSUBAY ALIMI"),
+            ("sozlesmeli astsubay", "MSB / TSK SÖZLEŞMELİ ASTSUBAY ALIMI"),
+            ("askeri ogrenci", "MSÜ ASKERÎ ÖĞRENCİ ALIMI"),
+            ("surekli isci", "MSB SÜREKLİ İŞÇİ ALIMI"),
+            ("devlet memuru", "MSB DEVLET MEMURU ALIMI"),
+            ("bilisim personeli", "MSB BİLİŞİM PERSONELİ ALIMI"),
+        )
+        for ifade, bildirim_basligi in msb_turleri:
+            if ifade in normal_baslik:
+                return bildirim_basligi
+        return "MSB / TSK PERSONEL ALIMI"
+
+    if "belediye" in normal_kurum:
+        return _bildirim_metnini_kisalt(f"{_turkce_buyuk(kurum)} PERSONEL ALIMI")
+
+    # İlanın kendi başlığı yeterince açıklayıcıysa onu doğrudan kullan.
+    if any(ifade in normal_baslik for ifade in (
+        "personel alimi", "isci alimi", "memur alimi", "personel temini",
+        "isci temini", "memur temini", "sozlesmeli personel",
+    )):
+        return _bildirim_metnini_kisalt(_turkce_buyuk(baslik))
+
+    return _bildirim_metnini_kisalt(f"{_turkce_buyuk(kurum)} ALIM İLANI")
+
+
+def _ilan_bildirim_govdesi(ilan, bildirim_basligi):
+    baslik = temizle(ilan.get("baslik") or "")
+    sehir = temizle(ilan.get("sehir") or "")
+    son_basvuru = temizle(ilan.get("son_basvuru") or "")
+    parcalar = []
+
+    if baslik and arama_metnine_cevir(baslik) != arama_metnine_cevir(bildirim_basligi):
+        parcalar.append(_bildirim_metnini_kisalt(baslik, 150))
+    if sehir and sehir.casefold() not in ("belirtilmemiş", "belirtilmemis"):
+        parcalar.append(sehir)
+    if son_basvuru and son_basvuru.casefold() not in ("belirtilmemiş", "belirtilmemis"):
+        parcalar.append(f"Son başvuru: {son_basvuru}")
+
+    if not parcalar:
+        parcalar.append(temizle(ilan.get("kurum") or ilan.get("kaynak") or "Resmî kurum"))
+    return _bildirim_metnini_kisalt(" • ".join(parcalar), 230)
+
+
+def _haber_bildirim_basligi(haber):
+    """ÖSYM ve resmî haberler için olayın ne olduğunu açıkça söyleyen başlık üretir."""
+    baslik = temizle(haber.get("baslik") or "Yeni resmî duyuru")
+    normal = arama_metnine_cevir(baslik)
+    sinav = osym_sinav_turu_bul(baslik)
+
+    if sinav:
+        sinav = _turkce_buyuk(sinav)
+        if "ek yerlestirme" in normal and "sonuc" in normal:
+            return f"{sinav} EK YERLEŞTİRME SONUÇLARI AÇIKLANDI"
+        if "yerlestirme" in normal and "sonuc" in normal:
+            return f"{sinav} YERLEŞTİRME SONUÇLARI AÇIKLANDI"
+        if "tercih" in normal and "sonuc" in normal:
+            return f"{sinav} TERCİH SONUÇLARI AÇIKLANDI"
+        if "sonuc" in normal:
+            return f"{sinav} SONUÇLARI AÇIKLANDI"
+        if "sinava giris belgesi" in normal or "giris belg" in normal:
+            return f"{sinav} SINAVA GİRİŞ BELGESİ YAYIMLANDI"
+        if "cevap kagidi" in normal or "aday cevap" in normal:
+            return f"{sinav} CEVAP KÂĞITLARI ERİŞİME AÇILDI"
+        if "tercih" in normal and any(x in normal for x in ("basvuru", "alinmaya", "basladi")):
+            return f"{sinav} TERCİHLERİ BAŞLADI"
+        if "basvuru" in normal and any(x in normal for x in ("alinmaya", "alinmasi", "alinmasina", "basladi", "kilavuz")):
+            return f"{sinav} BAŞVURULARI BAŞLADI"
+        if "kilavuz" in normal:
+            return f"{sinav} KILAVUZU YAYIMLANDI"
+
+    return _bildirim_metnini_kisalt(_turkce_buyuk(baslik))
+
+
 def yeni_kayit_bildirimlerini_gonder(
     ilanlar, haberler, onceki_ilan_anahtarlari,
     onceki_haber_anahtarlari, onceki_dosya_vardi,
@@ -2905,27 +3051,41 @@ def yeni_kayit_bildirimlerini_gonder(
     if mesajlasma is None:
         sonuc["mesaj"] = hata or "Firebase hazırlanamadı."
         return sonuc
+
     try:
         for ilan in yeni_ilanlar[:8]:
-            baslik = temizle(ilan.get("baslik") or "Yeni kamu ilanı")
-            kurum = temizle(ilan.get("kurum") or ilan.get("kaynak") or "Resmî kurum")
-            tek_bildirim_gonder(mesajlasma, "yeni_ilanlar", "Yeni ilan: " + baslik,
-                                kurum, ilan.get("kaynak_sayfa_linki") or ilan.get("link", ""), "ilan")
+            bildirim_basligi = _ilan_bildirim_basligi(ilan)
+            govde = _ilan_bildirim_govdesi(ilan, bildirim_basligi)
+            tek_bildirim_gonder(
+                mesajlasma,
+                "yeni_ilanlar",
+                bildirim_basligi,
+                govde,
+                ilan.get("kaynak_sayfa_linki") or ilan.get("link", ""),
+                "ilan",
+            )
             sonuc["gonderilen"] += 1
+
         for haber in yeni_haberler[:8]:
-            baslik = temizle(haber.get("baslik") or "Yeni resmî duyuru")
+            bildirim_basligi = _haber_bildirim_basligi(haber)
+            kurum = temizle(haber.get("kurum") or haber.get("kaynak") or "Resmî kurum")
             kategori = temizle(haber.get("kategori") or "Haber")
-            tek_bildirim_gonder(mesajlasma, "yeni_haberler", baslik,
-                                f"{haber.get('kurum') or 'Resmî kurum'} • {kategori}",
-                                haber.get("link", ""), "haber")
+            tek_bildirim_gonder(
+                mesajlasma,
+                "yeni_haberler",
+                bildirim_basligi,
+                _bildirim_metnini_kisalt(f"{kurum} • {kategori}", 230),
+                haber.get("link", ""),
+                "haber",
+            )
             sonuc["gonderilen"] += 1
+
         sonuc["durum"] = "gonderildi"
         sonuc["mesaj"] = f"{sonuc['gonderilen']} telefon bildirimi gönderildi."
     except Exception as hata:
         sonuc["durum"] = "hata"
         sonuc["mesaj"] = f"{type(hata).__name__}: {str(hata)[:180]}"
     return sonuc
-
 
 def main():
     onceki_veri = onceki_veriyi_yukle()
