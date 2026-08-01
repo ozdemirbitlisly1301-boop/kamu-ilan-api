@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-01T00:01:03.056779+00:00",
+  "guncellenme_zamani": "2026-08-01T00:14:24.372788+00:00",
   "ilan_sayisi": 124,
   "suresi_dolmus_ilan_sayisi": 3,
   "ilanlar": [
@@ -1916,34 +1916,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "74338bebb14374662097",
-      "baslik": "Tarım ve Orman Bakanlığı Sözleşmeli Personel Alım İlanı",
-      "kurum": "Tarım ve Orman Bakanlığı Sözleşmeli Personel Alım İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "09.08.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/vsrp1k4t/tarım-ve-orman-bakanlığı-soezleşmeli-personel-alım-ilanı-09082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/vsrp1k4t/tarım-ve-orman-bakanlığı-soezleşmeli-personel-alım-ilanı-09082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Ortaöğretim",
-        "Önlisans",
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "763338716ab70ea1ba17",
       "baslik": "İstanbul Büyükşehir Belediyesi Müfettiş Yardımcılığı Sınav İlanı",
       "kurum": "İstanbul Büyükşehir Belediyesi Müfettiş Yardımcılığı Sınav İlanı",
@@ -1967,6 +1939,34 @@
         "Maliye",
         "İşletme",
         "Muhasebe"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "74338bebb14374662097",
+      "baslik": "Tarım ve Orman Bakanlığı Sözleşmeli Personel Alım İlanı",
+      "kurum": "Tarım ve Orman Bakanlığı Sözleşmeli Personel Alım İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "09.08.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/vsrp1k4t/tarım-ve-orman-bakanlığı-soezleşmeli-personel-alım-ilanı-09082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/vsrp1k4t/tarım-ve-orman-bakanlığı-soezleşmeli-personel-alım-ilanı-09082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Ortaöğretim",
+        "Önlisans",
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -2585,32 +2585,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "52c0dca82d8ce17c889c",
-      "baslik": "Edirne Keşan Belediyesi Memur Alım İlanı",
-      "kurum": "Edirne Keşan Belediyesi Memur Alım İlanı",
-      "sehir": "Edirne",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "04.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/4gbj0dkl/edirne-keşan-belediyesi-memur-alım-ilanı-04092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/4gbj0dkl/edirne-keşan-belediyesi-memur-alım-ilanı-04092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=edirne&il=Edirne",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "75e9b2e8ebafcc1b01e3",
       "baslik": "Kahramanmaraş Elbistan Belediyesi Sözleşmeli Personel Alım İlanı",
       "kurum": "Kahramanmaraş Elbistan Belediyesi Sözleşmeli Personel Alım İlanı",
@@ -2627,6 +2601,32 @@
       "kpss_gerekli": true,
       "minimum_puan": 70,
       "kpss_durumu": "En az 70 KPSS puanı",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "52c0dca82d8ce17c889c",
+      "baslik": "Edirne Keşan Belediyesi Memur Alım İlanı",
+      "kurum": "Edirne Keşan Belediyesi Memur Alım İlanı",
+      "sehir": "Edirne",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "04.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/4gbj0dkl/edirne-keşan-belediyesi-memur-alım-ilanı-04092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/4gbj0dkl/edirne-keşan-belediyesi-memur-alım-ilanı-04092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=edirne&il=Edirne",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
       "mezuniyetler": [
         "Lisans"
       ],
@@ -5720,7 +5720,7 @@
   ],
   "kaynak_sayilari": {
     "ÖSYM merkezi atama ilanları": 0,
-    "ÖSYM tüm sınav haberleri": 266,
+    "ÖSYM tüm sınav haberleri": 263,
     "MSB / TSK haberleri": 0,
     "GSB Personel Alımları": 5,
     "Aile Bakanlığı Personel Alımları": 0,
@@ -5733,9 +5733,10 @@
     "gonderilen": 0,
     "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
   },
-  "hata_sayisi": 1,
+  "hata_sayisi": 2,
   "pdf_hata_sayisi": 1,
   "hatalar": [
-    "MSB / TSK Güncel Teminler: TypeError - cannot use a string pattern on a bytes-like object"
+    "MSB / TSK Güncel Teminler: TypeError - cannot use a string pattern on a bytes-like object",
+    "Aile Bakanlığı Personel Alımları: RuntimeError - HTTPSConnectionPool(host='www.aile.gov.tr', port=443): Max retries exceeded with url: /pgm/duyurular (Caused by ConnectTimeoutError(<HTTPSConnection(h"
   ]
 }
