@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-01T23:01:52.414895+00:00",
+  "guncellenme_zamani": "2026-08-01T23:19:53.620548+00:00",
   "ilan_sayisi": 112,
   "suresi_dolmus_ilan_sayisi": 3,
   "ilanlar": [
@@ -1766,30 +1766,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "c94ee1322d8fba43ae68",
-      "baslik": "Bilecik İl Özel İdaresi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Bilecik İl Özel İdaresi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Bilecik",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "14.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/oqipc0vg/bilecik-il-oezel-idaresi-soezleşmeli-personel-alım-ilanı-14082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/oqipc0vg/bilecik-il-oezel-idaresi-soezleşmeli-personel-alım-ilanı-14082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bilecik&il=Bilecik",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "c991c16f46d3837bb671",
       "baslik": "Konya Büyükşehir Belediyesi Memur Alım İlanı",
       "kurum": "Konya Büyükşehir Belediyesi Memur Alım İlanı",
@@ -1809,6 +1785,30 @@
       "mezuniyetler": [
         "Lisans"
       ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "c94ee1322d8fba43ae68",
+      "baslik": "Bilecik İl Özel İdaresi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Bilecik İl Özel İdaresi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Bilecik",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "14.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/oqipc0vg/bilecik-il-oezel-idaresi-soezleşmeli-personel-alım-ilanı-14082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/oqipc0vg/bilecik-il-oezel-idaresi-soezleşmeli-personel-alım-ilanı-14082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bilecik&il=Bilecik",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [],
       "bolumler": [
         "Diğer"
       ],
@@ -5441,6 +5441,7 @@
     "ÖSYM tüm sınav haberleri": 263,
     "MSB / TSK Güncel Teminler": 3,
     "MSB / TSK haberleri": 0,
+    "Kariyer Kapısı Aktif İlanlar": 0,
     "GSB Personel Alımları": 5,
     "Aile Bakanlığı Personel Alımları": 0,
     "Adalet Bakanlığı Personel Alımları": 0
