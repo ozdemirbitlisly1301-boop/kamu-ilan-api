@@ -2921,16 +2921,20 @@ def _msb_basliktan_yedek_ilan_uret(kayit):
 
 
 def msb_guncel_teminleri_al():
-    """MSB ana sayfası ve Tüm Teminler sayfasındaki aktif teminleri toplar."""
+    """
+    MSB ana sayfası ve Tüm Teminler sayfasındaki aktif teminleri toplar.
+
+    Önemli: Ayrıntı bağlantısı çözümlemesi hata verse bile kart başlıkları önce
+    doğrudan ilana çevrilir. Böylece tek bir bozuk bağlantı bütün MSB kaynağını
+    sıfırlayamaz.
+    """
     ilanlar = []
-    gorulen = set()
+    baslik_indeksleri = {}
+    gorulen_linkler = set()
     sayfa_hatalari = []
     sayfa_verileri = []
 
-    # Sürümlü kök adresleri önce dene.
-    msb_sayfalari = MSB_GUNCEL_SAYFALARI
-
-    for sayfa_url in msb_sayfalari:
+    for sayfa_url in MSB_GUNCEL_SAYFALARI:
         try:
             html = sayfayi_indir(sayfa_url)
             sayfa_verileri.append((sayfa_url, html))
@@ -2942,118 +2946,172 @@ def msb_guncel_teminleri_al():
             )
         except Exception as hata:
             sayfa_hatalari.append(
-                f"{sayfa_url}: {type(hata).__name__} - {str(hata)[:120]}"
+                f"{sayfa_url}: {type(hata).__name__} - {str(hata)[:160]}"
             )
 
     if not sayfa_verileri:
         raise RuntimeError("MSB sayfaları alınamadı: " + " | ".join(sayfa_hatalari))
 
-    # Önce gerçek ayrıntı bağlantılarını kullan.
-    for sayfa_url, html in sayfa_verileri:
-        for etiket, link in _msb_sayfa_adaylarini_topla(html, sayfa_url):
-            anahtar = link_anahtari(link)
-            if not anahtar or anahtar in gorulen:
-                continue
-
-            liste_basligi = ""
-            kapsayici_metni = ""
-            liste_yayin_tarihi = ""
-            if etiket is not None:
-                basliklar = [
-                    aday for aday in _msb_baslik_adaylari(etiket)
-                    if _msb_aktif_temin_basligi_mi(aday)
-                ]
-                if basliklar:
-                    liste_basligi = min(basliklar, key=len)
-                kapsayici = etiket.find_parent(["article", "li", "div", "section", "tr"])
-                kapsayici_metni = temizle(
-                    kapsayici.get_text(" ", strip=True)
-                    if kapsayici is not None else liste_basligi
-                )
-                liste_yayin_tarihi = yayin_tarihi_bul(kapsayici_metni)
-
-            try:
-                (sayfa_basligi, detay_metni, belge_linki, basvuru_linki,
-                 basvuru_online, basvuru_aciklamasi) = duyuru_icerigini_al(link)
-            except Exception:
-                sayfa_basligi = ""
-                detay_metni = kapsayici_metni
-                belge_linki = link
-                basvuru_linki = ""
-                basvuru_online = False
-                basvuru_aciklamasi = ""
-
-            gercek_baslik = baslik_temizle(sayfa_basligi or liste_basligi)
-            if not gercek_baslik or not _msb_aktif_temin_basligi_mi(gercek_baslik):
-                continue
-
-            son_basvuru = son_basvuru_tarihi_bul(detay_metni)
-            yayin_tarihi = yayin_tarihi_bul(detay_metni) or liste_yayin_tarihi
-            if not basvuru_linki:
-                basvuru_linki = MSB_BASVURU_URL
-                basvuru_online = True
-                basvuru_aciklamasi = (
-                    "MSB personel temin başvuruları resmî Personel Temin Sistemi "
-                    "üzerinden çevrimiçi yapılır. Ayrıntıları ilan sayfasından kontrol edin."
-                )
-
-            kpss_gerekli, minimum_puan, kpss_durumu = kpss_bilgisi_bul(detay_metni, "ok")
-            ilanlar.append({
-                "id": ilan_id_uret(link),
-                "baslik": gercek_baslik[:400],
-                "kurum": "Millî Savunma Bakanlığı / Türk Silahlı Kuvvetleri",
-                "sehir": "Türkiye Geneli",
-                "tur": "Askerî / MSB Personel Alımı",
-                "kaynak": "MSB / TSK Güncel Teminler",
-                "kaynak_kodu": "msb_tsk",
-                "son_basvuru": son_basvuru,
-                "yayin_tarihi": yayin_tarihi,
-                "link": link,
-                "belge_linki": belge_linki or link,
-                "kaynak_sayfa_linki": link,
-                "basvuru_linki": basvuru_linki,
-                "basvuru_online": basvuru_online,
-                "basvuru_aciklamasi": basvuru_aciklamasi,
-                "kpss_gerekli": kpss_gerekli,
-                "minimum_puan": minimum_puan,
-                "kpss_durumu": kpss_durumu,
-                "mezuniyetler": mezuniyetleri_bul(detay_metni),
-                "bolumler": bolumleri_bul(detay_metni),
-                "pdf_isleme_durumu": "html_ok",
-                "analiz_surumu": ANALIZ_SURUMU,
-            })
-            gorulen.add(anahtar)
-
-    # Ayrıntı bağlantıları JavaScript yüzünden okunamadıysa kart başlıklarını
-    # doğrudan ilan olarak ekle. Önce bölüm bazlı, sonra bütün görünür metni tara.
+    # 1) ÖNCE görünür kart başlıklarını ekle. Bu aşama ayrıntı bağlantılarından
+    # bağımsızdır ve MSB sayfası açıldığı sürece ilanların sıfıra düşmesini önler.
     yedek_sayisi = 0
-    for _, html in sayfa_verileri:
-        kayitlar = _msb_guncel_temin_basliklarini_topla(html)
-        if not kayitlar:
-            kayitlar = _msb_ham_html_basliklarini_topla(html)
-        print(f"MSB başlık taraması: {len(kayitlar)} aday")
-        for kayit in kayitlar:
-            yedek_ilan = _msb_basliktan_yedek_ilan_uret(kayit)
-            baslik_anahtari = arama_metnine_cevir(yedek_ilan["baslik"])
+    for sayfa_url, html in sayfa_verileri:
+        try:
+            kayitlar = _msb_guncel_temin_basliklarini_topla(html)
+            if not kayitlar:
+                kayitlar = _msb_ham_html_basliklarini_topla(html)
 
-            zaten_var = any(
-                baslik_anahtari == arama_metnine_cevir(ilan.get("baslik", ""))
-                for ilan in ilanlar
+            print(f"MSB başlık taraması: {sayfa_url} | {len(kayitlar)} aday")
+
+            for kayit in kayitlar:
+                yedek_ilan = _msb_basliktan_yedek_ilan_uret(kayit)
+                yedek_ilan["kaynak_sayfa_linki"] = sayfa_url
+
+                baslik_anahtari = arama_metnine_cevir(yedek_ilan.get("baslik", ""))
+                if not baslik_anahtari or baslik_anahtari in baslik_indeksleri:
+                    continue
+
+                baslik_indeksleri[baslik_anahtari] = len(ilanlar)
+                ilanlar.append(yedek_ilan)
+                yedek_sayisi += 1
+        except Exception as hata:
+            sayfa_hatalari.append(
+                f"başlık taraması {sayfa_url}: {type(hata).__name__} - {str(hata)[:160]}"
             )
-            if zaten_var:
-                continue
+            print(
+                f"MSB başlık tarama hatası: {sayfa_url} | "
+                f"{type(hata).__name__}: {str(hata)[:160]}"
+            )
 
-            link_anahtar = link_anahtari(yedek_ilan["link"])
-            if not link_anahtar or link_anahtar in gorulen:
-                continue
+    # 2) Sonra ayrıntı bağlantılarını zenginleştirme amacıyla dene. Buradaki
+    # hiçbir hata yukarıda oluşturulan güvenli kart ilanlarını silemez.
+    for sayfa_url, html in sayfa_verileri:
+        try:
+            adaylar = _msb_sayfa_adaylarini_topla(html, sayfa_url)
+            print(f"MSB ayrıntı bağlantısı: {sayfa_url} | {len(adaylar)} aday")
+        except Exception as hata:
+            sayfa_hatalari.append(
+                f"bağlantı taraması {sayfa_url}: {type(hata).__name__} - {str(hata)[:160]}"
+            )
+            print(
+                f"MSB bağlantı tarama hatası: {sayfa_url} | "
+                f"{type(hata).__name__}: {str(hata)[:160]}"
+            )
+            continue
 
-            gorulen.add(link_anahtar)
-            ilanlar.append(yedek_ilan)
-            yedek_sayisi += 1
+        for etiket, link in adaylar:
+            try:
+                link_anahtari_degeri = link_anahtari(link)
+                if not link_anahtari_degeri or link_anahtari_degeri in gorulen_linkler:
+                    continue
+                gorulen_linkler.add(link_anahtari_degeri)
+
+                liste_basligi = ""
+                kapsayici_metni = ""
+                liste_yayin_tarihi = ""
+
+                if etiket is not None:
+                    basliklar = [
+                        aday
+                        for aday in _msb_baslik_adaylari(etiket)
+                        if _msb_aktif_temin_basligi_mi(aday)
+                    ]
+                    if basliklar:
+                        liste_basligi = max(basliklar, key=len)
+
+                    kapsayici = etiket.find_parent(
+                        ["article", "li", "div", "section", "tr"]
+                    )
+                    kapsayici_metni = temizle(
+                        kapsayici.get_text(" ", strip=True)
+                        if kapsayici is not None
+                        else liste_basligi
+                    )
+                    liste_yayin_tarihi = yayin_tarihi_bul(kapsayici_metni)
+
+                try:
+                    (
+                        sayfa_basligi,
+                        detay_metni,
+                        belge_linki,
+                        basvuru_linki,
+                        basvuru_online,
+                        basvuru_aciklamasi,
+                    ) = duyuru_icerigini_al(link)
+                except Exception as detay_hatasi:
+                    print(
+                        f"MSB ayrıntı okunamadı, kart korunuyor: "
+                        f"{type(detay_hatasi).__name__}: {str(detay_hatasi)[:120]}"
+                    )
+                    continue
+
+                gercek_baslik = baslik_temizle(sayfa_basligi or liste_basligi)
+                if not gercek_baslik or not _msb_aktif_temin_basligi_mi(gercek_baslik):
+                    continue
+
+                son_basvuru = son_basvuru_tarihi_bul(detay_metni)
+                yayin_tarihi = yayin_tarihi_bul(detay_metni) or liste_yayin_tarihi
+
+                if not basvuru_linki:
+                    basvuru_linki = MSB_BASVURU_URL
+                    basvuru_online = True
+                    basvuru_aciklamasi = (
+                        "MSB personel temin başvuruları resmî Personel Temin Sistemi "
+                        "üzerinden çevrimiçi yapılır. Ayrıntıları ilan sayfasından kontrol edin."
+                    )
+
+                kpss_gerekli, minimum_puan, kpss_durumu = kpss_bilgisi_bul(
+                    detay_metni, "ok"
+                )
+
+                zengin_ilan = {
+                    "id": ilan_id_uret(link),
+                    "baslik": gercek_baslik[:400],
+                    "kurum": "Millî Savunma Bakanlığı / Türk Silahlı Kuvvetleri",
+                    "sehir": "Türkiye Geneli",
+                    "tur": "Askerî / MSB Personel Alımı",
+                    "kaynak": "MSB / TSK Güncel Teminler",
+                    "kaynak_kodu": "msb_tsk",
+                    "son_basvuru": son_basvuru,
+                    "yayin_tarihi": yayin_tarihi,
+                    "link": link,
+                    "belge_linki": belge_linki or link,
+                    "kaynak_sayfa_linki": link,
+                    "basvuru_linki": basvuru_linki,
+                    "basvuru_online": basvuru_online,
+                    "basvuru_aciklamasi": basvuru_aciklamasi,
+                    "kpss_gerekli": kpss_gerekli,
+                    "minimum_puan": minimum_puan,
+                    "kpss_durumu": kpss_durumu,
+                    "mezuniyetler": mezuniyetleri_bul(detay_metni),
+                    "bolumler": bolumleri_bul(detay_metni),
+                    "pdf_isleme_durumu": "html_ok",
+                    "analiz_surumu": ANALIZ_SURUMU,
+                }
+
+                baslik_anahtari = arama_metnine_cevir(gercek_baslik)
+                eski_indeks = baslik_indeksleri.get(baslik_anahtari)
+                if eski_indeks is None:
+                    baslik_indeksleri[baslik_anahtari] = len(ilanlar)
+                    ilanlar.append(zengin_ilan)
+                else:
+                    ilanlar[eski_indeks] = zengin_ilan
+
+            except Exception as hata:
+                sayfa_hatalari.append(
+                    f"ayrıntı {link}: {type(hata).__name__} - {str(hata)[:160]}"
+                )
+                print(
+                    f"MSB aday işleme hatası: {type(hata).__name__}: "
+                    f"{str(hata)[:160]}"
+                )
+                continue
 
     print(f"MSB kart başlığı yedeğiyle eklenen: {yedek_sayisi}")
+    print(f"MSB / TSK güvenli toplam: {len(ilanlar)}")
+
     if sayfa_hatalari:
-        print("MSB sayfa uyarıları: " + " | ".join(sayfa_hatalari))
+        print("MSB sayfa uyarıları: " + " | ".join(sayfa_hatalari[:12]))
 
     return ilanlar
 
