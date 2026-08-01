@@ -1,57 +1,9 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-01T12:15:43.417530+00:00",
+  "guncellenme_zamani": "2026-08-01T12:35:30.260901+00:00",
   "ilan_sayisi": 127,
   "suresi_dolmus_ilan_sayisi": 3,
   "ilanlar": [
-    {
-      "id": "d114502760bb3fca22ff",
-      "baslik": "Bursa Gürsu Yaşam A.Ş.",
-      "kurum": "Bursa Gürsu Yaşam A.Ş.",
-      "sehir": "Bursa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "01.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/4hfprhh3/guersu-yaşam-aş.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/4hfprhh3/guersu-yaşam-aş.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "ec0c03beb59f2707d0f2",
-      "baslik": "Bursa Gürsu Modern A.Ş.",
-      "kurum": "Bursa Gürsu Modern A.Ş.",
-      "sehir": "Bursa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "01.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/a1xf1yli/guersu-modern-aş.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/a1xf1yli/guersu-modern-aş.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
     {
       "id": "a865526a03d40b43afb4",
       "baslik": "Çanakkale Biga Çan Yenice ve Çevresi Katı Atık Personel Ltd. Şti.",
@@ -87,6 +39,54 @@
       "link": "https://www.iskur.gov.tr/medya/ezlhebd1/doc09482420260730071339.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/ezlhebd1/doc09482420260730071339.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "d114502760bb3fca22ff",
+      "baslik": "Bursa Gürsu Yaşam A.Ş.",
+      "kurum": "Bursa Gürsu Yaşam A.Ş.",
+      "sehir": "Bursa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "01.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/4hfprhh3/guersu-yaşam-aş.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/4hfprhh3/guersu-yaşam-aş.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "ec0c03beb59f2707d0f2",
+      "baslik": "Bursa Gürsu Modern A.Ş.",
+      "kurum": "Bursa Gürsu Modern A.Ş.",
+      "sehir": "Bursa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "01.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/a1xf1yli/guersu-modern-aş.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/a1xf1yli/guersu-modern-aş.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -946,6 +946,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "ef10052326fa1b76aed2",
+      "baslik": "İzmir Bergama Bakırçay Madencilik Müteahhitlik Müşavirlik Tanıtım San. Tic. A.Ş",
+      "kurum": "İzmir Bergama Bakırçay Madencilik Müteahhitlik Müşavirlik Tanıtım San. Tic. A.Ş",
+      "sehir": "İzmir",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "03.08.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/qlnfpkxj/izmir-bergama-bakırçay-madencilik-mueteahhitlik-mueşavirlik-tanıtım-san-tic-aş.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/qlnfpkxj/izmir-bergama-bakırçay-madencilik-mueteahhitlik-mueşavirlik-tanıtım-san-tic-aş.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "e7b4d48d95111ccfec90",
       "baslik": "İstanbul Şehir Hatları Turizm Sanayi ve Ticaret A.Ş.",
       "kurum": "İstanbul Şehir Hatları Turizm Sanayi ve Ticaret A.Ş.",
@@ -1004,30 +1028,6 @@
       "link": "https://www.iskur.gov.tr/medya/novczoqe/istanbul-personel-yoenetim-aş-isper-kurum-dışı-kamu-işçi-alımı-ilan-formları_ek_kurum-dışı-kamu-işçi-alımı-ilan-formları.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/novczoqe/istanbul-personel-yoenetim-aş-isper-kurum-dışı-kamu-işçi-alımı-ilan-formları_ek_kurum-dışı-kamu-işçi-alımı-ilan-formları.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "ef10052326fa1b76aed2",
-      "baslik": "İzmir Bergama Bakırçay Madencilik Müteahhitlik Müşavirlik Tanıtım San. Tic. A.Ş",
-      "kurum": "İzmir Bergama Bakırçay Madencilik Müteahhitlik Müşavirlik Tanıtım San. Tic. A.Ş",
-      "sehir": "İzmir",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "03.08.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/qlnfpkxj/izmir-bergama-bakırçay-madencilik-mueteahhitlik-mueşavirlik-tanıtım-san-tic-aş.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/qlnfpkxj/izmir-bergama-bakırçay-madencilik-mueteahhitlik-mueşavirlik-tanıtım-san-tic-aş.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -1186,16 +1186,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "1cbf51a2998166c08cd1",
-      "baslik": "Bursa Gemtaş Gemlik İnşaat Taah.San. ve Tic. A.Ş.",
-      "kurum": "Bursa Gemtaş Gemlik İnşaat Taah.San. ve Tic. A.Ş.",
-      "sehir": "Bursa",
+      "id": "2cab117d703b0ad7d011",
+      "baslik": "Çanakkale Kentsel Hiz. Müh. Müt. Tic. ve San. A.Ş.",
+      "kurum": "Çanakkale Kentsel Hiz. Müh. Müt. Tic. ve San. A.Ş.",
+      "sehir": "Çanakkale",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "04.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/auwhl0mf/gemtaş-01082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/auwhl0mf/gemtaş-01082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
+      "link": "https://www.iskur.gov.tr/medya/gtzhxkzq/doc09479320260729093103.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/gtzhxkzq/doc09479320260729093103.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -1210,16 +1210,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "2cab117d703b0ad7d011",
-      "baslik": "Çanakkale Kentsel Hiz. Müh. Müt. Tic. ve San. A.Ş.",
-      "kurum": "Çanakkale Kentsel Hiz. Müh. Müt. Tic. ve San. A.Ş.",
-      "sehir": "Çanakkale",
+      "id": "1cbf51a2998166c08cd1",
+      "baslik": "Bursa Gemtaş Gemlik İnşaat Taah.San. ve Tic. A.Ş.",
+      "kurum": "Bursa Gemtaş Gemlik İnşaat Taah.San. ve Tic. A.Ş.",
+      "sehir": "Bursa",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "04.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/gtzhxkzq/doc09479320260729093103.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/gtzhxkzq/doc09479320260729093103.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
+      "link": "https://www.iskur.gov.tr/medya/auwhl0mf/gemtaş-01082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/auwhl0mf/gemtaş-01082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -2126,6 +2126,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "c94ee1322d8fba43ae68",
+      "baslik": "Bilecik İl Özel İdaresi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Bilecik İl Özel İdaresi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Bilecik",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "14.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/oqipc0vg/bilecik-il-oezel-idaresi-soezleşmeli-personel-alım-ilanı-14082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/oqipc0vg/bilecik-il-oezel-idaresi-soezleşmeli-personel-alım-ilanı-14082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bilecik&il=Bilecik",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "c991c16f46d3837bb671",
       "baslik": "Konya Büyükşehir Belediyesi Memur Alım İlanı",
       "kurum": "Konya Büyükşehir Belediyesi Memur Alım İlanı",
@@ -2145,30 +2169,6 @@
       "mezuniyetler": [
         "Lisans"
       ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "c94ee1322d8fba43ae68",
-      "baslik": "Bilecik İl Özel İdaresi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Bilecik İl Özel İdaresi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Bilecik",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "14.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/oqipc0vg/bilecik-il-oezel-idaresi-soezleşmeli-personel-alım-ilanı-14082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/oqipc0vg/bilecik-il-oezel-idaresi-soezleşmeli-personel-alım-ilanı-14082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bilecik&il=Bilecik",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [],
       "bolumler": [
         "Diğer"
       ],
@@ -2384,32 +2384,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "f3e2242cdfcbad885aed",
-      "baslik": "Çorum Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Çorum Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Çorum",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "28.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/sc5jgmzk/çorum-belediyesi-soezleşmeli-personel-alım-ilanı-28082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/sc5jgmzk/çorum-belediyesi-soezleşmeli-personel-alım-ilanı-28082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=corum&il=%C3%87orum",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "de8826402fec1a94f7fd",
       "baslik": "Antalya Demre Belediyesi Sözleşmeli Personel Alım İlanı",
       "kurum": "Antalya Demre Belediyesi Sözleşmeli Personel Alım İlanı",
@@ -2423,6 +2397,32 @@
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "f3e2242cdfcbad885aed",
+      "baslik": "Çorum Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Çorum Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Çorum",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "28.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/sc5jgmzk/çorum-belediyesi-soezleşmeli-personel-alım-ilanı-28082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/sc5jgmzk/çorum-belediyesi-soezleşmeli-personel-alım-ilanı-28082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=corum&il=%C3%87orum",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
       "kpss_gerekli": true,
       "minimum_puan": null,
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
@@ -2637,6 +2637,32 @@
       "analiz_surumu": 2
     },
     {
+      "id": "bb47f5b1fc84fadc715e",
+      "baslik": "Nevşehir Kozaklı Belediyesi Memur Alım İlanı",
+      "kurum": "Nevşehir Kozaklı Belediyesi Memur Alım İlanı",
+      "sehir": "Nevşehir",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "04.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/nb2gsb45/nevşehir-kozaklı-belediyesi-memur-alım-ilanı-04092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/nb2gsb45/nevşehir-kozaklı-belediyesi-memur-alım-ilanı-04092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=nevsehir&il=Nev%C5%9Fehir",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "İşletme"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "eb52e89536d86f2f1759",
       "baslik": "Muğla Dalaman Belediyesi Sözleşmeli Personel Alım İlanı",
       "kurum": "Muğla Dalaman Belediyesi Sözleşmeli Personel Alım İlanı",
@@ -2659,32 +2685,6 @@
       ],
       "bolumler": [
         "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "bb47f5b1fc84fadc715e",
-      "baslik": "Nevşehir Kozaklı Belediyesi Memur Alım İlanı",
-      "kurum": "Nevşehir Kozaklı Belediyesi Memur Alım İlanı",
-      "sehir": "Nevşehir",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "04.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/nb2gsb45/nevşehir-kozaklı-belediyesi-memur-alım-ilanı-04092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/nb2gsb45/nevşehir-kozaklı-belediyesi-memur-alım-ilanı-04092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=nevsehir&il=Nev%C5%9Fehir",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "İşletme"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
