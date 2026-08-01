@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-07-31T23:44:47.729543+00:00",
-  "ilan_sayisi": 125,
+  "guncellenme_zamani": "2026-08-01T00:01:03.056779+00:00",
+  "ilan_sayisi": 124,
   "suresi_dolmus_ilan_sayisi": 3,
   "ilanlar": [
     {
@@ -1916,34 +1916,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "763338716ab70ea1ba17",
-      "baslik": "İstanbul Büyükşehir Belediyesi Müfettiş Yardımcılığı Sınav İlanı",
-      "kurum": "İstanbul Büyükşehir Belediyesi Müfettiş Yardımcılığı Sınav İlanı",
-      "sehir": "İstanbul",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "09.08.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/ph0b1mmk/istanbul-bueyuekşehir-belediyesi-muefettiş-yardımcılığı-sınav-ilanı-09082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/ph0b1mmk/istanbul-bueyuekşehir-belediyesi-muefettiş-yardımcılığı-sınav-ilanı-09082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
-      "basvuru_linki": "https://www.turkiye.gov.tr/i",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Maliye",
-        "İşletme",
-        "Muhasebe"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "74338bebb14374662097",
       "baslik": "Tarım ve Orman Bakanlığı Sözleşmeli Personel Alım İlanı",
       "kurum": "Tarım ve Orman Bakanlığı Sözleşmeli Personel Alım İlanı",
@@ -1967,6 +1939,34 @@
       ],
       "bolumler": [
         "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "763338716ab70ea1ba17",
+      "baslik": "İstanbul Büyükşehir Belediyesi Müfettiş Yardımcılığı Sınav İlanı",
+      "kurum": "İstanbul Büyükşehir Belediyesi Müfettiş Yardımcılığı Sınav İlanı",
+      "sehir": "İstanbul",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "09.08.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/ph0b1mmk/istanbul-bueyuekşehir-belediyesi-muefettiş-yardımcılığı-sınav-ilanı-09082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/ph0b1mmk/istanbul-bueyuekşehir-belediyesi-muefettiş-yardımcılığı-sınav-ilanı-09082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
+      "basvuru_linki": "https://www.turkiye.gov.tr/i",
+      "basvuru_online": true,
+      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Maliye",
+        "İşletme",
+        "Muhasebe"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -2384,32 +2384,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "f3e2242cdfcbad885aed",
-      "baslik": "Çorum Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Çorum Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Çorum",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "28.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/sc5jgmzk/çorum-belediyesi-soezleşmeli-personel-alım-ilanı-28082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/sc5jgmzk/çorum-belediyesi-soezleşmeli-personel-alım-ilanı-28082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=corum&il=%C3%87orum",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "de8826402fec1a94f7fd",
       "baslik": "Antalya Demre Belediyesi Sözleşmeli Personel Alım İlanı",
       "kurum": "Antalya Demre Belediyesi Sözleşmeli Personel Alım İlanı",
@@ -2423,6 +2397,32 @@
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "f3e2242cdfcbad885aed",
+      "baslik": "Çorum Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Çorum Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Çorum",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "28.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/sc5jgmzk/çorum-belediyesi-soezleşmeli-personel-alım-ilanı-28082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/sc5jgmzk/çorum-belediyesi-soezleşmeli-personel-alım-ilanı-28082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=corum&il=%C3%87orum",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
       "kpss_gerekli": true,
       "minimum_puan": null,
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
@@ -2941,35 +2941,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "291caf0bc263fbdb98f6",
-      "baslik": "2026-KPSS Ön Lisans: Başvuruların Alınması",
-      "kurum": "ÖSYM",
-      "sehir": "Türkiye Geneli",
-      "tur": "KPSS Duyurusu",
-      "kaynak": "ÖSYM KPSS Duyuruları",
-      "son_basvuru": "01.11.2026",
-      "yayin_tarihi": "29.07.2026",
-      "link": "https://www.osym.gov.tr/2026-kpss-on-lisans-basvurularin-alinmasi-20260728141324252",
-      "belge_linki": "https://dokuman.osym.gov.tr/pdfdokuman/yasakli-ve-izinli-belgeler.pdf",
-      "kaynak_sayfa_linki": "https://www.osym.gov.tr/2026-kpss-on-lisans-basvurularin-alinmasi-20260728141324252",
-      "basvuru_linki": "https://osym.gov.tr/2026-kpss-on-lisans-kilavuz-ve-basvuru-bilgileri",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS tercih/yerleştirme duyurusu",
-      "mezuniyetler": [
-        "Ortaöğretim",
-        "Önlisans",
-        "Lisans"
-      ],
-      "bolumler": [
-        "Tüm Bölümler"
-      ],
-      "pdf_isleme_durumu": "uygulanmaz",
-      "analiz_surumu": 2
-    },
-    {
       "id": "cb2ebeda455dc4365c4d",
       "baslik": "ANKARA BELKA A.Ş.",
       "kurum": "ANKARA BELKA A.Ş.",
@@ -3094,7 +3065,7 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 268,
+  "haber_sayisi": 265,
   "haberler": [
     {
       "id": "6294619fb5f68bfafd11",
@@ -5727,36 +5698,6 @@
       "link": "https://www.osym.gov.tr/2026ekpss-kilavuz-tablolar-ve-basvuru-bilgileri"
     },
     {
-      "id": "89f938911248891f5754",
-      "baslik": "2026-EKPSS: Sınav Sonucu ile Yapılan Yerleştirme Sonuçlarına İlişkin Sayısal Bilgiler",
-      "kurum": "ÖSYM",
-      "kategori": "EKPSS Sonuç",
-      "yayin_tarihi": "02.02.2026",
-      "kaynak": "ÖSYM EKPSS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
-      "link": "https://www.osym.gov.tr/2026ekpss-sinav-sonucu-ile-yapilan-yerlestirme-sonuclarina-iliskin-sayisal-bilgiler"
-    },
-    {
-      "id": "c5457ad7afb7a5189a28",
-      "baslik": "2026-EKPSS/Kura İle Engelli Kamu Personeli Yerleştirme: Kura Usulü İle Yapılan Yerleştirme Sonuçları Açıklandı",
-      "kurum": "ÖSYM",
-      "kategori": "EKPSS Sonuç",
-      "yayin_tarihi": "02.02.2026",
-      "kaynak": "ÖSYM EKPSS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
-      "link": "https://www.osym.gov.tr/2026ekpsskura-ile-engelli-kamu-personeli-yerlestirme-kura-usulu-ile-yapilan-yerlestirme-sonuclari-aciklandi"
-    },
-    {
-      "id": "1d2d0252df6270f18ed6",
-      "baslik": "2026-EKPSS/Kura İle Engelli Kamu Personeli Yerleştirme: Sınav Sonucu İle Yapılan Yerleştirme Sonuçları Açıklandı",
-      "kurum": "ÖSYM",
-      "kategori": "EKPSS Sonuç",
-      "yayin_tarihi": "02.02.2026",
-      "kaynak": "ÖSYM EKPSS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
-      "link": "https://www.osym.gov.tr/2026ekpsskura-ile-engelli-kamu-personeli-yerlestirme-sinav-sonucu-ile-yapilan-yerlestirme-sonuclari-aciklandi"
-    },
-    {
       "id": "1de5b4081003dbef6469",
       "baslik": "AİLE VE SOSYAL HİZMETLER BAKANLIĞI 680 SÖZLEŞMELİ PERSONEL ALIMI TAVAN VE TABAN PUANLARI HAKKINDA DUYURU",
       "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
@@ -5778,7 +5719,7 @@
     }
   ],
   "kaynak_sayilari": {
-    "ÖSYM aktif KPSS ilanları": 1,
+    "ÖSYM merkezi atama ilanları": 0,
     "ÖSYM tüm sınav haberleri": 266,
     "MSB / TSK haberleri": 0,
     "GSB Personel Alımları": 5,
