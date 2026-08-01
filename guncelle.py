@@ -3553,9 +3553,11 @@ def main():
     )
     print(f"Bildirim: {bildirim_sonucu['mesaj']}")
 
-    otomatik_bildirim_testi = ilk_otomatik_bildirim_testini_gonder(
-        onceki_veri,
-        bildirim_sonucu,
+    otomatik_bildirim_testi = {
+        "durum": "kapali",
+        "basarili": True,
+        "mesaj": "Test bildirimi kapatıldı.",
+    }
     )
     print(f"Otomatik bildirim testi: {otomatik_bildirim_testi['mesaj']}")
 
