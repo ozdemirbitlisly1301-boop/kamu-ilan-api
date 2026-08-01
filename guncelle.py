@@ -3558,7 +3558,7 @@ def main():
         "basarili": True,
         "mesaj": "Test bildirimi kapatıldı.",
     }
-    )
+    
     print(f"Otomatik bildirim testi: {otomatik_bildirim_testi['mesaj']}")
 
     cikti = {
