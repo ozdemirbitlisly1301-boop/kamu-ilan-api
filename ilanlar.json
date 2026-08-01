@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-01T00:16:33.983380+00:00",
-  "ilan_sayisi": 124,
+  "guncellenme_zamani": "2026-08-01T00:31:50.640603+00:00",
+  "ilan_sayisi": 127,
   "suresi_dolmus_ilan_sayisi": 3,
   "ilanlar": [
     {
@@ -1450,32 +1450,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "af80eb47e139ab1844d4",
-      "baslik": "İzmir Tire Belediyesi Zabıta Memuru Alım İlanı",
-      "kurum": "İzmir Tire Belediyesi Zabıta Memuru Alım İlanı",
-      "sehir": "İzmir",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "05.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/tm3jduzw/izmir-tire-belediyesi-zabıta-memuru-alım-ilanı-05082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/tm3jduzw/izmir-tire-belediyesi-zabıta-memuru-alım-ilanı-05082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "cea1f2f2f2f47ce1bd52",
       "baslik": "Afyonkarahisar Kılıçarslan Belediyesi Memur Alım İlanı",
       "kurum": "Afyonkarahisar Kılıçarslan Belediyesi Memur Alım İlanı",
@@ -1494,6 +1468,32 @@
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
       "mezuniyetler": [
         "Ortaöğretim"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "af80eb47e139ab1844d4",
+      "baslik": "İzmir Tire Belediyesi Zabıta Memuru Alım İlanı",
+      "kurum": "İzmir Tire Belediyesi Zabıta Memuru Alım İlanı",
+      "sehir": "İzmir",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "05.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/tm3jduzw/izmir-tire-belediyesi-zabıta-memuru-alım-ilanı-05082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/tm3jduzw/izmir-tire-belediyesi-zabıta-memuru-alım-ilanı-05082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
       ],
       "bolumler": [
         "Diğer"
@@ -1916,34 +1916,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "763338716ab70ea1ba17",
-      "baslik": "İstanbul Büyükşehir Belediyesi Müfettiş Yardımcılığı Sınav İlanı",
-      "kurum": "İstanbul Büyükşehir Belediyesi Müfettiş Yardımcılığı Sınav İlanı",
-      "sehir": "İstanbul",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "09.08.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/ph0b1mmk/istanbul-bueyuekşehir-belediyesi-muefettiş-yardımcılığı-sınav-ilanı-09082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/ph0b1mmk/istanbul-bueyuekşehir-belediyesi-muefettiş-yardımcılığı-sınav-ilanı-09082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
-      "basvuru_linki": "https://www.turkiye.gov.tr/i",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Maliye",
-        "İşletme",
-        "Muhasebe"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "74338bebb14374662097",
       "baslik": "Tarım ve Orman Bakanlığı Sözleşmeli Personel Alım İlanı",
       "kurum": "Tarım ve Orman Bakanlığı Sözleşmeli Personel Alım İlanı",
@@ -1967,6 +1939,34 @@
       ],
       "bolumler": [
         "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "763338716ab70ea1ba17",
+      "baslik": "İstanbul Büyükşehir Belediyesi Müfettiş Yardımcılığı Sınav İlanı",
+      "kurum": "İstanbul Büyükşehir Belediyesi Müfettiş Yardımcılığı Sınav İlanı",
+      "sehir": "İstanbul",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "09.08.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/ph0b1mmk/istanbul-bueyuekşehir-belediyesi-muefettiş-yardımcılığı-sınav-ilanı-09082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/ph0b1mmk/istanbul-bueyuekşehir-belediyesi-muefettiş-yardımcılığı-sınav-ilanı-09082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
+      "basvuru_linki": "https://www.turkiye.gov.tr/i",
+      "basvuru_online": true,
+      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Maliye",
+        "İşletme",
+        "Muhasebe"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -2126,6 +2126,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "c94ee1322d8fba43ae68",
+      "baslik": "Bilecik İl Özel İdaresi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Bilecik İl Özel İdaresi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Bilecik",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "14.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/oqipc0vg/bilecik-il-oezel-idaresi-soezleşmeli-personel-alım-ilanı-14082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/oqipc0vg/bilecik-il-oezel-idaresi-soezleşmeli-personel-alım-ilanı-14082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bilecik&il=Bilecik",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "c991c16f46d3837bb671",
       "baslik": "Konya Büyükşehir Belediyesi Memur Alım İlanı",
       "kurum": "Konya Büyükşehir Belediyesi Memur Alım İlanı",
@@ -2145,30 +2169,6 @@
       "mezuniyetler": [
         "Lisans"
       ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "c94ee1322d8fba43ae68",
-      "baslik": "Bilecik İl Özel İdaresi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Bilecik İl Özel İdaresi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Bilecik",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "14.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/oqipc0vg/bilecik-il-oezel-idaresi-soezleşmeli-personel-alım-ilanı-14082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/oqipc0vg/bilecik-il-oezel-idaresi-soezleşmeli-personel-alım-ilanı-14082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bilecik&il=Bilecik",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [],
       "bolumler": [
         "Diğer"
       ],
@@ -2384,32 +2384,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "de8826402fec1a94f7fd",
-      "baslik": "Antalya Demre Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Antalya Demre Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Antalya",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "28.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/l1rn0xng/antalya-demre-belediyesi-soezleşmeli-personel-alım-ilanı-28082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/l1rn0xng/antalya-demre-belediyesi-soezleşmeli-personel-alım-ilanı-28082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=antalya&il=Antalya",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "f3e2242cdfcbad885aed",
       "baslik": "Çorum Belediyesi Sözleşmeli Personel Alım İlanı",
       "kurum": "Çorum Belediyesi Sözleşmeli Personel Alım İlanı",
@@ -2423,6 +2397,32 @@
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "de8826402fec1a94f7fd",
+      "baslik": "Antalya Demre Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Antalya Demre Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Antalya",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "28.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/l1rn0xng/antalya-demre-belediyesi-soezleşmeli-personel-alım-ilanı-28082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/l1rn0xng/antalya-demre-belediyesi-soezleşmeli-personel-alım-ilanı-28082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=antalya&il=Antalya",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
       "kpss_gerekli": true,
       "minimum_puan": null,
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
@@ -2585,32 +2585,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "75e9b2e8ebafcc1b01e3",
-      "baslik": "Kahramanmaraş Elbistan Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Kahramanmaraş Elbistan Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Kahramanmaraş",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "04.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/tfroozeh/kahramanmaraş-elbistan-belediyesi-soezleşmeli-personel-alım-ilanı-04092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/tfroozeh/kahramanmaraş-elbistan-belediyesi-soezleşmeli-personel-alım-ilanı-04092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=kahramanmaras&il=Kahramanmara%C5%9F",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
-      "kpss_gerekli": true,
-      "minimum_puan": 70,
-      "kpss_durumu": "En az 70 KPSS puanı",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "52c0dca82d8ce17c889c",
       "baslik": "Edirne Keşan Belediyesi Memur Alım İlanı",
       "kurum": "Edirne Keşan Belediyesi Memur Alım İlanı",
@@ -2627,6 +2601,32 @@
       "kpss_gerekli": true,
       "minimum_puan": null,
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "75e9b2e8ebafcc1b01e3",
+      "baslik": "Kahramanmaraş Elbistan Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Kahramanmaraş Elbistan Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Kahramanmaraş",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "04.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/tfroozeh/kahramanmaraş-elbistan-belediyesi-soezleşmeli-personel-alım-ilanı-04092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/tfroozeh/kahramanmaraş-elbistan-belediyesi-soezleşmeli-personel-alım-ilanı-04092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=kahramanmaras&il=Kahramanmara%C5%9F",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": true,
+      "minimum_puan": 70,
+      "kpss_durumu": "En az 70 KPSS puanı",
       "mezuniyetler": [
         "Lisans"
       ],
@@ -3010,6 +3010,84 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "344bb184f0d0b8cb035f",
+      "baslik": "KARA, DENİZ VE HAVA KUVVETLERİ KOMUTANLIKLARINA 2026 YILI TEKNİK SINIF UZMAN ERBAŞ TEMİNİ",
+      "kurum": "Millî Savunma Bakanlığı / Türk Silahlı Kuvvetleri",
+      "sehir": "Türkiye Geneli",
+      "tur": "Askerî / MSB Personel Alımı",
+      "kaynak": "MSB / TSK Güncel Teminler",
+      "kaynak_kodu": "msb_tsk",
+      "son_basvuru": "",
+      "yayin_tarihi": "24.07.2026",
+      "link": "https://personeltemin.msb.gov.tr/AnaSayfa?kpssKariyer=344bb184f0d0b8cb035f",
+      "belge_linki": "",
+      "kaynak_sayfa_linki": "https://personeltemin.msb.gov.tr/?v=1.0.23",
+      "basvuru_linki": "https://personeltemin.msb.gov.tr/",
+      "basvuru_online": true,
+      "basvuru_aciklamasi": "Başvuru şartları ve tarihler MSB Personel Temin Sistemindeki Güncel Teminler kartından kontrol edilmelidir.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "html_baslik",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "7dac49f1d627d2a6967f",
+      "baslik": "MSB KARA, DENİZ VE HAVA KUVVETLERİ KOMUTANLIKLARI 2026 YILI (2026/3 DÖNEM) UZMAN ERBAŞ TEMİN FAALİYETİ",
+      "kurum": "Millî Savunma Bakanlığı / Türk Silahlı Kuvvetleri",
+      "sehir": "Türkiye Geneli",
+      "tur": "Askerî / MSB Personel Alımı",
+      "kaynak": "MSB / TSK Güncel Teminler",
+      "kaynak_kodu": "msb_tsk",
+      "son_basvuru": "",
+      "yayin_tarihi": "24.07.2026",
+      "link": "https://personeltemin.msb.gov.tr/AnaSayfa?kpssKariyer=7dac49f1d627d2a6967f",
+      "belge_linki": "",
+      "kaynak_sayfa_linki": "https://personeltemin.msb.gov.tr/?v=1.0.23",
+      "basvuru_linki": "https://personeltemin.msb.gov.tr/",
+      "basvuru_online": true,
+      "basvuru_aciklamasi": "Başvuru şartları ve tarihler MSB Personel Temin Sistemindeki Güncel Teminler kartından kontrol edilmelidir.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "html_baslik",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "c580c9c7fa4a6e0a14b2",
+      "baslik": "MSB KARA, DENİZ VE HAVA KUVVETLERİ KOMUTANLIKLARI 2026 YILI (2026/2 DÖNEM) SÖZLEŞMELİ ER TEMİN FAALİYETİ",
+      "kurum": "Millî Savunma Bakanlığı / Türk Silahlı Kuvvetleri",
+      "sehir": "Türkiye Geneli",
+      "tur": "Askerî / MSB Personel Alımı",
+      "kaynak": "MSB / TSK Güncel Teminler",
+      "kaynak_kodu": "msb_tsk",
+      "son_basvuru": "",
+      "yayin_tarihi": "24.07.2026",
+      "link": "https://personeltemin.msb.gov.tr/AnaSayfa?kpssKariyer=c580c9c7fa4a6e0a14b2",
+      "belge_linki": "",
+      "kaynak_sayfa_linki": "https://personeltemin.msb.gov.tr/?v=1.0.23",
+      "basvuru_linki": "https://personeltemin.msb.gov.tr/",
+      "basvuru_online": true,
+      "basvuru_aciklamasi": "Başvuru şartları ve tarihler MSB Personel Temin Sistemindeki Güncel Teminler kartından kontrol edilmelidir.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "html_baslik",
       "analiz_surumu": 2
     },
     {
@@ -5721,21 +5799,20 @@
   "kaynak_sayilari": {
     "ÖSYM merkezi atama ilanları": 0,
     "ÖSYM tüm sınav haberleri": 263,
+    "MSB / TSK Güncel Teminler": 3,
     "MSB / TSK haberleri": 0,
     "GSB Personel Alımları": 5,
     "Aile Bakanlığı Personel Alımları": 0,
     "Adalet Bakanlığı Personel Alımları": 0
   },
   "bildirim_sonucu": {
-    "durum": "yeni_kayit_yok",
-    "yeni_ilan": 0,
+    "durum": "atlanmış",
+    "yeni_ilan": 3,
     "yeni_haber": 0,
     "gonderilen": 0,
-    "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
+    "mesaj": "Firebase servis hesabı GitHub Secret olarak tanımlı değil"
   },
-  "hata_sayisi": 1,
+  "hata_sayisi": 0,
   "pdf_hata_sayisi": 1,
-  "hatalar": [
-    "MSB / TSK Güncel Teminler: TypeError - cannot use a string pattern on a bytes-like object"
-  ]
+  "hatalar": []
 }
