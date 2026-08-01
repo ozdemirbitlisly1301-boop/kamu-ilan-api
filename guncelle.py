@@ -2417,6 +2417,10 @@ def _eski_main():
         "haber_sayisi": len(haberler),
         "haberler": haberler,
         "bildirim_sonucu": bildirim_sonucu,
+        "otomatik_bildirim_testi": otomatik_bildirim_testi,
+        "otomatik_bildirim_testi_yapildi": bool(
+            otomatik_bildirim_testi.get("basarili")
+        ),
         "hata_sayisi": len(hatalar),
         "pdf_hata_sayisi": pdf_hatalari,
         "hatalar": hatalar[:50],
@@ -3362,6 +3366,61 @@ def yeni_kayit_bildirimlerini_gonder(
         sonuc["mesaj"] = f"{type(hata).__name__}: {str(hata)[:180]}"
     return sonuc
 
+def ilk_otomatik_bildirim_testini_gonder(onceki_veri, normal_bildirim_sonucu):
+    """
+    Otomatik bildirim hattını bir kez gerçek GitHub Actions çalışmasından test eder.
+
+    Test başarılı olduğunda ilanlar.json içine kalıcı bir işaret yazılır ve sonraki
+    çalışmalarda tekrar gönderilmez. Normal yeni ilan/haber bildirimi zaten bu
+    çalışmada gönderildiyse ayrıca test bildirimi atılmaz; sistem doğrulanmış sayılır.
+    """
+    sonuc = {
+        "durum": "atlanmış",
+        "basarili": False,
+        "mesaj": "",
+    }
+
+    if isinstance(onceki_veri, dict) and onceki_veri.get(
+        "otomatik_bildirim_testi_yapildi"
+    ) is True:
+        sonuc["durum"] = "daha_once_yapildi"
+        sonuc["basarili"] = True
+        sonuc["mesaj"] = "Daha önce başarıyla tamamlandı."
+        return sonuc
+
+    if isinstance(normal_bildirim_sonucu, dict) and int(
+        normal_bildirim_sonucu.get("gonderilen", 0) or 0
+    ) > 0:
+        sonuc["durum"] = "normal_bildirimle_dogrulandi"
+        sonuc["basarili"] = True
+        sonuc["mesaj"] = "Yeni ilan/haber bildirimi gönderildi; otomatik sistem doğrulandı."
+        return sonuc
+
+    mesajlasma, hata = firebase_mesajlasmayi_hazirla()
+    if mesajlasma is None:
+        sonuc["durum"] = "hata"
+        sonuc["mesaj"] = hata or "Firebase hazırlanamadı."
+        return sonuc
+
+    try:
+        mesaj_id = tek_bildirim_gonder(
+            mesajlasma,
+            "yeni_ilanlar",
+            "KPSS KARİYER BİLDİRİM SİSTEMİ AKTİF",
+            "Yeni ilan ve haberler artık otomatik olarak bildirilecek.",
+            "https://kamu-ilan-api-1.onrender.com/ilanlar",
+            "ilan",
+        )
+        sonuc["durum"] = "gonderildi"
+        sonuc["basarili"] = True
+        sonuc["mesaj"] = f"Telefon test bildirimi gönderildi: {mesaj_id}"
+    except Exception as hata:
+        sonuc["durum"] = "hata"
+        sonuc["mesaj"] = f"{type(hata).__name__}: {str(hata)[:180]}"
+
+    return sonuc
+
+
 def main():
     onceki_veri = onceki_veriyi_yukle()
     (onceki_ilan_anahtarlari, onceki_haber_anahtarlari,
@@ -3493,6 +3552,12 @@ def main():
         onceki_haber_anahtarlari, onceki_dosya_vardi,
     )
     print(f"Bildirim: {bildirim_sonucu['mesaj']}")
+
+    otomatik_bildirim_testi = ilk_otomatik_bildirim_testini_gonder(
+        onceki_veri,
+        bildirim_sonucu,
+    )
+    print(f"Otomatik bildirim testi: {otomatik_bildirim_testi['mesaj']}")
 
     cikti = {
         "status": "ok" if zenginlestirilmis or haberler else "veri_alinamadi",
