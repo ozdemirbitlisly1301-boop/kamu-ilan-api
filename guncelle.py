@@ -2457,6 +2457,18 @@ MSB_ANA_SAYFA_URL = "https://personeltemin.msb.gov.tr/AnaSayfa"
 MSB_TEMINLER_URL = "https://personeltemin.msb.gov.tr/AnaSayfa/Teminler"
 MSB_BASVURU_URL = "https://personeltemin.msb.gov.tr/"
 
+# GitHub Actions üzerinde MSB ana sayfası sürüm parametresi olmadan bazen
+# Güncel Teminler kartlarını döndürmüyor. Kartların göründüğü sürümlü adresleri
+# önce deniyoruz; sonra eski adreslere düşüyoruz.
+MSB_GUNCEL_SAYFALARI = (
+    "https://personeltemin.msb.gov.tr/?v=1.0.22",
+    "https://personeltemin.msb.gov.tr/?v=1.0.23",
+    "https://personeltemin.msb.gov.tr/?v=1.0.24",
+    "https://personeltemin.msb.gov.tr/",
+    MSB_ANA_SAYFA_URL,
+    MSB_TEMINLER_URL,
+)
+
 # MSB, genel bakanlık taramasından çıkarılır; aşağıda özel olarak çekilir.
 RESMI_DUYURU_KAYNAKLARI = tuple(
     kaynak
@@ -2847,6 +2859,30 @@ def _msb_guncel_temin_basliklarini_topla(html):
     return sonuc
 
 
+def _msb_ham_html_basliklarini_topla(html):
+    """Bölüm yapısı bozulsa bile görünür MSB temin başlıklarını toplar."""
+    soup = BeautifulSoup(html, "html.parser")
+    sonuc = []
+    gorulen = set()
+
+    for parca in soup.stripped_strings:
+        metin = temizle(parca)
+        if not (18 <= len(metin) <= 500):
+            continue
+        if not _msb_aktif_temin_basligi_mi(metin):
+            continue
+        anahtar = arama_metnine_cevir(metin)
+        if not anahtar or anahtar in gorulen:
+            continue
+        gorulen.add(anahtar)
+        sonuc.append({
+            "baslik": metin,
+            "yayin_tarihi": tarih_bul(metin),
+        })
+
+    return sonuc
+
+
 def _msb_basliktan_yedek_ilan_uret(kayit):
     """Ayrıntı bağlantısı okunamadığında ana sayfa kartından güvenli ilan üretir."""
     baslik = baslik_temizle(kayit.get("baslik", ""))
@@ -2867,7 +2903,7 @@ def _msb_basliktan_yedek_ilan_uret(kayit):
         "yayin_tarihi": yayin_tarihi,
         "link": link,
         "belge_linki": "",
-        "kaynak_sayfa_linki": MSB_ANA_SAYFA_URL,
+        "kaynak_sayfa_linki": MSB_GUNCEL_SAYFALARI[0],
         "basvuru_linki": MSB_BASVURU_URL,
         "basvuru_online": True,
         "basvuru_aciklamasi": (
@@ -2891,17 +2927,19 @@ def msb_guncel_teminleri_al():
     sayfa_hatalari = []
     sayfa_verileri = []
 
-    # Kök adres, AnaSayfa ve Tüm Teminler adreslerini birlikte dene.
-    msb_sayfalari = (
-        "https://personeltemin.msb.gov.tr/",
-        MSB_ANA_SAYFA_URL,
-        MSB_TEMINLER_URL,
-    )
+    # Sürümlü kök adresleri önce dene.
+    msb_sayfalari = MSB_GUNCEL_SAYFALARI
 
     for sayfa_url in msb_sayfalari:
         try:
             html = sayfayi_indir(sayfa_url)
             sayfa_verileri.append((sayfa_url, html))
+            gorunen_metin = BeautifulSoup(html, "html.parser").get_text(" ", strip=True)
+            normal_metin = arama_metnine_cevir(gorunen_metin)
+            print(
+                f"MSB sayfa kontrolü: {sayfa_url} | karakter={len(html)} "
+                f"| güncel_teminler={'evet' if 'guncel teminler' in normal_metin else 'hayır'}"
+            )
         except Exception as hata:
             sayfa_hatalari.append(
                 f"{sayfa_url}: {type(hata).__name__} - {str(hata)[:120]}"
@@ -2987,10 +3025,14 @@ def msb_guncel_teminleri_al():
             gorulen.add(anahtar)
 
     # Ayrıntı bağlantıları JavaScript yüzünden okunamadıysa kart başlıklarını
-    # doğrudan ilan olarak ekle. Bu, önceki sürümde eksik olan asıl yedektir.
+    # doğrudan ilan olarak ekle. Önce bölüm bazlı, sonra bütün görünür metni tara.
     yedek_sayisi = 0
     for _, html in sayfa_verileri:
-        for kayit in _msb_guncel_temin_basliklarini_topla(html):
+        kayitlar = _msb_guncel_temin_basliklarini_topla(html)
+        if not kayitlar:
+            kayitlar = _msb_ham_html_basliklarini_topla(html)
+        print(f"MSB başlık taraması: {len(kayitlar)} aday")
+        for kayit in kayitlar:
             yedek_ilan = _msb_basliktan_yedek_ilan_uret(kayit)
             baslik_anahtari = arama_metnine_cevir(yedek_ilan["baslik"])
 
