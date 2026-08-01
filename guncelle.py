@@ -15,6 +15,8 @@ import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
 
+DOSYA_SURUMU = "KARIYER-KAPISI-PDF-V3-2026-08-02"
+
 try:
     import firebase_admin
     from firebase_admin import credentials, messaging
@@ -218,9 +220,9 @@ TARIH_DESENI = re.compile(
     r"(?:\s+\d{1,2}:\d{2})?)"
 )
 
-ANALIZ_SURUMU = 2
+ANALIZ_SURUMU = 3
 MAKSIMUM_PDF_BOYUTU = 30 * 1024 * 1024
-MAKSIMUM_PDF_SAYFASI = 40
+MAKSIMUM_PDF_SAYFASI = 80
 
 
 TR_CEVIRI = str.maketrans({
@@ -234,7 +236,15 @@ TR_CEVIRI = str.maketrans({
 
 
 def temizle(metin):
-    return re.sub(r"\s+", " ", metin or "").strip()
+    """Metni güvenli biçimde tek satıra indirir; bytes gelirse UTF-8 çözer."""
+    if metin is None:
+        metin = ""
+    elif isinstance(metin, bytes):
+        metin = metin.decode("utf-8", errors="ignore")
+    elif not isinstance(metin, str):
+        metin = str(metin)
+
+    return re.sub(r"\s+", " ", metin).strip()
 
 
 def arama_metnine_cevir(metin):
@@ -1087,10 +1097,14 @@ def son_basvuru_tarihi_bul(metin):
 
     anahtarlar = (
         "son basvuru",
+        "son muracaat",
+        "basvuru bitis",
+        "basvurunun son gunu",
         "basvurular",
         "basvuru tarih",
         "basvurularini",
         "basvuru suresi",
+        "muracaat tarih",
         "tercih islemleri",
         "tercih suresi",
         "tercih tarih",
@@ -1135,23 +1149,45 @@ BILINEN_BASVURU_ADRESLERI = {
 ONLINE_BASVURU_IFADELERI = (
     "online basvuru",
     "elektronik ortamda",
+    "elektronik olarak",
     "internet uzerinden",
     "e-devlet uzerinden",
+    "e devlet uzerinden",
+    "e-devlet kapisi uzerinden",
+    "e devlet kapisi uzerinden",
     "kariyer kapisi",
+    "kamu ise alim platformu",
     "basvuru adresi",
     "basvuru ekrani",
+    "yalnizca elektronik",
+    "sadece elektronik",
+    "cevirmici basvuru",
 )
 
+# Bu ifadeler, şahsen/posta başvurusunun REDDEDİLDİĞİNİ anlatır ve ilanın
+# aslında online olduğunu gösterir.
+SAHSEN_POSTA_KABUL_EDILMEZ_IFADELERI = (
+    "sahsen veya posta yoluyla yapilan basvurular kabul edilmeyecektir",
+    "sahsen ve posta yoluyla yapilan basvurular kabul edilmeyecektir",
+    "sahsen ya da posta yoluyla yapilan basvurular kabul edilmeyecektir",
+    "sahsen veya posta ile yapilan basvurular kabul edilmeyecektir",
+    "sahsen ve posta ile yapilan basvurular kabul edilmeyecektir",
+    "sahsen veya posta yoluyla basvuru kabul edilmeyecektir",
+    "sahsen basvuru kabul edilmeyecektir",
+    "posta yoluyla basvuru kabul edilmeyecektir",
+    "elden basvuru kabul edilmeyecektir",
+)
+
+# Yalnızca gerçekten fiziksel başvuru tarif eden daha kesin ifadeler.
 ONLINE_OLMAYAN_BASVURU_IFADELERI = (
-    "sahsen basvuru",
-    "basvurular sahsen",
-    "sahsen yapil",
-    "sahsen muracaat",
-    "elden basvuru",
-    "posta yoluyla",
-    "kargo yoluyla",
-    "kuruma teslim",
-    "basvuru formu ile birlikte",
+    "basvurular sahsen yapilacaktir",
+    "basvurular sahsen alinacaktir",
+    "sahsen muracaat edilecektir",
+    "elden teslim edilecektir",
+    "posta yoluyla gonderilecektir",
+    "kargo yoluyla gonderilecektir",
+    "kuruma sahsen teslim",
+    "basvuru formu ile birlikte kuruma teslim",
 )
 
 
@@ -1254,7 +1290,9 @@ def html_basvuru_linki_bul(soup, temel_url):
 
 
 def metinden_basvuru_linki_bul(metin):
-    for bulunan in re.findall(r"https?://[^\s<>'\"()]+", metin or ""):
+    metin = temizle(metin)
+
+    for bulunan in re.findall(r"https?://[^\s<>'\"()]+", metin):
         link = bulunan.rstrip(".,;:)]}")
         normal_link = link.casefold()
 
@@ -1263,14 +1301,28 @@ def metinden_basvuru_linki_bul(metin):
 
     normal_metin = arama_metnine_cevir(metin)
 
-    for domain, adres in BILINEN_BASVURU_ADRESLERI.items():
-        if domain in normal_metin:
+    # PDF metin çıkarımı URL'yi parçalasa bile alan adını yakala.
+    domain_eslesmeleri = (
+        ("kariyerkapisi.gov.tr", "https://kariyerkapisi.gov.tr/isealim"),
+        ("isealimkariyerkapisi.cbiko.gov.tr", "https://isealimkariyerkapisi.cbiko.gov.tr"),
+        ("kariyerkapisi.cbiko.gov.tr", "https://kariyerkapisi.cbiko.gov.tr"),
+        ("ais.osym.gov.tr", "https://ais.osym.gov.tr"),
+        ("esube.iskur.gov.tr", "https://esube.iskur.gov.tr"),
+        ("turkiye.gov.tr", "https://www.turkiye.gov.tr"),
+        ("personeltemin.msb.gov.tr", "https://personeltemin.msb.gov.tr"),
+        ("vatandas.jandarma.gov.tr", "https://vatandas.jandarma.gov.tr"),
+    )
+
+    for domain, adres in domain_eslesmeleri:
+        if domain in normal_metin.replace(" ", "") or domain in normal_metin:
             return adres
 
     return ""
 
 
 def basvuru_bilgisi_bul(metin, soup=None, temel_url=""):
+    metin = temizle(metin)
+    normal = arama_metnine_cevir(metin)
     link = ""
 
     if soup is not None:
@@ -1279,32 +1331,55 @@ def basvuru_bilgisi_bul(metin, soup=None, temel_url=""):
     if not link:
         link = metinden_basvuru_linki_bul(metin)
 
-    if link:
-        return True, link, "Başvurular online olarak yapılmaktadır."
+    online_ifadesi_var = any(
+        ifade in normal for ifade in ONLINE_BASVURU_IFADELERI
+    )
+    fiziksel_reddedilmis = any(
+        ifade in normal for ifade in SAHSEN_POSTA_KABUL_EDILMEZ_IFADELERI
+    )
 
-    normal = arama_metnine_cevir(metin)
+    # Kariyer Kapısı/e-Devlet açıkça yazıyorsa, doğrudan URL metinden
+    # çıkarılamasa da başvuru online kabul edilir.
+    if not link and "kariyer kapisi" in normal:
+        link = "https://kariyerkapisi.gov.tr/isealim"
+    elif not link and any(
+        ifade in normal
+        for ifade in ("e-devlet", "e devlet", "turkiye.gov.tr")
+    ):
+        link = "https://www.turkiye.gov.tr"
 
-    if any(ifade in normal for ifade in ONLINE_OLMAYAN_BASVURU_IFADELERI):
+    if link or online_ifadesi_var or fiziksel_reddedilmis:
+        if not link and temel_url:
+            aday = guvenli_web_linki(temel_url, temel_url)
+            if aday:
+                link = aday
+
+        aciklama = "Başvurular online olarak yapılmaktadır."
+        if not link:
+            aciklama = (
+                "İlanda online başvuru belirtilmiştir. Doğrudan başvuru "
+                "bağlantısı için ilanın yayımlandığı sayfayı açın."
+            )
+
+        return True, link, aciklama
+
+    fiziksel_ifade_var = any(
+        ifade in normal for ifade in ONLINE_OLMAYAN_BASVURU_IFADELERI
+    )
+
+    if fiziksel_ifade_var:
         return (
             False,
             "",
-            "Başvurular online değildir. Şahsen, posta veya ilanda "
-            "belirtilen diğer yöntemle başvuru yapılmalıdır.",
-        )
-
-    if any(ifade in normal for ifade in ONLINE_BASVURU_IFADELERI):
-        return (
-            False,
-            "",
-            "İlanda online başvuru belirtilmiş ancak doğrudan başvuru "
-            "bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+            "Başvurular ilanda belirtilen şahsen, posta veya teslim yöntemiyle "
+            "yapılmalıdır.",
         )
 
     return (
         False,
         "",
-        "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan "
-        "belgesinden kontrol edin.",
+        "Başvuru yöntemi metinden kesin olarak belirlenemedi. İlan belgesini "
+        "ve yayımlandığı sayfayı kontrol edin.",
     )
 
 
@@ -1641,14 +1716,45 @@ def resmi_kaynaktan_ilanlari_al(kaynak):
 
 
 def kariyer_kapisi_tarih_metni(metin):
-    """Kart/JSON içindeki son başvuru tarihini uygulamanın biçimine çevirir."""
-    metin = temizle(str(metin or ""))
+    """Kart/JSON tarihini uygulamanın GG.AA.YYYY biçimine çevirir."""
+    if isinstance(metin, datetime):
+        return metin.strftime("%d.%m.%Y")
 
+    if isinstance(metin, (int, float)):
+        deger = float(metin)
+        if deger > 10_000_000_000:
+            deger /= 1000
+        try:
+            return datetime.fromtimestamp(deger, tz=timezone.utc).strftime("%d.%m.%Y")
+        except (OverflowError, OSError, ValueError):
+            return ""
+
+    metin = temizle(str(metin or ""))
     if not metin:
         return ""
 
-    tarihler = turkce_tarihleri_bul(metin)
+    # ASP.NET /Date(1785887999000)/ biçimi.
+    asp = re.search(r"/Date\((\d{10,13})", metin, flags=re.IGNORECASE)
+    if asp:
+        try:
+            deger = int(asp.group(1))
+            if deger > 10_000_000_000:
+                deger /= 1000
+            return datetime.fromtimestamp(deger, tz=timezone.utc).strftime("%d.%m.%Y")
+        except (OverflowError, OSError, ValueError):
+            pass
 
+    # ISO 8601: 2026-08-05 veya 2026-08-05T23:59:59.
+    iso = re.search(r"\b(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})(?!\d)", metin)
+    if iso:
+        try:
+            return datetime(
+                int(iso.group(1)), int(iso.group(2)), int(iso.group(3))
+            ).strftime("%d.%m.%Y")
+        except ValueError:
+            pass
+
+    tarihler = turkce_tarihleri_bul(metin)
     if tarihler:
         return max(tarihler).strftime("%d.%m.%Y")
 
@@ -1681,10 +1787,20 @@ def kariyer_kapisi_linki_olustur(href, ilan_anahtari, baslik):
     if link and "kariyerkapisi.gov.tr" in link.casefold():
         return link
 
-    # Kart ayrıntı bağlantısı HTML içinde görünmüyorsa her ilan için farklı,
-    # fakat kullanıcıyı yine resmî aktif ilanlar sayfasına götüren bir bağlantı
-    # üret. Fragment sunucuya gönderilmez; yalnızca kayıtların tekilleşmesini sağlar.
     kimlik = temizle(str(ilan_anahtari or ""))
+    uuid_eslesmesi = re.search(
+        r"[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-"
+        r"[0-9a-fA-F]{4}-[0-9a-fA-F]{12}",
+        kimlik,
+    )
+    if uuid_eslesmesi:
+        return (
+            "https://kariyerkapisi.gov.tr/IlanDetay?i="
+            f"{uuid_eslesmesi.group(0)}"
+        )
+
+    # Kimlik ayrıntı adresi üretmeye yetmiyorsa kullanıcıyı resmî aktif ilanlar
+    # sayfasına götür; fragment sadece kayıtları tekilleştirmek içindir.
     if not kimlik:
         kimlik = ilan_id_uret(baslik or KARIYER_KAPISI_URL)
 
@@ -1761,23 +1877,28 @@ def kariyer_kapisi_json_kayitlarini_bul(veri):
     gorulen_nesneler = set()
 
     baslik_adlari = (
-        "ilanAdi", "ilanBasligi", "ilanBaşlığı", "baslik", "başlık",
-        "title", "name", "duyuruAdi",
+        "ilanAdi", "ilanAd", "ilanBasligi", "ilanBaşlığı", "baslik", "başlık",
+        "title", "name", "duyuruAdi", "positionName", "jobTitle",
     )
     kurum_adlari = (
         "kurumAdi", "kurumAd", "kurum", "organizationName", "institutionName",
+        "companyName", "employerName",
     )
     birim_adlari = (
         "birimAdi", "birimAd", "birim", "unitName", "departmentName",
     )
     bitis_adlari = (
-        "bitisTarihi", "bitişTarihi", "sonBasvuruTarihi", "sonBaşvuruTarihi",
-        "deadline", "endDate", "applicationEndDate",
+        "bitisTarihi", "bitişTarihi", "basvuruBitisTarihi", "başvuruBitişTarihi",
+        "sonBasvuruTarihi", "sonBaşvuruTarihi", "deadline", "endDate",
+        "applicationEndDate", "applicationDeadline", "lastApplicationDate",
     )
     link_adlari = (
         "url", "link", "href", "detailUrl", "detayUrl", "ilanUrl",
+        "detailLink", "applicationUrl",
     )
-    kimlik_adlari = ("ilanId", "id", "uid", "guid", "key")
+    kimlik_adlari = (
+        "ilanId", "ilanID", "id", "uid", "guid", "key", "ilanGuid", "uuid",
+    )
 
     def gez(nesne):
         nesne_kimligi = id(nesne)
@@ -2007,17 +2128,9 @@ def kariyer_kapisi_html_kartlarini_al(soup):
     return ilanlar
 
 
-def kariyer_kapisi_aktif_ilanlarini_al():
-    """Kariyer Kapısı'nın giriş gerektirmeyen aktif ilanlar sayfasını tarar."""
-    html = sayfayi_indir(KARIYER_KAPISI_URL)
-    soup = BeautifulSoup(html, "html.parser")
-    ilanlar = []
-
-    # Site sürümüne göre ilanlar doğrudan HTML kartı veya gömülü JSON olabilir.
-    ilanlar.extend(kariyer_kapisi_html_kartlarini_al(soup))
-    ilanlar.extend(kariyer_kapisi_gomulu_jsonlari_al(soup))
-
+def _kariyer_kapisi_benzersizlestir(ilanlar):
     benzersiz = {}
+
     for ilan in ilanlar:
         anahtar = link_anahtari(ilan.get("link", ""))
         if not anahtar:
@@ -2029,6 +2142,237 @@ def kariyer_kapisi_aktif_ilanlarini_al():
             benzersiz[anahtar] = ilan
 
     return list(benzersiz.values())
+
+
+def _kariyer_kapisi_dom_kayitlarini_al(page):
+    """Render edilmiş sayfadaki ilan bağlantılarını ve kart metnini alır."""
+    return page.evaluate(
+        r"""
+        () => {
+          const sonuc = [];
+          const seciciler = [
+            'a[href*="IlanDetay"]',
+            'a[href*="ilandetay"]',
+            '[onclick*="IlanDetay"]',
+            '[onclick*="ilandetay"]'
+          ];
+          const dugumler = Array.from(document.querySelectorAll(seciciler.join(',')));
+          const gorulen = new Set();
+
+          for (const dugum of dugumler) {
+            let href = dugum.href || dugum.getAttribute('href') || '';
+            const onclick = dugum.getAttribute('onclick') || '';
+            if (!href && onclick) {
+              const eslesme = onclick.match(/(?:IlanDetay|ilandetay)\?i=([0-9a-fA-F-]{20,})/);
+              if (eslesme) href = '/IlanDetay?i=' + eslesme[1];
+            }
+            if (!href) continue;
+            href = new URL(href, location.href).href;
+            if (gorulen.has(href)) continue;
+            gorulen.add(href);
+
+            let kart = dugum;
+            let enIyi = dugum;
+            for (let i = 0; i < 8 && kart; i++, kart = kart.parentElement) {
+              const metin = (kart.innerText || '').replace(/\s+/g, ' ').trim();
+              if (metin.length >= 20 && metin.length <= 2500) {
+                enIyi = kart;
+                if (/Bitiş Tarihi|Başvuru Bitiş|İlana Git|BAŞVUR/i.test(metin)) break;
+              }
+            }
+
+            const metin = (enIyi.innerText || '').replace(/\s+/g, ' ').trim();
+            const baslikDugumu = enIyi.querySelector('h1,h2,h3,h4,h5,strong,.title,.card-title');
+            const kurumDugumu = enIyi.querySelector('.institution,.organization,.kurum,.company,[class*="kurum"],[class*="institution"]');
+            sonuc.push({
+              href,
+              metin,
+              baslik: baslikDugumu ? (baslikDugumu.innerText || '').trim() : '',
+              kurum: kurumDugumu ? (kurumDugumu.innerText || '').trim() : '',
+              id: (new URL(href)).searchParams.get('i') || ''
+            });
+          }
+          return sonuc;
+        }
+        """
+    )
+
+
+def _kariyer_kapisi_dom_kayitlarini_donustur(kayitlar):
+    ilanlar = []
+
+    for kayit in kayitlar or []:
+        if not isinstance(kayit, dict):
+            continue
+
+        detay_metni = temizle(kayit.get("metin", ""))
+        baslik = temizle(kayit.get("baslik", ""))
+        kurum = temizle(kayit.get("kurum", ""))
+
+        if len(baslik) < 12:
+            parcalar = [
+                temizle(parca)
+                for parca in re.split(
+                    r"Bitiş Tarihi|Başvuru Bitiş|İlana Git|BAŞVUR|\|",
+                    detay_metni,
+                    flags=re.IGNORECASE,
+                )
+                if 12 <= len(temizle(parca)) <= 500
+            ]
+            baslik_adaylari = [
+                parca for parca in parcalar
+                if any(
+                    ifade in arama_metnine_cevir(parca)
+                    for ifade in (
+                        "alim", "personel", "memur", "isci", "uzman",
+                        "mufettis", "sozlesmeli", "gorevli", "sinav",
+                    )
+                )
+            ]
+            if baslik_adaylari:
+                baslik = max(baslik_adaylari, key=len)
+            elif parcalar:
+                baslik = max(parcalar, key=len)
+
+        if not kurum:
+            parcalar = [
+                temizle(parca)
+                for parca in re.split(r"Bitiş Tarihi|Başvuru Bitiş|İlana Git", detay_metni, flags=re.IGNORECASE)
+                if 3 <= len(temizle(parca)) <= 250
+            ]
+            kurum_adaylari = [
+                parca for parca in parcalar
+                if parca != baslik and not turkce_tarihleri_bul(parca)
+            ]
+            if kurum_adaylari:
+                kurum = kurum_adaylari[0]
+
+        ilan = kariyer_kapisi_kaydi_olustur(
+            baslik,
+            kurum=kurum,
+            son_basvuru=detay_metni,
+            href=kayit.get("href", ""),
+            ilan_anahtari=kayit.get("id", ""),
+            detay_metni=detay_metni,
+        )
+        if ilan:
+            ilanlar.append(ilan)
+
+    return ilanlar
+
+
+def kariyer_kapisi_aktif_ilanlarini_al():
+    """Kariyer Kapısı aktif ilanlarını JavaScript çalıştırarak tarar."""
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError as hata:
+        raise RuntimeError(
+            "Playwright kurulu değil. requirements.txt ve Chromium kurulumunu kontrol edin."
+        ) from hata
+
+    json_cevaplari = []
+    dom_kayitlari = []
+    son_html = ""
+
+    with sync_playwright() as p:
+        tarayici = p.chromium.launch(
+            headless=True,
+            args=["--no-sandbox", "--disable-dev-shm-usage"],
+        )
+        baglam = tarayici.new_context(
+            locale="tr-TR",
+            timezone_id="Europe/Istanbul",
+            user_agent=HEADERS["User-Agent"],
+            viewport={"width": 1440, "height": 1200},
+        )
+        sayfa = baglam.new_page()
+
+        def cevabi_yakala(cevap):
+            try:
+                icerik_turu = cevap.headers.get("content-type", "").casefold()
+                url = cevap.url.casefold()
+                ilgili = any(
+                    ifade in url
+                    for ifade in ("ilan", "job", "recruit", "isealim", "duyuru")
+                )
+                if "json" not in icerik_turu and not ilgili:
+                    return
+
+                govde = cevap.body()
+                if not govde or len(govde) > 12 * 1024 * 1024:
+                    return
+                metin = govde.decode("utf-8", errors="ignore").strip()
+                if not metin or metin[0] not in "[{":
+                    return
+                veri = json.loads(metin)
+                json_cevaplari.append(veri)
+            except Exception:
+                return
+
+        sayfa.on("response", cevabi_yakala)
+        sayfa.goto(KARIYER_KAPISI_URL, wait_until="domcontentloaded", timeout=90000)
+
+        try:
+            sayfa.wait_for_load_state("networkidle", timeout=30000)
+        except Exception:
+            pass
+
+        sayfa.wait_for_timeout(5000)
+
+        # Sonsuz kaydırma veya "daha fazla" düzenlerinde mümkün olduğunca tüm
+        # aktif kartların yüklenmesini sağla.
+        onceki_yukseklik = 0
+        duragan = 0
+        for _ in range(25):
+            for yazi in ("Daha Fazla", "Daha fazla", "Devamını Gör", "Tümünü Gör"):
+                try:
+                    dugme = sayfa.get_by_text(yazi, exact=False).last
+                    if dugme.is_visible(timeout=300):
+                        dugme.click(timeout=1500)
+                        sayfa.wait_for_timeout(1200)
+                except Exception:
+                    pass
+
+            sayfa.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            sayfa.wait_for_timeout(900)
+            yukseklik = sayfa.evaluate("document.body.scrollHeight")
+            if yukseklik == onceki_yukseklik:
+                duragan += 1
+            else:
+                duragan = 0
+                onceki_yukseklik = yukseklik
+            if duragan >= 4:
+                break
+
+        sayfa.evaluate("window.scrollTo(0, 0)")
+        sayfa.wait_for_timeout(500)
+        dom_kayitlari = _kariyer_kapisi_dom_kayitlarini_al(sayfa)
+        son_html = sayfa.content()
+        tarayici.close()
+
+    soup = BeautifulSoup(son_html, "html.parser")
+    html_ilanlari = kariyer_kapisi_html_kartlarini_al(soup)
+    gomulu_json_ilanlari = kariyer_kapisi_gomulu_jsonlari_al(soup)
+    dom_ilanlari = _kariyer_kapisi_dom_kayitlarini_donustur(dom_kayitlari)
+    ag_json_ilanlari = []
+
+    for veri in json_cevaplari:
+        ag_json_ilanlari.extend(kariyer_kapisi_json_kayitlarini_bul(veri))
+
+    tumu = _kariyer_kapisi_benzersizlestir(
+        dom_ilanlari + ag_json_ilanlari + html_ilanlari + gomulu_json_ilanlari
+    )
+
+    print(
+        "Kariyer Kapısı tarayıcı özeti: "
+        f"DOM bağlantısı={len(dom_kayitlari)}, "
+        f"DOM ilanı={len(dom_ilanlari)}, "
+        f"JSON cevabı={len(json_cevaplari)}, "
+        f"JSON ilanı={len(ag_json_ilanlari)}, "
+        f"toplam={len(tumu)}"
+    )
+
+    return tumu
 
 
 def gorevi_calistir(kaynak, sehir_kodu, sehir_adi):
@@ -2099,26 +2443,49 @@ def pdf_metnini_oku(url):
                 return "", "sifreli_pdf"
 
         parcalar = []
-        sayfa_sayisi = min(
-            len(okuyucu.pages),
-            MAKSIMUM_PDF_SAYFASI,
-        )
+        sayfa_sayisi = min(len(okuyucu.pages), MAKSIMUM_PDF_SAYFASI)
 
         for sayfa_no in range(sayfa_sayisi):
+            sayfa = okuyucu.pages[sayfa_no]
+            metin = ""
+
+            # Layout modu tablo ve sütunlardaki tarih/URL'leri daha iyi korur.
             try:
-                metin = okuyucu.pages[sayfa_no].extract_text() or ""
+                metin = sayfa.extract_text(extraction_mode="layout") or ""
+            except TypeError:
+                try:
+                    metin = sayfa.extract_text() or ""
+                except Exception:
+                    metin = ""
             except Exception:
-                metin = ""
+                try:
+                    metin = sayfa.extract_text() or ""
+                except Exception:
+                    metin = ""
 
             if metin:
                 parcalar.append(metin)
+
+            # Tarih ve başvuru bilgileri çoğunlukla ilk sayfalardadır. Yeterli
+            # metin oluştuysa çok uzun ekleri okumaya devam etmeyerek süreyi koru.
+            biriken = " ".join(parcalar)
+            normal_biriken = arama_metnine_cevir(biriken)
+            if (
+                sayfa_no >= 7
+                and len(biriken) >= 12000
+                and any(
+                    ifade in normal_biriken
+                    for ifade in ("son basvuru", "basvuru tarih", "bitis tarihi")
+                )
+            ):
+                break
 
         metin = temizle("\n".join(parcalar))
 
         if len(metin) < 80:
             return metin, "metin_yok"
 
-        return metin[:250000], "ok"
+        return metin[:400000], "ok"
     except Exception as hata:
         return "", f"hata:{type(hata).__name__}"
 
@@ -2289,6 +2656,7 @@ def ilani_zenginlestir(ilan, onceki_analizler):
         "bolumler",
         "pdf_isleme_durumu",
         "analiz_surumu",
+        "son_basvuru",
         "belge_linki",
         "kaynak_sayfa_linki",
         "basvuru_linki",
@@ -2303,32 +2671,46 @@ def ilani_zenginlestir(ilan, onceki_analizler):
 
         return ilan, True
 
-    # MSB kayıtları HTML sayfasından hazırlandığı için PDF okuyucuya gönderilmez.
+    # MSB ve Kariyer Kapısı kayıtları HTML/JavaScript sayfasından hazırlandığı
+    # için PDF okuyucuya gönderilmez.
     if (
-        ilan.get("kaynak_kodu") == "msb_tsk"
+        ilan.get("kaynak_kodu") in {"msb_tsk", "kariyer_kapisi"}
         and ilan.get("pdf_isleme_durumu") in ("html_ok", "html_baslik")
     ):
         return ilan, False
 
-    pdf_metni, pdf_durumu = pdf_metnini_oku(
-        ilan.get("belge_linki") or ilan.get("link", "")
-    )
+    belge_linki = ilan.get("belge_linki") or ilan.get("link", "")
+    pdf_metni, pdf_durumu = pdf_metnini_oku(belge_linki)
 
     kpss_gerekli, minimum_puan, kpss_durumu = (
         kpss_bilgisi_bul(pdf_metni, pdf_durumu)
     )
-    basvuru_online, basvuru_linki, basvuru_aciklamasi = (
-        basvuru_bilgisi_bul(
-            pdf_metni,
-            temel_url=ilan.get("kaynak_sayfa_linki", ""),
-        )
+    bulunan_online, bulunan_link, bulunan_aciklama = basvuru_bilgisi_bul(
+        pdf_metni,
+        temel_url=ilan.get("kaynak_sayfa_linki", "") or ilan.get("link", ""),
     )
 
-    if pdf_durumu != "ok" and not basvuru_linki:
+    mevcut_online = ilan.get("basvuru_online") is True
+    mevcut_link = temizle(ilan.get("basvuru_linki", ""))
+    mevcut_aciklama = temizle(ilan.get("basvuru_aciklamasi", ""))
+
+    if mevcut_online and not bulunan_online:
+        basvuru_online = True
+        basvuru_linki = mevcut_link
+        basvuru_aciklamasi = mevcut_aciklama or "Başvurular online yapılmaktadır."
+    else:
+        basvuru_online = bulunan_online
+        basvuru_linki = bulunan_link or mevcut_link
+        basvuru_aciklamasi = bulunan_aciklama or mevcut_aciklama
+
+    if pdf_durumu != "ok" and not basvuru_linki and not mevcut_online:
         basvuru_aciklamasi = (
-            "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini "
-            "ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin."
+            "PDF metni tam okunamadı. Başvuru yöntemini ilan belgesinden veya "
+            "ilanın yayımlandığı sayfadan kontrol edin."
         )
+
+    pdf_son_basvuru = son_basvuru_tarihi_bul(pdf_metni) if pdf_metni else ""
+    son_basvuru = pdf_son_basvuru or temizle(ilan.get("son_basvuru", ""))
 
     ilan.update({
         "kpss_gerekli": kpss_gerekli,
@@ -2338,7 +2720,8 @@ def ilani_zenginlestir(ilan, onceki_analizler):
         "bolumler": bolumleri_bul(pdf_metni),
         "pdf_isleme_durumu": pdf_durumu,
         "analiz_surumu": ANALIZ_SURUMU,
-        "belge_linki": ilan.get("belge_linki") or ilan.get("link", ""),
+        "son_basvuru": son_basvuru,
+        "belge_linki": belge_linki,
         "kaynak_sayfa_linki": ilan.get("kaynak_sayfa_linki", ""),
         "basvuru_linki": basvuru_linki,
         "basvuru_online": basvuru_online,
@@ -3115,6 +3498,7 @@ def _msb_detay_linki_mi(link):
 
 def _msb_sayfa_adaylarini_topla(html, sayfa_url):
     """MSB sayfasındaki DuyuruDetay bağlantılarını farklı HTML yapılarına göre bulur."""
+    html = temizle(html) if isinstance(html, bytes) else str(html or "")
     soup = BeautifulSoup(html, "html.parser")
     adaylar = []
 
@@ -3762,62 +4146,8 @@ def yeni_kayit_bildirimlerini_gonder(
         sonuc["mesaj"] = f"{type(hata).__name__}: {str(hata)[:180]}"
     return sonuc
 
-def ilk_otomatik_bildirim_testini_gonder(onceki_veri, normal_bildirim_sonucu):
-    """
-    Otomatik bildirim hattını bir kez gerçek GitHub Actions çalışmasından test eder.
-
-    Test başarılı olduğunda ilanlar.json içine kalıcı bir işaret yazılır ve sonraki
-    çalışmalarda tekrar gönderilmez. Normal yeni ilan/haber bildirimi zaten bu
-    çalışmada gönderildiyse ayrıca test bildirimi atılmaz; sistem doğrulanmış sayılır.
-    """
-    sonuc = {
-        "durum": "atlanmış",
-        "basarili": False,
-        "mesaj": "",
-    }
-
-    if isinstance(onceki_veri, dict) and onceki_veri.get(
-        "otomatik_bildirim_testi_yapildi"
-    ) is True:
-        sonuc["durum"] = "daha_once_yapildi"
-        sonuc["basarili"] = True
-        sonuc["mesaj"] = "Daha önce başarıyla tamamlandı."
-        return sonuc
-
-    if isinstance(normal_bildirim_sonucu, dict) and int(
-        normal_bildirim_sonucu.get("gonderilen", 0) or 0
-    ) > 0:
-        sonuc["durum"] = "normal_bildirimle_dogrulandi"
-        sonuc["basarili"] = True
-        sonuc["mesaj"] = "Yeni ilan/haber bildirimi gönderildi; otomatik sistem doğrulandı."
-        return sonuc
-
-    mesajlasma, hata = firebase_mesajlasmayi_hazirla()
-    if mesajlasma is None:
-        sonuc["durum"] = "hata"
-        sonuc["mesaj"] = hata or "Firebase hazırlanamadı."
-        return sonuc
-
-    try:
-        mesaj_id = tek_bildirim_gonder(
-            mesajlasma,
-            "yeni_ilanlar",
-            "KPSS KARİYER BİLDİRİM SİSTEMİ AKTİF",
-            "Yeni ilan ve haberler artık otomatik olarak bildirilecek.",
-            "https://kamu-ilan-api-1.onrender.com/ilanlar",
-            "ilan",
-        )
-        sonuc["durum"] = "gonderildi"
-        sonuc["basarili"] = True
-        sonuc["mesaj"] = f"Telefon test bildirimi gönderildi: {mesaj_id}"
-    except Exception as hata:
-        sonuc["durum"] = "hata"
-        sonuc["mesaj"] = f"{type(hata).__name__}: {str(hata)[:180]}"
-
-    return sonuc
-
-
 def main():
+    print(f"Dosya sürümü: {DOSYA_SURUMU}")
     onceki_veri = onceki_veriyi_yukle()
     (onceki_ilan_anahtarlari, onceki_haber_anahtarlari,
      onceki_dosya_vardi) = onceki_bildirim_kayitlarini_yukle()
