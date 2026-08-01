@@ -45,6 +45,9 @@ KAYNAKLAR = [
 
 OSYM_ARAMA_URL = "https://www.osym.gov.tr/arama"
 OSYM_DUYURULAR_URL = "https://www.osym.gov.tr/Duyurular/Index"
+
+KARIYER_KAPISI_URL = "https://kariyerkapisi.gov.tr/isealim"
+KARIYER_KAPISI_KAYNAK = "Kariyer Kapısı Aktif İlanlar"
 OSYM_ARAMA_TERIMLERI = (
     "kpss tercih",
     "kpss yerleştirme",
@@ -1115,6 +1118,7 @@ def son_basvuru_tarihi_bul(metin):
 
 
 BILINEN_BASVURU_ADRESLERI = {
+    "kariyerkapisi.gov.tr": "https://kariyerkapisi.gov.tr/isealim",
     "isealimkariyerkapisi.cbiko.gov.tr": (
         "https://isealimkariyerkapisi.cbiko.gov.tr"
     ),
@@ -1213,6 +1217,7 @@ def html_basvuru_linki_bul(soup, temel_url):
         if any(
             domain in normal_link
             for domain in (
+                "kariyerkapisi.gov.tr",
                 "isealimkariyerkapisi.cbiko.gov.tr",
                 "kariyerkapisi.cbiko.gov.tr",
                 "ais.osym.gov.tr",
@@ -1633,6 +1638,397 @@ def resmi_kaynaktan_ilanlari_al(kaynak):
             break
 
     return ilanlar
+
+
+def kariyer_kapisi_tarih_metni(metin):
+    """Kart/JSON içindeki son başvuru tarihini uygulamanın biçimine çevirir."""
+    metin = temizle(str(metin or ""))
+
+    if not metin:
+        return ""
+
+    tarihler = turkce_tarihleri_bul(metin)
+
+    if tarihler:
+        return max(tarihler).strftime("%d.%m.%Y")
+
+    return tarih_bul(metin)
+
+
+def kariyer_kapisi_alan_degeri(kayit, adlar):
+    """Büyük/küçük harf ve Türkçe karakter farkını önemsemeden alan okur."""
+    if not isinstance(kayit, dict):
+        return ""
+
+    normal_anahtarlar = {
+        arama_metnine_cevir(str(anahtar)): deger
+        for anahtar, deger in kayit.items()
+    }
+
+    for ad in adlar:
+        deger = normal_anahtarlar.get(arama_metnine_cevir(ad))
+
+        if deger not in (None, "", [], {}):
+            return deger
+
+    return ""
+
+
+def kariyer_kapisi_linki_olustur(href, ilan_anahtari, baslik):
+    href = temizle(str(href or ""))
+    link = guvenli_web_linki(href, KARIYER_KAPISI_URL) if href else ""
+
+    if link and "kariyerkapisi.gov.tr" in link.casefold():
+        return link
+
+    # Kart ayrıntı bağlantısı HTML içinde görünmüyorsa her ilan için farklı,
+    # fakat kullanıcıyı yine resmî aktif ilanlar sayfasına götüren bir bağlantı
+    # üret. Fragment sunucuya gönderilmez; yalnızca kayıtların tekilleşmesini sağlar.
+    kimlik = temizle(str(ilan_anahtari or ""))
+    if not kimlik:
+        kimlik = ilan_id_uret(baslik or KARIYER_KAPISI_URL)
+
+    kimlik = re.sub(r"[^a-zA-Z0-9_-]+", "-", kimlik).strip("-")[:80]
+    return f"{KARIYER_KAPISI_URL}#ilan-{kimlik or ilan_id_uret(baslik)}"
+
+
+def kariyer_kapisi_kaydi_olustur(
+    baslik,
+    kurum="",
+    birim="",
+    son_basvuru="",
+    href="",
+    ilan_anahtari="",
+    detay_metni="",
+):
+    baslik = baslik_temizle(temizle(str(baslik or "")))
+    kurum = temizle(str(kurum or ""))
+    birim = temizle(str(birim or ""))
+    detay_metni = temizle(str(detay_metni or ""))
+
+    if len(baslik) < 12:
+        return None
+
+    normal_baslik = arama_metnine_cevir(baslik)
+    normal_detay = arama_metnine_cevir(detay_metni)
+
+    # Platformda zaman zaman görülebilen deneme kayıtlarını uygulamaya alma.
+    if "test ilan" in normal_baslik or "test kurum" in normal_detay:
+        return None
+
+    son_basvuru = kariyer_kapisi_tarih_metni(son_basvuru or detay_metni)
+    link = kariyer_kapisi_linki_olustur(href, ilan_anahtari, baslik)
+    kurum_metni = kurum or birim or "Kamu Kurumu"
+    birlesik_metin = temizle(f"{baslik} {kurum} {birim} {detay_metni}")
+    kpss_gerekli, minimum_puan, kpss_durumu = kpss_bilgisi_bul(
+        birlesik_metin,
+        "html_ok",
+    )
+
+    return {
+        "id": ilan_id_uret(link),
+        "baslik": baslik[:400],
+        "kurum": kurum_metni[:250],
+        "birim": birim[:250],
+        "sehir": "Türkiye Geneli",
+        "tur": "Kariyer Kapısı Kamu İlanı",
+        "kaynak": KARIYER_KAPISI_KAYNAK,
+        "kaynak_kodu": "kariyer_kapisi",
+        "son_basvuru": son_basvuru,
+        "yayin_tarihi": "",
+        "link": link,
+        "belge_linki": link,
+        "kaynak_sayfa_linki": KARIYER_KAPISI_URL,
+        "basvuru_linki": KARIYER_KAPISI_URL,
+        "basvuru_online": True,
+        "basvuru_aciklamasi": (
+            "Başvurular resmî Kariyer Kapısı Kamu İşe Alım platformu "
+            "üzerinden online olarak yapılmaktadır."
+        ),
+        "kpss_gerekli": kpss_gerekli,
+        "minimum_puan": minimum_puan,
+        "kpss_durumu": kpss_durumu,
+        "mezuniyetler": mezuniyetleri_bul(birlesik_metin),
+        "bolumler": bolumleri_bul(birlesik_metin),
+        "pdf_isleme_durumu": "html_ok",
+        "analiz_surumu": ANALIZ_SURUMU,
+    }
+
+
+def kariyer_kapisi_json_kayitlarini_bul(veri):
+    """Next.js/ASP.NET sayfasına gömülü ilan JSON nesnelerini özyinelemeli bulur."""
+    bulunanlar = []
+    gorulen_nesneler = set()
+
+    baslik_adlari = (
+        "ilanAdi", "ilanBasligi", "ilanBaşlığı", "baslik", "başlık",
+        "title", "name", "duyuruAdi",
+    )
+    kurum_adlari = (
+        "kurumAdi", "kurumAd", "kurum", "organizationName", "institutionName",
+    )
+    birim_adlari = (
+        "birimAdi", "birimAd", "birim", "unitName", "departmentName",
+    )
+    bitis_adlari = (
+        "bitisTarihi", "bitişTarihi", "sonBasvuruTarihi", "sonBaşvuruTarihi",
+        "deadline", "endDate", "applicationEndDate",
+    )
+    link_adlari = (
+        "url", "link", "href", "detailUrl", "detayUrl", "ilanUrl",
+    )
+    kimlik_adlari = ("ilanId", "id", "uid", "guid", "key")
+
+    def gez(nesne):
+        nesne_kimligi = id(nesne)
+        if nesne_kimligi in gorulen_nesneler:
+            return
+        gorulen_nesneler.add(nesne_kimligi)
+
+        if isinstance(nesne, dict):
+            baslik = kariyer_kapisi_alan_degeri(nesne, baslik_adlari)
+            kurum = kariyer_kapisi_alan_degeri(nesne, kurum_adlari)
+            birim = kariyer_kapisi_alan_degeri(nesne, birim_adlari)
+            bitis = kariyer_kapisi_alan_degeri(nesne, bitis_adlari)
+            href = kariyer_kapisi_alan_degeri(nesne, link_adlari)
+            kimlik = kariyer_kapisi_alan_degeri(nesne, kimlik_adlari)
+
+            if isinstance(baslik, (str, int, float)):
+                normal_anahtarlar = " ".join(
+                    arama_metnine_cevir(str(anahtar)) for anahtar in nesne
+                )
+                baslik_metni = temizle(str(baslik))
+
+                if (
+                    len(baslik_metni) >= 12
+                    and (
+                        bitis
+                        or kurum
+                        or "ilan" in normal_anahtarlar
+                        or "duyuru" in normal_anahtarlar
+                    )
+                ):
+                    detay = temizle(" ".join(
+                        str(deger)
+                        for deger in nesne.values()
+                        if isinstance(deger, (str, int, float))
+                    ))
+                    kayit = kariyer_kapisi_kaydi_olustur(
+                        baslik_metni,
+                        kurum=kurum,
+                        birim=birim,
+                        son_basvuru=bitis,
+                        href=href,
+                        ilan_anahtari=kimlik,
+                        detay_metni=detay,
+                    )
+                    if kayit:
+                        bulunanlar.append(kayit)
+
+            for deger in nesne.values():
+                if isinstance(deger, (dict, list, tuple)):
+                    gez(deger)
+
+        elif isinstance(nesne, (list, tuple)):
+            for oge in nesne:
+                if isinstance(oge, (dict, list, tuple)):
+                    gez(oge)
+
+    gez(veri)
+    return bulunanlar
+
+
+def kariyer_kapisi_gomulu_jsonlari_al(soup):
+    ilanlar = []
+
+    for script in soup.find_all("script"):
+        metin = (script.string or script.get_text("", strip=True) or "").strip()
+
+        if len(metin) < 20:
+            continue
+
+        aday_metinler = [metin]
+        ilk_suslu = metin.find("{")
+        son_suslu = metin.rfind("}")
+
+        if 0 <= ilk_suslu < son_suslu:
+            aday_metinler.append(metin[ilk_suslu:son_suslu + 1])
+
+        ilk_kose = metin.find("[")
+        son_kose = metin.rfind("]")
+
+        if 0 <= ilk_kose < son_kose:
+            aday_metinler.append(metin[ilk_kose:son_kose + 1])
+
+        for aday in aday_metinler:
+            try:
+                veri = json.loads(aday)
+            except (TypeError, ValueError, json.JSONDecodeError):
+                continue
+
+            ilanlar.extend(kariyer_kapisi_json_kayitlarini_bul(veri))
+            break
+
+    return ilanlar
+
+
+def kariyer_kapisi_kart_kapsayicisi(dugum):
+    """İlana Git düğmesinden en küçük anlamlı ilan kartına çıkar."""
+    aday = dugum
+    en_iyi = dugum
+
+    for _ in range(7):
+        if aday is None:
+            break
+
+        if getattr(aday, "name", None) in {"article", "li", "tr", "section", "div"}:
+            metin = temizle(aday.get_text(" ", strip=True))
+            if 25 <= len(metin) <= 1800:
+                en_iyi = aday
+                normal = arama_metnine_cevir(metin)
+                if (
+                    "ilana git" in normal
+                    and (
+                        turkce_tarihleri_bul(metin)
+                        or any(ifade in normal for ifade in ("alim", "sinav", "personel"))
+                    )
+                ):
+                    return aday
+
+        aday = getattr(aday, "parent", None)
+
+    return en_iyi
+
+
+def kariyer_kapisi_html_kartlarini_al(soup):
+    ilanlar = []
+    dugumler = []
+
+    # Bağlantı, buton ve erişilebilirlik metni biçimlerinin tümünü kapsa.
+    for dugum in soup.find_all(["a", "button"]):
+        yazi = temizle(dugum.get_text(" ", strip=True))
+        erisilebilir = temizle(
+            f"{dugum.get('title', '')} {dugum.get('aria-label', '')}"
+        )
+        normal = arama_metnine_cevir(f"{yazi} {erisilebilir}")
+
+        if "ilana git" in normal or "ilan detayi" in normal:
+            dugumler.append(dugum)
+
+    for dugum in dugumler:
+        kart = kariyer_kapisi_kart_kapsayicisi(dugum)
+        kart_metni = temizle(kart.get_text(" ", strip=True))
+        normal_kart = arama_metnine_cevir(kart_metni)
+
+        if len(kart_metni) < 25 or "test ilan" in normal_kart:
+            continue
+
+        href = dugum.get("href", "") if getattr(dugum, "get", None) else ""
+        if not href and getattr(kart, "find", None):
+            link_etiketi = kart.find("a", href=True)
+            href = link_etiketi.get("href", "") if link_etiketi else ""
+
+        ilan_anahtari = ""
+        for etiket in (dugum, kart):
+            if not getattr(etiket, "get", None):
+                continue
+            for alan in ("data-id", "data-ilan-id", "data-key", "id"):
+                if etiket.get(alan):
+                    ilan_anahtari = temizle(str(etiket.get(alan)))
+                    break
+            if ilan_anahtari:
+                break
+
+        aday_metinler = []
+        for etiket_adi in ("h1", "h2", "h3", "h4", "h5", "strong", "p"):
+            for etiket in kart.find_all(etiket_adi):
+                aday = temizle(etiket.get_text(" ", strip=True))
+                normal_aday = arama_metnine_cevir(aday)
+                if (
+                    12 <= len(aday) <= 500
+                    and "ilana git" not in normal_aday
+                    and not re.fullmatch(r"[\d\s./:-]+", aday)
+                ):
+                    aday_metinler.append(aday)
+
+        baslik_adaylari = [
+            aday for aday in aday_metinler
+            if any(
+                ifade in arama_metnine_cevir(aday)
+                for ifade in (
+                    "alim", "sinav", "personel", "memur", "isci", "uzman",
+                    "mufettis", "sozlesmeli", "gorevli", "staj",
+                )
+            )
+        ]
+
+        if baslik_adaylari:
+            baslik = max(baslik_adaylari, key=len)
+        elif aday_metinler:
+            baslik = max(aday_metinler, key=len)
+        else:
+            parcalar = [
+                temizle(parca)
+                for parca in re.split(r"\s{2,}|\n|\r", kart_metni)
+                if 12 <= len(temizle(parca)) <= 500
+            ]
+            baslik = max(parcalar, key=len) if parcalar else ""
+
+        kurum = ""
+        birim = ""
+        img = kart.find("img")
+        if img is not None:
+            kurum = temizle(img.get("alt", "") or img.get("title", ""))
+
+        kurum_adaylari = [
+            aday for aday in aday_metinler
+            if aday != baslik
+            and 3 <= len(aday) <= 250
+            and not turkce_tarihleri_bul(aday)
+        ]
+
+        if not kurum and kurum_adaylari:
+            kurum = kurum_adaylari[0]
+        if len(kurum_adaylari) > 1:
+            birim = kurum_adaylari[1]
+
+        kayit = kariyer_kapisi_kaydi_olustur(
+            baslik,
+            kurum=kurum,
+            birim=birim,
+            son_basvuru=kart_metni,
+            href=href,
+            ilan_anahtari=ilan_anahtari,
+            detay_metni=kart_metni,
+        )
+        if kayit:
+            ilanlar.append(kayit)
+
+    return ilanlar
+
+
+def kariyer_kapisi_aktif_ilanlarini_al():
+    """Kariyer Kapısı'nın giriş gerektirmeyen aktif ilanlar sayfasını tarar."""
+    html = sayfayi_indir(KARIYER_KAPISI_URL)
+    soup = BeautifulSoup(html, "html.parser")
+    ilanlar = []
+
+    # Site sürümüne göre ilanlar doğrudan HTML kartı veya gömülü JSON olabilir.
+    ilanlar.extend(kariyer_kapisi_html_kartlarini_al(soup))
+    ilanlar.extend(kariyer_kapisi_gomulu_jsonlari_al(soup))
+
+    benzersiz = {}
+    for ilan in ilanlar:
+        anahtar = link_anahtari(ilan.get("link", ""))
+        if not anahtar:
+            anahtar = arama_metnine_cevir(
+                f"{ilan.get('kurum', '')} {ilan.get('baslik', '')} "
+                f"{ilan.get('son_basvuru', '')}"
+            )
+        if anahtar:
+            benzersiz[anahtar] = ilan
+
+    return list(benzersiz.values())
 
 
 def gorevi_calistir(kaynak, sehir_kodu, sehir_adi):
@@ -3475,6 +3871,17 @@ def main():
         print(f"MSB / TSK haberleri: {len(msb_haberleri)}")
     except Exception as hata:
         hatalar.append(f"MSB / TSK haberleri: {type(hata).__name__} - {str(hata)[:150]}")
+
+    try:
+        kariyer_kapisi_ilanlari = kariyer_kapisi_aktif_ilanlarini_al()
+        tum_ilanlar.extend(kariyer_kapisi_ilanlari)
+        kaynak_sayilari[KARIYER_KAPISI_KAYNAK] = len(kariyer_kapisi_ilanlari)
+        print(f"{KARIYER_KAPISI_KAYNAK}: {len(kariyer_kapisi_ilanlari)}")
+    except Exception as hata:
+        hatalar.append(
+            f"{KARIYER_KAPISI_KAYNAK}: "
+            f"{type(hata).__name__} - {str(hata)[:150]}"
+        )
 
     for resmi_kaynak in RESMI_DUYURU_KAYNAKLARI:
         try:
