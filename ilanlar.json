@@ -1,57 +1,9 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-01T00:14:24.372788+00:00",
+  "guncellenme_zamani": "2026-08-01T00:16:33.983380+00:00",
   "ilan_sayisi": 124,
   "suresi_dolmus_ilan_sayisi": 3,
   "ilanlar": [
-    {
-      "id": "a865526a03d40b43afb4",
-      "baslik": "Çanakkale Biga Çan Yenice ve Çevresi Katı Atık Personel Ltd. Şti.",
-      "kurum": "Çanakkale Biga Çan Yenice ve Çevresi Katı Atık Personel Ltd. Şti.",
-      "sehir": "Çanakkale",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "01.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/ps3nuawm/doc09481620260730062108.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/ps3nuawm/doc09481620260730062108.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "f8a21b5139cd5358d275",
-      "baslik": "Çanakkale Eceabat Belediyesi Taş. Haf. Pet. Ene. Dem. Çel. Eml. Müş. Eği. Hiz. Gıda Tar. San. ve Tic. Ltd. Şti.",
-      "kurum": "Çanakkale Eceabat Belediyesi Taş. Haf. Pet. Ene. Dem. Çel. Eml. Müş. Eği. Hiz. Gıda Tar. San. ve Tic. Ltd. Şti.",
-      "sehir": "Çanakkale",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "01.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/ezlhebd1/doc09482420260730071339.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/ezlhebd1/doc09482420260730071339.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
     {
       "id": "d114502760bb3fca22ff",
       "baslik": "Bursa Gürsu Yaşam A.Ş.",
@@ -87,6 +39,54 @@
       "link": "https://www.iskur.gov.tr/medya/a1xf1yli/guersu-modern-aş.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/a1xf1yli/guersu-modern-aş.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "a865526a03d40b43afb4",
+      "baslik": "Çanakkale Biga Çan Yenice ve Çevresi Katı Atık Personel Ltd. Şti.",
+      "kurum": "Çanakkale Biga Çan Yenice ve Çevresi Katı Atık Personel Ltd. Şti.",
+      "sehir": "Çanakkale",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "01.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/ps3nuawm/doc09481620260730062108.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/ps3nuawm/doc09481620260730062108.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "f8a21b5139cd5358d275",
+      "baslik": "Çanakkale Eceabat Belediyesi Taş. Haf. Pet. Ene. Dem. Çel. Eml. Müş. Eği. Hiz. Gıda Tar. San. ve Tic. Ltd. Şti.",
+      "kurum": "Çanakkale Eceabat Belediyesi Taş. Haf. Pet. Ene. Dem. Çel. Eml. Müş. Eği. Hiz. Gıda Tar. San. ve Tic. Ltd. Şti.",
+      "sehir": "Çanakkale",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "01.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/ezlhebd1/doc09482420260730071339.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/ezlhebd1/doc09482420260730071339.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -1186,16 +1186,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "2cab117d703b0ad7d011",
-      "baslik": "Çanakkale Kentsel Hiz. Müh. Müt. Tic. ve San. A.Ş.",
-      "kurum": "Çanakkale Kentsel Hiz. Müh. Müt. Tic. ve San. A.Ş.",
-      "sehir": "Çanakkale",
+      "id": "1cbf51a2998166c08cd1",
+      "baslik": "Bursa Gemtaş Gemlik İnşaat Taah.San. ve Tic. A.Ş.",
+      "kurum": "Bursa Gemtaş Gemlik İnşaat Taah.San. ve Tic. A.Ş.",
+      "sehir": "Bursa",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "04.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/gtzhxkzq/doc09479320260729093103.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/gtzhxkzq/doc09479320260729093103.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
+      "link": "https://www.iskur.gov.tr/medya/auwhl0mf/gemtaş-01082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/auwhl0mf/gemtaş-01082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -1210,16 +1210,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "1cbf51a2998166c08cd1",
-      "baslik": "Bursa Gemtaş Gemlik İnşaat Taah.San. ve Tic. A.Ş.",
-      "kurum": "Bursa Gemtaş Gemlik İnşaat Taah.San. ve Tic. A.Ş.",
-      "sehir": "Bursa",
+      "id": "2cab117d703b0ad7d011",
+      "baslik": "Çanakkale Kentsel Hiz. Müh. Müt. Tic. ve San. A.Ş.",
+      "kurum": "Çanakkale Kentsel Hiz. Müh. Müt. Tic. ve San. A.Ş.",
+      "sehir": "Çanakkale",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "04.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/auwhl0mf/gemtaş-01082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/auwhl0mf/gemtaş-01082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
+      "link": "https://www.iskur.gov.tr/medya/gtzhxkzq/doc09479320260729093103.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/gtzhxkzq/doc09479320260729093103.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -1450,32 +1450,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "cea1f2f2f2f47ce1bd52",
-      "baslik": "Afyonkarahisar Kılıçarslan Belediyesi Memur Alım İlanı",
-      "kurum": "Afyonkarahisar Kılıçarslan Belediyesi Memur Alım İlanı",
-      "sehir": "Afyonkarahisar",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "05.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/yqxpp0nm/afyonkarahisar-kılıçarslan-belediyesi-memur-alım-ilanı-05082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/yqxpp0nm/afyonkarahisar-kılıçarslan-belediyesi-memur-alım-ilanı-05082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=afyonkarahisar&il=Afyonkarahisar",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Ortaöğretim"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "af80eb47e139ab1844d4",
       "baslik": "İzmir Tire Belediyesi Zabıta Memuru Alım İlanı",
       "kurum": "İzmir Tire Belediyesi Zabıta Memuru Alım İlanı",
@@ -1494,6 +1468,32 @@
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
       "mezuniyetler": [
         "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "cea1f2f2f2f47ce1bd52",
+      "baslik": "Afyonkarahisar Kılıçarslan Belediyesi Memur Alım İlanı",
+      "kurum": "Afyonkarahisar Kılıçarslan Belediyesi Memur Alım İlanı",
+      "sehir": "Afyonkarahisar",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "05.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/yqxpp0nm/afyonkarahisar-kılıçarslan-belediyesi-memur-alım-ilanı-05082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/yqxpp0nm/afyonkarahisar-kılıçarslan-belediyesi-memur-alım-ilanı-05082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=afyonkarahisar&il=Afyonkarahisar",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Ortaöğretim"
       ],
       "bolumler": [
         "Diğer"
@@ -2126,30 +2126,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "c94ee1322d8fba43ae68",
-      "baslik": "Bilecik İl Özel İdaresi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Bilecik İl Özel İdaresi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Bilecik",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "14.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/oqipc0vg/bilecik-il-oezel-idaresi-soezleşmeli-personel-alım-ilanı-14082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/oqipc0vg/bilecik-il-oezel-idaresi-soezleşmeli-personel-alım-ilanı-14082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bilecik&il=Bilecik",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "c991c16f46d3837bb671",
       "baslik": "Konya Büyükşehir Belediyesi Memur Alım İlanı",
       "kurum": "Konya Büyükşehir Belediyesi Memur Alım İlanı",
@@ -2169,6 +2145,30 @@
       "mezuniyetler": [
         "Lisans"
       ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "c94ee1322d8fba43ae68",
+      "baslik": "Bilecik İl Özel İdaresi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Bilecik İl Özel İdaresi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Bilecik",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "14.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/oqipc0vg/bilecik-il-oezel-idaresi-soezleşmeli-personel-alım-ilanı-14082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/oqipc0vg/bilecik-il-oezel-idaresi-soezleşmeli-personel-alım-ilanı-14082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bilecik&il=Bilecik",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [],
       "bolumler": [
         "Diğer"
       ],
@@ -5733,10 +5733,9 @@
     "gonderilen": 0,
     "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
   },
-  "hata_sayisi": 2,
+  "hata_sayisi": 1,
   "pdf_hata_sayisi": 1,
   "hatalar": [
-    "MSB / TSK Güncel Teminler: TypeError - cannot use a string pattern on a bytes-like object",
-    "Aile Bakanlığı Personel Alımları: RuntimeError - HTTPSConnectionPool(host='www.aile.gov.tr', port=443): Max retries exceeded with url: /pgm/duyurular (Caused by ConnectTimeoutError(<HTTPSConnection(h"
+    "MSB / TSK Güncel Teminler: TypeError - cannot use a string pattern on a bytes-like object"
   ]
 }
