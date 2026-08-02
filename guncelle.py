@@ -215,7 +215,7 @@ TARIH_DESENI = re.compile(
     r"(?:\s+\d{1,2}:\d{2})?)"
 )
 
-DOSYA_SURUMU = "BILDIRIM-PROFIL-V5-2026-08-02"
+DOSYA_SURUMU = "PROFIL-TEST-V7-2026-08-02"
 ANALIZ_SURUMU = 4
 MAKSIMUM_PDF_BOYUTU = 30 * 1024 * 1024
 MAKSIMUM_PDF_SAYFASI = 80
@@ -3713,12 +3713,44 @@ def main():
     )
     print(f"Bildirim: {bildirim_sonucu['mesaj']}")
 
+    mesajlasma, profil_test_hatasi = firebase_mesajlasmayi_hazirla()
+    if mesajlasma is None:
+        print(f"Profil bildirimi testi: HATA - {profil_test_hatasi}")
+    else:
+        try:
+            profil_test_mesaj_id = tek_bildirim_gonder(
+                mesajlasma,
+                "yeni_ilanlar",
+                "Hazine ve Maliye Bakanlığı personel alımı",
+                "Maliye önlisans • Türkiye Geneli • Son başvuru: 31.12.2026",
+                "https://kamu-ilan-api-1.onrender.com/ilanlar",
+                "ilan",
+                ek_veri={
+                    "kurum": "Hazine ve Maliye Bakanlığı",
+                    "ilan_basligi": "Maliye Önlisans Mezunlarına Personel Alımı",
+                    "sehir": "Türkiye Geneli",
+                    "son_basvuru": "31.12.2026",
+                    "minimum_puan": "60",
+                    "mezuniyetler": ["Önlisans"],
+                    "bolumler": ["Maliye"],
+                    "kpss_durumu": "KPSS P93 en az 60 puan",
+                    "kpss_puan_turu": "P93",
+                    "kpss_turu": "KPSS P93 (Önlisans)",
+                },
+            )
+            print(f"Profil bildirimi testi: GÖNDERİLDİ - {profil_test_mesaj_id}")
+        except Exception as profil_test_hatasi:
+            print(
+                "Profil bildirimi testi: HATA - "
+                f"{type(profil_test_hatasi).__name__}: {profil_test_hatasi}"
+            )
+
     otomatik_bildirim_testi = {
         "durum": "kapali",
         "basarili": True,
         "mesaj": "Test bildirimi kapatıldı.",
     }
-    
+
     print(f"Otomatik bildirim testi: {otomatik_bildirim_testi['mesaj']}")
 
     cikti = {
