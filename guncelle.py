@@ -215,7 +215,7 @@ TARIH_DESENI = re.compile(
     r"(?:\s+\d{1,2}:\d{2})?)"
 )
 
-DOSYA_SURUMU = "SAGLAM-PDF-V4-2026-08-02"
+DOSYA_SURUMU = "BILDIRIM-PROFIL-V5-2026-08-02"
 ANALIZ_SURUMU = 4
 MAKSIMUM_PDF_BOYUTU = 30 * 1024 * 1024
 MAKSIMUM_PDF_SAYFASI = 80
@@ -2236,21 +2236,59 @@ def firebase_mesajlasmayi_hazirla():
         return None, f"{type(hata).__name__}: {str(hata)[:180]}"
 
 
-def tek_bildirim_gonder(mesajlasma, konu, baslik, govde, link, tur):
+def _fcm_metin(deger, sinir):
+    if deger is None:
+        return ""
+    if isinstance(deger, (list, tuple, set)):
+        metin = json.dumps(list(deger), ensure_ascii=False)
+    elif isinstance(deger, dict):
+        metin = json.dumps(deger, ensure_ascii=False)
+    elif isinstance(deger, bool):
+        metin = "true" if deger else "false"
+    else:
+        metin = str(deger)
+    return temizle(metin)[:sinir]
+
+
+def tek_bildirim_gonder(
+    mesajlasma,
+    konu,
+    baslik,
+    govde,
+    link,
+    tur,
+    ek_veri=None,
+):
+    # Yalnızca veri mesajı gönderilir. Böylece telefon, profilini yerel olarak
+    # karşılaştırır ve bildirimin gerçek başlığını kendisi oluşturur.
+    veri = {
+        "tur": _fcm_metin(tur, 20),
+        "link": _fcm_metin(link, 900),
+        "bildirim_basligi": _fcm_metin(baslik, 100),
+        "bildirim_govdesi": _fcm_metin(govde, 230),
+    }
+
+    alan_sinirlari = {
+        "kurum": 180,
+        "ilan_basligi": 320,
+        "sehir": 120,
+        "son_basvuru": 50,
+        "minimum_puan": 30,
+        "mezuniyetler": 650,
+        "bolumler": 1000,
+        "kpss_durumu": 450,
+        "kpss_puan_turu": 100,
+        "kpss_turu": 100,
+    }
+    for anahtar, deger in (ek_veri or {}).items():
+        if anahtar in alan_sinirlari:
+            veri[anahtar] = _fcm_metin(deger, alan_sinirlari[anahtar])
+
     mesaj = mesajlasma.Message(
-        notification=mesajlasma.Notification(
-            title=baslik[:100],
-            body=govde[:240],
-        ),
-        data={
-            "tur": tur,
-            "link": (link or "")[:1000],
-        },
+        data=veri,
         android=mesajlasma.AndroidConfig(
             priority="high",
-            notification=mesajlasma.AndroidNotification(
-                channel_id=konu,
-            ),
+            ttl=timedelta(hours=12),
         ),
         topic=konu,
     )
@@ -3451,6 +3489,18 @@ def yeni_kayit_bildirimlerini_gonder(
                 govde,
                 ilan.get("kaynak_sayfa_linki") or ilan.get("link", ""),
                 "ilan",
+                ek_veri={
+                    "kurum": ilan.get("kurum") or ilan.get("kaynak") or "",
+                    "ilan_basligi": ilan.get("baslik") or "",
+                    "sehir": ilan.get("sehir") or "",
+                    "son_basvuru": ilan.get("son_basvuru") or "",
+                    "minimum_puan": ilan.get("minimum_puan") or 0,
+                    "mezuniyetler": ilan.get("mezuniyetler") or [],
+                    "bolumler": ilan.get("bolumler") or [],
+                    "kpss_durumu": ilan.get("kpss_durumu") or "",
+                    "kpss_puan_turu": ilan.get("kpss_puan_turu") or "",
+                    "kpss_turu": ilan.get("kpss_turu") or "",
+                },
             )
             sonuc["gonderilen"] += 1
 
