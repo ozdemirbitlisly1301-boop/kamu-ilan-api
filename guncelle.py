@@ -8,7 +8,7 @@ import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import urlencode, urljoin
+from urllib.parse import urlencode, urljoin, urlparse
 from zoneinfo import ZoneInfo
 
 import requests
@@ -100,6 +100,61 @@ RESMI_DUYURU_KAYNAKLARI = (
         "kaynak_kodu": "msb_tsk",
     },
 )
+
+
+# Üniversite personel ilanları için iki katman kullanılır:
+# 1) ilan.gov.tr merkezi resmî ilan portalı her çalışmada taranır.
+# 2) YÖK'ün resmî üniversite listesinden bulunan .edu.tr siteleri dönüşümlü
+#    olarak taranır. Böylece yaklaşık 200 siteyi her 15 dakikada bir aynı anda
+#    zorlamak yerine, her çalışmada bir grup kontrol edilir.
+UNIVERSITE_MERKEZI_KAYNAKLARI = (
+    {
+        "ad": "ilan.gov.tr Sözleşmeli Personel ve 4/B",
+        "url": (
+            "https://www.ilan.gov.tr/ilan/kategori/725/"
+            "sozlesmeli-personel-ve-4-b-alimlari"
+        ),
+    },
+    {
+        "ad": "ilan.gov.tr Kamu Personel Alım ve Sınavları",
+        "url": (
+            "https://www.ilan.gov.tr/ilan/kategori/44/"
+            "kamu-personel-alim-ve-sinavlari"
+        ),
+    },
+    {
+        "ad": "ilan.gov.tr Akademik Personel",
+        "url": (
+            "https://www.ilan.gov.tr/ilan/kategori/8/"
+            "personel-alimi-akademik-kadro-ve-egitim-ilanlari"
+        ),
+    },
+)
+
+YOK_UNIVERSITE_LISTESI_URLLERI = (
+    "https://www.yok.gov.tr/universiteler/universitelerimiz",
+    "https://yokatlas.yok.gov.tr/",
+)
+
+UNIVERSITE_SITE_GRUP_BOYUTU = 12
+UNIVERSITE_SITE_SAYFA_SINIRI = 5
+UNIVERSITE_ILAN_GOV_SAYFA_SINIRI = 10
+UNIVERSITE_DETAY_SINIRI = 220
+
+UNIVERSITE_LINK_ONCELIK_KELIMELERI = (
+    "personel",
+    "personel daire",
+    "pdb",
+    "duyuru",
+    "duyurular",
+    "ilan",
+    "ilanlar",
+    "akademik",
+    "idari",
+    "sozlesmeli",
+    "is ilan",
+)
+
 
 TURKCE_AYLAR = {
     "ocak": 1,
@@ -215,7 +270,7 @@ TARIH_DESENI = re.compile(
     r"(?:\s+\d{1,2}:\d{2})?)"
 )
 
-DOSYA_SURUMU = "PRODUCTION-V8-2026-08-02"
+DOSYA_SURUMU = "UNIVERSITE-HABERLERI-V10-2026-08-03"
 ANALIZ_SURUMU = 4
 MAKSIMUM_PDF_BOYUTU = 30 * 1024 * 1024
 MAKSIMUM_PDF_SAYFASI = 80
@@ -1814,18 +1869,29 @@ def pdf_metnini_oku(url):
 
 
 def minimum_kpss_puani_bul(normal_metin):
+    """KPSS puan türündeki P3/P93/P94 sayılarını taban puan sanmadan okur."""
     puanlar = []
 
-    for eslesme in re.finditer(r"\bkpss\b", normal_metin):
-        baslangic = max(0, eslesme.start() - 80)
-        bitis = min(len(normal_metin), eslesme.end() + 140)
-        pencere = normal_metin[baslangic:bitis]
+    # P3, P93, P94 gibi puan türleri sayı yakalama desenlerini yanıltmasın.
+    puan_turleri_temiz = re.sub(
+        r"\b(?:kpss\s*[/\-]?\s*)?p\s*\d{1,3}\b",
+        " kpss_puan_turu ",
+        normal_metin,
+    )
+
+    for eslesme in re.finditer(r"\bkpss(?:_puan_turu)?\b", puan_turleri_temiz):
+        baslangic = max(0, eslesme.start() - 100)
+        bitis = min(len(puan_turleri_temiz), eslesme.end() + 220)
+        pencere = puan_turleri_temiz[baslangic:bitis]
 
         desenler = [
             r"(?:en az|minimum|taban)\s*(\d{2,3}(?:[.,]\d+)?)\s*puan",
-            r"(\d{2,3}(?:[.,]\d+)?)\s*(?:ve uzeri\s*)?kpss",
-            r"kpss\s*p\s*\d{1,2}\s*(?:puan(?:indan)?\s*)?(\d{2,3}(?:[.,]\d+)?)",
-            r"kpss[^\d]{0,45}(\d{2,3}(?:[.,]\d+)?)\s*puan",
+            r"(\d{2,3}(?:[.,]\d+)?)\s*(?:puan\s*)?(?:ve|veya)\s*uzeri",
+            r"(\d{2,3}(?:[.,]\d+)?)\s*ve\s*uzeri\s*puan",
+            r"puan(?:indan|indan|turu(?:nden)?)?[^\d]{0,30}"
+            r"(\d{2,3}(?:[.,]\d+)?)\s*(?:ve\s*uzeri\s*)?puan",
+            r"kpss(?:_puan_turu)?[^\d]{0,80}"
+            r"(\d{2,3}(?:[.,]\d+)?)\s*(?:ve\s*uzeri\s*)?puan",
         ]
 
         for desen in desenler:
@@ -2059,6 +2125,698 @@ def ilani_zenginlestir(ilan, onceki_analizler):
     })
 
     return ilan, False
+
+
+
+def universite_ifadesi_var_mi(metin):
+    normal = arama_metnine_cevir(metin)
+    return any(
+        ifade in normal
+        for ifade in (
+            "universite",
+            "yuksek teknoloji enstitusu",
+            "yuksekogretim kurumu",
+        )
+    )
+
+
+def universite_personel_ilani_mi(baslik, detay_metni="", kurum_adi=""):
+    """Üniversiteye ait açık personel alımını sonuç duyurularından ayırır."""
+    birlesik = arama_metnine_cevir(
+        " ".join((baslik or "", detay_metni or "", kurum_adi or ""))
+    )
+
+    if not universite_ifadesi_var_mi(birlesik):
+        return False
+
+    engellenenler = (
+        "basvuru sonucu",
+        "basvuru sonuclari",
+        "sinav sonucu",
+        "sinav sonuclari",
+        "on degerlendirme sonucu",
+        "on degerlendirme sonuclari",
+        "nihai degerlendirme sonucu",
+        "nihai degerlendirme sonuclari",
+        "yerlestirme sonucu",
+        "yerlestirme sonuclari",
+        "mulakat sonucu",
+        "mulakat sonuclari",
+        "sozlu sinav sonucu",
+        "sozlu sinav sonuclari",
+        "kazanan aday",
+        "yedek aday",
+        "atamaya hak kazanan",
+        "evrak teslim",
+        "belge teslim",
+        "duzeltme ilani",
+        "iptal ilani",
+        "ilan iptali",
+    )
+    if any(ifade in birlesik for ifade in engellenenler):
+        return False
+
+    alim_ifadeleri = (
+        "personel alim",
+        "personel alimi",
+        "personel alinacaktir",
+        "sozlesmeli personel",
+        "4/b personel",
+        "4-b personel",
+        "surekli isci",
+        "gecici isci",
+        "isci alim",
+        "memur alim",
+        "akademik personel",
+        "ogretim uyesi alim",
+        "ogretim elemani alim",
+        "ogretim gorevlisi alim",
+        "arastirma gorevlisi alim",
+        "profesor alinacaktir",
+        "docent alinacaktir",
+        "doktor ogretim uyesi",
+        "uzman alim",
+        "kariyer kapisi",
+        "kamu ise alim",
+    )
+    return any(ifade in birlesik for ifade in alim_ifadeleri)
+
+
+def universite_personel_haberi_mi(baslik, detay_metni="", kurum_adi=""):
+    """Üniversitelerin personel alımıyla ilgili sonuç ve süreç duyurularını seçer.
+
+    Öğrenci kayıt/yerleştirme sonuçlarının yanlışlıkla Haberler'e girmemesi için
+    hem sonuç/süreç ifadesi hem de personel-kadro bağlamı aranır.
+    """
+    birlesik = arama_metnine_cevir(
+        " ".join((baslik or "", detay_metni or "", kurum_adi or ""))
+    )
+
+    haber_ifadeleri = (
+        "basvuru sonucu",
+        "basvuru sonuclari",
+        "basvuru degerlendirme sonucu",
+        "basvuru degerlendirme sonuclari",
+        "on degerlendirme sonucu",
+        "on degerlendirme sonuclari",
+        "nihai degerlendirme sonucu",
+        "nihai degerlendirme sonuclari",
+        "sinav sonucu",
+        "sinav sonuclari",
+        "yazili sinav",
+        "sozlu sinav",
+        "uygulamali sinav",
+        "mulakat",
+        "yerlestirme sonucu",
+        "yerlestirme sonuclari",
+        "asil aday",
+        "yedek aday",
+        "kazanan aday",
+        "atamaya hak kazanan",
+        "atama sonucu",
+        "atama sonuclari",
+        "evrak teslim",
+        "belge teslim",
+        "goreve baslama",
+        "duzeltme ilani",
+        "duzeltme duyurusu",
+        "iptal ilani",
+        "ilan iptali",
+    )
+    if not any(ifade in birlesik for ifade in haber_ifadeleri):
+        return False
+
+    personel_baglamlari = (
+        "personel",
+        "personel daire",
+        "/pdb",
+        "pdb/",
+        "sozlesmeli",
+        "4/b",
+        "4-b",
+        "surekli isci",
+        "gecici isci",
+        "isci alim",
+        "memur alim",
+        "akademik personel",
+        "ogretim uyesi",
+        "ogretim elemani",
+        "ogretim gorevlisi",
+        "arastirma gorevlisi",
+        "profesor",
+        "docent",
+        "doktor ogretim uyesi",
+        "kadro",
+        "atamaya hak kazanan",
+        "ise alim",
+    )
+    return any(ifade in birlesik for ifade in personel_baglamlari)
+
+
+def universite_haber_kategorisi_bul(metin):
+    normal = arama_metnine_cevir(metin)
+    if "ilan iptali" in normal or "iptal ilani" in normal:
+        return "İptal"
+    if "duzeltme" in normal:
+        return "Düzeltme"
+    if "belge teslim" in normal or "evrak teslim" in normal or "goreve baslama" in normal:
+        return "Belge Teslimi"
+    if "nihai degerlendirme" in normal:
+        return "Nihai Değerlendirme"
+    if "on degerlendirme" in normal:
+        return "Ön Değerlendirme"
+    if "mulakat" in normal or "sozlu sinav" in normal:
+        return "Mülakat"
+    if "yazili sinav" in normal or "uygulamali sinav" in normal or "sinav sonuc" in normal:
+        return "Sınav Sonucu"
+    if "atama" in normal or "asil aday" in normal or "yedek aday" in normal or "kazanan aday" in normal:
+        return "Atama"
+    if "yerlestirme" in normal:
+        return "Yerleştirme"
+    return "Sonuç"
+
+
+def universite_haber_kaydi_olustur(
+    link,
+    baslik,
+    kurum,
+    kapsayici_metni="",
+    kaynak="Üniversite Personel Haberleri",
+):
+    yayin_tarihi = tarih_bul(kapsayici_metni) or tarih_bul(baslik)
+    kategori = universite_haber_kategorisi_bul(
+        f"{baslik} {kapsayici_metni[:800]}"
+    )
+    return {
+        "id": ilan_id_uret(link),
+        "baslik": baslik_temizle(baslik)[:400],
+        "kurum": temizle(kurum)[:180] or "Üniversite",
+        "kategori": kategori,
+        "yayin_tarihi": yayin_tarihi,
+        "kaynak": kaynak,
+        "kaynak_kodu": "universite_personel_haber",
+        "ozet": (
+            f"{temizle(kurum) or 'Üniversite'} tarafından yayımlanan resmî "
+            f"personel {kategori.casefold()} duyurusu."
+        ),
+        "link": link,
+    }
+
+
+def universite_ilan_turu_bul(metin):
+    normal = arama_metnine_cevir(metin)
+    if any(
+        ifade in normal
+        for ifade in (
+            "ogretim uyesi",
+            "ogretim elemani",
+            "ogretim gorevlisi",
+            "arastirma gorevlisi",
+            "profesor",
+            "docent",
+            "akademik personel",
+        )
+    ):
+        return "Akademik Personel"
+    if "surekli isci" in normal or "isci alim" in normal:
+        return "İşçi"
+    if "sozlesmeli personel" in normal or "4/b" in normal or "4-b" in normal:
+        return "Sözleşmeli Personel"
+    return "Üniversite Personel Alımı"
+
+
+def universite_kurum_adi_bul(baslik, metin, varsayilan=""):
+    aday_metin = temizle(f"{baslik} {metin[:1200]}")
+    eslesme = re.search(
+        r"([A-ZÇĞİÖŞÜa-zçğıöşü0-9 .'-]{3,120}?"
+        r"(?:Üniversitesi|Yüksek Teknoloji Enstitüsü))"
+        r"(?:\s+Rektörlüğünden|\s+Rektörlüğü|\s*[:\-]|\s*$)",
+        aday_metin,
+        flags=re.IGNORECASE,
+    )
+    if eslesme:
+        return baslik_temizle(eslesme.group(1))[:180]
+    return temizle(varsayilan)[:180] or "Üniversite"
+
+
+def universite_sehir_bul(metin, kurum=""):
+    # ilan.gov.tr ayrıntı alanındaki şehir değerini önce yakala.
+    eslesme = re.search(
+        r"Şehir\s+([A-ZÇĞİÖŞÜ ]{2,35}?)\s+(?:İlan Türü|Resm[iî] Gazete|Yayın)",
+        metin,
+        flags=re.IGNORECASE,
+    )
+    if eslesme:
+        aday_ham = temizle(eslesme.group(1))
+        aday_normal = arama_metnine_cevir(aday_ham)
+        for kod, ad in SEHIRLER:
+            if aday_normal == kod or re.search(rf"\b{re.escape(kod)}\b", aday_normal):
+                return ad
+        if len(aday_ham) <= 35:
+            return aday_ham
+
+    normal = arama_metnine_cevir(f"{kurum} {metin[:800]}")
+    for kod, ad in SEHIRLER:
+        if re.search(rf"\b{re.escape(kod)}\b", normal):
+            return ad
+    return "Türkiye Geneli"
+
+
+def universite_yayin_tarihi_bul(metin):
+    eslesme = re.search(
+        r"Resm[iî]\s+Gazete\s+Yay[ıi]m\s+Tarihi\s*[:\-]?\s*"
+        r"(\d{1,2}[./-]\d{1,2}[./-]\d{4})",
+        metin,
+        flags=re.IGNORECASE,
+    )
+    if eslesme:
+        return eslesme.group(1)
+    return yayin_tarihi_bul(metin)
+
+
+def universite_detayindan_ilan_olustur(
+    link,
+    baslik_ipucu="",
+    kurum_ipucu="",
+    kaynak="Üniversite Resmî Duyuruları",
+):
+    html = sayfayi_indir(link)
+    soup = BeautifulSoup(html, "html.parser")
+
+    for etiket in soup(["script", "style", "noscript", "svg"]):
+        etiket.decompose()
+
+    sayfa_basligi = ""
+    og_baslik = soup.find("meta", attrs={"property": "og:title"})
+    if og_baslik and og_baslik.get("content"):
+        sayfa_basligi = temizle(og_baslik.get("content"))
+    if not sayfa_basligi and soup.find("h1"):
+        sayfa_basligi = temizle(soup.find("h1").get_text(" ", strip=True))
+    if not sayfa_basligi and soup.title:
+        sayfa_basligi = temizle(soup.title.get_text(" ", strip=True))
+
+    baslik = baslik_temizle(sayfa_basligi or baslik_ipucu)
+    detay_metni = temizle(soup.get_text(" ", strip=True))
+    kurum = universite_kurum_adi_bul(baslik, detay_metni, kurum_ipucu)
+
+    if not universite_personel_ilani_mi(baslik, detay_metni, kurum):
+        return None
+
+    belge_linki = ilan_belgesi_linki_bul(soup, link)
+    basvuru_online, basvuru_linki, basvuru_aciklamasi = basvuru_bilgisi_bul(
+        detay_metni,
+        soup=soup,
+        temel_url=link,
+    )
+    yayin_tarihi = universite_yayin_tarihi_bul(detay_metni)
+    son_basvuru = son_basvuru_tarihi_bul(detay_metni)
+    kpss_gerekli, minimum_puan, kpss_durumu = kpss_bilgisi_bul(
+        detay_metni,
+        "ok",
+    )
+
+    # Ayrıntılı şartlar HTML içinde varsa doğrudan kullan. Sayfa sadece kısa
+    # bir PDF bağlantısı içeriyorsa mevcut PDF analiz aşaması belgeyi okuyacak.
+    html_yeterli = len(detay_metni) >= 900 and any(
+        ifade in arama_metnine_cevir(detay_metni)
+        for ifade in ("kpss", "aranan sart", "genel sart", "basvuru")
+    )
+
+    return {
+        "id": ilan_id_uret(link),
+        "baslik": baslik[:400],
+        "kurum": kurum,
+        "sehir": universite_sehir_bul(detay_metni, kurum),
+        "tur": universite_ilan_turu_bul(f"{baslik} {detay_metni[:1500]}"),
+        "kaynak": kaynak,
+        "kaynak_kodu": "universite_personel",
+        "son_basvuru": son_basvuru,
+        "yayin_tarihi": yayin_tarihi,
+        "link": link,
+        "belge_linki": belge_linki,
+        "kaynak_sayfa_linki": link,
+        "basvuru_linki": basvuru_linki,
+        "basvuru_online": basvuru_online,
+        "basvuru_aciklamasi": basvuru_aciklamasi,
+        "kpss_gerekli": kpss_gerekli,
+        "minimum_puan": minimum_puan,
+        "kpss_durumu": kpss_durumu,
+        "mezuniyetler": mezuniyetleri_bul(detay_metni),
+        "bolumler": bolumleri_bul(detay_metni),
+        "pdf_isleme_durumu": "html_ok" if html_yeterli or not belge_linki else "bekliyor",
+        "analiz_surumu": ANALIZ_SURUMU,
+    }
+
+
+def _ilan_gov_tr_ilan_linki_mi(link):
+    ayrik = urlparse(link)
+    host = ayrik.netloc.casefold().removeprefix("www.")
+    return host == "ilan.gov.tr" and re.match(r"^/ilan/\d+(?:/|$)", ayrik.path) is not None
+
+
+def ilan_gov_tr_sayfasindan_linkleri_bul(html, temel_url):
+    soup = BeautifulSoup(html, "html.parser")
+    bulunanlar = set()
+
+    for etiket in soup.find_all("a", href=True):
+        link = urljoin(temel_url, temizle(etiket.get("href", "")))
+        if _ilan_gov_tr_ilan_linki_mi(link):
+            bulunanlar.add(link.split("#")[0])
+
+    # Bazı sayfalarda ilan kartları JavaScript/JSON içinde tutuluyor.
+    ham = html.decode("utf-8", errors="ignore") if isinstance(html, bytes) else str(html)
+    ham = ham.replace("\\/", "/")
+    for parca in re.findall(r"(?:https?://www\.ilan\.gov\.tr)?(/ilan/\d+(?:/[^\"'<> ]*)?)", ham):
+        link = urljoin("https://www.ilan.gov.tr", parca)
+        if _ilan_gov_tr_ilan_linki_mi(link):
+            bulunanlar.add(link.split("#")[0])
+
+    return bulunanlar
+
+
+def ilan_gov_tr_sitemap_linklerini_bul():
+    """Liste sayfası JS ile boş dönerse sitemap üzerinden ilan bağlantısı bulur."""
+    sitemap_adaylari = {
+        "https://www.ilan.gov.tr/sitemap.xml",
+        "https://www.ilan.gov.tr/sitemap_index.xml",
+    }
+    try:
+        robots = sayfayi_indir("https://www.ilan.gov.tr/robots.txt")
+        robots_metni = robots.decode("utf-8", errors="ignore")
+        sitemap_adaylari.update(
+            temizle(eslesme)
+            for eslesme in re.findall(r"(?im)^Sitemap:\s*(https?://\S+)", robots_metni)
+        )
+    except Exception:
+        pass
+
+    sonuc = set()
+    alt_sitemapler = []
+    for sitemap in list(sitemap_adaylari)[:5]:
+        try:
+            xml = sayfayi_indir(sitemap)
+        except Exception:
+            continue
+        metin = xml.decode("utf-8", errors="ignore")
+        konumlar = re.findall(r"<loc>\s*([^<]+?)\s*</loc>", metin, flags=re.IGNORECASE)
+        for konum in konumlar:
+            konum = konum.replace("&amp;", "&").strip()
+            if _ilan_gov_tr_ilan_linki_mi(konum):
+                sonuc.add(konum.split("#")[0])
+            elif "sitemap" in konum.casefold() and len(alt_sitemapler) < 12:
+                alt_sitemapler.append(konum)
+
+    # En güncel dosyalar genelde adında tarih/sayı taşıdığı için sondan başla.
+    for sitemap in sorted(set(alt_sitemapler), reverse=True)[:6]:
+        try:
+            xml = sayfayi_indir(sitemap)
+        except Exception:
+            continue
+        metin = xml.decode("utf-8", errors="ignore")
+        for konum in re.findall(r"<loc>\s*([^<]+?)\s*</loc>", metin, flags=re.IGNORECASE):
+            konum = konum.replace("&amp;", "&").strip()
+            if _ilan_gov_tr_ilan_linki_mi(konum):
+                sonuc.add(konum.split("#")[0])
+        if len(sonuc) >= UNIVERSITE_DETAY_SINIRI:
+            break
+
+    return sonuc
+
+
+def ilan_gov_tr_universite_ilanlarini_al(onceki_veri=None):
+    linkler = set()
+    hatalar = []
+
+    for kaynak in UNIVERSITE_MERKEZI_KAYNAKLARI:
+        ardisik_bos = 0
+        for sayfa in range(UNIVERSITE_ILAN_GOV_SAYFA_SINIRI):
+            try:
+                html = sayfayi_indir(kaynak["url"], params={"currentPage": sayfa})
+                bulunan = ilan_gov_tr_sayfasindan_linkleri_bul(html, kaynak["url"])
+                yeni = bulunan - linkler
+                linkler.update(bulunan)
+                ardisik_bos = 0 if yeni else ardisik_bos + 1
+                if ardisik_bos >= 2 and sayfa >= 2:
+                    break
+            except Exception as hata:
+                hatalar.append(
+                    f"{kaynak['ad']} sayfa {sayfa}: {type(hata).__name__} - {str(hata)[:120]}"
+                )
+                break
+
+    if not linkler:
+        try:
+            linkler.update(ilan_gov_tr_sitemap_linklerini_bul())
+        except Exception as hata:
+            hatalar.append(f"ilan.gov.tr sitemap: {type(hata).__name__} - {str(hata)[:120]}")
+
+    # İlan numarası yüksek olanlar yeni olduğundan önce onları kontrol et.
+    def ilan_numarasi(link):
+        eslesme = re.search(r"/ilan/(\d+)", link)
+        return int(eslesme.group(1)) if eslesme else 0
+
+    sirali_linkler = sorted(linkler, key=ilan_numarasi, reverse=True)[:UNIVERSITE_DETAY_SINIRI]
+    ilanlar = []
+
+    onceki_harita = {}
+    if isinstance(onceki_veri, dict):
+        for onceki_ilan in onceki_veri.get("ilanlar", []):
+            if onceki_ilan.get("kaynak_kodu") != "universite_personel":
+                continue
+            anahtar = link_anahtari(onceki_ilan.get("link", ""))
+            if anahtar and ilan_aktif_mi(onceki_ilan):
+                onceki_harita[anahtar] = onceki_ilan
+
+    yeni_linkler = []
+    for link in sirali_linkler:
+        onceki = onceki_harita.get(link_anahtari(link))
+        if onceki:
+            ilanlar.append(onceki)
+        else:
+            yeni_linkler.append(link)
+
+    with ThreadPoolExecutor(max_workers=6) as havuz:
+        futures = {
+            havuz.submit(
+                universite_detayindan_ilan_olustur,
+                link,
+                "",
+                "",
+                "ilan.gov.tr Üniversite Personel İlanları",
+            ): link
+            for link in yeni_linkler
+        }
+        for future in as_completed(futures):
+            link = futures[future]
+            try:
+                ilan = future.result()
+                if ilan:
+                    ilanlar.append(ilan)
+            except Exception as hata:
+                hatalar.append(
+                    f"ilan.gov.tr detay {link}: {type(hata).__name__} - {str(hata)[:100]}"
+                )
+
+    return ilanlar, hatalar, len(sirali_linkler)
+
+
+def yoktan_universite_sitelerini_al(onceki_veri):
+    siteler = {}
+    hatalar = []
+
+    for url in YOK_UNIVERSITE_LISTESI_URLLERI:
+        try:
+            html = sayfayi_indir(url)
+            soup = BeautifulSoup(html, "html.parser")
+        except Exception as hata:
+            hatalar.append(f"YÖK üniversite listesi: {type(hata).__name__} - {str(hata)[:120]}")
+            continue
+
+        for etiket in soup.find_all("a", href=True):
+            link = urljoin(url, temizle(etiket.get("href", "")))
+            ayrik = urlparse(link)
+            host = ayrik.netloc.casefold().removeprefix("www.")
+            if not host.endswith(".edu.tr"):
+                continue
+
+            ad = temizle(etiket.get_text(" ", strip=True))
+            if not universite_ifadesi_var_mi(ad):
+                kapsayici = etiket.find_parent(["li", "tr", "div", "article"])
+                if kapsayici is not None:
+                    ad = temizle(kapsayici.get_text(" ", strip=True))
+            if not universite_ifadesi_var_mi(ad):
+                ad = host.split(".")[0].replace("-", " ").title() + " Üniversitesi"
+
+            siteler[host] = {
+                "ad": ad[:180],
+                "url": f"{ayrik.scheme or 'https'}://{ayrik.netloc}/",
+            }
+
+    # YÖK sayfası geçici hata verirse daha önce keşfedilen resmî siteleri koru.
+    onceki_siteler = onceki_veri.get("universite_kaynaklari", []) if isinstance(onceki_veri, dict) else []
+    for kayit in onceki_siteler:
+        if not isinstance(kayit, dict):
+            continue
+        link = temizle(kayit.get("url", ""))
+        host = urlparse(link).netloc.casefold().removeprefix("www.")
+        if host.endswith(".edu.tr"):
+            siteler.setdefault(host, {"ad": temizle(kayit.get("ad", "")), "url": link})
+
+    return sorted(siteler.values(), key=lambda x: arama_metnine_cevir(x.get("ad", ""))), hatalar
+
+
+def _edu_tr_kok_alani(host):
+    host = temizle(host).casefold().removeprefix("www.")
+    parcalar = [parca for parca in host.split(".") if parca]
+    if len(parcalar) >= 3 and parcalar[-2:] == ["edu", "tr"]:
+        return ".".join(parcalar[-3:])
+    return host
+
+
+def universite_ana_sayfasindan_aday_sayfalari_bul(html, ana_url):
+    soup = BeautifulSoup(html, "html.parser")
+    ana_host = urlparse(ana_url).netloc.casefold().removeprefix("www.")
+    ana_kok = _edu_tr_kok_alani(ana_host)
+    puanli = []
+
+    for etiket in soup.find_all("a", href=True):
+        href = temizle(etiket.get("href", ""))
+        link = urljoin(ana_url, href)
+        ayrik = urlparse(link)
+        host = ayrik.netloc.casefold().removeprefix("www.")
+        # Personel Daire Başkanlığı çoğu üniversitede personel.univ.edu.tr gibi
+        # ayrı bir alt alan adında çalışır. Aynı üniversitenin alt alanlarına izin ver.
+        if _edu_tr_kok_alani(host) != ana_kok or ayrik.scheme not in ("http", "https"):
+            continue
+
+        metin = arama_metnine_cevir(
+            f"{etiket.get_text(' ', strip=True)} {ayrik.path}"
+        )
+        puan = sum(1 for kelime in UNIVERSITE_LINK_ONCELIK_KELIMELERI if kelime in metin)
+        if puan:
+            puanli.append((puan, link.split("#")[0]))
+
+    puanli.sort(key=lambda x: (-x[0], len(x[1])))
+    sonuc = [ana_url]
+    for _, link in puanli:
+        if link not in sonuc:
+            sonuc.append(link)
+        if len(sonuc) >= UNIVERSITE_SITE_SAYFA_SINIRI:
+            break
+    return sonuc
+
+
+def universite_sitesinden_ilanlari_al(kaynak):
+    ana_url = kaynak.get("url", "")
+    kurum = kaynak.get("ad", "Üniversite")
+    ilan_adaylari = {}
+    haber_adaylari = {}
+    hatalar = []
+
+    try:
+        ana_html = sayfayi_indir(ana_url)
+        sayfalar = universite_ana_sayfasindan_aday_sayfalari_bul(ana_html, ana_url)
+    except Exception as hata:
+        return [], [], [f"{kurum}: {type(hata).__name__} - {str(hata)[:120]}"]
+
+    for sayfa_url in sayfalar:
+        try:
+            html = ana_html if sayfa_url == ana_url else sayfayi_indir(sayfa_url)
+            soup = BeautifulSoup(html, "html.parser")
+        except Exception as hata:
+            hatalar.append(f"{kurum} sayfa: {type(hata).__name__} - {str(hata)[:100]}")
+            continue
+
+        for etiket in soup.find_all("a", href=True):
+            baslik = temizle(etiket.get_text(" ", strip=True))
+            if len(baslik) < 8:
+                continue
+
+            link = urljoin(sayfa_url, temizle(etiket.get("href", "")))
+            ayrik = urlparse(link)
+            if ayrik.scheme not in ("http", "https"):
+                continue
+            link = link.split("#")[0]
+
+            kapsayici = etiket.find_parent(["li", "article", "tr", "div"])
+            kapsayici_metni = temizle(
+                kapsayici.get_text(" ", strip=True)
+            ) if kapsayici else baslik
+            baglam = f"{sayfa_url} {kapsayici_metni}"
+
+            if universite_personel_ilani_mi(baslik, baglam, kurum):
+                ilan_adaylari[link] = baslik
+            elif universite_personel_haberi_mi(baslik, baglam, kurum):
+                haber_adaylari[link] = (baslik, kapsayici_metni)
+
+            if len(ilan_adaylari) >= 25 and len(haber_adaylari) >= 40:
+                break
+
+    ilanlar = []
+    for link, baslik in list(ilan_adaylari.items())[:25]:
+        try:
+            ilan = universite_detayindan_ilan_olustur(
+                link,
+                baslik,
+                kurum,
+                "Üniversite Resmî Duyuruları",
+            )
+            if ilan:
+                ilanlar.append(ilan)
+        except Exception as hata:
+            hatalar.append(f"{kurum} ilan detayı: {type(hata).__name__} - {str(hata)[:100]}")
+
+    haberler = [
+        universite_haber_kaydi_olustur(
+            link,
+            baslik,
+            kurum,
+            kapsayici_metni,
+        )
+        for link, (baslik, kapsayici_metni) in list(haber_adaylari.items())[:40]
+    ]
+
+    return ilanlar, haberler, hatalar
+
+
+def universite_resmi_sitelerini_donusumlu_tara(onceki_veri):
+    siteler, hatalar = yoktan_universite_sitelerini_al(onceki_veri)
+    if not siteler:
+        return [], [], siteler, 0, hatalar, 0
+
+    baslangic = 0
+    try:
+        baslangic = int(onceki_veri.get("universite_tarama_sirasi", 0)) % len(siteler)
+    except Exception:
+        baslangic = 0
+
+    secilenler = [
+        siteler[(baslangic + sira) % len(siteler)]
+        for sira in range(min(UNIVERSITE_SITE_GRUP_BOYUTU, len(siteler)))
+    ]
+    sonraki = (baslangic + len(secilenler)) % len(siteler)
+    ilanlar = []
+    haberler = []
+
+    with ThreadPoolExecutor(max_workers=5) as havuz:
+        futures = {
+            havuz.submit(universite_sitesinden_ilanlari_al, kaynak): kaynak
+            for kaynak in secilenler
+        }
+        for future in as_completed(futures):
+            kaynak = futures[future]
+            try:
+                bulunan_ilanlar, bulunan_haberler, kaynak_hatalari = future.result()
+                ilanlar.extend(bulunan_ilanlar)
+                haberler.extend(bulunan_haberler)
+                hatalar.extend(kaynak_hatalari)
+            except Exception as hata:
+                hatalar.append(
+                    f"{kaynak.get('ad', 'Üniversite')}: {type(hata).__name__} - {str(hata)[:120]}"
+                )
+
+    return ilanlar, haberler, siteler, sonraki, hatalar, len(secilenler)
+
 
 
 TURKIYE_SAATI = ZoneInfo("Europe/Istanbul")
@@ -3648,9 +4406,88 @@ def main():
         except Exception as hata:
             hatalar.append(f"{resmi_kaynak['kaynak']}: {type(hata).__name__} - {str(hata)[:150]}")
 
+    # Türkiye'deki üniversite personel ilanları: merkezi resmî portal her
+    # çalışmada, üniversitelerin resmî .edu.tr siteleri ise dönüşümlü taranır.
+    universite_kaynaklari = []
+    universite_tarama_sirasi = 0
+    universite_tarama_ozeti = {
+        "merkezi_kontrol_edilen_link": 0,
+        "merkezi_bulunan_ilan": 0,
+        "resmi_site_sayisi": 0,
+        "bu_calismada_taranan_site": 0,
+        "resmi_siteden_bulunan_ilan": 0,
+        "resmi_siteden_bulunan_haber": 0,
+    }
+
+    try:
+        merkezi_universite_ilanlari, merkezi_hatalar, kontrol_edilen = (
+            ilan_gov_tr_universite_ilanlarini_al(onceki_veri)
+        )
+        tum_ilanlar.extend(merkezi_universite_ilanlari)
+        hatalar.extend(merkezi_hatalar)
+        kaynak_sayilari["ilan.gov.tr Üniversite Personel İlanları"] = len(
+            merkezi_universite_ilanlari
+        )
+        universite_tarama_ozeti["merkezi_kontrol_edilen_link"] = kontrol_edilen
+        universite_tarama_ozeti["merkezi_bulunan_ilan"] = len(merkezi_universite_ilanlari)
+        print(
+            "ilan.gov.tr üniversite personel ilanları: "
+            f"{len(merkezi_universite_ilanlari)} "
+            f"(kontrol edilen bağlantı: {kontrol_edilen})"
+        )
+    except Exception as hata:
+        hatalar.append(
+            f"ilan.gov.tr üniversite ilanları: {type(hata).__name__} - {str(hata)[:150]}"
+        )
+
+    try:
+        (
+            site_universite_ilanlari,
+            site_universite_haberleri,
+            universite_kaynaklari,
+            universite_tarama_sirasi,
+            site_hatalari,
+            taranan_site_sayisi,
+        ) = universite_resmi_sitelerini_donusumlu_tara(onceki_veri)
+        tum_ilanlar.extend(site_universite_ilanlari)
+        tum_haberler.extend(site_universite_haberleri)
+        hatalar.extend(site_hatalari)
+        kaynak_sayilari["Üniversite Resmî Duyuruları"] = len(site_universite_ilanlari)
+        kaynak_sayilari["Üniversite Personel Haberleri"] = len(site_universite_haberleri)
+        universite_tarama_ozeti["resmi_site_sayisi"] = len(universite_kaynaklari)
+        universite_tarama_ozeti["bu_calismada_taranan_site"] = taranan_site_sayisi
+        universite_tarama_ozeti["resmi_siteden_bulunan_ilan"] = len(site_universite_ilanlari)
+        universite_tarama_ozeti["resmi_siteden_bulunan_haber"] = len(site_universite_haberleri)
+        print(
+            "Üniversite resmî siteleri: "
+            f"{taranan_site_sayisi}/{len(universite_kaynaklari)} tarandı, "
+            f"{len(site_universite_ilanlari)} ilan ve "
+            f"{len(site_universite_haberleri)} personel haberi bulundu"
+        )
+    except Exception as hata:
+        hatalar.append(
+            f"Üniversite resmî siteleri: {type(hata).__name__} - {str(hata)[:150]}"
+        )
+
     # Kaynak geçici hata verdiğinde uygulamanın tamamen boşalmaması için önceki
     # aktif veriyi güvenlik ağı olarak koru. Yeni kayıtlar her zaman önceliklidir.
     onceki_ilanlar = onceki_veri.get("ilanlar", []) if isinstance(onceki_veri, dict) else []
+    yeni_universite_sayisi = sum(
+        1 for ilan in tum_ilanlar if ilan.get("kaynak_kodu") == "universite_personel"
+    )
+    if yeni_universite_sayisi == 0:
+        onceki_universite_ilanlari = [
+            ilan
+            for ilan in onceki_ilanlar
+            if ilan.get("kaynak_kodu") == "universite_personel"
+            and ilan_aktif_mi(ilan)
+        ]
+        if onceki_universite_ilanlari:
+            print(
+                "UYARI: Üniversite kaynakları geçici olarak boş döndü; "
+                f"önceki {len(onceki_universite_ilanlari)} aktif üniversite ilanı korunuyor."
+            )
+            tum_ilanlar.extend(onceki_universite_ilanlari)
     if len(tum_ilanlar) < max(25, int(len(onceki_ilanlar) * 0.35)):
         print("UYARI: Yeni ilan sayısı olağandışı düşük; önceki aktif ilanlar birleştiriliyor.")
         tum_ilanlar.extend(onceki_ilanlar)
@@ -3732,6 +4569,9 @@ def main():
         "haber_sayisi": len(haberler),
         "haberler": haberler,
         "kaynak_sayilari": kaynak_sayilari,
+        "universite_kaynaklari": universite_kaynaklari,
+        "universite_tarama_sirasi": universite_tarama_sirasi,
+        "universite_tarama_ozeti": universite_tarama_ozeti,
         "bildirim_sonucu": bildirim_sonucu,
         "hata_sayisi": len(hatalar),
         "pdf_hata_sayisi": pdf_hatalari,
