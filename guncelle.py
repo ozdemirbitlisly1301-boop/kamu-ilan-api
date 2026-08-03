@@ -8,7 +8,7 @@ import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import urlencode, urljoin, urlparse
+from urllib.parse import urlencode, urljoin
 from zoneinfo import ZoneInfo
 
 import requests
@@ -45,6 +45,9 @@ KAYNAKLAR = [
 
 OSYM_ARAMA_URL = "https://www.osym.gov.tr/arama"
 OSYM_DUYURULAR_URL = "https://www.osym.gov.tr/Duyurular/Index"
+
+KARIYER_KAPISI_URL = "https://kariyerkapisi.gov.tr/isealim"
+KARIYER_KAPISI_KAYNAK = "Kariyer Kapısı Aktif İlanlar"
 OSYM_ARAMA_TERIMLERI = (
     "kpss tercih",
     "kpss yerleştirme",
@@ -100,61 +103,6 @@ RESMI_DUYURU_KAYNAKLARI = (
         "kaynak_kodu": "msb_tsk",
     },
 )
-
-
-# Üniversite personel ilanları için iki katman kullanılır:
-# 1) ilan.gov.tr merkezi resmî ilan portalı her çalışmada taranır.
-# 2) YÖK'ün resmî üniversite listesinden bulunan .edu.tr siteleri dönüşümlü
-#    olarak taranır. Böylece yaklaşık 200 siteyi her 15 dakikada bir aynı anda
-#    zorlamak yerine, her çalışmada bir grup kontrol edilir.
-UNIVERSITE_MERKEZI_KAYNAKLARI = (
-    {
-        "ad": "ilan.gov.tr Sözleşmeli Personel ve 4/B",
-        "url": (
-            "https://www.ilan.gov.tr/ilan/kategori/725/"
-            "sozlesmeli-personel-ve-4-b-alimlari"
-        ),
-    },
-    {
-        "ad": "ilan.gov.tr Kamu Personel Alım ve Sınavları",
-        "url": (
-            "https://www.ilan.gov.tr/ilan/kategori/44/"
-            "kamu-personel-alim-ve-sinavlari"
-        ),
-    },
-    {
-        "ad": "ilan.gov.tr Akademik Personel",
-        "url": (
-            "https://www.ilan.gov.tr/ilan/kategori/8/"
-            "personel-alimi-akademik-kadro-ve-egitim-ilanlari"
-        ),
-    },
-)
-
-YOK_UNIVERSITE_LISTESI_URLLERI = (
-    "https://www.yok.gov.tr/universiteler/universitelerimiz",
-    "https://yokatlas.yok.gov.tr/",
-)
-
-UNIVERSITE_SITE_GRUP_BOYUTU = 12
-UNIVERSITE_SITE_SAYFA_SINIRI = 5
-UNIVERSITE_ILAN_GOV_SAYFA_SINIRI = 10
-UNIVERSITE_DETAY_SINIRI = 220
-
-UNIVERSITE_LINK_ONCELIK_KELIMELERI = (
-    "personel",
-    "personel daire",
-    "pdb",
-    "duyuru",
-    "duyurular",
-    "ilan",
-    "ilanlar",
-    "akademik",
-    "idari",
-    "sozlesmeli",
-    "is ilan",
-)
-
 
 TURKCE_AYLAR = {
     "ocak": 1,
@@ -270,10 +218,9 @@ TARIH_DESENI = re.compile(
     r"(?:\s+\d{1,2}:\d{2})?)"
 )
 
-DOSYA_SURUMU = "UNIVERSITE-HABERLERI-V10-2026-08-03"
-ANALIZ_SURUMU = 4
+ANALIZ_SURUMU = 2
 MAKSIMUM_PDF_BOYUTU = 30 * 1024 * 1024
-MAKSIMUM_PDF_SAYFASI = 80
+MAKSIMUM_PDF_SAYFASI = 40
 
 
 TR_CEVIRI = str.maketrans({
@@ -1133,23 +1080,17 @@ def yayin_tarihi_bul(metin):
     return ""
 
 
-
 def son_basvuru_tarihi_bul(metin):
-    """Başvuru bölümündeki en ileri tarihi son başvuru olarak seçer."""
+    """Başvuru cümlelerindeki en ileri tarihi son başvuru olarak seçer."""
     normal = arama_metnine_cevir(metin)
     aday_tarihler = []
 
     anahtarlar = (
         "son basvuru",
-        "son muracaat",
-        "basvuru bitis",
-        "basvurunun son gunu",
-        "basvurularin son gunu",
         "basvurular",
         "basvuru tarih",
         "basvurularini",
         "basvuru suresi",
-        "muracaat tarih",
         "tercih islemleri",
         "tercih suresi",
         "tercih tarih",
@@ -1157,8 +1098,6 @@ def son_basvuru_tarihi_bul(metin):
         "son tarih",
         "kadar uzatil",
         "suresinin uzatil",
-        "sona erecektir",
-        "sona erer",
     )
 
     for anahtar in anahtarlar:
@@ -1168,9 +1107,7 @@ def son_basvuru_tarihi_bul(metin):
             if konum < 0:
                 break
 
-            # Başlangıç ve bitiş tarihleri aynı cümlede olabildiği için geniş
-            # bir pencere kullanıp en ileri tarihi seçiyoruz.
-            pencere = normal[max(0, konum - 120):konum + 520]
+            pencere = normal[max(0, konum - 80):konum + 350]
             aday_tarihler.extend(turkce_tarihleri_bul(pencere))
             baslangic = konum + len(anahtar)
 
@@ -1197,46 +1134,24 @@ BILINEN_BASVURU_ADRESLERI = {
 
 ONLINE_BASVURU_IFADELERI = (
     "online basvuru",
-    "cevrimici basvuru",
     "elektronik ortamda",
-    "elektronik olarak",
     "internet uzerinden",
     "e-devlet uzerinden",
-    "e devlet uzerinden",
-    "e-devlet kapisi uzerinden",
-    "e devlet kapisi uzerinden",
     "kariyer kapisi",
-    "kamu ise alim platformu",
     "basvuru adresi",
     "basvuru ekrani",
-    "yalnizca elektronik",
-    "sadece elektronik",
 )
 
-# Bu ifadeler fiziksel başvurunun reddedildiğini, dolayısıyla başvurunun
-# online olduğunu gösterir.
-SAHSEN_POSTA_KABUL_EDILMEZ_IFADELERI = (
-    "sahsen veya posta yoluyla yapilan basvurular kabul edilmeyecektir",
-    "sahsen ve posta yoluyla yapilan basvurular kabul edilmeyecektir",
-    "sahsen ya da posta yoluyla yapilan basvurular kabul edilmeyecektir",
-    "sahsen veya posta ile yapilan basvurular kabul edilmeyecektir",
-    "sahsen ve posta ile yapilan basvurular kabul edilmeyecektir",
-    "sahsen veya posta yoluyla basvuru kabul edilmeyecektir",
-    "sahsen basvuru kabul edilmeyecektir",
-    "posta yoluyla basvuru kabul edilmeyecektir",
-    "elden basvuru kabul edilmeyecektir",
-)
-
-# Yalnızca gerçekten fiziksel başvuru tarif eden kesin ifadeler.
 ONLINE_OLMAYAN_BASVURU_IFADELERI = (
-    "basvurular sahsen yapilacaktir",
-    "basvurular sahsen alinacaktir",
-    "sahsen muracaat edilecektir",
-    "elden teslim edilecektir",
-    "posta yoluyla gonderilecektir",
-    "kargo yoluyla gonderilecektir",
-    "kuruma sahsen teslim",
-    "basvuru formu ile birlikte kuruma teslim",
+    "sahsen basvuru",
+    "basvurular sahsen",
+    "sahsen yapil",
+    "sahsen muracaat",
+    "elden basvuru",
+    "posta yoluyla",
+    "kargo yoluyla",
+    "kuruma teslim",
+    "basvuru formu ile birlikte",
 )
 
 
@@ -1302,6 +1217,7 @@ def html_basvuru_linki_bul(soup, temel_url):
         if any(
             domain in normal_link
             for domain in (
+                "kariyerkapisi.gov.tr",
                 "isealimkariyerkapisi.cbiko.gov.tr",
                 "kariyerkapisi.cbiko.gov.tr",
                 "ais.osym.gov.tr",
@@ -1354,10 +1270,7 @@ def metinden_basvuru_linki_bul(metin):
     return ""
 
 
-
 def basvuru_bilgisi_bul(metin, soup=None, temel_url=""):
-    metin = temizle(metin)
-    normal = arama_metnine_cevir(metin)
     link = ""
 
     if soup is not None:
@@ -1366,52 +1279,32 @@ def basvuru_bilgisi_bul(metin, soup=None, temel_url=""):
     if not link:
         link = metinden_basvuru_linki_bul(metin)
 
-    online_ifadesi_var = any(
-        ifade in normal for ifade in ONLINE_BASVURU_IFADELERI
-    )
-    fiziksel_reddedilmis = any(
-        ifade in normal for ifade in SAHSEN_POSTA_KABUL_EDILMEZ_IFADELERI
-    )
+    if link:
+        return True, link, "Başvurular online olarak yapılmaktadır."
 
-    # Açık platform adı yazıyor fakat PDF'de URL parçalanmışsa güvenli ana
-    # başvuru adresini kullan.
-    if not link and "kariyer kapisi" in normal:
-        link = "https://kariyerkapisi.gov.tr/isealim"
-    elif not link and any(
-        ifade in normal
-        for ifade in ("e-devlet", "e devlet", "turkiye.gov.tr")
-    ):
-        link = "https://www.turkiye.gov.tr"
-
-    if link or online_ifadesi_var or fiziksel_reddedilmis:
-        if not link and temel_url:
-            aday = guvenli_web_linki(temel_url, temel_url)
-            if aday:
-                link = aday
-
-        aciklama = "Başvurular online olarak yapılmaktadır."
-        if not link:
-            aciklama = (
-                "İlanda online başvuru belirtilmiştir. Doğrudan başvuru "
-                "bağlantısı için ilanın yayımlandığı sayfayı açın."
-            )
-
-        return True, link, aciklama
+    normal = arama_metnine_cevir(metin)
 
     if any(ifade in normal for ifade in ONLINE_OLMAYAN_BASVURU_IFADELERI):
         return (
             False,
             "",
-            "Başvurular ilanda belirtilen şahsen, posta veya teslim yöntemiyle "
-            "yapılmalıdır.",
+            "Başvurular online değildir. Şahsen, posta veya ilanda "
+            "belirtilen diğer yöntemle başvuru yapılmalıdır.",
         )
 
-    # Metin yetersizse yanlış biçimde "online değil" demeyelim.
+    if any(ifade in normal for ifade in ONLINE_BASVURU_IFADELERI):
+        return (
+            False,
+            "",
+            "İlanda online başvuru belirtilmiş ancak doğrudan başvuru "
+            "bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+        )
+
     return (
         False,
         "",
-        "Başvuru yöntemi metinden kesin olarak belirlenemedi. İlan belgesini "
-        "ve yayımlandığı sayfayı kontrol edin.",
+        "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan "
+        "belgesinden kontrol edin.",
     )
 
 
@@ -1747,6 +1640,397 @@ def resmi_kaynaktan_ilanlari_al(kaynak):
     return ilanlar
 
 
+def kariyer_kapisi_tarih_metni(metin):
+    """Kart/JSON içindeki son başvuru tarihini uygulamanın biçimine çevirir."""
+    metin = temizle(str(metin or ""))
+
+    if not metin:
+        return ""
+
+    tarihler = turkce_tarihleri_bul(metin)
+
+    if tarihler:
+        return max(tarihler).strftime("%d.%m.%Y")
+
+    return tarih_bul(metin)
+
+
+def kariyer_kapisi_alan_degeri(kayit, adlar):
+    """Büyük/küçük harf ve Türkçe karakter farkını önemsemeden alan okur."""
+    if not isinstance(kayit, dict):
+        return ""
+
+    normal_anahtarlar = {
+        arama_metnine_cevir(str(anahtar)): deger
+        for anahtar, deger in kayit.items()
+    }
+
+    for ad in adlar:
+        deger = normal_anahtarlar.get(arama_metnine_cevir(ad))
+
+        if deger not in (None, "", [], {}):
+            return deger
+
+    return ""
+
+
+def kariyer_kapisi_linki_olustur(href, ilan_anahtari, baslik):
+    href = temizle(str(href or ""))
+    link = guvenli_web_linki(href, KARIYER_KAPISI_URL) if href else ""
+
+    if link and "kariyerkapisi.gov.tr" in link.casefold():
+        return link
+
+    # Kart ayrıntı bağlantısı HTML içinde görünmüyorsa her ilan için farklı,
+    # fakat kullanıcıyı yine resmî aktif ilanlar sayfasına götüren bir bağlantı
+    # üret. Fragment sunucuya gönderilmez; yalnızca kayıtların tekilleşmesini sağlar.
+    kimlik = temizle(str(ilan_anahtari or ""))
+    if not kimlik:
+        kimlik = ilan_id_uret(baslik or KARIYER_KAPISI_URL)
+
+    kimlik = re.sub(r"[^a-zA-Z0-9_-]+", "-", kimlik).strip("-")[:80]
+    return f"{KARIYER_KAPISI_URL}#ilan-{kimlik or ilan_id_uret(baslik)}"
+
+
+def kariyer_kapisi_kaydi_olustur(
+    baslik,
+    kurum="",
+    birim="",
+    son_basvuru="",
+    href="",
+    ilan_anahtari="",
+    detay_metni="",
+):
+    baslik = baslik_temizle(temizle(str(baslik or "")))
+    kurum = temizle(str(kurum or ""))
+    birim = temizle(str(birim or ""))
+    detay_metni = temizle(str(detay_metni or ""))
+
+    if len(baslik) < 12:
+        return None
+
+    normal_baslik = arama_metnine_cevir(baslik)
+    normal_detay = arama_metnine_cevir(detay_metni)
+
+    # Platformda zaman zaman görülebilen deneme kayıtlarını uygulamaya alma.
+    if "test ilan" in normal_baslik or "test kurum" in normal_detay:
+        return None
+
+    son_basvuru = kariyer_kapisi_tarih_metni(son_basvuru or detay_metni)
+    link = kariyer_kapisi_linki_olustur(href, ilan_anahtari, baslik)
+    kurum_metni = kurum or birim or "Kamu Kurumu"
+    birlesik_metin = temizle(f"{baslik} {kurum} {birim} {detay_metni}")
+    kpss_gerekli, minimum_puan, kpss_durumu = kpss_bilgisi_bul(
+        birlesik_metin,
+        "html_ok",
+    )
+
+    return {
+        "id": ilan_id_uret(link),
+        "baslik": baslik[:400],
+        "kurum": kurum_metni[:250],
+        "birim": birim[:250],
+        "sehir": "Türkiye Geneli",
+        "tur": "Kariyer Kapısı Kamu İlanı",
+        "kaynak": KARIYER_KAPISI_KAYNAK,
+        "kaynak_kodu": "kariyer_kapisi",
+        "son_basvuru": son_basvuru,
+        "yayin_tarihi": "",
+        "link": link,
+        "belge_linki": link,
+        "kaynak_sayfa_linki": KARIYER_KAPISI_URL,
+        "basvuru_linki": KARIYER_KAPISI_URL,
+        "basvuru_online": True,
+        "basvuru_aciklamasi": (
+            "Başvurular resmî Kariyer Kapısı Kamu İşe Alım platformu "
+            "üzerinden online olarak yapılmaktadır."
+        ),
+        "kpss_gerekli": kpss_gerekli,
+        "minimum_puan": minimum_puan,
+        "kpss_durumu": kpss_durumu,
+        "mezuniyetler": mezuniyetleri_bul(birlesik_metin),
+        "bolumler": bolumleri_bul(birlesik_metin),
+        "pdf_isleme_durumu": "html_ok",
+        "analiz_surumu": ANALIZ_SURUMU,
+    }
+
+
+def kariyer_kapisi_json_kayitlarini_bul(veri):
+    """Next.js/ASP.NET sayfasına gömülü ilan JSON nesnelerini özyinelemeli bulur."""
+    bulunanlar = []
+    gorulen_nesneler = set()
+
+    baslik_adlari = (
+        "ilanAdi", "ilanBasligi", "ilanBaşlığı", "baslik", "başlık",
+        "title", "name", "duyuruAdi",
+    )
+    kurum_adlari = (
+        "kurumAdi", "kurumAd", "kurum", "organizationName", "institutionName",
+    )
+    birim_adlari = (
+        "birimAdi", "birimAd", "birim", "unitName", "departmentName",
+    )
+    bitis_adlari = (
+        "bitisTarihi", "bitişTarihi", "sonBasvuruTarihi", "sonBaşvuruTarihi",
+        "deadline", "endDate", "applicationEndDate",
+    )
+    link_adlari = (
+        "url", "link", "href", "detailUrl", "detayUrl", "ilanUrl",
+    )
+    kimlik_adlari = ("ilanId", "id", "uid", "guid", "key")
+
+    def gez(nesne):
+        nesne_kimligi = id(nesne)
+        if nesne_kimligi in gorulen_nesneler:
+            return
+        gorulen_nesneler.add(nesne_kimligi)
+
+        if isinstance(nesne, dict):
+            baslik = kariyer_kapisi_alan_degeri(nesne, baslik_adlari)
+            kurum = kariyer_kapisi_alan_degeri(nesne, kurum_adlari)
+            birim = kariyer_kapisi_alan_degeri(nesne, birim_adlari)
+            bitis = kariyer_kapisi_alan_degeri(nesne, bitis_adlari)
+            href = kariyer_kapisi_alan_degeri(nesne, link_adlari)
+            kimlik = kariyer_kapisi_alan_degeri(nesne, kimlik_adlari)
+
+            if isinstance(baslik, (str, int, float)):
+                normal_anahtarlar = " ".join(
+                    arama_metnine_cevir(str(anahtar)) for anahtar in nesne
+                )
+                baslik_metni = temizle(str(baslik))
+
+                if (
+                    len(baslik_metni) >= 12
+                    and (
+                        bitis
+                        or kurum
+                        or "ilan" in normal_anahtarlar
+                        or "duyuru" in normal_anahtarlar
+                    )
+                ):
+                    detay = temizle(" ".join(
+                        str(deger)
+                        for deger in nesne.values()
+                        if isinstance(deger, (str, int, float))
+                    ))
+                    kayit = kariyer_kapisi_kaydi_olustur(
+                        baslik_metni,
+                        kurum=kurum,
+                        birim=birim,
+                        son_basvuru=bitis,
+                        href=href,
+                        ilan_anahtari=kimlik,
+                        detay_metni=detay,
+                    )
+                    if kayit:
+                        bulunanlar.append(kayit)
+
+            for deger in nesne.values():
+                if isinstance(deger, (dict, list, tuple)):
+                    gez(deger)
+
+        elif isinstance(nesne, (list, tuple)):
+            for oge in nesne:
+                if isinstance(oge, (dict, list, tuple)):
+                    gez(oge)
+
+    gez(veri)
+    return bulunanlar
+
+
+def kariyer_kapisi_gomulu_jsonlari_al(soup):
+    ilanlar = []
+
+    for script in soup.find_all("script"):
+        metin = (script.string or script.get_text("", strip=True) or "").strip()
+
+        if len(metin) < 20:
+            continue
+
+        aday_metinler = [metin]
+        ilk_suslu = metin.find("{")
+        son_suslu = metin.rfind("}")
+
+        if 0 <= ilk_suslu < son_suslu:
+            aday_metinler.append(metin[ilk_suslu:son_suslu + 1])
+
+        ilk_kose = metin.find("[")
+        son_kose = metin.rfind("]")
+
+        if 0 <= ilk_kose < son_kose:
+            aday_metinler.append(metin[ilk_kose:son_kose + 1])
+
+        for aday in aday_metinler:
+            try:
+                veri = json.loads(aday)
+            except (TypeError, ValueError, json.JSONDecodeError):
+                continue
+
+            ilanlar.extend(kariyer_kapisi_json_kayitlarini_bul(veri))
+            break
+
+    return ilanlar
+
+
+def kariyer_kapisi_kart_kapsayicisi(dugum):
+    """İlana Git düğmesinden en küçük anlamlı ilan kartına çıkar."""
+    aday = dugum
+    en_iyi = dugum
+
+    for _ in range(7):
+        if aday is None:
+            break
+
+        if getattr(aday, "name", None) in {"article", "li", "tr", "section", "div"}:
+            metin = temizle(aday.get_text(" ", strip=True))
+            if 25 <= len(metin) <= 1800:
+                en_iyi = aday
+                normal = arama_metnine_cevir(metin)
+                if (
+                    "ilana git" in normal
+                    and (
+                        turkce_tarihleri_bul(metin)
+                        or any(ifade in normal for ifade in ("alim", "sinav", "personel"))
+                    )
+                ):
+                    return aday
+
+        aday = getattr(aday, "parent", None)
+
+    return en_iyi
+
+
+def kariyer_kapisi_html_kartlarini_al(soup):
+    ilanlar = []
+    dugumler = []
+
+    # Bağlantı, buton ve erişilebilirlik metni biçimlerinin tümünü kapsa.
+    for dugum in soup.find_all(["a", "button"]):
+        yazi = temizle(dugum.get_text(" ", strip=True))
+        erisilebilir = temizle(
+            f"{dugum.get('title', '')} {dugum.get('aria-label', '')}"
+        )
+        normal = arama_metnine_cevir(f"{yazi} {erisilebilir}")
+
+        if "ilana git" in normal or "ilan detayi" in normal:
+            dugumler.append(dugum)
+
+    for dugum in dugumler:
+        kart = kariyer_kapisi_kart_kapsayicisi(dugum)
+        kart_metni = temizle(kart.get_text(" ", strip=True))
+        normal_kart = arama_metnine_cevir(kart_metni)
+
+        if len(kart_metni) < 25 or "test ilan" in normal_kart:
+            continue
+
+        href = dugum.get("href", "") if getattr(dugum, "get", None) else ""
+        if not href and getattr(kart, "find", None):
+            link_etiketi = kart.find("a", href=True)
+            href = link_etiketi.get("href", "") if link_etiketi else ""
+
+        ilan_anahtari = ""
+        for etiket in (dugum, kart):
+            if not getattr(etiket, "get", None):
+                continue
+            for alan in ("data-id", "data-ilan-id", "data-key", "id"):
+                if etiket.get(alan):
+                    ilan_anahtari = temizle(str(etiket.get(alan)))
+                    break
+            if ilan_anahtari:
+                break
+
+        aday_metinler = []
+        for etiket_adi in ("h1", "h2", "h3", "h4", "h5", "strong", "p"):
+            for etiket in kart.find_all(etiket_adi):
+                aday = temizle(etiket.get_text(" ", strip=True))
+                normal_aday = arama_metnine_cevir(aday)
+                if (
+                    12 <= len(aday) <= 500
+                    and "ilana git" not in normal_aday
+                    and not re.fullmatch(r"[\d\s./:-]+", aday)
+                ):
+                    aday_metinler.append(aday)
+
+        baslik_adaylari = [
+            aday for aday in aday_metinler
+            if any(
+                ifade in arama_metnine_cevir(aday)
+                for ifade in (
+                    "alim", "sinav", "personel", "memur", "isci", "uzman",
+                    "mufettis", "sozlesmeli", "gorevli", "staj",
+                )
+            )
+        ]
+
+        if baslik_adaylari:
+            baslik = max(baslik_adaylari, key=len)
+        elif aday_metinler:
+            baslik = max(aday_metinler, key=len)
+        else:
+            parcalar = [
+                temizle(parca)
+                for parca in re.split(r"\s{2,}|\n|\r", kart_metni)
+                if 12 <= len(temizle(parca)) <= 500
+            ]
+            baslik = max(parcalar, key=len) if parcalar else ""
+
+        kurum = ""
+        birim = ""
+        img = kart.find("img")
+        if img is not None:
+            kurum = temizle(img.get("alt", "") or img.get("title", ""))
+
+        kurum_adaylari = [
+            aday for aday in aday_metinler
+            if aday != baslik
+            and 3 <= len(aday) <= 250
+            and not turkce_tarihleri_bul(aday)
+        ]
+
+        if not kurum and kurum_adaylari:
+            kurum = kurum_adaylari[0]
+        if len(kurum_adaylari) > 1:
+            birim = kurum_adaylari[1]
+
+        kayit = kariyer_kapisi_kaydi_olustur(
+            baslik,
+            kurum=kurum,
+            birim=birim,
+            son_basvuru=kart_metni,
+            href=href,
+            ilan_anahtari=ilan_anahtari,
+            detay_metni=kart_metni,
+        )
+        if kayit:
+            ilanlar.append(kayit)
+
+    return ilanlar
+
+
+def kariyer_kapisi_aktif_ilanlarini_al():
+    """Kariyer Kapısı'nın giriş gerektirmeyen aktif ilanlar sayfasını tarar."""
+    html = sayfayi_indir(KARIYER_KAPISI_URL)
+    soup = BeautifulSoup(html, "html.parser")
+    ilanlar = []
+
+    # Site sürümüne göre ilanlar doğrudan HTML kartı veya gömülü JSON olabilir.
+    ilanlar.extend(kariyer_kapisi_html_kartlarini_al(soup))
+    ilanlar.extend(kariyer_kapisi_gomulu_jsonlari_al(soup))
+
+    benzersiz = {}
+    for ilan in ilanlar:
+        anahtar = link_anahtari(ilan.get("link", ""))
+        if not anahtar:
+            anahtar = arama_metnine_cevir(
+                f"{ilan.get('kurum', '')} {ilan.get('baslik', '')} "
+                f"{ilan.get('son_basvuru', '')}"
+            )
+        if anahtar:
+            benzersiz[anahtar] = ilan
+
+    return list(benzersiz.values())
+
+
 def gorevi_calistir(kaynak, sehir_kodu, sehir_adi):
     try:
         ilanlar = sayfadan_ilanlari_al(
@@ -1803,7 +2087,6 @@ def pdf_dosyasini_indir(url):
     raise RuntimeError(str(son_hata))
 
 
-
 def pdf_metnini_oku(url):
     try:
         pdf_verisi = pdf_dosyasini_indir(url)
@@ -1816,82 +2099,43 @@ def pdf_metnini_oku(url):
                 return "", "sifreli_pdf"
 
         parcalar = []
-        sayfa_sayisi = min(len(okuyucu.pages), MAKSIMUM_PDF_SAYFASI)
+        sayfa_sayisi = min(
+            len(okuyucu.pages),
+            MAKSIMUM_PDF_SAYFASI,
+        )
 
         for sayfa_no in range(sayfa_sayisi):
-            sayfa = okuyucu.pages[sayfa_no]
-            metin = ""
-
-            # Layout modu tablo ve sütunlardaki tarih/URL'leri daha iyi korur.
             try:
-                metin = sayfa.extract_text(extraction_mode="layout") or ""
-            except TypeError:
-                try:
-                    metin = sayfa.extract_text() or ""
-                except Exception:
-                    metin = ""
+                metin = okuyucu.pages[sayfa_no].extract_text() or ""
             except Exception:
-                try:
-                    metin = sayfa.extract_text() or ""
-                except Exception:
-                    metin = ""
+                metin = ""
 
             if metin:
                 parcalar.append(metin)
-
-            # Yeterli metin ve başvuru tarihi bulunduysa çok uzun ekleri
-            # gereksiz yere okumayıp GitHub Actions süresini koru.
-            biriken = " ".join(parcalar)
-            normal_biriken = arama_metnine_cevir(biriken)
-            if (
-                sayfa_no >= 7
-                and len(biriken) >= 12000
-                and any(
-                    ifade in normal_biriken
-                    for ifade in (
-                        "son basvuru",
-                        "basvuru tarih",
-                        "bitis tarihi",
-                        "sona erecektir",
-                    )
-                )
-            ):
-                break
 
         metin = temizle("\n".join(parcalar))
 
         if len(metin) < 80:
             return metin, "metin_yok"
 
-        return metin[:400000], "ok"
+        return metin[:250000], "ok"
     except Exception as hata:
         return "", f"hata:{type(hata).__name__}"
 
 
 def minimum_kpss_puani_bul(normal_metin):
-    """KPSS puan türündeki P3/P93/P94 sayılarını taban puan sanmadan okur."""
     puanlar = []
 
-    # P3, P93, P94 gibi puan türleri sayı yakalama desenlerini yanıltmasın.
-    puan_turleri_temiz = re.sub(
-        r"\b(?:kpss\s*[/\-]?\s*)?p\s*\d{1,3}\b",
-        " kpss_puan_turu ",
-        normal_metin,
-    )
-
-    for eslesme in re.finditer(r"\bkpss(?:_puan_turu)?\b", puan_turleri_temiz):
-        baslangic = max(0, eslesme.start() - 100)
-        bitis = min(len(puan_turleri_temiz), eslesme.end() + 220)
-        pencere = puan_turleri_temiz[baslangic:bitis]
+    for eslesme in re.finditer(r"\bkpss\b", normal_metin):
+        baslangic = max(0, eslesme.start() - 80)
+        bitis = min(len(normal_metin), eslesme.end() + 140)
+        pencere = normal_metin[baslangic:bitis]
 
         desenler = [
             r"(?:en az|minimum|taban)\s*(\d{2,3}(?:[.,]\d+)?)\s*puan",
-            r"(\d{2,3}(?:[.,]\d+)?)\s*(?:puan\s*)?(?:ve|veya)\s*uzeri",
-            r"(\d{2,3}(?:[.,]\d+)?)\s*ve\s*uzeri\s*puan",
-            r"puan(?:indan|indan|turu(?:nden)?)?[^\d]{0,30}"
-            r"(\d{2,3}(?:[.,]\d+)?)\s*(?:ve\s*uzeri\s*)?puan",
-            r"kpss(?:_puan_turu)?[^\d]{0,80}"
-            r"(\d{2,3}(?:[.,]\d+)?)\s*(?:ve\s*uzeri\s*)?puan",
+            r"(\d{2,3}(?:[.,]\d+)?)\s*(?:ve uzeri\s*)?kpss",
+            r"kpss\s*p\s*\d{1,2}\s*(?:puan(?:indan)?\s*)?(\d{2,3}(?:[.,]\d+)?)",
+            r"kpss[^\d]{0,45}(\d{2,3}(?:[.,]\d+)?)\s*puan",
         ]
 
         for desen in desenler:
@@ -2018,16 +2262,13 @@ def onceki_analizleri_yukle():
         return {}
 
 
-
 def onceki_analiz_kullanilabilir(onceki):
-    # Yalnızca başarıyla okunan PDF analizini kullan. Önceki metin_yok veya
-    # şifreli sonuçlarını kalıcılaştırmayıp sonraki çalışmada yeniden dene.
     return (
         isinstance(onceki, dict)
         and onceki.get("analiz_surumu") == ANALIZ_SURUMU
-        and onceki.get("pdf_isleme_durumu") == "ok"
+        and onceki.get("pdf_isleme_durumu")
+        in {"ok", "metin_yok", "sifreli_pdf"}
     )
-
 
 
 def ilani_zenginlestir(ilan, onceki_analizler):
@@ -2048,7 +2289,6 @@ def ilani_zenginlestir(ilan, onceki_analizler):
         "bolumler",
         "pdf_isleme_durumu",
         "analiz_surumu",
-        "son_basvuru",
         "belge_linki",
         "kaynak_sayfa_linki",
         "basvuru_linki",
@@ -2070,43 +2310,25 @@ def ilani_zenginlestir(ilan, onceki_analizler):
     ):
         return ilan, False
 
-    belge_linki = ilan.get("belge_linki") or ilan.get("link", "")
-    pdf_metni, pdf_durumu = pdf_metnini_oku(belge_linki)
+    pdf_metni, pdf_durumu = pdf_metnini_oku(
+        ilan.get("belge_linki") or ilan.get("link", "")
+    )
 
     kpss_gerekli, minimum_puan, kpss_durumu = (
         kpss_bilgisi_bul(pdf_metni, pdf_durumu)
     )
-    bulunan_online, bulunan_link, bulunan_aciklama = basvuru_bilgisi_bul(
-        pdf_metni,
-        temel_url=ilan.get("kaynak_sayfa_linki", "") or ilan.get("link", ""),
+    basvuru_online, basvuru_linki, basvuru_aciklamasi = (
+        basvuru_bilgisi_bul(
+            pdf_metni,
+            temel_url=ilan.get("kaynak_sayfa_linki", ""),
+        )
     )
 
-    # İlan sayfasından daha önce bulunan online bilgisini PDF analizi silmesin.
-    mevcut_online = ilan.get("basvuru_online") is True
-    mevcut_link = temizle(ilan.get("basvuru_linki", ""))
-    mevcut_aciklama = temizle(ilan.get("basvuru_aciklamasi", ""))
-
-    if mevcut_online and not bulunan_online:
-        basvuru_online = True
-        basvuru_linki = mevcut_link
+    if pdf_durumu != "ok" and not basvuru_linki:
         basvuru_aciklamasi = (
-            mevcut_aciklama or "Başvurular online olarak yapılmaktadır."
+            "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini "
+            "ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin."
         )
-    else:
-        basvuru_online = bulunan_online
-        basvuru_linki = bulunan_link or mevcut_link
-        basvuru_aciklamasi = bulunan_aciklama or mevcut_aciklama
-
-    if pdf_durumu != "ok" and not basvuru_linki and not mevcut_online:
-        basvuru_aciklamasi = (
-            "PDF metni tam okunamadı. Başvuru yöntemini ilan belgesinden veya "
-            "ilanın yayımlandığı sayfadan kontrol edin."
-        )
-
-    # Liste sayfasında tarih yoksa veya PDF daha açık bir tarih veriyorsa PDF
-    # içindeki son başvuru tarihini uygulamaya aktar.
-    pdf_son_basvuru = son_basvuru_tarihi_bul(pdf_metni) if pdf_metni else ""
-    son_basvuru = pdf_son_basvuru or temizle(ilan.get("son_basvuru", ""))
 
     ilan.update({
         "kpss_gerekli": kpss_gerekli,
@@ -2116,8 +2338,7 @@ def ilani_zenginlestir(ilan, onceki_analizler):
         "bolumler": bolumleri_bul(pdf_metni),
         "pdf_isleme_durumu": pdf_durumu,
         "analiz_surumu": ANALIZ_SURUMU,
-        "son_basvuru": son_basvuru,
-        "belge_linki": belge_linki,
+        "belge_linki": ilan.get("belge_linki") or ilan.get("link", ""),
         "kaynak_sayfa_linki": ilan.get("kaynak_sayfa_linki", ""),
         "basvuru_linki": basvuru_linki,
         "basvuru_online": basvuru_online,
@@ -2125,698 +2346,6 @@ def ilani_zenginlestir(ilan, onceki_analizler):
     })
 
     return ilan, False
-
-
-
-def universite_ifadesi_var_mi(metin):
-    normal = arama_metnine_cevir(metin)
-    return any(
-        ifade in normal
-        for ifade in (
-            "universite",
-            "yuksek teknoloji enstitusu",
-            "yuksekogretim kurumu",
-        )
-    )
-
-
-def universite_personel_ilani_mi(baslik, detay_metni="", kurum_adi=""):
-    """Üniversiteye ait açık personel alımını sonuç duyurularından ayırır."""
-    birlesik = arama_metnine_cevir(
-        " ".join((baslik or "", detay_metni or "", kurum_adi or ""))
-    )
-
-    if not universite_ifadesi_var_mi(birlesik):
-        return False
-
-    engellenenler = (
-        "basvuru sonucu",
-        "basvuru sonuclari",
-        "sinav sonucu",
-        "sinav sonuclari",
-        "on degerlendirme sonucu",
-        "on degerlendirme sonuclari",
-        "nihai degerlendirme sonucu",
-        "nihai degerlendirme sonuclari",
-        "yerlestirme sonucu",
-        "yerlestirme sonuclari",
-        "mulakat sonucu",
-        "mulakat sonuclari",
-        "sozlu sinav sonucu",
-        "sozlu sinav sonuclari",
-        "kazanan aday",
-        "yedek aday",
-        "atamaya hak kazanan",
-        "evrak teslim",
-        "belge teslim",
-        "duzeltme ilani",
-        "iptal ilani",
-        "ilan iptali",
-    )
-    if any(ifade in birlesik for ifade in engellenenler):
-        return False
-
-    alim_ifadeleri = (
-        "personel alim",
-        "personel alimi",
-        "personel alinacaktir",
-        "sozlesmeli personel",
-        "4/b personel",
-        "4-b personel",
-        "surekli isci",
-        "gecici isci",
-        "isci alim",
-        "memur alim",
-        "akademik personel",
-        "ogretim uyesi alim",
-        "ogretim elemani alim",
-        "ogretim gorevlisi alim",
-        "arastirma gorevlisi alim",
-        "profesor alinacaktir",
-        "docent alinacaktir",
-        "doktor ogretim uyesi",
-        "uzman alim",
-        "kariyer kapisi",
-        "kamu ise alim",
-    )
-    return any(ifade in birlesik for ifade in alim_ifadeleri)
-
-
-def universite_personel_haberi_mi(baslik, detay_metni="", kurum_adi=""):
-    """Üniversitelerin personel alımıyla ilgili sonuç ve süreç duyurularını seçer.
-
-    Öğrenci kayıt/yerleştirme sonuçlarının yanlışlıkla Haberler'e girmemesi için
-    hem sonuç/süreç ifadesi hem de personel-kadro bağlamı aranır.
-    """
-    birlesik = arama_metnine_cevir(
-        " ".join((baslik or "", detay_metni or "", kurum_adi or ""))
-    )
-
-    haber_ifadeleri = (
-        "basvuru sonucu",
-        "basvuru sonuclari",
-        "basvuru degerlendirme sonucu",
-        "basvuru degerlendirme sonuclari",
-        "on degerlendirme sonucu",
-        "on degerlendirme sonuclari",
-        "nihai degerlendirme sonucu",
-        "nihai degerlendirme sonuclari",
-        "sinav sonucu",
-        "sinav sonuclari",
-        "yazili sinav",
-        "sozlu sinav",
-        "uygulamali sinav",
-        "mulakat",
-        "yerlestirme sonucu",
-        "yerlestirme sonuclari",
-        "asil aday",
-        "yedek aday",
-        "kazanan aday",
-        "atamaya hak kazanan",
-        "atama sonucu",
-        "atama sonuclari",
-        "evrak teslim",
-        "belge teslim",
-        "goreve baslama",
-        "duzeltme ilani",
-        "duzeltme duyurusu",
-        "iptal ilani",
-        "ilan iptali",
-    )
-    if not any(ifade in birlesik for ifade in haber_ifadeleri):
-        return False
-
-    personel_baglamlari = (
-        "personel",
-        "personel daire",
-        "/pdb",
-        "pdb/",
-        "sozlesmeli",
-        "4/b",
-        "4-b",
-        "surekli isci",
-        "gecici isci",
-        "isci alim",
-        "memur alim",
-        "akademik personel",
-        "ogretim uyesi",
-        "ogretim elemani",
-        "ogretim gorevlisi",
-        "arastirma gorevlisi",
-        "profesor",
-        "docent",
-        "doktor ogretim uyesi",
-        "kadro",
-        "atamaya hak kazanan",
-        "ise alim",
-    )
-    return any(ifade in birlesik for ifade in personel_baglamlari)
-
-
-def universite_haber_kategorisi_bul(metin):
-    normal = arama_metnine_cevir(metin)
-    if "ilan iptali" in normal or "iptal ilani" in normal:
-        return "İptal"
-    if "duzeltme" in normal:
-        return "Düzeltme"
-    if "belge teslim" in normal or "evrak teslim" in normal or "goreve baslama" in normal:
-        return "Belge Teslimi"
-    if "nihai degerlendirme" in normal:
-        return "Nihai Değerlendirme"
-    if "on degerlendirme" in normal:
-        return "Ön Değerlendirme"
-    if "mulakat" in normal or "sozlu sinav" in normal:
-        return "Mülakat"
-    if "yazili sinav" in normal or "uygulamali sinav" in normal or "sinav sonuc" in normal:
-        return "Sınav Sonucu"
-    if "atama" in normal or "asil aday" in normal or "yedek aday" in normal or "kazanan aday" in normal:
-        return "Atama"
-    if "yerlestirme" in normal:
-        return "Yerleştirme"
-    return "Sonuç"
-
-
-def universite_haber_kaydi_olustur(
-    link,
-    baslik,
-    kurum,
-    kapsayici_metni="",
-    kaynak="Üniversite Personel Haberleri",
-):
-    yayin_tarihi = tarih_bul(kapsayici_metni) or tarih_bul(baslik)
-    kategori = universite_haber_kategorisi_bul(
-        f"{baslik} {kapsayici_metni[:800]}"
-    )
-    return {
-        "id": ilan_id_uret(link),
-        "baslik": baslik_temizle(baslik)[:400],
-        "kurum": temizle(kurum)[:180] or "Üniversite",
-        "kategori": kategori,
-        "yayin_tarihi": yayin_tarihi,
-        "kaynak": kaynak,
-        "kaynak_kodu": "universite_personel_haber",
-        "ozet": (
-            f"{temizle(kurum) or 'Üniversite'} tarafından yayımlanan resmî "
-            f"personel {kategori.casefold()} duyurusu."
-        ),
-        "link": link,
-    }
-
-
-def universite_ilan_turu_bul(metin):
-    normal = arama_metnine_cevir(metin)
-    if any(
-        ifade in normal
-        for ifade in (
-            "ogretim uyesi",
-            "ogretim elemani",
-            "ogretim gorevlisi",
-            "arastirma gorevlisi",
-            "profesor",
-            "docent",
-            "akademik personel",
-        )
-    ):
-        return "Akademik Personel"
-    if "surekli isci" in normal or "isci alim" in normal:
-        return "İşçi"
-    if "sozlesmeli personel" in normal or "4/b" in normal or "4-b" in normal:
-        return "Sözleşmeli Personel"
-    return "Üniversite Personel Alımı"
-
-
-def universite_kurum_adi_bul(baslik, metin, varsayilan=""):
-    aday_metin = temizle(f"{baslik} {metin[:1200]}")
-    eslesme = re.search(
-        r"([A-ZÇĞİÖŞÜa-zçğıöşü0-9 .'-]{3,120}?"
-        r"(?:Üniversitesi|Yüksek Teknoloji Enstitüsü))"
-        r"(?:\s+Rektörlüğünden|\s+Rektörlüğü|\s*[:\-]|\s*$)",
-        aday_metin,
-        flags=re.IGNORECASE,
-    )
-    if eslesme:
-        return baslik_temizle(eslesme.group(1))[:180]
-    return temizle(varsayilan)[:180] or "Üniversite"
-
-
-def universite_sehir_bul(metin, kurum=""):
-    # ilan.gov.tr ayrıntı alanındaki şehir değerini önce yakala.
-    eslesme = re.search(
-        r"Şehir\s+([A-ZÇĞİÖŞÜ ]{2,35}?)\s+(?:İlan Türü|Resm[iî] Gazete|Yayın)",
-        metin,
-        flags=re.IGNORECASE,
-    )
-    if eslesme:
-        aday_ham = temizle(eslesme.group(1))
-        aday_normal = arama_metnine_cevir(aday_ham)
-        for kod, ad in SEHIRLER:
-            if aday_normal == kod or re.search(rf"\b{re.escape(kod)}\b", aday_normal):
-                return ad
-        if len(aday_ham) <= 35:
-            return aday_ham
-
-    normal = arama_metnine_cevir(f"{kurum} {metin[:800]}")
-    for kod, ad in SEHIRLER:
-        if re.search(rf"\b{re.escape(kod)}\b", normal):
-            return ad
-    return "Türkiye Geneli"
-
-
-def universite_yayin_tarihi_bul(metin):
-    eslesme = re.search(
-        r"Resm[iî]\s+Gazete\s+Yay[ıi]m\s+Tarihi\s*[:\-]?\s*"
-        r"(\d{1,2}[./-]\d{1,2}[./-]\d{4})",
-        metin,
-        flags=re.IGNORECASE,
-    )
-    if eslesme:
-        return eslesme.group(1)
-    return yayin_tarihi_bul(metin)
-
-
-def universite_detayindan_ilan_olustur(
-    link,
-    baslik_ipucu="",
-    kurum_ipucu="",
-    kaynak="Üniversite Resmî Duyuruları",
-):
-    html = sayfayi_indir(link)
-    soup = BeautifulSoup(html, "html.parser")
-
-    for etiket in soup(["script", "style", "noscript", "svg"]):
-        etiket.decompose()
-
-    sayfa_basligi = ""
-    og_baslik = soup.find("meta", attrs={"property": "og:title"})
-    if og_baslik and og_baslik.get("content"):
-        sayfa_basligi = temizle(og_baslik.get("content"))
-    if not sayfa_basligi and soup.find("h1"):
-        sayfa_basligi = temizle(soup.find("h1").get_text(" ", strip=True))
-    if not sayfa_basligi and soup.title:
-        sayfa_basligi = temizle(soup.title.get_text(" ", strip=True))
-
-    baslik = baslik_temizle(sayfa_basligi or baslik_ipucu)
-    detay_metni = temizle(soup.get_text(" ", strip=True))
-    kurum = universite_kurum_adi_bul(baslik, detay_metni, kurum_ipucu)
-
-    if not universite_personel_ilani_mi(baslik, detay_metni, kurum):
-        return None
-
-    belge_linki = ilan_belgesi_linki_bul(soup, link)
-    basvuru_online, basvuru_linki, basvuru_aciklamasi = basvuru_bilgisi_bul(
-        detay_metni,
-        soup=soup,
-        temel_url=link,
-    )
-    yayin_tarihi = universite_yayin_tarihi_bul(detay_metni)
-    son_basvuru = son_basvuru_tarihi_bul(detay_metni)
-    kpss_gerekli, minimum_puan, kpss_durumu = kpss_bilgisi_bul(
-        detay_metni,
-        "ok",
-    )
-
-    # Ayrıntılı şartlar HTML içinde varsa doğrudan kullan. Sayfa sadece kısa
-    # bir PDF bağlantısı içeriyorsa mevcut PDF analiz aşaması belgeyi okuyacak.
-    html_yeterli = len(detay_metni) >= 900 and any(
-        ifade in arama_metnine_cevir(detay_metni)
-        for ifade in ("kpss", "aranan sart", "genel sart", "basvuru")
-    )
-
-    return {
-        "id": ilan_id_uret(link),
-        "baslik": baslik[:400],
-        "kurum": kurum,
-        "sehir": universite_sehir_bul(detay_metni, kurum),
-        "tur": universite_ilan_turu_bul(f"{baslik} {detay_metni[:1500]}"),
-        "kaynak": kaynak,
-        "kaynak_kodu": "universite_personel",
-        "son_basvuru": son_basvuru,
-        "yayin_tarihi": yayin_tarihi,
-        "link": link,
-        "belge_linki": belge_linki,
-        "kaynak_sayfa_linki": link,
-        "basvuru_linki": basvuru_linki,
-        "basvuru_online": basvuru_online,
-        "basvuru_aciklamasi": basvuru_aciklamasi,
-        "kpss_gerekli": kpss_gerekli,
-        "minimum_puan": minimum_puan,
-        "kpss_durumu": kpss_durumu,
-        "mezuniyetler": mezuniyetleri_bul(detay_metni),
-        "bolumler": bolumleri_bul(detay_metni),
-        "pdf_isleme_durumu": "html_ok" if html_yeterli or not belge_linki else "bekliyor",
-        "analiz_surumu": ANALIZ_SURUMU,
-    }
-
-
-def _ilan_gov_tr_ilan_linki_mi(link):
-    ayrik = urlparse(link)
-    host = ayrik.netloc.casefold().removeprefix("www.")
-    return host == "ilan.gov.tr" and re.match(r"^/ilan/\d+(?:/|$)", ayrik.path) is not None
-
-
-def ilan_gov_tr_sayfasindan_linkleri_bul(html, temel_url):
-    soup = BeautifulSoup(html, "html.parser")
-    bulunanlar = set()
-
-    for etiket in soup.find_all("a", href=True):
-        link = urljoin(temel_url, temizle(etiket.get("href", "")))
-        if _ilan_gov_tr_ilan_linki_mi(link):
-            bulunanlar.add(link.split("#")[0])
-
-    # Bazı sayfalarda ilan kartları JavaScript/JSON içinde tutuluyor.
-    ham = html.decode("utf-8", errors="ignore") if isinstance(html, bytes) else str(html)
-    ham = ham.replace("\\/", "/")
-    for parca in re.findall(r"(?:https?://www\.ilan\.gov\.tr)?(/ilan/\d+(?:/[^\"'<> ]*)?)", ham):
-        link = urljoin("https://www.ilan.gov.tr", parca)
-        if _ilan_gov_tr_ilan_linki_mi(link):
-            bulunanlar.add(link.split("#")[0])
-
-    return bulunanlar
-
-
-def ilan_gov_tr_sitemap_linklerini_bul():
-    """Liste sayfası JS ile boş dönerse sitemap üzerinden ilan bağlantısı bulur."""
-    sitemap_adaylari = {
-        "https://www.ilan.gov.tr/sitemap.xml",
-        "https://www.ilan.gov.tr/sitemap_index.xml",
-    }
-    try:
-        robots = sayfayi_indir("https://www.ilan.gov.tr/robots.txt")
-        robots_metni = robots.decode("utf-8", errors="ignore")
-        sitemap_adaylari.update(
-            temizle(eslesme)
-            for eslesme in re.findall(r"(?im)^Sitemap:\s*(https?://\S+)", robots_metni)
-        )
-    except Exception:
-        pass
-
-    sonuc = set()
-    alt_sitemapler = []
-    for sitemap in list(sitemap_adaylari)[:5]:
-        try:
-            xml = sayfayi_indir(sitemap)
-        except Exception:
-            continue
-        metin = xml.decode("utf-8", errors="ignore")
-        konumlar = re.findall(r"<loc>\s*([^<]+?)\s*</loc>", metin, flags=re.IGNORECASE)
-        for konum in konumlar:
-            konum = konum.replace("&amp;", "&").strip()
-            if _ilan_gov_tr_ilan_linki_mi(konum):
-                sonuc.add(konum.split("#")[0])
-            elif "sitemap" in konum.casefold() and len(alt_sitemapler) < 12:
-                alt_sitemapler.append(konum)
-
-    # En güncel dosyalar genelde adında tarih/sayı taşıdığı için sondan başla.
-    for sitemap in sorted(set(alt_sitemapler), reverse=True)[:6]:
-        try:
-            xml = sayfayi_indir(sitemap)
-        except Exception:
-            continue
-        metin = xml.decode("utf-8", errors="ignore")
-        for konum in re.findall(r"<loc>\s*([^<]+?)\s*</loc>", metin, flags=re.IGNORECASE):
-            konum = konum.replace("&amp;", "&").strip()
-            if _ilan_gov_tr_ilan_linki_mi(konum):
-                sonuc.add(konum.split("#")[0])
-        if len(sonuc) >= UNIVERSITE_DETAY_SINIRI:
-            break
-
-    return sonuc
-
-
-def ilan_gov_tr_universite_ilanlarini_al(onceki_veri=None):
-    linkler = set()
-    hatalar = []
-
-    for kaynak in UNIVERSITE_MERKEZI_KAYNAKLARI:
-        ardisik_bos = 0
-        for sayfa in range(UNIVERSITE_ILAN_GOV_SAYFA_SINIRI):
-            try:
-                html = sayfayi_indir(kaynak["url"], params={"currentPage": sayfa})
-                bulunan = ilan_gov_tr_sayfasindan_linkleri_bul(html, kaynak["url"])
-                yeni = bulunan - linkler
-                linkler.update(bulunan)
-                ardisik_bos = 0 if yeni else ardisik_bos + 1
-                if ardisik_bos >= 2 and sayfa >= 2:
-                    break
-            except Exception as hata:
-                hatalar.append(
-                    f"{kaynak['ad']} sayfa {sayfa}: {type(hata).__name__} - {str(hata)[:120]}"
-                )
-                break
-
-    if not linkler:
-        try:
-            linkler.update(ilan_gov_tr_sitemap_linklerini_bul())
-        except Exception as hata:
-            hatalar.append(f"ilan.gov.tr sitemap: {type(hata).__name__} - {str(hata)[:120]}")
-
-    # İlan numarası yüksek olanlar yeni olduğundan önce onları kontrol et.
-    def ilan_numarasi(link):
-        eslesme = re.search(r"/ilan/(\d+)", link)
-        return int(eslesme.group(1)) if eslesme else 0
-
-    sirali_linkler = sorted(linkler, key=ilan_numarasi, reverse=True)[:UNIVERSITE_DETAY_SINIRI]
-    ilanlar = []
-
-    onceki_harita = {}
-    if isinstance(onceki_veri, dict):
-        for onceki_ilan in onceki_veri.get("ilanlar", []):
-            if onceki_ilan.get("kaynak_kodu") != "universite_personel":
-                continue
-            anahtar = link_anahtari(onceki_ilan.get("link", ""))
-            if anahtar and ilan_aktif_mi(onceki_ilan):
-                onceki_harita[anahtar] = onceki_ilan
-
-    yeni_linkler = []
-    for link in sirali_linkler:
-        onceki = onceki_harita.get(link_anahtari(link))
-        if onceki:
-            ilanlar.append(onceki)
-        else:
-            yeni_linkler.append(link)
-
-    with ThreadPoolExecutor(max_workers=6) as havuz:
-        futures = {
-            havuz.submit(
-                universite_detayindan_ilan_olustur,
-                link,
-                "",
-                "",
-                "ilan.gov.tr Üniversite Personel İlanları",
-            ): link
-            for link in yeni_linkler
-        }
-        for future in as_completed(futures):
-            link = futures[future]
-            try:
-                ilan = future.result()
-                if ilan:
-                    ilanlar.append(ilan)
-            except Exception as hata:
-                hatalar.append(
-                    f"ilan.gov.tr detay {link}: {type(hata).__name__} - {str(hata)[:100]}"
-                )
-
-    return ilanlar, hatalar, len(sirali_linkler)
-
-
-def yoktan_universite_sitelerini_al(onceki_veri):
-    siteler = {}
-    hatalar = []
-
-    for url in YOK_UNIVERSITE_LISTESI_URLLERI:
-        try:
-            html = sayfayi_indir(url)
-            soup = BeautifulSoup(html, "html.parser")
-        except Exception as hata:
-            hatalar.append(f"YÖK üniversite listesi: {type(hata).__name__} - {str(hata)[:120]}")
-            continue
-
-        for etiket in soup.find_all("a", href=True):
-            link = urljoin(url, temizle(etiket.get("href", "")))
-            ayrik = urlparse(link)
-            host = ayrik.netloc.casefold().removeprefix("www.")
-            if not host.endswith(".edu.tr"):
-                continue
-
-            ad = temizle(etiket.get_text(" ", strip=True))
-            if not universite_ifadesi_var_mi(ad):
-                kapsayici = etiket.find_parent(["li", "tr", "div", "article"])
-                if kapsayici is not None:
-                    ad = temizle(kapsayici.get_text(" ", strip=True))
-            if not universite_ifadesi_var_mi(ad):
-                ad = host.split(".")[0].replace("-", " ").title() + " Üniversitesi"
-
-            siteler[host] = {
-                "ad": ad[:180],
-                "url": f"{ayrik.scheme or 'https'}://{ayrik.netloc}/",
-            }
-
-    # YÖK sayfası geçici hata verirse daha önce keşfedilen resmî siteleri koru.
-    onceki_siteler = onceki_veri.get("universite_kaynaklari", []) if isinstance(onceki_veri, dict) else []
-    for kayit in onceki_siteler:
-        if not isinstance(kayit, dict):
-            continue
-        link = temizle(kayit.get("url", ""))
-        host = urlparse(link).netloc.casefold().removeprefix("www.")
-        if host.endswith(".edu.tr"):
-            siteler.setdefault(host, {"ad": temizle(kayit.get("ad", "")), "url": link})
-
-    return sorted(siteler.values(), key=lambda x: arama_metnine_cevir(x.get("ad", ""))), hatalar
-
-
-def _edu_tr_kok_alani(host):
-    host = temizle(host).casefold().removeprefix("www.")
-    parcalar = [parca for parca in host.split(".") if parca]
-    if len(parcalar) >= 3 and parcalar[-2:] == ["edu", "tr"]:
-        return ".".join(parcalar[-3:])
-    return host
-
-
-def universite_ana_sayfasindan_aday_sayfalari_bul(html, ana_url):
-    soup = BeautifulSoup(html, "html.parser")
-    ana_host = urlparse(ana_url).netloc.casefold().removeprefix("www.")
-    ana_kok = _edu_tr_kok_alani(ana_host)
-    puanli = []
-
-    for etiket in soup.find_all("a", href=True):
-        href = temizle(etiket.get("href", ""))
-        link = urljoin(ana_url, href)
-        ayrik = urlparse(link)
-        host = ayrik.netloc.casefold().removeprefix("www.")
-        # Personel Daire Başkanlığı çoğu üniversitede personel.univ.edu.tr gibi
-        # ayrı bir alt alan adında çalışır. Aynı üniversitenin alt alanlarına izin ver.
-        if _edu_tr_kok_alani(host) != ana_kok or ayrik.scheme not in ("http", "https"):
-            continue
-
-        metin = arama_metnine_cevir(
-            f"{etiket.get_text(' ', strip=True)} {ayrik.path}"
-        )
-        puan = sum(1 for kelime in UNIVERSITE_LINK_ONCELIK_KELIMELERI if kelime in metin)
-        if puan:
-            puanli.append((puan, link.split("#")[0]))
-
-    puanli.sort(key=lambda x: (-x[0], len(x[1])))
-    sonuc = [ana_url]
-    for _, link in puanli:
-        if link not in sonuc:
-            sonuc.append(link)
-        if len(sonuc) >= UNIVERSITE_SITE_SAYFA_SINIRI:
-            break
-    return sonuc
-
-
-def universite_sitesinden_ilanlari_al(kaynak):
-    ana_url = kaynak.get("url", "")
-    kurum = kaynak.get("ad", "Üniversite")
-    ilan_adaylari = {}
-    haber_adaylari = {}
-    hatalar = []
-
-    try:
-        ana_html = sayfayi_indir(ana_url)
-        sayfalar = universite_ana_sayfasindan_aday_sayfalari_bul(ana_html, ana_url)
-    except Exception as hata:
-        return [], [], [f"{kurum}: {type(hata).__name__} - {str(hata)[:120]}"]
-
-    for sayfa_url in sayfalar:
-        try:
-            html = ana_html if sayfa_url == ana_url else sayfayi_indir(sayfa_url)
-            soup = BeautifulSoup(html, "html.parser")
-        except Exception as hata:
-            hatalar.append(f"{kurum} sayfa: {type(hata).__name__} - {str(hata)[:100]}")
-            continue
-
-        for etiket in soup.find_all("a", href=True):
-            baslik = temizle(etiket.get_text(" ", strip=True))
-            if len(baslik) < 8:
-                continue
-
-            link = urljoin(sayfa_url, temizle(etiket.get("href", "")))
-            ayrik = urlparse(link)
-            if ayrik.scheme not in ("http", "https"):
-                continue
-            link = link.split("#")[0]
-
-            kapsayici = etiket.find_parent(["li", "article", "tr", "div"])
-            kapsayici_metni = temizle(
-                kapsayici.get_text(" ", strip=True)
-            ) if kapsayici else baslik
-            baglam = f"{sayfa_url} {kapsayici_metni}"
-
-            if universite_personel_ilani_mi(baslik, baglam, kurum):
-                ilan_adaylari[link] = baslik
-            elif universite_personel_haberi_mi(baslik, baglam, kurum):
-                haber_adaylari[link] = (baslik, kapsayici_metni)
-
-            if len(ilan_adaylari) >= 25 and len(haber_adaylari) >= 40:
-                break
-
-    ilanlar = []
-    for link, baslik in list(ilan_adaylari.items())[:25]:
-        try:
-            ilan = universite_detayindan_ilan_olustur(
-                link,
-                baslik,
-                kurum,
-                "Üniversite Resmî Duyuruları",
-            )
-            if ilan:
-                ilanlar.append(ilan)
-        except Exception as hata:
-            hatalar.append(f"{kurum} ilan detayı: {type(hata).__name__} - {str(hata)[:100]}")
-
-    haberler = [
-        universite_haber_kaydi_olustur(
-            link,
-            baslik,
-            kurum,
-            kapsayici_metni,
-        )
-        for link, (baslik, kapsayici_metni) in list(haber_adaylari.items())[:40]
-    ]
-
-    return ilanlar, haberler, hatalar
-
-
-def universite_resmi_sitelerini_donusumlu_tara(onceki_veri):
-    siteler, hatalar = yoktan_universite_sitelerini_al(onceki_veri)
-    if not siteler:
-        return [], [], siteler, 0, hatalar, 0
-
-    baslangic = 0
-    try:
-        baslangic = int(onceki_veri.get("universite_tarama_sirasi", 0)) % len(siteler)
-    except Exception:
-        baslangic = 0
-
-    secilenler = [
-        siteler[(baslangic + sira) % len(siteler)]
-        for sira in range(min(UNIVERSITE_SITE_GRUP_BOYUTU, len(siteler)))
-    ]
-    sonraki = (baslangic + len(secilenler)) % len(siteler)
-    ilanlar = []
-    haberler = []
-
-    with ThreadPoolExecutor(max_workers=5) as havuz:
-        futures = {
-            havuz.submit(universite_sitesinden_ilanlari_al, kaynak): kaynak
-            for kaynak in secilenler
-        }
-        for future in as_completed(futures):
-            kaynak = futures[future]
-            try:
-                bulunan_ilanlar, bulunan_haberler, kaynak_hatalari = future.result()
-                ilanlar.extend(bulunan_ilanlar)
-                haberler.extend(bulunan_haberler)
-                hatalar.extend(kaynak_hatalari)
-            except Exception as hata:
-                hatalar.append(
-                    f"{kaynak.get('ad', 'Üniversite')}: {type(hata).__name__} - {str(hata)[:120]}"
-                )
-
-    return ilanlar, haberler, siteler, sonraki, hatalar, len(secilenler)
-
 
 
 TURKIYE_SAATI = ZoneInfo("Europe/Istanbul")
@@ -2994,59 +2523,21 @@ def firebase_mesajlasmayi_hazirla():
         return None, f"{type(hata).__name__}: {str(hata)[:180]}"
 
 
-def _fcm_metin(deger, sinir):
-    if deger is None:
-        return ""
-    if isinstance(deger, (list, tuple, set)):
-        metin = json.dumps(list(deger), ensure_ascii=False)
-    elif isinstance(deger, dict):
-        metin = json.dumps(deger, ensure_ascii=False)
-    elif isinstance(deger, bool):
-        metin = "true" if deger else "false"
-    else:
-        metin = str(deger)
-    return temizle(metin)[:sinir]
-
-
-def tek_bildirim_gonder(
-    mesajlasma,
-    konu,
-    baslik,
-    govde,
-    link,
-    tur,
-    ek_veri=None,
-):
-    # Yalnızca veri mesajı gönderilir. Böylece telefon, profilini yerel olarak
-    # karşılaştırır ve bildirimin gerçek başlığını kendisi oluşturur.
-    veri = {
-        "tur": _fcm_metin(tur, 20),
-        "link": _fcm_metin(link, 900),
-        "bildirim_basligi": _fcm_metin(baslik, 100),
-        "bildirim_govdesi": _fcm_metin(govde, 230),
-    }
-
-    alan_sinirlari = {
-        "kurum": 180,
-        "ilan_basligi": 320,
-        "sehir": 120,
-        "son_basvuru": 50,
-        "minimum_puan": 30,
-        "mezuniyetler": 650,
-        "bolumler": 1000,
-        "kpss_durumu": 450,
-        "kpss_puan_turu": 100,
-        "kpss_turu": 100,
-    }
-    for anahtar, deger in (ek_veri or {}).items():
-        if anahtar in alan_sinirlari:
-            veri[anahtar] = _fcm_metin(deger, alan_sinirlari[anahtar])
-
+def tek_bildirim_gonder(mesajlasma, konu, baslik, govde, link, tur):
     mesaj = mesajlasma.Message(
-        data=veri,
+        notification=mesajlasma.Notification(
+            title=baslik[:100],
+            body=govde[:240],
+        ),
+        data={
+            "tur": tur,
+            "link": (link or "")[:1000],
+        },
         android=mesajlasma.AndroidConfig(
             priority="high",
-            ttl=timedelta(hours=12),
+            notification=mesajlasma.AndroidNotification(
+                channel_id=konu,
+            ),
         ),
         topic=konu,
     )
@@ -4247,18 +3738,6 @@ def yeni_kayit_bildirimlerini_gonder(
                 govde,
                 ilan.get("kaynak_sayfa_linki") or ilan.get("link", ""),
                 "ilan",
-                ek_veri={
-                    "kurum": ilan.get("kurum") or ilan.get("kaynak") or "",
-                    "ilan_basligi": ilan.get("baslik") or "",
-                    "sehir": ilan.get("sehir") or "",
-                    "son_basvuru": ilan.get("son_basvuru") or "",
-                    "minimum_puan": ilan.get("minimum_puan") or 0,
-                    "mezuniyetler": ilan.get("mezuniyetler") or [],
-                    "bolumler": ilan.get("bolumler") or [],
-                    "kpss_durumu": ilan.get("kpss_durumu") or "",
-                    "kpss_puan_turu": ilan.get("kpss_puan_turu") or "",
-                    "kpss_turu": ilan.get("kpss_turu") or "",
-                },
             )
             sonuc["gonderilen"] += 1
 
@@ -4339,7 +3818,6 @@ def ilk_otomatik_bildirim_testini_gonder(onceki_veri, normal_bildirim_sonucu):
 
 
 def main():
-    print(f"Dosya sürümü: {DOSYA_SURUMU}")
     onceki_veri = onceki_veriyi_yukle()
     (onceki_ilan_anahtarlari, onceki_haber_anahtarlari,
      onceki_dosya_vardi) = onceki_bildirim_kayitlarini_yukle()
@@ -4394,6 +3872,17 @@ def main():
     except Exception as hata:
         hatalar.append(f"MSB / TSK haberleri: {type(hata).__name__} - {str(hata)[:150]}")
 
+    try:
+        kariyer_kapisi_ilanlari = kariyer_kapisi_aktif_ilanlarini_al()
+        tum_ilanlar.extend(kariyer_kapisi_ilanlari)
+        kaynak_sayilari[KARIYER_KAPISI_KAYNAK] = len(kariyer_kapisi_ilanlari)
+        print(f"{KARIYER_KAPISI_KAYNAK}: {len(kariyer_kapisi_ilanlari)}")
+    except Exception as hata:
+        hatalar.append(
+            f"{KARIYER_KAPISI_KAYNAK}: "
+            f"{type(hata).__name__} - {str(hata)[:150]}"
+        )
+
     for resmi_kaynak in RESMI_DUYURU_KAYNAKLARI:
         try:
             resmi_ilanlar = resmi_kaynaktan_ilanlari_al(resmi_kaynak)
@@ -4406,88 +3895,9 @@ def main():
         except Exception as hata:
             hatalar.append(f"{resmi_kaynak['kaynak']}: {type(hata).__name__} - {str(hata)[:150]}")
 
-    # Türkiye'deki üniversite personel ilanları: merkezi resmî portal her
-    # çalışmada, üniversitelerin resmî .edu.tr siteleri ise dönüşümlü taranır.
-    universite_kaynaklari = []
-    universite_tarama_sirasi = 0
-    universite_tarama_ozeti = {
-        "merkezi_kontrol_edilen_link": 0,
-        "merkezi_bulunan_ilan": 0,
-        "resmi_site_sayisi": 0,
-        "bu_calismada_taranan_site": 0,
-        "resmi_siteden_bulunan_ilan": 0,
-        "resmi_siteden_bulunan_haber": 0,
-    }
-
-    try:
-        merkezi_universite_ilanlari, merkezi_hatalar, kontrol_edilen = (
-            ilan_gov_tr_universite_ilanlarini_al(onceki_veri)
-        )
-        tum_ilanlar.extend(merkezi_universite_ilanlari)
-        hatalar.extend(merkezi_hatalar)
-        kaynak_sayilari["ilan.gov.tr Üniversite Personel İlanları"] = len(
-            merkezi_universite_ilanlari
-        )
-        universite_tarama_ozeti["merkezi_kontrol_edilen_link"] = kontrol_edilen
-        universite_tarama_ozeti["merkezi_bulunan_ilan"] = len(merkezi_universite_ilanlari)
-        print(
-            "ilan.gov.tr üniversite personel ilanları: "
-            f"{len(merkezi_universite_ilanlari)} "
-            f"(kontrol edilen bağlantı: {kontrol_edilen})"
-        )
-    except Exception as hata:
-        hatalar.append(
-            f"ilan.gov.tr üniversite ilanları: {type(hata).__name__} - {str(hata)[:150]}"
-        )
-
-    try:
-        (
-            site_universite_ilanlari,
-            site_universite_haberleri,
-            universite_kaynaklari,
-            universite_tarama_sirasi,
-            site_hatalari,
-            taranan_site_sayisi,
-        ) = universite_resmi_sitelerini_donusumlu_tara(onceki_veri)
-        tum_ilanlar.extend(site_universite_ilanlari)
-        tum_haberler.extend(site_universite_haberleri)
-        hatalar.extend(site_hatalari)
-        kaynak_sayilari["Üniversite Resmî Duyuruları"] = len(site_universite_ilanlari)
-        kaynak_sayilari["Üniversite Personel Haberleri"] = len(site_universite_haberleri)
-        universite_tarama_ozeti["resmi_site_sayisi"] = len(universite_kaynaklari)
-        universite_tarama_ozeti["bu_calismada_taranan_site"] = taranan_site_sayisi
-        universite_tarama_ozeti["resmi_siteden_bulunan_ilan"] = len(site_universite_ilanlari)
-        universite_tarama_ozeti["resmi_siteden_bulunan_haber"] = len(site_universite_haberleri)
-        print(
-            "Üniversite resmî siteleri: "
-            f"{taranan_site_sayisi}/{len(universite_kaynaklari)} tarandı, "
-            f"{len(site_universite_ilanlari)} ilan ve "
-            f"{len(site_universite_haberleri)} personel haberi bulundu"
-        )
-    except Exception as hata:
-        hatalar.append(
-            f"Üniversite resmî siteleri: {type(hata).__name__} - {str(hata)[:150]}"
-        )
-
     # Kaynak geçici hata verdiğinde uygulamanın tamamen boşalmaması için önceki
     # aktif veriyi güvenlik ağı olarak koru. Yeni kayıtlar her zaman önceliklidir.
     onceki_ilanlar = onceki_veri.get("ilanlar", []) if isinstance(onceki_veri, dict) else []
-    yeni_universite_sayisi = sum(
-        1 for ilan in tum_ilanlar if ilan.get("kaynak_kodu") == "universite_personel"
-    )
-    if yeni_universite_sayisi == 0:
-        onceki_universite_ilanlari = [
-            ilan
-            for ilan in onceki_ilanlar
-            if ilan.get("kaynak_kodu") == "universite_personel"
-            and ilan_aktif_mi(ilan)
-        ]
-        if onceki_universite_ilanlari:
-            print(
-                "UYARI: Üniversite kaynakları geçici olarak boş döndü; "
-                f"önceki {len(onceki_universite_ilanlari)} aktif üniversite ilanı korunuyor."
-            )
-            tum_ilanlar.extend(onceki_universite_ilanlari)
     if len(tum_ilanlar) < max(25, int(len(onceki_ilanlar) * 0.35)):
         print("UYARI: Yeni ilan sayısı olağandışı düşük; önceki aktif ilanlar birleştiriliyor.")
         tum_ilanlar.extend(onceki_ilanlar)
@@ -4550,14 +3960,12 @@ def main():
     )
     print(f"Bildirim: {bildirim_sonucu['mesaj']}")
 
-    print("Profil bildirimi testi: kapalı; yalnızca gerçek ilan ve haberler gönderilecek.")
-
     otomatik_bildirim_testi = {
         "durum": "kapali",
         "basarili": True,
         "mesaj": "Test bildirimi kapatıldı.",
     }
-
+    
     print(f"Otomatik bildirim testi: {otomatik_bildirim_testi['mesaj']}")
 
     cikti = {
@@ -4569,9 +3977,6 @@ def main():
         "haber_sayisi": len(haberler),
         "haberler": haberler,
         "kaynak_sayilari": kaynak_sayilari,
-        "universite_kaynaklari": universite_kaynaklari,
-        "universite_tarama_sirasi": universite_tarama_sirasi,
-        "universite_tarama_ozeti": universite_tarama_ozeti,
         "bildirim_sonucu": bildirim_sonucu,
         "hata_sayisi": len(hatalar),
         "pdf_hata_sayisi": pdf_hatalari,
