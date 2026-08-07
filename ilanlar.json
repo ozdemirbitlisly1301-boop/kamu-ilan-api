@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-07T18:07:27.234716+00:00",
+  "guncellenme_zamani": "2026-08-07T20:13:07.544598+00:00",
   "ilan_sayisi": 186,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
@@ -149,16 +149,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "729d8322036545b07244",
-      "baslik": "Hatay İSKENT İskenderun Kent Hiz. San. ve Tic. Ltd. Şti.",
-      "kurum": "Hatay İSKENT İskenderun Kent Hiz. San. ve Tic. Ltd. Şti.",
-      "sehir": "Hatay",
+      "id": "02d00516e7f7ae59e2ee",
+      "baslik": "Iğdır İl Özel İdaresi Personel Limitet Şirketi Müdürlüğü",
+      "kurum": "Iğdır İl Özel İdaresi Personel Limitet Şirketi Müdürlüğü",
+      "sehir": "Iğdır",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "07.08.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/nxkdhjgi/brnb42200828b27_004765.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/nxkdhjgi/brnb42200828b27_004765.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=hatay&il=Hatay",
+      "link": "https://www.iskur.gov.tr/medya/foepydgz/iğdır-il-oezel-idaresi-personel-limitet-şirketi-mueduerlueğue.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/foepydgz/iğdır-il-oezel-idaresi-personel-limitet-şirketi-mueduerlueğue.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=igdir&il=I%C4%9Fd%C4%B1r",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -173,16 +173,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "02d00516e7f7ae59e2ee",
-      "baslik": "Iğdır İl Özel İdaresi Personel Limitet Şirketi Müdürlüğü",
-      "kurum": "Iğdır İl Özel İdaresi Personel Limitet Şirketi Müdürlüğü",
-      "sehir": "Iğdır",
+      "id": "729d8322036545b07244",
+      "baslik": "Hatay İSKENT İskenderun Kent Hiz. San. ve Tic. Ltd. Şti.",
+      "kurum": "Hatay İSKENT İskenderun Kent Hiz. San. ve Tic. Ltd. Şti.",
+      "sehir": "Hatay",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "07.08.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/foepydgz/iğdır-il-oezel-idaresi-personel-limitet-şirketi-mueduerlueğue.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/foepydgz/iğdır-il-oezel-idaresi-personel-limitet-şirketi-mueduerlueğue.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=igdir&il=I%C4%9Fd%C4%B1r",
+      "link": "https://www.iskur.gov.tr/medya/nxkdhjgi/brnb42200828b27_004765.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/nxkdhjgi/brnb42200828b27_004765.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=hatay&il=Hatay",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -7279,11 +7279,11 @@
     "Adalet Bakanlığı Personel Alımları": 0
   },
   "bildirim_sonucu": {
-    "durum": "gonderildi",
-    "yeni_ilan": 1,
+    "durum": "yeni_kayit_yok",
+    "yeni_ilan": 0,
     "yeni_haber": 0,
-    "gonderilen": 1,
-    "mesaj": "1 telefon bildirimi gönderildi."
+    "gonderilen": 0,
+    "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
   },
   "hata_sayisi": 0,
   "pdf_hata_sayisi": 1,
