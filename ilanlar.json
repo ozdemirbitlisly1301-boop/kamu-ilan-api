@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-07T15:17:20.146635+00:00",
-  "ilan_sayisi": 185,
+  "guncellenme_zamani": "2026-08-07T18:07:27.234716+00:00",
+  "ilan_sayisi": 186,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
     {
@@ -1289,6 +1289,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "daf1c55ad069ec3aec07",
+      "baslik": "Erzurum Kültür Turizm Eğitim Reklam ve Sanat Ürün. San. Tic. A.Ş (Barista)",
+      "kurum": "Erzurum Kültür Turizm Eğitim Reklam ve Sanat Ürün. San. Tic. A.Ş (Barista)",
+      "sehir": "Erzurum",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "10.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/cqmjfko2/kueltuer-aşş.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/cqmjfko2/kueltuer-aşş.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=erzurum&il=Erzurum",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "498e192dff1fe9ddf2ee",
       "baslik": "Sivas Suşehri Belediyesi Bel-Su A.Ş.",
       "kurum": "Sivas Suşehri Belediyesi Bel-Su A.Ş.",
@@ -1323,30 +1347,6 @@
       "link": "https://www.iskur.gov.tr/medya/qdfjordc/sivas-oeğretmenevi-ve-aso-mueduerlueğue-iktisadi-işletmesi-10082026.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/qdfjordc/sivas-oeğretmenevi-ve-aso-mueduerlueğue-iktisadi-işletmesi-10082026.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=sivas&il=Sivas",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "daf1c55ad069ec3aec07",
-      "baslik": "Erzurum Kültür Turizm Eğitim Reklam ve Sanat Ürün. San. Tic. A.Ş (Barista)",
-      "kurum": "Erzurum Kültür Turizm Eğitim Reklam ve Sanat Ürün. San. Tic. A.Ş (Barista)",
-      "sehir": "Erzurum",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "10.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/cqmjfko2/kueltuer-aşş.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/cqmjfko2/kueltuer-aşş.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=erzurum&il=Erzurum",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -2738,6 +2738,30 @@
       "link": "https://www.iskur.gov.tr/medya/tguc41nm/sakarya-kaynarca-sosyal-yardımlaşma-ve-dayanışma-vakfı-14082026.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/tguc41nm/sakarya-kaynarca-sosyal-yardımlaşma-ve-dayanışma-vakfı-14082026.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=sakarya&il=Sakarya",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "2780b750c24a3d2a1996",
+      "baslik": "Yenimahalle Sosyal Yardımlaşma ve Dayanışma Vakfı",
+      "kurum": "Yenimahalle Sosyal Yardımlaşma ve Dayanışma Vakfı",
+      "sehir": "Ankara",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "14.08.2026 18:00",
+      "link": "https://www.iskur.gov.tr/medya/wnifkjwt/dddidem.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/wnifkjwt/dddidem.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=ankara&il=Ankara",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -7256,10 +7280,10 @@
   },
   "bildirim_sonucu": {
     "durum": "gonderildi",
-    "yeni_ilan": 5,
+    "yeni_ilan": 1,
     "yeni_haber": 0,
-    "gonderilen": 5,
-    "mesaj": "5 telefon bildirimi gönderildi."
+    "gonderilen": 1,
+    "mesaj": "1 telefon bildirimi gönderildi."
   },
   "hata_sayisi": 0,
   "pdf_hata_sayisi": 1,
