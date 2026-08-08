@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-08T21:02:54.850613+00:00",
+  "guncellenme_zamani": "2026-08-08T22:06:11.756971+00:00",
   "ilan_sayisi": 151,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
@@ -2830,33 +2830,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "d865c5d748d53bc06ab3",
-      "baslik": "Gümüşhane Söğütlü Belediyesi Memur Alım İlanı",
-      "kurum": "Gümüşhane Söğütlü Belediyesi Memur Alım İlanı",
-      "sehir": "Gümüşhane",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "09.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/elphdhmc/guemueşhane-soeğuetlue-belediyesi-memur-alım-ilanı-09092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/elphdhmc/guemueşhane-soeğuetlue-belediyesi-memur-alım-ilanı-09092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=gumushane&il=G%C3%BCm%C3%BC%C5%9Fhane",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Maliye",
-        "Muhasebe"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "8fbc5aee35e4522e163e",
       "baslik": "Erzincan Otlukbeli Belediyesi Memur Alım İlanı",
       "kurum": "Erzincan Otlukbeli Belediyesi Memur Alım İlanı",
@@ -2879,6 +2852,33 @@
       "bolumler": [
         "Maliye",
         "İşletme"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "d865c5d748d53bc06ab3",
+      "baslik": "Gümüşhane Söğütlü Belediyesi Memur Alım İlanı",
+      "kurum": "Gümüşhane Söğütlü Belediyesi Memur Alım İlanı",
+      "sehir": "Gümüşhane",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "09.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/elphdhmc/guemueşhane-soeğuetlue-belediyesi-memur-alım-ilanı-09092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/elphdhmc/guemueşhane-soeğuetlue-belediyesi-memur-alım-ilanı-09092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=gumushane&il=G%C3%BCm%C3%BC%C5%9Fhane",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Maliye",
+        "Muhasebe"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
