@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-08T15:53:15.503708+00:00",
+  "guncellenme_zamani": "2026-08-08T17:19:25.052782+00:00",
   "ilan_sayisi": 158,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
@@ -79,16 +79,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "8a324ea6106b06df0630",
-      "baslik": "Esenyurt Belediyesi Site Yönetim A.Ş.",
-      "kurum": "Esenyurt Belediyesi Site Yönetim A.Ş.",
-      "sehir": "İstanbul",
+      "id": "3e3829d02c0e54d50998",
+      "baslik": "Isparta Atabey Belediyesi Ertokuş Hazır Beton Tic.Ltd.Şti",
+      "kurum": "Isparta Atabey Belediyesi Ertokuş Hazır Beton Tic.Ltd.Şti",
+      "sehir": "Isparta",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "08.08.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/xqwfqq3t/esenyurt-belediyesi-site-yoenetim-aş.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/xqwfqq3t/esenyurt-belediyesi-site-yoenetim-aş.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
+      "link": "https://www.iskur.gov.tr/medya/stedqowv/isparta-atabey-belediyesi-ertokuş-hazır-beton-ticltdşti-08082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/stedqowv/isparta-atabey-belediyesi-ertokuş-hazır-beton-ticltdşti-08082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=isparta&il=Isparta",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -103,16 +103,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "3e3829d02c0e54d50998",
-      "baslik": "Isparta Atabey Belediyesi Ertokuş Hazır Beton Tic.Ltd.Şti",
-      "kurum": "Isparta Atabey Belediyesi Ertokuş Hazır Beton Tic.Ltd.Şti",
-      "sehir": "Isparta",
+      "id": "8a324ea6106b06df0630",
+      "baslik": "Esenyurt Belediyesi Site Yönetim A.Ş.",
+      "kurum": "Esenyurt Belediyesi Site Yönetim A.Ş.",
+      "sehir": "İstanbul",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "08.08.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/stedqowv/isparta-atabey-belediyesi-ertokuş-hazır-beton-ticltdşti-08082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/stedqowv/isparta-atabey-belediyesi-ertokuş-hazır-beton-ticltdşti-08082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=isparta&il=Isparta",
+      "link": "https://www.iskur.gov.tr/medya/xqwfqq3t/esenyurt-belediyesi-site-yoenetim-aş.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/xqwfqq3t/esenyurt-belediyesi-site-yoenetim-aş.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -6591,7 +6591,6 @@
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
     "GSB Personel Alımları": 3,
-    "Aile Bakanlığı Personel Alımları": 0,
     "Adalet Bakanlığı Personel Alımları": 0
   },
   "bildirim_sonucu": {
@@ -6601,7 +6600,9 @@
     "gonderilen": 0,
     "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
   },
-  "hata_sayisi": 0,
+  "hata_sayisi": 1,
   "pdf_hata_sayisi": 0,
-  "hatalar": []
+  "hatalar": [
+    "Aile Bakanlığı Personel Alımları: RuntimeError - HTTPSConnectionPool(host='www.aile.gov.tr', port=443): Max retries exceeded with url: /pgm/duyurular (Caused by ConnectTimeoutError(<HTTPSConnection(h"
+  ]
 }
