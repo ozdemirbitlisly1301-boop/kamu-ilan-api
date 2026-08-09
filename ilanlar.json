@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-09T11:04:34.721400+00:00",
+  "guncellenme_zamani": "2026-08-09T13:59:08.523522+00:00",
   "ilan_sayisi": 151,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
@@ -3731,8 +3731,28 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 265,
+  "haber_sayisi": 267,
   "haberler": [
+    {
+      "id": "29587f3fd6a48c4a7f8e",
+      "baslik": "2026-YÖKDİL/2: Temel Soru Kitapçıkları ve Cevap Anahtarları Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "YÖKDİL Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "09.08.2026",
+      "kaynak": "ÖSYM YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-yokdil2-temel-soru-kitapciklari-ve-cevap-anahtarlari-yayimlandi"
+    },
+    {
+      "id": "27c43995e5231c48ee3b",
+      "baslik": "2026-YÖKDİL/2 Sınavı Temel Soru Kitapçıklarının Yayımlanması (%10)",
+      "kurum": "ÖSYM",
+      "kategori": "YÖKDİL Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "09.08.2026",
+      "kaynak": "ÖSYM YÖKDİL Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-yokdil2-sinavi-temel-soru-kitapciklarinin-yayimlanmasi-10"
+    },
     {
       "id": "d84de9ccb98da753396a",
       "baslik": "2026-YÖKDİL/2 Sınavı İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
@@ -6386,22 +6406,23 @@
   ],
   "kaynak_sayilari": {
     "ÖSYM merkezi atama ilanları": 0,
-    "ÖSYM tüm sınav haberleri": 263,
+    "ÖSYM tüm sınav haberleri": 265,
     "MSB / TSK Güncel Teminler": 3,
     "MSB / TSK haberleri": 0,
-    "Kariyer Kapısı Aktif İlanlar": 0,
     "GSB Personel Alımları": 3,
     "Aile Bakanlığı Personel Alımları": 0,
     "Adalet Bakanlığı Personel Alımları": 0
   },
   "bildirim_sonucu": {
-    "durum": "yeni_kayit_yok",
+    "durum": "gonderildi",
     "yeni_ilan": 0,
-    "yeni_haber": 0,
-    "gonderilen": 0,
-    "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
+    "yeni_haber": 2,
+    "gonderilen": 2,
+    "mesaj": "2 telefon bildirimi gönderildi."
   },
-  "hata_sayisi": 0,
+  "hata_sayisi": 1,
   "pdf_hata_sayisi": 0,
-  "hatalar": []
+  "hatalar": [
+    "Kariyer Kapısı Aktif İlanlar: RuntimeError - HTTPSConnectionPool(host='kariyerkapisi.gov.tr', port=443): Max retries exceeded with url: /isealim (Caused by NameResolutionError(\"HTTPSConnection(ho"
+  ]
 }
