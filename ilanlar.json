@@ -1,8 +1,8 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-09T21:07:39.733699+00:00",
-  "ilan_sayisi": 142,
-  "suresi_dolmus_ilan_sayisi": 1,
+  "guncellenme_zamani": "2026-08-09T22:58:04.106912+00:00",
+  "ilan_sayisi": 140,
+  "suresi_dolmus_ilan_sayisi": 0,
   "ilanlar": [
     {
       "id": "f65346d37306e0d7fa9a",
@@ -2425,6 +2425,32 @@
       "analiz_surumu": 2
     },
     {
+      "id": "52c0dca82d8ce17c889c",
+      "baslik": "Edirne Keşan Belediyesi Memur Alım İlanı",
+      "kurum": "Edirne Keşan Belediyesi Memur Alım İlanı",
+      "sehir": "Edirne",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "04.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/4gbj0dkl/edirne-keşan-belediyesi-memur-alım-ilanı-04092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/4gbj0dkl/edirne-keşan-belediyesi-memur-alım-ilanı-04092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=edirne&il=Edirne",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "75e9b2e8ebafcc1b01e3",
       "baslik": "Kahramanmaraş Elbistan Belediyesi Sözleşmeli Personel Alım İlanı",
       "kurum": "Kahramanmaraş Elbistan Belediyesi Sözleşmeli Personel Alım İlanı",
@@ -2451,16 +2477,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "52c0dca82d8ce17c889c",
-      "baslik": "Edirne Keşan Belediyesi Memur Alım İlanı",
-      "kurum": "Edirne Keşan Belediyesi Memur Alım İlanı",
-      "sehir": "Edirne",
+      "id": "eb52e89536d86f2f1759",
+      "baslik": "Muğla Dalaman Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Muğla Dalaman Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Muğla",
       "tur": "Memur",
       "kaynak": "İŞKUR Kamu Memur Alımları",
       "son_basvuru": "04.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/4gbj0dkl/edirne-keşan-belediyesi-memur-alım-ilanı-04092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/4gbj0dkl/edirne-keşan-belediyesi-memur-alım-ilanı-04092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=edirne&il=Edirne",
+      "link": "https://www.iskur.gov.tr/medya/fdclalt4/muğla-dalaman-belediyesi-soezleşmeli-personel-alım-ilanı-04092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/fdclalt4/muğla-dalaman-belediyesi-soezleşmeli-personel-alım-ilanı-04092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=mugla&il=Mu%C4%9Fla",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
@@ -2468,6 +2494,7 @@
       "minimum_puan": null,
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
       "mezuniyetler": [
+        "Önlisans",
         "Lisans"
       ],
       "bolumler": [
@@ -2498,33 +2525,6 @@
       ],
       "bolumler": [
         "İşletme"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "eb52e89536d86f2f1759",
-      "baslik": "Muğla Dalaman Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Muğla Dalaman Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Muğla",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "04.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/fdclalt4/muğla-dalaman-belediyesi-soezleşmeli-personel-alım-ilanı-04092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/fdclalt4/muğla-dalaman-belediyesi-soezleşmeli-personel-alım-ilanı-04092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=mugla&il=Mu%C4%9Fla",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Önlisans",
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -3452,58 +3452,6 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "html_baslik",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "99e5e347908973c99805",
-      "baslik": "2026 YILI SÖZLEŞMELİ DİYETİSYEN, PSİKOLOG ve SOSYAL ÇALIŞMACI ALIMI DUYURUSU",
-      "kurum": "Gençlik ve Spor Bakanlığı",
-      "sehir": "Türkiye Geneli",
-      "tur": "Personel Alımı",
-      "kaynak": "GSB Personel Alımları",
-      "kaynak_kodu": "resmi_duyuru",
-      "son_basvuru": "",
-      "yayin_tarihi": "17.07.2026",
-      "link": "https://www.gsb.gov.tr/tr/duyuru/300997-2026-yili-sozlesmeli-diyetisyen-psikolog-ve-sosyal-calismaci-alimi-duyurusu",
-      "belge_linki": "https://www.gsb.gov.tr/tr/duyuru/300997-2026-yili-sozlesmeli-diyetisyen-psikolog-ve-sosyal-calismaci-alimi-duyurusu",
-      "kaynak_sayfa_linki": "https://www.gsb.gov.tr/tr/duyuru/300997-2026-yili-sozlesmeli-diyetisyen-psikolog-ve-sosyal-calismaci-alimi-duyurusu",
-      "basvuru_linki": "https://www.cimer.gov.tr/?bim=CfDJ8CLd_u-3vtlEmchj_bWBwBcfg5cuY1LsxoysZAARmmBqn-_A2f7_ZBCzbog36hbyBJZqIrrSE74B-kdhbyDBTt1Jl4YUBKAL0aTfsGo4zZetkb6qrWce6HtwE4kuCQvHXyVw1FbZtf0m4d08TbzvHmlRDhcmxhSKDnLgCvTv5xuvwzh8WC6WB_ZdcXLWYEDiGg",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "html_ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "be0fbe4608d75c44cb3b",
-      "baslik": "2026 YILI SÖZLEŞMELİ YURT YÖNETİM PERSONELİ VE GENÇLİK ÇALIŞANI ALIMI DUYURUSU",
-      "kurum": "Gençlik ve Spor Bakanlığı",
-      "sehir": "Türkiye Geneli",
-      "tur": "Personel Alımı",
-      "kaynak": "GSB Personel Alımları",
-      "kaynak_kodu": "resmi_duyuru",
-      "son_basvuru": "",
-      "yayin_tarihi": "03.07.2026",
-      "link": "https://www.gsb.gov.tr/tr/duyuru/300642-2026-yili-sozlesmeli-yurt-yonetim-personeli-ve-genclik-calisani-alimi-duyurusu",
-      "belge_linki": "https://www.gsb.gov.tr/tr/duyuru/300642-2026-yili-sozlesmeli-yurt-yonetim-personeli-ve-genclik-calisani-alimi-duyurusu",
-      "kaynak_sayfa_linki": "https://www.gsb.gov.tr/tr/duyuru/300642-2026-yili-sozlesmeli-yurt-yonetim-personeli-ve-genclik-calisani-alimi-duyurusu",
-      "basvuru_linki": "https://www.cimer.gov.tr/?bim=CfDJ8CLd_u-3vtlEmchj_bWBwBcfg5cuY1LsxoysZAARmmBqn-_A2f7_ZBCzbog36hbyBJZqIrrSE74B-kdhbyDBTt1Jl4YUBKAL0aTfsGo4zZetkb6qrWce6HtwE4kuCQvHXyVw1FbZtf0m4d08TbzvHmlRDhcmxhSKDnLgCvTv5xuvwzh8WC6WB_ZdcXLWYEDiGg",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "html_ok",
       "analiz_surumu": 2
     }
   ],
@@ -6186,7 +6134,6 @@
     "MSB / TSK Güncel Teminler": 3,
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
-    "GSB Personel Alımları": 3,
     "Aile Bakanlığı Personel Alımları": 0,
     "Adalet Bakanlığı Personel Alımları": 0
   },
@@ -6197,7 +6144,9 @@
     "gonderilen": 0,
     "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
   },
-  "hata_sayisi": 0,
+  "hata_sayisi": 1,
   "pdf_hata_sayisi": 0,
-  "hatalar": []
+  "hatalar": [
+    "GSB Personel Alımları: RuntimeError - HTTPSConnectionPool(host='www.gsb.gov.tr', port=443): Max retries exceeded with url: /tr/duyurular/ (Caused by ConnectTimeoutError(<HTTPSConnection(ho"
+  ]
 }
