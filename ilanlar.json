@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-08T23:16:03.323326+00:00",
+  "guncellenme_zamani": "2026-08-09T04:06:44.611975+00:00",
   "ilan_sayisi": 151,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
@@ -277,6 +277,54 @@
       "analiz_surumu": 2
     },
     {
+      "id": "52fe741d32a5236542df",
+      "baslik": "Bursa Mustafakemalpaşa Turizm ve Tesis İşletmeciliği Akaryakıt Gıda İnş. Tic. Ltd. Şti.",
+      "kurum": "Bursa Mustafakemalpaşa Turizm ve Tesis İşletmeciliği Akaryakıt Gıda İnş. Tic. Ltd. Şti.",
+      "sehir": "Bursa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "10.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/agknvgrr/mustafakemalpaşa-turizm-100826.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/agknvgrr/mustafakemalpaşa-turizm-100826.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "f5a28b12f3afc11a5cde",
+      "baslik": "Bursa Gürsu Modern A.Ş.",
+      "kurum": "Bursa Gürsu Modern A.Ş.",
+      "sehir": "Bursa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "10.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/p1bd5diu/guersu-modern-aş-10082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/p1bd5diu/guersu-modern-aş-10082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "ec785263ade0eae25ce5",
       "baslik": "Çanakkale Bayramiç Bel. Aka. Taş. Res. İnş. Tan. Kül. San. Ağ. Se. Çiç. Soğ. Ha. De. Pak. Ot. ve San. Tic. Ltd. Şti.",
       "kurum": "Çanakkale Bayramiç Bel. Aka. Taş. Res. İnş. Tan. Kül. San. Ağ. Se. Çiç. Soğ. Ha. De. Pak. Ot. ve San. Tic. Ltd. Şti.",
@@ -359,54 +407,6 @@
       "link": "https://www.iskur.gov.tr/medya/mdsl0lga/doc09491220260807062206.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/mdsl0lga/doc09491220260807062206.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "52fe741d32a5236542df",
-      "baslik": "Bursa Mustafakemalpaşa Turizm ve Tesis İşletmeciliği Akaryakıt Gıda İnş. Tic. Ltd. Şti.",
-      "kurum": "Bursa Mustafakemalpaşa Turizm ve Tesis İşletmeciliği Akaryakıt Gıda İnş. Tic. Ltd. Şti.",
-      "sehir": "Bursa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "10.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/agknvgrr/mustafakemalpaşa-turizm-100826.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/agknvgrr/mustafakemalpaşa-turizm-100826.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "f5a28b12f3afc11a5cde",
-      "baslik": "Bursa Gürsu Modern A.Ş.",
-      "kurum": "Bursa Gürsu Modern A.Ş.",
-      "sehir": "Bursa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "10.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/p1bd5diu/guersu-modern-aş-10082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/p1bd5diu/guersu-modern-aş-10082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -2830,33 +2830,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "d865c5d748d53bc06ab3",
-      "baslik": "Gümüşhane Söğütlü Belediyesi Memur Alım İlanı",
-      "kurum": "Gümüşhane Söğütlü Belediyesi Memur Alım İlanı",
-      "sehir": "Gümüşhane",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "09.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/elphdhmc/guemueşhane-soeğuetlue-belediyesi-memur-alım-ilanı-09092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/elphdhmc/guemueşhane-soeğuetlue-belediyesi-memur-alım-ilanı-09092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=gumushane&il=G%C3%BCm%C3%BC%C5%9Fhane",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Maliye",
-        "Muhasebe"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "8fbc5aee35e4522e163e",
       "baslik": "Erzincan Otlukbeli Belediyesi Memur Alım İlanı",
       "kurum": "Erzincan Otlukbeli Belediyesi Memur Alım İlanı",
@@ -2879,6 +2852,33 @@
       "bolumler": [
         "Maliye",
         "İşletme"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "d865c5d748d53bc06ab3",
+      "baslik": "Gümüşhane Söğütlü Belediyesi Memur Alım İlanı",
+      "kurum": "Gümüşhane Söğütlü Belediyesi Memur Alım İlanı",
+      "sehir": "Gümüşhane",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "09.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/elphdhmc/guemueşhane-soeğuetlue-belediyesi-memur-alım-ilanı-09092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/elphdhmc/guemueşhane-soeğuetlue-belediyesi-memur-alım-ilanı-09092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=gumushane&il=G%C3%BCm%C3%BC%C5%9Fhane",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Maliye",
+        "Muhasebe"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -3731,7 +3731,7 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 268,
+  "haber_sayisi": 265,
   "haberler": [
     {
       "id": "d84de9ccb98da753396a",
@@ -6364,36 +6364,6 @@
       "link": "https://www.osym.gov.tr/eyds-20262-ingilizce-sinavi-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
     },
     {
-      "id": "cae19ede68cff20ca6e2",
-      "baslik": "2025-YDUS 2. Dönem Tercih İşlemleri: Tercih Kılavuzu ve Kontenjanlar Tablosu",
-      "kurum": "ÖSYM",
-      "kategori": "YDUS Tercih",
-      "yayin_tarihi": "10.02.2026",
-      "kaynak": "ÖSYM YDUS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2025ydus-2-donem-tercih-islemleri-tercih-kilavuzu-ve-kontenjanlar-tablosu"
-    },
-    {
-      "id": "c404a498135f81bec26a",
-      "baslik": "2026-DİB-MBSTS: Kılavuz ve Başvuru Bilgileri",
-      "kurum": "ÖSYM",
-      "kategori": "STS Başvuru",
-      "yayin_tarihi": "10.02.2026",
-      "kaynak": "ÖSYM STS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî STS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026dibmbsts-kilavuz-ve-basvuru-bilgileri"
-    },
-    {
-      "id": "6a8ec38699cae73fa453",
-      "baslik": "2026-DİB-MBSTS: Başvuruların Alınması",
-      "kurum": "ÖSYM",
-      "kategori": "STS Başvuru",
-      "yayin_tarihi": "10.02.2026",
-      "kaynak": "ÖSYM STS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî STS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026dibmbsts-basvurularin-alinmasi"
-    },
-    {
       "id": "1de5b4081003dbef6469",
       "baslik": "AİLE VE SOSYAL HİZMETLER BAKANLIĞI 680 SÖZLEŞMELİ PERSONEL ALIMI TAVAN VE TABAN PUANLARI HAKKINDA DUYURU",
       "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
@@ -6416,7 +6386,7 @@
   ],
   "kaynak_sayilari": {
     "ÖSYM merkezi atama ilanları": 0,
-    "ÖSYM tüm sınav haberleri": 266,
+    "ÖSYM tüm sınav haberleri": 263,
     "MSB / TSK Güncel Teminler": 3,
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
