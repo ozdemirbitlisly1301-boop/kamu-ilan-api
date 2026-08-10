@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-10T00:06:38.228188+00:00",
-  "ilan_sayisi": 142,
+  "guncellenme_zamani": "2026-08-10T05:13:47.643218+00:00",
+  "ilan_sayisi": 145,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
     {
@@ -1516,6 +1516,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "949abeb4ca3cf81ed0a0",
+      "baslik": "Aziziye Sosyal Yardımlaşma ve Dayanışma Vakfı",
+      "kurum": "Aziziye Sosyal Yardımlaşma ve Dayanışma Vakfı",
+      "sehir": "Erzurum",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "14.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/0gbnbs0g/aziziye-sydv.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/0gbnbs0g/aziziye-sydv.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=erzurum&il=Erzurum",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "2aab03fcfad196de7da1",
       "baslik": "Besot Manisa Beld Müş Müth Hiz Ulaş Top Taş Sos Tes İşl Turz ve Enerji San Tic A.Ş",
       "kurum": "Besot Manisa Beld Müş Müth Hiz Ulaş Top Taş Sos Tes İşl Turz ve Enerji San Tic A.Ş",
@@ -1718,6 +1742,54 @@
       "link": "https://www.iskur.gov.tr/medya/sugcwbpd/tekirdağ-bueyuekşehir-belediyesi-personel-aş-14082026.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/sugcwbpd/tekirdağ-bueyuekşehir-belediyesi-personel-aş-14082026.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=tekirdag&il=Tekirda%C4%9F",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "ba327f415975c1837ef9",
+      "baslik": "Afyonkarahisar Öz Nuribey Petrol ve Petrol Ürünleri Taşımacılık Temizlik İnş. Gıda Taah. San ve Tic. Ltd. Şti",
+      "kurum": "Afyonkarahisar Öz Nuribey Petrol ve Petrol Ürünleri Taşımacılık Temizlik İnş. Gıda Taah. San ve Tic. Ltd. Şti",
+      "sehir": "Afyonkarahisar",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "15.08.2026 00:00",
+      "link": "https://www.iskur.gov.tr/medya/dsll5zkb/afyonkarahisar-oez-nuribey-petrol-ve-petrol-ueruenleri-taşımacılık-temizlik-inş-gıda-taah-san-ve-tic-ltd-şti-14082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/dsll5zkb/afyonkarahisar-oez-nuribey-petrol-ve-petrol-ueruenleri-taşımacılık-temizlik-inş-gıda-taah-san-ve-tic-ltd-şti-14082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=afyonkarahisar&il=Afyonkarahisar",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "31b079ef5d37e7c0ab9e",
+      "baslik": "Afyonkarahisar İhsaniye ihsan Ören Taş. Gıda Turzm Mad. Hay. Süt Ürn. Unlu Mam.Tarım İnş.Orm.Ürn. Org. Teks. Ürn. Çiçekçilik Lokanta Jeot. Enj. San. ve Tic. Ltd Şti.",
+      "kurum": "Afyonkarahisar İhsaniye ihsan Ören Taş. Gıda Turzm Mad. Hay. Süt Ürn. Unlu Mam.Tarım İnş.Orm.Ürn. Org. Teks. Ürn. Çiçekçilik Lokanta Jeot. Enj. San. ve Tic. Ltd Şti.",
+      "sehir": "Afyonkarahisar",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "15.08.2026 00:00",
+      "link": "https://www.iskur.gov.tr/medya/0bommbvw/afyonkarahisar-ihsaniye-ihsan-oeren-taş-gıda-turzm-mad-hay-suet-uern-unlu-mamtarım-inşormuern-org-teks-uern-çiçekçilik-lokanta-jeot-enj-san-ve-tic-ltd-şti-14082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/0bommbvw/afyonkarahisar-ihsaniye-ihsan-oeren-taş-gıda-turzm-mad-hay-suet-uern-unlu-mamtarım-inşormuern-org-teks-uern-çiçekçilik-lokanta-jeot-enj-san-ve-tic-ltd-şti-14082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=afyonkarahisar&il=Afyonkarahisar",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -6182,10 +6254,10 @@
   },
   "bildirim_sonucu": {
     "durum": "gonderildi",
-    "yeni_ilan": 2,
+    "yeni_ilan": 3,
     "yeni_haber": 0,
-    "gonderilen": 2,
-    "mesaj": "2 telefon bildirimi gönderildi."
+    "gonderilen": 3,
+    "mesaj": "3 telefon bildirimi gönderildi."
   },
   "hata_sayisi": 0,
   "pdf_hata_sayisi": 0,
