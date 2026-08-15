@@ -1,57 +1,9 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-15T13:48:09.560248+00:00",
-  "ilan_sayisi": 176,
+  "guncellenme_zamani": "2026-08-15T14:54:38.098781+00:00",
+  "ilan_sayisi": 174,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
-    {
-      "id": "251e25dd7ef709688468",
-      "baslik": "Çanakkale Ezine 22 Eylül Destek Tur. San. ve Tic. Ltd. Şti.",
-      "kurum": "Çanakkale Ezine 22 Eylül Destek Tur. San. ve Tic. Ltd. Şti.",
-      "sehir": "Çanakkale",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "15.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/rxsjhkps/ilan-formu.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/rxsjhkps/ilan-formu.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "6877174c52675ae51b1c",
-      "baslik": "ERZURUM KÜLTÜR TURİZM EĞİTİM REKLAM VE SANAT ÜRÜNLERİ SANAYİ TİCARET ANONİM ŞİRKETİ (USTA, BULAŞIKÇI, BARİSTA, MUHASEBE)",
-      "kurum": "ERZURUM KÜLTÜR TURİZM EĞİTİM REKLAM VE SANAT ÜRÜNLERİ SANAYİ TİCARET ANONİM ŞİRKETİ (USTA, BULAŞIKÇI, BARİSTA, MUHASEBE)",
-      "sehir": "Erzurum",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "15.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/ictbeutn/kueltuer.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/ictbeutn/kueltuer.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=erzurum&il=Erzurum",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
     {
       "id": "d0c4ed4d039946442d79",
       "baslik": "İstanbul Personel Yönetim A.Ş. (İSPER)",
