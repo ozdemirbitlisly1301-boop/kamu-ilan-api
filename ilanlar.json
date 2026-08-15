@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-15T05:57:38.362877+00:00",
+  "guncellenme_zamani": "2026-08-15T07:21:01.765063+00:00",
   "ilan_sayisi": 177,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
@@ -539,30 +539,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "c80b6175e64d7a009039",
-      "baslik": "Bursa GEMTAŞ Gemlik İnş. Taah. San. ve Tic. A.Ş.",
-      "kurum": "Bursa GEMTAŞ Gemlik İnş. Taah. San. ve Tic. A.Ş.",
-      "sehir": "Bursa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "17.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/g3spkont/gemtaş-gemlik-inş-taah-san-ve-tic-aş-170826.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/g3spkont/gemtaş-gemlik-inş-taah-san-ve-tic-aş-170826.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "258deba5f7189aa4fc66",
       "baslik": "Çanakkale Kentsel Hiz. Müh. Müt. Tic. ve San. A.Ş.",
       "kurum": "Çanakkale Kentsel Hiz. Müh. Müt. Tic. ve San. A.Ş.",
@@ -610,6 +586,30 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "c80b6175e64d7a009039",
+      "baslik": "Bursa GEMTAŞ Gemlik İnş. Taah. San. ve Tic. A.Ş.",
+      "kurum": "Bursa GEMTAŞ Gemlik İnş. Taah. San. ve Tic. A.Ş.",
+      "sehir": "Bursa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "17.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/g3spkont/gemtaş-gemlik-inş-taah-san-ve-tic-aş-170826.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/g3spkont/gemtaş-gemlik-inş-taah-san-ve-tic-aş-170826.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
       "analiz_surumu": 2
     },
     {
@@ -951,16 +951,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "d70053d4961e9ace8140",
-      "baslik": "Isparta Atabey Belediyesi Ertokuş Hazır Beton Tic.Ltd.Şti",
-      "kurum": "Isparta Atabey Belediyesi Ertokuş Hazır Beton Tic.Ltd.Şti",
-      "sehir": "Isparta",
+      "id": "347458dd04283392a237",
+      "baslik": "Hatay Arsuz İmar Ltd. Şti.",
+      "kurum": "Hatay Arsuz İmar Ltd. Şti.",
+      "sehir": "Hatay",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "17.08.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/i0vdlpbr/isparta-atabey-belediyesi-ertokuş-hazır-beton-ticltdşti-17082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/i0vdlpbr/isparta-atabey-belediyesi-ertokuş-hazır-beton-ticltdşti-17082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=isparta&il=Isparta",
+      "link": "https://www.iskur.gov.tr/medya/zwmh1xye/brnb42200828b27_004808.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/zwmh1xye/brnb42200828b27_004808.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=hatay&il=Hatay",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -975,16 +975,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "347458dd04283392a237",
-      "baslik": "Hatay Arsuz İmar Ltd. Şti.",
-      "kurum": "Hatay Arsuz İmar Ltd. Şti.",
-      "sehir": "Hatay",
+      "id": "d70053d4961e9ace8140",
+      "baslik": "Isparta Atabey Belediyesi Ertokuş Hazır Beton Tic.Ltd.Şti",
+      "kurum": "Isparta Atabey Belediyesi Ertokuş Hazır Beton Tic.Ltd.Şti",
+      "sehir": "Isparta",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "17.08.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/zwmh1xye/brnb42200828b27_004808.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/zwmh1xye/brnb42200828b27_004808.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=hatay&il=Hatay",
+      "link": "https://www.iskur.gov.tr/medya/i0vdlpbr/isparta-atabey-belediyesi-ertokuş-hazır-beton-ticltdşti-17082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/i0vdlpbr/isparta-atabey-belediyesi-ertokuş-hazır-beton-ticltdşti-17082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=isparta&il=Isparta",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -7106,11 +7106,11 @@
     "Adalet Bakanlığı Personel Alımları": 0
   },
   "bildirim_sonucu": {
-    "durum": "gonderildi",
-    "yeni_ilan": 1,
+    "durum": "yeni_kayit_yok",
+    "yeni_ilan": 0,
     "yeni_haber": 0,
-    "gonderilen": 1,
-    "mesaj": "1 telefon bildirimi gönderildi."
+    "gonderilen": 0,
+    "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
   },
   "hata_sayisi": 0,
   "pdf_hata_sayisi": 2,
