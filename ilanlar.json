@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-15T23:43:09.360848+00:00",
+  "guncellenme_zamani": "2026-08-16T00:03:33.891076+00:00",
   "ilan_sayisi": 169,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
@@ -4180,7 +4180,7 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 272,
+  "haber_sayisi": 269,
   "haberler": [
     {
       "id": "ecd0d2250ab2516d9c40",
@@ -6853,36 +6853,6 @@
       "link": "https://www.osym.gov.tr/2026yds1-kilavuz-ve-basvuru-bilgileri"
     },
     {
-      "id": "e1fbdb23a0d71c8a99ae",
-      "baslik": "2026-YDS/1: Başvuruların Alınması",
-      "kurum": "ÖSYM",
-      "kategori": "YDS Başvuru",
-      "yayin_tarihi": "17.02.2026",
-      "kaynak": "ÖSYM YDS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026yds1-basvurularin-alinmasi"
-    },
-    {
-      "id": "3e462c6c5fef0edd0c31",
-      "baslik": "e-YDS 2026/5 (İspanyolca/İtalyanca): Başvuruların Alınması",
-      "kurum": "ÖSYM",
-      "kategori": "e-YDS Başvuru",
-      "yayin_tarihi": "17.02.2026",
-      "kaynak": "ÖSYM e-YDS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/eyds-20265-ispanyolcaitalyanca-basvurularin-alinmasi"
-    },
-    {
-      "id": "0b5d92fdde4b06bf0258",
-      "baslik": "e-YDS 2026/3 (Farsça/Yunanca/Bulgarca): Başvuruların Alınması",
-      "kurum": "ÖSYM",
-      "kategori": "e-YDS Başvuru",
-      "yayin_tarihi": "17.02.2026",
-      "kaynak": "ÖSYM e-YDS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/eyds-20263-farscayunancabulgarca-basvurularin-alinmasi"
-    },
-    {
       "id": "1de5b4081003dbef6469",
       "baslik": "AİLE VE SOSYAL HİZMETLER BAKANLIĞI 680 SÖZLEŞMELİ PERSONEL ALIMI TAVAN VE TABAN PUANLARI HAKKINDA DUYURU",
       "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
@@ -6905,7 +6875,7 @@
   ],
   "kaynak_sayilari": {
     "ÖSYM merkezi atama ilanları": 0,
-    "ÖSYM tüm sınav haberleri": 270,
+    "ÖSYM tüm sınav haberleri": 267,
     "MSB / TSK Güncel Teminler": 3,
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
