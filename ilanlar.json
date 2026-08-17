@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-16T23:41:59.385213+00:00",
+  "guncellenme_zamani": "2026-08-17T00:02:52.056039+00:00",
   "ilan_sayisi": 158,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
@@ -3913,7 +3913,7 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 269,
+  "haber_sayisi": 268,
   "haberler": [
     {
       "id": "ecd0d2250ab2516d9c40",
@@ -6576,16 +6576,6 @@
       "link": "https://www.osym.gov.tr/2026msu-sinava-giris-belgeleri-erisime-acildi"
     },
     {
-      "id": "5383ad176dedb5289e3e",
-      "baslik": "2026-YDS/1: Kılavuz ve Başvuru Bilgileri",
-      "kurum": "ÖSYM",
-      "kategori": "YDS Başvuru",
-      "yayin_tarihi": "18.02.2026",
-      "kaynak": "ÖSYM YDS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026yds1-kilavuz-ve-basvuru-bilgileri"
-    },
-    {
       "id": "1de5b4081003dbef6469",
       "baslik": "AİLE VE SOSYAL HİZMETLER BAKANLIĞI 680 SÖZLEŞMELİ PERSONEL ALIMI TAVAN VE TABAN PUANLARI HAKKINDA DUYURU",
       "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
@@ -6608,7 +6598,7 @@
   ],
   "kaynak_sayilari": {
     "ÖSYM merkezi atama ilanları": 0,
-    "ÖSYM tüm sınav haberleri": 267,
+    "ÖSYM tüm sınav haberleri": 266,
     "MSB / TSK Güncel Teminler": 3,
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
