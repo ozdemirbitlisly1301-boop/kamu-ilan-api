@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-17T21:57:00.333406+00:00",
-  "ilan_sayisi": 185,
+  "guncellenme_zamani": "2026-08-17T22:57:22.476348+00:00",
+  "ilan_sayisi": 174,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
     {
@@ -1646,32 +1646,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "4e7551ae62cd51c00c66",
-      "baslik": "Tarım ve Orman Bakanlığı Su Enstitüsü Başkanlığı Sözleşmeli Personel Alım İlanı",
-      "kurum": "Tarım ve Orman Bakanlığı Su Enstitüsü Başkanlığı Sözleşmeli Personel Alım İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "21.08.2026 18:00",
-      "link": "https://www.iskur.gov.tr/medya/gvabvpyl/tarım-ve-orman-bakanlığı-su-enstituesue-başkanlığı-soezleşmeli-personel-alım-ilanı-21082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/gvabvpyl/tarım-ve-orman-bakanlığı-su-enstituesue-başkanlığı-soezleşmeli-personel-alım-ilanı-21082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "https://kariyerkapisi.gov.tr/isealim",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": 70,
-      "kpss_durumu": "En az 70 KPSS puanı",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "433543c67320ed6bf459",
       "baslik": "Bursa Osmangazi Belediyesi Personel A.Ş. OSPERAŞ",
       "kurum": "Bursa Osmangazi Belediyesi Personel A.Ş. OSPERAŞ",
@@ -1685,30 +1659,6 @@
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "57967acc864a7400e33d",
-      "baslik": "Milli Eğitim Bakanlığı Sözleşmeli Bilişim Personeli Sınav İlanı",
-      "kurum": "Milli Eğitim Bakanlığı Sözleşmeli Bilişim Personeli Sınav İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "21.08.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/yiwh5r3h/milli-eğitim-bakanlığı-soezleşmeli-bilişim-personeli-sınav-ilanı-21082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/yiwh5r3h/milli-eğitim-bakanlığı-soezleşmeli-bilişim-personeli-sınav-ilanı-21082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
@@ -1943,16 +1893,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "bb36ec9ab9f120c2eec3",
-      "baslik": "HAYRATBEL PERSONEL LTD. ŞTİ.",
-      "kurum": "HAYRATBEL PERSONEL LTD. ŞTİ.",
-      "sehir": "Trabzon",
+      "id": "e99dac83e6e91ff4c278",
+      "baslik": "Tekirdağ Büyükşehir Belediyesi Personel A.Ş.",
+      "kurum": "Tekirdağ Büyükşehir Belediyesi Personel A.Ş.",
+      "sehir": "Tekirdağ",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "21.08.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/kjqk54ry/hayrat.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/kjqk54ry/hayrat.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=trabzon&il=Trabzon",
+      "link": "https://www.iskur.gov.tr/medya/wzyjd50h/tekirdağ-bueyuekşehir-belediyesi-personel-aş-21082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/wzyjd50h/tekirdağ-bueyuekşehir-belediyesi-personel-aş-21082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=tekirdag&il=Tekirda%C4%9F",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -1967,16 +1917,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "e99dac83e6e91ff4c278",
-      "baslik": "Tekirdağ Büyükşehir Belediyesi Personel A.Ş.",
-      "kurum": "Tekirdağ Büyükşehir Belediyesi Personel A.Ş.",
-      "sehir": "Tekirdağ",
+      "id": "bb36ec9ab9f120c2eec3",
+      "baslik": "HAYRATBEL PERSONEL LTD. ŞTİ.",
+      "kurum": "HAYRATBEL PERSONEL LTD. ŞTİ.",
+      "sehir": "Trabzon",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "21.08.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/wzyjd50h/tekirdağ-bueyuekşehir-belediyesi-personel-aş-21082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/wzyjd50h/tekirdağ-bueyuekşehir-belediyesi-personel-aş-21082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=tekirdag&il=Tekirda%C4%9F",
+      "link": "https://www.iskur.gov.tr/medya/kjqk54ry/hayrat.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/kjqk54ry/hayrat.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=trabzon&il=Trabzon",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -2599,54 +2549,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "efbf4a0d43bc300ceb42",
-      "baslik": "Ticaret Bakanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
-      "kurum": "Ticaret Bakanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "28.08.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/v54kycvl/ticaret-bakanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-28082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/v54kycvl/ticaret-bakanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-28082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "dd148ff0b166874b1ad6",
-      "baslik": "Maden Tetkik ve Arama Genel Müdürlüğü Sözleşmeli Bilişim Personeli Sınav İlanı",
-      "kurum": "Maden Tetkik ve Arama Genel Müdürlüğü Sözleşmeli Bilişim Personeli Sınav İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "28.08.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/0maiifac/maden-tetkik-ve-arama-genel-mueduerlueğue-soezleşmeli-bilişim-personeli-sınav-ilanı-28082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/0maiifac/maden-tetkik-ve-arama-genel-mueduerlueğue-soezleşmeli-bilişim-personeli-sınav-ilanı-28082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "cbf0ea8acda1330e6801",
       "baslik": "Akıncılar Gıda Turizm İnş. Tic. Ltd. Şti",
       "kurum": "Akıncılar Gıda Turizm İnş. Tic. Ltd. Şti",
@@ -2740,54 +2642,6 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "3a1e1ac10a479fccdf6d",
-      "baslik": "Sanayi ve Teknoloji Bakanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
-      "kurum": "Sanayi ve Teknoloji Bakanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "31.08.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/2ouawvdx/sanayi-ve-teknoloji-bakanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-31082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/2ouawvdx/sanayi-ve-teknoloji-bakanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-31082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "9e323ed5ba7aaa76a91d",
-      "baslik": "Savunma Sanayii Başkanlığı Sözleşmeli Bilişim Personeli Alım Sınavı İlanı",
-      "kurum": "Savunma Sanayii Başkanlığı Sözleşmeli Bilişim Personeli Alım Sınavı İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "31.08.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/xmqetzpj/savunma-sanayii-başkanlığı-soezleşmeli-bilişim-personeli-alım-sınavı-ilanı-31082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/xmqetzpj/savunma-sanayii-başkanlığı-soezleşmeli-bilişim-personeli-alım-sınavı-ilanı-31082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
     },
     {
@@ -3010,32 +2864,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "52c0dca82d8ce17c889c",
-      "baslik": "Edirne Keşan Belediyesi Memur Alım İlanı",
-      "kurum": "Edirne Keşan Belediyesi Memur Alım İlanı",
-      "sehir": "Edirne",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "04.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/4gbj0dkl/edirne-keşan-belediyesi-memur-alım-ilanı-04092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/4gbj0dkl/edirne-keşan-belediyesi-memur-alım-ilanı-04092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=edirne&il=Edirne",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "75e9b2e8ebafcc1b01e3",
       "baslik": "Kahramanmaraş Elbistan Belediyesi Sözleşmeli Personel Alım İlanı",
       "kurum": "Kahramanmaraş Elbistan Belediyesi Sözleşmeli Personel Alım İlanı",
@@ -3080,6 +2908,32 @@
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
       "mezuniyetler": [
         "Önlisans",
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "52c0dca82d8ce17c889c",
+      "baslik": "Edirne Keşan Belediyesi Memur Alım İlanı",
+      "kurum": "Edirne Keşan Belediyesi Memur Alım İlanı",
+      "sehir": "Edirne",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "04.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/4gbj0dkl/edirne-keşan-belediyesi-memur-alım-ilanı-04092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/4gbj0dkl/edirne-keşan-belediyesi-memur-alım-ilanı-04092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=edirne&il=Edirne",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
         "Lisans"
       ],
       "bolumler": [
@@ -3191,33 +3045,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "8fbc5aee35e4522e163e",
-      "baslik": "Erzincan Otlukbeli Belediyesi Memur Alım İlanı",
-      "kurum": "Erzincan Otlukbeli Belediyesi Memur Alım İlanı",
-      "sehir": "Erzincan",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "09.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/4qbbpvnu/erzincan-otlukbeli-belediyesi-memur-alım-ilanı-09092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/4qbbpvnu/erzincan-otlukbeli-belediyesi-memur-alım-ilanı-09092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=erzincan&il=Erzincan",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Maliye",
-        "İşletme"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "d865c5d748d53bc06ab3",
       "baslik": "Gümüşhane Söğütlü Belediyesi Memur Alım İlanı",
       "kurum": "Gümüşhane Söğütlü Belediyesi Memur Alım İlanı",
@@ -3240,6 +3067,33 @@
       "bolumler": [
         "Maliye",
         "Muhasebe"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "8fbc5aee35e4522e163e",
+      "baslik": "Erzincan Otlukbeli Belediyesi Memur Alım İlanı",
+      "kurum": "Erzincan Otlukbeli Belediyesi Memur Alım İlanı",
+      "sehir": "Erzincan",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "09.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/4qbbpvnu/erzincan-otlukbeli-belediyesi-memur-alım-ilanı-09092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/4qbbpvnu/erzincan-otlukbeli-belediyesi-memur-alım-ilanı-09092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=erzincan&il=Erzincan",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Maliye",
+        "İşletme"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -3350,36 +3204,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "5fa8b348e079faa1f7ad",
-      "baslik": "Türk Standartları Enstitüsü Sözleşmeli Personel Alım İlanı",
-      "kurum": "Türk Standartları Enstitüsü Sözleşmeli Personel Alım İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "11.09.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/gk5hkv0j/tuerk-standartları-enstituesue-soezleşmeli-personel-alım-ilanı-11092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/gk5hkv0j/tuerk-standartları-enstituesue-soezleşmeli-personel-alım-ilanı-11092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "https://kariyerkapisi.gov.tr/isealim",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": 93,
-      "kpss_durumu": "En az 93 KPSS puanı",
-      "mezuniyetler": [
-        "Ortaöğretim",
-        "Önlisans",
-        "Lisans"
-      ],
-      "bolumler": [
-        "Maliye",
-        "İşletme",
-        "Muhasebe"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "276a649abd64f1a820b9",
       "baslik": "İstanbul Bilişim ve Akıllı Kent Teknolojileri A.Ş.",
       "kurum": "İstanbul Bilişim ve Akıllı Kent Teknolojileri A.Ş.",
@@ -3423,30 +3247,6 @@
       "mezuniyetler": [
         "Lisans"
       ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "d52c70bc5bab46431ae7",
-      "baslik": "Dışişleri Bakanlığı Aday Konsolosluk ve İhtisas Memurluğu Sınav İlanı",
-      "kurum": "Dışişleri Bakanlığı Aday Konsolosluk ve İhtisas Memurluğu Sınav İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "17.09.2026 12:00",
-      "link": "https://www.iskur.gov.tr/medya/isidfkv1/dışişleri-bakanlığı-aday-konsolosluk-ve-ihtisas-memurluğu-sınav-ilanı-17092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/isidfkv1/dışişleri-bakanlığı-aday-konsolosluk-ve-ihtisas-memurluğu-sınav-ilanı-17092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
       "bolumler": [
         "Diğer"
       ],
@@ -3555,32 +3355,6 @@
       ],
       "bolumler": [
         "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "e790d3cc5ed0eae7bb27",
-      "baslik": "Sayıştay Başkanlığı Denetçi Yardımcısı Sınav İlanı17.09.2026",
-      "kurum": "Sayıştay Başkanlığı Denetçi Yardımcısı Sınav İlanı17.09.2026",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "17.09.2026 18:00",
-      "link": "https://www.iskur.gov.tr/medya/l2alsefe/sayıştay-başkanlığı-denetçi-yardımcısı-sınav-ilanı17092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/l2alsefe/sayıştay-başkanlığı-denetçi-yardımcısı-sınav-ilanı17092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "https://ais.osym.gov.tr",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Maliye",
-        "İşletme",
-        "Muhasebe"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -3716,6 +3490,32 @@
       "analiz_surumu": 2
     },
     {
+      "id": "7cd5df517effd66ff4fa",
+      "baslik": "Muğla Ula Belediyesi Memur Alım İlanı",
+      "kurum": "Muğla Ula Belediyesi Memur Alım İlanı",
+      "sehir": "Muğla",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "23.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/ze2dceyt/muğla-ula-belediyesi-memur-alım-ilanı-23092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/ze2dceyt/muğla-ula-belediyesi-memur-alım-ilanı-23092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=mugla&il=Mu%C4%9Fla",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "7cb6bb01269d21865c79",
       "baslik": "Kırşehir Köseli Belediyesi Memur Zabıta Memuru ve İtfaiye Eri Alım İlanı",
       "kurum": "Kırşehir Köseli Belediyesi Memur Zabıta Memuru ve İtfaiye Eri Alım İlanı",
@@ -3734,32 +3534,6 @@
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
       "mezuniyetler": [
         "Ortaöğretim",
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "7cd5df517effd66ff4fa",
-      "baslik": "Muğla Ula Belediyesi Memur Alım İlanı",
-      "kurum": "Muğla Ula Belediyesi Memur Alım İlanı",
-      "sehir": "Muğla",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "23.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/ze2dceyt/muğla-ula-belediyesi-memur-alım-ilanı-23092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/ze2dceyt/muğla-ula-belediyesi-memur-alım-ilanı-23092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=mugla&il=Mu%C4%9Fla",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
         "Lisans"
       ],
       "bolumler": [
@@ -3903,32 +3677,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "e10c5b869c0d24570326",
-      "baslik": "Türkiye Belediyeler Birliği Memur Alım İlanı",
-      "kurum": "Türkiye Belediyeler Birliği Memur Alım İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "30.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/id4bvf5f/tuerkiye-belediyeler-birliği-memur-alım-ilanı-30092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/id4bvf5f/tuerkiye-belediyeler-birliği-memur-alım-ilanı-30092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "https://kariyerkapisi.gov.tr/isealim",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "8082163e4616cef4ddc7",
       "baslik": "Rize Belediyesi Sözleşmeli Personel Alım İlanı",
       "kurum": "Rize Belediyesi Sözleşmeli Personel Alım İlanı",
@@ -4027,30 +3775,6 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "ee701ad45d382400f44d",
-      "baslik": "Gelir İdaresi Başkanlığı Gelir Uzman Yardımcılığı Sınav İlanı",
-      "kurum": "Gelir İdaresi Başkanlığı Gelir Uzman Yardımcılığı Sınav İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "23.10.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/4j0dwbbo/gelir-idaresi-başkanlığı-gelir-uzman-yardımcılığı-sınav-ilanı-23102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/4j0dwbbo/gelir-idaresi-başkanlığı-gelir-uzman-yardımcılığı-sınav-ilanı-23102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
     },
     {
@@ -7288,9 +7012,21 @@
     "gonderilen": 0,
     "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
   },
-  "hata_sayisi": 1,
+  "hata_sayisi": 13,
   "pdf_hata_sayisi": 1,
   "hatalar": [
+    "İŞKUR Kamu Memur Alımları / Amasya: RuntimeError - HTTPSConnectionPool(host='www.iskur.gov.tr', port=443): Max retries exceeded with url: /ilanlar/kamu-memur-alim-ilanlari/?idId=amasya&il=Amasya (Cause",
+    "İŞKUR Kamu Memur Alımları / Ankara: RuntimeError - HTTPSConnectionPool(host='www.iskur.gov.tr', port=443): Max retries exceeded with url: /ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara (Cause",
+    "İŞKUR Kamu Memur Alımları / Ağrı: RuntimeError - HTTPSConnectionPool(host='www.iskur.gov.tr', port=443): Max retries exceeded with url: /ilanlar/kamu-memur-alim-ilanlari/?idId=agri&il=A%C4%9Fr%C4%B1 ",
+    "İŞKUR Kamu Memur Alımları / Afyonkarahisar: RuntimeError - HTTPSConnectionPool(host='www.iskur.gov.tr', port=443): Max retries exceeded with url: /ilanlar/kamu-memur-alim-ilanlari/?idId=afyonkarahisar&il=Afyon",
+    "İŞKUR Kamu Memur Alımları / Antalya: RuntimeError - HTTPSConnectionPool(host='www.iskur.gov.tr', port=443): Max retries exceeded with url: /ilanlar/kamu-memur-alim-ilanlari/?idId=antalya&il=Antalya (Cau",
+    "İŞKUR Kamu Memur Alımları / Adana: RuntimeError - HTTPSConnectionPool(host='www.iskur.gov.tr', port=443): Max retries exceeded with url: /ilanlar/kamu-memur-alim-ilanlari/?idId=adana&il=Adana (Caused ",
+    "İŞKUR Kamu Memur Alımları / Aksaray: RuntimeError - HTTPSConnectionPool(host='www.iskur.gov.tr', port=443): Max retries exceeded with url: /ilanlar/kamu-memur-alim-ilanlari/?idId=aksaray&il=Aksaray (Cau",
+    "İŞKUR Kamu Memur Alımları / Adıyaman: RuntimeError - HTTPSConnectionPool(host='www.iskur.gov.tr', port=443): Max retries exceeded with url: /ilanlar/kamu-memur-alim-ilanlari/?idId=adiyaman&il=Ad%C4%B1yam",
+    "İŞKUR Kamu Memur Alımları / Ardahan: RuntimeError - HTTPSConnectionPool(host='www.iskur.gov.tr', port=443): Max retries exceeded with url: /ilanlar/kamu-memur-alim-ilanlari/?idId=ardahan&il=Ardahan (Cau",
+    "İŞKUR Kamu Memur Alımları / Balıkesir: RuntimeError - HTTPSConnectionPool(host='www.iskur.gov.tr', port=443): Max retries exceeded with url: /ilanlar/kamu-memur-alim-ilanlari/?idId=balikesir&il=Bal%C4%B1k",
+    "İŞKUR Kamu Memur Alımları / Artvin: RuntimeError - HTTPSConnectionPool(host='www.iskur.gov.tr', port=443): Max retries exceeded with url: /ilanlar/kamu-memur-alim-ilanlari/?idId=artvin&il=Artvin (Cause",
+    "İŞKUR Kamu Memur Alımları / Aydın: RuntimeError - HTTPSConnectionPool(host='www.iskur.gov.tr', port=443): Max retries exceeded with url: /ilanlar/kamu-memur-alim-ilanlari/?idId=aydin&il=Ayd%C4%B1n (Ca",
     "MSB / TSK Güncel Teminler: sayfa açıldı ancak aktif kart okunamadı"
   ]
 }
