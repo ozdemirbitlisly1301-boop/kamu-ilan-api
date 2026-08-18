@@ -1,8 +1,8 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-18T22:53:22.881860+00:00",
-  "ilan_sayisi": 200,
-  "suresi_dolmus_ilan_sayisi": 1,
+  "guncellenme_zamani": "2026-08-18T23:53:14.244051+00:00",
+  "ilan_sayisi": 201,
+  "suresi_dolmus_ilan_sayisi": 0,
   "ilanlar": [
     {
       "id": "8239a6816011ad2cbfb5",
@@ -823,30 +823,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "5238a1789c75f3374d72",
-      "baslik": "Bursa Yenişehir Belediyesi",
-      "kurum": "Bursa Yenişehir Belediyesi",
-      "sehir": "Bursa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "20.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/st2prxil/bursa-yenişehir-belediyesi-180826-200826.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/st2prxil/bursa-yenişehir-belediyesi-180826-200826.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "8ce7f818893d5b70bea8",
       "baslik": "Çanakkale Kentsel Hizmetler Müh.Müt.Tic.San.A.Ş",
       "kurum": "Çanakkale Kentsel Hizmetler Müh.Müt.Tic.San.A.Ş",
@@ -881,6 +857,30 @@
       "link": "https://www.iskur.gov.tr/medya/yetnzb25/cce_000013.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/yetnzb25/cce_000013.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "5238a1789c75f3374d72",
+      "baslik": "Bursa Yenişehir Belediyesi",
+      "kurum": "Bursa Yenişehir Belediyesi",
+      "sehir": "Bursa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "20.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/st2prxil/bursa-yenişehir-belediyesi-180826-200826.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/st2prxil/bursa-yenişehir-belediyesi-180826-200826.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -4848,6 +4848,32 @@
       "analiz_surumu": 2
     },
     {
+      "id": "06f4fe8ba0cb74bf2717",
+      "baslik": "2026 YILI MİLLİLİK KAPSAMINDA SÖZLEŞMELİ ANTRENÖR ALIMI DUYURUSU 26 Haziran 2026",
+      "kurum": "Gençlik ve Spor Bakanlığı",
+      "sehir": "Türkiye Geneli",
+      "tur": "Personel Alımı",
+      "kaynak": "GSB Personel Alımları",
+      "kaynak_kodu": "resmi_duyuru",
+      "son_basvuru": "",
+      "yayin_tarihi": "26.06.2026",
+      "link": "https://www.gsb.gov.tr/tr/duyuru/300522-2026-yili-millilik-kapsaminda-sozlesmeli-antrenor-alimi-duyurusu",
+      "belge_linki": "https://www.gsb.gov.tr/tr/duyuru/300522-2026-yili-millilik-kapsaminda-sozlesmeli-antrenor-alimi-duyurusu",
+      "kaynak_sayfa_linki": "https://www.gsb.gov.tr/tr/duyuru/300522-2026-yili-millilik-kapsaminda-sozlesmeli-antrenor-alimi-duyurusu",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan sayfasından kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "html_ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "344bb184f0d0b8cb035f",
       "baslik": "KARA, DENİZ VE HAVA KUVVETLERİ KOMUTANLIKLARINA 2026 YILI TEKNİK SINIF UZMAN ERBAŞ TEMİNİ",
       "kurum": "Millî Savunma Bakanlığı / Türk Silahlı Kuvvetleri",
@@ -7650,15 +7676,16 @@
     "Adalet Bakanlığı Personel Alımları": 0
   },
   "bildirim_sonucu": {
-    "durum": "yeni_kayit_yok",
-    "yeni_ilan": 0,
+    "durum": "gonderildi",
+    "yeni_ilan": 1,
     "yeni_haber": 0,
-    "gonderilen": 0,
-    "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
+    "gonderilen": 1,
+    "mesaj": "1 telefon bildirimi gönderildi."
   },
-  "hata_sayisi": 1,
+  "hata_sayisi": 2,
   "pdf_hata_sayisi": 1,
   "hatalar": [
-    "MSB / TSK Güncel Teminler: sayfa açıldı ancak aktif kart okunamadı"
+    "MSB / TSK Güncel Teminler: sayfa açıldı ancak aktif kart okunamadı",
+    "GSB Personel Alımları: RuntimeError - HTTPSConnectionPool(host='www.gsb.gov.tr', port=443): Max retries exceeded with url: /tr/duyurular/ (Caused by ConnectTimeoutError(<HTTPSConnection(ho"
   ]
 }
