@@ -1,8 +1,8 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-19T05:17:55.866241+00:00",
-  "ilan_sayisi": 200,
-  "suresi_dolmus_ilan_sayisi": 1,
+  "guncellenme_zamani": "2026-08-19T05:51:40.703104+00:00",
+  "ilan_sayisi": 203,
+  "suresi_dolmus_ilan_sayisi": 0,
   "ilanlar": [
     {
       "id": "8239a6816011ad2cbfb5",
@@ -161,6 +161,30 @@
       "link": "https://www.iskur.gov.tr/medya/cjpfomdk/kamu-kurum-dişi-işçi-ilani-17082026-oski.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/cjpfomdk/kamu-kurum-dişi-işçi-ilani-17082026-oski.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=ordu&il=Ordu",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "f319284e6baf7f4f8eb9",
+      "baslik": "Osmaniye Kadirli Org. İmar İnş. Mat. Tem. Yem. Gıd. San. Tic. Ltd. Şti",
+      "kurum": "Osmaniye Kadirli Org. İmar İnş. Mat. Tem. Yem. Gıd. San. Tic. Ltd. Şti",
+      "sehir": "Osmaniye",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "19.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/r0lblpvl/osmaniye-kadirli-org-imar-inş-mat-tem-yem-gıd-san-tic-ltd-şti-19082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/r0lblpvl/osmaniye-kadirli-org-imar-inş-mat-tem-yem-gıd-san-tic-ltd-şti-19082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=osmaniye&il=Osmaniye",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -689,6 +713,30 @@
       "link": "https://www.iskur.gov.tr/medya/vprjxtos/oeğretmen-alımları.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/vprjxtos/oeğretmen-alımları.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=kahramanmaras&il=Kahramanmara%C5%9F",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "f54e7347f81840b86a53",
+      "baslik": "Samsun CNK Kültür İnş. Tic. Ltd. Şti.",
+      "kurum": "Samsun CNK Kültür İnş. Tic. Ltd. Şti.",
+      "sehir": "Samsun",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "19.08.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/idxlty3p/cnk3.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/idxlty3p/cnk3.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=samsun&il=Samsun",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -2907,30 +2955,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "efbf4a0d43bc300ceb42",
-      "baslik": "Ticaret Bakanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
-      "kurum": "Ticaret Bakanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "28.08.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/v54kycvl/ticaret-bakanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-28082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/v54kycvl/ticaret-bakanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-28082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "dd148ff0b166874b1ad6",
       "baslik": "Maden Tetkik ve Arama Genel Müdürlüğü Sözleşmeli Bilişim Personeli Sınav İlanı",
       "kurum": "Maden Tetkik ve Arama Genel Müdürlüğü Sözleşmeli Bilişim Personeli Sınav İlanı",
@@ -2952,6 +2976,30 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "efbf4a0d43bc300ceb42",
+      "baslik": "Ticaret Bakanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
+      "kurum": "Ticaret Bakanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "28.08.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/v54kycvl/ticaret-bakanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-28082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/v54kycvl/ticaret-bakanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-28082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
       "analiz_surumu": 2
     },
     {
@@ -4840,6 +4888,32 @@
       "kpss_gerekli": true,
       "minimum_puan": null,
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "html_ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "06f4fe8ba0cb74bf2717",
+      "baslik": "2026 YILI MİLLİLİK KAPSAMINDA SÖZLEŞMELİ ANTRENÖR ALIMI DUYURUSU 26 Haziran 2026",
+      "kurum": "Gençlik ve Spor Bakanlığı",
+      "sehir": "Türkiye Geneli",
+      "tur": "Personel Alımı",
+      "kaynak": "GSB Personel Alımları",
+      "kaynak_kodu": "resmi_duyuru",
+      "son_basvuru": "",
+      "yayin_tarihi": "26.06.2026",
+      "link": "https://www.gsb.gov.tr/tr/duyuru/300522-2026-yili-millilik-kapsaminda-sozlesmeli-antrenor-alimi-duyurusu",
+      "belge_linki": "https://www.gsb.gov.tr/tr/duyuru/300522-2026-yili-millilik-kapsaminda-sozlesmeli-antrenor-alimi-duyurusu",
+      "kaynak_sayfa_linki": "https://www.gsb.gov.tr/tr/duyuru/300522-2026-yili-millilik-kapsaminda-sozlesmeli-antrenor-alimi-duyurusu",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan sayfasından kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
       "mezuniyetler": [],
       "bolumler": [
         "Diğer"
@@ -7646,19 +7720,19 @@
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
     "GSB Personel Alımları": 3,
-    "Aile Bakanlığı Personel Alımları": 0
+    "Aile Bakanlığı Personel Alımları": 0,
+    "Adalet Bakanlığı Personel Alımları": 0
   },
   "bildirim_sonucu": {
-    "durum": "yeni_kayit_yok",
-    "yeni_ilan": 0,
+    "durum": "gonderildi",
+    "yeni_ilan": 3,
     "yeni_haber": 0,
-    "gonderilen": 0,
-    "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
+    "gonderilen": 3,
+    "mesaj": "3 telefon bildirimi gönderildi."
   },
-  "hata_sayisi": 2,
+  "hata_sayisi": 1,
   "pdf_hata_sayisi": 1,
   "hatalar": [
-    "MSB / TSK Güncel Teminler: sayfa açıldı ancak aktif kart okunamadı",
-    "Adalet Bakanlığı Personel Alımları: RuntimeError - HTTPSConnectionPool(host='pgm.adalet.gov.tr', port=443): Max retries exceeded with url: /Home/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='p"
+    "MSB / TSK Güncel Teminler: sayfa açıldı ancak aktif kart okunamadı"
   ]
 }
