@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-20T04:41:05.114265+00:00",
-  "ilan_sayisi": 194,
+  "guncellenme_zamani": "2026-08-20T05:16:58.913277+00:00",
+  "ilan_sayisi": 195,
   "suresi_dolmus_ilan_sayisi": 2,
   "ilanlar": [
     {
@@ -197,6 +197,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "1bd36ff49b4ebbdba6a1",
+      "baslik": "Konya Ereğli Bolkar İnş. Hayv. Tur. Hiz. işl. San. ve Tic. AŞ.",
+      "kurum": "Konya Ereğli Bolkar İnş. Hayv. Tur. Hiz. işl. San. ve Tic. AŞ.",
+      "sehir": "Konya",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "20.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/zxohvpk5/bolkar.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/zxohvpk5/bolkar.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=konya&il=Konya",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "d258bd1cc00a4a7cf093",
       "baslik": "Kütahya Tavşanlı Tepecik Belediyesi Personel Ltd.Şti.",
       "kurum": "Kütahya Tavşanlı Tepecik Belediyesi Personel Ltd.Şti.",
@@ -245,19 +269,19 @@
       "analiz_surumu": 2
     },
     {
-      "id": "1bd36ff49b4ebbdba6a1",
-      "baslik": "Konya Ereğli Bolkar İnş. Hayv. Tur. Hiz. işl. San. ve Tic. AŞ.",
-      "kurum": "Konya Ereğli Bolkar İnş. Hayv. Tur. Hiz. işl. San. ve Tic. AŞ.",
-      "sehir": "Konya",
+      "id": "26d1ae32be5b48a167d9",
+      "baslik": "BİRECİK FIRAT HİZMET SANAYİ TİCARET A.Ş.",
+      "kurum": "BİRECİK FIRAT HİZMET SANAYİ TİCARET A.Ş.",
+      "sehir": "Şanlıurfa",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "20.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/zxohvpk5/bolkar.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/zxohvpk5/bolkar.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=konya&il=Konya",
+      "link": "https://www.iskur.gov.tr/medya/edqnkzj2/birecik-firat-hizmet-sanayi-ticaret-aş.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/edqnkzj2/birecik-firat-hizmet-sanayi-ticaret-aş.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=sanliurfa&il=%C5%9Eanl%C4%B1urfa",
       "basvuru_linki": "",
       "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
@@ -282,30 +306,6 @@
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "26d1ae32be5b48a167d9",
-      "baslik": "BİRECİK FIRAT HİZMET SANAYİ TİCARET A.Ş.",
-      "kurum": "BİRECİK FIRAT HİZMET SANAYİ TİCARET A.Ş.",
-      "sehir": "Şanlıurfa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "20.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/edqnkzj2/birecik-firat-hizmet-sanayi-ticaret-aş.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/edqnkzj2/birecik-firat-hizmet-sanayi-ticaret-aş.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=sanliurfa&il=%C5%9Eanl%C4%B1urfa",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
       "kpss_gerekli": null,
       "minimum_puan": null,
       "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
@@ -632,30 +632,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "42afd7a0b552f196bd07",
-      "baslik": "Elazığ Alacakaya Sosyal Yardımlaşma ve Dayanışma Vakfı(2)",
-      "kurum": "Elazığ Alacakaya Sosyal Yardımlaşma ve Dayanışma Vakfı(2)",
-      "sehir": "Elazığ",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "21.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/5w2ds5u5/elazığ-alacakaya-sosyal-yardımlaşma-ve-dayanışma-vakfı.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/5w2ds5u5/elazığ-alacakaya-sosyal-yardımlaşma-ve-dayanışma-vakfı.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=elazig&il=Elaz%C4%B1%C4%9F",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "1688162bc450406db3bd",
       "baslik": "Refahiye Sosyal Yardımlaşma ve Dayanışma Vakfı-Vakıf İş ve İşlemleri",
       "kurum": "Refahiye Sosyal Yardımlaşma ve Dayanışma Vakfı-Vakıf İş ve İşlemleri",
@@ -690,6 +666,30 @@
       "link": "https://www.iskur.gov.tr/medya/poab1tpd/narman-suet.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/poab1tpd/narman-suet.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=erzurum&il=Erzurum",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "42afd7a0b552f196bd07",
+      "baslik": "Elazığ Alacakaya Sosyal Yardımlaşma ve Dayanışma Vakfı(2)",
+      "kurum": "Elazığ Alacakaya Sosyal Yardımlaşma ve Dayanışma Vakfı(2)",
+      "sehir": "Elazığ",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "21.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/5w2ds5u5/elazığ-alacakaya-sosyal-yardımlaşma-ve-dayanışma-vakfı.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/5w2ds5u5/elazığ-alacakaya-sosyal-yardımlaşma-ve-dayanışma-vakfı.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=elazig&il=Elaz%C4%B1%C4%9F",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -749,6 +749,30 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "a7e73c939f8cd1c0322d",
+      "baslik": "Konya Çeltik Hiz. Park Taah. Tic. Ltd. Şti.",
+      "kurum": "Konya Çeltik Hiz. Park Taah. Tic. Ltd. Şti.",
+      "sehir": "Konya",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "21.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/paxnthih/img20260819_11413844.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/paxnthih/img20260819_11413844.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=konya&il=Konya",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
       "analiz_surumu": 2
     },
     {
@@ -7504,11 +7528,11 @@
     "Adalet Bakanlığı Personel Alımları": 0
   },
   "bildirim_sonucu": {
-    "durum": "yeni_kayit_yok",
-    "yeni_ilan": 0,
+    "durum": "gonderildi",
+    "yeni_ilan": 1,
     "yeni_haber": 0,
-    "gonderilen": 0,
-    "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
+    "gonderilen": 1,
+    "mesaj": "1 telefon bildirimi gönderildi."
   },
   "hata_sayisi": 1,
   "pdf_hata_sayisi": 1,
