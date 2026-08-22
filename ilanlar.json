@@ -1,57 +1,9 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-22T14:17:48.457230+00:00",
-  "ilan_sayisi": 181,
+  "guncellenme_zamani": "2026-08-22T14:43:42.614985+00:00",
+  "ilan_sayisi": 179,
   "suresi_dolmus_ilan_sayisi": 2,
   "ilanlar": [
-    {
-      "id": "bf46bedeffed7c3983d4",
-      "baslik": "Saf Bel Kültür Turizm Ticaret Anonim Şirketi Müdürlüğü",
-      "kurum": "Saf Bel Kültür Turizm Ticaret Anonim Şirketi Müdürlüğü",
-      "sehir": "Karabük",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "22.08.2026 17:30",
-      "link": "https://www.iskur.gov.tr/medya/bvulb4aw/saf-bel-kueltuer-turizm-ticaret-anonim-şirketi-mueduerlueğue-20082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/bvulb4aw/saf-bel-kueltuer-turizm-ticaret-anonim-şirketi-mueduerlueğue-20082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=karabuk&il=Karab%C3%BCk",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "b0f10e56e3196d036441",
-      "baslik": "Akıncılar Gıda Turizm İnş. Tic. Ltd. Şti",
-      "kurum": "Akıncılar Gıda Turizm İnş. Tic. Ltd. Şti",
-      "sehir": "Manisa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "22.08.2026 17:30",
-      "link": "https://www.iskur.gov.tr/medya/40ahavbf/kep-iletisi-personel-alım-ilanı_ek_1-personelalimilanlari-22082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/40ahavbf/kep-iletisi-personel-alım-ilanı_ek_1-personelalimilanlari-22082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=manisa&il=Manisa",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
     {
       "id": "ba6691cda8473a2fcd1a",
       "baslik": "Burdur Bucak Bel. Akary. Hiz. San. ve Tic. A.Ş.",
@@ -2107,30 +2059,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "efbf4a0d43bc300ceb42",
-      "baslik": "Ticaret Bakanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
-      "kurum": "Ticaret Bakanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "28.08.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/v54kycvl/ticaret-bakanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-28082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/v54kycvl/ticaret-bakanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-28082026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "dd148ff0b166874b1ad6",
       "baslik": "Maden Tetkik ve Arama Genel Müdürlüğü Sözleşmeli Bilişim Personeli Sınav İlanı",
       "kurum": "Maden Tetkik ve Arama Genel Müdürlüğü Sözleşmeli Bilişim Personeli Sınav İlanı",
@@ -2152,6 +2080,30 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "efbf4a0d43bc300ceb42",
+      "baslik": "Ticaret Bakanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
+      "kurum": "Ticaret Bakanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "28.08.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/v54kycvl/ticaret-bakanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-28082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/v54kycvl/ticaret-bakanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-28082026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
       "analiz_surumu": 2
     },
     {
@@ -2419,15 +2371,15 @@
       "analiz_surumu": 2
     },
     {
-      "id": "9e323ed5ba7aaa76a91d",
-      "baslik": "Savunma Sanayii Başkanlığı Sözleşmeli Bilişim Personeli Alım Sınavı İlanı",
-      "kurum": "Savunma Sanayii Başkanlığı Sözleşmeli Bilişim Personeli Alım Sınavı İlanı",
+      "id": "3a1e1ac10a479fccdf6d",
+      "baslik": "Sanayi ve Teknoloji Bakanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
+      "kurum": "Sanayi ve Teknoloji Bakanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
       "sehir": "Ankara",
       "tur": "Memur",
       "kaynak": "İŞKUR Kamu Memur Alımları",
       "son_basvuru": "31.08.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/xmqetzpj/savunma-sanayii-başkanlığı-soezleşmeli-bilişim-personeli-alım-sınavı-ilanı-31082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/xmqetzpj/savunma-sanayii-başkanlığı-soezleşmeli-bilişim-personeli-alım-sınavı-ilanı-31082026.pdf",
+      "link": "https://www.iskur.gov.tr/medya/2ouawvdx/sanayi-ve-teknoloji-bakanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-31082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/2ouawvdx/sanayi-ve-teknoloji-bakanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-31082026.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
       "basvuru_linki": "",
       "basvuru_online": false,
@@ -2443,15 +2395,15 @@
       "analiz_surumu": 2
     },
     {
-      "id": "3a1e1ac10a479fccdf6d",
-      "baslik": "Sanayi ve Teknoloji Bakanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
-      "kurum": "Sanayi ve Teknoloji Bakanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
+      "id": "9e323ed5ba7aaa76a91d",
+      "baslik": "Savunma Sanayii Başkanlığı Sözleşmeli Bilişim Personeli Alım Sınavı İlanı",
+      "kurum": "Savunma Sanayii Başkanlığı Sözleşmeli Bilişim Personeli Alım Sınavı İlanı",
       "sehir": "Ankara",
       "tur": "Memur",
       "kaynak": "İŞKUR Kamu Memur Alımları",
       "son_basvuru": "31.08.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/2ouawvdx/sanayi-ve-teknoloji-bakanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-31082026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/2ouawvdx/sanayi-ve-teknoloji-bakanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-31082026.pdf",
+      "link": "https://www.iskur.gov.tr/medya/xmqetzpj/savunma-sanayii-başkanlığı-soezleşmeli-bilişim-personeli-alım-sınavı-ilanı-31082026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/xmqetzpj/savunma-sanayii-başkanlığı-soezleşmeli-bilişim-personeli-alım-sınavı-ilanı-31082026.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
       "basvuru_linki": "",
       "basvuru_online": false,
