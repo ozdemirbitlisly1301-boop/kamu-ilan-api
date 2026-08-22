@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-22T15:00:30.222746+00:00",
+  "guncellenme_zamani": "2026-08-22T15:25:13.627969+00:00",
   "ilan_sayisi": 179,
   "suresi_dolmus_ilan_sayisi": 2,
   "ilanlar": [
@@ -727,6 +727,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "9481d4bec29e538ec54c",
+      "baslik": "Siirt Sosyal Yardımlaşma ve Dayanışma Vakfı Başkanlığı",
+      "kurum": "Siirt Sosyal Yardımlaşma ve Dayanışma Vakfı Başkanlığı",
+      "sehir": "Siirt",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "24.08.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/mq3bupjk/siirt-sosyal-yardımlaşma-ve-dayanışma-vakfı-başkanlığı.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/mq3bupjk/siirt-sosyal-yardımlaşma-ve-dayanışma-vakfı-başkanlığı.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=siirt&il=Siirt",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "5ed3809a503d7eda3054",
       "baslik": "Sivas İmranlı Belediyesi Personel Ltd. Şti.",
       "kurum": "Sivas İmranlı Belediyesi Personel Ltd. Şti.",
@@ -799,30 +823,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "9481d4bec29e538ec54c",
-      "baslik": "Siirt Sosyal Yardımlaşma ve Dayanışma Vakfı Başkanlığı",
-      "kurum": "Siirt Sosyal Yardımlaşma ve Dayanışma Vakfı Başkanlığı",
-      "sehir": "Siirt",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.08.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/mq3bupjk/siirt-sosyal-yardımlaşma-ve-dayanışma-vakfı-başkanlığı.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/mq3bupjk/siirt-sosyal-yardımlaşma-ve-dayanışma-vakfı-başkanlığı.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=siirt&il=Siirt",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "57f183beeaabef58cdc4",
       "baslik": "Bilecik Gölpazarı Gölpark Turizm Ulaşım Gıda ve Ticaret Ltd. Şti. Mimar",
       "kurum": "Bilecik Gölpazarı Gölpark Turizm Ulaşım Gıda ve Ticaret Ltd. Şti. Mimar",
@@ -871,16 +871,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "87b4f37e5d17db32ac4c",
-      "baslik": "Nar-Bel Narlıbahçe İmar Tekn. ve Turz. Hizm. Tic. Ltd. Şti.",
-      "kurum": "Nar-Bel Narlıbahçe İmar Tekn. ve Turz. Hizm. Tic. Ltd. Şti.",
-      "sehir": "İzmir",
+      "id": "dfba18b7a3018a5adc9e",
+      "baslik": "Saf Bel Kültür Turizm Ticaret Anonim Şirketi Müdürlüğü",
+      "kurum": "Saf Bel Kültür Turizm Ticaret Anonim Şirketi Müdürlüğü",
+      "sehir": "Karabük",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "24.08.2026 17:30",
-      "link": "https://www.iskur.gov.tr/medya/vq5esdy2/nar-bel-narlıbahçe-imar-tekn-ve-turz-hizm-tic-ltd-şti.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/vq5esdy2/nar-bel-narlıbahçe-imar-tekn-ve-turz-hizm-tic-ltd-şti.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
+      "link": "https://www.iskur.gov.tr/medya/4kpg0nmg/saf-bel-kueltuer-turizm-ticaret-anonim-şirketi-mueduerlueğue-engelli.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/4kpg0nmg/saf-bel-kueltuer-turizm-ticaret-anonim-şirketi-mueduerlueğue-engelli.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=karabuk&il=Karab%C3%BCk",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -895,16 +895,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "dfba18b7a3018a5adc9e",
-      "baslik": "Saf Bel Kültür Turizm Ticaret Anonim Şirketi Müdürlüğü",
-      "kurum": "Saf Bel Kültür Turizm Ticaret Anonim Şirketi Müdürlüğü",
-      "sehir": "Karabük",
+      "id": "87b4f37e5d17db32ac4c",
+      "baslik": "Nar-Bel Narlıbahçe İmar Tekn. ve Turz. Hizm. Tic. Ltd. Şti.",
+      "kurum": "Nar-Bel Narlıbahçe İmar Tekn. ve Turz. Hizm. Tic. Ltd. Şti.",
+      "sehir": "İzmir",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "24.08.2026 17:30",
-      "link": "https://www.iskur.gov.tr/medya/4kpg0nmg/saf-bel-kueltuer-turizm-ticaret-anonim-şirketi-mueduerlueğue-engelli.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/4kpg0nmg/saf-bel-kueltuer-turizm-ticaret-anonim-şirketi-mueduerlueğue-engelli.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=karabuk&il=Karab%C3%BCk",
+      "link": "https://www.iskur.gov.tr/medya/vq5esdy2/nar-bel-narlıbahçe-imar-tekn-ve-turz-hizm-tic-ltd-şti.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/vq5esdy2/nar-bel-narlıbahçe-imar-tekn-ve-turz-hizm-tic-ltd-şti.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -3571,16 +3571,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "838e73b0b12aa9fdc33f",
-      "baslik": "Afyonkarahisar Bolvadin Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Afyonkarahisar Bolvadin Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Afyonkarahisar",
+      "id": "13620c7d7ab70ccb68b0",
+      "baslik": "Amasya Göynücek Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Amasya Göynücek Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Amasya",
       "tur": "Memur",
       "kaynak": "İŞKUR Kamu Memur Alımları",
       "son_basvuru": "25.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/3wtbgrpv/afyonkarahisar-bolvadin-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/3wtbgrpv/afyonkarahisar-bolvadin-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=afyonkarahisar&il=Afyonkarahisar",
+      "link": "https://www.iskur.gov.tr/medya/vqdble0q/amasya-goeynuecek-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/vqdble0q/amasya-goeynuecek-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=amasya&il=Amasya",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
@@ -3597,16 +3597,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "13620c7d7ab70ccb68b0",
-      "baslik": "Amasya Göynücek Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Amasya Göynücek Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Amasya",
+      "id": "838e73b0b12aa9fdc33f",
+      "baslik": "Afyonkarahisar Bolvadin Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Afyonkarahisar Bolvadin Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Afyonkarahisar",
       "tur": "Memur",
       "kaynak": "İŞKUR Kamu Memur Alımları",
       "son_basvuru": "25.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/vqdble0q/amasya-goeynuecek-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/vqdble0q/amasya-goeynuecek-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=amasya&il=Amasya",
+      "link": "https://www.iskur.gov.tr/medya/3wtbgrpv/afyonkarahisar-bolvadin-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/3wtbgrpv/afyonkarahisar-bolvadin-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=afyonkarahisar&il=Afyonkarahisar",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
@@ -4420,8 +4420,18 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 277,
+  "haber_sayisi": 278,
   "haberler": [
+    {
+      "id": "bba4ff8a79535be06553",
+      "baslik": "e-YDS 2026/9 (İngilizce): Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "e-YDS Sonuç",
+      "yayin_tarihi": "22.08.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/e-yds-20269-ingilizce-sinav-sonuclari-aciklandi"
+    },
     {
       "id": "4b94a5710be160b2f561",
       "baslik": "2026-YÖKDİL/2: Cevap Kâğıtları ve Aday Cevapları Erişime Açıldı",
@@ -7195,7 +7205,7 @@
   ],
   "kaynak_sayilari": {
     "ÖSYM merkezi atama ilanları": 0,
-    "ÖSYM tüm sınav haberleri": 275,
+    "ÖSYM tüm sınav haberleri": 276,
     "MSB / TSK Güncel Teminler": 0,
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
@@ -7204,11 +7214,11 @@
     "Adalet Bakanlığı Personel Alımları": 0
   },
   "bildirim_sonucu": {
-    "durum": "yeni_kayit_yok",
+    "durum": "gonderildi",
     "yeni_ilan": 0,
-    "yeni_haber": 0,
-    "gonderilen": 0,
-    "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
+    "yeni_haber": 1,
+    "gonderilen": 1,
+    "mesaj": "1 telefon bildirimi gönderildi."
   },
   "hata_sayisi": 1,
   "pdf_hata_sayisi": 1,
