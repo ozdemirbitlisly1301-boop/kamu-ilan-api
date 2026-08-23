@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-23T07:01:39.182483+00:00",
+  "guncellenme_zamani": "2026-08-23T07:41:16.401877+00:00",
   "ilan_sayisi": 164,
   "suresi_dolmus_ilan_sayisi": 2,
   "ilanlar": [
@@ -2848,32 +2848,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "fd5c5e5f8c2dcdf090f5",
-      "baslik": "Tokat Çevreli Belediyesi Memur Alım İlanı",
-      "kurum": "Tokat Çevreli Belediyesi Memur Alım İlanı",
-      "sehir": "Tokat",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "17.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/vwufiadl/tokat-çevreli-belediyesi-memur-alım-ilanı-17092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/vwufiadl/tokat-çevreli-belediyesi-memur-alım-ilanı-17092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=tokat&il=Tokat",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Önlisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "73ae71a5a5cb6db20a0e",
       "baslik": "Şırnak Kumçatı Belediyesi Memur Alım İlanı",
       "kurum": "Şırnak Kumçatı Belediyesi Memur Alım İlanı",
@@ -2892,6 +2866,32 @@
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
       "mezuniyetler": [
         "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "fd5c5e5f8c2dcdf090f5",
+      "baslik": "Tokat Çevreli Belediyesi Memur Alım İlanı",
+      "kurum": "Tokat Çevreli Belediyesi Memur Alım İlanı",
+      "sehir": "Tokat",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "17.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/vwufiadl/tokat-çevreli-belediyesi-memur-alım-ilanı-17092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/vwufiadl/tokat-çevreli-belediyesi-memur-alım-ilanı-17092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=tokat&il=Tokat",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Önlisans"
       ],
       "bolumler": [
         "Diğer"
