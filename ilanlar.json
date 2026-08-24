@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-08-24T16:32:20.498395+00:00",
+  "guncellenme_zamani": "2026-08-24T17:09:07.765462+00:00",
   "ilan_sayisi": 182,
   "suresi_dolmus_ilan_sayisi": 2,
   "ilanlar": [
@@ -3783,6 +3783,32 @@
       "analiz_surumu": 2
     },
     {
+      "id": "e10c5b869c0d24570326",
+      "baslik": "Türkiye Belediyeler Birliği Memur Alım İlanı",
+      "kurum": "Türkiye Belediyeler Birliği Memur Alım İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "30.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/id4bvf5f/tuerkiye-belediyeler-birliği-memur-alım-ilanı-30092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/id4bvf5f/tuerkiye-belediyeler-birliği-memur-alım-ilanı-30092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "https://kariyerkapisi.gov.tr/isealim",
+      "basvuru_online": true,
+      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "fc9b33928a57ae4db08d",
       "baslik": "Afyonkarahisar Tatarlı Belediyesi Memur Alım İlanı",
       "kurum": "Afyonkarahisar Tatarlı Belediyesi Memur Alım İlanı",
@@ -3805,32 +3831,6 @@
       "bolumler": [
         "İşletme",
         "Muhasebe"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "e10c5b869c0d24570326",
-      "baslik": "Türkiye Belediyeler Birliği Memur Alım İlanı",
-      "kurum": "Türkiye Belediyeler Birliği Memur Alım İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "30.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/id4bvf5f/tuerkiye-belediyeler-birliği-memur-alım-ilanı-30092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/id4bvf5f/tuerkiye-belediyeler-birliği-memur-alım-ilanı-30092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "https://kariyerkapisi.gov.tr/isealim",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
