@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-09-05T04:28:17.441229+00:00",
+  "guncellenme_zamani": "2026-09-05T08:32:55.443168+00:00",
   "ilan_sayisi": 191,
   "suresi_dolmus_ilan_sayisi": 2,
   "ilanlar": [
@@ -1621,30 +1621,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "b778aaa8ec6cadc82a60",
-      "baslik": "Konya Akören Sosyal Yardımlaşma ve Dayanışma Vakfı Başkanlığı",
-      "kurum": "Konya Akören Sosyal Yardımlaşma ve Dayanışma Vakfı Başkanlığı",
-      "sehir": "Konya",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "08.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/lmjfgapi/ek-005.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/lmjfgapi/ek-005.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=konya&il=Konya",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "dbc3213ac76d0debf99a",
       "baslik": "Kırşehir Sos.Yard.Day.Vakfı Başk. Büro Görevlisi",
       "kurum": "Kırşehir Sos.Yard.Day.Vakfı Başk. Büro Görevlisi",
@@ -1666,6 +1642,30 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "b778aaa8ec6cadc82a60",
+      "baslik": "Konya Akören Sosyal Yardımlaşma ve Dayanışma Vakfı Başkanlığı",
+      "kurum": "Konya Akören Sosyal Yardımlaşma ve Dayanışma Vakfı Başkanlığı",
+      "sehir": "Konya",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "08.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/lmjfgapi/ek-005.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/lmjfgapi/ek-005.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=konya&il=Konya",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
     },
     {
@@ -1913,33 +1913,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "8fbc5aee35e4522e163e",
-      "baslik": "Erzincan Otlukbeli Belediyesi Memur Alım İlanı",
-      "kurum": "Erzincan Otlukbeli Belediyesi Memur Alım İlanı",
-      "sehir": "Erzincan",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "09.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/4qbbpvnu/erzincan-otlukbeli-belediyesi-memur-alım-ilanı-09092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/4qbbpvnu/erzincan-otlukbeli-belediyesi-memur-alım-ilanı-09092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=erzincan&il=Erzincan",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Maliye",
-        "İşletme"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "d865c5d748d53bc06ab3",
       "baslik": "Gümüşhane Söğütlü Belediyesi Memur Alım İlanı",
       "kurum": "Gümüşhane Söğütlü Belediyesi Memur Alım İlanı",
@@ -1962,6 +1935,33 @@
       "bolumler": [
         "Maliye",
         "Muhasebe"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "8fbc5aee35e4522e163e",
+      "baslik": "Erzincan Otlukbeli Belediyesi Memur Alım İlanı",
+      "kurum": "Erzincan Otlukbeli Belediyesi Memur Alım İlanı",
+      "sehir": "Erzincan",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "09.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/4qbbpvnu/erzincan-otlukbeli-belediyesi-memur-alım-ilanı-09092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/4qbbpvnu/erzincan-otlukbeli-belediyesi-memur-alım-ilanı-09092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=erzincan&il=Erzincan",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Maliye",
+        "İşletme"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -3350,16 +3350,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "13620c7d7ab70ccb68b0",
-      "baslik": "Amasya Göynücek Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Amasya Göynücek Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Amasya",
+      "id": "d855a43531f61b163c43",
+      "baslik": "Erzurum Uzundere Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Erzurum Uzundere Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Erzurum",
       "tur": "Memur",
       "kaynak": "İŞKUR Kamu Memur Alımları",
       "son_basvuru": "25.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/vqdble0q/amasya-goeynuecek-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/vqdble0q/amasya-goeynuecek-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=amasya&il=Amasya",
+      "link": "https://www.iskur.gov.tr/medya/ic1l0wl0/erzurum-uzundere-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/ic1l0wl0/erzurum-uzundere-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=erzurum&il=Erzurum",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
@@ -3376,16 +3376,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "d855a43531f61b163c43",
-      "baslik": "Erzurum Uzundere Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Erzurum Uzundere Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Erzurum",
+      "id": "13620c7d7ab70ccb68b0",
+      "baslik": "Amasya Göynücek Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Amasya Göynücek Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Amasya",
       "tur": "Memur",
       "kaynak": "İŞKUR Kamu Memur Alımları",
       "son_basvuru": "25.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/ic1l0wl0/erzurum-uzundere-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/ic1l0wl0/erzurum-uzundere-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=erzurum&il=Erzurum",
+      "link": "https://www.iskur.gov.tr/medya/vqdble0q/amasya-goeynuecek-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/vqdble0q/amasya-goeynuecek-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=amasya&il=Amasya",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
@@ -3860,6 +3860,32 @@
       "analiz_surumu": 2
     },
     {
+      "id": "0feeb0a9f78763daa20a",
+      "baslik": "Edirne Uzunköprü Belediyesi Memur Alım İlanı",
+      "kurum": "Edirne Uzunköprü Belediyesi Memur Alım İlanı",
+      "sehir": "Edirne",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "02.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/vqecz40i/edirne-uzunkoeprue-belediyesi-memur-alım-ilanı-02102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/vqecz40i/edirne-uzunkoeprue-belediyesi-memur-alım-ilanı-02102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=edirne&il=Edirne",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "570cf8fce5dc803a44fd",
       "baslik": "Bingöl Yayladere Belediyesi Memur Alım İlanı",
       "kurum": "Bingöl Yayladere Belediyesi Memur Alım İlanı",
@@ -3883,32 +3909,6 @@
         "Maliye",
         "İşletme",
         "Muhasebe"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "0feeb0a9f78763daa20a",
-      "baslik": "Edirne Uzunköprü Belediyesi Memur Alım İlanı",
-      "kurum": "Edirne Uzunköprü Belediyesi Memur Alım İlanı",
-      "sehir": "Edirne",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "02.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/vqecz40i/edirne-uzunkoeprue-belediyesi-memur-alım-ilanı-02102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/vqecz40i/edirne-uzunkoeprue-belediyesi-memur-alım-ilanı-02102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=edirne&il=Edirne",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
