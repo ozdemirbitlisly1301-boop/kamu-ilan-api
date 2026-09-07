@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-09-07T00:01:38.262804+00:00",
+  "guncellenme_zamani": "2026-09-07T02:30:06.292289+00:00",
   "ilan_sayisi": 166,
   "suresi_dolmus_ilan_sayisi": 2,
   "ilanlar": [
@@ -6868,8 +6868,13 @@
     }
   ],
   "kaynak_sayilari": {
+    "ÖSYM tüm sınav haberleri": 256,
+    "MSB / TSK Güncel Teminler": 0,
+    "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
-    "GSB Personel Alımları": 2
+    "GSB Personel Alımları": 2,
+    "Aile Bakanlığı Personel Alımları": 0,
+    "Adalet Bakanlığı Personel Alımları": 0
   },
   "bildirim_sonucu": {
     "durum": "yeni_kayit_yok",
@@ -6878,14 +6883,10 @@
     "gonderilen": 0,
     "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
   },
-  "hata_sayisi": 6,
+  "hata_sayisi": 2,
   "pdf_hata_sayisi": 1,
   "hatalar": [
-    "ÖSYM merkezi atama ilanları: RuntimeError - HTTPSConnectionPool(host='www.osym.gov.tr', port=443): Max retries exceeded with url: /arama?_Dil=1&aranan=kpss+tercih (Caused by ConnectTimeoutError(",
-    "ÖSYM tüm sınav haberleri: RuntimeError - HTTPSConnectionPool(host='www.osym.gov.tr', port=443): Max retries exceeded with url: /Duyurular/Index (Caused by ConnectTimeoutError(<HTTPSConnection",
-    "MSB / TSK Güncel Teminler: RuntimeError - MSB sayfaları alınamadı: https://personeltemin.msb.gov.tr/?v=1.0.22: RuntimeError - HTTPSConnectionPool(host='personeltemin.msb.gov.tr', port=443): Ma",
-    "MSB / TSK haberleri: RuntimeError - HTTPSConnectionPool(host='personeltemin.msb.gov.tr', port=443): Max retries exceeded with url: /AnaSayfa (Caused by ConnectTimeoutError(<HTTPSConnecti",
-    "Aile Bakanlığı Personel Alımları: RuntimeError - ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "Adalet Bakanlığı Personel Alımları: RuntimeError - HTTPSConnectionPool(host='pgm.adalet.gov.tr', port=443): Max retries exceeded with url: /Home/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='p"
+    "ÖSYM merkezi atama ilanları: RuntimeError - HTTPSConnectionPool(host='www.osym.gov.tr', port=443): Read timed out.",
+    "MSB / TSK Güncel Teminler: sayfa açıldı ancak aktif kart okunamadı"
   ]
 }
