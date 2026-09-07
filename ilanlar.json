@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-09-06T22:11:15.685614+00:00",
+  "guncellenme_zamani": "2026-09-07T00:01:38.262804+00:00",
   "ilan_sayisi": 166,
   "suresi_dolmus_ilan_sayisi": 2,
   "ilanlar": [
@@ -1165,6 +1165,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "1dd7e972cb7d6ffe2d90",
+      "baslik": "Isparta Atabey Belediyesi Ertokuş Hazır Beton Tic.Ltd.Şti",
+      "kurum": "Isparta Atabey Belediyesi Ertokuş Hazır Beton Tic.Ltd.Şti",
+      "sehir": "Isparta",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "08.09.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/5tvetsk5/isparta-atabey-belediyesi-ertokuş-hazır-beton-ticltdşti-08092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/5tvetsk5/isparta-atabey-belediyesi-ertokuş-hazır-beton-ticltdşti-08092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=isparta&il=Isparta",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "1639a18b139e3318446e",
       "baslik": "Belbim Elektronik Para Ve Ödeme Hizmetleri A.Ş.",
       "kurum": "Belbim Elektronik Para Ve Ödeme Hizmetleri A.Ş.",
@@ -1190,30 +1214,6 @@
         "İşletme"
       ],
       "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "1dd7e972cb7d6ffe2d90",
-      "baslik": "Isparta Atabey Belediyesi Ertokuş Hazır Beton Tic.Ltd.Şti",
-      "kurum": "Isparta Atabey Belediyesi Ertokuş Hazır Beton Tic.Ltd.Şti",
-      "sehir": "Isparta",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "08.09.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/5tvetsk5/isparta-atabey-belediyesi-ertokuş-hazır-beton-ticltdşti-08092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/5tvetsk5/isparta-atabey-belediyesi-ertokuş-hazır-beton-ticltdşti-08092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=isparta&il=Isparta",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
       "analiz_surumu": 2
     },
     {
@@ -2724,42 +2724,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "d855a43531f61b163c43",
-      "baslik": "Erzurum Uzundere Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Erzurum Uzundere Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Erzurum",
+      "id": "838e73b0b12aa9fdc33f",
+      "baslik": "Afyonkarahisar Bolvadin Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Afyonkarahisar Bolvadin Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Afyonkarahisar",
       "tur": "Memur",
       "kaynak": "İŞKUR Kamu Memur Alımları",
       "son_basvuru": "25.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/ic1l0wl0/erzurum-uzundere-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/ic1l0wl0/erzurum-uzundere-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=erzurum&il=Erzurum",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "c3ac9d2a6a1e5c799341",
-      "baslik": "Hatay Reyhanlı Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Hatay Reyhanlı Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Hatay",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "25.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/21xnczrb/hatay-reyhanlı-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/21xnczrb/hatay-reyhanlı-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=hatay&il=Hatay",
+      "link": "https://www.iskur.gov.tr/medya/3wtbgrpv/afyonkarahisar-bolvadin-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/3wtbgrpv/afyonkarahisar-bolvadin-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=afyonkarahisar&il=Afyonkarahisar",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
@@ -2802,16 +2776,42 @@
       "analiz_surumu": 2
     },
     {
-      "id": "838e73b0b12aa9fdc33f",
-      "baslik": "Afyonkarahisar Bolvadin Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Afyonkarahisar Bolvadin Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Afyonkarahisar",
+      "id": "d855a43531f61b163c43",
+      "baslik": "Erzurum Uzundere Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Erzurum Uzundere Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Erzurum",
       "tur": "Memur",
       "kaynak": "İŞKUR Kamu Memur Alımları",
       "son_basvuru": "25.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/3wtbgrpv/afyonkarahisar-bolvadin-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/3wtbgrpv/afyonkarahisar-bolvadin-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=afyonkarahisar&il=Afyonkarahisar",
+      "link": "https://www.iskur.gov.tr/medya/ic1l0wl0/erzurum-uzundere-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/ic1l0wl0/erzurum-uzundere-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=erzurum&il=Erzurum",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "c3ac9d2a6a1e5c799341",
+      "baslik": "Hatay Reyhanlı Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Hatay Reyhanlı Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Hatay",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "25.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/21xnczrb/hatay-reyhanlı-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/21xnczrb/hatay-reyhanlı-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=hatay&il=Hatay",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
@@ -2980,32 +2980,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "e10c5b869c0d24570326",
-      "baslik": "Türkiye Belediyeler Birliği Memur Alım İlanı",
-      "kurum": "Türkiye Belediyeler Birliği Memur Alım İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "30.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/id4bvf5f/tuerkiye-belediyeler-birliği-memur-alım-ilanı-30092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/id4bvf5f/tuerkiye-belediyeler-birliği-memur-alım-ilanı-30092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "https://kariyerkapisi.gov.tr/isealim",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "fc9b33928a57ae4db08d",
       "baslik": "Afyonkarahisar Tatarlı Belediyesi Memur Alım İlanı",
       "kurum": "Afyonkarahisar Tatarlı Belediyesi Memur Alım İlanı",
@@ -3028,6 +3002,32 @@
       "bolumler": [
         "İşletme",
         "Muhasebe"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "e10c5b869c0d24570326",
+      "baslik": "Türkiye Belediyeler Birliği Memur Alım İlanı",
+      "kurum": "Türkiye Belediyeler Birliği Memur Alım İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "30.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/id4bvf5f/tuerkiye-belediyeler-birliği-memur-alım-ilanı-30092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/id4bvf5f/tuerkiye-belediyeler-birliği-memur-alım-ilanı-30092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "https://kariyerkapisi.gov.tr/isealim",
+      "basvuru_online": true,
+      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -3234,6 +3234,58 @@
       "analiz_surumu": 2
     },
     {
+      "id": "7464f9a150b8173ce65b",
+      "baslik": "Eskişehir Han Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Eskişehir Han Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Eskişehir",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "02.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/zinbmzjr/eskişehir-han-belediyesi-soezleşmeli-personel-alım-ilanı-02102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/zinbmzjr/eskişehir-han-belediyesi-soezleşmeli-personel-alım-ilanı-02102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=eskisehir&il=Eski%C5%9Fehir",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "99382747cf844bf91f8d",
+      "baslik": "Edirne İpsala Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Edirne İpsala Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Edirne",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "02.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/ouclcbiy/edirne-ipsala-belediyesi-soezleşmeli-personel-alım-ilanı-02102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/ouclcbiy/edirne-ipsala-belediyesi-soezleşmeli-personel-alım-ilanı-02102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=edirne&il=Edirne",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "570cf8fce5dc803a44fd",
       "baslik": "Bingöl Yayladere Belediyesi Memur Alım İlanı",
       "kurum": "Bingöl Yayladere Belediyesi Memur Alım İlanı",
@@ -3262,32 +3314,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "7464f9a150b8173ce65b",
-      "baslik": "Eskişehir Han Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Eskişehir Han Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Eskişehir",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "02.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/zinbmzjr/eskişehir-han-belediyesi-soezleşmeli-personel-alım-ilanı-02102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/zinbmzjr/eskişehir-han-belediyesi-soezleşmeli-personel-alım-ilanı-02102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=eskisehir&il=Eski%C5%9Fehir",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "0feeb0a9f78763daa20a",
       "baslik": "Edirne Uzunköprü Belediyesi Memur Alım İlanı",
       "kurum": "Edirne Uzunköprü Belediyesi Memur Alım İlanı",
@@ -3297,32 +3323,6 @@
       "son_basvuru": "02.10.2026 17:00",
       "link": "https://www.iskur.gov.tr/medya/vqecz40i/edirne-uzunkoeprue-belediyesi-memur-alım-ilanı-02102026.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/vqecz40i/edirne-uzunkoeprue-belediyesi-memur-alım-ilanı-02102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=edirne&il=Edirne",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "99382747cf844bf91f8d",
-      "baslik": "Edirne İpsala Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Edirne İpsala Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Edirne",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "02.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/ouclcbiy/edirne-ipsala-belediyesi-soezleşmeli-personel-alım-ilanı-02102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/ouclcbiy/edirne-ipsala-belediyesi-soezleşmeli-personel-alım-ilanı-02102026.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=edirne&il=Edirne",
       "basvuru_linki": "",
       "basvuru_online": false,
@@ -4134,7 +4134,7 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 276,
+  "haber_sayisi": 273,
   "haberler": [
     {
       "id": "0bcaca8904efee77852c",
@@ -6847,36 +6847,6 @@
       "link": "https://www.osym.gov.tr/2026ydus-basvurularin-alinmasi"
     },
     {
-      "id": "60221f795e80fb2ac8d8",
-      "baslik": "2026-YKS: Başvuru İşlemlerinin Tamamlanması",
-      "kurum": "ÖSYM",
-      "kategori": "YKS Başvuru",
-      "yayin_tarihi": "11.03.2026",
-      "kaynak": "ÖSYM YKS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî YKS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
-      "link": "https://www.osym.gov.tr/2026yks-basvuru-islemlerinin-tamamlanmasi"
-    },
-    {
-      "id": "0b96778fa4920626419a",
-      "baslik": "2026-MEB-EKYS, 2026-TUS 1. Dönem ile 2026-STS Tıp Doktorluğu 1. Dönem Sınavları İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
-      "kurum": "ÖSYM",
-      "kategori": "TUS Duyuru",
-      "yayin_tarihi": "11.03.2026",
-      "kaynak": "ÖSYM TUS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026mebekys-2026tus-1-donem-ile-2026sts-tip-doktorlugu-1-donem-sinavlari-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
-    },
-    {
-      "id": "a2773f85852568e9f8e6",
-      "baslik": "2025-TUS 2. Dönem Uzmanlık Dalı Değişikliği İçin Tercih Kılavuzu ve Tablolar",
-      "kurum": "ÖSYM",
-      "kategori": "TUS Tercih",
-      "yayin_tarihi": "11.03.2026",
-      "kaynak": "ÖSYM TUS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2025tus-2-donem-uzmanlik-dali-degisikligi-icin-tercih-kilavuzu-ve-tablolar"
-    },
-    {
       "id": "1de5b4081003dbef6469",
       "baslik": "AİLE VE SOSYAL HİZMETLER BAKANLIĞI 680 SÖZLEŞMELİ PERSONEL ALIMI TAVAN VE TABAN PUANLARI HAKKINDA DUYURU",
       "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
@@ -6898,13 +6868,8 @@
     }
   ],
   "kaynak_sayilari": {
-    "ÖSYM tüm sınav haberleri": 259,
-    "MSB / TSK Güncel Teminler": 0,
-    "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
-    "GSB Personel Alımları": 2,
-    "Aile Bakanlığı Personel Alımları": 0,
-    "Adalet Bakanlığı Personel Alımları": 0
+    "GSB Personel Alımları": 2
   },
   "bildirim_sonucu": {
     "durum": "yeni_kayit_yok",
@@ -6913,10 +6878,14 @@
     "gonderilen": 0,
     "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
   },
-  "hata_sayisi": 2,
+  "hata_sayisi": 6,
   "pdf_hata_sayisi": 1,
   "hatalar": [
-    "ÖSYM merkezi atama ilanları: RuntimeError - HTTPSConnectionPool(host='www.osym.gov.tr', port=443): Read timed out.",
-    "MSB / TSK Güncel Teminler: sayfa açıldı ancak aktif kart okunamadı"
+    "ÖSYM merkezi atama ilanları: RuntimeError - HTTPSConnectionPool(host='www.osym.gov.tr', port=443): Max retries exceeded with url: /arama?_Dil=1&aranan=kpss+tercih (Caused by ConnectTimeoutError(",
+    "ÖSYM tüm sınav haberleri: RuntimeError - HTTPSConnectionPool(host='www.osym.gov.tr', port=443): Max retries exceeded with url: /Duyurular/Index (Caused by ConnectTimeoutError(<HTTPSConnection",
+    "MSB / TSK Güncel Teminler: RuntimeError - MSB sayfaları alınamadı: https://personeltemin.msb.gov.tr/?v=1.0.22: RuntimeError - HTTPSConnectionPool(host='personeltemin.msb.gov.tr', port=443): Ma",
+    "MSB / TSK haberleri: RuntimeError - HTTPSConnectionPool(host='personeltemin.msb.gov.tr', port=443): Max retries exceeded with url: /AnaSayfa (Caused by ConnectTimeoutError(<HTTPSConnecti",
+    "Aile Bakanlığı Personel Alımları: RuntimeError - ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "Adalet Bakanlığı Personel Alımları: RuntimeError - HTTPSConnectionPool(host='pgm.adalet.gov.tr', port=443): Max retries exceeded with url: /Home/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='p"
   ]
 }
