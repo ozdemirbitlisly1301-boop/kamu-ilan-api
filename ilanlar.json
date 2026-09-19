@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-09-19T15:53:57.270981+00:00",
+  "guncellenme_zamani": "2026-09-19T18:23:55.429416+00:00",
   "ilan_sayisi": 147,
   "suresi_dolmus_ilan_sayisi": 2,
   "ilanlar": [
@@ -2345,19 +2345,19 @@
       "analiz_surumu": 2
     },
     {
-      "id": "7464f9a150b8173ce65b",
-      "baslik": "Eskişehir Han Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Eskişehir Han Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Eskişehir",
+      "id": "570cf8fce5dc803a44fd",
+      "baslik": "Bingöl Yayladere Belediyesi Memur Alım İlanı",
+      "kurum": "Bingöl Yayladere Belediyesi Memur Alım İlanı",
+      "sehir": "Bingöl",
       "tur": "Memur",
       "kaynak": "İŞKUR Kamu Memur Alımları",
       "son_basvuru": "02.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/zinbmzjr/eskişehir-han-belediyesi-soezleşmeli-personel-alım-ilanı-02102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/zinbmzjr/eskişehir-han-belediyesi-soezleşmeli-personel-alım-ilanı-02102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=eskisehir&il=Eski%C5%9Fehir",
+      "link": "https://www.iskur.gov.tr/medya/ijkalmsx/bingoel-yayladere-belediyesi-memur-alım-ilanı-02102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/ijkalmsx/bingoel-yayladere-belediyesi-memur-alım-ilanı-02102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bingol&il=Bing%C3%B6l",
       "basvuru_linki": "",
       "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
       "kpss_gerekli": true,
       "minimum_puan": null,
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
@@ -2365,7 +2365,9 @@
         "Lisans"
       ],
       "bolumler": [
-        "Diğer"
+        "Maliye",
+        "İşletme",
+        "Muhasebe"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -2397,34 +2399,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "570cf8fce5dc803a44fd",
-      "baslik": "Bingöl Yayladere Belediyesi Memur Alım İlanı",
-      "kurum": "Bingöl Yayladere Belediyesi Memur Alım İlanı",
-      "sehir": "Bingöl",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "02.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/ijkalmsx/bingoel-yayladere-belediyesi-memur-alım-ilanı-02102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/ijkalmsx/bingoel-yayladere-belediyesi-memur-alım-ilanı-02102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bingol&il=Bing%C3%B6l",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Maliye",
-        "İşletme",
-        "Muhasebe"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "99382747cf844bf91f8d",
       "baslik": "Edirne İpsala Belediyesi Sözleşmeli Personel Alım İlanı",
       "kurum": "Edirne İpsala Belediyesi Sözleşmeli Personel Alım İlanı",
@@ -2435,6 +2409,32 @@
       "link": "https://www.iskur.gov.tr/medya/ouclcbiy/edirne-ipsala-belediyesi-soezleşmeli-personel-alım-ilanı-02102026.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/ouclcbiy/edirne-ipsala-belediyesi-soezleşmeli-personel-alım-ilanı-02102026.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=edirne&il=Edirne",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "7464f9a150b8173ce65b",
+      "baslik": "Eskişehir Han Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Eskişehir Han Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Eskişehir",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "02.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/zinbmzjr/eskişehir-han-belediyesi-soezleşmeli-personel-alım-ilanı-02102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/zinbmzjr/eskişehir-han-belediyesi-soezleşmeli-personel-alım-ilanı-02102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=eskisehir&il=Eski%C5%9Fehir",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
@@ -3002,6 +3002,32 @@
       "analiz_surumu": 2
     },
     {
+      "id": "55d194dea1dd698008c3",
+      "baslik": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
+      "kurum": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
+      "sehir": "Aydın",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "23.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/3eaenzrg/aydın-didim-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/3eaenzrg/aydın-didim-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=aydin&il=Ayd%C4%B1n",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "ce2ccce684a67cfe5ec4",
       "baslik": "Ankara Pursaklar Belediyesi Zabıta Memuru Alım İlanı",
       "kurum": "Ankara Pursaklar Belediyesi Zabıta Memuru Alım İlanı",
@@ -3024,32 +3050,6 @@
       "bolumler": [
         "Maliye",
         "İşletme"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "55d194dea1dd698008c3",
-      "baslik": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
-      "kurum": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
-      "sehir": "Aydın",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "23.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/3eaenzrg/aydın-didim-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/3eaenzrg/aydın-didim-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=aydin&il=Ayd%C4%B1n",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
