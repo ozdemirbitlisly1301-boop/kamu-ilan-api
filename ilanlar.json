@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-09-21T22:47:01.004576+00:00",
+  "guncellenme_zamani": "2026-09-22T01:15:29.248287+00:00",
   "ilan_sayisi": 161,
   "suresi_dolmus_ilan_sayisi": 2,
   "ilanlar": [
@@ -1416,32 +1416,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "838e73b0b12aa9fdc33f",
-      "baslik": "Afyonkarahisar Bolvadin Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Afyonkarahisar Bolvadin Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Afyonkarahisar",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "25.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/3wtbgrpv/afyonkarahisar-bolvadin-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/3wtbgrpv/afyonkarahisar-bolvadin-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=afyonkarahisar&il=Afyonkarahisar",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "13620c7d7ab70ccb68b0",
       "baslik": "Amasya Göynücek Belediyesi Sözleşmeli Personel Alım İlanı",
       "kurum": "Amasya Göynücek Belediyesi Sözleşmeli Personel Alım İlanı",
@@ -1478,6 +1452,32 @@
       "link": "https://www.iskur.gov.tr/medya/ic1l0wl0/erzurum-uzundere-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/ic1l0wl0/erzurum-uzundere-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=erzurum&il=Erzurum",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "838e73b0b12aa9fdc33f",
+      "baslik": "Afyonkarahisar Bolvadin Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Afyonkarahisar Bolvadin Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Afyonkarahisar",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "25.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/3wtbgrpv/afyonkarahisar-bolvadin-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/3wtbgrpv/afyonkarahisar-bolvadin-belediyesi-soezleşmeli-personel-alım-ilanı-25092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=afyonkarahisar&il=Afyonkarahisar",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
@@ -4017,7 +4017,7 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 279,
+  "haber_sayisi": 277,
   "haberler": [
     {
       "id": "6ac26878e3d5fa823f2b",
@@ -6770,26 +6770,6 @@
       "link": "https://www.osym.gov.tr/2026guy-sinav-sonuclari-aciklandi"
     },
     {
-      "id": "bab92e9865a2a4772d74",
-      "baslik": "2025-YDUS 2. Dönem Ek Tercih İşlemleri: Tercih Kılavuzu ve Kontenjanlar Tablosu",
-      "kurum": "ÖSYM",
-      "kategori": "YDUS Ek Yerleştirme",
-      "yayin_tarihi": "26.03.2026",
-      "kaynak": "ÖSYM YDUS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2025ydus-2-donem-ek-tercih-islemleri-tercih-kilavuzu-ve-kontenjanlar-tablosu"
-    },
-    {
-      "id": "6c68aa34750a1322178a",
-      "baslik": "2025-YDUS 2. Dönem: Ek Yerleştirme Tercihlerinin Alınması",
-      "kurum": "ÖSYM",
-      "kategori": "YDUS Ek Yerleştirme",
-      "yayin_tarihi": "26.03.2026",
-      "kaynak": "ÖSYM YDUS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2025ydus-2-donem-ek-yerlestirme-tercihlerinin-alinmasi"
-    },
-    {
       "id": "1de5b4081003dbef6469",
       "baslik": "AİLE VE SOSYAL HİZMETLER BAKANLIĞI 680 SÖZLEŞMELİ PERSONEL ALIMI TAVAN VE TABAN PUANLARI HAKKINDA DUYURU",
       "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
@@ -6811,7 +6791,7 @@
     }
   ],
   "kaynak_sayilari": {
-    "ÖSYM tüm sınav haberleri": 262,
+    "ÖSYM tüm sınav haberleri": 260,
     "MSB / TSK Güncel Teminler": 0,
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
