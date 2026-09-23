@@ -1,57 +1,9 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-09-23T14:50:13.175155+00:00",
-  "ilan_sayisi": 202,
+  "guncellenme_zamani": "2026-09-23T18:51:03.216663+00:00",
+  "ilan_sayisi": 200,
   "suresi_dolmus_ilan_sayisi": 2,
   "ilanlar": [
-    {
-      "id": "411ffc46445f05fbcfe1",
-      "baslik": "Adana Altın Koza Kültür Sanat Ve Turizm Hizmetleri Anonim Şirketi",
-      "kurum": "Adana Altın Koza Kültür Sanat Ve Turizm Hizmetleri Anonim Şirketi",
-      "sehir": "Adana",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "23.09.2026 18:00",
-      "link": "https://www.iskur.gov.tr/medya/ulrefyo0/adana-altın-koza-kueltuer-sanat-ve-turizm-hizmetleri-anonim-şirketi.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/ulrefyo0/adana-altın-koza-kueltuer-sanat-ve-turizm-hizmetleri-anonim-şirketi.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=adana&il=Adana",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "a622d8fcae41e0660fe0",
-      "baslik": "ŞANLIURFA SAĞLIK VE SAĞLIK TURİZMİ DESTEK HİZ. A.Ş. (İNGİLİZCE ÖĞRETMENİ-ANAOKULU)",
-      "kurum": "ŞANLIURFA SAĞLIK VE SAĞLIK TURİZMİ DESTEK HİZ. A.Ş. (İNGİLİZCE ÖĞRETMENİ-ANAOKULU)",
-      "sehir": "Şanlıurfa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "23.09.2026 19:00",
-      "link": "https://www.iskur.gov.tr/medya/xjzfkvgb/şanliurfa-sağlik-ve-sağlik-turizmi-destek-hiz-aş-ingilizce-oeğretmeni-anaokulu.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/xjzfkvgb/şanliurfa-sağlik-ve-sağlik-turizmi-destek-hiz-aş-ingilizce-oeğretmeni-anaokulu.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=sanliurfa&il=%C5%9Eanl%C4%B1urfa",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
     {
       "id": "0ed1a4cef611c0217b94",
       "baslik": "NALLIHAN BELEDİYESİ PERSONEL LİMİTED ŞİRKETİ",
@@ -76,6 +28,30 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "6d8e01f7177e00b8aa3e",
+      "baslik": "Hatay İSKENT İskenderun Kent Hizmetleri San. ve Tic. Ltd. Şti. 23.09.206",
+      "kurum": "Hatay İSKENT İskenderun Kent Hizmetleri San. ve Tic. Ltd. Şti. 23.09.206",
+      "sehir": "Hatay",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "23.09.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/wlypu4ow/brnb42200828b27_005201.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/wlypu4ow/brnb42200828b27_005201.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=hatay&il=Hatay",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
       "analiz_surumu": 2
     },
     {
@@ -124,6 +100,30 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "110572322fd94eff4d41",
+      "baslik": "Beltur Büyük İstanbul Eğt. Turz. Ve Sağ. Yat. İşlt. Ve Tic. A.Ş.",
+      "kurum": "Beltur Büyük İstanbul Eğt. Turz. Ve Sağ. Yat. İşlt. Ve Tic. A.Ş.",
+      "sehir": "İstanbul",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "23.09.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/h3mnykq0/kurum-dışı-işçi-alımı-beltur-bueyuek-istanbul-eğt-turz-ve-sağ-yat-işlt-ve-tic-aş_ek_kurum-dışı-işçi-alımı.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/h3mnykq0/kurum-dışı-işçi-alımı-beltur-bueyuek-istanbul-eğt-turz-ve-sağ-yat-işlt-ve-tic-aş_ek_kurum-dışı-işçi-alımı.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
     },
     {
@@ -196,54 +196,6 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "6d8e01f7177e00b8aa3e",
-      "baslik": "Hatay İSKENT İskenderun Kent Hizmetleri San. ve Tic. Ltd. Şti. 23.09.206",
-      "kurum": "Hatay İSKENT İskenderun Kent Hizmetleri San. ve Tic. Ltd. Şti. 23.09.206",
-      "sehir": "Hatay",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "23.09.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/wlypu4ow/brnb42200828b27_005201.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/wlypu4ow/brnb42200828b27_005201.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=hatay&il=Hatay",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "110572322fd94eff4d41",
-      "baslik": "Beltur Büyük İstanbul Eğt. Turz. Ve Sağ. Yat. İşlt. Ve Tic. A.Ş.",
-      "kurum": "Beltur Büyük İstanbul Eğt. Turz. Ve Sağ. Yat. İşlt. Ve Tic. A.Ş.",
-      "sehir": "İstanbul",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "23.09.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/h3mnykq0/kurum-dışı-işçi-alımı-beltur-bueyuek-istanbul-eğt-turz-ve-sağ-yat-işlt-ve-tic-aş_ek_kurum-dışı-işçi-alımı.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/h3mnykq0/kurum-dışı-işçi-alımı-beltur-bueyuek-istanbul-eğt-turz-ve-sağ-yat-işlt-ve-tic-aş_ek_kurum-dışı-işçi-alımı.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
     },
     {
@@ -367,6 +319,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "cc4da40a845960a60024",
+      "baslik": "Bursa Kent Yapı İmar Bilişim Enerji Sanayi ve Ticaret A.Ş",
+      "kurum": "Bursa Kent Yapı İmar Bilişim Enerji Sanayi ve Ticaret A.Ş",
+      "sehir": "Bursa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "24.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/legc2ob3/burkent-bursa-kent-yapı-imar-bilişim-enerji-sanayi-ve-ticaret-aş-24092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/legc2ob3/burkent-bursa-kent-yapı-imar-bilişim-enerji-sanayi-ve-ticaret-aş-24092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "2916ff3f7afa835ef6ff",
       "baslik": "Çanakkale Gümüşçay Belediyesi Personel Limited Şirketi",
       "kurum": "Çanakkale Gümüşçay Belediyesi Personel Limited Şirketi",
@@ -438,30 +414,6 @@
         "Muhasebe"
       ],
       "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "cc4da40a845960a60024",
-      "baslik": "Bursa Kent Yapı İmar Bilişim Enerji Sanayi ve Ticaret A.Ş",
-      "kurum": "Bursa Kent Yapı İmar Bilişim Enerji Sanayi ve Ticaret A.Ş",
-      "sehir": "Bursa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/legc2ob3/burkent-bursa-kent-yapı-imar-bilişim-enerji-sanayi-ve-ticaret-aş-24092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/legc2ob3/burkent-bursa-kent-yapı-imar-bilişim-enerji-sanayi-ve-ticaret-aş-24092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
       "analiz_surumu": 2
     },
     {
@@ -635,30 +587,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "67f19e4c547ce98488d4",
-      "baslik": "Çankırı Orta Dodurga Belediyesi per. Ltd. Şti...",
-      "kurum": "Çankırı Orta Dodurga Belediyesi per. Ltd. Şti...",
-      "sehir": "Çankırı",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "24.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/3jhfgabl/çankırı-orta-dodurga-belediyesi-per-ltd-şti24092026.jpg",
-      "belge_linki": "https://www.iskur.gov.tr/medya/3jhfgabl/çankırı-orta-dodurga-belediyesi-per-ltd-şti24092026.jpg",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=cankiri&il=%C3%87ank%C4%B1r%C4%B1",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "hata:RuntimeError",
-      "analiz_surumu": 2
-    },
-    {
       "id": "5323312f3c511bbaa568",
       "baslik": "Hozat Sosyal Yardımlaşma ve Dayanışma Vakfı",
       "kurum": "Hozat Sosyal Yardımlaşma ve Dayanışma Vakfı",
@@ -680,6 +608,30 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "67f19e4c547ce98488d4",
+      "baslik": "Çankırı Orta Dodurga Belediyesi per. Ltd. Şti...",
+      "kurum": "Çankırı Orta Dodurga Belediyesi per. Ltd. Şti...",
+      "sehir": "Çankırı",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "24.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/3jhfgabl/çankırı-orta-dodurga-belediyesi-per-ltd-şti24092026.jpg",
+      "belge_linki": "https://www.iskur.gov.tr/medya/3jhfgabl/çankırı-orta-dodurga-belediyesi-per-ltd-şti24092026.jpg",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=cankiri&il=%C3%87ank%C4%B1r%C4%B1",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "hata:RuntimeError",
       "analiz_surumu": 2
     },
     {
@@ -1227,6 +1179,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "147e22798b7cff846366",
+      "baslik": "Bursa Harmancık Belediyesi Personel Ltd.Şti",
+      "kurum": "Bursa Harmancık Belediyesi Personel Ltd.Şti",
+      "sehir": "Bursa",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "25.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/cmmj1opv/harmancık-belediyesi-personel-aş-23092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/cmmj1opv/harmancık-belediyesi-personel-aş-23092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "da722589c33f644e81b4",
       "baslik": "Diyarbakır Büyükşehir Bld. Personel A.Ş.",
       "kurum": "Diyarbakır Büyükşehir Bld. Personel A.Ş.",
@@ -1261,30 +1237,6 @@
       "link": "https://www.iskur.gov.tr/medya/sngnwa0c/şenkayam-tarım-temzilik-engelli.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/sngnwa0c/şenkayam-tarım-temzilik-engelli.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=erzurum&il=Erzurum",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "147e22798b7cff846366",
-      "baslik": "Bursa Harmancık Belediyesi Personel Ltd.Şti",
-      "kurum": "Bursa Harmancık Belediyesi Personel Ltd.Şti",
-      "sehir": "Bursa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "25.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/cmmj1opv/harmancık-belediyesi-personel-aş-23092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/cmmj1opv/harmancık-belediyesi-personel-aş-23092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -1371,15 +1323,15 @@
       "analiz_surumu": 2
     },
     {
-      "id": "32e3811707b5ed7540cd",
+      "id": "d443679fa3082faf2608",
       "baslik": "FALEZ ÇEVRE YÖNETİM DNŞ. TUR. İNŞ. SAN. VE TİC. A.Ş.",
       "kurum": "FALEZ ÇEVRE YÖNETİM DNŞ. TUR. İNŞ. SAN. VE TİC. A.Ş.",
       "sehir": "Antalya",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "25.09.2026 17:30",
-      "link": "https://www.iskur.gov.tr/medya/zcnj22la/falez23.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/zcnj22la/falez23.pdf",
+      "link": "https://www.iskur.gov.tr/medya/revd22u4/falez23.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/revd22u4/falez23.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=antalya&il=Antalya",
       "basvuru_linki": "",
       "basvuru_online": false,
@@ -1419,15 +1371,15 @@
       "analiz_surumu": 2
     },
     {
-      "id": "d443679fa3082faf2608",
+      "id": "32e3811707b5ed7540cd",
       "baslik": "FALEZ ÇEVRE YÖNETİM DNŞ. TUR. İNŞ. SAN. VE TİC. A.Ş.",
       "kurum": "FALEZ ÇEVRE YÖNETİM DNŞ. TUR. İNŞ. SAN. VE TİC. A.Ş.",
       "sehir": "Antalya",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "25.09.2026 17:30",
-      "link": "https://www.iskur.gov.tr/medya/revd22u4/falez23.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/revd22u4/falez23.pdf",
+      "link": "https://www.iskur.gov.tr/medya/zcnj22la/falez23.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/zcnj22la/falez23.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=antalya&il=Antalya",
       "basvuru_linki": "",
       "basvuru_online": false,
@@ -1758,6 +1710,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "e61e6be9f7a3eed4d96f",
+      "baslik": "Mersin Mutlu Mezitli Tarım Turizm Gıda Organ San. ve Tic. Ltd. Şti.",
+      "kurum": "Mersin Mutlu Mezitli Tarım Turizm Gıda Organ San. ve Tic. Ltd. Şti.",
+      "sehir": "Mersin",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "25.09.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/4cnnc0rf/oez-eğ-yar-p.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/4cnnc0rf/oez-eğ-yar-p.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=mersin&il=Mersin",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "6c4d54e7676b9714e729",
       "baslik": "Samsun Alaçam Belediyesi Albel Yapı A.Ş.",
       "kurum": "Samsun Alaçam Belediyesi Albel Yapı A.Ş.",
@@ -1830,16 +1806,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "e61e6be9f7a3eed4d96f",
-      "baslik": "Mersin Mutlu Mezitli Tarım Turizm Gıda Organ San. ve Tic. Ltd. Şti.",
-      "kurum": "Mersin Mutlu Mezitli Tarım Turizm Gıda Organ San. ve Tic. Ltd. Şti.",
-      "sehir": "Mersin",
+      "id": "773fd6fab6dc5fa9a9f6",
+      "baslik": "Tekirdağ Su Ve Kanalizasyon İdaresi Personel A.Ş.",
+      "kurum": "Tekirdağ Su Ve Kanalizasyon İdaresi Personel A.Ş.",
+      "sehir": "Tekirdağ",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "25.09.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/4cnnc0rf/oez-eğ-yar-p.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/4cnnc0rf/oez-eğ-yar-p.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=mersin&il=Mersin",
+      "link": "https://www.iskur.gov.tr/medya/yloik5zd/tekirdağ-su-ve-kanalizasyon-idaresi-personel-aş-25092026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/yloik5zd/tekirdağ-su-ve-kanalizasyon-idaresi-personel-aş-25092026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=tekirdag&il=Tekirda%C4%9F",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -1864,30 +1840,6 @@
       "link": "https://www.iskur.gov.tr/medya/1ygdgc1v/yalova-sosyal-yardımlaşma-ve-dayanışma-vakfı-25092026.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/1ygdgc1v/yalova-sosyal-yardımlaşma-ve-dayanışma-vakfı-25092026.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=yalova&il=Yalova",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "773fd6fab6dc5fa9a9f6",
-      "baslik": "Tekirdağ Su Ve Kanalizasyon İdaresi Personel A.Ş.",
-      "kurum": "Tekirdağ Su Ve Kanalizasyon İdaresi Personel A.Ş.",
-      "sehir": "Tekirdağ",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "25.09.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/yloik5zd/tekirdağ-su-ve-kanalizasyon-idaresi-personel-aş-25092026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/yloik5zd/tekirdağ-su-ve-kanalizasyon-idaresi-personel-aş-25092026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=tekirdag&il=Tekirda%C4%9F",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -2580,6 +2532,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "f56bb3258476bd24c3d2",
+      "baslik": "Çanakkale Gök-aş Gökçeada Tur. San. ve Tic. A.Ş.",
+      "kurum": "Çanakkale Gök-aş Gökçeada Tur. San. ve Tic. A.Ş.",
+      "sehir": "Çanakkale",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "28.09.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/2bab3qli/doc09572920260923115009.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/2bab3qli/doc09572920260923115009.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "5d912ddfc1cc87be19aa",
       "baslik": "Çankırı Orta Belediyesi İktisadi ve Sosyal Tesisler İşletmesi.",
       "kurum": "Çankırı Orta Belediyesi İktisadi ve Sosyal Tesisler İşletmesi.",
@@ -2638,30 +2614,6 @@
       "link": "https://www.iskur.gov.tr/medya/i5dnqnmc/çankırı-yeşil-eldivan-inş-mad-san-ve-tic-ltdşti-28092026.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/i5dnqnmc/çankırı-yeşil-eldivan-inş-mad-san-ve-tic-ltdşti-28092026.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=cankiri&il=%C3%87ank%C4%B1r%C4%B1",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "f56bb3258476bd24c3d2",
-      "baslik": "Çanakkale Gök-aş Gökçeada Tur. San. ve Tic. A.Ş.",
-      "kurum": "Çanakkale Gök-aş Gökçeada Tur. San. ve Tic. A.Ş.",
-      "sehir": "Çanakkale",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "28.09.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/2bab3qli/doc09572920260923115009.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/2bab3qli/doc09572920260923115009.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -3549,32 +3501,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "3677dcc131f29000f124",
-      "baslik": "Rize Belediye Başkanlığı Sözleşmeli Personel Alım İlanı",
-      "kurum": "Rize Belediye Başkanlığı Sözleşmeli Personel Alım İlanı",
-      "sehir": "Rize",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "02.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/hffjz1bq/rize-belediye-başkanlığı-soezleşmeli-personel-alım-ilanı-02102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/hffjz1bq/rize-belediye-başkanlığı-soezleşmeli-personel-alım-ilanı-02102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=rize&il=Rize",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "d99e2ddd28b8fb79339d",
       "baslik": "Siirt Beğendik Belediyesi Zabıta Memuru Alım İlanı",
       "kurum": "Siirt Beğendik Belediyesi Zabıta Memuru Alım İlanı",
@@ -3588,6 +3514,32 @@
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "3677dcc131f29000f124",
+      "baslik": "Rize Belediye Başkanlığı Sözleşmeli Personel Alım İlanı",
+      "kurum": "Rize Belediye Başkanlığı Sözleşmeli Personel Alım İlanı",
+      "sehir": "Rize",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "02.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/hffjz1bq/rize-belediye-başkanlığı-soezleşmeli-personel-alım-ilanı-02102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/hffjz1bq/rize-belediye-başkanlığı-soezleşmeli-personel-alım-ilanı-02102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=rize&il=Rize",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
       "kpss_gerekli": true,
       "minimum_puan": null,
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
@@ -7840,6 +7792,7 @@
     }
   ],
   "kaynak_sayilari": {
+    "ÖSYM merkezi atama ilanları": 0,
     "ÖSYM tüm sınav haberleri": 267,
     "MSB / TSK Güncel Teminler": 0,
     "MSB / TSK haberleri": 0,
@@ -7849,16 +7802,15 @@
     "Adalet Bakanlığı Personel Alımları": 0
   },
   "bildirim_sonucu": {
-    "durum": "gonderildi",
-    "yeni_ilan": 26,
-    "yeni_haber": 1,
-    "gonderilen": 9,
-    "mesaj": "9 telefon bildirimi gönderildi."
+    "durum": "yeni_kayit_yok",
+    "yeni_ilan": 0,
+    "yeni_haber": 0,
+    "gonderilen": 0,
+    "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
   },
-  "hata_sayisi": 2,
+  "hata_sayisi": 1,
   "pdf_hata_sayisi": 2,
   "hatalar": [
-    "ÖSYM merkezi atama ilanları: RuntimeError - HTTPSConnectionPool(host='www.osym.gov.tr', port=443): Read timed out.",
     "MSB / TSK Güncel Teminler: sayfa açıldı ancak aktif kart okunamadı"
   ]
 }
