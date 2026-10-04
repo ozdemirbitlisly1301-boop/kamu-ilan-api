@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-03T22:22:28.084348+00:00",
+  "guncellenme_zamani": "2026-10-04T01:48:44.624278+00:00",
   "ilan_sayisi": 113,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
@@ -763,32 +763,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "8f2afcb0d71295c346c4",
-      "baslik": "İzmir Karaburun Belediyesi Zabıta Memuru Alım İlanı",
-      "kurum": "İzmir Karaburun Belediyesi Zabıta Memuru Alım İlanı",
-      "sehir": "İzmir",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "06.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/zzean2q3/izmir-karaburun-belediyesi-zabıta-memuru-alım-ilanı-06102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/zzean2q3/izmir-karaburun-belediyesi-zabıta-memuru-alım-ilanı-06102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "46fd3ccae48ba3acd1a3",
       "baslik": "Ardahan Göle Belediyesi Memur Alım İlanı",
       "kurum": "Ardahan Göle Belediyesi Memur Alım İlanı",
@@ -807,6 +781,32 @@
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
       "mezuniyetler": [
         "Ortaöğretim",
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "8f2afcb0d71295c346c4",
+      "baslik": "İzmir Karaburun Belediyesi Zabıta Memuru Alım İlanı",
+      "kurum": "İzmir Karaburun Belediyesi Zabıta Memuru Alım İlanı",
+      "sehir": "İzmir",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "06.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/zzean2q3/izmir-karaburun-belediyesi-zabıta-memuru-alım-ilanı-06102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/zzean2q3/izmir-karaburun-belediyesi-zabıta-memuru-alım-ilanı-06102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
         "Lisans"
       ],
       "bolumler": [
@@ -1804,6 +1804,33 @@
       "analiz_surumu": 2
     },
     {
+      "id": "ce2ccce684a67cfe5ec4",
+      "baslik": "Ankara Pursaklar Belediyesi Zabıta Memuru Alım İlanı",
+      "kurum": "Ankara Pursaklar Belediyesi Zabıta Memuru Alım İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "23.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/tfnpxax1/ankara-pursaklar-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/tfnpxax1/ankara-pursaklar-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Maliye",
+        "İşletme"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "23bb5b4d65d3d7cab7bc",
       "baslik": "Batı Akdeniz Kalkınma Ajansı Personel Alım İlanı",
       "kurum": "Batı Akdeniz Kalkınma Ajansı Personel Alım İlanı",
@@ -1827,33 +1854,6 @@
         "Maliye",
         "İşletme",
         "Muhasebe"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "ce2ccce684a67cfe5ec4",
-      "baslik": "Ankara Pursaklar Belediyesi Zabıta Memuru Alım İlanı",
-      "kurum": "Ankara Pursaklar Belediyesi Zabıta Memuru Alım İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "23.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/tfnpxax1/ankara-pursaklar-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/tfnpxax1/ankara-pursaklar-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Maliye",
-        "İşletme"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -2208,32 +2208,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "56961c753a205497cf83",
-      "baslik": "Ardahan Pasof Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Ardahan Pasof Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Ardahan",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "04.11.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/xggdhmpt/ardahan-pasof-belediyesi-soezleşmeli-personel-alım-ilanı-04112026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/xggdhmpt/ardahan-pasof-belediyesi-soezleşmeli-personel-alım-ilanı-04112026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ardahan&il=Ardahan",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Ortaöğretim"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "0ca1c1811f87d2184aaf",
       "baslik": "Ağrı Eleşkirt Belediyesi Memur Alım İlanı",
       "kurum": "Ağrı Eleşkirt Belediyesi Memur Alım İlanı",
@@ -2255,6 +2229,32 @@
       ],
       "bolumler": [
         "İşletme"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "56961c753a205497cf83",
+      "baslik": "Ardahan Pasof Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Ardahan Pasof Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Ardahan",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "04.11.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/xggdhmpt/ardahan-pasof-belediyesi-soezleşmeli-personel-alım-ilanı-04112026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/xggdhmpt/ardahan-pasof-belediyesi-soezleşmeli-personel-alım-ilanı-04112026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ardahan&il=Ardahan",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Ortaöğretim"
+      ],
+      "bolumler": [
+        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
