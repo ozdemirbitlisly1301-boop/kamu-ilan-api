@@ -1,33 +1,9 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-04T07:45:11.929952+00:00",
-  "ilan_sayisi": 113,
+  "guncellenme_zamani": "2026-10-04T13:31:55.479495+00:00",
+  "ilan_sayisi": 112,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
-    {
-      "id": "e1b578bdd0c4f0e4f69a",
-      "baslik": "Diyarbakır Çüngüş Bld. Personel Ltd. Şti",
-      "kurum": "Diyarbakır Çüngüş Bld. Personel Ltd. Şti",
-      "sehir": "Diyarbakır",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "04.10.2026 12:00",
-      "link": "https://www.iskur.gov.tr/medya/kqzffmqi/diyarbakır-çuengueş-bld-personel-ltd-şti-02102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/kqzffmqi/diyarbakır-çuengueş-bld-personel-ltd-şti-02102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=diyarbakir&il=Diyarbak%C4%B1r",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
     {
       "id": "fc4452b9e986ce662644",
       "baslik": "BORÇKA BEL. İKTİSADİ VE SOSYAL TESİS İŞLETMESİ ( - )",
@@ -763,6 +739,32 @@
       "analiz_surumu": 2
     },
     {
+      "id": "8f2afcb0d71295c346c4",
+      "baslik": "İzmir Karaburun Belediyesi Zabıta Memuru Alım İlanı",
+      "kurum": "İzmir Karaburun Belediyesi Zabıta Memuru Alım İlanı",
+      "sehir": "İzmir",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "06.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/zzean2q3/izmir-karaburun-belediyesi-zabıta-memuru-alım-ilanı-06102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/zzean2q3/izmir-karaburun-belediyesi-zabıta-memuru-alım-ilanı-06102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "46fd3ccae48ba3acd1a3",
       "baslik": "Ardahan Göle Belediyesi Memur Alım İlanı",
       "kurum": "Ardahan Göle Belediyesi Memur Alım İlanı",
@@ -781,32 +783,6 @@
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
       "mezuniyetler": [
         "Ortaöğretim",
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "8f2afcb0d71295c346c4",
-      "baslik": "İzmir Karaburun Belediyesi Zabıta Memuru Alım İlanı",
-      "kurum": "İzmir Karaburun Belediyesi Zabıta Memuru Alım İlanı",
-      "sehir": "İzmir",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "06.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/zzean2q3/izmir-karaburun-belediyesi-zabıta-memuru-alım-ilanı-06102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/zzean2q3/izmir-karaburun-belediyesi-zabıta-memuru-alım-ilanı-06102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
         "Lisans"
       ],
       "bolumler": [
@@ -1675,6 +1651,32 @@
       "analiz_surumu": 2
     },
     {
+      "id": "3b7504f32c379b237fe8",
+      "baslik": "Bolu Taşkesti Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Bolu Taşkesti Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Bolu",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "21.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/lfxpeqnk/bolu-taşkesti-belediyesi-soezleşmeli-personel-alım-ilanı-21102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/lfxpeqnk/bolu-taşkesti-belediyesi-soezleşmeli-personel-alım-ilanı-21102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bolu&il=Bolu",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "9d4d97ec470c2efcf5b3",
       "baslik": "Iğdır Aralık Belediyesi İtfaiye Eri Alım İlanı",
       "kurum": "Iğdır Aralık Belediyesi İtfaiye Eri Alım İlanı",
@@ -1694,32 +1696,6 @@
       "mezuniyetler": [
         "Ortaöğretim",
         "Önlisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "3b7504f32c379b237fe8",
-      "baslik": "Bolu Taşkesti Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Bolu Taşkesti Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Bolu",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "21.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/lfxpeqnk/bolu-taşkesti-belediyesi-soezleşmeli-personel-alım-ilanı-21102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/lfxpeqnk/bolu-taşkesti-belediyesi-soezleşmeli-personel-alım-ilanı-21102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bolu&il=Bolu",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
       ],
       "bolumler": [
         "Diğer"
@@ -1804,6 +1780,34 @@
       "analiz_surumu": 2
     },
     {
+      "id": "23bb5b4d65d3d7cab7bc",
+      "baslik": "Batı Akdeniz Kalkınma Ajansı Personel Alım İlanı",
+      "kurum": "Batı Akdeniz Kalkınma Ajansı Personel Alım İlanı",
+      "sehir": "Isparta",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "23.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/wx1p1ned/isparta-batı-akdeniz-kalkınma-ajansı-personel-alım-ilanı-23102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/wx1p1ned/isparta-batı-akdeniz-kalkınma-ajansı-personel-alım-ilanı-23102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=isparta&il=Isparta",
+      "basvuru_linki": "https://kariyerkapisi.gov.tr",
+      "basvuru_online": true,
+      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Maliye",
+        "İşletme",
+        "Muhasebe"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "55d194dea1dd698008c3",
       "baslik": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
       "kurum": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
@@ -1852,34 +1856,6 @@
       "bolumler": [
         "Maliye",
         "İşletme"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "23bb5b4d65d3d7cab7bc",
-      "baslik": "Batı Akdeniz Kalkınma Ajansı Personel Alım İlanı",
-      "kurum": "Batı Akdeniz Kalkınma Ajansı Personel Alım İlanı",
-      "sehir": "Isparta",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "23.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/wx1p1ned/isparta-batı-akdeniz-kalkınma-ajansı-personel-alım-ilanı-23102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/wx1p1ned/isparta-batı-akdeniz-kalkınma-ajansı-personel-alım-ilanı-23102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=isparta&il=Isparta",
-      "basvuru_linki": "https://kariyerkapisi.gov.tr",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Maliye",
-        "İşletme",
-        "Muhasebe"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -2803,8 +2779,28 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 296,
+  "haber_sayisi": 298,
   "haberler": [
+    {
+      "id": "648d4407d9064bf925cc",
+      "baslik": "2026-KPSS Ön Lisans Sınavı: Temel Soru Kitapçığı ve Cevap Anahtarı Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "KPSS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "04.10.2026",
+      "kaynak": "ÖSYM KPSS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî KPSS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-kpss-on-lisans-sinavi-temel-soru-kitapcigi-ve-cevap-anahtari-yayimlandi"
+    },
+    {
+      "id": "e0dd46ec9db13a2cb8ed",
+      "baslik": "2026-KPSS Ön Lisans Temel Soru Kitapçığı ve Cevap Anahtarı (% 10)",
+      "kurum": "ÖSYM",
+      "kategori": "KPSS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "04.10.2026",
+      "kaynak": "ÖSYM KPSS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî KPSS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-kpss-on-lisans-temel-soru-kitapcigi-ve-cevap-anahtari-10"
+    },
     {
       "id": "f9ebc6e7fda84e76e12c",
       "baslik": "2026 Yükseköğretim Kurumlarının Öncelikli Alanlardaki Doktora Programlarına Öğrenci Seçme Sınavı (YÖK-YKDS): Başvuruların Alınması",
@@ -5767,7 +5763,8 @@
     }
   ],
   "kaynak_sayilari": {
-    "ÖSYM tüm sınav haberleri": 279,
+    "ÖSYM merkezi atama ilanları": 0,
+    "ÖSYM tüm sınav haberleri": 281,
     "MSB / TSK Güncel Teminler": 0,
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
@@ -5776,16 +5773,15 @@
     "Adalet Bakanlığı Personel Alımları": 0
   },
   "bildirim_sonucu": {
-    "durum": "yeni_kayit_yok",
+    "durum": "gonderildi",
     "yeni_ilan": 0,
-    "yeni_haber": 0,
-    "gonderilen": 0,
-    "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
+    "yeni_haber": 2,
+    "gonderilen": 2,
+    "mesaj": "2 telefon bildirimi gönderildi."
   },
-  "hata_sayisi": 2,
+  "hata_sayisi": 1,
   "pdf_hata_sayisi": 0,
   "hatalar": [
-    "ÖSYM merkezi atama ilanları: RuntimeError - HTTPSConnectionPool(host='www.osym.gov.tr', port=443): Read timed out.",
     "MSB / TSK Güncel Teminler: sayfa açıldı ancak aktif kart okunamadı"
   ]
 }
