@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-04T23:50:21.484367+00:00",
+  "guncellenme_zamani": "2026-10-05T03:39:09.888030+00:00",
   "ilan_sayisi": 103,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
@@ -27,6 +27,30 @@
       ],
       "bolumler": [
         "Muhasebe"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "4f599a9ae68eaad2c575",
+      "baslik": "Çankırı Orta Belediyesi Per.Ltd.Şti.",
+      "kurum": "Çankırı Orta Belediyesi Per.Ltd.Şti.",
+      "sehir": "Çankırı",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "05.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/wmck4442/çankırı-orta-belediyesi-perltdşti05102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/wmck4442/çankırı-orta-belediyesi-perltdşti05102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=cankiri&il=%C3%87ank%C4%B1r%C4%B1",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -99,30 +123,6 @@
       "mezuniyetler": [
         "Ortaöğretim"
       ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "4f599a9ae68eaad2c575",
-      "baslik": "Çankırı Orta Belediyesi Per.Ltd.Şti.",
-      "kurum": "Çankırı Orta Belediyesi Per.Ltd.Şti.",
-      "sehir": "Çankırı",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "05.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/wmck4442/çankırı-orta-belediyesi-perltdşti05102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/wmck4442/çankırı-orta-belediyesi-perltdşti05102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=cankiri&il=%C3%87ank%C4%B1r%C4%B1",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
       "bolumler": [
         "Diğer"
       ],
@@ -1432,32 +1432,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "3b7504f32c379b237fe8",
-      "baslik": "Bolu Taşkesti Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Bolu Taşkesti Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Bolu",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "21.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/lfxpeqnk/bolu-taşkesti-belediyesi-soezleşmeli-personel-alım-ilanı-21102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/lfxpeqnk/bolu-taşkesti-belediyesi-soezleşmeli-personel-alım-ilanı-21102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bolu&il=Bolu",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "9d4d97ec470c2efcf5b3",
       "baslik": "Iğdır Aralık Belediyesi İtfaiye Eri Alım İlanı",
       "kurum": "Iğdır Aralık Belediyesi İtfaiye Eri Alım İlanı",
@@ -1477,6 +1451,32 @@
       "mezuniyetler": [
         "Ortaöğretim",
         "Önlisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "3b7504f32c379b237fe8",
+      "baslik": "Bolu Taşkesti Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Bolu Taşkesti Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Bolu",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "21.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/lfxpeqnk/bolu-taşkesti-belediyesi-soezleşmeli-personel-alım-ilanı-21102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/lfxpeqnk/bolu-taşkesti-belediyesi-soezleşmeli-personel-alım-ilanı-21102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bolu&il=Bolu",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
       ],
       "bolumler": [
         "Diğer"
@@ -1561,32 +1561,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "55d194dea1dd698008c3",
-      "baslik": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
-      "kurum": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
-      "sehir": "Aydın",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "23.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/3eaenzrg/aydın-didim-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/3eaenzrg/aydın-didim-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=aydin&il=Ayd%C4%B1n",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "ce2ccce684a67cfe5ec4",
       "baslik": "Ankara Pursaklar Belediyesi Zabıta Memuru Alım İlanı",
       "kurum": "Ankara Pursaklar Belediyesi Zabıta Memuru Alım İlanı",
@@ -1609,6 +1583,32 @@
       "bolumler": [
         "Maliye",
         "İşletme"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "55d194dea1dd698008c3",
+      "baslik": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
+      "kurum": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
+      "sehir": "Aydın",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "23.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/3eaenzrg/aydın-didim-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/3eaenzrg/aydın-didim-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=aydin&il=Ayd%C4%B1n",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -2560,7 +2560,7 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 298,
+  "haber_sayisi": 290,
   "haberler": [
     {
       "id": "648d4407d9064bf925cc",
@@ -5403,6 +5403,16 @@
       "link": "https://www.osym.gov.tr/eyds-20263-farscayunancabulgarca-sinava-giris-belgeleri-erisime-acildi"
     },
     {
+      "id": "d71d2656c4269bdcb473",
+      "baslik": "2026-TR-YÖS/1: Temel Soru Kitapçığı ile Cevap Anahtarı Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "TR-YÖS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "13.04.2026",
+      "kaynak": "ÖSYM TR-YÖS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TR-YÖS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026tryos1-temel-soru-kitapcigi-ile-cevap-anahtari-yayimlandi"
+    },
+    {
       "id": "ea8eade7ef231bf9097b",
       "baslik": "2026-TUS 1. Dönem Sınavı ile 2026-STS Tıp Doktorluğu 1. Dönem Sınavı: Cevap Kâğıtları ve Aday Cevapları Erişime Açıldı",
       "kurum": "ÖSYM",
@@ -5423,104 +5433,14 @@
       "link": "https://www.osym.gov.tr/2026tus-1-donem-ve-2026sts-tip-doktorlugu-1-donem-sinav-sonuclari-aciklandi-20260511131314301"
     },
     {
-      "id": "d71d2656c4269bdcb473",
-      "baslik": "2026-TR-YÖS/1: Temel Soru Kitapçığı ile Cevap Anahtarı Yayımlandı",
-      "kurum": "ÖSYM",
-      "kategori": "TR-YÖS Soru ve Cevap Anahtarı",
-      "yayin_tarihi": "08.04.2026",
-      "kaynak": "ÖSYM TR-YÖS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî TR-YÖS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026tryos1-temel-soru-kitapcigi-ile-cevap-anahtari-yayimlandi"
-    },
-    {
       "id": "075e041577fcb2015174",
       "baslik": "2026-TR-YÖS/1: Temel Soru Kitapçığı ve Cevap Anahtarının Yayımlanması (% 10)",
       "kurum": "ÖSYM",
       "kategori": "TR-YÖS Soru ve Cevap Anahtarı",
-      "yayin_tarihi": "08.04.2026",
+      "yayin_tarihi": "11.04.2026",
       "kaynak": "ÖSYM TR-YÖS Duyuruları",
       "ozet": "ÖSYM tarafından yayımlanan resmî TR-YÖS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
       "link": "https://www.osym.gov.tr/2026tryos1-temel-soru-kitapcigi-ve-cevap-anahtarinin-yayimlanmasi-10"
-    },
-    {
-      "id": "df29a70d698fe5c26358",
-      "baslik": "2026-MEB-EKYS: Cevap Kâğıtları ve Aday Cevapları Erişime Açıldı",
-      "kurum": "ÖSYM",
-      "kategori": "ÖSYM Aday Cevapları",
-      "yayin_tarihi": "08.04.2026",
-      "kaynak": "ÖSYM Diğer ÖSYM Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî Diğer ÖSYM duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026mebekys-cevap-kgitlari-ve-aday-cevaplari-erisime-acildi"
-    },
-    {
-      "id": "0948158d46b33f03323f",
-      "baslik": "2026-MEB-EKYS: Sınav Sonuçları Açıklandı",
-      "kurum": "ÖSYM",
-      "kategori": "ÖSYM Sonuç",
-      "yayin_tarihi": "08.04.2026",
-      "kaynak": "ÖSYM Diğer ÖSYM Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî Diğer ÖSYM duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026mebekys-sinav-sonuclari-aciklandi"
-    },
-    {
-      "id": "aa696cbc8f8e0c1d23b5",
-      "baslik": "2025-TUS 2. Dönem Uzmanlık Dalı Değişikliği Yerleştirme Sonuçlarına İlişkin Sayısal Bilgiler",
-      "kurum": "ÖSYM",
-      "kategori": "TUS Sonuç",
-      "yayin_tarihi": "08.04.2026",
-      "kaynak": "ÖSYM TUS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2025tus-2-donem-uzmanlik-dali-degisikligi-yerlestirme-sonuclarina-iliskin-sayisal-bilgiler"
-    },
-    {
-      "id": "5055d27ee5ad672683b5",
-      "baslik": "2025-TUS 2. Dönem Uzmanlık Dalı Değişikliği Yerleştirme Sonuçları Açıklandı",
-      "kurum": "ÖSYM",
-      "kategori": "TUS Sonuç",
-      "yayin_tarihi": "08.04.2026",
-      "kaynak": "ÖSYM TUS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2025tus-2-donem-uzmanlik-dali-degisikligi-yerlestirme-sonuclari-aciklandi-20260511143314743"
-    },
-    {
-      "id": "f1e8906af96cdb74245e",
-      "baslik": "2025-YDUS 2. Dönem Ek Yerleştirme Sonuçlarına İlişkin Sayısal Bilgiler",
-      "kurum": "ÖSYM",
-      "kategori": "YDUS Ek Yerleştirme Sonucu",
-      "yayin_tarihi": "08.04.2026",
-      "kaynak": "ÖSYM YDUS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2025ydus-2-donem-ek-yerlestirme-sonuclarina-iliskin-sayisal-bilgiler"
-    },
-    {
-      "id": "00df2b8136bc4f646766",
-      "baslik": "2025-YDUS 2. Dönem: Ek Yerleştirme Sonuçları Açıklandı",
-      "kurum": "ÖSYM",
-      "kategori": "YDUS Ek Yerleştirme Sonucu",
-      "yayin_tarihi": "08.04.2026",
-      "kaynak": "ÖSYM YDUS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2025ydus-2-donem-ek-yerlestirme-sonuclari-aciklandi"
-    },
-    {
-      "id": "45939a52d1d7557bdec2",
-      "baslik": "2026-EKPSS: Sınava Giriş Belgeleri Erişime Açıldı",
-      "kurum": "ÖSYM",
-      "kategori": "EKPSS Duyuru",
-      "yayin_tarihi": "08.04.2026",
-      "kaynak": "ÖSYM EKPSS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
-      "link": "https://www.osym.gov.tr/2026ekpss-sinava-giris-belgeleri-erisime-acildi"
-    },
-    {
-      "id": "67ab9fe989bd87cab044",
-      "baslik": "2026-TR-YÖS/1 Sınavı İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
-      "kurum": "ÖSYM",
-      "kategori": "TR-YÖS Duyuru",
-      "yayin_tarihi": "08.04.2026",
-      "kaynak": "ÖSYM TR-YÖS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî TR-YÖS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026tryos1-sinavi-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
     },
     {
       "id": "1de5b4081003dbef6469",
@@ -5545,7 +5465,7 @@
   ],
   "kaynak_sayilari": {
     "ÖSYM merkezi atama ilanları": 0,
-    "ÖSYM tüm sınav haberleri": 281,
+    "ÖSYM tüm sınav haberleri": 273,
     "MSB / TSK Güncel Teminler": 0,
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
