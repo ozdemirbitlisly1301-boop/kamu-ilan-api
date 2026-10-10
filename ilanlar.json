@@ -1,8 +1,8 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-10T15:01:04.385097+00:00",
+  "guncellenme_zamani": "2026-10-10T19:11:29.828723+00:00",
   "ilan_sayisi": 136,
-  "suresi_dolmus_ilan_sayisi": 2,
+  "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
     {
       "id": "5e03fec55eff7a38ef8b",
@@ -1986,6 +1986,32 @@
       "analiz_surumu": 2
     },
     {
+      "id": "3b7504f32c379b237fe8",
+      "baslik": "Bolu Taşkesti Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Bolu Taşkesti Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Bolu",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "21.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/lfxpeqnk/bolu-taşkesti-belediyesi-soezleşmeli-personel-alım-ilanı-21102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/lfxpeqnk/bolu-taşkesti-belediyesi-soezleşmeli-personel-alım-ilanı-21102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bolu&il=Bolu",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "9d4d97ec470c2efcf5b3",
       "baslik": "Iğdır Aralık Belediyesi İtfaiye Eri Alım İlanı",
       "kurum": "Iğdır Aralık Belediyesi İtfaiye Eri Alım İlanı",
@@ -2005,32 +2031,6 @@
       "mezuniyetler": [
         "Ortaöğretim",
         "Önlisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "3b7504f32c379b237fe8",
-      "baslik": "Bolu Taşkesti Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Bolu Taşkesti Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Bolu",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "21.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/lfxpeqnk/bolu-taşkesti-belediyesi-soezleşmeli-personel-alım-ilanı-21102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/lfxpeqnk/bolu-taşkesti-belediyesi-soezleşmeli-personel-alım-ilanı-21102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bolu&il=Bolu",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
       ],
       "bolumler": [
         "Diğer"
@@ -2141,32 +2141,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "55d194dea1dd698008c3",
-      "baslik": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
-      "kurum": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
-      "sehir": "Aydın",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "23.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/3eaenzrg/aydın-didim-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/3eaenzrg/aydın-didim-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=aydin&il=Ayd%C4%B1n",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "ce2ccce684a67cfe5ec4",
       "baslik": "Ankara Pursaklar Belediyesi Zabıta Memuru Alım İlanı",
       "kurum": "Ankara Pursaklar Belediyesi Zabıta Memuru Alım İlanı",
@@ -2189,6 +2163,32 @@
       "bolumler": [
         "Maliye",
         "İşletme"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "55d194dea1dd698008c3",
+      "baslik": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
+      "kurum": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
+      "sehir": "Aydın",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "23.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/3eaenzrg/aydın-didim-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/3eaenzrg/aydın-didim-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=aydin&il=Ayd%C4%B1n",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
