@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-11T22:41:03.353780+00:00",
+  "guncellenme_zamani": "2026-10-12T01:49:53.422000+00:00",
   "ilan_sayisi": 116,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
@@ -269,30 +269,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "5944c7b78ec1f0576c33",
-      "baslik": "Isparta Atabey Belediyesi Ertokuş Hazır Beton Tic.Ltd.Şti",
-      "kurum": "Isparta Atabey Belediyesi Ertokuş Hazır Beton Tic.Ltd.Şti",
-      "sehir": "Isparta",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "12.10.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/khvm330f/isparta-atabey-belediyesi-ertokuş-hazır-beton-ticltdşti-12102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/khvm330f/isparta-atabey-belediyesi-ertokuş-hazır-beton-ticltdşti-12102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=isparta&il=Isparta",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "ff10f9d7397d972017b9",
       "baslik": "İstanbul Personel Yönetim A.Ş. (İSPER)",
       "kurum": "İstanbul Personel Yönetim A.Ş. (İSPER)",
@@ -327,6 +303,30 @@
       "link": "https://www.iskur.gov.tr/medya/p4ih1ffq/ziraat.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/p4ih1ffq/ziraat.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "5944c7b78ec1f0576c33",
+      "baslik": "Isparta Atabey Belediyesi Ertokuş Hazır Beton Tic.Ltd.Şti",
+      "kurum": "Isparta Atabey Belediyesi Ertokuş Hazır Beton Tic.Ltd.Şti",
+      "sehir": "Isparta",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "12.10.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/khvm330f/isparta-atabey-belediyesi-ertokuş-hazır-beton-ticltdşti-12102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/khvm330f/isparta-atabey-belediyesi-ertokuş-hazır-beton-ticltdşti-12102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=isparta&il=Isparta",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -1501,6 +1501,32 @@
       "analiz_surumu": 2
     },
     {
+      "id": "3b7504f32c379b237fe8",
+      "baslik": "Bolu Taşkesti Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Bolu Taşkesti Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Bolu",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "21.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/lfxpeqnk/bolu-taşkesti-belediyesi-soezleşmeli-personel-alım-ilanı-21102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/lfxpeqnk/bolu-taşkesti-belediyesi-soezleşmeli-personel-alım-ilanı-21102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bolu&il=Bolu",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "9d4d97ec470c2efcf5b3",
       "baslik": "Iğdır Aralık Belediyesi İtfaiye Eri Alım İlanı",
       "kurum": "Iğdır Aralık Belediyesi İtfaiye Eri Alım İlanı",
@@ -1520,32 +1546,6 @@
       "mezuniyetler": [
         "Ortaöğretim",
         "Önlisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "3b7504f32c379b237fe8",
-      "baslik": "Bolu Taşkesti Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Bolu Taşkesti Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Bolu",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "21.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/lfxpeqnk/bolu-taşkesti-belediyesi-soezleşmeli-personel-alım-ilanı-21102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/lfxpeqnk/bolu-taşkesti-belediyesi-soezleşmeli-personel-alım-ilanı-21102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=bolu&il=Bolu",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
       ],
       "bolumler": [
         "Diğer"
@@ -1656,33 +1656,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "ce2ccce684a67cfe5ec4",
-      "baslik": "Ankara Pursaklar Belediyesi Zabıta Memuru Alım İlanı",
-      "kurum": "Ankara Pursaklar Belediyesi Zabıta Memuru Alım İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "23.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/tfnpxax1/ankara-pursaklar-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/tfnpxax1/ankara-pursaklar-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Maliye",
-        "İşletme"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "55d194dea1dd698008c3",
       "baslik": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
       "kurum": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
@@ -1732,6 +1705,33 @@
         "Maliye",
         "İşletme",
         "Muhasebe"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "ce2ccce684a67cfe5ec4",
+      "baslik": "Ankara Pursaklar Belediyesi Zabıta Memuru Alım İlanı",
+      "kurum": "Ankara Pursaklar Belediyesi Zabıta Memuru Alım İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "23.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/tfnpxax1/ankara-pursaklar-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/tfnpxax1/ankara-pursaklar-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Maliye",
+        "İşletme"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -2160,32 +2160,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "0ca1c1811f87d2184aaf",
-      "baslik": "Ağrı Eleşkirt Belediyesi Memur Alım İlanı",
-      "kurum": "Ağrı Eleşkirt Belediyesi Memur Alım İlanı",
-      "sehir": "Ağrı",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "04.11.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/vldigvnk/ağrı-eleşkirt-belediyesi-memur-alım-ilanı-04112026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/vldigvnk/ağrı-eleşkirt-belediyesi-memur-alım-ilanı-04112026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=agri&il=A%C4%9Fr%C4%B1",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "İşletme"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "56961c753a205497cf83",
       "baslik": "Ardahan Pasof Belediyesi Sözleşmeli Personel Alım İlanı",
       "kurum": "Ardahan Pasof Belediyesi Sözleşmeli Personel Alım İlanı",
@@ -2207,6 +2181,32 @@
       ],
       "bolumler": [
         "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "0ca1c1811f87d2184aaf",
+      "baslik": "Ağrı Eleşkirt Belediyesi Memur Alım İlanı",
+      "kurum": "Ağrı Eleşkirt Belediyesi Memur Alım İlanı",
+      "sehir": "Ağrı",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "04.11.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/vldigvnk/ağrı-eleşkirt-belediyesi-memur-alım-ilanı-04112026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/vldigvnk/ağrı-eleşkirt-belediyesi-memur-alım-ilanı-04112026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=agri&il=A%C4%9Fr%C4%B1",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "İşletme"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -2854,7 +2854,7 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 288,
+  "haber_sayisi": 285,
   "haberler": [
     {
       "id": "2dd10553850370e94fdc",
@@ -3595,6 +3595,16 @@
       "kaynak": "ÖSYM YKS Duyuruları",
       "ozet": "ÖSYM tarafından yayımlanan resmî YKS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
       "link": "https://www.osym.gov.tr/2026-elektronik-yabanci-dil-olarak-turkce-sinavi-e-ydts2-turkce-basvurularin-alinmasi"
+    },
+    {
+      "id": "f4f81b4905871680fca0",
+      "baslik": "2026-Elektronik Yabancı Dil Olarak Türkçe Sınavı (e-YDTS) Kılavuzu",
+      "kurum": "ÖSYM",
+      "kategori": "YKS Kılavuz",
+      "yayin_tarihi": "01.09.2026",
+      "kaynak": "ÖSYM YKS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî YKS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026elektronik-yabanci-dil-olarak-turkce-sinavi-eydts-kilavuzu"
     },
     {
       "id": "7598833884d9a169945e",
@@ -5677,46 +5687,6 @@
       "link": "https://www.osym.gov.tr/2026dibmbsts-sinav-sonuclari-aciklandi"
     },
     {
-      "id": "f4f81b4905871680fca0",
-      "baslik": "2026-Elektronik Yabancı Dil Olarak Türkçe Sınavı (e-YDTS) Kılavuzu",
-      "kurum": "ÖSYM",
-      "kategori": "YKS Kılavuz",
-      "yayin_tarihi": "15.04.2026",
-      "kaynak": "ÖSYM YKS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî YKS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026elektronik-yabanci-dil-olarak-turkce-sinavi-eydts-kilavuzu"
-    },
-    {
-      "id": "eb1602c84713e1f93e0d",
-      "baslik": "2026-DİB-MBSTS: Cevap Kâğıtları ve Aday Cevapları Erişime Açıldı",
-      "kurum": "ÖSYM",
-      "kategori": "STS Aday Cevapları",
-      "yayin_tarihi": "15.04.2026",
-      "kaynak": "ÖSYM STS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî STS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026dibmbsts-cevap-kgitlari-ve-aday-cevaplari-erisime-acildi"
-    },
-    {
-      "id": "ef09828e9f03f8a3f93b",
-      "baslik": "2026-DUS 1. Dönem Sınavı ile 2026-STS Diş Hekimliği 1. Dönem Sınavı: Sınava Giriş Belgeleri Erişime Açıldı",
-      "kurum": "ÖSYM",
-      "kategori": "DUS Sınava Giriş Belgesi",
-      "yayin_tarihi": "15.04.2026",
-      "kaynak": "ÖSYM DUS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026dus-1-donem-sinavi-ile-2026sts-dis-hekimligi-1-donem-sinavi-sinava-giris-belgeleri-erisime-acildi"
-    },
-    {
-      "id": "4184f0dabfc29f984bdb",
-      "baslik": "2026 Elektronik Yabancı Dil Olarak Türkçe Sınavı (e-YDTS): Başvuruların Alınması",
-      "kurum": "ÖSYM",
-      "kategori": "YKS Başvuru",
-      "yayin_tarihi": "15.04.2026",
-      "kaynak": "ÖSYM YKS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî YKS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026-elektronik-yabanci-dil-olarak-turkce-sinavi-eydts-basvurularin-alinmasi"
-    },
-    {
       "id": "1de5b4081003dbef6469",
       "baslik": "AİLE VE SOSYAL HİZMETLER BAKANLIĞI 680 SÖZLEŞMELİ PERSONEL ALIMI TAVAN VE TABAN PUANLARI HAKKINDA DUYURU",
       "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
@@ -5739,7 +5709,7 @@
   ],
   "kaynak_sayilari": {
     "ÖSYM merkezi atama ilanları": 0,
-    "ÖSYM tüm sınav haberleri": 273,
+    "ÖSYM tüm sınav haberleri": 270,
     "MSB / TSK Güncel Teminler": 0,
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
