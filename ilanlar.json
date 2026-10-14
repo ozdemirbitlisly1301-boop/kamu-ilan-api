@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-13T23:56:40.226098+00:00",
+  "guncellenme_zamani": "2026-10-14T03:14:01.507777+00:00",
   "ilan_sayisi": 142,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
@@ -1181,30 +1181,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "35c50ef2131ebea87f73",
-      "baslik": "ARTVİN BELEDİYESİ KAFKASÖR İNŞ.TUR.SAN.TİCLTD.ŞTİ ( - )",
-      "kurum": "ARTVİN BELEDİYESİ KAFKASÖR İNŞ.TUR.SAN.TİCLTD.ŞTİ ( - )",
-      "sehir": "Artvin",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "16.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/buaacqyw/artvin-bel-kafkasoer-inş-kurum-dışı-kamu-işçi-ilan-formu.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/buaacqyw/artvin-bel-kafkasoer-inş-kurum-dışı-kamu-işçi-ilan-formu.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=artvin&il=Artvin",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "f0c3f6e1219d38f04d97",
       "baslik": "Bandırma İnsan Kaynakları İnş. Nak. Tem. Sağ. Tic. ve San. Ltd. Şti.",
       "kurum": "Bandırma İnsan Kaynakları İnş. Nak. Tem. Sağ. Tic. ve San. Ltd. Şti.",
@@ -1226,6 +1202,30 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "35c50ef2131ebea87f73",
+      "baslik": "ARTVİN BELEDİYESİ KAFKASÖR İNŞ.TUR.SAN.TİCLTD.ŞTİ ( - )",
+      "kurum": "ARTVİN BELEDİYESİ KAFKASÖR İNŞ.TUR.SAN.TİCLTD.ŞTİ ( - )",
+      "sehir": "Artvin",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "16.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/buaacqyw/artvin-bel-kafkasoer-inş-kurum-dışı-kamu-işçi-ilan-formu.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/buaacqyw/artvin-bel-kafkasoer-inş-kurum-dışı-kamu-işçi-ilan-formu.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=artvin&il=Artvin",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
       "analiz_surumu": 2
     },
     {
@@ -2091,32 +2091,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "55d194dea1dd698008c3",
-      "baslik": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
-      "kurum": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
-      "sehir": "Aydın",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "23.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/3eaenzrg/aydın-didim-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/3eaenzrg/aydın-didim-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=aydin&il=Ayd%C4%B1n",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "23bb5b4d65d3d7cab7bc",
       "baslik": "Batı Akdeniz Kalkınma Ajansı Personel Alım İlanı",
       "kurum": "Batı Akdeniz Kalkınma Ajansı Personel Alım İlanı",
@@ -2145,23 +2119,25 @@
       "analiz_surumu": 2
     },
     {
-      "id": "ee701ad45d382400f44d",
-      "baslik": "Gelir İdaresi Başkanlığı Gelir Uzman Yardımcılığı Sınav İlanı",
-      "kurum": "Gelir İdaresi Başkanlığı Gelir Uzman Yardımcılığı Sınav İlanı",
-      "sehir": "Ankara",
+      "id": "55d194dea1dd698008c3",
+      "baslik": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
+      "kurum": "Aydın Didim Belediyesi Zabıta Memuru Alım İlanı",
+      "sehir": "Aydın",
       "tur": "Memur",
       "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "23.10.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/4j0dwbbo/gelir-idaresi-başkanlığı-gelir-uzman-yardımcılığı-sınav-ilanı-23102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/4j0dwbbo/gelir-idaresi-başkanlığı-gelir-uzman-yardımcılığı-sınav-ilanı-23102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "son_basvuru": "23.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/3eaenzrg/aydın-didim-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/3eaenzrg/aydın-didim-belediyesi-zabıta-memuru-alım-ilanı-23102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=aydin&il=Ayd%C4%B1n",
       "basvuru_linki": "",
       "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
-      "kpss_gerekli": null,
+      "basvuru_aciklamasi": "Başvurular online değildir. Şahsen, posta veya ilanda belirtilen diğer yöntemle başvuru yapılmalıdır.",
+      "kpss_gerekli": true,
       "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
       "bolumler": [
         "Diğer"
       ],
@@ -2190,6 +2166,30 @@
       ],
       "bolumler": [
         "Maliye"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "ee701ad45d382400f44d",
+      "baslik": "Gelir İdaresi Başkanlığı Gelir Uzman Yardımcılığı Sınav İlanı",
+      "kurum": "Gelir İdaresi Başkanlığı Gelir Uzman Yardımcılığı Sınav İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "23.10.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/4j0dwbbo/gelir-idaresi-başkanlığı-gelir-uzman-yardımcılığı-sınav-ilanı-23102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/4j0dwbbo/gelir-idaresi-başkanlığı-gelir-uzman-yardımcılığı-sınav-ilanı-23102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -2317,6 +2317,32 @@
       "analiz_surumu": 2
     },
     {
+      "id": "86dc718e4fce668e9d41",
+      "baslik": "Sahil Güvenlik Akademisi Başkanlığı 2027 Muvazzaf Subay Temin İlanı",
+      "kurum": "Sahil Güvenlik Akademisi Başkanlığı 2027 Muvazzaf Subay Temin İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "26.10.2026 18:00",
+      "link": "https://www.iskur.gov.tr/medya/1hdfozfc/sahil-guevenlik-akademisi-başkanlığı-2027-muvazzaf-subay-temin-ilanı-26102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/1hdfozfc/sahil-guevenlik-akademisi-başkanlığı-2027-muvazzaf-subay-temin-ilanı-26102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "https://kariyerkapisi.gov.tr/isealim",
+      "basvuru_online": true,
+      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
+      "kpss_gerekli": true,
+      "minimum_puan": 65,
+      "kpss_durumu": "En az 65 KPSS puanı",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Maliye"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "a3cb1ee5cbc2ce416903",
       "baslik": "Özelleştirme İdaresi Başkanlığı Uzman Yardımcılığı Sınav İlanı",
       "kurum": "Özelleştirme İdaresi Başkanlığı Uzman Yardımcılığı Sınav İlanı",
@@ -2340,32 +2366,6 @@
         "Maliye",
         "İşletme",
         "Muhasebe"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "86dc718e4fce668e9d41",
-      "baslik": "Sahil Güvenlik Akademisi Başkanlığı 2027 Muvazzaf Subay Temin İlanı",
-      "kurum": "Sahil Güvenlik Akademisi Başkanlığı 2027 Muvazzaf Subay Temin İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "26.10.2026 18:00",
-      "link": "https://www.iskur.gov.tr/medya/1hdfozfc/sahil-guevenlik-akademisi-başkanlığı-2027-muvazzaf-subay-temin-ilanı-26102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/1hdfozfc/sahil-guevenlik-akademisi-başkanlığı-2027-muvazzaf-subay-temin-ilanı-26102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "https://kariyerkapisi.gov.tr/isealim",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": 65,
-      "kpss_durumu": "En az 65 KPSS puanı",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Maliye"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -6308,20 +6308,20 @@
       "id": "40e4260e7222f6b47df5",
       "baslik": "2026-EKPSS Temel Soru Kitapçıklarının Yayınlanması (% 10)",
       "kurum": "ÖSYM",
-      "kategori": "EKPSS Duyuru",
-      "yayin_tarihi": "17.04.2026",
+      "kategori": "EKPSS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "19.04.2026",
       "kaynak": "ÖSYM EKPSS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
+      "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
       "link": "https://www.osym.gov.tr/2026ekpss-temel-soru-kitapciklarinin-yayinlanmasi-10"
     },
     {
       "id": "ca7d19e0dd0f2ce8bdc7",
       "baslik": "2026-EKPSS: Temel Soru Kitapçıkları ve Cevap Anahtarları Yayımlandı",
       "kurum": "ÖSYM",
-      "kategori": "EKPSS Duyuru",
-      "yayin_tarihi": "17.04.2026",
+      "kategori": "EKPSS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "19.04.2026",
       "kaynak": "ÖSYM EKPSS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
+      "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
       "link": "https://www.osym.gov.tr/2026ekpss-temel-soru-kitapciklari-ve-cevap-anahtarlari-yayimlandi"
     },
     {
@@ -6350,7 +6350,6 @@
     "ÖSYM tüm sınav haberleri": 270,
     "MSB / TSK Güncel Teminler": 0,
     "MSB / TSK haberleri": 0,
-    "Kariyer Kapısı Aktif İlanlar": 0,
     "GSB Personel Alımları": 1,
     "Aile Bakanlığı Personel Alımları": 0,
     "Adalet Bakanlığı Personel Alımları": 0
@@ -6362,9 +6361,10 @@
     "gonderilen": 0,
     "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
   },
-  "hata_sayisi": 1,
+  "hata_sayisi": 2,
   "pdf_hata_sayisi": 1,
   "hatalar": [
-    "MSB / TSK Güncel Teminler: sayfa açıldı ancak aktif kart okunamadı"
+    "MSB / TSK Güncel Teminler: sayfa açıldı ancak aktif kart okunamadı",
+    "Kariyer Kapısı Aktif İlanlar: RuntimeError - HTTPSConnectionPool(host='kariyerkapisi.gov.tr', port=443): Max retries exceeded with url: /isealim (Caused by NameResolutionError(\"HTTPSConnection(ho"
   ]
 }
