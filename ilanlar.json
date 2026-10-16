@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-15T23:54:26.899071+00:00",
+  "guncellenme_zamani": "2026-10-16T02:48:28.998785+00:00",
   "ilan_sayisi": 166,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
@@ -823,6 +823,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "04d17f50cff9069b45f7",
+      "baslik": "Sulusaray Sebestosaray Tarım Tic A.Ş.",
+      "kurum": "Sulusaray Sebestosaray Tarım Tic A.Ş.",
+      "sehir": "Tokat",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "16.10.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/33cmrqt0/sebesto.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/33cmrqt0/sebesto.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=tokat&il=Tokat",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "a04816728a2af6cb99ad",
       "baslik": "Tekirdağ Büyükşehir Belediyesi Personel A.Ş.",
       "kurum": "Tekirdağ Büyükşehir Belediyesi Personel A.Ş.",
@@ -857,30 +881,6 @@
       "link": "https://www.iskur.gov.tr/medya/b5mhluxa/tekirdağ-tektur-tekirdağ-turizm-aş-16102026.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/b5mhluxa/tekirdağ-tektur-tekirdağ-turizm-aş-16102026.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=tekirdag&il=Tekirda%C4%9F",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "04d17f50cff9069b45f7",
-      "baslik": "Sulusaray Sebestosaray Tarım Tic A.Ş.",
-      "kurum": "Sulusaray Sebestosaray Tarım Tic A.Ş.",
-      "sehir": "Tokat",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "16.10.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/33cmrqt0/sebesto.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/33cmrqt0/sebesto.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=tokat&il=Tokat",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -4076,7 +4076,7 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 290,
+  "haber_sayisi": 288,
   "haberler": [
     {
       "id": "3ceb5b17f75f27a8aa16",
@@ -6939,26 +6939,6 @@
       "link": "https://www.osym.gov.tr/2026-elektronik-ingilizce-yeterlik-sinavielectronictest-of-english-proficiency-etep-20262-sinava-giris-belgeleri-erisime-acildi"
     },
     {
-      "id": "40e4260e7222f6b47df5",
-      "baslik": "2026-EKPSS Temel Soru Kitapçıklarının Yayınlanması (% 10)",
-      "kurum": "ÖSYM",
-      "kategori": "EKPSS Soru ve Cevap Anahtarı",
-      "yayin_tarihi": "19.04.2026",
-      "kaynak": "ÖSYM EKPSS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026ekpss-temel-soru-kitapciklarinin-yayinlanmasi-10"
-    },
-    {
-      "id": "ca7d19e0dd0f2ce8bdc7",
-      "baslik": "2026-EKPSS: Temel Soru Kitapçıkları ve Cevap Anahtarları Yayımlandı",
-      "kurum": "ÖSYM",
-      "kategori": "EKPSS Soru ve Cevap Anahtarı",
-      "yayin_tarihi": "19.04.2026",
-      "kaynak": "ÖSYM EKPSS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026ekpss-temel-soru-kitapciklari-ve-cevap-anahtarlari-yayimlandi"
-    },
-    {
       "id": "1de5b4081003dbef6469",
       "baslik": "AİLE VE SOSYAL HİZMETLER BAKANLIĞI 680 SÖZLEŞMELİ PERSONEL ALIMI TAVAN VE TABAN PUANLARI HAKKINDA DUYURU",
       "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
@@ -6981,7 +6961,7 @@
   ],
   "kaynak_sayilari": {
     "ÖSYM merkezi atama ilanları": 0,
-    "ÖSYM tüm sınav haberleri": 275,
+    "ÖSYM tüm sınav haberleri": 273,
     "MSB / TSK Güncel Teminler": 0,
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
