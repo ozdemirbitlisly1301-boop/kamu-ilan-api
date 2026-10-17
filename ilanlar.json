@@ -1,153 +1,9 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-17T13:15:08.061719+00:00",
-  "ilan_sayisi": 142,
+  "guncellenme_zamani": "2026-10-17T16:27:39.501403+00:00",
+  "ilan_sayisi": 136,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
-    {
-      "id": "3bb3e40dcd3e67248847",
-      "baslik": "Çanakkale Eceabat Belediyesi Taş. Haf. Pet. Ene. Dem. Çel. Eml. Müş. Eği. Hiz. Gıda Tar. San. ve Tic. Ltd. Şti.",
-      "kurum": "Çanakkale Eceabat Belediyesi Taş. Haf. Pet. Ene. Dem. Çel. Eml. Müş. Eği. Hiz. Gıda Tar. San. ve Tic. Ltd. Şti.",
-      "sehir": "Çanakkale",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "17.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/11peev2e/doc09619520261015062647.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/11peev2e/doc09619520261015062647.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "8e1b421403cb221452dc",
-      "baslik": "Gazibel İnşaat Tarım Turizm Ticaret ve Sanayi Ltd. Şti.",
-      "kurum": "Gazibel İnşaat Tarım Turizm Ticaret ve Sanayi Ltd. Şti.",
-      "sehir": "Antalya",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "17.10.2026 17:30",
-      "link": "https://www.iskur.gov.tr/medya/lvadmdzi/gazibel-ltd-şti-17102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/lvadmdzi/gazibel-ltd-şti-17102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=antalya&il=Antalya",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "8dbee74d8b6f96d1ad1f",
-      "baslik": "Mimas Bel Gıda Turz. İnş. İth. İhr. Ür.Paz. San. Tic. A.Ş.",
-      "kurum": "Mimas Bel Gıda Turz. İnş. İth. İhr. Ür.Paz. San. Tic. A.Ş.",
-      "sehir": "İzmir",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "17.10.2026 17:30",
-      "link": "https://www.iskur.gov.tr/medya/2neiiach/mimas-bel-gıda-turz-inş-ith-ihr-uerpaz-san-tic-aş.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/2neiiach/mimas-bel-gıda-turz-inş-ith-ihr-uerpaz-san-tic-aş.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "5792bd452befb2e83f7a",
-      "baslik": "Kastamonu Tosya SYDV",
-      "kurum": "Kastamonu Tosya SYDV",
-      "sehir": "Kastamonu",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "17.10.2026 17:30",
-      "link": "https://www.iskur.gov.tr/medya/q1iaag3w/tosya-sydv-17102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/q1iaag3w/tosya-sydv-17102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=kastamonu&il=Kastamonu",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "caa21b7ad1dcfa3c4987",
-      "baslik": "ADANA ULAŞIM ORGANİZASYON TURİZM ZİRAAT SU VE SU TESİSLERİ GIDA VE ET ÜRÜNLERİ TEMİZLİK HİZMETLERİ TİCARET VE SANAYİ ANONİM ŞİRKETİ",
-      "kurum": "ADANA ULAŞIM ORGANİZASYON TURİZM ZİRAAT SU VE SU TESİSLERİ GIDA VE ET ÜRÜNLERİ TEMİZLİK HİZMETLERİ TİCARET VE SANAYİ ANONİM ŞİRKETİ",
-      "sehir": "Adana",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "17.10.2026 18:00",
-      "link": "https://www.iskur.gov.tr/medya/cxponb4n/adana-ulaşim-organizasyon-turizm-ziraat-su-ve-su-tesisleri-gida-ve-et-ueruenleri-temizlik-hizmetleri-ticaret-ve-sanayi-anonim-şirketi.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/cxponb4n/adana-ulaşim-organizasyon-turizm-ziraat-su-ve-su-tesisleri-gida-ve-et-ueruenleri-temizlik-hizmetleri-ticaret-ve-sanayi-anonim-şirketi.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=adana&il=Adana",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "06e5c6fedb3faef6c41a",
-      "baslik": "Adana Kozan İmal Ticaret Sanayi Personel Anonim Şirketi",
-      "kurum": "Adana Kozan İmal Ticaret Sanayi Personel Anonim Şirketi",
-      "sehir": "Adana",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "17.10.2026 18:00",
-      "link": "https://www.iskur.gov.tr/medya/fmfjqijs/kozan-imal-2.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/fmfjqijs/kozan-imal-2.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=adana&il=Adana",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
     {
       "id": "52109770e9de43e0e3e6",
       "baslik": "ETİMKENT YAPI MADEN SAN. VE TİC. A.Ş.",
@@ -703,16 +559,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "efd4f5e094f5ae60e7b4",
-      "baslik": "Çanakkale Bayramiç Belediyesi Pers. Ltd. Şti.",
-      "kurum": "Çanakkale Bayramiç Belediyesi Pers. Ltd. Şti.",
-      "sehir": "Çanakkale",
+      "id": "06fd56e4d68f09ee1175",
+      "baslik": "BURSA Mustafa Kemalpaşa Turizm ve Tesis İşletmeciliği AKaryakıt Gıda İnşaat ve Ticaret Limited Şti.",
+      "kurum": "BURSA Mustafa Kemalpaşa Turizm ve Tesis İşletmeciliği AKaryakıt Gıda İnşaat ve Ticaret Limited Şti.",
+      "sehir": "Bursa",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "19.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/unje1231/iş-ilanı.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/unje1231/iş-ilanı.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
+      "link": "https://www.iskur.gov.tr/medya/kcdbqigx/mustafa-kemalpaşa-turizm-ve-tesis-işletmeciliği-akaryakıt-gıda-inşaat-ve-ticaret-limited-şti-19102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/kcdbqigx/mustafa-kemalpaşa-turizm-ve-tesis-işletmeciliği-akaryakıt-gıda-inşaat-ve-ticaret-limited-şti-19102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -727,16 +583,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "06fd56e4d68f09ee1175",
-      "baslik": "BURSA Mustafa Kemalpaşa Turizm ve Tesis İşletmeciliği AKaryakıt Gıda İnşaat ve Ticaret Limited Şti.",
-      "kurum": "BURSA Mustafa Kemalpaşa Turizm ve Tesis İşletmeciliği AKaryakıt Gıda İnşaat ve Ticaret Limited Şti.",
-      "sehir": "Bursa",
+      "id": "efd4f5e094f5ae60e7b4",
+      "baslik": "Çanakkale Bayramiç Belediyesi Pers. Ltd. Şti.",
+      "kurum": "Çanakkale Bayramiç Belediyesi Pers. Ltd. Şti.",
+      "sehir": "Çanakkale",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "19.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/kcdbqigx/mustafa-kemalpaşa-turizm-ve-tesis-işletmeciliği-akaryakıt-gıda-inşaat-ve-ticaret-limited-şti-19102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/kcdbqigx/mustafa-kemalpaşa-turizm-ve-tesis-işletmeciliği-akaryakıt-gıda-inşaat-ve-ticaret-limited-şti-19102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
+      "link": "https://www.iskur.gov.tr/medya/unje1231/iş-ilanı.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/unje1231/iş-ilanı.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -2699,32 +2555,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "56961c753a205497cf83",
-      "baslik": "Ardahan Pasof Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "Ardahan Pasof Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "Ardahan",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "04.11.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/xggdhmpt/ardahan-pasof-belediyesi-soezleşmeli-personel-alım-ilanı-04112026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/xggdhmpt/ardahan-pasof-belediyesi-soezleşmeli-personel-alım-ilanı-04112026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ardahan&il=Ardahan",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Ortaöğretim"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "0ca1c1811f87d2184aaf",
       "baslik": "Ağrı Eleşkirt Belediyesi Memur Alım İlanı",
       "kurum": "Ağrı Eleşkirt Belediyesi Memur Alım İlanı",
@@ -2746,6 +2576,32 @@
       ],
       "bolumler": [
         "İşletme"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "56961c753a205497cf83",
+      "baslik": "Ardahan Pasof Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "Ardahan Pasof Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "Ardahan",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "04.11.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/xggdhmpt/ardahan-pasof-belediyesi-soezleşmeli-personel-alım-ilanı-04112026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/xggdhmpt/ardahan-pasof-belediyesi-soezleşmeli-personel-alım-ilanı-04112026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ardahan&il=Ardahan",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Ortaöğretim"
+      ],
+      "bolumler": [
+        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -3498,17 +3354,17 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 291,
+  "haber_sayisi": 292,
   "haberler": [
     {
-      "id": "99e58baadbbd4053659e",
-      "baslik": "2026-TUS 2. Dönem: Yerleştirme Sonuçları Açıklandı",
+      "id": "24dc7382e6ee48664b4b",
+      "baslik": "e-YDS 2026/11 (Farsça/İngilizce): Sınav Sonuçları Açıklandı",
       "kurum": "ÖSYM",
-      "kategori": "TUS Sonuç",
-      "yayin_tarihi": "16.10.2026",
-      "kaynak": "ÖSYM TUS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026-tus-2-donem-yerlestirme-sonuclari-aciklandi"
+      "kategori": "e-YDS Sonuç",
+      "yayin_tarihi": "17.10.2026",
+      "kaynak": "ÖSYM e-YDS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/e-yds-202611-farscaingilizce-sinav-sonuclari-aciklandi"
     },
     {
       "id": "62eceaf8f3ab9d0716b4",
@@ -3519,6 +3375,16 @@
       "kaynak": "ÖSYM TUS Duyuruları",
       "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
       "link": "https://www.osym.gov.tr/2026-tus-2-donem-yerlestirme-sonuclarina-iliskin-sayisal-bilgiler"
+    },
+    {
+      "id": "99e58baadbbd4053659e",
+      "baslik": "2026-TUS 2. Dönem: Yerleştirme Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "TUS Sonuç",
+      "yayin_tarihi": "16.10.2026",
+      "kaynak": "ÖSYM TUS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî TUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-tus-2-donem-yerlestirme-sonuclari-aciklandi"
     },
     {
       "id": "ed0ee3ec20c84b903c5b",
@@ -6413,7 +6279,7 @@
   ],
   "kaynak_sayilari": {
     "ÖSYM merkezi atama ilanları": 0,
-    "ÖSYM tüm sınav haberleri": 276,
+    "ÖSYM tüm sınav haberleri": 277,
     "MSB / TSK Güncel Teminler": 0,
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
@@ -6422,11 +6288,11 @@
     "Adalet Bakanlığı Personel Alımları": 0
   },
   "bildirim_sonucu": {
-    "durum": "yeni_kayit_yok",
+    "durum": "gonderildi",
     "yeni_ilan": 0,
-    "yeni_haber": 0,
-    "gonderilen": 0,
-    "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
+    "yeni_haber": 1,
+    "gonderilen": 1,
+    "mesaj": "1 telefon bildirimi gönderildi."
   },
   "hata_sayisi": 1,
   "pdf_hata_sayisi": 1,
