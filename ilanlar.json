@@ -1,105 +1,9 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-18T13:36:54.100771+00:00",
-  "ilan_sayisi": 125,
+  "guncellenme_zamani": "2026-10-18T16:58:13.009252+00:00",
+  "ilan_sayisi": 121,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
-    {
-      "id": "c19fceb1010bfdfbbe55",
-      "baslik": "Bursa İzbel Turizm ve İşletme Hiz.San.Tic.A.Ş.",
-      "kurum": "Bursa İzbel Turizm ve İşletme Hiz.San.Tic.A.Ş.",
-      "sehir": "Bursa",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "18.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/3bpnsb1s/izbel-turizm-ve-işletme-hizsanticaş-14102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/3bpnsb1s/izbel-turizm-ve-işletme-hizsanticaş-14102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "İşletme"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "2a52efbcefb810fddd13",
-      "baslik": "Erzurum Narman Süt Ürünleri İnş. Taah. Turzm. San. Tic. A.Ş (İşçi)",
-      "kurum": "Erzurum Narman Süt Ürünleri İnş. Taah. Turzm. San. Tic. A.Ş (İşçi)",
-      "sehir": "Erzurum",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "18.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/j1pjxno0/narman-suet-ueruenleri.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/j1pjxno0/narman-suet-ueruenleri.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=erzurum&il=Erzurum",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "0ebe786f10204967daa2",
-      "baslik": "Konya Suki Enerji Yatırım San. Tic. A.Ş. - Beysu Su Dolum Tesisleri",
-      "kurum": "Konya Suki Enerji Yatırım San. Tic. A.Ş. - Beysu Su Dolum Tesisleri",
-      "sehir": "Konya",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "18.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/y3apscxo/konya-suki-enerji-yatırım-kurum-dışı-işçi-alım-ilanı-hk_ustyazi-2-11.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/y3apscxo/konya-suki-enerji-yatırım-kurum-dışı-işçi-alım-ilanı-hk_ustyazi-2-11.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=konya&il=Konya",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "6e7298993efaa5f7c1a8",
-      "baslik": "İzmir Torbalı Pers. Özel Güv. Gı. İnş. Peyz. Turz. San. ve Tic. A.Ş",
-      "kurum": "İzmir Torbalı Pers. Özel Güv. Gı. İnş. Peyz. Turz. San. ve Tic. A.Ş",
-      "sehir": "İzmir",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "18.10.2026 17:30",
-      "link": "https://www.iskur.gov.tr/medya/iycbkbvo/izmir-torbalı-pers-oezel-guev-gı-inş-peyz-turz-san-ve-tic-aş.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/iycbkbvo/izmir-torbalı-pers-oezel-guev-gı-inş-peyz-turz-san-ve-tic-aş.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
     {
       "id": "c273c64d954cc0149952",
       "baslik": "KASDAŞ KADIKÖY SAĞ. TUR. EĞİTİM ÇEVRE TEM. OTOPARK HİZMETLERİ İNŞ. YAY. SAN. ve TİC. A.Ş.",
@@ -295,16 +199,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "efd4f5e094f5ae60e7b4",
-      "baslik": "Çanakkale Bayramiç Belediyesi Pers. Ltd. Şti.",
-      "kurum": "Çanakkale Bayramiç Belediyesi Pers. Ltd. Şti.",
-      "sehir": "Çanakkale",
+      "id": "06fd56e4d68f09ee1175",
+      "baslik": "BURSA Mustafa Kemalpaşa Turizm ve Tesis İşletmeciliği AKaryakıt Gıda İnşaat ve Ticaret Limited Şti.",
+      "kurum": "BURSA Mustafa Kemalpaşa Turizm ve Tesis İşletmeciliği AKaryakıt Gıda İnşaat ve Ticaret Limited Şti.",
+      "sehir": "Bursa",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "19.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/unje1231/iş-ilanı.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/unje1231/iş-ilanı.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
+      "link": "https://www.iskur.gov.tr/medya/kcdbqigx/mustafa-kemalpaşa-turizm-ve-tesis-işletmeciliği-akaryakıt-gıda-inşaat-ve-ticaret-limited-şti-19102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/kcdbqigx/mustafa-kemalpaşa-turizm-ve-tesis-işletmeciliği-akaryakıt-gıda-inşaat-ve-ticaret-limited-şti-19102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -319,16 +223,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "06fd56e4d68f09ee1175",
-      "baslik": "BURSA Mustafa Kemalpaşa Turizm ve Tesis İşletmeciliği AKaryakıt Gıda İnşaat ve Ticaret Limited Şti.",
-      "kurum": "BURSA Mustafa Kemalpaşa Turizm ve Tesis İşletmeciliği AKaryakıt Gıda İnşaat ve Ticaret Limited Şti.",
-      "sehir": "Bursa",
+      "id": "efd4f5e094f5ae60e7b4",
+      "baslik": "Çanakkale Bayramiç Belediyesi Pers. Ltd. Şti.",
+      "kurum": "Çanakkale Bayramiç Belediyesi Pers. Ltd. Şti.",
+      "sehir": "Çanakkale",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "19.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/kcdbqigx/mustafa-kemalpaşa-turizm-ve-tesis-işletmeciliği-akaryakıt-gıda-inşaat-ve-ticaret-limited-şti-19102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/kcdbqigx/mustafa-kemalpaşa-turizm-ve-tesis-işletmeciliği-akaryakıt-gıda-inşaat-ve-ticaret-limited-şti-19102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
+      "link": "https://www.iskur.gov.tr/medya/unje1231/iş-ilanı.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/unje1231/iş-ilanı.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -1719,30 +1623,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "01c8b814c37c00ddcec7",
-      "baslik": "Türk Standartları Enstitüsü Sözleşmeli Bilişim Personeli Sınav İlanı",
-      "kurum": "Türk Standartları Enstitüsü Sözleşmeli Bilişim Personeli Sınav İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "25.10.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/llmjwnrc/tuerk-standartları-enstituesue-soezleşmeli-bilişim-personeli-sınav-ilanı-25102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/llmjwnrc/tuerk-standartları-enstituesue-soezleşmeli-bilişim-personeli-sınav-ilanı-25102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "d3b58b231500e1363306",
       "baslik": "Vakıflar Genel Müdürlüğü Vakıf Uzman Yardımcılığı Sınav İlanı",
       "kurum": "Vakıflar Genel Müdürlüğü Vakıf Uzman Yardımcılığı Sınav İlanı",
@@ -1762,6 +1642,30 @@
       "mezuniyetler": [
         "Lisans"
       ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "01c8b814c37c00ddcec7",
+      "baslik": "Türk Standartları Enstitüsü Sözleşmeli Bilişim Personeli Sınav İlanı",
+      "kurum": "Türk Standartları Enstitüsü Sözleşmeli Bilişim Personeli Sınav İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "25.10.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/llmjwnrc/tuerk-standartları-enstituesue-soezleşmeli-bilişim-personeli-sınav-ilanı-25102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/llmjwnrc/tuerk-standartları-enstituesue-soezleşmeli-bilişim-personeli-sınav-ilanı-25102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
       "bolumler": [
         "Diğer"
       ],
@@ -1841,32 +1745,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "86dc718e4fce668e9d41",
-      "baslik": "Sahil Güvenlik Akademisi Başkanlığı 2027 Muvazzaf Subay Temin İlanı",
-      "kurum": "Sahil Güvenlik Akademisi Başkanlığı 2027 Muvazzaf Subay Temin İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "26.10.2026 18:00",
-      "link": "https://www.iskur.gov.tr/medya/1hdfozfc/sahil-guevenlik-akademisi-başkanlığı-2027-muvazzaf-subay-temin-ilanı-26102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/1hdfozfc/sahil-guevenlik-akademisi-başkanlığı-2027-muvazzaf-subay-temin-ilanı-26102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "https://kariyerkapisi.gov.tr/isealim",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": 65,
-      "kpss_durumu": "En az 65 KPSS puanı",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Maliye"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "a3cb1ee5cbc2ce416903",
       "baslik": "Özelleştirme İdaresi Başkanlığı Uzman Yardımcılığı Sınav İlanı",
       "kurum": "Özelleştirme İdaresi Başkanlığı Uzman Yardımcılığı Sınav İlanı",
@@ -1890,6 +1768,32 @@
         "Maliye",
         "İşletme",
         "Muhasebe"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "86dc718e4fce668e9d41",
+      "baslik": "Sahil Güvenlik Akademisi Başkanlığı 2027 Muvazzaf Subay Temin İlanı",
+      "kurum": "Sahil Güvenlik Akademisi Başkanlığı 2027 Muvazzaf Subay Temin İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "26.10.2026 18:00",
+      "link": "https://www.iskur.gov.tr/medya/1hdfozfc/sahil-guevenlik-akademisi-başkanlığı-2027-muvazzaf-subay-temin-ilanı-26102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/1hdfozfc/sahil-guevenlik-akademisi-başkanlığı-2027-muvazzaf-subay-temin-ilanı-26102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "https://kariyerkapisi.gov.tr/isealim",
+      "basvuru_online": true,
+      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
+      "kpss_gerekli": true,
+      "minimum_puan": 65,
+      "kpss_durumu": "En az 65 KPSS puanı",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Maliye"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
