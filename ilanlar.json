@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-21T21:43:20.959907+00:00",
+  "guncellenme_zamani": "2026-10-22T00:17:16.187017+00:00",
   "ilan_sayisi": 148,
   "suresi_dolmus_ilan_sayisi": 1,
   "ilanlar": [
@@ -1584,6 +1584,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "01c8b814c37c00ddcec7",
+      "baslik": "Türk Standartları Enstitüsü Sözleşmeli Bilişim Personeli Sınav İlanı",
+      "kurum": "Türk Standartları Enstitüsü Sözleşmeli Bilişim Personeli Sınav İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "25.10.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/llmjwnrc/tuerk-standartları-enstituesue-soezleşmeli-bilişim-personeli-sınav-ilanı-25102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/llmjwnrc/tuerk-standartları-enstituesue-soezleşmeli-bilişim-personeli-sınav-ilanı-25102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "d3b58b231500e1363306",
       "baslik": "Vakıflar Genel Müdürlüğü Vakıf Uzman Yardımcılığı Sınav İlanı",
       "kurum": "Vakıflar Genel Müdürlüğü Vakıf Uzman Yardımcılığı Sınav İlanı",
@@ -1603,30 +1627,6 @@
       "mezuniyetler": [
         "Lisans"
       ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "01c8b814c37c00ddcec7",
-      "baslik": "Türk Standartları Enstitüsü Sözleşmeli Bilişim Personeli Sınav İlanı",
-      "kurum": "Türk Standartları Enstitüsü Sözleşmeli Bilişim Personeli Sınav İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "25.10.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/llmjwnrc/tuerk-standartları-enstituesue-soezleşmeli-bilişim-personeli-sınav-ilanı-25102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/llmjwnrc/tuerk-standartları-enstituesue-soezleşmeli-bilişim-personeli-sınav-ilanı-25102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
       "bolumler": [
         "Diğer"
       ],
@@ -2566,6 +2566,32 @@
       "analiz_surumu": 2
     },
     {
+      "id": "9af5bbbc50bb05572a07",
+      "baslik": "Türk Akreditasyon Kurumu Uzman Yardımcılığı Sınav İlanı",
+      "kurum": "Türk Akreditasyon Kurumu Uzman Yardımcılığı Sınav İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "02.11.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/iuzpu3er/tuerk-akreditasyon-kurumu-uzman-yardımcılığı-sınav-ilanı-02112026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/iuzpu3er/tuerk-akreditasyon-kurumu-uzman-yardımcılığı-sınav-ilanı-02112026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "https://kariyerkapisi.gov.tr",
+      "basvuru_online": true,
+      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
+      "kpss_gerekli": true,
+      "minimum_puan": 70,
+      "kpss_durumu": "En az 70 KPSS puanı",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "d0f7515f104ea9612a96",
       "baslik": "Kamu Gözetimi Muhasebe ve Denetim Standartları Kurumu Uzman Yardımcılığı Sınav İlanı",
       "kurum": "Kamu Gözetimi Muhasebe ve Denetim Standartları Kurumu Uzman Yardımcılığı Sınav İlanı",
@@ -2589,32 +2615,6 @@
         "Maliye",
         "İşletme",
         "Muhasebe"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "9af5bbbc50bb05572a07",
-      "baslik": "Türk Akreditasyon Kurumu Uzman Yardımcılığı Sınav İlanı",
-      "kurum": "Türk Akreditasyon Kurumu Uzman Yardımcılığı Sınav İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "02.11.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/iuzpu3er/tuerk-akreditasyon-kurumu-uzman-yardımcılığı-sınav-ilanı-02112026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/iuzpu3er/tuerk-akreditasyon-kurumu-uzman-yardımcılığı-sınav-ilanı-02112026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "https://kariyerkapisi.gov.tr",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": 70,
-      "kpss_durumu": "En az 70 KPSS puanı",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -3647,7 +3647,7 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 277,
+  "haber_sayisi": 275,
   "haberler": [
     {
       "id": "a296699ca97e311d42b5",
@@ -6380,26 +6380,6 @@
       "link": "https://www.osym.gov.tr/2026dus-1-donem-sinavi-ile-2026sts-dis-hekimligi-1-donem-sinavi-temel-soru-kitapciklari-ve-cevap-anahtarlari-yayimlandi"
     },
     {
-      "id": "e81834961912ccbecc5c",
-      "baslik": "2026-HMGS/1 Temel Soru Kitapçığı ve Cevap Anahtarının Yayınlanması (% 10)",
-      "kurum": "ÖSYM",
-      "kategori": "HMGS Soru ve Cevap Anahtarı",
-      "yayin_tarihi": "25.04.2026",
-      "kaynak": "ÖSYM HMGS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî HMGS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026hmgs1-temel-soru-kitapcigi-ve-cevap-anahtarinin-yayinlanmasi-10"
-    },
-    {
-      "id": "0a860d8090b51682afb9",
-      "baslik": "2026-DUS 1.Dönem ve 2026-STS Diş Hekimliği 1.Dönem Temel Soru Kitapçığının Yayımlanması (% 10)",
-      "kurum": "ÖSYM",
-      "kategori": "DUS Soru ve Cevap Anahtarı",
-      "yayin_tarihi": "25.04.2026",
-      "kaynak": "ÖSYM DUS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî DUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026dus-1donem-ve-2026sts-dis-hekimligi-1donem-temel-soru-kitapciginin-yayimlanmasi-10"
-    },
-    {
       "id": "1de5b4081003dbef6469",
       "baslik": "AİLE VE SOSYAL HİZMETLER BAKANLIĞI 680 SÖZLEŞMELİ PERSONEL ALIMI TAVAN VE TABAN PUANLARI HAKKINDA DUYURU",
       "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
@@ -6422,7 +6402,7 @@
   ],
   "kaynak_sayilari": {
     "ÖSYM merkezi atama ilanları": 0,
-    "ÖSYM tüm sınav haberleri": 274,
+    "ÖSYM tüm sınav haberleri": 272,
     "MSB / TSK Güncel Teminler": 0,
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
