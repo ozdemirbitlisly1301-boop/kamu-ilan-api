@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-25T08:28:40.728810+00:00",
+  "guncellenme_zamani": "2026-10-25T13:19:48.271556+00:00",
   "ilan_sayisi": 132,
   "suresi_dolmus_ilan_sayisi": 0,
   "ilanlar": [
@@ -463,30 +463,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "874e19659f3cb1e7ff79",
-      "baslik": "Çanakkale Çan Köylere Hizmet Götürme Birliği Başkanlığı",
-      "kurum": "Çanakkale Çan Köylere Hizmet Götürme Birliği Başkanlığı",
-      "sehir": "Çanakkale",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "26.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/vldd4qo3/doc09635520261022125751.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/vldd4qo3/doc09635520261022125751.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "7b4bb2cfc44c4dfde412",
       "baslik": "BURSA BÜYÜKORHAN BELEDİYESİ YAYLAKENT AKARYAKIT İNŞ.TURZ.TAŞ.SAN.VE TİC.LTD.ŞTİ",
       "kurum": "BURSA BÜYÜKORHAN BELEDİYESİ YAYLAKENT AKARYAKIT İNŞ.TURZ.TAŞ.SAN.VE TİC.LTD.ŞTİ",
@@ -511,16 +487,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "762f9c82d0454ee3f428",
-      "baslik": "Giresun Sosyal Yardımlaşma ve Dayanışma Vakfı",
-      "kurum": "Giresun Sosyal Yardımlaşma ve Dayanışma Vakfı",
-      "sehir": "Giresun",
+      "id": "874e19659f3cb1e7ff79",
+      "baslik": "Çanakkale Çan Köylere Hizmet Götürme Birliği Başkanlığı",
+      "kurum": "Çanakkale Çan Köylere Hizmet Götürme Birliği Başkanlığı",
+      "sehir": "Çanakkale",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "26.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/d0kouokt/sydv.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/d0kouokt/sydv.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=giresun&il=Giresun",
+      "link": "https://www.iskur.gov.tr/medya/vldd4qo3/doc09635520261022125751.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/vldd4qo3/doc09635520261022125751.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -545,6 +521,30 @@
       "link": "https://www.iskur.gov.tr/medya/jexfwmae/23102026-şekabel-ilan.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/jexfwmae/23102026-şekabel-ilan.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=gaziantep&il=Gaziantep",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "762f9c82d0454ee3f428",
+      "baslik": "Giresun Sosyal Yardımlaşma ve Dayanışma Vakfı",
+      "kurum": "Giresun Sosyal Yardımlaşma ve Dayanışma Vakfı",
+      "sehir": "Giresun",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "26.10.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/d0kouokt/sydv.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/d0kouokt/sydv.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=giresun&il=Giresun",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -2049,32 +2049,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "0ca1c1811f87d2184aaf",
-      "baslik": "Ağrı Eleşkirt Belediyesi Memur Alım İlanı",
-      "kurum": "Ağrı Eleşkirt Belediyesi Memur Alım İlanı",
-      "sehir": "Ağrı",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "04.11.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/vldigvnk/ağrı-eleşkirt-belediyesi-memur-alım-ilanı-04112026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/vldigvnk/ağrı-eleşkirt-belediyesi-memur-alım-ilanı-04112026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=agri&il=A%C4%9Fr%C4%B1",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "İşletme"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "56961c753a205497cf83",
       "baslik": "Ardahan Pasof Belediyesi Sözleşmeli Personel Alım İlanı",
       "kurum": "Ardahan Pasof Belediyesi Sözleşmeli Personel Alım İlanı",
@@ -2096,6 +2070,32 @@
       ],
       "bolumler": [
         "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "0ca1c1811f87d2184aaf",
+      "baslik": "Ağrı Eleşkirt Belediyesi Memur Alım İlanı",
+      "kurum": "Ağrı Eleşkirt Belediyesi Memur Alım İlanı",
+      "sehir": "Ağrı",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "04.11.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/vldigvnk/ağrı-eleşkirt-belediyesi-memur-alım-ilanı-04112026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/vldigvnk/ağrı-eleşkirt-belediyesi-memur-alım-ilanı-04112026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=agri&il=A%C4%9Fr%C4%B1",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "İşletme"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -2128,6 +2128,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "0fccd1c7d64a7618c45d",
+      "baslik": "Cumhurbaşkanlığı Strateji ve Bütçe Başkanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
+      "kurum": "Cumhurbaşkanlığı Strateji ve Bütçe Başkanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "05.11.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/rsmf4en4/cumhurbaşkanlığı-strateji-ve-buetçe-başkanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-05112026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/rsmf4en4/cumhurbaşkanlığı-strateji-ve-buetçe-başkanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-05112026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "6c0565cdb31b4595f797",
       "baslik": "Türkiye Turizm Tanıtım ve Geliştirme Ajansı Personel Alım İlanı",
       "kurum": "Türkiye Turizm Tanıtım ve Geliştirme Ajansı Personel Alım İlanı",
@@ -2150,30 +2174,6 @@
       ],
       "bolumler": [
         "İşletme"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "0fccd1c7d64a7618c45d",
-      "baslik": "Cumhurbaşkanlığı Strateji ve Bütçe Başkanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
-      "kurum": "Cumhurbaşkanlığı Strateji ve Bütçe Başkanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "05.11.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/rsmf4en4/cumhurbaşkanlığı-strateji-ve-buetçe-başkanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-05112026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/rsmf4en4/cumhurbaşkanlığı-strateji-ve-buetçe-başkanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-05112026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -3254,8 +3254,28 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 267,
+  "haber_sayisi": 269,
   "haberler": [
+    {
+      "id": "058abc5d281c33ed1c0d",
+      "baslik": "2026-KPSS Ortaöğretim Sınavı: Temel Soru Kitapçığı ve Cevap Anahtarı Yayımlandı",
+      "kurum": "ÖSYM",
+      "kategori": "KPSS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "25.10.2026",
+      "kaynak": "ÖSYM KPSS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî KPSS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-kpss-ortaogretim-sinavi-temel-soru-kitapcigi-ve-cevap-anahtari-yayimlandi"
+    },
+    {
+      "id": "0bf14e4d6ca88c49092b",
+      "baslik": "2026-KPSS Ortaöğretim Sınavı Temel Soru Kitapçığı ve Cevap Anahtarı (%10)",
+      "kurum": "ÖSYM",
+      "kategori": "KPSS Soru ve Cevap Anahtarı",
+      "yayin_tarihi": "25.10.2026",
+      "kaynak": "ÖSYM KPSS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî KPSS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-kpss-ortaogretim-sinavi-temel-soru-kitapcigi-ve-cevap-anahtari-10"
+    },
     {
       "id": "963ce3072a1b19aaf498",
       "baslik": "2026-HMGS/1: Yeniden Değerlendirme Sonuçları",
@@ -5929,7 +5949,7 @@
   ],
   "kaynak_sayilari": {
     "ÖSYM merkezi atama ilanları": 0,
-    "ÖSYM tüm sınav haberleri": 264,
+    "ÖSYM tüm sınav haberleri": 266,
     "MSB / TSK Güncel Teminler": 0,
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
@@ -5938,11 +5958,11 @@
     "Adalet Bakanlığı Personel Alımları": 0
   },
   "bildirim_sonucu": {
-    "durum": "yeni_kayit_yok",
+    "durum": "gonderildi",
     "yeni_ilan": 0,
-    "yeni_haber": 0,
-    "gonderilen": 0,
-    "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
+    "yeni_haber": 2,
+    "gonderilen": 2,
+    "mesaj": "2 telefon bildirimi gönderildi."
   },
   "hata_sayisi": 1,
   "pdf_hata_sayisi": 1,
