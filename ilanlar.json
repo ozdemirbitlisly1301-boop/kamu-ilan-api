@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-24T23:59:03.328433+00:00",
+  "guncellenme_zamani": "2026-10-25T03:15:46.487413+00:00",
   "ilan_sayisi": 132,
   "suresi_dolmus_ilan_sayisi": 0,
   "ilanlar": [
@@ -463,16 +463,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "874e19659f3cb1e7ff79",
-      "baslik": "Çanakkale Çan Köylere Hizmet Götürme Birliği Başkanlığı",
-      "kurum": "Çanakkale Çan Köylere Hizmet Götürme Birliği Başkanlığı",
-      "sehir": "Çanakkale",
+      "id": "7b4bb2cfc44c4dfde412",
+      "baslik": "BURSA BÜYÜKORHAN BELEDİYESİ YAYLAKENT AKARYAKIT İNŞ.TURZ.TAŞ.SAN.VE TİC.LTD.ŞTİ",
+      "kurum": "BURSA BÜYÜKORHAN BELEDİYESİ YAYLAKENT AKARYAKIT İNŞ.TURZ.TAŞ.SAN.VE TİC.LTD.ŞTİ",
+      "sehir": "Bursa",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "26.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/vldd4qo3/doc09635520261022125751.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/vldd4qo3/doc09635520261022125751.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
+      "link": "https://www.iskur.gov.tr/medya/4jsghz5e/bursa-bueyuekorhan-belediyesi-yaylakent-akaryakit-inşturztaşsanve-ticltdşti-26102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/4jsghz5e/bursa-bueyuekorhan-belediyesi-yaylakent-akaryakit-inşturztaşsanve-ticltdşti-26102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -487,16 +487,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "7b4bb2cfc44c4dfde412",
-      "baslik": "BURSA BÜYÜKORHAN BELEDİYESİ YAYLAKENT AKARYAKIT İNŞ.TURZ.TAŞ.SAN.VE TİC.LTD.ŞTİ",
-      "kurum": "BURSA BÜYÜKORHAN BELEDİYESİ YAYLAKENT AKARYAKIT İNŞ.TURZ.TAŞ.SAN.VE TİC.LTD.ŞTİ",
-      "sehir": "Bursa",
+      "id": "874e19659f3cb1e7ff79",
+      "baslik": "Çanakkale Çan Köylere Hizmet Götürme Birliği Başkanlığı",
+      "kurum": "Çanakkale Çan Köylere Hizmet Götürme Birliği Başkanlığı",
+      "sehir": "Çanakkale",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "26.10.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/4jsghz5e/bursa-bueyuekorhan-belediyesi-yaylakent-akaryakit-inşturztaşsanve-ticltdşti-26102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/4jsghz5e/bursa-bueyuekorhan-belediyesi-yaylakent-akaryakit-inşturztaşsanve-ticltdşti-26102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
+      "link": "https://www.iskur.gov.tr/medya/vldd4qo3/doc09635520261022125751.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/vldd4qo3/doc09635520261022125751.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=canakkale&il=%C3%87anakkale",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -3254,7 +3254,7 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 272,
+  "haber_sayisi": 267,
   "haberler": [
     {
       "id": "963ce3072a1b19aaf498",
@@ -5907,56 +5907,6 @@
       "link": "https://www.osym.gov.tr/2026sts-ogretmenlik-basvurularin-alinmasi"
     },
     {
-      "id": "a5f16606e327db51166d",
-      "baslik": "2026 Elektronik Yabancı Dil Olarak Türkçe Sınavı (e-YDTS): Başvuru Süresinin Uzatılması",
-      "kurum": "ÖSYM",
-      "kategori": "YKS Başvuru",
-      "yayin_tarihi": "28.04.2026",
-      "kaynak": "ÖSYM YKS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî YKS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026-elektronik-yabanci-dil-olarak-turkce-sinavi-eydts-basvuru-suresinin-uzatilmasi"
-    },
-    {
-      "id": "c64e73b7f2174b252572",
-      "baslik": "e-YÖKDİL 2026/3 (İngilizce-Fen Bilimleri): Başvuruların Alınması",
-      "kurum": "ÖSYM",
-      "kategori": "e-YÖKDİL Başvuru",
-      "yayin_tarihi": "28.04.2026",
-      "kaynak": "ÖSYM e-YÖKDİL Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî e-YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/eyokdil-20263-ingilizcefen-bilimleri-basvurularin-alinmasi"
-    },
-    {
-      "id": "65127294c92cdcf48c58",
-      "baslik": "e-YÖKDİL 2026/2 (İngilizce-Sağlık Bilimleri): Başvuruların Alınması",
-      "kurum": "ÖSYM",
-      "kategori": "e-YÖKDİL Başvuru",
-      "yayin_tarihi": "28.04.2026",
-      "kaynak": "ÖSYM e-YÖKDİL Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî e-YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/eyokdil-20262-ingilizcesaglik-bilimleri-basvurularin-alinmasi"
-    },
-    {
-      "id": "bd4affac30bfc31f7e25",
-      "baslik": "e-YÖKDİL 2026/1 (İngilizce-Sosyal Bilimler): Başvuruların Alınması",
-      "kurum": "ÖSYM",
-      "kategori": "e-YÖKDİL Başvuru",
-      "yayin_tarihi": "28.04.2026",
-      "kaynak": "ÖSYM e-YÖKDİL Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî e-YÖKDİL duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/eyokdil-20261-ingilizcesosyal-bilimler-basvurularin-alinmasi"
-    },
-    {
-      "id": "db5e7108c2d8eb0deaed",
-      "baslik": "2026-Engelli Kamu Personeli Seçme Sınavı (EKPSS) Kura Başvuru Kılavuzu ve Başvuru Bilgileri",
-      "kurum": "ÖSYM",
-      "kategori": "EKPSS Başvuru",
-      "yayin_tarihi": "28.04.2026",
-      "kaynak": "ÖSYM EKPSS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî EKPSS başvuru, tercih, yerleştirme veya sonuç duyurusu.",
-      "link": "https://www.osym.gov.tr/2026engelli-kamu-personeli-secme-sinavi-ekpss-kura-basvuru-kilavuzu-ve-basvuru-bilgileri"
-    },
-    {
       "id": "1de5b4081003dbef6469",
       "baslik": "AİLE VE SOSYAL HİZMETLER BAKANLIĞI 680 SÖZLEŞMELİ PERSONEL ALIMI TAVAN VE TABAN PUANLARI HAKKINDA DUYURU",
       "kurum": "Aile ve Sosyal Hizmetler Bakanlığı",
@@ -5979,7 +5929,7 @@
   ],
   "kaynak_sayilari": {
     "ÖSYM merkezi atama ilanları": 0,
-    "ÖSYM tüm sınav haberleri": 269,
+    "ÖSYM tüm sınav haberleri": 264,
     "MSB / TSK Güncel Teminler": 0,
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
