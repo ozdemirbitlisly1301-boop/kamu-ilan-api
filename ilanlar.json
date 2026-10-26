@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-26T00:24:10.420979+00:00",
+  "guncellenme_zamani": "2026-10-26T05:08:29.860225+00:00",
   "ilan_sayisi": 114,
   "suresi_dolmus_ilan_sayisi": 0,
   "ilanlar": [
@@ -149,6 +149,32 @@
       "analiz_surumu": 2
     },
     {
+      "id": "86dc718e4fce668e9d41",
+      "baslik": "Sahil Güvenlik Akademisi Başkanlığı 2027 Muvazzaf Subay Temin İlanı",
+      "kurum": "Sahil Güvenlik Akademisi Başkanlığı 2027 Muvazzaf Subay Temin İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "26.10.2026 18:00",
+      "link": "https://www.iskur.gov.tr/medya/1hdfozfc/sahil-guevenlik-akademisi-başkanlığı-2027-muvazzaf-subay-temin-ilanı-26102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/1hdfozfc/sahil-guevenlik-akademisi-başkanlığı-2027-muvazzaf-subay-temin-ilanı-26102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "https://kariyerkapisi.gov.tr/isealim",
+      "basvuru_online": true,
+      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
+      "kpss_gerekli": true,
+      "minimum_puan": 65,
+      "kpss_durumu": "En az 65 KPSS puanı",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Maliye"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "a3cb1ee5cbc2ce416903",
       "baslik": "Özelleştirme İdaresi Başkanlığı Uzman Yardımcılığı Sınav İlanı",
       "kurum": "Özelleştirme İdaresi Başkanlığı Uzman Yardımcılığı Sınav İlanı",
@@ -172,32 +198,6 @@
         "Maliye",
         "İşletme",
         "Muhasebe"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "86dc718e4fce668e9d41",
-      "baslik": "Sahil Güvenlik Akademisi Başkanlığı 2027 Muvazzaf Subay Temin İlanı",
-      "kurum": "Sahil Güvenlik Akademisi Başkanlığı 2027 Muvazzaf Subay Temin İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "26.10.2026 18:00",
-      "link": "https://www.iskur.gov.tr/medya/1hdfozfc/sahil-guevenlik-akademisi-başkanlığı-2027-muvazzaf-subay-temin-ilanı-26102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/1hdfozfc/sahil-guevenlik-akademisi-başkanlığı-2027-muvazzaf-subay-temin-ilanı-26102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "https://kariyerkapisi.gov.tr/isealim",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": 65,
-      "kpss_durumu": "En az 65 KPSS puanı",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Maliye"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -1489,32 +1489,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "9af5bbbc50bb05572a07",
-      "baslik": "Türk Akreditasyon Kurumu Uzman Yardımcılığı Sınav İlanı",
-      "kurum": "Türk Akreditasyon Kurumu Uzman Yardımcılığı Sınav İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "02.11.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/iuzpu3er/tuerk-akreditasyon-kurumu-uzman-yardımcılığı-sınav-ilanı-02112026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/iuzpu3er/tuerk-akreditasyon-kurumu-uzman-yardımcılığı-sınav-ilanı-02112026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "https://kariyerkapisi.gov.tr",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": 70,
-      "kpss_durumu": "En az 70 KPSS puanı",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "d0f7515f104ea9612a96",
       "baslik": "Kamu Gözetimi Muhasebe ve Denetim Standartları Kurumu Uzman Yardımcılığı Sınav İlanı",
       "kurum": "Kamu Gözetimi Muhasebe ve Denetim Standartları Kurumu Uzman Yardımcılığı Sınav İlanı",
@@ -1538,6 +1512,32 @@
         "Maliye",
         "İşletme",
         "Muhasebe"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "9af5bbbc50bb05572a07",
+      "baslik": "Türk Akreditasyon Kurumu Uzman Yardımcılığı Sınav İlanı",
+      "kurum": "Türk Akreditasyon Kurumu Uzman Yardımcılığı Sınav İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "02.11.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/iuzpu3er/tuerk-akreditasyon-kurumu-uzman-yardımcılığı-sınav-ilanı-02112026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/iuzpu3er/tuerk-akreditasyon-kurumu-uzman-yardımcılığı-sınav-ilanı-02112026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "https://kariyerkapisi.gov.tr",
+      "basvuru_online": true,
+      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
+      "kpss_gerekli": true,
+      "minimum_puan": 70,
+      "kpss_durumu": "En az 70 KPSS puanı",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
