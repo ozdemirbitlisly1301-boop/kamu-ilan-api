@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-26T21:47:18.236607+00:00",
+  "guncellenme_zamani": "2026-10-27T00:54:42.573683+00:00",
   "ilan_sayisi": 132,
   "suresi_dolmus_ilan_sayisi": 0,
   "ilanlar": [
@@ -1768,6 +1768,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "beceb4b88f33dcb12811",
+      "baslik": "İstanbul Kalkınma Ajansı Personel Alım İlanı",
+      "kurum": "İstanbul Kalkınma Ajansı Personel Alım İlanı",
+      "sehir": "İstanbul",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "02.11.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/ey3kjlcv/istanbul-kalkınma-ajansı-personel-alım-ilanı-02112026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/ey3kjlcv/istanbul-kalkınma-ajansı-personel-alım-ilanı-02112026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "20df4e86aedf099d725e",
       "baslik": "İstanbul Büyükşehir Belediyesi İETT İşletmeleri Genel Müdürlüğü Memur Alım İlanı",
       "kurum": "İstanbul Büyükşehir Belediyesi İETT İşletmeleri Genel Müdürlüğü Memur Alım İlanı",
@@ -1795,30 +1819,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "beceb4b88f33dcb12811",
-      "baslik": "İstanbul Kalkınma Ajansı Personel Alım İlanı",
-      "kurum": "İstanbul Kalkınma Ajansı Personel Alım İlanı",
-      "sehir": "İstanbul",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "02.11.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/ey3kjlcv/istanbul-kalkınma-ajansı-personel-alım-ilanı-02112026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/ey3kjlcv/istanbul-kalkınma-ajansı-personel-alım-ilanı-02112026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "6cfdac424bf45de3912e",
       "baslik": "Bankacılık Düzenleme ve Denetleme Kurumu Sözleşmeli Bilişim Personeli Alım İlanı",
       "kurum": "Bankacılık Düzenleme ve Denetleme Kurumu Sözleşmeli Bilişim Personeli Alım İlanı",
@@ -1835,32 +1835,6 @@
       "kpss_gerekli": true,
       "minimum_puan": null,
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "9af5bbbc50bb05572a07",
-      "baslik": "Türk Akreditasyon Kurumu Uzman Yardımcılığı Sınav İlanı",
-      "kurum": "Türk Akreditasyon Kurumu Uzman Yardımcılığı Sınav İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "02.11.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/iuzpu3er/tuerk-akreditasyon-kurumu-uzman-yardımcılığı-sınav-ilanı-02112026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/iuzpu3er/tuerk-akreditasyon-kurumu-uzman-yardımcılığı-sınav-ilanı-02112026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "https://kariyerkapisi.gov.tr",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": 70,
-      "kpss_durumu": "En az 70 KPSS puanı",
       "mezuniyetler": [
         "Lisans"
       ],
@@ -1894,6 +1868,32 @@
         "Maliye",
         "İşletme",
         "Muhasebe"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "9af5bbbc50bb05572a07",
+      "baslik": "Türk Akreditasyon Kurumu Uzman Yardımcılığı Sınav İlanı",
+      "kurum": "Türk Akreditasyon Kurumu Uzman Yardımcılığı Sınav İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "02.11.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/iuzpu3er/tuerk-akreditasyon-kurumu-uzman-yardımcılığı-sınav-ilanı-02112026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/iuzpu3er/tuerk-akreditasyon-kurumu-uzman-yardımcılığı-sınav-ilanı-02112026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "https://kariyerkapisi.gov.tr",
+      "basvuru_online": true,
+      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
+      "kpss_gerekli": true,
+      "minimum_puan": 70,
+      "kpss_durumu": "En az 70 KPSS puanı",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -2606,17 +2606,17 @@
       "analiz_surumu": 2
     },
     {
-      "id": "d54cdf8d223b8e7d554e",
-      "baslik": "İzmir Karabağlar Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "İzmir Karabağlar Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "İzmir",
+      "id": "d60fd81f7ce1ce4db91e",
+      "baslik": "Ankara Büyükşehir Belediyesi Müfettiş Yardımcısı Alım İlanı",
+      "kurum": "Ankara Büyükşehir Belediyesi Müfettiş Yardımcısı Alım İlanı",
+      "sehir": "Ankara",
       "tur": "Memur",
       "kaynak": "İŞKUR Kamu Memur Alımları",
       "son_basvuru": "04.12.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/yoec0x4m/izmir-karabağlar-belediyesi-soezleşmeli-personel-alım-ilanı-04122026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/yoec0x4m/izmir-karabağlar-belediyesi-soezleşmeli-personel-alım-ilanı-04122026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
-      "basvuru_linki": "https://kariyerkapisi.gov.tr",
+      "link": "https://www.iskur.gov.tr/medya/pjxmxveq/ankara-bueyuekşehir-belediyesi-muefettiş-yardımcısı-alım-ilanı-04122026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/pjxmxveq/ankara-bueyuekşehir-belediyesi-muefettiş-yardımcısı-alım-ilanı-04122026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "https://www.turkiye.gov.tr",
       "basvuru_online": true,
       "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
       "kpss_gerekli": true,
@@ -2626,7 +2626,9 @@
         "Lisans"
       ],
       "bolumler": [
-        "Diğer"
+        "Maliye",
+        "İşletme",
+        "Muhasebe"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -2659,17 +2661,17 @@
       "analiz_surumu": 2
     },
     {
-      "id": "d60fd81f7ce1ce4db91e",
-      "baslik": "Ankara Büyükşehir Belediyesi Müfettiş Yardımcısı Alım İlanı",
-      "kurum": "Ankara Büyükşehir Belediyesi Müfettiş Yardımcısı Alım İlanı",
-      "sehir": "Ankara",
+      "id": "d54cdf8d223b8e7d554e",
+      "baslik": "İzmir Karabağlar Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "İzmir Karabağlar Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "İzmir",
       "tur": "Memur",
       "kaynak": "İŞKUR Kamu Memur Alımları",
       "son_basvuru": "04.12.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/pjxmxveq/ankara-bueyuekşehir-belediyesi-muefettiş-yardımcısı-alım-ilanı-04122026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/pjxmxveq/ankara-bueyuekşehir-belediyesi-muefettiş-yardımcısı-alım-ilanı-04122026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "https://www.turkiye.gov.tr",
+      "link": "https://www.iskur.gov.tr/medya/yoec0x4m/izmir-karabağlar-belediyesi-soezleşmeli-personel-alım-ilanı-04122026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/yoec0x4m/izmir-karabağlar-belediyesi-soezleşmeli-personel-alım-ilanı-04122026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
+      "basvuru_linki": "https://kariyerkapisi.gov.tr",
       "basvuru_online": true,
       "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
       "kpss_gerekli": true,
@@ -2679,9 +2681,7 @@
         "Lisans"
       ],
       "bolumler": [
-        "Maliye",
-        "İşletme",
-        "Muhasebe"
+        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -3251,7 +3251,7 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 268,
+  "haber_sayisi": 260,
   "haberler": [
     {
       "id": "013b0b4e3e412fee6674",
@@ -5818,7 +5818,7 @@
       "baslik": "2026-YDUS Temel Soru Kitapçıkları ve Cevap Anahtarları (% 10)",
       "kurum": "ÖSYM",
       "kategori": "YDUS Soru ve Cevap Anahtarı",
-      "yayin_tarihi": "30.04.2026",
+      "yayin_tarihi": "03.05.2026",
       "kaynak": "ÖSYM YDUS Duyuruları",
       "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
       "link": "https://www.osym.gov.tr/2026ydus-temel-soru-kitapciklari-ve-cevap-anahtarlari-10"
@@ -5828,90 +5828,10 @@
       "baslik": "2026-YDUS: Temel Soru Kitapçıkları ve Cevap Anahtarları Yayımlandı",
       "kurum": "ÖSYM",
       "kategori": "YDUS Soru ve Cevap Anahtarı",
-      "yayin_tarihi": "30.04.2026",
+      "yayin_tarihi": "02.05.2026",
       "kaynak": "ÖSYM YDUS Duyuruları",
       "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
       "link": "https://www.osym.gov.tr/2026ydus-temel-soru-kitapciklari-ve-cevap-anahtarlari-yayimlandi"
-    },
-    {
-      "id": "747d10b3380a81b8423f",
-      "baslik": "e-YDS 2026/5 (İspanyolca-İtalyanca): Sınav Sonuçları Açıklandı",
-      "kurum": "ÖSYM",
-      "kategori": "e-YDS Sonuç",
-      "yayin_tarihi": "30.04.2026",
-      "kaynak": "ÖSYM e-YDS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/eyds-20265-ispanyolcaitalyanca-sinav-sonuclari-aciklandi"
-    },
-    {
-      "id": "78ca46db3a6decf28094",
-      "baslik": "e-YDS 2026/4 (İngilizce): Sınav Sonuçları Açıklandı",
-      "kurum": "ÖSYM",
-      "kategori": "e-YDS Sonuç",
-      "yayin_tarihi": "30.04.2026",
-      "kaynak": "ÖSYM e-YDS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/eyds-20264-ingilizce-sinav-sonuclari-aciklandi"
-    },
-    {
-      "id": "415d5cdfe27e2e7bfb6c",
-      "baslik": "2026-YDUS, e-YDS 2026/4 ve e-YDS 2026/5 Sınavları İçin Sınav Günü Açık Tutulacak İl/İlçe Nüfus Müdürlükleri",
-      "kurum": "ÖSYM",
-      "kategori": "e-YDS Duyuru",
-      "yayin_tarihi": "30.04.2026",
-      "kaynak": "ÖSYM e-YDS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026ydus-eyds-20264-ve-eyds-20265-sinavlari-icin-sinav-gunu-acik-tutulacak-ililce-nufus-mudurlukleri"
-    },
-    {
-      "id": "a005c0b1fa67c6903a60",
-      "baslik": "2026-ALES/1: Sınava Giriş Belgeleri Erişime Açıldı",
-      "kurum": "ÖSYM",
-      "kategori": "ALES Sınava Giriş Belgesi",
-      "yayin_tarihi": "30.04.2026",
-      "kaynak": "ÖSYM ALES Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî ALES duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2026ales1-sinava-giris-belgeleri-erisime-acildi"
-    },
-    {
-      "id": "fa85a18b5081d97f24c6",
-      "baslik": "e-YDS 2026/5 (İspanyolca/İtalyanca): Sınava Giriş Belgeleri Erişime Açıldı",
-      "kurum": "ÖSYM",
-      "kategori": "e-YDS Sınava Giriş Belgesi",
-      "yayin_tarihi": "30.04.2026",
-      "kaynak": "ÖSYM e-YDS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/eyds-20265-ispanyolcaitalyanca-sinava-giris-belgeleri-erisime-acildi"
-    },
-    {
-      "id": "d750660c3cd54c4576d7",
-      "baslik": "e-YDS 2026/4 (İngilizce): Sınava Giriş Belgeleri Erişime Açıldı",
-      "kurum": "ÖSYM",
-      "kategori": "e-YDS Sınava Giriş Belgesi",
-      "yayin_tarihi": "30.04.2026",
-      "kaynak": "ÖSYM e-YDS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî e-YDS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/eyds-20264-ingilizce-sinava-giris-belgeleri-erisime-acildi"
-    },
-    {
-      "id": "c1bbfe71af2c7790078f",
-      "baslik": "2025-YDUS 2. Dönem: Uzmanlık Dalı Değişikliği İçin Tercih Kılavuzu",
-      "kurum": "ÖSYM",
-      "kategori": "YDUS Tercih",
-      "yayin_tarihi": "30.04.2026",
-      "kaynak": "ÖSYM YDUS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2025ydus-2-donem-uzmanlik-dali-degisikligi-icin-tercih-kilavuzu"
-    },
-    {
-      "id": "e0dd315cdc5de699d1af",
-      "baslik": "2025-YDUS 2. Dönem: Uzmanlık Dalı Değişikliği İçin Tercihlerin Alınması",
-      "kurum": "ÖSYM",
-      "kategori": "YDUS Tercih",
-      "yayin_tarihi": "30.04.2026",
-      "kaynak": "ÖSYM YDUS Duyuruları",
-      "ozet": "ÖSYM tarafından yayımlanan resmî YDUS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
-      "link": "https://www.osym.gov.tr/2025ydus-2-donem-uzmanlik-dali-degisikligi-icin-tercihlerin-alinmasi"
     },
     {
       "id": "1de5b4081003dbef6469",
@@ -5936,7 +5856,7 @@
   ],
   "kaynak_sayilari": {
     "ÖSYM merkezi atama ilanları": 0,
-    "ÖSYM tüm sınav haberleri": 265,
+    "ÖSYM tüm sınav haberleri": 257,
     "MSB / TSK Güncel Teminler": 0,
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
