@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-27T00:54:42.573683+00:00",
-  "ilan_sayisi": 132,
+  "guncellenme_zamani": "2026-10-27T05:55:43.677171+00:00",
+  "ilan_sayisi": 133,
   "suresi_dolmus_ilan_sayisi": 0,
   "ilanlar": [
     {
@@ -1744,16 +1744,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "782f36a73a9e0724583e",
-      "baslik": "Konya Şehir Hizmetleri AŞ.",
-      "kurum": "Konya Şehir Hizmetleri AŞ.",
-      "sehir": "Konya",
+      "id": "f13b26c957c357b93e02",
+      "baslik": "Afyonkarahisar Taşoluk Taş.Pet. Ve Petrol Ürn.Temizlik İnş.Turizm Termal Sera Tarım Hayv.Su Ürn.Gıda Taah.San. Ve Tic.Ltd.Şti.",
+      "kurum": "Afyonkarahisar Taşoluk Taş.Pet. Ve Petrol Ürn.Temizlik İnş.Turizm Termal Sera Tarım Hayv.Su Ürn.Gıda Taah.San. Ve Tic.Ltd.Şti.",
+      "sehir": "Afyonkarahisar",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "01.11.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/4ebfip5r/scan.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/4ebfip5r/scan.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=konya&il=Konya",
+      "son_basvuru": "01.11.2026 00:00",
+      "link": "https://www.iskur.gov.tr/medya/iodhrq3z/afyonkarahisar-taşoluk-taşpet-ve-petrol-uerntemizlik-inşturizm-termal-sera-tarım-hayvsu-uerngıda-taahsan-ve-ticltdşti-31102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/iodhrq3z/afyonkarahisar-taşoluk-taşpet-ve-petrol-uerntemizlik-inşturizm-termal-sera-tarım-hayvsu-uerngıda-taahsan-ve-ticltdşti-31102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=afyonkarahisar&il=Afyonkarahisar",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -1768,16 +1768,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "beceb4b88f33dcb12811",
-      "baslik": "İstanbul Kalkınma Ajansı Personel Alım İlanı",
-      "kurum": "İstanbul Kalkınma Ajansı Personel Alım İlanı",
-      "sehir": "İstanbul",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "02.11.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/ey3kjlcv/istanbul-kalkınma-ajansı-personel-alım-ilanı-02112026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/ey3kjlcv/istanbul-kalkınma-ajansı-personel-alım-ilanı-02112026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
+      "id": "782f36a73a9e0724583e",
+      "baslik": "Konya Şehir Hizmetleri AŞ.",
+      "kurum": "Konya Şehir Hizmetleri AŞ.",
+      "sehir": "Konya",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "01.11.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/4ebfip5r/scan.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/4ebfip5r/scan.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=konya&il=Konya",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -1819,6 +1819,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "beceb4b88f33dcb12811",
+      "baslik": "İstanbul Kalkınma Ajansı Personel Alım İlanı",
+      "kurum": "İstanbul Kalkınma Ajansı Personel Alım İlanı",
+      "sehir": "İstanbul",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "02.11.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/ey3kjlcv/istanbul-kalkınma-ajansı-personel-alım-ilanı-02112026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/ey3kjlcv/istanbul-kalkınma-ajansı-personel-alım-ilanı-02112026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "6cfdac424bf45de3912e",
       "baslik": "Bankacılık Düzenleme ve Denetleme Kurumu Sözleşmeli Bilişim Personeli Alım İlanı",
       "kurum": "Bankacılık Düzenleme ve Denetleme Kurumu Sözleşmeli Bilişim Personeli Alım İlanı",
@@ -1835,6 +1859,32 @@
       "kpss_gerekli": true,
       "minimum_puan": null,
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "9af5bbbc50bb05572a07",
+      "baslik": "Türk Akreditasyon Kurumu Uzman Yardımcılığı Sınav İlanı",
+      "kurum": "Türk Akreditasyon Kurumu Uzman Yardımcılığı Sınav İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "02.11.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/iuzpu3er/tuerk-akreditasyon-kurumu-uzman-yardımcılığı-sınav-ilanı-02112026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/iuzpu3er/tuerk-akreditasyon-kurumu-uzman-yardımcılığı-sınav-ilanı-02112026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "https://kariyerkapisi.gov.tr",
+      "basvuru_online": true,
+      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
+      "kpss_gerekli": true,
+      "minimum_puan": 70,
+      "kpss_durumu": "En az 70 KPSS puanı",
       "mezuniyetler": [
         "Lisans"
       ],
@@ -1868,32 +1918,6 @@
         "Maliye",
         "İşletme",
         "Muhasebe"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "9af5bbbc50bb05572a07",
-      "baslik": "Türk Akreditasyon Kurumu Uzman Yardımcılığı Sınav İlanı",
-      "kurum": "Türk Akreditasyon Kurumu Uzman Yardımcılığı Sınav İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "02.11.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/iuzpu3er/tuerk-akreditasyon-kurumu-uzman-yardımcılığı-sınav-ilanı-02112026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/iuzpu3er/tuerk-akreditasyon-kurumu-uzman-yardımcılığı-sınav-ilanı-02112026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "https://kariyerkapisi.gov.tr",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": 70,
-      "kpss_durumu": "En az 70 KPSS puanı",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -2634,6 +2658,32 @@
       "analiz_surumu": 2
     },
     {
+      "id": "d54cdf8d223b8e7d554e",
+      "baslik": "İzmir Karabağlar Belediyesi Sözleşmeli Personel Alım İlanı",
+      "kurum": "İzmir Karabağlar Belediyesi Sözleşmeli Personel Alım İlanı",
+      "sehir": "İzmir",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "04.12.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/yoec0x4m/izmir-karabağlar-belediyesi-soezleşmeli-personel-alım-ilanı-04122026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/yoec0x4m/izmir-karabağlar-belediyesi-soezleşmeli-personel-alım-ilanı-04122026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
+      "basvuru_linki": "https://kariyerkapisi.gov.tr",
+      "basvuru_online": true,
+      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "351dce2f6cbf3cf7a6e1",
       "baslik": "İzmir Büyükşehir Belediyesi Zabıta Memuru Alım İlanı",
       "kurum": "İzmir Büyükşehir Belediyesi Zabıta Memuru Alım İlanı",
@@ -2652,32 +2702,6 @@
       "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
       "mezuniyetler": [
         "Önlisans",
-        "Lisans"
-      ],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "d54cdf8d223b8e7d554e",
-      "baslik": "İzmir Karabağlar Belediyesi Sözleşmeli Personel Alım İlanı",
-      "kurum": "İzmir Karabağlar Belediyesi Sözleşmeli Personel Alım İlanı",
-      "sehir": "İzmir",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "04.12.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/yoec0x4m/izmir-karabağlar-belediyesi-soezleşmeli-personel-alım-ilanı-04122026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/yoec0x4m/izmir-karabağlar-belediyesi-soezleşmeli-personel-alım-ilanı-04122026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=izmir&il=%C4%B0zmir",
-      "basvuru_linki": "https://kariyerkapisi.gov.tr",
-      "basvuru_online": true,
-      "basvuru_aciklamasi": "Başvurular online olarak yapılmaktadır.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
         "Lisans"
       ],
       "bolumler": [
@@ -5865,11 +5889,11 @@
     "Adalet Bakanlığı Personel Alımları": 0
   },
   "bildirim_sonucu": {
-    "durum": "yeni_kayit_yok",
-    "yeni_ilan": 0,
+    "durum": "gonderildi",
+    "yeni_ilan": 1,
     "yeni_haber": 0,
-    "gonderilen": 0,
-    "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
+    "gonderilen": 1,
+    "mesaj": "1 telefon bildirimi gönderildi."
   },
   "hata_sayisi": 1,
   "pdf_hata_sayisi": 1,
