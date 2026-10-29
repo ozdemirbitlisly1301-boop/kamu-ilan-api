@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-29T02:05:16.309265+00:00",
+  "guncellenme_zamani": "2026-10-29T08:28:01.650638+00:00",
   "ilan_sayisi": 131,
   "suresi_dolmus_ilan_sayisi": 0,
   "ilanlar": [
@@ -972,16 +972,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "806679f28b83a2941309",
-      "baslik": "Kayseri Felahiye İmar A.Ş.",
-      "kurum": "Kayseri Felahiye İmar A.Ş.",
-      "sehir": "Kayseri",
+      "id": "fcf36cd2eebb4c71131f",
+      "baslik": "Karaman Organize Sanayi Bölgesi Müdürlüğü",
+      "kurum": "Karaman Organize Sanayi Bölgesi Müdürlüğü",
+      "sehir": "Karaman",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "30.10.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/3xzd0l01/felahiye-imar-aş.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/3xzd0l01/felahiye-imar-aş.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=kayseri&il=Kayseri",
+      "link": "https://www.iskur.gov.tr/medya/o0vgkfmw/karaman-osb-kurum-dışı.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/o0vgkfmw/karaman-osb-kurum-dışı.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=karaman&il=Karaman",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -996,16 +996,16 @@
       "analiz_surumu": 2
     },
     {
-      "id": "fcf36cd2eebb4c71131f",
-      "baslik": "Karaman Organize Sanayi Bölgesi Müdürlüğü",
-      "kurum": "Karaman Organize Sanayi Bölgesi Müdürlüğü",
-      "sehir": "Karaman",
+      "id": "806679f28b83a2941309",
+      "baslik": "Kayseri Felahiye İmar A.Ş.",
+      "kurum": "Kayseri Felahiye İmar A.Ş.",
+      "sehir": "Kayseri",
       "tur": "İşçi",
       "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
       "son_basvuru": "30.10.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/o0vgkfmw/karaman-osb-kurum-dışı.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/o0vgkfmw/karaman-osb-kurum-dışı.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=karaman&il=Karaman",
+      "link": "https://www.iskur.gov.tr/medya/3xzd0l01/felahiye-imar-aş.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/3xzd0l01/felahiye-imar-aş.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=kayseri&il=Kayseri",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -1092,30 +1092,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "1bfc94855ee46d52600d",
-      "baslik": "Tekirdağ Büyükşehir Belediyesi Personel A.Ş.",
-      "kurum": "Tekirdağ Büyükşehir Belediyesi Personel A.Ş.",
-      "sehir": "Tekirdağ",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "30.10.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/0i1i0cu2/tekirdağ-bueyuekşehir-belediyesi-personel-aş-30102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/0i1i0cu2/tekirdağ-bueyuekşehir-belediyesi-personel-aş-30102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=tekirdag&il=Tekirda%C4%9F",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "2f00083bb79958da18d6",
       "baslik": "Tanoba Belediyesi Personel Limited Şirketi",
       "kurum": "Tanoba Belediyesi Personel Limited Şirketi",
@@ -1137,6 +1113,30 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "1bfc94855ee46d52600d",
+      "baslik": "Tekirdağ Büyükşehir Belediyesi Personel A.Ş.",
+      "kurum": "Tekirdağ Büyükşehir Belediyesi Personel A.Ş.",
+      "sehir": "Tekirdağ",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "30.10.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/0i1i0cu2/tekirdağ-bueyuekşehir-belediyesi-personel-aş-30102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/0i1i0cu2/tekirdağ-bueyuekşehir-belediyesi-personel-aş-30102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=tekirdag&il=Tekirda%C4%9F",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
       "analiz_surumu": 2
     },
     {
