@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-29T15:24:48.852583+00:00",
+  "guncellenme_zamani": "2026-10-29T20:27:03.824766+00:00",
   "ilan_sayisi": 127,
   "suresi_dolmus_ilan_sayisi": 0,
   "ilanlar": [
@@ -1727,32 +1727,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "0ca1c1811f87d2184aaf",
-      "baslik": "Ağrı Eleşkirt Belediyesi Memur Alım İlanı",
-      "kurum": "Ağrı Eleşkirt Belediyesi Memur Alım İlanı",
-      "sehir": "Ağrı",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "04.11.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/vldigvnk/ağrı-eleşkirt-belediyesi-memur-alım-ilanı-04112026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/vldigvnk/ağrı-eleşkirt-belediyesi-memur-alım-ilanı-04112026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=agri&il=A%C4%9Fr%C4%B1",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
-      "kpss_gerekli": true,
-      "minimum_puan": null,
-      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
-      "mezuniyetler": [
-        "Lisans"
-      ],
-      "bolumler": [
-        "İşletme"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "56961c753a205497cf83",
       "baslik": "Ardahan Pasof Belediyesi Sözleşmeli Personel Alım İlanı",
       "kurum": "Ardahan Pasof Belediyesi Sözleşmeli Personel Alım İlanı",
@@ -1774,6 +1748,32 @@
       ],
       "bolumler": [
         "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "0ca1c1811f87d2184aaf",
+      "baslik": "Ağrı Eleşkirt Belediyesi Memur Alım İlanı",
+      "kurum": "Ağrı Eleşkirt Belediyesi Memur Alım İlanı",
+      "sehir": "Ağrı",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "04.11.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/vldigvnk/ağrı-eleşkirt-belediyesi-memur-alım-ilanı-04112026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/vldigvnk/ağrı-eleşkirt-belediyesi-memur-alım-ilanı-04112026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=agri&il=A%C4%9Fr%C4%B1",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "İlanda online başvuru belirtilmiş ancak doğrudan başvuru bağlantısı bulunamadı. İlanın yayımlandığı sayfayı kontrol edin.",
+      "kpss_gerekli": true,
+      "minimum_puan": null,
+      "kpss_durumu": "KPSS şartı var; puan ilan belgesinde belirtilmiştir",
+      "mezuniyetler": [
+        "Lisans"
+      ],
+      "bolumler": [
+        "İşletme"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -2103,30 +2103,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "83eb8530b668c43b12af",
-      "baslik": "Türkiye İş Kurumu Genel Müdürlüğü Sözleşmeli Bilişim Personeli Sınav İlanı",
-      "kurum": "Türkiye İş Kurumu Genel Müdürlüğü Sözleşmeli Bilişim Personeli Sınav İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "08.11.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/s1pbmuad/tuerkiye-iş-kurumu-genel-mueduerlueğue-soezleşmeli-bilişim-personeli-sınav-ilanı-08112026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/s1pbmuad/tuerkiye-iş-kurumu-genel-mueduerlueğue-soezleşmeli-bilişim-personeli-sınav-ilanı-08112026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "3df8c4442aa3e26c5e92",
       "baslik": "Milli Saraylar İdaresi Başkanlığı Sözleşmeli Müze Görevlisi Alım İlanı",
       "kurum": "Milli Saraylar İdaresi Başkanlığı Sözleşmeli Müze Görevlisi Alım İlanı",
@@ -2146,6 +2122,30 @@
       "mezuniyetler": [
         "Lisans"
       ],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "83eb8530b668c43b12af",
+      "baslik": "Türkiye İş Kurumu Genel Müdürlüğü Sözleşmeli Bilişim Personeli Sınav İlanı",
+      "kurum": "Türkiye İş Kurumu Genel Müdürlüğü Sözleşmeli Bilişim Personeli Sınav İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "08.11.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/s1pbmuad/tuerkiye-iş-kurumu-genel-mueduerlueğue-soezleşmeli-bilişim-personeli-sınav-ilanı-08112026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/s1pbmuad/tuerkiye-iş-kurumu-genel-mueduerlueğue-soezleşmeli-bilişim-personeli-sınav-ilanı-08112026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
       "bolumler": [
         "Diğer"
       ],
