@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "guncellenme_zamani": "2026-10-30T00:05:25.483530+00:00",
-  "ilan_sayisi": 117,
+  "guncellenme_zamani": "2026-10-30T05:46:23.129035+00:00",
+  "ilan_sayisi": 119,
   "suresi_dolmus_ilan_sayisi": 0,
   "ilanlar": [
     {
@@ -418,6 +418,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "0a740b8d01855afda376",
+      "baslik": "ERZURUM ÇEVRE TEMİZLİK AĞAÇ PEYZAJ VE ENERJİ TİCARET SANAYİ ANONİM ŞİRKETİ (DESTEK PERSONELİ)",
+      "kurum": "ERZURUM ÇEVRE TEMİZLİK AĞAÇ PEYZAJ VE ENERJİ TİCARET SANAYİ ANONİM ŞİRKETİ (DESTEK PERSONELİ)",
+      "sehir": "Erzurum",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "30.10.2026 18:00",
+      "link": "https://www.iskur.gov.tr/medya/mczlskgx/çetaş.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/mczlskgx/çetaş.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=erzurum&il=Erzurum",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "7607c0f18a5eee012489",
       "baslik": "Sayıştay Başkanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
       "kurum": "Sayıştay Başkanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
@@ -756,30 +780,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "1bfc94855ee46d52600d",
-      "baslik": "Tekirdağ Büyükşehir Belediyesi Personel A.Ş.",
-      "kurum": "Tekirdağ Büyükşehir Belediyesi Personel A.Ş.",
-      "sehir": "Tekirdağ",
-      "tur": "İşçi",
-      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
-      "son_basvuru": "30.10.2026 23:59",
-      "link": "https://www.iskur.gov.tr/medya/0i1i0cu2/tekirdağ-bueyuekşehir-belediyesi-personel-aş-30102026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/0i1i0cu2/tekirdağ-bueyuekşehir-belediyesi-personel-aş-30102026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=tekirdag&il=Tekirda%C4%9F",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "2f00083bb79958da18d6",
       "baslik": "Tanoba Belediyesi Personel Limited Şirketi",
       "kurum": "Tanoba Belediyesi Personel Limited Şirketi",
@@ -801,6 +801,30 @@
         "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "1bfc94855ee46d52600d",
+      "baslik": "Tekirdağ Büyükşehir Belediyesi Personel A.Ş.",
+      "kurum": "Tekirdağ Büyükşehir Belediyesi Personel A.Ş.",
+      "sehir": "Tekirdağ",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "30.10.2026 23:59",
+      "link": "https://www.iskur.gov.tr/medya/0i1i0cu2/tekirdağ-bueyuekşehir-belediyesi-personel-aş-30102026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/0i1i0cu2/tekirdağ-bueyuekşehir-belediyesi-personel-aş-30102026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=tekirdag&il=Tekirda%C4%9F",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
       "analiz_surumu": 2
     },
     {
@@ -1236,30 +1260,6 @@
       "analiz_surumu": 2
     },
     {
-      "id": "beceb4b88f33dcb12811",
-      "baslik": "İstanbul Kalkınma Ajansı Personel Alım İlanı",
-      "kurum": "İstanbul Kalkınma Ajansı Personel Alım İlanı",
-      "sehir": "İstanbul",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "02.11.2026 17:00",
-      "link": "https://www.iskur.gov.tr/medya/ey3kjlcv/istanbul-kalkınma-ajansı-personel-alım-ilanı-02112026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/ey3kjlcv/istanbul-kalkınma-ajansı-personel-alım-ilanı-02112026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "PDF metninden belirlenemedi",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
-      ],
-      "pdf_isleme_durumu": "metin_yok",
-      "analiz_surumu": 2
-    },
-    {
       "id": "20df4e86aedf099d725e",
       "baslik": "İstanbul Büyükşehir Belediyesi İETT İşletmeleri Genel Müdürlüğü Memur Alım İlanı",
       "kurum": "İstanbul Büyükşehir Belediyesi İETT İşletmeleri Genel Müdürlüğü Memur Alım İlanı",
@@ -1284,6 +1284,30 @@
         "Muhasebe"
       ],
       "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "beceb4b88f33dcb12811",
+      "baslik": "İstanbul Kalkınma Ajansı Personel Alım İlanı",
+      "kurum": "İstanbul Kalkınma Ajansı Personel Alım İlanı",
+      "sehir": "İstanbul",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "02.11.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/ey3kjlcv/istanbul-kalkınma-ajansı-personel-alım-ilanı-02112026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/ey3kjlcv/istanbul-kalkınma-ajansı-personel-alım-ilanı-02112026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=istanbul&il=%C4%B0stanbul",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
       "analiz_surumu": 2
     },
     {
@@ -1321,6 +1345,30 @@
       "link": "https://www.iskur.gov.tr/medya/4zpp5x5g/bursa-izbel-turizm-ve-işletme-hizsanticaş-02112026.pdf",
       "belge_linki": "https://www.iskur.gov.tr/medya/4zpp5x5g/bursa-izbel-turizm-ve-işletme-hizsanticaş-02112026.pdf",
       "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=bursa&il=Bursa",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "PDF metninden belirlenemedi",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "metin_yok",
+      "analiz_surumu": 2
+    },
+    {
+      "id": "5360dcb55eaa3c2a2eec",
+      "baslik": "HAKKARİ YÜKSEKOVA BELEDİYESİ PERSONEL A.Ş.",
+      "kurum": "HAKKARİ YÜKSEKOVA BELEDİYESİ PERSONEL A.Ş.",
+      "sehir": "Hakkari",
+      "tur": "İşçi",
+      "kaynak": "İŞKUR Kurum Dışı Kamu İşçi Alımları",
+      "son_basvuru": "02.11.2026 17:00",
+      "link": "https://www.iskur.gov.tr/medya/xeflxd45/hakkari-yueksekova-belediyesi-personel-aş-02112026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/xeflxd45/hakkari-yueksekova-belediyesi-personel-aş-02112026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kurumdisi-kamu-isci-alim-ilanlari/?idId=hakkari&il=Hakkari",
       "basvuru_linki": "",
       "basvuru_online": false,
       "basvuru_aciklamasi": "Online başvuru bağlantısı belirlenemedi. Başvuru yöntemini ilan belgesinden veya ilanın yayımlandığı sayfadan kontrol edin.",
@@ -1614,6 +1662,30 @@
       "analiz_surumu": 2
     },
     {
+      "id": "0fccd1c7d64a7618c45d",
+      "baslik": "Cumhurbaşkanlığı Strateji ve Bütçe Başkanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
+      "kurum": "Cumhurbaşkanlığı Strateji ve Bütçe Başkanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
+      "sehir": "Ankara",
+      "tur": "Memur",
+      "kaynak": "İŞKUR Kamu Memur Alımları",
+      "son_basvuru": "05.11.2026 23:55",
+      "link": "https://www.iskur.gov.tr/medya/rsmf4en4/cumhurbaşkanlığı-strateji-ve-buetçe-başkanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-05112026.pdf",
+      "belge_linki": "https://www.iskur.gov.tr/medya/rsmf4en4/cumhurbaşkanlığı-strateji-ve-buetçe-başkanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-05112026.pdf",
+      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
+      "basvuru_linki": "",
+      "basvuru_online": false,
+      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
+      "kpss_gerekli": null,
+      "minimum_puan": null,
+      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
+      "mezuniyetler": [],
+      "bolumler": [
+        "Diğer"
+      ],
+      "pdf_isleme_durumu": "ok",
+      "analiz_surumu": 2
+    },
+    {
       "id": "6c0565cdb31b4595f797",
       "baslik": "Türkiye Turizm Tanıtım ve Geliştirme Ajansı Personel Alım İlanı",
       "kurum": "Türkiye Turizm Tanıtım ve Geliştirme Ajansı Personel Alım İlanı",
@@ -1636,30 +1708,6 @@
       ],
       "bolumler": [
         "İşletme"
-      ],
-      "pdf_isleme_durumu": "ok",
-      "analiz_surumu": 2
-    },
-    {
-      "id": "0fccd1c7d64a7618c45d",
-      "baslik": "Cumhurbaşkanlığı Strateji ve Bütçe Başkanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
-      "kurum": "Cumhurbaşkanlığı Strateji ve Bütçe Başkanlığı Sözleşmeli Bilişim Personeli Alım İlanı",
-      "sehir": "Ankara",
-      "tur": "Memur",
-      "kaynak": "İŞKUR Kamu Memur Alımları",
-      "son_basvuru": "05.11.2026 23:55",
-      "link": "https://www.iskur.gov.tr/medya/rsmf4en4/cumhurbaşkanlığı-strateji-ve-buetçe-başkanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-05112026.pdf",
-      "belge_linki": "https://www.iskur.gov.tr/medya/rsmf4en4/cumhurbaşkanlığı-strateji-ve-buetçe-başkanlığı-soezleşmeli-bilişim-personeli-alım-ilanı-05112026.pdf",
-      "kaynak_sayfa_linki": "https://www.iskur.gov.tr/ilanlar/kamu-memur-alim-ilanlari/?idId=ankara&il=Ankara",
-      "basvuru_linki": "",
-      "basvuru_online": false,
-      "basvuru_aciklamasi": "Online başvuru bağlantısı bulunamadı. Başvuru yöntemini ilan belgesinden kontrol edin.",
-      "kpss_gerekli": null,
-      "minimum_puan": null,
-      "kpss_durumu": "İlan metninde açık KPSS bilgisi bulunamadı",
-      "mezuniyetler": [],
-      "bolumler": [
-        "Diğer"
       ],
       "pdf_isleme_durumu": "ok",
       "analiz_surumu": 2
@@ -2889,8 +2937,18 @@
       "analiz_surumu": 2
     }
   ],
-  "haber_sayisi": 267,
+  "haber_sayisi": 268,
   "haberler": [
+    {
+      "id": "0aa8420ad46906a12809",
+      "baslik": "2026-KPSS Ön Lisans Sınavı: Sınav Sonuçları Açıklandı",
+      "kurum": "ÖSYM",
+      "kategori": "KPSS Sonuç",
+      "yayin_tarihi": "30.10.2026",
+      "kaynak": "ÖSYM KPSS Duyuruları",
+      "ozet": "ÖSYM tarafından yayımlanan resmî KPSS duyurusu. Başvuru, sınava giriş belgesi, sonuç, tercih, kılavuz veya takvim bilgisi için resmî sayfayı açın.",
+      "link": "https://www.osym.gov.tr/2026-kpss-on-lisans-sinavi-sinav-sonuclari-aciklandi"
+    },
     {
       "id": "70a0cec2202d6999694f",
       "baslik": "2026-EUS ile 2026-STS Eczacılık Sınavı: Sınava Giriş Belgeleri Erişime Açıldı",
@@ -5564,7 +5622,7 @@
   ],
   "kaynak_sayilari": {
     "ÖSYM merkezi atama ilanları": 0,
-    "ÖSYM tüm sınav haberleri": 264,
+    "ÖSYM tüm sınav haberleri": 265,
     "MSB / TSK Güncel Teminler": 0,
     "MSB / TSK haberleri": 0,
     "Kariyer Kapısı Aktif İlanlar": 0,
@@ -5573,11 +5631,11 @@
     "Adalet Bakanlığı Personel Alımları": 0
   },
   "bildirim_sonucu": {
-    "durum": "yeni_kayit_yok",
-    "yeni_ilan": 0,
-    "yeni_haber": 0,
-    "gonderilen": 0,
-    "mesaj": "Yeni ve güncel ilan veya haber bulunmadı."
+    "durum": "gonderildi",
+    "yeni_ilan": 2,
+    "yeni_haber": 1,
+    "gonderilen": 3,
+    "mesaj": "3 telefon bildirimi gönderildi."
   },
   "hata_sayisi": 1,
   "pdf_hata_sayisi": 0,
